@@ -1,0 +1,1898 @@
+// Prebuilt spotinst Provider for Terraform CDK (cdktf)
+package spotinst
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/hashicorp/cdktf-provider-spotinst-go/spotinst/v2/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/cdktf-provider-spotinst-go/spotinst/v2/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+// Represents a {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws spotinst_ocean_aws}.
+type OceanAws interface {
+	cdktf.TerraformResource
+	AssociatePublicIpAddress() interface{}
+	SetAssociatePublicIpAddress(val interface{})
+	AssociatePublicIpAddressInput() interface{}
+	Autoscaler() OceanAwsAutoscalerOutputReference
+	AutoscalerInput() *OceanAwsAutoscaler
+	Blacklist() *[]*string
+	SetBlacklist(val *[]*string)
+	BlacklistInput() *[]*string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	ControllerId() *string
+	SetControllerId(val *string)
+	ControllerIdInput() *string
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DesiredCapacity() *float64
+	SetDesiredCapacity(val *float64)
+	DesiredCapacityInput() *float64
+	DrainingTimeout() *float64
+	SetDrainingTimeout(val *float64)
+	DrainingTimeoutInput() *float64
+	EbsOptimized() interface{}
+	SetEbsOptimized(val interface{})
+	EbsOptimizedInput() interface{}
+	FallbackToOndemand() interface{}
+	SetFallbackToOndemand(val interface{})
+	FallbackToOndemandInput() interface{}
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	GracePeriod() *float64
+	SetGracePeriod(val *float64)
+	GracePeriodInput() *float64
+	IamInstanceProfile() *string
+	SetIamInstanceProfile(val *string)
+	IamInstanceProfileInput() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	ImageId() *string
+	SetImageId(val *string)
+	ImageIdInput() *string
+	InstanceMetadataOptions() OceanAwsInstanceMetadataOptionsOutputReference
+	InstanceMetadataOptionsInput() *OceanAwsInstanceMetadataOptions
+	KeyName() *string
+	SetKeyName(val *string)
+	KeyNameInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBalancers() OceanAwsLoadBalancersList
+	LoadBalancersInput() interface{}
+	Logging() OceanAwsLoggingOutputReference
+	LoggingInput() *OceanAwsLogging
+	MaxSize() *float64
+	SetMaxSize(val *float64)
+	MaxSizeInput() *float64
+	MinSize() *float64
+	SetMinSize(val *float64)
+	MinSizeInput() *float64
+	Monitoring() interface{}
+	SetMonitoring(val interface{})
+	MonitoringInput() interface{}
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
+	RootVolumeSize() *float64
+	SetRootVolumeSize(val *float64)
+	RootVolumeSizeInput() *float64
+	ScheduledTask() OceanAwsScheduledTaskList
+	ScheduledTaskInput() interface{}
+	SecurityGroups() *[]*string
+	SetSecurityGroups(val *[]*string)
+	SecurityGroupsInput() *[]*string
+	SpotPercentage() *float64
+	SetSpotPercentage(val *float64)
+	SpotPercentageInput() *float64
+	SubnetIds() *[]*string
+	SetSubnetIds(val *[]*string)
+	SubnetIdsInput() *[]*string
+	Tags() OceanAwsTagsList
+	TagsInput() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	UpdatePolicy() OceanAwsUpdatePolicyOutputReference
+	UpdatePolicyInput() *OceanAwsUpdatePolicy
+	UseAsTemplateOnly() interface{}
+	SetUseAsTemplateOnly(val interface{})
+	UseAsTemplateOnlyInput() interface{}
+	UserData() *string
+	SetUserData(val *string)
+	UserDataInput() *string
+	UtilizeCommitments() interface{}
+	SetUtilizeCommitments(val interface{})
+	UtilizeCommitmentsInput() interface{}
+	UtilizeReservedInstances() interface{}
+	SetUtilizeReservedInstances(val interface{})
+	UtilizeReservedInstancesInput() interface{}
+	Whitelist() *[]*string
+	SetWhitelist(val *[]*string)
+	WhitelistInput() *[]*string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutAutoscaler(value *OceanAwsAutoscaler)
+	PutInstanceMetadataOptions(value *OceanAwsInstanceMetadataOptions)
+	PutLoadBalancers(value interface{})
+	PutLogging(value *OceanAwsLogging)
+	PutScheduledTask(value interface{})
+	PutTags(value interface{})
+	PutUpdatePolicy(value *OceanAwsUpdatePolicy)
+	ResetAssociatePublicIpAddress()
+	ResetAutoscaler()
+	ResetBlacklist()
+	ResetControllerId()
+	ResetDesiredCapacity()
+	ResetDrainingTimeout()
+	ResetEbsOptimized()
+	ResetFallbackToOndemand()
+	ResetGracePeriod()
+	ResetIamInstanceProfile()
+	ResetId()
+	ResetImageId()
+	ResetInstanceMetadataOptions()
+	ResetKeyName()
+	ResetLoadBalancers()
+	ResetLogging()
+	ResetMaxSize()
+	ResetMinSize()
+	ResetMonitoring()
+	ResetName()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetRegion()
+	ResetRootVolumeSize()
+	ResetScheduledTask()
+	ResetSpotPercentage()
+	ResetTags()
+	ResetUpdatePolicy()
+	ResetUseAsTemplateOnly()
+	ResetUserData()
+	ResetUtilizeCommitments()
+	ResetUtilizeReservedInstances()
+	ResetWhitelist()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for OceanAws
+type jsiiProxy_OceanAws struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_OceanAws) AssociatePublicIpAddress() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"associatePublicIpAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) AssociatePublicIpAddressInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"associatePublicIpAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Autoscaler() OceanAwsAutoscalerOutputReference {
+	var returns OceanAwsAutoscalerOutputReference
+	_jsii_.Get(
+		j,
+		"autoscaler",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) AutoscalerInput() *OceanAwsAutoscaler {
+	var returns *OceanAwsAutoscaler
+	_jsii_.Get(
+		j,
+		"autoscalerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Blacklist() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blacklist",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) BlacklistInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blacklistInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) ControllerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"controllerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) ControllerIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"controllerIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) DesiredCapacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"desiredCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) DesiredCapacityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"desiredCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) DrainingTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"drainingTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) DrainingTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"drainingTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) EbsOptimized() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ebsOptimized",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) EbsOptimizedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ebsOptimizedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) FallbackToOndemand() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fallbackToOndemand",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) FallbackToOndemandInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fallbackToOndemandInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) GracePeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"gracePeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) GracePeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"gracePeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) IamInstanceProfile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamInstanceProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) IamInstanceProfileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamInstanceProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) ImageId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) ImageIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imageIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) InstanceMetadataOptions() OceanAwsInstanceMetadataOptionsOutputReference {
+	var returns OceanAwsInstanceMetadataOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"instanceMetadataOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) InstanceMetadataOptionsInput() *OceanAwsInstanceMetadataOptions {
+	var returns *OceanAwsInstanceMetadataOptions
+	_jsii_.Get(
+		j,
+		"instanceMetadataOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) KeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) KeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) LoadBalancers() OceanAwsLoadBalancersList {
+	var returns OceanAwsLoadBalancersList
+	_jsii_.Get(
+		j,
+		"loadBalancers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) LoadBalancersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"loadBalancersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Logging() OceanAwsLoggingOutputReference {
+	var returns OceanAwsLoggingOutputReference
+	_jsii_.Get(
+		j,
+		"logging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) LoggingInput() *OceanAwsLogging {
+	var returns *OceanAwsLogging
+	_jsii_.Get(
+		j,
+		"loggingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) MaxSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) MaxSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) MinSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) MinSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Monitoring() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"monitoring",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) MonitoringInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"monitoringInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) RootVolumeSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rootVolumeSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) RootVolumeSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rootVolumeSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) ScheduledTask() OceanAwsScheduledTaskList {
+	var returns OceanAwsScheduledTaskList
+	_jsii_.Get(
+		j,
+		"scheduledTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) ScheduledTaskInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scheduledTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) SecurityGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) SecurityGroupsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) SpotPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"spotPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) SpotPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"spotPercentageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) SubnetIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) SubnetIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Tags() OceanAwsTagsList {
+	var returns OceanAwsTagsList
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) TagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) UpdatePolicy() OceanAwsUpdatePolicyOutputReference {
+	var returns OceanAwsUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"updatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) UpdatePolicyInput() *OceanAwsUpdatePolicy {
+	var returns *OceanAwsUpdatePolicy
+	_jsii_.Get(
+		j,
+		"updatePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) UseAsTemplateOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useAsTemplateOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) UseAsTemplateOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useAsTemplateOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) UserData() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) UserDataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) UtilizeCommitments() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"utilizeCommitments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) UtilizeCommitmentsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"utilizeCommitmentsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) UtilizeReservedInstances() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"utilizeReservedInstances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) UtilizeReservedInstancesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"utilizeReservedInstancesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Whitelist() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"whitelist",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) WhitelistInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"whitelistInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws spotinst_ocean_aws} Resource.
+func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig) OceanAws {
+	_init_.Initialize()
+
+	j := jsiiProxy_OceanAws{}
+
+	_jsii_.Create(
+		"@cdktf/provider-spotinst.OceanAws",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws spotinst_ocean_aws} Resource.
+func NewOceanAws_Override(o OceanAws, scope constructs.Construct, id *string, config *OceanAwsConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-spotinst.OceanAws",
+		[]interface{}{scope, id, config},
+		o,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetAssociatePublicIpAddress(val interface{}) {
+	_jsii_.Set(
+		j,
+		"associatePublicIpAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetBlacklist(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"blacklist",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetConnection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetControllerId(val *string) {
+	_jsii_.Set(
+		j,
+		"controllerId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetDesiredCapacity(val *float64) {
+	_jsii_.Set(
+		j,
+		"desiredCapacity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetDrainingTimeout(val *float64) {
+	_jsii_.Set(
+		j,
+		"drainingTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetEbsOptimized(val interface{}) {
+	_jsii_.Set(
+		j,
+		"ebsOptimized",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetFallbackToOndemand(val interface{}) {
+	_jsii_.Set(
+		j,
+		"fallbackToOndemand",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetGracePeriod(val *float64) {
+	_jsii_.Set(
+		j,
+		"gracePeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetIamInstanceProfile(val *string) {
+	_jsii_.Set(
+		j,
+		"iamInstanceProfile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetImageId(val *string) {
+	_jsii_.Set(
+		j,
+		"imageId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetKeyName(val *string) {
+	_jsii_.Set(
+		j,
+		"keyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetMaxSize(val *float64) {
+	_jsii_.Set(
+		j,
+		"maxSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetMinSize(val *float64) {
+	_jsii_.Set(
+		j,
+		"minSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetMonitoring(val interface{}) {
+	_jsii_.Set(
+		j,
+		"monitoring",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetName(val *string) {
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetProvisioners(val *[]interface{}) {
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetRegion(val *string) {
+	_jsii_.Set(
+		j,
+		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetRootVolumeSize(val *float64) {
+	_jsii_.Set(
+		j,
+		"rootVolumeSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetSecurityGroups(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"securityGroups",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetSpotPercentage(val *float64) {
+	_jsii_.Set(
+		j,
+		"spotPercentage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetSubnetIds(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"subnetIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetUseAsTemplateOnly(val interface{}) {
+	_jsii_.Set(
+		j,
+		"useAsTemplateOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetUserData(val *string) {
+	_jsii_.Set(
+		j,
+		"userData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetUtilizeCommitments(val interface{}) {
+	_jsii_.Set(
+		j,
+		"utilizeCommitments",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetUtilizeReservedInstances(val interface{}) {
+	_jsii_.Set(
+		j,
+		"utilizeReservedInstances",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws) SetWhitelist(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"whitelist",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func OceanAws_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-spotinst.OceanAws",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func OceanAws_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-spotinst.OceanAws",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		o,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (o *jsiiProxy_OceanAws) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		o,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		o,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		o,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		o,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		o,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		o,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		o,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		o,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (o *jsiiProxy_OceanAws) PutAutoscaler(value *OceanAwsAutoscaler) {
+	_jsii_.InvokeVoid(
+		o,
+		"putAutoscaler",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanAws) PutInstanceMetadataOptions(value *OceanAwsInstanceMetadataOptions) {
+	_jsii_.InvokeVoid(
+		o,
+		"putInstanceMetadataOptions",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanAws) PutLoadBalancers(value interface{}) {
+	_jsii_.InvokeVoid(
+		o,
+		"putLoadBalancers",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanAws) PutLogging(value *OceanAwsLogging) {
+	_jsii_.InvokeVoid(
+		o,
+		"putLogging",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanAws) PutScheduledTask(value interface{}) {
+	_jsii_.InvokeVoid(
+		o,
+		"putScheduledTask",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanAws) PutTags(value interface{}) {
+	_jsii_.InvokeVoid(
+		o,
+		"putTags",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanAws) PutUpdatePolicy(value *OceanAwsUpdatePolicy) {
+	_jsii_.InvokeVoid(
+		o,
+		"putUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetAssociatePublicIpAddress() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAssociatePublicIpAddress",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetAutoscaler() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAutoscaler",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetBlacklist() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBlacklist",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetControllerId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetControllerId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetDesiredCapacity() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDesiredCapacity",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetDrainingTimeout() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDrainingTimeout",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetEbsOptimized() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEbsOptimized",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetFallbackToOndemand() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFallbackToOndemand",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetGracePeriod() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGracePeriod",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetIamInstanceProfile() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetIamInstanceProfile",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetImageId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetImageId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetInstanceMetadataOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInstanceMetadataOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetKeyName() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetKeyName",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetLoadBalancers() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLoadBalancers",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetLogging() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLogging",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetMaxSize() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMaxSize",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetMinSize() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMinSize",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetMonitoring() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMonitoring",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetName() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetRegion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetRootVolumeSize() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRootVolumeSize",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetScheduledTask() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetScheduledTask",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetSpotPercentage() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSpotPercentage",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetTags() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUpdatePolicy",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetUseAsTemplateOnly() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUseAsTemplateOnly",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetUserData() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUserData",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetUtilizeCommitments() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUtilizeCommitments",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetUtilizeReservedInstances() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUtilizeReservedInstances",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetWhitelist() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetWhitelist",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		o,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		o,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanAws) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
