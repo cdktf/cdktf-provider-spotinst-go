@@ -197,6 +197,9 @@ func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) VcpuInput()
 func NewElastigroupGkeInstanceTypesCustomOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupGkeInstanceTypesCustomOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGkeInstanceTypesCustomOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewElastigroupGkeInstanceTypesCustomOutputReference_Override(e ElastigroupG
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetInternal
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetMemoryGib(val *float64) {
+func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference)SetMemoryGib(val *float64) {
+	if err := j.validateSetMemoryGibParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"memoryGib",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetMemoryGi
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) SetVcpu(val *float64) {
+func (j *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference)SetVcpu(val *float64) {
+	if err := j.validateSetVcpuParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vcpu",
@@ -288,6 +312,9 @@ func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) ComputeFqn(
 }
 
 func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetAnyMapAt
 }
 
 func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetBooleanA
 }
 
 func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetBooleanM
 }
 
 func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetListAttr
 }
 
 func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetNumberAt
 }
 
 func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetNumberLi
 }
 
 func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetNumberMa
 }
 
 func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetStringAt
 }
 
 func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) Interpolati
 }
 
 func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) Interpolati
 }
 
 func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

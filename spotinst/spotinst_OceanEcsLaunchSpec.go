@@ -625,6 +625,9 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) UserDataInput() *string {
 func NewOceanEcsLaunchSpec(scope constructs.Construct, id *string, config *OceanEcsLaunchSpecConfig) OceanEcsLaunchSpec {
 	_init_.Initialize()
 
+	if err := validateNewOceanEcsLaunchSpecParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanEcsLaunchSpec{}
 
 	_jsii_.Create(
@@ -647,7 +650,10 @@ func NewOceanEcsLaunchSpec_Override(o OceanEcsLaunchSpec, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetConnection(val interface{}) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -655,7 +661,7 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetCount(val *float64) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -663,7 +669,7 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -671,7 +677,7 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -679,7 +685,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetIamInstanceProfile(val *string) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetIamInstanceProfile(val *string) {
+	if err := j.validateSetIamInstanceProfileParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"iamInstanceProfile",
@@ -687,7 +696,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetIamInstanceProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetId(val *string) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -695,7 +707,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetImageId(val *string) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetImageId(val *string) {
+	if err := j.validateSetImageIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"imageId",
@@ -703,7 +718,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetImageId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetInstanceTypes(val *[]*string) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetInstanceTypes(val *[]*string) {
+	if err := j.validateSetInstanceTypesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceTypes",
@@ -711,7 +729,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetInstanceTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -719,7 +740,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetName(val *string) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -727,7 +751,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetOceanId(val *string) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetOceanId(val *string) {
+	if err := j.validateSetOceanIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"oceanId",
@@ -735,7 +762,7 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetOceanId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -743,7 +770,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -751,7 +781,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetRestrictScaleDown(val interface{}) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetRestrictScaleDown(val interface{}) {
+	if err := j.validateSetRestrictScaleDownParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"restrictScaleDown",
@@ -759,7 +792,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetRestrictScaleDown(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetSecurityGroupIds(val *[]*string) {
+	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityGroupIds",
@@ -767,7 +803,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetSubnetIds(val *[]*string) {
+	if err := j.validateSetSubnetIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subnetIds",
@@ -775,7 +814,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpec) SetUserData(val *string) {
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetUserData(val *string) {
+	if err := j.validateSetUserDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userData",
@@ -803,6 +845,9 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SetUserData(val *string) {
 func OceanEcsLaunchSpec_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateOceanEcsLaunchSpec_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -827,6 +872,9 @@ func OceanEcsLaunchSpec_TfResourceType() *string {
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
@@ -835,6 +883,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) AddOverride(path *string, value interface
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -848,6 +899,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -861,6 +915,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -874,6 +931,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -887,6 +947,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) GetListAttribute(terraformAttribute *stri
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -900,6 +963,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) GetNumberAttribute(terraformAttribute *st
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -913,6 +979,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) GetNumberListAttribute(terraformAttribute
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -926,6 +995,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -939,6 +1011,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) GetStringAttribute(terraformAttribute *st
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -952,6 +1027,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) GetStringMapAttribute(terraformAttribute 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -965,6 +1043,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) InterpolationForAttribute(terraformAttrib
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
@@ -973,6 +1054,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) PutAttributes(value interface{}) {
+	if err := o.validatePutAttributesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putAttributes",
@@ -981,6 +1065,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) PutAttributes(value interface{}) {
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) PutAutoscaleHeadrooms(value interface{}) {
+	if err := o.validatePutAutoscaleHeadroomsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putAutoscaleHeadrooms",
@@ -989,6 +1076,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) PutAutoscaleHeadrooms(value interface{}) 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) PutBlockDeviceMappings(value interface{}) {
+	if err := o.validatePutBlockDeviceMappingsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putBlockDeviceMappings",
@@ -997,6 +1087,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) PutBlockDeviceMappings(value interface{})
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) PutSchedulingTask(value interface{}) {
+	if err := o.validatePutSchedulingTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putSchedulingTask",
@@ -1005,6 +1098,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) PutSchedulingTask(value interface{}) {
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpec) PutTags(value interface{}) {
+	if err := o.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putTags",

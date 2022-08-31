@@ -175,6 +175,9 @@ func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Ter
 func NewElastigroupGcpIntegrationGkeAutoscaleDownOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGcpIntegrationGkeAutoscaleDownOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewElastigroupGcpIntegrationGkeAutoscaleDownOutputReference_Override(e Elas
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) SetEvaluationPeriods(val *float64) {
+func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference)SetEvaluationPeriods(val *float64) {
+	if err := j.validateSetEvaluationPeriodsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"evaluationPeriods",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) SetInternalValue(val *ElastigroupGcpIntegrationGkeAutoscaleDown) {
+func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference)SetInternalValue(val *ElastigroupGcpIntegrationGkeAutoscaleDown) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,6 +279,9 @@ func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Com
 }
 
 func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Int
 }
 
 func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Res
 }
 
 func (e *jsiiProxy_ElastigroupGcpIntegrationGkeAutoscaleDownOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

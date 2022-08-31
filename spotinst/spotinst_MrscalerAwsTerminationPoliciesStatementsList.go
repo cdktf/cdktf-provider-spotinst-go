@@ -111,6 +111,9 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList) WrapsSet() *boo
 func NewMrscalerAwsTerminationPoliciesStatementsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MrscalerAwsTerminationPoliciesStatementsList {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsTerminationPoliciesStatementsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMrscalerAwsTerminationPoliciesStatementsList_Override(m MrscalerAwsTermi
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList) ComputeFqn() *s
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList) Get(index *float64) MrscalerAwsTerminationPoliciesStatementsOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MrscalerAwsTerminationPoliciesStatementsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList) Get(index *floa
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

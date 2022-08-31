@@ -111,6 +111,9 @@ func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) WrapsSet() *bool {
 func NewManagedInstanceAwsNetworkInterfaceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedInstanceAwsNetworkInterfaceList {
 	_init_.Initialize()
 
+	if err := validateNewManagedInstanceAwsNetworkInterfaceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ManagedInstanceAwsNetworkInterfaceList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewManagedInstanceAwsNetworkInterfaceList_Override(m ManagedInstanceAwsNetw
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) ComputeFqn() *string 
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) Get(index *float64) ManagedInstanceAwsNetworkInterfaceOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ManagedInstanceAwsNetworkInterfaceOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) Get(index *float64) M
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

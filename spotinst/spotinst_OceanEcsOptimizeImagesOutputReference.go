@@ -221,6 +221,9 @@ func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) TimeWindowsInput() *[]
 func NewOceanEcsOptimizeImagesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanEcsOptimizeImagesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanEcsOptimizeImagesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanEcsOptimizeImagesOutputReference{}
 
 	_jsii_.Create(
@@ -242,7 +245,10 @@ func NewOceanEcsOptimizeImagesOutputReference_Override(o OceanEcsOptimizeImagesO
 	)
 }
 
-func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -250,7 +256,10 @@ func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -258,7 +267,10 @@ func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetInternalValue(val *OceanEcsOptimizeImages) {
+func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference)SetInternalValue(val *OceanEcsOptimizeImages) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -266,7 +278,10 @@ func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetPerformAt(val *string) {
+func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference)SetPerformAt(val *string) {
+	if err := j.validateSetPerformAtParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"performAt",
@@ -274,7 +289,10 @@ func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetPerformAt(val *stri
 	)
 }
 
-func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetShouldOptimizeEcsAmi(val interface{}) {
+func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference)SetShouldOptimizeEcsAmi(val interface{}) {
+	if err := j.validateSetShouldOptimizeEcsAmiParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shouldOptimizeEcsAmi",
@@ -282,7 +300,10 @@ func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetShouldOptimizeEcsAm
 	)
 }
 
-func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -290,7 +311,10 @@ func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -298,7 +322,10 @@ func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference) SetTimeWindows(val *[]*string) {
+func (j *jsiiProxy_OceanEcsOptimizeImagesOutputReference)SetTimeWindows(val *[]*string) {
+	if err := j.validateSetTimeWindowsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeWindows",
@@ -320,6 +347,9 @@ func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -333,6 +363,9 @@ func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetAnyMapAttribute(ter
 }
 
 func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -346,6 +379,9 @@ func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetBooleanAttribute(te
 }
 
 func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -359,6 +395,9 @@ func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetBooleanMapAttribute
 }
 
 func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -372,6 +411,9 @@ func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetListAttribute(terra
 }
 
 func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -385,6 +427,9 @@ func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetNumberAttribute(ter
 }
 
 func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -398,6 +443,9 @@ func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetNumberListAttribute
 }
 
 func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -411,6 +459,9 @@ func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetNumberMapAttribute(
 }
 
 func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -424,6 +475,9 @@ func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetStringAttribute(ter
 }
 
 func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -450,6 +504,9 @@ func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) InterpolationAsList() 
 }
 
 func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -471,6 +528,9 @@ func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) ResetTimeWindows() {
 }
 
 func (o *jsiiProxy_OceanEcsOptimizeImagesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

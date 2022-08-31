@@ -1129,6 +1129,9 @@ func (j *jsiiProxy_ElastigroupGcp) UnhealthyDurationInput() *float64 {
 func NewElastigroupGcp(scope constructs.Construct, id *string, config *ElastigroupGcpConfig) ElastigroupGcp {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGcpParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGcp{}
 
 	_jsii_.Create(
@@ -1151,7 +1154,10 @@ func NewElastigroupGcp_Override(e ElastigroupGcp, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetAutoHealing(val interface{}) {
+func (j *jsiiProxy_ElastigroupGcp)SetAutoHealing(val interface{}) {
+	if err := j.validateSetAutoHealingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoHealing",
@@ -1159,7 +1165,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetAutoHealing(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetAvailabilityZones(val *[]*string) {
+func (j *jsiiProxy_ElastigroupGcp)SetAvailabilityZones(val *[]*string) {
+	if err := j.validateSetAvailabilityZonesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availabilityZones",
@@ -1167,7 +1176,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetAvailabilityZones(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetConnection(val interface{}) {
+func (j *jsiiProxy_ElastigroupGcp)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1175,7 +1187,7 @@ func (j *jsiiProxy_ElastigroupGcp) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetCount(val *float64) {
+func (j *jsiiProxy_ElastigroupGcp)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1183,7 +1195,7 @@ func (j *jsiiProxy_ElastigroupGcp) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ElastigroupGcp)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1191,7 +1203,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetDescription(val *string) {
+func (j *jsiiProxy_ElastigroupGcp)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -1199,7 +1214,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetDesiredCapacity(val *float64) {
+func (j *jsiiProxy_ElastigroupGcp)SetDesiredCapacity(val *float64) {
+	if err := j.validateSetDesiredCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"desiredCapacity",
@@ -1207,7 +1225,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetDesiredCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetDrainingTimeout(val *float64) {
+func (j *jsiiProxy_ElastigroupGcp)SetDrainingTimeout(val *float64) {
+	if err := j.validateSetDrainingTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"drainingTimeout",
@@ -1215,7 +1236,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetDrainingTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetFallbackToOndemand(val interface{}) {
+func (j *jsiiProxy_ElastigroupGcp)SetFallbackToOndemand(val interface{}) {
+	if err := j.validateSetFallbackToOndemandParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fallbackToOndemand",
@@ -1223,7 +1247,7 @@ func (j *jsiiProxy_ElastigroupGcp) SetFallbackToOndemand(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ElastigroupGcp)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1231,7 +1255,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetHealthCheckGracePeriod(val *float64) {
+func (j *jsiiProxy_ElastigroupGcp)SetHealthCheckGracePeriod(val *float64) {
+	if err := j.validateSetHealthCheckGracePeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"healthCheckGracePeriod",
@@ -1239,7 +1266,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetHealthCheckGracePeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetHealthCheckType(val *string) {
+func (j *jsiiProxy_ElastigroupGcp)SetHealthCheckType(val *string) {
+	if err := j.validateSetHealthCheckTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"healthCheckType",
@@ -1247,7 +1277,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetHealthCheckType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetId(val *string) {
+func (j *jsiiProxy_ElastigroupGcp)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1255,7 +1288,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetInstanceTypesOndemand(val *string) {
+func (j *jsiiProxy_ElastigroupGcp)SetInstanceTypesOndemand(val *string) {
+	if err := j.validateSetInstanceTypesOndemandParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceTypesOndemand",
@@ -1263,7 +1299,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetInstanceTypesOndemand(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetInstanceTypesPreemptible(val *[]*string) {
+func (j *jsiiProxy_ElastigroupGcp)SetInstanceTypesPreemptible(val *[]*string) {
+	if err := j.validateSetInstanceTypesPreemptibleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceTypesPreemptible",
@@ -1271,7 +1310,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetInstanceTypesPreemptible(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetIpForwarding(val interface{}) {
+func (j *jsiiProxy_ElastigroupGcp)SetIpForwarding(val interface{}) {
+	if err := j.validateSetIpForwardingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ipForwarding",
@@ -1279,7 +1321,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetIpForwarding(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ElastigroupGcp)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1287,7 +1332,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetMaxSize(val *float64) {
+func (j *jsiiProxy_ElastigroupGcp)SetMaxSize(val *float64) {
+	if err := j.validateSetMaxSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxSize",
@@ -1295,7 +1343,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetMaxSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetMinSize(val *float64) {
+func (j *jsiiProxy_ElastigroupGcp)SetMinSize(val *float64) {
+	if err := j.validateSetMinSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minSize",
@@ -1303,7 +1354,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetMinSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetName(val *string) {
+func (j *jsiiProxy_ElastigroupGcp)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1311,7 +1365,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetOndemandCount(val *float64) {
+func (j *jsiiProxy_ElastigroupGcp)SetOndemandCount(val *float64) {
+	if err := j.validateSetOndemandCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ondemandCount",
@@ -1319,7 +1376,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetOndemandCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetPreemptiblePercentage(val *float64) {
+func (j *jsiiProxy_ElastigroupGcp)SetPreemptiblePercentage(val *float64) {
+	if err := j.validateSetPreemptiblePercentageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"preemptiblePercentage",
@@ -1327,7 +1387,7 @@ func (j *jsiiProxy_ElastigroupGcp) SetPreemptiblePercentage(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ElastigroupGcp)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1335,7 +1395,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ElastigroupGcp)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1343,7 +1406,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetProvisioningModel(val *string) {
+func (j *jsiiProxy_ElastigroupGcp)SetProvisioningModel(val *string) {
+	if err := j.validateSetProvisioningModelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioningModel",
@@ -1351,7 +1417,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetProvisioningModel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetServiceAccount(val *string) {
+func (j *jsiiProxy_ElastigroupGcp)SetServiceAccount(val *string) {
+	if err := j.validateSetServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serviceAccount",
@@ -1359,7 +1428,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetServiceAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetShutdownScript(val *string) {
+func (j *jsiiProxy_ElastigroupGcp)SetShutdownScript(val *string) {
+	if err := j.validateSetShutdownScriptParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shutdownScript",
@@ -1367,7 +1439,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetShutdownScript(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetStartupScript(val *string) {
+func (j *jsiiProxy_ElastigroupGcp)SetStartupScript(val *string) {
+	if err := j.validateSetStartupScriptParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"startupScript",
@@ -1375,7 +1450,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetStartupScript(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetTags(val *[]*string) {
+func (j *jsiiProxy_ElastigroupGcp)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -1383,7 +1461,10 @@ func (j *jsiiProxy_ElastigroupGcp) SetTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcp) SetUnhealthyDuration(val *float64) {
+func (j *jsiiProxy_ElastigroupGcp)SetUnhealthyDuration(val *float64) {
+	if err := j.validateSetUnhealthyDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"unhealthyDuration",
@@ -1411,6 +1492,9 @@ func (j *jsiiProxy_ElastigroupGcp) SetUnhealthyDuration(val *float64) {
 func ElastigroupGcp_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateElastigroupGcp_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1435,6 +1519,9 @@ func ElastigroupGcp_TfResourceType() *string {
 }
 
 func (e *jsiiProxy_ElastigroupGcp) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
@@ -1443,6 +1530,9 @@ func (e *jsiiProxy_ElastigroupGcp) AddOverride(path *string, value interface{}) 
 }
 
 func (e *jsiiProxy_ElastigroupGcp) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1456,6 +1546,9 @@ func (e *jsiiProxy_ElastigroupGcp) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (e *jsiiProxy_ElastigroupGcp) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1469,6 +1562,9 @@ func (e *jsiiProxy_ElastigroupGcp) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (e *jsiiProxy_ElastigroupGcp) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1482,6 +1578,9 @@ func (e *jsiiProxy_ElastigroupGcp) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (e *jsiiProxy_ElastigroupGcp) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1495,6 +1594,9 @@ func (e *jsiiProxy_ElastigroupGcp) GetListAttribute(terraformAttribute *string) 
 }
 
 func (e *jsiiProxy_ElastigroupGcp) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1508,6 +1610,9 @@ func (e *jsiiProxy_ElastigroupGcp) GetNumberAttribute(terraformAttribute *string
 }
 
 func (e *jsiiProxy_ElastigroupGcp) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1521,6 +1626,9 @@ func (e *jsiiProxy_ElastigroupGcp) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (e *jsiiProxy_ElastigroupGcp) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1534,6 +1642,9 @@ func (e *jsiiProxy_ElastigroupGcp) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (e *jsiiProxy_ElastigroupGcp) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1547,6 +1658,9 @@ func (e *jsiiProxy_ElastigroupGcp) GetStringAttribute(terraformAttribute *string
 }
 
 func (e *jsiiProxy_ElastigroupGcp) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1560,6 +1674,9 @@ func (e *jsiiProxy_ElastigroupGcp) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (e *jsiiProxy_ElastigroupGcp) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1573,6 +1690,9 @@ func (e *jsiiProxy_ElastigroupGcp) InterpolationForAttribute(terraformAttribute 
 }
 
 func (e *jsiiProxy_ElastigroupGcp) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
@@ -1581,6 +1701,9 @@ func (e *jsiiProxy_ElastigroupGcp) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutBackendServices(value interface{}) {
+	if err := e.validatePutBackendServicesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putBackendServices",
@@ -1589,6 +1712,9 @@ func (e *jsiiProxy_ElastigroupGcp) PutBackendServices(value interface{}) {
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutDisk(value interface{}) {
+	if err := e.validatePutDiskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putDisk",
@@ -1597,6 +1723,9 @@ func (e *jsiiProxy_ElastigroupGcp) PutDisk(value interface{}) {
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutGpu(value interface{}) {
+	if err := e.validatePutGpuParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putGpu",
@@ -1605,6 +1734,9 @@ func (e *jsiiProxy_ElastigroupGcp) PutGpu(value interface{}) {
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutInstanceTypesCustom(value interface{}) {
+	if err := e.validatePutInstanceTypesCustomParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putInstanceTypesCustom",
@@ -1613,6 +1745,9 @@ func (e *jsiiProxy_ElastigroupGcp) PutInstanceTypesCustom(value interface{}) {
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutIntegrationDockerSwarm(value *ElastigroupGcpIntegrationDockerSwarm) {
+	if err := e.validatePutIntegrationDockerSwarmParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putIntegrationDockerSwarm",
@@ -1621,6 +1756,9 @@ func (e *jsiiProxy_ElastigroupGcp) PutIntegrationDockerSwarm(value *ElastigroupG
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutIntegrationGke(value *ElastigroupGcpIntegrationGke) {
+	if err := e.validatePutIntegrationGkeParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putIntegrationGke",
@@ -1629,6 +1767,9 @@ func (e *jsiiProxy_ElastigroupGcp) PutIntegrationGke(value *ElastigroupGcpIntegr
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutLabels(value interface{}) {
+	if err := e.validatePutLabelsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putLabels",
@@ -1637,6 +1778,9 @@ func (e *jsiiProxy_ElastigroupGcp) PutLabels(value interface{}) {
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutMetadata(value interface{}) {
+	if err := e.validatePutMetadataParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putMetadata",
@@ -1645,6 +1789,9 @@ func (e *jsiiProxy_ElastigroupGcp) PutMetadata(value interface{}) {
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutNetworkInterface(value interface{}) {
+	if err := e.validatePutNetworkInterfaceParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putNetworkInterface",
@@ -1653,6 +1800,9 @@ func (e *jsiiProxy_ElastigroupGcp) PutNetworkInterface(value interface{}) {
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutScalingDownPolicy(value interface{}) {
+	if err := e.validatePutScalingDownPolicyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putScalingDownPolicy",
@@ -1661,6 +1811,9 @@ func (e *jsiiProxy_ElastigroupGcp) PutScalingDownPolicy(value interface{}) {
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutScalingUpPolicy(value interface{}) {
+	if err := e.validatePutScalingUpPolicyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putScalingUpPolicy",
@@ -1669,6 +1822,9 @@ func (e *jsiiProxy_ElastigroupGcp) PutScalingUpPolicy(value interface{}) {
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutScheduledTask(value interface{}) {
+	if err := e.validatePutScheduledTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putScheduledTask",
@@ -1677,6 +1833,9 @@ func (e *jsiiProxy_ElastigroupGcp) PutScheduledTask(value interface{}) {
 }
 
 func (e *jsiiProxy_ElastigroupGcp) PutSubnets(value interface{}) {
+	if err := e.validatePutSubnetsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putSubnets",

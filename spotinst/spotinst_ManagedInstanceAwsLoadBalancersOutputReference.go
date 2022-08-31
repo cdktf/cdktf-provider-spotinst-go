@@ -318,6 +318,9 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) TypeInput() *
 func NewManagedInstanceAwsLoadBalancersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ManagedInstanceAwsLoadBalancersOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewManagedInstanceAwsLoadBalancersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference{}
 
 	_jsii_.Create(
@@ -339,7 +342,10 @@ func NewManagedInstanceAwsLoadBalancersOutputReference_Override(m ManagedInstanc
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetArn(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetArn(val *string) {
+	if err := j.validateSetArnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"arn",
@@ -347,7 +353,10 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetArn(val *s
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetAutoWeight(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetAutoWeight(val interface{}) {
+	if err := j.validateSetAutoWeightParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoWeight",
@@ -355,7 +364,10 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetAutoWeight
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetAzAwareness(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetAzAwareness(val interface{}) {
+	if err := j.validateSetAzAwarenessParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"azAwareness",
@@ -363,7 +375,10 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetAzAwarenes
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetBalancerId(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetBalancerId(val *string) {
+	if err := j.validateSetBalancerIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"balancerId",
@@ -371,7 +386,10 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetBalancerId
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -379,7 +397,10 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -387,7 +408,10 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -395,7 +419,10 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetName(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -403,7 +430,10 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetName(val *
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetTargetSetId(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetTargetSetId(val *string) {
+	if err := j.validateSetTargetSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"targetSetId",
@@ -411,7 +441,10 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetTargetSetI
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -419,7 +452,10 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -427,7 +463,10 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) SetType(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -449,6 +488,9 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) ComputeFqn() 
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -462,6 +504,9 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetAnyMapAttr
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -475,6 +520,9 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetBooleanAtt
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -488,6 +536,9 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetBooleanMap
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -501,6 +552,9 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetListAttrib
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -514,6 +568,9 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetNumberAttr
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -527,6 +584,9 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetNumberList
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -540,6 +600,9 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetNumberMapA
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -553,6 +616,9 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetStringAttr
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -579,6 +645,9 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) Interpolation
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -640,6 +709,9 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) ResetTargetSe
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

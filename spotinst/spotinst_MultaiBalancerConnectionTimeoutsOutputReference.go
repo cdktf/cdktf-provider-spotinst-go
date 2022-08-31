@@ -199,6 +199,9 @@ func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) TerraformRes
 func NewMultaiBalancerConnectionTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MultaiBalancerConnectionTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMultaiBalancerConnectionTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewMultaiBalancerConnectionTimeoutsOutputReference_Override(m MultaiBalance
 	)
 }
 
-func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetDraining(val *float64) {
+func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference)SetDraining(val *float64) {
+	if err := j.validateSetDrainingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"draining",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetDraining(
 	)
 }
 
-func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetIdle(val *float64) {
+func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference)SetIdle(val *float64) {
+	if err := j.validateSetIdleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"idle",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetIdle(val 
 	)
 }
 
-func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetInternalValue(val *MultaiBalancerConnectionTimeouts) {
+func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference)SetInternalValue(val *MultaiBalancerConnectionTimeouts) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) ComputeFqn()
 }
 
 func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetAnyMapAtt
 }
 
 func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetBooleanAt
 }
 
 func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetBooleanMa
 }
 
 func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetListAttri
 }
 
 func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetNumberAtt
 }
 
 func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetNumberLis
 }
 
 func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetNumberMap
 }
 
 func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetStringAtt
 }
 
 func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) Interpolatio
 }
 
 func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) ResetIdle() 
 }
 
 func (m *jsiiProxy_MultaiBalancerConnectionTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

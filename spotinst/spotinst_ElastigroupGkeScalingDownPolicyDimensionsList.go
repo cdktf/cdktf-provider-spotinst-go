@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) WrapsSet() *bo
 func NewElastigroupGkeScalingDownPolicyDimensionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupGkeScalingDownPolicyDimensionsList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGkeScalingDownPolicyDimensionsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupGkeScalingDownPolicyDimensionsList_Override(e ElastigroupGkeS
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) ComputeFqn() *
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) Get(index *float64) ElastigroupGkeScalingDownPolicyDimensionsOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupGkeScalingDownPolicyDimensionsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) Get(index *flo
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

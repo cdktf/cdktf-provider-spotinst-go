@@ -199,6 +199,9 @@ func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) Terr
 func NewOceanGkeLaunchSpecShieldedInstanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanGkeLaunchSpecShieldedInstanceConfigOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanGkeLaunchSpecShieldedInstanceConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewOceanGkeLaunchSpecShieldedInstanceConfigOutputReference_Override(o Ocean
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetEnableIntegrityMonitoring(val interface{}) {
+func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference)SetEnableIntegrityMonitoring(val interface{}) {
+	if err := j.validateSetEnableIntegrityMonitoringParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableIntegrityMonitoring",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetE
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetEnableSecureBoot(val interface{}) {
+func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference)SetEnableSecureBoot(val interface{}) {
+	if err := j.validateSetEnableSecureBootParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableSecureBoot",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetE
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetInternalValue(val *OceanGkeLaunchSpecShieldedInstanceConfig) {
+func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference)SetInternalValue(val *OceanGkeLaunchSpecShieldedInstanceConfig) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) Comp
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetA
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetB
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetB
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetL
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetN
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetN
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetN
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetS
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) Inte
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) Rese
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecShieldedInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

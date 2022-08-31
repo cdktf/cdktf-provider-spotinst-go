@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAwsSignalList) WrapsSet() *bool {
 func NewElastigroupAwsSignalList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAwsSignalList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsSignalListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsSignalList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAwsSignalList_Override(e ElastigroupAwsSignalList, terraformR
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsSignalList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsSignalList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAwsSignalList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsSignalList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsSignalList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAwsSignalList) SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsSignalList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsSignalList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAwsSignalList) SetTerraformResource(val cdktf.IInt
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsSignalList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsSignalList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAwsSignalList) ComputeFqn() *string {
 }
 
 func (e *jsiiProxy_ElastigroupAwsSignalList) Get(index *float64) ElastigroupAwsSignalOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAwsSignalOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAwsSignalList) Get(index *float64) ElastigroupAwsS
 }
 
 func (e *jsiiProxy_ElastigroupAwsSignalList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

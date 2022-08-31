@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanEcsLaunchSpecTagsList) WrapsSet() *bool {
 func NewOceanEcsLaunchSpecTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanEcsLaunchSpecTagsList {
 	_init_.Initialize()
 
+	if err := validateNewOceanEcsLaunchSpecTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanEcsLaunchSpecTagsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanEcsLaunchSpecTagsList_Override(o OceanEcsLaunchSpecTagsList, terraf
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecTagsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanEcsLaunchSpecTagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecTagsList) SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanEcsLaunchSpecTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecTagsList) SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanEcsLaunchSpecTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecTagsList) SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanEcsLaunchSpecTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecTagsList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecTagsList) Get(index *float64) OceanEcsLaunchSpecTagsOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanEcsLaunchSpecTagsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecTagsList) Get(index *float64) OceanEcsLaunc
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

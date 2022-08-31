@@ -316,6 +316,9 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) TerraformResource() 
 func NewMrscalerAwsScheduledTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MrscalerAwsScheduledTaskOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsScheduledTaskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsScheduledTaskOutputReference{}
 
 	_jsii_.Create(
@@ -337,7 +340,10 @@ func NewMrscalerAwsScheduledTaskOutputReference_Override(m MrscalerAwsScheduledT
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -345,7 +351,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -353,7 +362,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetCron(val *string) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference)SetCron(val *string) {
+	if err := j.validateSetCronParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cron",
@@ -361,7 +373,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetCron(val *string)
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetDesiredCapacity(val *string) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference)SetDesiredCapacity(val *string) {
+	if err := j.validateSetDesiredCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"desiredCapacity",
@@ -369,7 +384,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetDesiredCapacity(v
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetInstanceGroupType(val *string) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference)SetInstanceGroupType(val *string) {
+	if err := j.validateSetInstanceGroupTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceGroupType",
@@ -377,7 +395,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetInstanceGroupType
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -385,7 +406,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -393,7 +417,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetIsEnabled(val int
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetMaxCapacity(val *string) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference)SetMaxCapacity(val *string) {
+	if err := j.validateSetMaxCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxCapacity",
@@ -401,7 +428,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetMaxCapacity(val *
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetMinCapacity(val *string) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference)SetMinCapacity(val *string) {
+	if err := j.validateSetMinCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minCapacity",
@@ -409,7 +439,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetMinCapacity(val *
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetTaskType(val *string) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference)SetTaskType(val *string) {
+	if err := j.validateSetTaskTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskType",
@@ -417,7 +450,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetTaskType(val *str
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -425,7 +461,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -447,6 +486,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) ComputeFqn() *string
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -460,6 +502,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetAnyMapAttribute(t
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -473,6 +518,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetBooleanAttribute(
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -486,6 +534,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetBooleanMapAttribu
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -499,6 +550,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetListAttribute(ter
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -512,6 +566,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetNumberAttribute(t
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -525,6 +582,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetNumberListAttribu
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -538,6 +598,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetNumberMapAttribut
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -551,6 +614,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetStringAttribute(t
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -577,6 +643,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) InterpolationAsList(
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -622,6 +691,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) ResetMinCapacity() {
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

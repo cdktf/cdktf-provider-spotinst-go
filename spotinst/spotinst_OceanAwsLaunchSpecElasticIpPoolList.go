@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList) WrapsSet() *bool {
 func NewOceanAwsLaunchSpecElasticIpPoolList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAwsLaunchSpecElasticIpPoolList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsLaunchSpecElasticIpPoolListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAwsLaunchSpecElasticIpPoolList_Override(o OceanAwsLaunchSpecElastic
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList) Get(index *float64) OceanAwsLaunchSpecElasticIpPoolOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAwsLaunchSpecElasticIpPoolOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList) Get(index *float64) Ocea
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

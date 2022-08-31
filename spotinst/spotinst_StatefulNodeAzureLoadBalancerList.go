@@ -111,6 +111,9 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerList) WrapsSet() *bool {
 func NewStatefulNodeAzureLoadBalancerList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulNodeAzureLoadBalancerList {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureLoadBalancerListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureLoadBalancerList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewStatefulNodeAzureLoadBalancerList_Override(s StatefulNodeAzureLoadBalanc
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerList) Get(index *float64) StatefulNodeAzureLoadBalancerOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns StatefulNodeAzureLoadBalancerOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerList) Get(index *float64) Statef
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

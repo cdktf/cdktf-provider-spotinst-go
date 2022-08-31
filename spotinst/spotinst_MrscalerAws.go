@@ -1740,6 +1740,9 @@ func (j *jsiiProxy_MrscalerAws) VisibleToAllUsersInput() interface{} {
 func NewMrscalerAws(scope constructs.Construct, id *string, config *MrscalerAwsConfig) MrscalerAws {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAws{}
 
 	_jsii_.Create(
@@ -1762,7 +1765,10 @@ func NewMrscalerAws_Override(m MrscalerAws, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetAdditionalInfo(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetAdditionalInfo(val *string) {
+	if err := j.validateSetAdditionalInfoParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"additionalInfo",
@@ -1770,7 +1776,10 @@ func (j *jsiiProxy_MrscalerAws) SetAdditionalInfo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetAdditionalPrimarySecurityGroups(val *[]*string) {
+func (j *jsiiProxy_MrscalerAws)SetAdditionalPrimarySecurityGroups(val *[]*string) {
+	if err := j.validateSetAdditionalPrimarySecurityGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"additionalPrimarySecurityGroups",
@@ -1778,7 +1787,10 @@ func (j *jsiiProxy_MrscalerAws) SetAdditionalPrimarySecurityGroups(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetAdditionalReplicaSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_MrscalerAws)SetAdditionalReplicaSecurityGroups(val *[]*string) {
+	if err := j.validateSetAdditionalReplicaSecurityGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"additionalReplicaSecurityGroups",
@@ -1786,7 +1798,10 @@ func (j *jsiiProxy_MrscalerAws) SetAdditionalReplicaSecurityGroups(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetAvailabilityZones(val *[]*string) {
+func (j *jsiiProxy_MrscalerAws)SetAvailabilityZones(val *[]*string) {
+	if err := j.validateSetAvailabilityZonesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availabilityZones",
@@ -1794,7 +1809,10 @@ func (j *jsiiProxy_MrscalerAws) SetAvailabilityZones(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetClusterId(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetClusterId(val *string) {
+	if err := j.validateSetClusterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterId",
@@ -1802,7 +1820,10 @@ func (j *jsiiProxy_MrscalerAws) SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetConnection(val interface{}) {
+func (j *jsiiProxy_MrscalerAws)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1810,7 +1831,10 @@ func (j *jsiiProxy_MrscalerAws) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetCoreDesiredCapacity(val *float64) {
+func (j *jsiiProxy_MrscalerAws)SetCoreDesiredCapacity(val *float64) {
+	if err := j.validateSetCoreDesiredCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coreDesiredCapacity",
@@ -1818,7 +1842,10 @@ func (j *jsiiProxy_MrscalerAws) SetCoreDesiredCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetCoreEbsOptimized(val interface{}) {
+func (j *jsiiProxy_MrscalerAws)SetCoreEbsOptimized(val interface{}) {
+	if err := j.validateSetCoreEbsOptimizedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coreEbsOptimized",
@@ -1826,7 +1853,10 @@ func (j *jsiiProxy_MrscalerAws) SetCoreEbsOptimized(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetCoreInstanceTypes(val *[]*string) {
+func (j *jsiiProxy_MrscalerAws)SetCoreInstanceTypes(val *[]*string) {
+	if err := j.validateSetCoreInstanceTypesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coreInstanceTypes",
@@ -1834,7 +1864,10 @@ func (j *jsiiProxy_MrscalerAws) SetCoreInstanceTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetCoreLifecycle(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetCoreLifecycle(val *string) {
+	if err := j.validateSetCoreLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coreLifecycle",
@@ -1842,7 +1875,10 @@ func (j *jsiiProxy_MrscalerAws) SetCoreLifecycle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetCoreMaxSize(val *float64) {
+func (j *jsiiProxy_MrscalerAws)SetCoreMaxSize(val *float64) {
+	if err := j.validateSetCoreMaxSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coreMaxSize",
@@ -1850,7 +1886,10 @@ func (j *jsiiProxy_MrscalerAws) SetCoreMaxSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetCoreMinSize(val *float64) {
+func (j *jsiiProxy_MrscalerAws)SetCoreMinSize(val *float64) {
+	if err := j.validateSetCoreMinSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coreMinSize",
@@ -1858,7 +1897,10 @@ func (j *jsiiProxy_MrscalerAws) SetCoreMinSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetCoreUnit(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetCoreUnit(val *string) {
+	if err := j.validateSetCoreUnitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coreUnit",
@@ -1866,7 +1908,7 @@ func (j *jsiiProxy_MrscalerAws) SetCoreUnit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetCount(val *float64) {
+func (j *jsiiProxy_MrscalerAws)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1874,7 +1916,10 @@ func (j *jsiiProxy_MrscalerAws) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetCustomAmiId(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetCustomAmiId(val *string) {
+	if err := j.validateSetCustomAmiIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customAmiId",
@@ -1882,7 +1927,7 @@ func (j *jsiiProxy_MrscalerAws) SetCustomAmiId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MrscalerAws)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1890,7 +1935,10 @@ func (j *jsiiProxy_MrscalerAws) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetDescription(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -1898,7 +1946,10 @@ func (j *jsiiProxy_MrscalerAws) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetEbsRootVolumeSize(val *float64) {
+func (j *jsiiProxy_MrscalerAws)SetEbsRootVolumeSize(val *float64) {
+	if err := j.validateSetEbsRootVolumeSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ebsRootVolumeSize",
@@ -1906,7 +1957,10 @@ func (j *jsiiProxy_MrscalerAws) SetEbsRootVolumeSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetEc2KeyName(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetEc2KeyName(val *string) {
+	if err := j.validateSetEc2KeyNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ec2KeyName",
@@ -1914,7 +1968,10 @@ func (j *jsiiProxy_MrscalerAws) SetEc2KeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetExposeClusterId(val interface{}) {
+func (j *jsiiProxy_MrscalerAws)SetExposeClusterId(val interface{}) {
+	if err := j.validateSetExposeClusterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"exposeClusterId",
@@ -1922,7 +1979,7 @@ func (j *jsiiProxy_MrscalerAws) SetExposeClusterId(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MrscalerAws)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1930,7 +1987,10 @@ func (j *jsiiProxy_MrscalerAws) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetId(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1938,7 +1998,10 @@ func (j *jsiiProxy_MrscalerAws) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetJobFlowRole(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetJobFlowRole(val *string) {
+	if err := j.validateSetJobFlowRoleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jobFlowRole",
@@ -1946,7 +2009,10 @@ func (j *jsiiProxy_MrscalerAws) SetJobFlowRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetKeepJobFlowAlive(val interface{}) {
+func (j *jsiiProxy_MrscalerAws)SetKeepJobFlowAlive(val interface{}) {
+	if err := j.validateSetKeepJobFlowAliveParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keepJobFlowAlive",
@@ -1954,7 +2020,10 @@ func (j *jsiiProxy_MrscalerAws) SetKeepJobFlowAlive(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MrscalerAws)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1962,7 +2031,10 @@ func (j *jsiiProxy_MrscalerAws) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetLogUri(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetLogUri(val *string) {
+	if err := j.validateSetLogUriParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"logUri",
@@ -1970,7 +2042,10 @@ func (j *jsiiProxy_MrscalerAws) SetLogUri(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetManagedPrimarySecurityGroup(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetManagedPrimarySecurityGroup(val *string) {
+	if err := j.validateSetManagedPrimarySecurityGroupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"managedPrimarySecurityGroup",
@@ -1978,7 +2053,10 @@ func (j *jsiiProxy_MrscalerAws) SetManagedPrimarySecurityGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetManagedReplicaSecurityGroup(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetManagedReplicaSecurityGroup(val *string) {
+	if err := j.validateSetManagedReplicaSecurityGroupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"managedReplicaSecurityGroup",
@@ -1986,7 +2064,10 @@ func (j *jsiiProxy_MrscalerAws) SetManagedReplicaSecurityGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetMasterEbsOptimized(val interface{}) {
+func (j *jsiiProxy_MrscalerAws)SetMasterEbsOptimized(val interface{}) {
+	if err := j.validateSetMasterEbsOptimizedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"masterEbsOptimized",
@@ -1994,7 +2075,10 @@ func (j *jsiiProxy_MrscalerAws) SetMasterEbsOptimized(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetMasterInstanceTypes(val *[]*string) {
+func (j *jsiiProxy_MrscalerAws)SetMasterInstanceTypes(val *[]*string) {
+	if err := j.validateSetMasterInstanceTypesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"masterInstanceTypes",
@@ -2002,7 +2086,10 @@ func (j *jsiiProxy_MrscalerAws) SetMasterInstanceTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetMasterLifecycle(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetMasterLifecycle(val *string) {
+	if err := j.validateSetMasterLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"masterLifecycle",
@@ -2010,7 +2097,10 @@ func (j *jsiiProxy_MrscalerAws) SetMasterLifecycle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetMasterTarget(val *float64) {
+func (j *jsiiProxy_MrscalerAws)SetMasterTarget(val *float64) {
+	if err := j.validateSetMasterTargetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"masterTarget",
@@ -2018,7 +2108,10 @@ func (j *jsiiProxy_MrscalerAws) SetMasterTarget(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetName(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -2026,7 +2119,7 @@ func (j *jsiiProxy_MrscalerAws) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MrscalerAws)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -2034,7 +2127,10 @@ func (j *jsiiProxy_MrscalerAws) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MrscalerAws)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -2042,7 +2138,10 @@ func (j *jsiiProxy_MrscalerAws) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetRegion(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -2050,7 +2149,10 @@ func (j *jsiiProxy_MrscalerAws) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetReleaseLabel(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetReleaseLabel(val *string) {
+	if err := j.validateSetReleaseLabelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"releaseLabel",
@@ -2058,7 +2160,10 @@ func (j *jsiiProxy_MrscalerAws) SetReleaseLabel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetRepoUpgradeOnBoot(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetRepoUpgradeOnBoot(val *string) {
+	if err := j.validateSetRepoUpgradeOnBootParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repoUpgradeOnBoot",
@@ -2066,7 +2171,10 @@ func (j *jsiiProxy_MrscalerAws) SetRepoUpgradeOnBoot(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetRetries(val *float64) {
+func (j *jsiiProxy_MrscalerAws)SetRetries(val *float64) {
+	if err := j.validateSetRetriesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"retries",
@@ -2074,7 +2182,10 @@ func (j *jsiiProxy_MrscalerAws) SetRetries(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetSecurityConfig(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetSecurityConfig(val *string) {
+	if err := j.validateSetSecurityConfigParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityConfig",
@@ -2082,7 +2193,10 @@ func (j *jsiiProxy_MrscalerAws) SetSecurityConfig(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetServiceAccessSecurityGroup(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetServiceAccessSecurityGroup(val *string) {
+	if err := j.validateSetServiceAccessSecurityGroupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serviceAccessSecurityGroup",
@@ -2090,7 +2204,10 @@ func (j *jsiiProxy_MrscalerAws) SetServiceAccessSecurityGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetServiceRole(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetServiceRole(val *string) {
+	if err := j.validateSetServiceRoleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serviceRole",
@@ -2098,7 +2215,10 @@ func (j *jsiiProxy_MrscalerAws) SetServiceRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetStrategy(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetStrategy(val *string) {
+	if err := j.validateSetStrategyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"strategy",
@@ -2106,7 +2226,10 @@ func (j *jsiiProxy_MrscalerAws) SetStrategy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetTaskDesiredCapacity(val *float64) {
+func (j *jsiiProxy_MrscalerAws)SetTaskDesiredCapacity(val *float64) {
+	if err := j.validateSetTaskDesiredCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskDesiredCapacity",
@@ -2114,7 +2237,10 @@ func (j *jsiiProxy_MrscalerAws) SetTaskDesiredCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetTaskEbsOptimized(val interface{}) {
+func (j *jsiiProxy_MrscalerAws)SetTaskEbsOptimized(val interface{}) {
+	if err := j.validateSetTaskEbsOptimizedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskEbsOptimized",
@@ -2122,7 +2248,10 @@ func (j *jsiiProxy_MrscalerAws) SetTaskEbsOptimized(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetTaskInstanceTypes(val *[]*string) {
+func (j *jsiiProxy_MrscalerAws)SetTaskInstanceTypes(val *[]*string) {
+	if err := j.validateSetTaskInstanceTypesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskInstanceTypes",
@@ -2130,7 +2259,10 @@ func (j *jsiiProxy_MrscalerAws) SetTaskInstanceTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetTaskLifecycle(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetTaskLifecycle(val *string) {
+	if err := j.validateSetTaskLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskLifecycle",
@@ -2138,7 +2270,10 @@ func (j *jsiiProxy_MrscalerAws) SetTaskLifecycle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetTaskMaxSize(val *float64) {
+func (j *jsiiProxy_MrscalerAws)SetTaskMaxSize(val *float64) {
+	if err := j.validateSetTaskMaxSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskMaxSize",
@@ -2146,7 +2281,10 @@ func (j *jsiiProxy_MrscalerAws) SetTaskMaxSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetTaskMinSize(val *float64) {
+func (j *jsiiProxy_MrscalerAws)SetTaskMinSize(val *float64) {
+	if err := j.validateSetTaskMinSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskMinSize",
@@ -2154,7 +2292,10 @@ func (j *jsiiProxy_MrscalerAws) SetTaskMinSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetTaskUnit(val *string) {
+func (j *jsiiProxy_MrscalerAws)SetTaskUnit(val *string) {
+	if err := j.validateSetTaskUnitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskUnit",
@@ -2162,7 +2303,10 @@ func (j *jsiiProxy_MrscalerAws) SetTaskUnit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetTerminationProtected(val interface{}) {
+func (j *jsiiProxy_MrscalerAws)SetTerminationProtected(val interface{}) {
+	if err := j.validateSetTerminationProtectedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terminationProtected",
@@ -2170,7 +2314,10 @@ func (j *jsiiProxy_MrscalerAws) SetTerminationProtected(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws) SetVisibleToAllUsers(val interface{}) {
+func (j *jsiiProxy_MrscalerAws)SetVisibleToAllUsers(val interface{}) {
+	if err := j.validateSetVisibleToAllUsersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"visibleToAllUsers",
@@ -2198,6 +2345,9 @@ func (j *jsiiProxy_MrscalerAws) SetVisibleToAllUsers(val interface{}) {
 func MrscalerAws_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMrscalerAws_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -2222,6 +2372,9 @@ func MrscalerAws_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MrscalerAws) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -2230,6 +2383,9 @@ func (m *jsiiProxy_MrscalerAws) AddOverride(path *string, value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -2243,6 +2399,9 @@ func (m *jsiiProxy_MrscalerAws) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (m *jsiiProxy_MrscalerAws) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -2256,6 +2415,9 @@ func (m *jsiiProxy_MrscalerAws) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MrscalerAws) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -2269,6 +2431,9 @@ func (m *jsiiProxy_MrscalerAws) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MrscalerAws) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -2282,6 +2447,9 @@ func (m *jsiiProxy_MrscalerAws) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (m *jsiiProxy_MrscalerAws) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -2295,6 +2463,9 @@ func (m *jsiiProxy_MrscalerAws) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (m *jsiiProxy_MrscalerAws) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -2308,6 +2479,9 @@ func (m *jsiiProxy_MrscalerAws) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MrscalerAws) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -2321,6 +2495,9 @@ func (m *jsiiProxy_MrscalerAws) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_MrscalerAws) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -2334,6 +2511,9 @@ func (m *jsiiProxy_MrscalerAws) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (m *jsiiProxy_MrscalerAws) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -2347,6 +2527,9 @@ func (m *jsiiProxy_MrscalerAws) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_MrscalerAws) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -2360,6 +2543,9 @@ func (m *jsiiProxy_MrscalerAws) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_MrscalerAws) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
@@ -2368,6 +2554,9 @@ func (m *jsiiProxy_MrscalerAws) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutApplications(value interface{}) {
+	if err := m.validatePutApplicationsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putApplications",
@@ -2376,6 +2565,9 @@ func (m *jsiiProxy_MrscalerAws) PutApplications(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutBootstrapActionsFile(value interface{}) {
+	if err := m.validatePutBootstrapActionsFileParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putBootstrapActionsFile",
@@ -2384,6 +2576,9 @@ func (m *jsiiProxy_MrscalerAws) PutBootstrapActionsFile(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutConfigurationsFile(value interface{}) {
+	if err := m.validatePutConfigurationsFileParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putConfigurationsFile",
@@ -2392,6 +2587,9 @@ func (m *jsiiProxy_MrscalerAws) PutConfigurationsFile(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutCoreEbsBlockDevice(value interface{}) {
+	if err := m.validatePutCoreEbsBlockDeviceParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putCoreEbsBlockDevice",
@@ -2400,6 +2598,9 @@ func (m *jsiiProxy_MrscalerAws) PutCoreEbsBlockDevice(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutCoreScalingDownPolicy(value interface{}) {
+	if err := m.validatePutCoreScalingDownPolicyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putCoreScalingDownPolicy",
@@ -2408,6 +2609,9 @@ func (m *jsiiProxy_MrscalerAws) PutCoreScalingDownPolicy(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutCoreScalingUpPolicy(value interface{}) {
+	if err := m.validatePutCoreScalingUpPolicyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putCoreScalingUpPolicy",
@@ -2416,6 +2620,9 @@ func (m *jsiiProxy_MrscalerAws) PutCoreScalingUpPolicy(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutInstanceWeights(value interface{}) {
+	if err := m.validatePutInstanceWeightsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putInstanceWeights",
@@ -2424,6 +2631,9 @@ func (m *jsiiProxy_MrscalerAws) PutInstanceWeights(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutMasterEbsBlockDevice(value interface{}) {
+	if err := m.validatePutMasterEbsBlockDeviceParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putMasterEbsBlockDevice",
@@ -2432,6 +2642,9 @@ func (m *jsiiProxy_MrscalerAws) PutMasterEbsBlockDevice(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutProvisioningTimeout(value *MrscalerAwsProvisioningTimeout) {
+	if err := m.validatePutProvisioningTimeoutParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putProvisioningTimeout",
@@ -2440,6 +2653,9 @@ func (m *jsiiProxy_MrscalerAws) PutProvisioningTimeout(value *MrscalerAwsProvisi
 }
 
 func (m *jsiiProxy_MrscalerAws) PutScheduledTask(value interface{}) {
+	if err := m.validatePutScheduledTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putScheduledTask",
@@ -2448,6 +2664,9 @@ func (m *jsiiProxy_MrscalerAws) PutScheduledTask(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutStepsFile(value interface{}) {
+	if err := m.validatePutStepsFileParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putStepsFile",
@@ -2456,6 +2675,9 @@ func (m *jsiiProxy_MrscalerAws) PutStepsFile(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutTags(value interface{}) {
+	if err := m.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTags",
@@ -2464,6 +2686,9 @@ func (m *jsiiProxy_MrscalerAws) PutTags(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutTaskEbsBlockDevice(value interface{}) {
+	if err := m.validatePutTaskEbsBlockDeviceParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTaskEbsBlockDevice",
@@ -2472,6 +2697,9 @@ func (m *jsiiProxy_MrscalerAws) PutTaskEbsBlockDevice(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutTaskScalingDownPolicy(value interface{}) {
+	if err := m.validatePutTaskScalingDownPolicyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTaskScalingDownPolicy",
@@ -2480,6 +2708,9 @@ func (m *jsiiProxy_MrscalerAws) PutTaskScalingDownPolicy(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutTaskScalingUpPolicy(value interface{}) {
+	if err := m.validatePutTaskScalingUpPolicyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTaskScalingUpPolicy",
@@ -2488,6 +2719,9 @@ func (m *jsiiProxy_MrscalerAws) PutTaskScalingUpPolicy(value interface{}) {
 }
 
 func (m *jsiiProxy_MrscalerAws) PutTerminationPolicies(value interface{}) {
+	if err := m.validatePutTerminationPoliciesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTerminationPolicies",

@@ -643,6 +643,9 @@ func (j *jsiiProxy_ElastigroupAzureV3) TerraformResourceType() *string {
 func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) ElastigroupAzureV3 {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAzureV3Parameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAzureV3{}
 
 	_jsii_.Create(
@@ -665,7 +668,10 @@ func NewElastigroupAzureV3_Override(e ElastigroupAzureV3, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetConnection(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -673,7 +679,7 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetCount(val *float64) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -681,7 +687,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetCustomData(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetCustomData(val *string) {
+	if err := j.validateSetCustomDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customData",
@@ -689,7 +698,7 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetCustomData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -697,7 +706,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetDesiredCapacity(val *float64) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetDesiredCapacity(val *float64) {
+	if err := j.validateSetDesiredCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"desiredCapacity",
@@ -705,7 +717,7 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetDesiredCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -713,7 +725,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetId(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -721,7 +736,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -729,7 +747,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetMaxSize(val *float64) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetMaxSize(val *float64) {
+	if err := j.validateSetMaxSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxSize",
@@ -737,7 +758,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetMaxSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetMinSize(val *float64) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetMinSize(val *float64) {
+	if err := j.validateSetMinSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minSize",
@@ -745,7 +769,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetMinSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetName(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -753,7 +780,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetOdSizes(val *[]*string) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetOdSizes(val *[]*string) {
+	if err := j.validateSetOdSizesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"odSizes",
@@ -761,7 +791,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetOdSizes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetOs(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetOs(val *string) {
+	if err := j.validateSetOsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"os",
@@ -769,7 +802,7 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetOs(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -777,7 +810,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -785,7 +821,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetRegion(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -793,7 +832,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetResourceGroupName(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetResourceGroupName(val *string) {
+	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
@@ -801,7 +843,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetResourceGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SetSpotSizes(val *[]*string) {
+func (j *jsiiProxy_ElastigroupAzureV3)SetSpotSizes(val *[]*string) {
+	if err := j.validateSetSpotSizesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spotSizes",
@@ -829,6 +874,9 @@ func (j *jsiiProxy_ElastigroupAzureV3) SetSpotSizes(val *[]*string) {
 func ElastigroupAzureV3_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateElastigroupAzureV3_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -853,6 +901,9 @@ func ElastigroupAzureV3_TfResourceType() *string {
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
@@ -861,6 +912,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) AddOverride(path *string, value interface
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -874,6 +928,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -887,6 +944,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -900,6 +960,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -913,6 +976,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) GetListAttribute(terraformAttribute *stri
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -926,6 +992,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) GetNumberAttribute(terraformAttribute *st
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -939,6 +1008,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) GetNumberListAttribute(terraformAttribute
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -952,6 +1024,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -965,6 +1040,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) GetStringAttribute(terraformAttribute *st
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -978,6 +1056,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) GetStringMapAttribute(terraformAttribute 
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -991,6 +1072,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) InterpolationForAttribute(terraformAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
@@ -999,6 +1083,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) PutImage(value interface{}) {
+	if err := e.validatePutImageParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putImage",
@@ -1007,6 +1094,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutImage(value interface{}) {
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) PutLogin(value *ElastigroupAzureV3Login) {
+	if err := e.validatePutLoginParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putLogin",
@@ -1015,6 +1105,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutLogin(value *ElastigroupAzureV3Login) 
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) PutManagedServiceIdentity(value interface{}) {
+	if err := e.validatePutManagedServiceIdentityParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putManagedServiceIdentity",
@@ -1023,6 +1116,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutManagedServiceIdentity(value interface
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) PutNetwork(value *ElastigroupAzureV3Network) {
+	if err := e.validatePutNetworkParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putNetwork",
@@ -1031,6 +1127,9 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutNetwork(value *ElastigroupAzureV3Netwo
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) PutStrategy(value *ElastigroupAzureV3Strategy) {
+	if err := e.validatePutStrategyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putStrategy",

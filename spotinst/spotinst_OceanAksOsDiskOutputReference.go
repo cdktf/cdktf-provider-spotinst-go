@@ -198,6 +198,9 @@ func (j *jsiiProxy_OceanAksOsDiskOutputReference) TypeInput() *string {
 func NewOceanAksOsDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanAksOsDiskOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksOsDiskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksOsDiskOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewOceanAksOsDiskOutputReference_Override(o OceanAksOsDiskOutputReference, 
 	)
 }
 
-func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAksOsDiskOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAksOsDiskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetInternalValue(val *OceanAksOsDisk) {
+func (j *jsiiProxy_OceanAksOsDiskOutputReference)SetInternalValue(val *OceanAksOsDisk) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetInternalValue(val *OceanAks
 	)
 }
 
-func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetSizeGb(val *float64) {
+func (j *jsiiProxy_OceanAksOsDiskOutputReference)SetSizeGb(val *float64) {
+	if err := j.validateSetSizeGbParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sizeGb",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetSizeGb(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksOsDiskOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksOsDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_OceanAksOsDiskOutputReference) SetType(val *string) {
+func (j *jsiiProxy_OceanAksOsDiskOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -289,6 +313,9 @@ func (o *jsiiProxy_OceanAksOsDiskOutputReference) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetAnyMapAttribute(terraformAt
 }
 
 func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetBooleanAttribute(terraformA
 }
 
 func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetBooleanMapAttribute(terrafo
 }
 
 func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetListAttribute(terraformAttr
 }
 
 func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetNumberAttribute(terraformAt
 }
 
 func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetNumberListAttribute(terrafo
 }
 
 func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetNumberMapAttribute(terrafor
 }
 
 func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetStringAttribute(terraformAt
 }
 
 func (o *jsiiProxy_OceanAksOsDiskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (o *jsiiProxy_OceanAksOsDiskOutputReference) InterpolationAsList() cdktf.IR
 }
 
 func (o *jsiiProxy_OceanAksOsDiskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (o *jsiiProxy_OceanAksOsDiskOutputReference) ResetType() {
 }
 
 func (o *jsiiProxy_OceanAksOsDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

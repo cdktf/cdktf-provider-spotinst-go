@@ -111,6 +111,9 @@ func (j *jsiiProxy_StatefulNodeAzureTagList) WrapsSet() *bool {
 func NewStatefulNodeAzureTagList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulNodeAzureTagList {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureTagListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureTagList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewStatefulNodeAzureTagList_Override(s StatefulNodeAzureTagList, terraformR
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureTagList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureTagList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_StatefulNodeAzureTagList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureTagList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureTagList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_StatefulNodeAzureTagList) SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureTagList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureTagList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_StatefulNodeAzureTagList) SetTerraformResource(val cdktf.IInt
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureTagList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureTagList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_StatefulNodeAzureTagList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_StatefulNodeAzureTagList) Get(index *float64) StatefulNodeAzureTagOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns StatefulNodeAzureTagOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_StatefulNodeAzureTagList) Get(index *float64) StatefulNodeAzu
 }
 
 func (s *jsiiProxy_StatefulNodeAzureTagList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

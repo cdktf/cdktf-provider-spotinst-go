@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) WrapsSet() 
 func NewOceanGkeLaunchSpecSchedulingTaskTaskHeadroomList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList {
 	_init_.Initialize()
 
+	if err := validateNewOceanGkeLaunchSpecSchedulingTaskTaskHeadroomListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanGkeLaunchSpecSchedulingTaskTaskHeadroomList_Override(o OceanGkeLaun
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) SetInternal
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) ComputeFqn(
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) Get(index *float64) OceanGkeLaunchSpecSchedulingTaskTaskHeadroomOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanGkeLaunchSpecSchedulingTaskTaskHeadroomOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) Get(index *
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

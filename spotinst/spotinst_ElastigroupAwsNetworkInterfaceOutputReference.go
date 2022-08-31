@@ -342,6 +342,9 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) TerraformResou
 func NewElastigroupAwsNetworkInterfaceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupAwsNetworkInterfaceOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsNetworkInterfaceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference{}
 
 	_jsii_.Create(
@@ -363,7 +366,10 @@ func NewElastigroupAwsNetworkInterfaceOutputReference_Override(e ElastigroupAwsN
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetAssociateIpv6Address(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetAssociateIpv6Address(val interface{}) {
+	if err := j.validateSetAssociateIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"associateIpv6Address",
@@ -371,7 +377,10 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetAssociateIp
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetAssociatePublicIpAddress(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetAssociatePublicIpAddress(val interface{}) {
+	if err := j.validateSetAssociatePublicIpAddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"associatePublicIpAddress",
@@ -379,7 +388,10 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetAssociatePu
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -387,7 +399,10 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -395,7 +410,10 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetDeleteOnTermination(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetDeleteOnTermination(val interface{}) {
+	if err := j.validateSetDeleteOnTerminationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deleteOnTermination",
@@ -403,7 +421,10 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetDeleteOnTer
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetDescription(val *string) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -411,7 +432,10 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetDescription
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetDeviceIndex(val *string) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetDeviceIndex(val *string) {
+	if err := j.validateSetDeviceIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deviceIndex",
@@ -419,7 +443,10 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetDeviceIndex
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -427,7 +454,10 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetNetworkInterfaceId(val *string) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetNetworkInterfaceId(val *string) {
+	if err := j.validateSetNetworkInterfaceIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"networkInterfaceId",
@@ -435,7 +465,10 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetNetworkInte
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetPrivateIpAddress(val *string) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetPrivateIpAddress(val *string) {
+	if err := j.validateSetPrivateIpAddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateIpAddress",
@@ -443,7 +476,10 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetPrivateIpAd
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetSecondaryPrivateIpAddressCount(val *string) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetSecondaryPrivateIpAddressCount(val *string) {
+	if err := j.validateSetSecondaryPrivateIpAddressCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"secondaryPrivateIpAddressCount",
@@ -451,7 +487,10 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetSecondaryPr
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -459,7 +498,10 @@ func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -481,6 +523,9 @@ func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) ComputeFqn() *
 }
 
 func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -494,6 +539,9 @@ func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetAnyMapAttri
 }
 
 func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -507,6 +555,9 @@ func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetBooleanAttr
 }
 
 func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -520,6 +571,9 @@ func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetBooleanMapA
 }
 
 func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -533,6 +587,9 @@ func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetListAttribu
 }
 
 func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -546,6 +603,9 @@ func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetNumberAttri
 }
 
 func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -559,6 +619,9 @@ func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetNumberListA
 }
 
 func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -572,6 +635,9 @@ func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetNumberMapAt
 }
 
 func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -585,6 +651,9 @@ func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetStringAttri
 }
 
 func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -611,6 +680,9 @@ func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) InterpolationA
 }
 
 func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -680,6 +752,9 @@ func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) ResetSecondary
 }
 
 func (e *jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -197,6 +197,9 @@ func (j *jsiiProxy_MrscalerAwsTagsOutputReference) ValueInput() *string {
 func NewMrscalerAwsTagsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MrscalerAwsTagsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsTagsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsTagsOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewMrscalerAwsTagsOutputReference_Override(m MrscalerAwsTagsOutputReference
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsTagsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsTagsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsTagsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetKey(val *string) {
+func (j *jsiiProxy_MrscalerAwsTagsOutputReference)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsTagsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsTagsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTagsOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_MrscalerAwsTagsOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -288,6 +312,9 @@ func (m *jsiiProxy_MrscalerAwsTagsOutputReference) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetAnyMapAttribute(terraformA
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetBooleanAttribute(terraform
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetBooleanMapAttribute(terraf
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetListAttribute(terraformAtt
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetNumberAttribute(terraformA
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetNumberListAttribute(terraf
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetNumberMapAttribute(terrafo
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetStringAttribute(terraformA
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (m *jsiiProxy_MrscalerAwsTagsOutputReference) InterpolationAsList() cdktf.I
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (m *jsiiProxy_MrscalerAwsTagsOutputReference) InterpolationForAttribute(pro
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

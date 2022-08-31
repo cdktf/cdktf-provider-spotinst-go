@@ -245,6 +245,9 @@ func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) TerraformResource(
 func NewElastigroupAwsUpdatePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastigroupAwsUpdatePolicyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsUpdatePolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference{}
 
 	_jsii_.Create(
@@ -266,7 +269,10 @@ func NewElastigroupAwsUpdatePolicyOutputReference_Override(e ElastigroupAwsUpdat
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetAutoApplyTags(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference)SetAutoApplyTags(val interface{}) {
+	if err := j.validateSetAutoApplyTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoApplyTags",
@@ -274,7 +280,10 @@ func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetAutoApplyTags(v
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -282,7 +291,10 @@ func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -290,7 +302,10 @@ func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetInternalValue(val *ElastigroupAwsUpdatePolicy) {
+func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference)SetInternalValue(val *ElastigroupAwsUpdatePolicy) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -298,7 +313,10 @@ func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetShouldResumeStateful(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference)SetShouldResumeStateful(val interface{}) {
+	if err := j.validateSetShouldResumeStatefulParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shouldResumeStateful",
@@ -306,7 +324,10 @@ func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetShouldResumeSta
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetShouldRoll(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference)SetShouldRoll(val interface{}) {
+	if err := j.validateSetShouldRollParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shouldRoll",
@@ -314,7 +335,10 @@ func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetShouldRoll(val 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -322,7 +346,10 @@ func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -344,6 +371,9 @@ func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) ComputeFqn() *stri
 }
 
 func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -357,6 +387,9 @@ func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetAnyMapAttribute
 }
 
 func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -370,6 +403,9 @@ func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetBooleanAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -383,6 +419,9 @@ func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetBooleanMapAttri
 }
 
 func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -396,6 +435,9 @@ func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetListAttribute(t
 }
 
 func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -409,6 +451,9 @@ func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetNumberAttribute
 }
 
 func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -422,6 +467,9 @@ func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetNumberListAttri
 }
 
 func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -435,6 +483,9 @@ func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetNumberMapAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -448,6 +499,9 @@ func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetStringAttribute
 }
 
 func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -474,6 +528,9 @@ func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) InterpolationAsLis
 }
 
 func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -487,6 +544,9 @@ func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) InterpolationForAt
 }
 
 func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) PutRollConfig(value *ElastigroupAwsUpdatePolicyRollConfig) {
+	if err := e.validatePutRollConfigParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putRollConfig",
@@ -511,6 +571,9 @@ func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) ResetRollConfig() 
 }
 
 func (e *jsiiProxy_ElastigroupAwsUpdatePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

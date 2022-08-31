@@ -111,6 +111,9 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupL
 func NewStatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewStatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList_Overrid
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupL
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupL
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupL
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupL
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList) Get(index *float64) StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupL
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceNetworkSecurityGroupList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -175,6 +175,9 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) Terrafo
 func NewElastigroupAwsIntegrationGitlabRunnerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastigroupAwsIntegrationGitlabRunnerOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsIntegrationGitlabRunnerOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewElastigroupAwsIntegrationGitlabRunnerOutputReference_Override(e Elastigr
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) SetComp
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) SetComp
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) SetInternalValue(val *ElastigroupAwsIntegrationGitlabRunner) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference)SetInternalValue(val *ElastigroupAwsIntegrationGitlabRunner) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) SetInte
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) SetIsEn
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) SetTerr
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,6 +279,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) Compute
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetAnyM
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetBool
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetBool
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetList
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetNumb
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetNumb
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetNumb
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetStri
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) Interpo
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) ResetIs
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

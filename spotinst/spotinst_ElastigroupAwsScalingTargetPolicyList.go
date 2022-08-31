@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAwsScalingTargetPolicyList) WrapsSet() *bool {
 func NewElastigroupAwsScalingTargetPolicyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAwsScalingTargetPolicyList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsScalingTargetPolicyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsScalingTargetPolicyList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAwsScalingTargetPolicyList_Override(e ElastigroupAwsScalingTa
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScalingTargetPolicyList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsScalingTargetPolicyList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAwsScalingTargetPolicyList) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScalingTargetPolicyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsScalingTargetPolicyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAwsScalingTargetPolicyList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScalingTargetPolicyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsScalingTargetPolicyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAwsScalingTargetPolicyList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScalingTargetPolicyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsScalingTargetPolicyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyList) ComputeFqn() *string {
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyList) Get(index *float64) ElastigroupAwsScalingTargetPolicyOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAwsScalingTargetPolicyOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyList) Get(index *float64) El
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

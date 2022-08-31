@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) WrapsSet() *bool {
 func NewElastigroupAwsEphemeralBlockDeviceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAwsEphemeralBlockDeviceList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsEphemeralBlockDeviceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAwsEphemeralBlockDeviceList_Override(e ElastigroupAwsEphemera
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) ComputeFqn() *string 
 }
 
 func (e *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) Get(index *float64) ElastigroupAwsEphemeralBlockDeviceOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAwsEphemeralBlockDeviceOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) Get(index *float64) E
 }
 
 func (e *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAwsTagsList) WrapsSet() *bool {
 func NewOceanAwsTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAwsTagsList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsTagsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAwsTagsList_Override(o OceanAwsTagsList, terraformResource cdktf.II
 	)
 }
 
-func (j *jsiiProxy_OceanAwsTagsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAwsTagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAwsTagsList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAwsTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAwsTagsList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAwsTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAwsTagsList) SetTerraformResource(val cdktf.IInterpolati
 	)
 }
 
-func (j *jsiiProxy_OceanAwsTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAwsTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAwsTagsList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanAwsTagsList) Get(index *float64) OceanAwsTagsOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAwsTagsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAwsTagsList) Get(index *float64) OceanAwsTagsOutputRefer
 }
 
 func (o *jsiiProxy_OceanAwsTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

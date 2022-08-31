@@ -220,6 +220,9 @@ func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) TerraformResource(
 func NewOceanAwsScheduledTaskTasksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OceanAwsScheduledTaskTasksOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsScheduledTaskTasksOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsScheduledTaskTasksOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewOceanAwsScheduledTaskTasksOutputReference_Override(o OceanAwsScheduledTa
 	)
 }
 
-func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetCronExpression(val *string) {
+func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference)SetCronExpression(val *string) {
+	if err := j.validateSetCronExpressionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cronExpression",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetCronExpression(
 	)
 }
 
-func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetIsEnabled(val i
 	)
 }
 
-func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetTaskType(val *string) {
+func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference)SetTaskType(val *string) {
+	if err := j.validateSetTaskTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskType",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetTaskType(val *s
 	)
 }
 
-func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -319,6 +346,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) ComputeFqn() *stri
 }
 
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetAnyMapAttribute
 }
 
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetBooleanAttribut
 }
 
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetBooleanMapAttri
 }
 
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetListAttribute(t
 }
 
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetNumberAttribute
 }
 
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetNumberListAttri
 }
 
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetNumberMapAttrib
 }
 
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetStringAttribute
 }
 
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) InterpolationAsLis
 }
 
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) InterpolationForAt
 }
 
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -247,6 +247,9 @@ func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) VersionInput() *stri
 func NewOceanAksImageMarketplaceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OceanAksImageMarketplaceOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksImageMarketplaceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksImageMarketplaceOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewOceanAksImageMarketplaceOutputReference_Override(o OceanAksImageMarketpl
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetOffer(val *string) {
+func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference)SetOffer(val *string) {
+	if err := j.validateSetOfferParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"offer",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetOffer(val *string
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetPublisher(val *string) {
+func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference)SetPublisher(val *string) {
+	if err := j.validateSetPublisherParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"publisher",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetPublisher(val *st
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetSku(val *string) {
+func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference)SetSku(val *string) {
+	if err := j.validateSetSkuParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sku",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetSku(val *string) 
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference) SetVersion(val *string) {
+func (j *jsiiProxy_OceanAksImageMarketplaceOutputReference)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"version",
@@ -354,6 +384,9 @@ func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) ComputeFqn() *string
 }
 
 func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetAnyMapAttribute(t
 }
 
 func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetBooleanAttribute(
 }
 
 func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetBooleanMapAttribu
 }
 
 func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetListAttribute(ter
 }
 
 func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetNumberAttribute(t
 }
 
 func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetNumberListAttribu
 }
 
 func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetNumberMapAttribut
 }
 
 func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetStringAttribute(t
 }
 
 func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) InterpolationAsList(
 }
 
 func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) ResetVersion() {
 }
 
 func (o *jsiiProxy_OceanAksImageMarketplaceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

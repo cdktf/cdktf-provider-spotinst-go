@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) WrapsSet() *boo
 func NewElastigroupAzureV3ManagedServiceIdentityList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAzureV3ManagedServiceIdentityList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAzureV3ManagedServiceIdentityListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAzureV3ManagedServiceIdentityList_Override(e ElastigroupAzure
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) ComputeFqn() *s
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) Get(index *float64) ElastigroupAzureV3ManagedServiceIdentityOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAzureV3ManagedServiceIdentityOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) Get(index *floa
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

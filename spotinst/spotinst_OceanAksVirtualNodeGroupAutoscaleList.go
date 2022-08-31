@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList) WrapsSet() *bool {
 func NewOceanAksVirtualNodeGroupAutoscaleList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAksVirtualNodeGroupAutoscaleList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksVirtualNodeGroupAutoscaleListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAksVirtualNodeGroupAutoscaleList_Override(o OceanAksVirtualNodeGrou
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList) Get(index *float64) OceanAksVirtualNodeGroupAutoscaleOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAksVirtualNodeGroupAutoscaleOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList) Get(index *float64) Oc
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

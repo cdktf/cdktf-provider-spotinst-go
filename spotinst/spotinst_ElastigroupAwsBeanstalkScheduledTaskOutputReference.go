@@ -510,6 +510,9 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) Terrafor
 func NewElastigroupAwsBeanstalkScheduledTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupAwsBeanstalkScheduledTaskOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsBeanstalkScheduledTaskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference{}
 
 	_jsii_.Create(
@@ -531,7 +534,10 @@ func NewElastigroupAwsBeanstalkScheduledTaskOutputReference_Override(e Elastigro
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetAdjustment(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetAdjustment(val *string) {
+	if err := j.validateSetAdjustmentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adjustment",
@@ -539,7 +545,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetAdjus
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetAdjustmentPercentage(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetAdjustmentPercentage(val *string) {
+	if err := j.validateSetAdjustmentPercentageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adjustmentPercentage",
@@ -547,7 +556,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetAdjus
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetBatchSizePercentage(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetBatchSizePercentage(val *string) {
+	if err := j.validateSetBatchSizePercentageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"batchSizePercentage",
@@ -555,7 +567,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetBatch
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -563,7 +578,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -571,7 +589,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetCronExpression(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetCronExpression(val *string) {
+	if err := j.validateSetCronExpressionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cronExpression",
@@ -579,7 +600,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetCronE
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetFrequency(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetFrequency(val *string) {
+	if err := j.validateSetFrequencyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"frequency",
@@ -587,7 +611,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetFrequ
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetGracePeriod(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetGracePeriod(val *string) {
+	if err := j.validateSetGracePeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gracePeriod",
@@ -595,7 +622,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetGrace
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -603,7 +633,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -611,7 +644,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetIsEna
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetMaxCapacity(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetMaxCapacity(val *string) {
+	if err := j.validateSetMaxCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxCapacity",
@@ -619,7 +655,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetMaxCa
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetMinCapacity(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetMinCapacity(val *string) {
+	if err := j.validateSetMinCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minCapacity",
@@ -627,7 +666,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetMinCa
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetScaleMaxCapacity(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetScaleMaxCapacity(val *string) {
+	if err := j.validateSetScaleMaxCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scaleMaxCapacity",
@@ -635,7 +677,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetScale
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetScaleMinCapacity(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetScaleMinCapacity(val *string) {
+	if err := j.validateSetScaleMinCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scaleMinCapacity",
@@ -643,7 +688,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetScale
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetScaleTargetCapacity(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetScaleTargetCapacity(val *string) {
+	if err := j.validateSetScaleTargetCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scaleTargetCapacity",
@@ -651,7 +699,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetScale
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetStartTime(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetStartTime(val *string) {
+	if err := j.validateSetStartTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"startTime",
@@ -659,7 +710,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetStart
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetTargetCapacity(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetTargetCapacity(val *string) {
+	if err := j.validateSetTargetCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"targetCapacity",
@@ -667,7 +721,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetTarge
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetTaskType(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetTaskType(val *string) {
+	if err := j.validateSetTaskTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskType",
@@ -675,7 +732,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetTaskT
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -683,7 +743,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -705,6 +768,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) ComputeF
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -718,6 +784,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetAnyMa
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -731,6 +800,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetBoole
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -744,6 +816,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetBoole
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -757,6 +832,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetListA
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -770,6 +848,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetNumbe
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -783,6 +864,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetNumbe
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -796,6 +880,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetNumbe
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -809,6 +896,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetStrin
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -835,6 +925,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) Interpol
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -960,6 +1053,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) ResetTar
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

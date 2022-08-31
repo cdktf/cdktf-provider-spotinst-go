@@ -111,6 +111,9 @@ func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) WrapsSet() *
 func NewManagedInstanceAwsIntegrationRoute53DomainsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedInstanceAwsIntegrationRoute53DomainsList {
 	_init_.Initialize()
 
+	if err := validateNewManagedInstanceAwsIntegrationRoute53DomainsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewManagedInstanceAwsIntegrationRoute53DomainsList_Override(m ManagedInstan
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) ComputeFqn()
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) Get(index *float64) ManagedInstanceAwsIntegrationRoute53DomainsOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ManagedInstanceAwsIntegrationRoute53DomainsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) Get(index *f
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

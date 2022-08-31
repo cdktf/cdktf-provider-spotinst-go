@@ -174,6 +174,9 @@ func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) TerraformReso
 func NewOceanAwsLaunchSpecDeleteOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanAwsLaunchSpecDeleteOptionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsLaunchSpecDeleteOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewOceanAwsLaunchSpecDeleteOptionsOutputReference_Override(o OceanAwsLaunch
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) SetForceDelete(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference)SetForceDelete(val interface{}) {
+	if err := j.validateSetForceDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"forceDelete",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) SetForceDelet
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) SetInternalValue(val *OceanAwsLaunchSpecDeleteOptions) {
+func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference)SetInternalValue(val *OceanAwsLaunchSpecDeleteOptions) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -235,7 +253,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -257,6 +278,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) ComputeFqn() 
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -270,6 +294,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetAnyMapAttr
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -283,6 +310,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetBooleanAtt
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -296,6 +326,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetBooleanMap
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -309,6 +342,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetListAttrib
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -322,6 +358,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetNumberAttr
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -335,6 +374,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetNumberList
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +390,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetNumberMapA
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -361,6 +406,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetStringAttr
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -387,6 +435,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) Interpolation
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -400,6 +451,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) Interpolation
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

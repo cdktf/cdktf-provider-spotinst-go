@@ -199,6 +199,9 @@ func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) TerraformResour
 func NewElastigroupAwsScalingStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupAwsScalingStrategyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsScalingStrategyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsScalingStrategyOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewElastigroupAwsScalingStrategyOutputReference_Override(e ElastigroupAwsSc
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetTerminateAtEndOfBillingHour(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference)SetTerminateAtEndOfBillingHour(val interface{}) {
+	if err := j.validateSetTerminateAtEndOfBillingHourParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terminateAtEndOfBillingHour",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetTerminateAtE
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetTerminationPolicy(val *string) {
+func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference)SetTerminationPolicy(val *string) {
+	if err := j.validateSetTerminationPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terminationPolicy",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetTerminationP
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) ComputeFqn() *s
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetAnyMapAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetBooleanAttri
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetBooleanMapAt
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetListAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetNumberAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetNumberListAt
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetNumberMapAtt
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetStringAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) InterpolationAs
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) ResetTerminatio
 }
 
 func (e *jsiiProxy_ElastigroupAwsScalingStrategyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

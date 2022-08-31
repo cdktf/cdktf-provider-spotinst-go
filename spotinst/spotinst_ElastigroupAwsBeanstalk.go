@@ -596,6 +596,9 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) TerraformResourceType() *string {
 func NewElastigroupAwsBeanstalk(scope constructs.Construct, id *string, config *ElastigroupAwsBeanstalkConfig) ElastigroupAwsBeanstalk {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsBeanstalkParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsBeanstalk{}
 
 	_jsii_.Create(
@@ -618,7 +621,10 @@ func NewElastigroupAwsBeanstalk_Override(e ElastigroupAwsBeanstalk, scope constr
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetBeanstalkEnvironmentId(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetBeanstalkEnvironmentId(val *string) {
+	if err := j.validateSetBeanstalkEnvironmentIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"beanstalkEnvironmentId",
@@ -626,7 +632,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetBeanstalkEnvironmentId(val *strin
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetBeanstalkEnvironmentName(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetBeanstalkEnvironmentName(val *string) {
+	if err := j.validateSetBeanstalkEnvironmentNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"beanstalkEnvironmentName",
@@ -634,7 +643,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetBeanstalkEnvironmentName(val *str
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetConnection(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -642,7 +654,7 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetCount(val *float64) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -650,7 +662,7 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -658,7 +670,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetDesiredCapacity(val *float64) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetDesiredCapacity(val *float64) {
+	if err := j.validateSetDesiredCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"desiredCapacity",
@@ -666,7 +681,7 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetDesiredCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -674,7 +689,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetId(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -682,7 +700,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetInstanceTypesSpot(val *[]*string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetInstanceTypesSpot(val *[]*string) {
+	if err := j.validateSetInstanceTypesSpotParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceTypesSpot",
@@ -690,7 +711,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetInstanceTypesSpot(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -698,7 +722,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetMaintenance(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetMaintenance(val *string) {
+	if err := j.validateSetMaintenanceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maintenance",
@@ -706,7 +733,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetMaintenance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetMaxSize(val *float64) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetMaxSize(val *float64) {
+	if err := j.validateSetMaxSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxSize",
@@ -714,7 +744,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetMaxSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetMinSize(val *float64) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetMinSize(val *float64) {
+	if err := j.validateSetMinSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minSize",
@@ -722,7 +755,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetMinSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetName(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -730,7 +766,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetProduct(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetProduct(val *string) {
+	if err := j.validateSetProductParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"product",
@@ -738,7 +777,7 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetProduct(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -746,7 +785,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -754,7 +796,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetRegion(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalk)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -782,6 +827,9 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) SetRegion(val *string) {
 func ElastigroupAwsBeanstalk_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateElastigroupAwsBeanstalk_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -806,6 +854,9 @@ func ElastigroupAwsBeanstalk_TfResourceType() *string {
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
@@ -814,6 +865,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) AddOverride(path *string, value inte
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -827,6 +881,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetAnyMapAttribute(terraformAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -840,6 +897,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetBooleanAttribute(terraformAttribu
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -853,6 +913,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetBooleanMapAttribute(terraformAttr
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -866,6 +929,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetListAttribute(terraformAttribute 
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -879,6 +945,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetNumberAttribute(terraformAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -892,6 +961,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetNumberListAttribute(terraformAttr
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -905,6 +977,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetNumberMapAttribute(terraformAttri
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -918,6 +993,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetStringAttribute(terraformAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -931,6 +1009,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetStringMapAttribute(terraformAttri
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -944,6 +1025,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) InterpolationForAttribute(terraformA
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
@@ -952,6 +1036,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) OverrideLogicalId(newLogicalId *stri
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) PutDeploymentPreferences(value *ElastigroupAwsBeanstalkDeploymentPreferences) {
+	if err := e.validatePutDeploymentPreferencesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putDeploymentPreferences",
@@ -960,6 +1047,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) PutDeploymentPreferences(value *Elas
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) PutManagedActions(value *ElastigroupAwsBeanstalkManagedActions) {
+	if err := e.validatePutManagedActionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putManagedActions",
@@ -968,6 +1058,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) PutManagedActions(value *Elastigroup
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) PutScheduledTask(value interface{}) {
+	if err := e.validatePutScheduledTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putScheduledTask",

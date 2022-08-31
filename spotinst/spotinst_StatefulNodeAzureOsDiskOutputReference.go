@@ -198,6 +198,9 @@ func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) TypeInput() *string {
 func NewStatefulNodeAzureOsDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StatefulNodeAzureOsDiskOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureOsDiskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureOsDiskOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewStatefulNodeAzureOsDiskOutputReference_Override(s StatefulNodeAzureOsDis
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetInternalValue(val *StatefulNodeAzureOsDisk) {
+func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference)SetInternalValue(val *StatefulNodeAzureOsDisk) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetSizeGb(val *float64) {
+func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference)SetSizeGb(val *float64) {
+	if err := j.validateSetSizeGbParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sizeGb",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetSizeGb(val *float6
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) SetType(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -289,6 +313,9 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) ComputeFqn() *string 
 }
 
 func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetAnyMapAttribute(te
 }
 
 func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetBooleanAttribute(t
 }
 
 func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetBooleanMapAttribut
 }
 
 func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetListAttribute(terr
 }
 
 func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetNumberAttribute(te
 }
 
 func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetNumberListAttribut
 }
 
 func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetNumberMapAttribute
 }
 
 func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetStringAttribute(te
 }
 
 func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) InterpolationAsList()
 }
 
 func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) ResetSizeGb() {
 }
 
 func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -366,6 +366,9 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) VolumeTypeInput(
 func NewElastigroupAwsEbsBlockDeviceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupAwsEbsBlockDeviceOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsEbsBlockDeviceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference{}
 
 	_jsii_.Create(
@@ -387,7 +390,10 @@ func NewElastigroupAwsEbsBlockDeviceOutputReference_Override(e ElastigroupAwsEbs
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -395,7 +401,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -403,7 +412,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetDeleteOnTermination(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetDeleteOnTermination(val interface{}) {
+	if err := j.validateSetDeleteOnTerminationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deleteOnTermination",
@@ -411,7 +423,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetDeleteOnTermi
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetDeviceName(val *string) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetDeviceName(val *string) {
+	if err := j.validateSetDeviceNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deviceName",
@@ -419,7 +434,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetDeviceName(va
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetEncrypted(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetEncrypted(val interface{}) {
+	if err := j.validateSetEncryptedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"encrypted",
@@ -427,7 +445,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetEncrypted(val
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -435,7 +456,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetIops(val *float64) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetIops(val *float64) {
+	if err := j.validateSetIopsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"iops",
@@ -443,7 +467,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetIops(val *flo
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetKmsKeyId(val *string) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetKmsKeyId(val *string) {
+	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"kmsKeyId",
@@ -451,7 +478,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetKmsKeyId(val 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetSnapshotId(val *string) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetSnapshotId(val *string) {
+	if err := j.validateSetSnapshotIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snapshotId",
@@ -459,7 +489,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetSnapshotId(va
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -467,7 +500,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -475,7 +511,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetThroughput(val *float64) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetThroughput(val *float64) {
+	if err := j.validateSetThroughputParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"throughput",
@@ -483,7 +522,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetThroughput(va
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetVolumeSize(val *float64) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetVolumeSize(val *float64) {
+	if err := j.validateSetVolumeSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumeSize",
@@ -491,7 +533,10 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetVolumeSize(va
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) SetVolumeType(val *string) {
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference)SetVolumeType(val *string) {
+	if err := j.validateSetVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumeType",
@@ -513,6 +558,9 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) ComputeFqn() *st
 }
 
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -526,6 +574,9 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetAnyMapAttribu
 }
 
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -539,6 +590,9 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetBooleanAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -552,6 +606,9 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetBooleanMapAtt
 }
 
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -565,6 +622,9 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetListAttribute
 }
 
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -578,6 +638,9 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetNumberAttribu
 }
 
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -591,6 +654,9 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetNumberListAtt
 }
 
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -604,6 +670,9 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetNumberMapAttr
 }
 
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -617,6 +686,9 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetStringAttribu
 }
 
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -643,6 +715,9 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) InterpolationAsL
 }
 
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -720,6 +795,9 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) ResetVolumeType(
 }
 
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

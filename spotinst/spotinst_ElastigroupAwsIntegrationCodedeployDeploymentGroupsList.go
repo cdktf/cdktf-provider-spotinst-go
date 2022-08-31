@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) Wrap
 func NewElastigroupAwsIntegrationCodedeployDeploymentGroupsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAwsIntegrationCodedeployDeploymentGroupsList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsIntegrationCodedeployDeploymentGroupsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAwsIntegrationCodedeployDeploymentGroupsList_Override(e Elast
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) SetI
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) SetT
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) SetT
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) Comp
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) Get(index *float64) ElastigroupAwsIntegrationCodedeployDeploymentGroupsOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAwsIntegrationCodedeployDeploymentGroupsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) Get(
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -222,6 +222,9 @@ func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) UserNameInput() *strin
 func NewStatefulNodeAzureLoginOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StatefulNodeAzureLoginOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureLoginOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureLoginOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewStatefulNodeAzureLoginOutputReference_Override(s StatefulNodeAzureLoginO
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetInternalValue(val *StatefulNodeAzureLogin) {
+func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference)SetInternalValue(val *StatefulNodeAzureLogin) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetPassword(val *strin
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetSshPublicKey(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference)SetSshPublicKey(val *string) {
+	if err := j.validateSetSshPublicKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sshPublicKey",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetSshPublicKey(val *s
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference) SetUserName(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureLoginOutputReference)SetUserName(val *string) {
+	if err := j.validateSetUserNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userName",
@@ -321,6 +348,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetAnyMapAttribute(ter
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetBooleanAttribute(te
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetBooleanMapAttribute
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetListAttribute(terra
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetNumberAttribute(ter
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetNumberListAttribute
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetNumberMapAttribute(
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetStringAttribute(ter
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) InterpolationAsList() 
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) ResetSshPublicKey() {
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoginOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

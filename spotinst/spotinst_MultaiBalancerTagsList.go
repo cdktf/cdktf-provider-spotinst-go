@@ -111,6 +111,9 @@ func (j *jsiiProxy_MultaiBalancerTagsList) WrapsSet() *bool {
 func NewMultaiBalancerTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MultaiBalancerTagsList {
 	_init_.Initialize()
 
+	if err := validateNewMultaiBalancerTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MultaiBalancerTagsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMultaiBalancerTagsList_Override(m MultaiBalancerTagsList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_MultaiBalancerTagsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MultaiBalancerTagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MultaiBalancerTagsList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MultaiBalancerTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MultaiBalancerTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MultaiBalancerTagsList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiBalancerTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MultaiBalancerTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MultaiBalancerTagsList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_MultaiBalancerTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MultaiBalancerTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MultaiBalancerTagsList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MultaiBalancerTagsList) Get(index *float64) MultaiBalancerTagsOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MultaiBalancerTagsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MultaiBalancerTagsList) Get(index *float64) MultaiBalancerTag
 }
 
 func (m *jsiiProxy_MultaiBalancerTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

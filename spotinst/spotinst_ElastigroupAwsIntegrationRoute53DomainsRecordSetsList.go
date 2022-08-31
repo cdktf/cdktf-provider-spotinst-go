@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) WrapsS
 func NewElastigroupAwsIntegrationRoute53DomainsRecordSetsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAwsIntegrationRoute53DomainsRecordSetsList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsIntegrationRoute53DomainsRecordSetsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAwsIntegrationRoute53DomainsRecordSetsList_Override(e Elastig
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) SetInt
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) SetTer
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) SetTer
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) Comput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) Get(index *float64) ElastigroupAwsIntegrationRoute53DomainsRecordSetsOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAwsIntegrationRoute53DomainsRecordSetsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) Get(in
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_MultaiListenerTagsList) WrapsSet() *bool {
 func NewMultaiListenerTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MultaiListenerTagsList {
 	_init_.Initialize()
 
+	if err := validateNewMultaiListenerTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MultaiListenerTagsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMultaiListenerTagsList_Override(m MultaiListenerTagsList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_MultaiListenerTagsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MultaiListenerTagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MultaiListenerTagsList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MultaiListenerTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MultaiListenerTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MultaiListenerTagsList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiListenerTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MultaiListenerTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MultaiListenerTagsList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_MultaiListenerTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MultaiListenerTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MultaiListenerTagsList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MultaiListenerTagsList) Get(index *float64) MultaiListenerTagsOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MultaiListenerTagsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MultaiListenerTagsList) Get(index *float64) MultaiListenerTag
 }
 
 func (m *jsiiProxy_MultaiListenerTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -198,6 +198,9 @@ func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Val
 func NewElastigroupGkeScalingDownPolicyDimensionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupGkeScalingDownPolicyDimensionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGkeScalingDownPolicyDimensionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewElastigroupGkeScalingDownPolicyDimensionsOutputReference_Override(e Elas
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) SetName(val *string) {
+func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -289,6 +313,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Com
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Int
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Res
 }
 
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

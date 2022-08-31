@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList) WrapsSet() *bool 
 func NewOceanAksVirtualNodeGroupResourceLimitsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAksVirtualNodeGroupResourceLimitsList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksVirtualNodeGroupResourceLimitsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAksVirtualNodeGroupResourceLimitsList_Override(o OceanAksVirtualNod
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList) ComputeFqn() *str
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList) Get(index *float64) OceanAksVirtualNodeGroupResourceLimitsOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAksVirtualNodeGroupResourceLimitsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList) Get(index *float6
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupResourceLimitsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

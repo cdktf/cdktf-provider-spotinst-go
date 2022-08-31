@@ -271,6 +271,9 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) TerraformReso
 func NewOceanAksNetworkNetworkInterfaceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OceanAksNetworkNetworkInterfaceOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksNetworkNetworkInterfaceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference{}
 
 	_jsii_.Create(
@@ -292,7 +295,10 @@ func NewOceanAksNetworkNetworkInterfaceOutputReference_Override(o OceanAksNetwor
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetAssignPublicIp(val interface{}) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference)SetAssignPublicIp(val interface{}) {
+	if err := j.validateSetAssignPublicIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"assignPublicIp",
@@ -300,7 +306,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetAssignPubl
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -308,7 +317,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -316,7 +328,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -324,7 +339,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetIsPrimary(val interface{}) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference)SetIsPrimary(val interface{}) {
+	if err := j.validateSetIsPrimaryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isPrimary",
@@ -332,7 +350,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetIsPrimary(
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetSubnetName(val *string) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference)SetSubnetName(val *string) {
+	if err := j.validateSetSubnetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subnetName",
@@ -340,7 +361,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetSubnetName
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -348,7 +372,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -370,6 +397,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) ComputeFqn() 
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -383,6 +413,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetAnyMapAttr
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -396,6 +429,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetBooleanAtt
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -409,6 +445,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetBooleanMap
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -422,6 +461,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetListAttrib
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -435,6 +477,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetNumberAttr
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -448,6 +493,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetNumberList
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -461,6 +509,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetNumberMapA
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -474,6 +525,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetStringAttr
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -500,6 +554,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) Interpolation
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -513,6 +570,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) Interpolation
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) PutAdditionalIpConfig(value interface{}) {
+	if err := o.validatePutAdditionalIpConfigParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putAdditionalIpConfig",
@@ -521,6 +581,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) PutAdditional
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) PutSecurityGroup(value *OceanAksNetworkNetworkInterfaceSecurityGroup) {
+	if err := o.validatePutSecurityGroupParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putSecurityGroup",
@@ -569,6 +632,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) ResetSubnetNa
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

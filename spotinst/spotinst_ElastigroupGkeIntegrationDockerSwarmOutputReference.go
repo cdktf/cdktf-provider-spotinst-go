@@ -197,6 +197,9 @@ func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) Terrafor
 func NewElastigroupGkeIntegrationDockerSwarmOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastigroupGkeIntegrationDockerSwarmOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGkeIntegrationDockerSwarmOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewElastigroupGkeIntegrationDockerSwarmOutputReference_Override(e Elastigro
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetInternalValue(val *ElastigroupGkeIntegrationDockerSwarm) {
+func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference)SetInternalValue(val *ElastigroupGkeIntegrationDockerSwarm) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetMasterHost(val *string) {
+func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference)SetMasterHost(val *string) {
+	if err := j.validateSetMasterHostParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"masterHost",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetMaste
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetMasterPort(val *float64) {
+func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference)SetMasterPort(val *float64) {
+	if err := j.validateSetMasterPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"masterPort",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetMaste
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) ComputeF
 }
 
 func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetAnyMa
 }
 
 func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetBoole
 }
 
 func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetBoole
 }
 
 func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetListA
 }
 
 func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetNumbe
 }
 
 func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetNumbe
 }
 
 func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetNumbe
 }
 
 func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetStrin
 }
 
 func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) Interpol
 }
 
 func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) Interpol
 }
 
 func (e *jsiiProxy_ElastigroupGkeIntegrationDockerSwarmOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

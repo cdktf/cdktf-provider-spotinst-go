@@ -111,6 +111,9 @@ func (j *jsiiProxy_MrscalerAwsBootstrapActionsFileList) WrapsSet() *bool {
 func NewMrscalerAwsBootstrapActionsFileList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MrscalerAwsBootstrapActionsFileList {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsBootstrapActionsFileListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsBootstrapActionsFileList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMrscalerAwsBootstrapActionsFileList_Override(m MrscalerAwsBootstrapActio
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsBootstrapActionsFileList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsBootstrapActionsFileList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MrscalerAwsBootstrapActionsFileList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsBootstrapActionsFileList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsBootstrapActionsFileList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MrscalerAwsBootstrapActionsFileList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsBootstrapActionsFileList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsBootstrapActionsFileList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MrscalerAwsBootstrapActionsFileList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsBootstrapActionsFileList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsBootstrapActionsFileList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MrscalerAwsBootstrapActionsFileList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MrscalerAwsBootstrapActionsFileList) Get(index *float64) MrscalerAwsBootstrapActionsFileOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MrscalerAwsBootstrapActionsFileOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MrscalerAwsBootstrapActionsFileList) Get(index *float64) Mrsc
 }
 
 func (m *jsiiProxy_MrscalerAwsBootstrapActionsFileList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

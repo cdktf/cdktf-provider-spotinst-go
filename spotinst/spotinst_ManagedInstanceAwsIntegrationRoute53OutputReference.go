@@ -174,6 +174,9 @@ func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) Terrafor
 func NewManagedInstanceAwsIntegrationRoute53OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ManagedInstanceAwsIntegrationRoute53OutputReference {
 	_init_.Initialize()
 
+	if err := validateNewManagedInstanceAwsIntegrationRoute53OutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewManagedInstanceAwsIntegrationRoute53OutputReference_Override(m ManagedIn
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) SetCompl
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) SetInternalValue(val *ManagedInstanceAwsIntegrationRoute53) {
+func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference)SetInternalValue(val *ManagedInstanceAwsIntegrationRoute53) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) SetInter
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) SetTerra
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -249,6 +267,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) ComputeF
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -262,6 +283,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetAnyMa
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -275,6 +299,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetBoole
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -288,6 +315,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetBoole
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -301,6 +331,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetListA
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -314,6 +347,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetNumbe
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -327,6 +363,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetNumbe
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -340,6 +379,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetNumbe
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -353,6 +395,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetStrin
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) Interpol
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) Interpol
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) PutDomains(value interface{}) {
+	if err := m.validatePutDomainsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putDomains",
@@ -400,6 +451,9 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) PutDomai
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

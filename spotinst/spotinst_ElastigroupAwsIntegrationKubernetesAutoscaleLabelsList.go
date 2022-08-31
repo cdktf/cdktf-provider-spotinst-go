@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) Wraps
 func NewElastigroupAwsIntegrationKubernetesAutoscaleLabelsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsIntegrationKubernetesAutoscaleLabelsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAwsIntegrationKubernetesAutoscaleLabelsList_Override(e Elasti
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) SetIn
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) SetTe
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) SetTe
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) Compu
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) Get(index *float64) ElastigroupAwsIntegrationKubernetesAutoscaleLabelsOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAwsIntegrationKubernetesAutoscaleLabelsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) Get(i
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -362,6 +362,9 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) TerraformResource() c
 func NewStatefulNodeAzureDeleteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StatefulNodeAzureDeleteOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureDeleteOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureDeleteOutputReference{}
 
 	_jsii_.Create(
@@ -383,7 +386,10 @@ func NewStatefulNodeAzureDeleteOutputReference_Override(s StatefulNodeAzureDelet
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -391,7 +397,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -399,7 +408,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetDiskShouldDeallocate(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetDiskShouldDeallocate(val interface{}) {
+	if err := j.validateSetDiskShouldDeallocateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"diskShouldDeallocate",
@@ -407,7 +419,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetDiskShouldDealloca
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetDiskTtlInHours(val *float64) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetDiskTtlInHours(val *float64) {
+	if err := j.validateSetDiskTtlInHoursParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"diskTtlInHours",
@@ -415,7 +430,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetDiskTtlInHours(val
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -423,7 +441,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetNetworkShouldDeallocate(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetNetworkShouldDeallocate(val interface{}) {
+	if err := j.validateSetNetworkShouldDeallocateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"networkShouldDeallocate",
@@ -431,7 +452,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetNetworkShouldDeall
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetNetworkTtlInHours(val *float64) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetNetworkTtlInHours(val *float64) {
+	if err := j.validateSetNetworkTtlInHoursParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"networkTtlInHours",
@@ -439,7 +463,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetNetworkTtlInHours(
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetPublicIpShouldDeallocate(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetPublicIpShouldDeallocate(val interface{}) {
+	if err := j.validateSetPublicIpShouldDeallocateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"publicIpShouldDeallocate",
@@ -447,7 +474,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetPublicIpShouldDeal
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetPublicIpTtlInHours(val *float64) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetPublicIpTtlInHours(val *float64) {
+	if err := j.validateSetPublicIpTtlInHoursParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"publicIpTtlInHours",
@@ -455,7 +485,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetPublicIpTtlInHours
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetShouldTerminateVm(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetShouldTerminateVm(val interface{}) {
+	if err := j.validateSetShouldTerminateVmParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shouldTerminateVm",
@@ -463,7 +496,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetShouldTerminateVm(
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetSnapshotShouldDeallocate(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetSnapshotShouldDeallocate(val interface{}) {
+	if err := j.validateSetSnapshotShouldDeallocateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snapshotShouldDeallocate",
@@ -471,7 +507,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetSnapshotShouldDeal
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetSnapshotTtlInHours(val *float64) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetSnapshotTtlInHours(val *float64) {
+	if err := j.validateSetSnapshotTtlInHoursParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"snapshotTtlInHours",
@@ -479,7 +518,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetSnapshotTtlInHours
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -487,7 +529,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -509,6 +554,9 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ComputeFqn() *string 
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -522,6 +570,9 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetAnyMapAttribute(te
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -535,6 +586,9 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetBooleanAttribute(t
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -548,6 +602,9 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetBooleanMapAttribut
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -561,6 +618,9 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetListAttribute(terr
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -574,6 +634,9 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetNumberAttribute(te
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -587,6 +650,9 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetNumberListAttribut
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -600,6 +666,9 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetNumberMapAttribute
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -613,6 +682,9 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetStringAttribute(te
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -639,6 +711,9 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) InterpolationAsList()
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -684,6 +759,9 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ResetSnapshotTtlInHou
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

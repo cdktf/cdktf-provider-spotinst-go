@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAzureV3ImageCustomList) WrapsSet() *bool {
 func NewElastigroupAzureV3ImageCustomList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAzureV3ImageCustomList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAzureV3ImageCustomListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAzureV3ImageCustomList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAzureV3ImageCustomList_Override(e ElastigroupAzureV3ImageCust
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3ImageCustomList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureV3ImageCustomList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAzureV3ImageCustomList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3ImageCustomList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3ImageCustomList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAzureV3ImageCustomList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3ImageCustomList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAzureV3ImageCustomList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAzureV3ImageCustomList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3ImageCustomList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAzureV3ImageCustomList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageCustomList) ComputeFqn() *string {
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3ImageCustomList) Get(index *float64) ElastigroupAzureV3ImageCustomOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAzureV3ImageCustomOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageCustomList) Get(index *float64) Elasti
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3ImageCustomList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

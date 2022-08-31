@@ -111,6 +111,9 @@ func (j *jsiiProxy_MrscalerAwsTagsList) WrapsSet() *bool {
 func NewMrscalerAwsTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MrscalerAwsTagsList {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsTagsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMrscalerAwsTagsList_Override(m MrscalerAwsTagsList, terraformResource cd
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTagsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsTagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MrscalerAwsTagsList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MrscalerAwsTagsList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MrscalerAwsTagsList) SetTerraformResource(val cdktf.IInterpol
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MrscalerAwsTagsList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsList) Get(index *float64) MrscalerAwsTagsOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MrscalerAwsTagsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MrscalerAwsTagsList) Get(index *float64) MrscalerAwsTagsOutpu
 }
 
 func (m *jsiiProxy_MrscalerAwsTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -198,6 +198,9 @@ func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) Time
 func NewOceanGkeImportScheduledTaskShutdownHoursOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanGkeImportScheduledTaskShutdownHoursOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanGkeImportScheduledTaskShutdownHoursOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewOceanGkeImportScheduledTaskShutdownHoursOutputReference_Override(o Ocean
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetInternalValue(val *OceanGkeImportScheduledTaskShutdownHours) {
+func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference)SetInternalValue(val *OceanGkeImportScheduledTaskShutdownHours) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) SetTimeWindows(val *[]*string) {
+func (j *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference)SetTimeWindows(val *[]*string) {
+	if err := j.validateSetTimeWindowsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeWindows",
@@ -289,6 +313,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) Comp
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetA
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetB
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetB
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetL
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetN
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetN
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetN
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetS
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) Inte
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) Rese
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskShutdownHoursOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

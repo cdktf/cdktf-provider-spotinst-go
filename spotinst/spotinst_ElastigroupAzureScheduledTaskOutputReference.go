@@ -389,6 +389,9 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) TerraformResour
 func NewElastigroupAzureScheduledTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupAzureScheduledTaskOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAzureScheduledTaskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAzureScheduledTaskOutputReference{}
 
 	_jsii_.Create(
@@ -410,7 +413,10 @@ func NewElastigroupAzureScheduledTaskOutputReference_Override(e ElastigroupAzure
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetAdjustment(val *string) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetAdjustment(val *string) {
+	if err := j.validateSetAdjustmentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adjustment",
@@ -418,7 +424,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetAdjustment(v
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetAdjustmentPercentage(val *string) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetAdjustmentPercentage(val *string) {
+	if err := j.validateSetAdjustmentPercentageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adjustmentPercentage",
@@ -426,7 +435,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetAdjustmentPe
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetBatchSizePercentage(val *string) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetBatchSizePercentage(val *string) {
+	if err := j.validateSetBatchSizePercentageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"batchSizePercentage",
@@ -434,7 +446,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetBatchSizePer
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -442,7 +457,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -450,7 +468,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetCronExpression(val *string) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetCronExpression(val *string) {
+	if err := j.validateSetCronExpressionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cronExpression",
@@ -458,7 +479,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetCronExpressi
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetGracePeriod(val *string) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetGracePeriod(val *string) {
+	if err := j.validateSetGracePeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gracePeriod",
@@ -466,7 +490,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetGracePeriod(
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -474,7 +501,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -482,7 +512,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetIsEnabled(va
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetScaleMaxCapacity(val *string) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetScaleMaxCapacity(val *string) {
+	if err := j.validateSetScaleMaxCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scaleMaxCapacity",
@@ -490,7 +523,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetScaleMaxCapa
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetScaleMinCapacity(val *string) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetScaleMinCapacity(val *string) {
+	if err := j.validateSetScaleMinCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scaleMinCapacity",
@@ -498,7 +534,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetScaleMinCapa
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetScaleTargetCapacity(val *string) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetScaleTargetCapacity(val *string) {
+	if err := j.validateSetScaleTargetCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scaleTargetCapacity",
@@ -506,7 +545,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetScaleTargetC
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetTaskType(val *string) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetTaskType(val *string) {
+	if err := j.validateSetTaskTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskType",
@@ -514,7 +556,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetTaskType(val
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -522,7 +567,10 @@ func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -544,6 +592,9 @@ func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) ComputeFqn() *s
 }
 
 func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -557,6 +608,9 @@ func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetAnyMapAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -570,6 +624,9 @@ func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetBooleanAttri
 }
 
 func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -583,6 +640,9 @@ func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetBooleanMapAt
 }
 
 func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -596,6 +656,9 @@ func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetListAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -609,6 +672,9 @@ func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetNumberAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -622,6 +688,9 @@ func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetNumberListAt
 }
 
 func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -635,6 +704,9 @@ func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetNumberMapAtt
 }
 
 func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -648,6 +720,9 @@ func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetStringAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -674,6 +749,9 @@ func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) InterpolationAs
 }
 
 func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -751,6 +829,9 @@ func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) ResetScaleTarge
 }
 
 func (e *jsiiProxy_ElastigroupAzureScheduledTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

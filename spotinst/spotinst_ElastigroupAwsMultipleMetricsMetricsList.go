@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) WrapsSet() *bool {
 func NewElastigroupAwsMultipleMetricsMetricsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAwsMultipleMetricsMetricsList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsMultipleMetricsMetricsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAwsMultipleMetricsMetricsList_Override(e ElastigroupAwsMultip
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) ComputeFqn() *strin
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) Get(index *float64) ElastigroupAwsMultipleMetricsMetricsOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAwsMultipleMetricsMetricsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) Get(index *float64)
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

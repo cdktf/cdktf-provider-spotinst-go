@@ -199,6 +199,9 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) T
 func NewElastigroupGcpNetworkInterfaceAccessConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGcpNetworkInterfaceAccessConfigsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewElastigroupGcpNetworkInterfaceAccessConfigsOutputReference_Override(e El
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) SetName(val *string) {
+func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) S
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) SetType(val *string) {
+func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -290,6 +314,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) C
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) G
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) G
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) G
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) G
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) G
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) G
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) G
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) G
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) I
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) R
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

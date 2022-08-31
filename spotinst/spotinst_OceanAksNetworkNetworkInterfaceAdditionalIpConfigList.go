@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList) WrapsS
 func NewOceanAksNetworkNetworkInterfaceAdditionalIpConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAksNetworkNetworkInterfaceAdditionalIpConfigList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksNetworkNetworkInterfaceAdditionalIpConfigListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAksNetworkNetworkInterfaceAdditionalIpConfigList_Override(o OceanAk
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList) SetInt
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList) SetTer
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList) SetTer
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList) Comput
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList) Get(index *float64) OceanAksNetworkNetworkInterfaceAdditionalIpConfigOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAksNetworkNetworkInterfaceAdditionalIpConfigOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList) Get(in
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceAdditionalIpConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

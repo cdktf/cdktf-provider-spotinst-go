@@ -223,6 +223,9 @@ func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) TypeInput() 
 func NewStatefulNodeAzureBootDiagnosticsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StatefulNodeAzureBootDiagnosticsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureBootDiagnosticsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewStatefulNodeAzureBootDiagnosticsOutputReference_Override(s StatefulNodeA
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetIsEnabled
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetStorageUrl(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference)SetStorageUrl(val *string) {
+	if err := j.validateSetStorageUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageUrl",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetStorageUr
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -300,7 +324,10 @@ func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) SetType(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -322,6 +349,9 @@ func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) ComputeFqn()
 }
 
 func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -335,6 +365,9 @@ func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetAnyMapAtt
 }
 
 func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -348,6 +381,9 @@ func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetBooleanAt
 }
 
 func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -361,6 +397,9 @@ func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetBooleanMa
 }
 
 func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -374,6 +413,9 @@ func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetListAttri
 }
 
 func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -387,6 +429,9 @@ func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetNumberAtt
 }
 
 func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -400,6 +445,9 @@ func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetNumberLis
 }
 
 func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -413,6 +461,9 @@ func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetNumberMap
 }
 
 func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -426,6 +477,9 @@ func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetStringAtt
 }
 
 func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -452,6 +506,9 @@ func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) Interpolatio
 }
 
 func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) ResetType() 
 }
 
 func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

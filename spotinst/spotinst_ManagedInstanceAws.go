@@ -1340,6 +1340,9 @@ func (j *jsiiProxy_ManagedInstanceAws) VpcIdInput() *string {
 func NewManagedInstanceAws(scope constructs.Construct, id *string, config *ManagedInstanceAwsConfig) ManagedInstanceAws {
 	_init_.Initialize()
 
+	if err := validateNewManagedInstanceAwsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ManagedInstanceAws{}
 
 	_jsii_.Create(
@@ -1362,7 +1365,10 @@ func NewManagedInstanceAws_Override(m ManagedInstanceAws, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetAutoHealing(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAws)SetAutoHealing(val interface{}) {
+	if err := j.validateSetAutoHealingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoHealing",
@@ -1370,7 +1376,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetAutoHealing(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetBlockDevicesMode(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetBlockDevicesMode(val *string) {
+	if err := j.validateSetBlockDevicesModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"blockDevicesMode",
@@ -1378,7 +1387,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetBlockDevicesMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetConnection(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAws)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1386,7 +1398,7 @@ func (j *jsiiProxy_ManagedInstanceAws) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetCount(val *float64) {
+func (j *jsiiProxy_ManagedInstanceAws)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1394,7 +1406,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetCpuCredits(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetCpuCredits(val *string) {
+	if err := j.validateSetCpuCreditsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cpuCredits",
@@ -1402,7 +1417,7 @@ func (j *jsiiProxy_ManagedInstanceAws) SetCpuCredits(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1410,7 +1425,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetDescription(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -1418,7 +1436,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetDrainingTimeout(val *float64) {
+func (j *jsiiProxy_ManagedInstanceAws)SetDrainingTimeout(val *float64) {
+	if err := j.validateSetDrainingTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"drainingTimeout",
@@ -1426,7 +1447,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetDrainingTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetEbsOptimized(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAws)SetEbsOptimized(val interface{}) {
+	if err := j.validateSetEbsOptimizedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ebsOptimized",
@@ -1434,7 +1458,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetEbsOptimized(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetElasticIp(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetElasticIp(val *string) {
+	if err := j.validateSetElasticIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"elasticIp",
@@ -1442,7 +1469,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetElasticIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetEnableMonitoring(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAws)SetEnableMonitoring(val interface{}) {
+	if err := j.validateSetEnableMonitoringParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableMonitoring",
@@ -1450,7 +1480,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetEnableMonitoring(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetFallBackToOd(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAws)SetFallBackToOd(val interface{}) {
+	if err := j.validateSetFallBackToOdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fallBackToOd",
@@ -1458,7 +1491,7 @@ func (j *jsiiProxy_ManagedInstanceAws) SetFallBackToOd(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ManagedInstanceAws)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1466,7 +1499,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetGracePeriod(val *float64) {
+func (j *jsiiProxy_ManagedInstanceAws)SetGracePeriod(val *float64) {
+	if err := j.validateSetGracePeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gracePeriod",
@@ -1474,7 +1510,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetGracePeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetHealthCheckType(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetHealthCheckType(val *string) {
+	if err := j.validateSetHealthCheckTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"healthCheckType",
@@ -1482,7 +1521,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetHealthCheckType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetIamInstanceProfile(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetIamInstanceProfile(val *string) {
+	if err := j.validateSetIamInstanceProfileParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"iamInstanceProfile",
@@ -1490,7 +1532,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetIamInstanceProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetId(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1498,7 +1543,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetImageId(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetImageId(val *string) {
+	if err := j.validateSetImageIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"imageId",
@@ -1506,7 +1554,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetImageId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetInstanceTypes(val *[]*string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetInstanceTypes(val *[]*string) {
+	if err := j.validateSetInstanceTypesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceTypes",
@@ -1514,7 +1565,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetInstanceTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetKeyPair(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetKeyPair(val *string) {
+	if err := j.validateSetKeyPairParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyPair",
@@ -1522,7 +1576,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetKeyPair(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ManagedInstanceAws)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1530,7 +1587,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetLifeCycle(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetLifeCycle(val *string) {
+	if err := j.validateSetLifeCycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifeCycle",
@@ -1538,7 +1598,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetLifeCycle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetMinimumInstanceLifetime(val *float64) {
+func (j *jsiiProxy_ManagedInstanceAws)SetMinimumInstanceLifetime(val *float64) {
+	if err := j.validateSetMinimumInstanceLifetimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minimumInstanceLifetime",
@@ -1546,7 +1609,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetMinimumInstanceLifetime(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetName(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1554,7 +1620,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetOptimizationWindows(val *[]*string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetOptimizationWindows(val *[]*string) {
+	if err := j.validateSetOptimizationWindowsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"optimizationWindows",
@@ -1562,7 +1631,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetOptimizationWindows(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetOrientation(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetOrientation(val *string) {
+	if err := j.validateSetOrientationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"orientation",
@@ -1570,7 +1642,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetOrientation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetPersistBlockDevices(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAws)SetPersistBlockDevices(val interface{}) {
+	if err := j.validateSetPersistBlockDevicesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"persistBlockDevices",
@@ -1578,7 +1653,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetPersistBlockDevices(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetPersistPrivateIp(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAws)SetPersistPrivateIp(val interface{}) {
+	if err := j.validateSetPersistPrivateIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"persistPrivateIp",
@@ -1586,7 +1664,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetPersistPrivateIp(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetPersistRootDevice(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAws)SetPersistRootDevice(val interface{}) {
+	if err := j.validateSetPersistRootDeviceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"persistRootDevice",
@@ -1594,7 +1675,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetPersistRootDevice(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetPlacementTenancy(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetPlacementTenancy(val *string) {
+	if err := j.validateSetPlacementTenancyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"placementTenancy",
@@ -1602,7 +1686,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetPlacementTenancy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetPreferredType(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetPreferredType(val *string) {
+	if err := j.validateSetPreferredTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"preferredType",
@@ -1610,7 +1697,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetPreferredType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetPrivateIp(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetPrivateIp(val *string) {
+	if err := j.validateSetPrivateIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateIp",
@@ -1618,7 +1708,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetPrivateIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetProduct(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetProduct(val *string) {
+	if err := j.validateSetProductParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"product",
@@ -1626,7 +1719,7 @@ func (j *jsiiProxy_ManagedInstanceAws) SetProduct(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ManagedInstanceAws)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1634,7 +1727,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ManagedInstanceAws)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1642,7 +1738,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetRegion(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -1650,7 +1749,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetSecurityGroupIds(val *[]*string) {
+	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityGroupIds",
@@ -1658,7 +1760,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetSecurityGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetShutdownScript(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetShutdownScript(val *string) {
+	if err := j.validateSetShutdownScriptParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shutdownScript",
@@ -1666,7 +1771,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetShutdownScript(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetSubnetIds(val *[]*string) {
+	if err := j.validateSetSubnetIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subnetIds",
@@ -1674,7 +1782,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetUnhealthyDuration(val *float64) {
+func (j *jsiiProxy_ManagedInstanceAws)SetUnhealthyDuration(val *float64) {
+	if err := j.validateSetUnhealthyDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"unhealthyDuration",
@@ -1682,7 +1793,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetUnhealthyDuration(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetUserData(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetUserData(val *string) {
+	if err := j.validateSetUserDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userData",
@@ -1690,7 +1804,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetUserData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetUtilizeReservedInstances(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAws)SetUtilizeReservedInstances(val interface{}) {
+	if err := j.validateSetUtilizeReservedInstancesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"utilizeReservedInstances",
@@ -1698,7 +1815,10 @@ func (j *jsiiProxy_ManagedInstanceAws) SetUtilizeReservedInstances(val interface
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) SetVpcId(val *string) {
+func (j *jsiiProxy_ManagedInstanceAws)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vpcId",
@@ -1726,6 +1846,9 @@ func (j *jsiiProxy_ManagedInstanceAws) SetVpcId(val *string) {
 func ManagedInstanceAws_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateManagedInstanceAws_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1750,6 +1873,9 @@ func ManagedInstanceAws_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -1758,6 +1884,9 @@ func (m *jsiiProxy_ManagedInstanceAws) AddOverride(path *string, value interface
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1771,6 +1900,9 @@ func (m *jsiiProxy_ManagedInstanceAws) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1784,6 +1916,9 @@ func (m *jsiiProxy_ManagedInstanceAws) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1797,6 +1932,9 @@ func (m *jsiiProxy_ManagedInstanceAws) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1810,6 +1948,9 @@ func (m *jsiiProxy_ManagedInstanceAws) GetListAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1823,6 +1964,9 @@ func (m *jsiiProxy_ManagedInstanceAws) GetNumberAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1836,6 +1980,9 @@ func (m *jsiiProxy_ManagedInstanceAws) GetNumberListAttribute(terraformAttribute
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1849,6 +1996,9 @@ func (m *jsiiProxy_ManagedInstanceAws) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1862,6 +2012,9 @@ func (m *jsiiProxy_ManagedInstanceAws) GetStringAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1875,6 +2028,9 @@ func (m *jsiiProxy_ManagedInstanceAws) GetStringMapAttribute(terraformAttribute 
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1888,6 +2044,9 @@ func (m *jsiiProxy_ManagedInstanceAws) InterpolationForAttribute(terraformAttrib
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
@@ -1896,6 +2055,9 @@ func (m *jsiiProxy_ManagedInstanceAws) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) PutBlockDeviceMappings(value interface{}) {
+	if err := m.validatePutBlockDeviceMappingsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putBlockDeviceMappings",
@@ -1904,6 +2066,9 @@ func (m *jsiiProxy_ManagedInstanceAws) PutBlockDeviceMappings(value interface{})
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) PutIntegrationRoute53(value *ManagedInstanceAwsIntegrationRoute53) {
+	if err := m.validatePutIntegrationRoute53Parameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putIntegrationRoute53",
@@ -1912,6 +2077,9 @@ func (m *jsiiProxy_ManagedInstanceAws) PutIntegrationRoute53(value *ManagedInsta
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) PutLoadBalancers(value interface{}) {
+	if err := m.validatePutLoadBalancersParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putLoadBalancers",
@@ -1920,6 +2088,9 @@ func (m *jsiiProxy_ManagedInstanceAws) PutLoadBalancers(value interface{}) {
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) PutManagedInstanceAction(value *ManagedInstanceAwsManagedInstanceAction) {
+	if err := m.validatePutManagedInstanceActionParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putManagedInstanceAction",
@@ -1928,6 +2099,9 @@ func (m *jsiiProxy_ManagedInstanceAws) PutManagedInstanceAction(value *ManagedIn
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) PutNetworkInterface(value interface{}) {
+	if err := m.validatePutNetworkInterfaceParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putNetworkInterface",
@@ -1936,6 +2110,9 @@ func (m *jsiiProxy_ManagedInstanceAws) PutNetworkInterface(value interface{}) {
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) PutResourceTagSpecification(value interface{}) {
+	if err := m.validatePutResourceTagSpecificationParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putResourceTagSpecification",
@@ -1944,6 +2121,9 @@ func (m *jsiiProxy_ManagedInstanceAws) PutResourceTagSpecification(value interfa
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) PutRevertToSpot(value *ManagedInstanceAwsRevertToSpot) {
+	if err := m.validatePutRevertToSpotParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putRevertToSpot",
@@ -1952,6 +2132,9 @@ func (m *jsiiProxy_ManagedInstanceAws) PutRevertToSpot(value *ManagedInstanceAws
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) PutScheduledTask(value interface{}) {
+	if err := m.validatePutScheduledTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putScheduledTask",
@@ -1960,6 +2143,9 @@ func (m *jsiiProxy_ManagedInstanceAws) PutScheduledTask(value interface{}) {
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) PutTags(value interface{}) {
+	if err := m.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTags",

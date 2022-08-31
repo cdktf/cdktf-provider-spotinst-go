@@ -684,6 +684,9 @@ func (j *jsiiProxy_OceanGkeImport) WhitelistInput() *[]*string {
 func NewOceanGkeImport(scope constructs.Construct, id *string, config *OceanGkeImportConfig) OceanGkeImport {
 	_init_.Initialize()
 
+	if err := validateNewOceanGkeImportParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanGkeImport{}
 
 	_jsii_.Create(
@@ -706,7 +709,10 @@ func NewOceanGkeImport_Override(o OceanGkeImport, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetBlacklist(val *[]*string) {
+func (j *jsiiProxy_OceanGkeImport)SetBlacklist(val *[]*string) {
+	if err := j.validateSetBlacklistParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"blacklist",
@@ -714,7 +720,10 @@ func (j *jsiiProxy_OceanGkeImport) SetBlacklist(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetClusterName(val *string) {
+func (j *jsiiProxy_OceanGkeImport)SetClusterName(val *string) {
+	if err := j.validateSetClusterNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterName",
@@ -722,7 +731,10 @@ func (j *jsiiProxy_OceanGkeImport) SetClusterName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetConnection(val interface{}) {
+func (j *jsiiProxy_OceanGkeImport)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -730,7 +742,10 @@ func (j *jsiiProxy_OceanGkeImport) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetControllerClusterId(val *string) {
+func (j *jsiiProxy_OceanGkeImport)SetControllerClusterId(val *string) {
+	if err := j.validateSetControllerClusterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"controllerClusterId",
@@ -738,7 +753,7 @@ func (j *jsiiProxy_OceanGkeImport) SetControllerClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetCount(val *float64) {
+func (j *jsiiProxy_OceanGkeImport)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -746,7 +761,7 @@ func (j *jsiiProxy_OceanGkeImport) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OceanGkeImport)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -754,7 +769,10 @@ func (j *jsiiProxy_OceanGkeImport) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetDesiredCapacity(val *float64) {
+func (j *jsiiProxy_OceanGkeImport)SetDesiredCapacity(val *float64) {
+	if err := j.validateSetDesiredCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"desiredCapacity",
@@ -762,7 +780,7 @@ func (j *jsiiProxy_OceanGkeImport) SetDesiredCapacity(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OceanGkeImport)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -770,7 +788,10 @@ func (j *jsiiProxy_OceanGkeImport) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetId(val *string) {
+func (j *jsiiProxy_OceanGkeImport)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -778,7 +799,10 @@ func (j *jsiiProxy_OceanGkeImport) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OceanGkeImport)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -786,7 +810,10 @@ func (j *jsiiProxy_OceanGkeImport) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetLocation(val *string) {
+func (j *jsiiProxy_OceanGkeImport)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"location",
@@ -794,7 +821,10 @@ func (j *jsiiProxy_OceanGkeImport) SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetMaxSize(val *float64) {
+func (j *jsiiProxy_OceanGkeImport)SetMaxSize(val *float64) {
+	if err := j.validateSetMaxSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxSize",
@@ -802,7 +832,10 @@ func (j *jsiiProxy_OceanGkeImport) SetMaxSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetMinSize(val *float64) {
+func (j *jsiiProxy_OceanGkeImport)SetMinSize(val *float64) {
+	if err := j.validateSetMinSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minSize",
@@ -810,7 +843,7 @@ func (j *jsiiProxy_OceanGkeImport) SetMinSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OceanGkeImport)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -818,7 +851,10 @@ func (j *jsiiProxy_OceanGkeImport) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OceanGkeImport)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -826,7 +862,10 @@ func (j *jsiiProxy_OceanGkeImport) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetRootVolumeType(val *string) {
+func (j *jsiiProxy_OceanGkeImport)SetRootVolumeType(val *string) {
+	if err := j.validateSetRootVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rootVolumeType",
@@ -834,7 +873,10 @@ func (j *jsiiProxy_OceanGkeImport) SetRootVolumeType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetUseAsTemplateOnly(val interface{}) {
+func (j *jsiiProxy_OceanGkeImport)SetUseAsTemplateOnly(val interface{}) {
+	if err := j.validateSetUseAsTemplateOnlyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"useAsTemplateOnly",
@@ -842,7 +884,10 @@ func (j *jsiiProxy_OceanGkeImport) SetUseAsTemplateOnly(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImport) SetWhitelist(val *[]*string) {
+func (j *jsiiProxy_OceanGkeImport)SetWhitelist(val *[]*string) {
+	if err := j.validateSetWhitelistParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"whitelist",
@@ -870,6 +915,9 @@ func (j *jsiiProxy_OceanGkeImport) SetWhitelist(val *[]*string) {
 func OceanGkeImport_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateOceanGkeImport_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -894,6 +942,9 @@ func OceanGkeImport_TfResourceType() *string {
 }
 
 func (o *jsiiProxy_OceanGkeImport) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
@@ -902,6 +953,9 @@ func (o *jsiiProxy_OceanGkeImport) AddOverride(path *string, value interface{}) 
 }
 
 func (o *jsiiProxy_OceanGkeImport) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -915,6 +969,9 @@ func (o *jsiiProxy_OceanGkeImport) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (o *jsiiProxy_OceanGkeImport) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -928,6 +985,9 @@ func (o *jsiiProxy_OceanGkeImport) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (o *jsiiProxy_OceanGkeImport) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -941,6 +1001,9 @@ func (o *jsiiProxy_OceanGkeImport) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (o *jsiiProxy_OceanGkeImport) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -954,6 +1017,9 @@ func (o *jsiiProxy_OceanGkeImport) GetListAttribute(terraformAttribute *string) 
 }
 
 func (o *jsiiProxy_OceanGkeImport) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -967,6 +1033,9 @@ func (o *jsiiProxy_OceanGkeImport) GetNumberAttribute(terraformAttribute *string
 }
 
 func (o *jsiiProxy_OceanGkeImport) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -980,6 +1049,9 @@ func (o *jsiiProxy_OceanGkeImport) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (o *jsiiProxy_OceanGkeImport) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -993,6 +1065,9 @@ func (o *jsiiProxy_OceanGkeImport) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (o *jsiiProxy_OceanGkeImport) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1006,6 +1081,9 @@ func (o *jsiiProxy_OceanGkeImport) GetStringAttribute(terraformAttribute *string
 }
 
 func (o *jsiiProxy_OceanGkeImport) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1019,6 +1097,9 @@ func (o *jsiiProxy_OceanGkeImport) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (o *jsiiProxy_OceanGkeImport) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1032,6 +1113,9 @@ func (o *jsiiProxy_OceanGkeImport) InterpolationForAttribute(terraformAttribute 
 }
 
 func (o *jsiiProxy_OceanGkeImport) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
@@ -1040,6 +1124,9 @@ func (o *jsiiProxy_OceanGkeImport) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (o *jsiiProxy_OceanGkeImport) PutAutoscaler(value *OceanGkeImportAutoscaler) {
+	if err := o.validatePutAutoscalerParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putAutoscaler",
@@ -1048,6 +1135,9 @@ func (o *jsiiProxy_OceanGkeImport) PutAutoscaler(value *OceanGkeImportAutoscaler
 }
 
 func (o *jsiiProxy_OceanGkeImport) PutBackendServices(value interface{}) {
+	if err := o.validatePutBackendServicesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putBackendServices",
@@ -1056,6 +1146,9 @@ func (o *jsiiProxy_OceanGkeImport) PutBackendServices(value interface{}) {
 }
 
 func (o *jsiiProxy_OceanGkeImport) PutScheduledTask(value interface{}) {
+	if err := o.validatePutScheduledTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putScheduledTask",
@@ -1064,6 +1157,9 @@ func (o *jsiiProxy_OceanGkeImport) PutScheduledTask(value interface{}) {
 }
 
 func (o *jsiiProxy_OceanGkeImport) PutShieldedInstanceConfig(value *OceanGkeImportShieldedInstanceConfig) {
+	if err := o.validatePutShieldedInstanceConfigParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putShieldedInstanceConfig",
@@ -1072,6 +1168,9 @@ func (o *jsiiProxy_OceanGkeImport) PutShieldedInstanceConfig(value *OceanGkeImpo
 }
 
 func (o *jsiiProxy_OceanGkeImport) PutStrategy(value interface{}) {
+	if err := o.validatePutStrategyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putStrategy",
@@ -1080,6 +1179,9 @@ func (o *jsiiProxy_OceanGkeImport) PutStrategy(value interface{}) {
 }
 
 func (o *jsiiProxy_OceanGkeImport) PutUpdatePolicy(value *OceanGkeImportUpdatePolicy) {
+	if err := o.validatePutUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putUpdatePolicy",

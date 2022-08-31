@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList) WrapsSet() *bool {
 func NewOceanAwsLaunchSpecResourceLimitsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAwsLaunchSpecResourceLimitsList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsLaunchSpecResourceLimitsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsLaunchSpecResourceLimitsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAwsLaunchSpecResourceLimitsList_Override(o OceanAwsLaunchSpecResour
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList) Get(index *float64) OceanAwsLaunchSpecResourceLimitsOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAwsLaunchSpecResourceLimitsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList) Get(index *float64) Oce
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecResourceLimitsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -222,6 +222,9 @@ func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) TerraformResource
 func NewElastigroupAzureHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastigroupAzureHealthCheckOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAzureHealthCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAzureHealthCheckOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewElastigroupAzureHealthCheckOutputReference_Override(e ElastigroupAzureHe
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetAutoHealing(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference)SetAutoHealing(val interface{}) {
+	if err := j.validateSetAutoHealingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoHealing",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetAutoHealing(va
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetGracePeriod(val *float64) {
+func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference)SetGracePeriod(val *float64) {
+	if err := j.validateSetGracePeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gracePeriod",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetGracePeriod(va
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetHealthCheckType(val *string) {
+func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference)SetHealthCheckType(val *string) {
+	if err := j.validateSetHealthCheckTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"healthCheckType",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetHealthCheckTyp
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetInternalValue(val *ElastigroupAzureHealthCheck) {
+func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference)SetInternalValue(val *ElastigroupAzureHealthCheck) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAzureHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -321,6 +348,9 @@ func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) ComputeFqn() *str
 }
 
 func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetAnyMapAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetBooleanAttribu
 }
 
 func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetBooleanMapAttr
 }
 
 func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetListAttribute(
 }
 
 func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetNumberAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetNumberListAttr
 }
 
 func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetNumberMapAttri
 }
 
 func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetStringAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) InterpolationAsLi
 }
 
 func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) ResetGracePeriod(
 }
 
 func (e *jsiiProxy_ElastigroupAzureHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

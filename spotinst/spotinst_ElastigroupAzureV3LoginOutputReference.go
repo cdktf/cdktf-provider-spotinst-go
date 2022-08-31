@@ -222,6 +222,9 @@ func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) UserNameInput() *stri
 func NewElastigroupAzureV3LoginOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastigroupAzureV3LoginOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAzureV3LoginOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAzureV3LoginOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewElastigroupAzureV3LoginOutputReference_Override(e ElastigroupAzureV3Logi
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetInternalValue(val *ElastigroupAzureV3Login) {
+func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference)SetInternalValue(val *ElastigroupAzureV3Login) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetPassword(val *stri
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetSshPublicKey(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference)SetSshPublicKey(val *string) {
+	if err := j.validateSetSshPublicKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sshPublicKey",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetSshPublicKey(val *
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference) SetUserName(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3LoginOutputReference)SetUserName(val *string) {
+	if err := j.validateSetUserNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userName",
@@ -321,6 +348,9 @@ func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) ComputeFqn() *string 
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetAnyMapAttribute(te
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetBooleanAttribute(t
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetBooleanMapAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetListAttribute(terr
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetNumberAttribute(te
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetNumberListAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetNumberMapAttribute
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetStringAttribute(te
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) InterpolationAsList()
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) ResetSshPublicKey() {
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3LoginOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

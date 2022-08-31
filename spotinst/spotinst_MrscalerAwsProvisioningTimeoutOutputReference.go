@@ -197,6 +197,9 @@ func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) TimeoutInput()
 func NewMrscalerAwsProvisioningTimeoutOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MrscalerAwsProvisioningTimeoutOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsProvisioningTimeoutOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewMrscalerAwsProvisioningTimeoutOutputReference_Override(m MrscalerAwsProv
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetInternalValue(val *MrscalerAwsProvisioningTimeout) {
+func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference)SetInternalValue(val *MrscalerAwsProvisioningTimeout) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetTimeout(val *float64) {
+func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference)SetTimeout(val *float64) {
+	if err := j.validateSetTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeout",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetTimeout(val
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) SetTimeoutAction(val *string) {
+func (j *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference)SetTimeoutAction(val *string) {
+	if err := j.validateSetTimeoutActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeoutAction",
@@ -288,6 +312,9 @@ func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) ComputeFqn() *
 }
 
 func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetAnyMapAttri
 }
 
 func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetBooleanAttr
 }
 
 func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetBooleanMapA
 }
 
 func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetListAttribu
 }
 
 func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetNumberAttri
 }
 
 func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetNumberListA
 }
 
 func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetNumberMapAt
 }
 
 func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetStringAttri
 }
 
 func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) InterpolationA
 }
 
 func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) InterpolationF
 }
 
 func (m *jsiiProxy_MrscalerAwsProvisioningTimeoutOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

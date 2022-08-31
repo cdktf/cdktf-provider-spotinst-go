@@ -246,6 +246,9 @@ func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) TerraformResour
 func NewOceanGkeImportBackendServicesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OceanGkeImportBackendServicesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanGkeImportBackendServicesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanGkeImportBackendServicesOutputReference{}
 
 	_jsii_.Create(
@@ -267,7 +270,10 @@ func NewOceanGkeImportBackendServicesOutputReference_Override(o OceanGkeImportBa
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -275,7 +281,10 @@ func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -283,7 +292,10 @@ func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -291,7 +303,10 @@ func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetLocationType(val *string) {
+func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference)SetLocationType(val *string) {
+	if err := j.validateSetLocationTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"locationType",
@@ -299,7 +314,10 @@ func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetLocationType
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetScheme(val *string) {
+func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference)SetScheme(val *string) {
+	if err := j.validateSetSchemeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scheme",
@@ -307,7 +325,10 @@ func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetScheme(val *
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetServiceName(val *string) {
+func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference)SetServiceName(val *string) {
+	if err := j.validateSetServiceNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serviceName",
@@ -315,7 +336,10 @@ func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetServiceName(
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -323,7 +347,10 @@ func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanGkeImportBackendServicesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -345,6 +372,9 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) ComputeFqn() *s
 }
 
 func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -358,6 +388,9 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetAnyMapAttrib
 }
 
 func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -371,6 +404,9 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetBooleanAttri
 }
 
 func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -384,6 +420,9 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetBooleanMapAt
 }
 
 func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -397,6 +436,9 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetListAttribut
 }
 
 func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -410,6 +452,9 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetNumberAttrib
 }
 
 func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -423,6 +468,9 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetNumberListAt
 }
 
 func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -436,6 +484,9 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetNumberMapAtt
 }
 
 func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -449,6 +500,9 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetStringAttrib
 }
 
 func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -475,6 +529,9 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) InterpolationAs
 }
 
 func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -488,6 +545,9 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) InterpolationFo
 }
 
 func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) PutNamedPorts(value interface{}) {
+	if err := o.validatePutNamedPortsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putNamedPorts",
@@ -520,6 +580,9 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) ResetScheme() {
 }
 
 func (o *jsiiProxy_OceanGkeImportBackendServicesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

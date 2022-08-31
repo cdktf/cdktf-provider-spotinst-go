@@ -197,6 +197,9 @@ func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) WeightedCapacityIn
 func NewMrscalerAwsInstanceWeightsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MrscalerAwsInstanceWeightsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsInstanceWeightsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsInstanceWeightsOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewMrscalerAwsInstanceWeightsOutputReference_Override(m MrscalerAwsInstance
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetInstanceType(val *string) {
+func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference)SetInstanceType(val *string) {
+	if err := j.validateSetInstanceTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceType",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetInstanceType(va
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) SetWeightedCapacity(val *float64) {
+func (j *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference)SetWeightedCapacity(val *float64) {
+	if err := j.validateSetWeightedCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"weightedCapacity",
@@ -288,6 +312,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) ComputeFqn() *stri
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetAnyMapAttribute
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetBooleanAttribut
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetBooleanMapAttri
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetListAttribute(t
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetNumberAttribute
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetNumberListAttri
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetNumberMapAttrib
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetStringAttribute
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) InterpolationAsLis
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) InterpolationForAt
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

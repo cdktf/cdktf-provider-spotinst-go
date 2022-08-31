@@ -199,6 +199,9 @@ func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Ter
 func NewElastigroupAwsItfTargetGroupConfigMatcherOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupAwsItfTargetGroupConfigMatcherOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsItfTargetGroupConfigMatcherOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewElastigroupAwsItfTargetGroupConfigMatcherOutputReference_Override(e Elas
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) SetGrpcCode(val *string) {
+func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference)SetGrpcCode(val *string) {
+	if err := j.validateSetGrpcCodeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"grpcCode",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) SetHttpCode(val *string) {
+func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference)SetHttpCode(val *string) {
+	if err := j.validateSetHttpCodeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"httpCode",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Com
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Get
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Int
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Res
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -223,6 +223,9 @@ func (j *jsiiProxy_OceanAksNetworkOutputReference) VirtualNetworkNameInput() *st
 func NewOceanAksNetworkOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanAksNetworkOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksNetworkOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksNetworkOutputReference{}
 
 	_jsii_.Create(
@@ -244,7 +247,10 @@ func NewOceanAksNetworkOutputReference_Override(o OceanAksNetworkOutputReference
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAksNetworkOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -252,7 +258,10 @@ func (j *jsiiProxy_OceanAksNetworkOutputReference) SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAksNetworkOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -260,7 +269,10 @@ func (j *jsiiProxy_OceanAksNetworkOutputReference) SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkOutputReference) SetInternalValue(val *OceanAksNetwork) {
+func (j *jsiiProxy_OceanAksNetworkOutputReference)SetInternalValue(val *OceanAksNetwork) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -268,7 +280,10 @@ func (j *jsiiProxy_OceanAksNetworkOutputReference) SetInternalValue(val *OceanAk
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkOutputReference) SetResourceGroupName(val *string) {
+func (j *jsiiProxy_OceanAksNetworkOutputReference)SetResourceGroupName(val *string) {
+	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
@@ -276,7 +291,10 @@ func (j *jsiiProxy_OceanAksNetworkOutputReference) SetResourceGroupName(val *str
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksNetworkOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -284,7 +302,10 @@ func (j *jsiiProxy_OceanAksNetworkOutputReference) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksNetworkOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -292,7 +313,10 @@ func (j *jsiiProxy_OceanAksNetworkOutputReference) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkOutputReference) SetVirtualNetworkName(val *string) {
+func (j *jsiiProxy_OceanAksNetworkOutputReference)SetVirtualNetworkName(val *string) {
+	if err := j.validateSetVirtualNetworkNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"virtualNetworkName",
@@ -314,6 +338,9 @@ func (o *jsiiProxy_OceanAksNetworkOutputReference) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanAksNetworkOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -327,6 +354,9 @@ func (o *jsiiProxy_OceanAksNetworkOutputReference) GetAnyMapAttribute(terraformA
 }
 
 func (o *jsiiProxy_OceanAksNetworkOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -340,6 +370,9 @@ func (o *jsiiProxy_OceanAksNetworkOutputReference) GetBooleanAttribute(terraform
 }
 
 func (o *jsiiProxy_OceanAksNetworkOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -353,6 +386,9 @@ func (o *jsiiProxy_OceanAksNetworkOutputReference) GetBooleanMapAttribute(terraf
 }
 
 func (o *jsiiProxy_OceanAksNetworkOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -366,6 +402,9 @@ func (o *jsiiProxy_OceanAksNetworkOutputReference) GetListAttribute(terraformAtt
 }
 
 func (o *jsiiProxy_OceanAksNetworkOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -379,6 +418,9 @@ func (o *jsiiProxy_OceanAksNetworkOutputReference) GetNumberAttribute(terraformA
 }
 
 func (o *jsiiProxy_OceanAksNetworkOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -392,6 +434,9 @@ func (o *jsiiProxy_OceanAksNetworkOutputReference) GetNumberListAttribute(terraf
 }
 
 func (o *jsiiProxy_OceanAksNetworkOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -405,6 +450,9 @@ func (o *jsiiProxy_OceanAksNetworkOutputReference) GetNumberMapAttribute(terrafo
 }
 
 func (o *jsiiProxy_OceanAksNetworkOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -418,6 +466,9 @@ func (o *jsiiProxy_OceanAksNetworkOutputReference) GetStringAttribute(terraformA
 }
 
 func (o *jsiiProxy_OceanAksNetworkOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -444,6 +495,9 @@ func (o *jsiiProxy_OceanAksNetworkOutputReference) InterpolationAsList() cdktf.I
 }
 
 func (o *jsiiProxy_OceanAksNetworkOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -457,6 +511,9 @@ func (o *jsiiProxy_OceanAksNetworkOutputReference) InterpolationForAttribute(pro
 }
 
 func (o *jsiiProxy_OceanAksNetworkOutputReference) PutNetworkInterface(value interface{}) {
+	if err := o.validatePutNetworkInterfaceParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putNetworkInterface",
@@ -489,6 +546,9 @@ func (o *jsiiProxy_OceanAksNetworkOutputReference) ResetVirtualNetworkName() {
 }
 
 func (o *jsiiProxy_OceanAksNetworkOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

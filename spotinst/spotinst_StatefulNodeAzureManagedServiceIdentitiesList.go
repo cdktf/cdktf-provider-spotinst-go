@@ -111,6 +111,9 @@ func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) WrapsSet() *bo
 func NewStatefulNodeAzureManagedServiceIdentitiesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulNodeAzureManagedServiceIdentitiesList {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureManagedServiceIdentitiesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewStatefulNodeAzureManagedServiceIdentitiesList_Override(s StatefulNodeAzu
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) ComputeFqn() *
 }
 
 func (s *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) Get(index *float64) StatefulNodeAzureManagedServiceIdentitiesOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns StatefulNodeAzureManagedServiceIdentitiesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) Get(index *flo
 }
 
 func (s *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

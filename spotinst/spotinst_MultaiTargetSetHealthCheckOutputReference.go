@@ -313,6 +313,9 @@ func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) UnhealthyThreshold
 func NewMultaiTargetSetHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MultaiTargetSetHealthCheckOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMultaiTargetSetHealthCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MultaiTargetSetHealthCheckOutputReference{}
 
 	_jsii_.Create(
@@ -334,7 +337,10 @@ func NewMultaiTargetSetHealthCheckOutputReference_Override(m MultaiTargetSetHeal
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -342,7 +348,10 @@ func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -350,7 +359,10 @@ func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetHealthyThreshold(val *float64) {
+func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference)SetHealthyThreshold(val *float64) {
+	if err := j.validateSetHealthyThresholdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"healthyThreshold",
@@ -358,7 +370,10 @@ func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetHealthyThreshol
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetInternalValue(val *MultaiTargetSetHealthCheck) {
+func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference)SetInternalValue(val *MultaiTargetSetHealthCheck) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -366,7 +381,10 @@ func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetInterval(val *float64) {
+func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference)SetInterval(val *float64) {
+	if err := j.validateSetIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"interval",
@@ -374,7 +392,10 @@ func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetInterval(val *f
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetPath(val *string) {
+func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -382,7 +403,10 @@ func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetPath(val *strin
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetPort(val *float64) {
+func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"port",
@@ -390,7 +414,10 @@ func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetPort(val *float
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetProtocol(val *string) {
+func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protocol",
@@ -398,7 +425,10 @@ func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetProtocol(val *s
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -406,7 +436,10 @@ func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -414,7 +447,10 @@ func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetTimeout(val *float64) {
+func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference)SetTimeout(val *float64) {
+	if err := j.validateSetTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeout",
@@ -422,7 +458,10 @@ func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetTimeout(val *fl
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) SetUnhealthyThreshold(val *float64) {
+func (j *jsiiProxy_MultaiTargetSetHealthCheckOutputReference)SetUnhealthyThreshold(val *float64) {
+	if err := j.validateSetUnhealthyThresholdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"unhealthyThreshold",
@@ -444,6 +483,9 @@ func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) ComputeFqn() *stri
 }
 
 func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -457,6 +499,9 @@ func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetAnyMapAttribute
 }
 
 func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -470,6 +515,9 @@ func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetBooleanAttribut
 }
 
 func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -483,6 +531,9 @@ func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetBooleanMapAttri
 }
 
 func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -496,6 +547,9 @@ func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetListAttribute(t
 }
 
 func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -509,6 +563,9 @@ func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetNumberAttribute
 }
 
 func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -522,6 +579,9 @@ func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetNumberListAttri
 }
 
 func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -535,6 +595,9 @@ func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetNumberMapAttrib
 }
 
 func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -548,6 +611,9 @@ func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetStringAttribute
 }
 
 func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -574,6 +640,9 @@ func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) InterpolationAsLis
 }
 
 func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -595,6 +664,9 @@ func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) ResetPort() {
 }
 
 func (m *jsiiProxy_MultaiTargetSetHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

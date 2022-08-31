@@ -199,6 +199,9 @@ func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) TerraformRes
 func NewOceanGkeLaunchSpecResourceLimitsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanGkeLaunchSpecResourceLimitsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanGkeLaunchSpecResourceLimitsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewOceanGkeLaunchSpecResourceLimitsOutputReference_Override(o OceanGkeLaunc
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetInternalValue(val *OceanGkeLaunchSpecResourceLimits) {
+func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference)SetInternalValue(val *OceanGkeLaunchSpecResourceLimits) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetMaxInstanceCount(val *float64) {
+func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference)SetMaxInstanceCount(val *float64) {
+	if err := j.validateSetMaxInstanceCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxInstanceCount",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetMaxInstan
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetMinInstanceCount(val *float64) {
+func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference)SetMinInstanceCount(val *float64) {
+	if err := j.validateSetMinInstanceCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minInstanceCount",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetMinInstan
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) ComputeFqn()
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetAnyMapAtt
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetBooleanAt
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetBooleanMa
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetListAttri
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetNumberAtt
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetNumberLis
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetNumberMap
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetStringAtt
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) Interpolatio
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) ResetMinInst
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecResourceLimitsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

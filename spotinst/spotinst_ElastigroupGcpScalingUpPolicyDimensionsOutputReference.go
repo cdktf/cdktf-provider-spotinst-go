@@ -198,6 +198,9 @@ func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) Value
 func NewElastigroupGcpScalingUpPolicyDimensionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupGcpScalingUpPolicyDimensionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGcpScalingUpPolicyDimensionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewElastigroupGcpScalingUpPolicyDimensionsOutputReference_Override(e Elasti
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetCo
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetCo
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetIn
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetName(val *string) {
+func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetNa
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetTe
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetTe
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -289,6 +313,9 @@ func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) Compu
 }
 
 func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetAn
 }
 
 func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetBo
 }
 
 func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetBo
 }
 
 func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetLi
 }
 
 func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetNu
 }
 
 func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetNu
 }
 
 func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetNu
 }
 
 func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetSt
 }
 
 func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) Inter
 }
 
 func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) Reset
 }
 
 func (e *jsiiProxy_ElastigroupGcpScalingUpPolicyDimensionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

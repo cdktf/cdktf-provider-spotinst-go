@@ -267,6 +267,9 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) TypeInput() *st
 func NewStatefulNodeAzureLoadBalancerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StatefulNodeAzureLoadBalancerOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureLoadBalancerOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference{}
 
 	_jsii_.Create(
@@ -288,7 +291,10 @@ func NewStatefulNodeAzureLoadBalancerOutputReference_Override(s StatefulNodeAzur
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetBackendPoolNames(val *[]*string) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference)SetBackendPoolNames(val *[]*string) {
+	if err := j.validateSetBackendPoolNamesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backendPoolNames",
@@ -296,7 +302,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetBackendPoolN
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -304,7 +313,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -312,7 +324,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -320,7 +335,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetName(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -328,7 +346,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetName(val *st
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetResourceGroupName(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference)SetResourceGroupName(val *string) {
+	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
@@ -336,7 +357,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetResourceGrou
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetSku(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference)SetSku(val *string) {
+	if err := j.validateSetSkuParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sku",
@@ -344,7 +368,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetSku(val *str
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -352,7 +379,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -360,7 +390,10 @@ func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) SetType(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -382,6 +415,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) ComputeFqn() *s
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -395,6 +431,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetAnyMapAttrib
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -408,6 +447,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetBooleanAttri
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -421,6 +463,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetBooleanMapAt
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -434,6 +479,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetListAttribut
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -447,6 +495,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetNumberAttrib
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -460,6 +511,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetNumberListAt
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -473,6 +527,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetNumberMapAtt
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -486,6 +543,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetStringAttrib
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -512,6 +572,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) InterpolationAs
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -533,6 +596,9 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) ResetSku() {
 }
 
 func (s *jsiiProxy_StatefulNodeAzureLoadBalancerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

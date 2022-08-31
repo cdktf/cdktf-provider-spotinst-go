@@ -199,6 +199,9 @@ func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) ValueInput() *string {
 func NewManagedInstanceAwsTagsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ManagedInstanceAwsTagsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewManagedInstanceAwsTagsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ManagedInstanceAwsTagsOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewManagedInstanceAwsTagsOutputReference_Override(m ManagedInstanceAwsTagsO
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetKey(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsTagsOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -290,6 +314,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetAnyMapAttribute(ter
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetBooleanAttribute(te
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetBooleanMapAttribute
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetListAttribute(terra
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetNumberAttribute(ter
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetNumberListAttribute
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetNumberMapAttribute(
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetStringAttribute(ter
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) InterpolationAsList() 
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) ResetValue() {
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

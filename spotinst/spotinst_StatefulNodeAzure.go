@@ -1190,6 +1190,9 @@ func (j *jsiiProxy_StatefulNodeAzure) ZonesInput() *[]*string {
 func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) StatefulNodeAzure {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzure{}
 
 	_jsii_.Create(
@@ -1212,7 +1215,10 @@ func NewStatefulNodeAzure_Override(s StatefulNodeAzure, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetConnection(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzure)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1220,7 +1226,7 @@ func (j *jsiiProxy_StatefulNodeAzure) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetCount(val *float64) {
+func (j *jsiiProxy_StatefulNodeAzure)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1228,7 +1234,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetCustomData(val *string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetCustomData(val *string) {
+	if err := j.validateSetCustomDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"customData",
@@ -1236,7 +1245,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetCustomData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetDataDisksPersistenceMode(val *string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetDataDisksPersistenceMode(val *string) {
+	if err := j.validateSetDataDisksPersistenceModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dataDisksPersistenceMode",
@@ -1244,7 +1256,7 @@ func (j *jsiiProxy_StatefulNodeAzure) SetDataDisksPersistenceMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1252,7 +1264,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetDescription(val *string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -1260,7 +1275,7 @@ func (j *jsiiProxy_StatefulNodeAzure) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StatefulNodeAzure)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1268,7 +1283,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetId(val *string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1276,7 +1294,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StatefulNodeAzure)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1284,7 +1305,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetName(val *string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1292,7 +1316,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetOdSizes(val *[]*string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetOdSizes(val *[]*string) {
+	if err := j.validateSetOdSizesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"odSizes",
@@ -1300,7 +1327,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetOdSizes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetOs(val *string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetOs(val *string) {
+	if err := j.validateSetOsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"os",
@@ -1308,7 +1338,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetOs(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetOsDiskPersistenceMode(val *string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetOsDiskPersistenceMode(val *string) {
+	if err := j.validateSetOsDiskPersistenceModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"osDiskPersistenceMode",
@@ -1316,7 +1349,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetOsDiskPersistenceMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetPreferredSpotSizes(val *[]*string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetPreferredSpotSizes(val *[]*string) {
+	if err := j.validateSetPreferredSpotSizesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"preferredSpotSizes",
@@ -1324,7 +1360,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetPreferredSpotSizes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetPreferredZones(val *string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetPreferredZones(val *string) {
+	if err := j.validateSetPreferredZonesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"preferredZones",
@@ -1332,7 +1371,7 @@ func (j *jsiiProxy_StatefulNodeAzure) SetPreferredZones(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StatefulNodeAzure)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1340,7 +1379,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StatefulNodeAzure)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1348,7 +1390,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetRegion(val *string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -1356,7 +1401,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetResourceGroupName(val *string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetResourceGroupName(val *string) {
+	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
@@ -1364,7 +1412,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetResourceGroupName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetShouldPersistDataDisks(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzure)SetShouldPersistDataDisks(val interface{}) {
+	if err := j.validateSetShouldPersistDataDisksParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shouldPersistDataDisks",
@@ -1372,7 +1423,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetShouldPersistDataDisks(val interface{})
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetShouldPersistNetwork(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzure)SetShouldPersistNetwork(val interface{}) {
+	if err := j.validateSetShouldPersistNetworkParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shouldPersistNetwork",
@@ -1380,7 +1434,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetShouldPersistNetwork(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetShouldPersistOsDisk(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzure)SetShouldPersistOsDisk(val interface{}) {
+	if err := j.validateSetShouldPersistOsDiskParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shouldPersistOsDisk",
@@ -1388,7 +1445,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetShouldPersistOsDisk(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetShouldPersistVm(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzure)SetShouldPersistVm(val interface{}) {
+	if err := j.validateSetShouldPersistVmParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shouldPersistVm",
@@ -1396,7 +1456,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetShouldPersistVm(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetShutdownScript(val *string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetShutdownScript(val *string) {
+	if err := j.validateSetShutdownScriptParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shutdownScript",
@@ -1404,7 +1467,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetShutdownScript(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetSpotSizes(val *[]*string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetSpotSizes(val *[]*string) {
+	if err := j.validateSetSpotSizesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"spotSizes",
@@ -1412,7 +1478,10 @@ func (j *jsiiProxy_StatefulNodeAzure) SetSpotSizes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SetZones(val *[]*string) {
+func (j *jsiiProxy_StatefulNodeAzure)SetZones(val *[]*string) {
+	if err := j.validateSetZonesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"zones",
@@ -1440,6 +1509,9 @@ func (j *jsiiProxy_StatefulNodeAzure) SetZones(val *[]*string) {
 func StatefulNodeAzure_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateStatefulNodeAzure_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1464,6 +1536,9 @@ func StatefulNodeAzure_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -1472,6 +1547,9 @@ func (s *jsiiProxy_StatefulNodeAzure) AddOverride(path *string, value interface{
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1485,6 +1563,9 @@ func (s *jsiiProxy_StatefulNodeAzure) GetAnyMapAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1498,6 +1579,9 @@ func (s *jsiiProxy_StatefulNodeAzure) GetBooleanAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1511,6 +1595,9 @@ func (s *jsiiProxy_StatefulNodeAzure) GetBooleanMapAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1524,6 +1611,9 @@ func (s *jsiiProxy_StatefulNodeAzure) GetListAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1537,6 +1627,9 @@ func (s *jsiiProxy_StatefulNodeAzure) GetNumberAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1550,6 +1643,9 @@ func (s *jsiiProxy_StatefulNodeAzure) GetNumberListAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1563,6 +1659,9 @@ func (s *jsiiProxy_StatefulNodeAzure) GetNumberMapAttribute(terraformAttribute *
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1576,6 +1675,9 @@ func (s *jsiiProxy_StatefulNodeAzure) GetStringAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1589,6 +1691,9 @@ func (s *jsiiProxy_StatefulNodeAzure) GetStringMapAttribute(terraformAttribute *
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1602,6 +1707,9 @@ func (s *jsiiProxy_StatefulNodeAzure) InterpolationForAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -1610,6 +1718,9 @@ func (s *jsiiProxy_StatefulNodeAzure) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutAttachDataDisk(value interface{}) {
+	if err := s.validatePutAttachDataDiskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAttachDataDisk",
@@ -1618,6 +1729,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutAttachDataDisk(value interface{}) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutBootDiagnostics(value interface{}) {
+	if err := s.validatePutBootDiagnosticsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putBootDiagnostics",
@@ -1626,6 +1740,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutBootDiagnostics(value interface{}) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutDataDisk(value interface{}) {
+	if err := s.validatePutDataDiskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putDataDisk",
@@ -1634,6 +1751,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutDataDisk(value interface{}) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutDelete(value interface{}) {
+	if err := s.validatePutDeleteParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putDelete",
@@ -1642,6 +1762,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutDelete(value interface{}) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutDetachDataDisk(value interface{}) {
+	if err := s.validatePutDetachDataDiskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putDetachDataDisk",
@@ -1650,6 +1773,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutDetachDataDisk(value interface{}) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutExtension(value interface{}) {
+	if err := s.validatePutExtensionParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putExtension",
@@ -1658,6 +1784,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutExtension(value interface{}) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutHealth(value *StatefulNodeAzureHealth) {
+	if err := s.validatePutHealthParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putHealth",
@@ -1666,6 +1795,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutHealth(value *StatefulNodeAzureHealth) 
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutImage(value *StatefulNodeAzureImage) {
+	if err := s.validatePutImageParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putImage",
@@ -1674,6 +1806,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutImage(value *StatefulNodeAzureImage) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutImportVm(value interface{}) {
+	if err := s.validatePutImportVmParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putImportVm",
@@ -1682,6 +1817,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutImportVm(value interface{}) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutLoadBalancer(value interface{}) {
+	if err := s.validatePutLoadBalancerParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLoadBalancer",
@@ -1690,6 +1828,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutLoadBalancer(value interface{}) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutLogin(value *StatefulNodeAzureLogin) {
+	if err := s.validatePutLoginParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLogin",
@@ -1698,6 +1839,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutLogin(value *StatefulNodeAzureLogin) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutManagedServiceIdentities(value interface{}) {
+	if err := s.validatePutManagedServiceIdentitiesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putManagedServiceIdentities",
@@ -1706,6 +1850,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutManagedServiceIdentities(value interfac
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutNetwork(value *StatefulNodeAzureNetwork) {
+	if err := s.validatePutNetworkParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putNetwork",
@@ -1714,6 +1861,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutNetwork(value *StatefulNodeAzureNetwork
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutOsDisk(value *StatefulNodeAzureOsDisk) {
+	if err := s.validatePutOsDiskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putOsDisk",
@@ -1722,6 +1872,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutOsDisk(value *StatefulNodeAzureOsDisk) 
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutSchedulingTask(value interface{}) {
+	if err := s.validatePutSchedulingTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putSchedulingTask",
@@ -1730,6 +1883,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutSchedulingTask(value interface{}) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutSecret(value interface{}) {
+	if err := s.validatePutSecretParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putSecret",
@@ -1738,6 +1894,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutSecret(value interface{}) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutSignal(value interface{}) {
+	if err := s.validatePutSignalParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putSignal",
@@ -1746,6 +1905,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutSignal(value interface{}) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutStrategy(value *StatefulNodeAzureStrategy) {
+	if err := s.validatePutStrategyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putStrategy",
@@ -1754,6 +1916,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutStrategy(value *StatefulNodeAzureStrate
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutTag(value interface{}) {
+	if err := s.validatePutTagParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTag",
@@ -1762,6 +1927,9 @@ func (s *jsiiProxy_StatefulNodeAzure) PutTag(value interface{}) {
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) PutUpdateState(value interface{}) {
+	if err := s.validatePutUpdateStateParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putUpdateState",

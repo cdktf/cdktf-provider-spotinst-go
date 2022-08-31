@@ -174,6 +174,9 @@ func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) TerraformR
 func NewElastigroupAwsSuspensionSuspensionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupAwsSuspensionSuspensionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsSuspensionSuspensionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewElastigroupAwsSuspensionSuspensionOutputReference_Override(e Elastigroup
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) SetInterna
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) SetName(val *string) {
+func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) SetName(va
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -235,7 +253,10 @@ func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -257,6 +278,9 @@ func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) ComputeFqn
 }
 
 func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -270,6 +294,9 @@ func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetAnyMapA
 }
 
 func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -283,6 +310,9 @@ func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetBoolean
 }
 
 func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -296,6 +326,9 @@ func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetBoolean
 }
 
 func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -309,6 +342,9 @@ func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetListAtt
 }
 
 func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -322,6 +358,9 @@ func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetNumberA
 }
 
 func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -335,6 +374,9 @@ func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetNumberL
 }
 
 func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +390,9 @@ func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetNumberM
 }
 
 func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -361,6 +406,9 @@ func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetStringA
 }
 
 func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -387,6 +435,9 @@ func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) Interpolat
 }
 
 func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -400,6 +451,9 @@ func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) Interpolat
 }
 
 func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

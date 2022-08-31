@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanGkeImportScheduledTaskList) WrapsSet() *bool {
 func NewOceanGkeImportScheduledTaskList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanGkeImportScheduledTaskList {
 	_init_.Initialize()
 
+	if err := validateNewOceanGkeImportScheduledTaskListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanGkeImportScheduledTaskList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanGkeImportScheduledTaskList_Override(o OceanGkeImportScheduledTaskLi
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportScheduledTaskList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanGkeImportScheduledTaskList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanGkeImportScheduledTaskList) SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportScheduledTaskList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanGkeImportScheduledTaskList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanGkeImportScheduledTaskList) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportScheduledTaskList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanGkeImportScheduledTaskList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanGkeImportScheduledTaskList) SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportScheduledTaskList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanGkeImportScheduledTaskList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskList) Get(index *float64) OceanGkeImportScheduledTaskOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanGkeImportScheduledTaskOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskList) Get(index *float64) OceanGke
 }
 
 func (o *jsiiProxy_OceanGkeImportScheduledTaskList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

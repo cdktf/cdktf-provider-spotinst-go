@@ -174,6 +174,9 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) TerraformRe
 func NewElastigroupAwsIntegrationEcsBatchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastigroupAwsIntegrationEcsBatchOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsIntegrationEcsBatchOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewElastigroupAwsIntegrationEcsBatchOutputReference_Override(e ElastigroupA
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) SetInternalValue(val *ElastigroupAwsIntegrationEcsBatch) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference)SetInternalValue(val *ElastigroupAwsIntegrationEcsBatch) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) SetInternal
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) SetJobQueueNames(val *[]*string) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference)SetJobQueueNames(val *[]*string) {
+	if err := j.validateSetJobQueueNamesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"jobQueueNames",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) SetJobQueue
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -235,7 +253,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -257,6 +278,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) ComputeFqn(
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -270,6 +294,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetAnyMapAt
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -283,6 +310,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetBooleanA
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -296,6 +326,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetBooleanM
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -309,6 +342,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetListAttr
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -322,6 +358,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetNumberAt
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -335,6 +374,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetNumberLi
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +390,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetNumberMa
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -361,6 +406,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetStringAt
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -387,6 +435,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) Interpolati
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -400,6 +451,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) Interpolati
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationEcsBatchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskList) WrapsSet() *bool {
 func NewMrscalerAwsScheduledTaskList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MrscalerAwsScheduledTaskList {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsScheduledTaskListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsScheduledTaskList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMrscalerAwsScheduledTaskList_Override(m MrscalerAwsScheduledTaskList, te
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskList) SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MrscalerAwsScheduledTaskList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsScheduledTaskList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsScheduledTaskList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskList) Get(index *float64) MrscalerAwsScheduledTaskOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MrscalerAwsScheduledTaskOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskList) Get(index *float64) MrscalerAws
 }
 
 func (m *jsiiProxy_MrscalerAwsScheduledTaskList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

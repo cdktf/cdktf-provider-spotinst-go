@@ -222,6 +222,9 @@ func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) TerraformResource(
 func NewOceanGkeImportUpdatePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanGkeImportUpdatePolicyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanGkeImportUpdatePolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanGkeImportUpdatePolicyOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewOceanGkeImportUpdatePolicyOutputReference_Override(o OceanGkeImportUpdat
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetConditionedRoll(val interface{}) {
+func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference)SetConditionedRoll(val interface{}) {
+	if err := j.validateSetConditionedRollParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"conditionedRoll",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetConditionedRoll
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetInternalValue(val *OceanGkeImportUpdatePolicy) {
+func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference)SetInternalValue(val *OceanGkeImportUpdatePolicy) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetShouldRoll(val interface{}) {
+func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference)SetShouldRoll(val interface{}) {
+	if err := j.validateSetShouldRollParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shouldRoll",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetShouldRoll(val 
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -313,6 +337,9 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) ComputeFqn() *stri
 }
 
 func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -326,6 +353,9 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetAnyMapAttribute
 }
 
 func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -339,6 +369,9 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetBooleanAttribut
 }
 
 func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -352,6 +385,9 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetBooleanMapAttri
 }
 
 func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -365,6 +401,9 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetListAttribute(t
 }
 
 func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -378,6 +417,9 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetNumberAttribute
 }
 
 func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -391,6 +433,9 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetNumberListAttri
 }
 
 func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -404,6 +449,9 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetNumberMapAttrib
 }
 
 func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -417,6 +465,9 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetStringAttribute
 }
 
 func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -443,6 +494,9 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) InterpolationAsLis
 }
 
 func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -456,6 +510,9 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) InterpolationForAt
 }
 
 func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) PutRollConfig(value *OceanGkeImportUpdatePolicyRollConfig) {
+	if err := o.validatePutRollConfigParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putRollConfig",
@@ -480,6 +537,9 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) ResetRollConfig() 
 }
 
 func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

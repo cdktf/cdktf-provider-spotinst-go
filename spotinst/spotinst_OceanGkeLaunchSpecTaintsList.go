@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanGkeLaunchSpecTaintsList) WrapsSet() *bool {
 func NewOceanGkeLaunchSpecTaintsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanGkeLaunchSpecTaintsList {
 	_init_.Initialize()
 
+	if err := validateNewOceanGkeLaunchSpecTaintsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanGkeLaunchSpecTaintsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanGkeLaunchSpecTaintsList_Override(o OceanGkeLaunchSpecTaintsList, te
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecTaintsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanGkeLaunchSpecTaintsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecTaintsList) SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecTaintsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanGkeLaunchSpecTaintsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecTaintsList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecTaintsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanGkeLaunchSpecTaintsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecTaintsList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_OceanGkeLaunchSpecTaintsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanGkeLaunchSpecTaintsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecTaintsList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecTaintsList) Get(index *float64) OceanGkeLaunchSpecTaintsOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanGkeLaunchSpecTaintsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecTaintsList) Get(index *float64) OceanGkeLau
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpecTaintsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

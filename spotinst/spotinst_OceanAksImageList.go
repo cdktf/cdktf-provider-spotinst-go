@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAksImageList) WrapsSet() *bool {
 func NewOceanAksImageList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAksImageList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksImageListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksImageList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAksImageList_Override(o OceanAksImageList, terraformResource cdktf.
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAksImageList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAksImageList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksImageList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAksImageList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksImageList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAksImageList) SetTerraformResource(val cdktf.IInterpolat
 	)
 }
 
-func (j *jsiiProxy_OceanAksImageList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAksImageList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAksImageList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanAksImageList) Get(index *float64) OceanAksImageOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAksImageOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAksImageList) Get(index *float64) OceanAksImageOutputRef
 }
 
 func (o *jsiiProxy_OceanAksImageList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

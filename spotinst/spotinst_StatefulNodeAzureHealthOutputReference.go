@@ -245,6 +245,9 @@ func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) UnhealthyDurationInpu
 func NewStatefulNodeAzureHealthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StatefulNodeAzureHealthOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureHealthOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureHealthOutputReference{}
 
 	_jsii_.Create(
@@ -266,7 +269,10 @@ func NewStatefulNodeAzureHealthOutputReference_Override(s StatefulNodeAzureHealt
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetAutoHealing(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference)SetAutoHealing(val interface{}) {
+	if err := j.validateSetAutoHealingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoHealing",
@@ -274,7 +280,10 @@ func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetAutoHealing(val in
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -282,7 +291,10 @@ func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -290,7 +302,10 @@ func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetGracePeriod(val *float64) {
+func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference)SetGracePeriod(val *float64) {
+	if err := j.validateSetGracePeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gracePeriod",
@@ -298,7 +313,10 @@ func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetGracePeriod(val *f
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetHealthCheckTypes(val *[]*string) {
+func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference)SetHealthCheckTypes(val *[]*string) {
+	if err := j.validateSetHealthCheckTypesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"healthCheckTypes",
@@ -306,7 +324,10 @@ func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetHealthCheckTypes(v
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetInternalValue(val *StatefulNodeAzureHealth) {
+func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference)SetInternalValue(val *StatefulNodeAzureHealth) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -314,7 +335,10 @@ func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -322,7 +346,10 @@ func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -330,7 +357,10 @@ func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference) SetUnhealthyDuration(val *float64) {
+func (j *jsiiProxy_StatefulNodeAzureHealthOutputReference)SetUnhealthyDuration(val *float64) {
+	if err := j.validateSetUnhealthyDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"unhealthyDuration",
@@ -352,6 +382,9 @@ func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) ComputeFqn() *string 
 }
 
 func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -365,6 +398,9 @@ func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetAnyMapAttribute(te
 }
 
 func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -378,6 +414,9 @@ func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetBooleanAttribute(t
 }
 
 func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -391,6 +430,9 @@ func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetBooleanMapAttribut
 }
 
 func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -404,6 +446,9 @@ func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetListAttribute(terr
 }
 
 func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -417,6 +462,9 @@ func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetNumberAttribute(te
 }
 
 func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -430,6 +478,9 @@ func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetNumberListAttribut
 }
 
 func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -443,6 +494,9 @@ func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetNumberMapAttribute
 }
 
 func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -456,6 +510,9 @@ func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetStringAttribute(te
 }
 
 func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -482,6 +539,9 @@ func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) InterpolationAsList()
 }
 
 func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -511,6 +571,9 @@ func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) ResetUnhealthyDuratio
 }
 
 func (s *jsiiProxy_StatefulNodeAzureHealthOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

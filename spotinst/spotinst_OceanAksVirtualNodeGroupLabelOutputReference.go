@@ -198,6 +198,9 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) ValueInput() *s
 func NewOceanAksVirtualNodeGroupLabelOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OceanAksVirtualNodeGroupLabelOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksVirtualNodeGroupLabelOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewOceanAksVirtualNodeGroupLabelOutputReference_Override(o OceanAksVirtualN
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetKey(val *string) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetKey(val *str
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -289,6 +313,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) ComputeFqn() *s
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetAnyMapAttrib
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetBooleanAttri
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetBooleanMapAt
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetListAttribut
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetNumberAttrib
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetNumberListAt
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetNumberMapAtt
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetStringAttrib
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) InterpolationAs
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) ResetValue() {
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLabelOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

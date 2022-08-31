@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) WrapsSet() *bool {
 func NewElastigroupAwsStatefulInstanceActionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAwsStatefulInstanceActionList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsStatefulInstanceActionListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsStatefulInstanceActionList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAwsStatefulInstanceActionList_Override(e ElastigroupAwsStatef
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsStatefulInstanceActionList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsStatefulInstanceActionList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsStatefulInstanceActionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsStatefulInstanceActionList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) ComputeFqn() *strin
 }
 
 func (e *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) Get(index *float64) ElastigroupAwsStatefulInstanceActionOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAwsStatefulInstanceActionOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) Get(index *float64)
 }
 
 func (e *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

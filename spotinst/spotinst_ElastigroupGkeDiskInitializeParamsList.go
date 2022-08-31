@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsList) WrapsSet() *bool {
 func NewElastigroupGkeDiskInitializeParamsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupGkeDiskInitializeParamsList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGkeDiskInitializeParamsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGkeDiskInitializeParamsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupGkeDiskInitializeParamsList_Override(e ElastigroupGkeDiskInit
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsList) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsList) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsList) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsList) ComputeFqn() *string 
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsList) Get(index *float64) ElastigroupGkeDiskInitializeParamsOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupGkeDiskInitializeParamsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsList) Get(index *float64) E
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

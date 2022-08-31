@@ -391,6 +391,9 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) TokenInpu
 func NewElastigroupAwsIntegrationKubernetesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastigroupAwsIntegrationKubernetesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsIntegrationKubernetesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference{}
 
 	_jsii_.Create(
@@ -412,7 +415,10 @@ func NewElastigroupAwsIntegrationKubernetesOutputReference_Override(e Elastigrou
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetApiServer(val *string) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference)SetApiServer(val *string) {
+	if err := j.validateSetApiServerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"apiServer",
@@ -420,7 +426,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetApiSer
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetAutoscaleCooldown(val *float64) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference)SetAutoscaleCooldown(val *float64) {
+	if err := j.validateSetAutoscaleCooldownParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoscaleCooldown",
@@ -428,7 +437,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetAutosc
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetAutoscaleIsAutoConfig(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference)SetAutoscaleIsAutoConfig(val interface{}) {
+	if err := j.validateSetAutoscaleIsAutoConfigParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoscaleIsAutoConfig",
@@ -436,7 +448,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetAutosc
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetAutoscaleIsEnabled(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference)SetAutoscaleIsEnabled(val interface{}) {
+	if err := j.validateSetAutoscaleIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoscaleIsEnabled",
@@ -444,7 +459,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetAutosc
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetClusterIdentifier(val *string) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference)SetClusterIdentifier(val *string) {
+	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterIdentifier",
@@ -452,7 +470,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetCluste
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -460,7 +481,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -468,7 +492,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetIntegrationMode(val *string) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference)SetIntegrationMode(val *string) {
+	if err := j.validateSetIntegrationModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"integrationMode",
@@ -476,7 +503,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetIntegr
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetInternalValue(val *ElastigroupAwsIntegrationKubernetes) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference)SetInternalValue(val *ElastigroupAwsIntegrationKubernetes) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -484,7 +514,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -492,7 +525,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -500,7 +536,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) SetToken(val *string) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference)SetToken(val *string) {
+	if err := j.validateSetTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"token",
@@ -522,6 +561,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) ComputeFq
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -535,6 +577,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetAnyMap
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -548,6 +593,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetBoolea
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -561,6 +609,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetBoolea
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -574,6 +625,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetListAt
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -587,6 +641,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetNumber
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -600,6 +657,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetNumber
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -613,6 +673,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetNumber
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -626,6 +689,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetString
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -652,6 +718,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) Interpola
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -665,6 +734,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) Interpola
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) PutAutoscaleDown(value *ElastigroupAwsIntegrationKubernetesAutoscaleDown) {
+	if err := e.validatePutAutoscaleDownParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putAutoscaleDown",
@@ -673,6 +745,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) PutAutosc
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) PutAutoscaleHeadroom(value *ElastigroupAwsIntegrationKubernetesAutoscaleHeadroom) {
+	if err := e.validatePutAutoscaleHeadroomParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putAutoscaleHeadroom",
@@ -681,6 +756,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) PutAutosc
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) PutAutoscaleLabels(value interface{}) {
+	if err := e.validatePutAutoscaleLabelsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putAutoscaleLabels",
@@ -769,6 +847,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) ResetToke
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

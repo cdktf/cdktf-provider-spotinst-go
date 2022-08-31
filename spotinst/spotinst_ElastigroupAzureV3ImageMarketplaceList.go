@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList) WrapsSet() *bool {
 func NewElastigroupAzureV3ImageMarketplaceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAzureV3ImageMarketplaceList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAzureV3ImageMarketplaceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAzureV3ImageMarketplaceList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAzureV3ImageMarketplaceList_Override(e ElastigroupAzureV3Imag
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList) ComputeFqn() *string 
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList) Get(index *float64) ElastigroupAzureV3ImageMarketplaceOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAzureV3ImageMarketplaceOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList) Get(index *float64) E
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3ImageMarketplaceList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

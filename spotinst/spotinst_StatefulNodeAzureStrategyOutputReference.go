@@ -270,6 +270,9 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) TerraformResource()
 func NewStatefulNodeAzureStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StatefulNodeAzureStrategyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureStrategyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureStrategyOutputReference{}
 
 	_jsii_.Create(
@@ -291,7 +294,10 @@ func NewStatefulNodeAzureStrategyOutputReference_Override(s StatefulNodeAzureStr
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -299,7 +305,10 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -307,7 +316,10 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetDrainingTimeout(val *float64) {
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetDrainingTimeout(val *float64) {
+	if err := j.validateSetDrainingTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"drainingTimeout",
@@ -315,7 +327,10 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetDrainingTimeout(
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetFallbackToOnDemand(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetFallbackToOnDemand(val interface{}) {
+	if err := j.validateSetFallbackToOnDemandParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fallbackToOnDemand",
@@ -323,7 +338,10 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetFallbackToOnDema
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetInternalValue(val *StatefulNodeAzureStrategy) {
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetInternalValue(val *StatefulNodeAzureStrategy) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -331,7 +349,10 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetOptimizationWindows(val *[]*string) {
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetOptimizationWindows(val *[]*string) {
+	if err := j.validateSetOptimizationWindowsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"optimizationWindows",
@@ -339,7 +360,10 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetOptimizationWind
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetPreferredLifeCycle(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetPreferredLifeCycle(val *string) {
+	if err := j.validateSetPreferredLifeCycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"preferredLifeCycle",
@@ -347,7 +371,10 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetPreferredLifeCyc
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -355,7 +382,10 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -377,6 +407,9 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) ComputeFqn() *strin
 }
 
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -390,6 +423,9 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetAnyMapAttribute(
 }
 
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -403,6 +439,9 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetBooleanAttribute
 }
 
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -416,6 +455,9 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetBooleanMapAttrib
 }
 
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -429,6 +471,9 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetListAttribute(te
 }
 
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -442,6 +487,9 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetNumberAttribute(
 }
 
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -455,6 +503,9 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetNumberListAttrib
 }
 
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -468,6 +519,9 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetNumberMapAttribu
 }
 
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -481,6 +535,9 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetStringAttribute(
 }
 
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -507,6 +564,9 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) InterpolationAsList
 }
 
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -520,6 +580,9 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) InterpolationForAtt
 }
 
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) PutRevertToSpot(value *StatefulNodeAzureStrategyRevertToSpot) {
+	if err := s.validatePutRevertToSpotParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putRevertToSpot",
@@ -560,6 +623,9 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) ResetRevertToSpot()
 }
 
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

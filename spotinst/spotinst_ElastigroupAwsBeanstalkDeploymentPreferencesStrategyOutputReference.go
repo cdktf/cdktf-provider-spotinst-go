@@ -199,6 +199,9 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 func NewElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference_Over
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) SetAction(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference)SetAction(val *string) {
+	if err := j.validateSetActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"action",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) SetShouldDrainInstances(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference)SetShouldDrainInstances(val interface{}) {
+	if err := j.validateSetShouldDrainInstancesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shouldDrainInstances",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputRef
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -222,6 +222,9 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 func NewOceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewOceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference_Overrid
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) SetInternalValue(val *OceanAksVirtualNodeGroupLaunchSpecificationOsDisk) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference)SetInternalValue(val *OceanAksVirtualNodeGroupLaunchSpecificationOsDisk) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) SetSizeGb(val *float64) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference)SetSizeGb(val *float64) {
+	if err := j.validateSetSizeGbParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sizeGb",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) SetType(val *string) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) SetUtilizeEphemeralStorage(val interface{}) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference)SetUtilizeEphemeralStorage(val interface{}) {
+	if err := j.validateSetUtilizeEphemeralStorageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"utilizeEphemeralStorage",
@@ -321,6 +348,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputRefere
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationOsDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

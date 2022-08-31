@@ -199,6 +199,9 @@ func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) TerraformRes
 func NewOceanAwsAutoscalerResourceLimitsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanAwsAutoscalerResourceLimitsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsAutoscalerResourceLimitsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewOceanAwsAutoscalerResourceLimitsOutputReference_Override(o OceanAwsAutos
 	)
 }
 
-func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetInternalValue(val *OceanAwsAutoscalerResourceLimits) {
+func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference)SetInternalValue(val *OceanAwsAutoscalerResourceLimits) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetMaxMemoryGib(val *float64) {
+func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference)SetMaxMemoryGib(val *float64) {
+	if err := j.validateSetMaxMemoryGibParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxMemoryGib",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetMaxMemory
 	)
 }
 
-func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetMaxVcpu(val *float64) {
+func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference)SetMaxVcpu(val *float64) {
+	if err := j.validateSetMaxVcpuParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxVcpu",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetMaxVcpu(v
 	)
 }
 
-func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) ComputeFqn()
 }
 
 func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetAnyMapAtt
 }
 
 func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetBooleanAt
 }
 
 func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetBooleanMa
 }
 
 func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetListAttri
 }
 
 func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetNumberAtt
 }
 
 func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetNumberLis
 }
 
 func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetNumberMap
 }
 
 func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetStringAtt
 }
 
 func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) Interpolatio
 }
 
 func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) ResetMaxVcpu
 }
 
 func (o *jsiiProxy_OceanAwsAutoscalerResourceLimitsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -247,6 +247,9 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 func NewElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference_O
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) SetAutomaticRoll(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference)SetAutomaticRoll(val interface{}) {
+	if err := j.validateSetAutomaticRollParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"automaticRoll",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) SetBatchSizePercentage(val *float64) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference)SetBatchSizePercentage(val *float64) {
+	if err := j.validateSetBatchSizePercentageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"batchSizePercentage",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) SetGracePeriod(val *float64) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference)SetGracePeriod(val *float64) {
+	if err := j.validateSetGracePeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gracePeriod",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) SetInternalValue(val *ElastigroupAwsIntegrationBeanstalkDeploymentPreferences) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference)SetInternalValue(val *ElastigroupAwsIntegrationBeanstalkDeploymentPreferences) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -346,6 +373,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -359,6 +389,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -372,6 +405,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -385,6 +421,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -398,6 +437,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -411,6 +453,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -424,6 +469,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -437,6 +485,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -450,6 +501,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -476,6 +530,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) PutStrategy(value *ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesStrategy) {
+	if err := e.validatePutStrategyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putStrategy",
@@ -529,6 +589,9 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutput
 }
 
 func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkDeploymentPreferencesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

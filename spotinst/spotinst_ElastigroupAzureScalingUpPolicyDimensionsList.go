@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList) WrapsSet() *bo
 func NewElastigroupAzureScalingUpPolicyDimensionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAzureScalingUpPolicyDimensionsList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAzureScalingUpPolicyDimensionsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAzureScalingUpPolicyDimensionsList_Override(e ElastigroupAzur
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList) ComputeFqn() *
 }
 
 func (e *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList) Get(index *float64) ElastigroupAzureScalingUpPolicyDimensionsOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAzureScalingUpPolicyDimensionsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList) Get(index *flo
 }
 
 func (e *jsiiProxy_ElastigroupAzureScalingUpPolicyDimensionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

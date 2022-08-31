@@ -578,6 +578,9 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) UnitInput() 
 func NewMrscalerAwsCoreScalingDownPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MrscalerAwsCoreScalingDownPolicyOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsCoreScalingDownPolicyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference{}
 
 	_jsii_.Create(
@@ -599,7 +602,10 @@ func NewMrscalerAwsCoreScalingDownPolicyOutputReference_Override(m MrscalerAwsCo
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetActionType(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetActionType(val *string) {
+	if err := j.validateSetActionTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"actionType",
@@ -607,7 +613,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetActionTyp
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetAdjustment(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetAdjustment(val *string) {
+	if err := j.validateSetAdjustmentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"adjustment",
@@ -615,7 +624,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetAdjustmen
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -623,7 +635,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -631,7 +646,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetCooldown(val *float64) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetCooldown(val *float64) {
+	if err := j.validateSetCooldownParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cooldown",
@@ -639,7 +657,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetCooldown(
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetDimensions(val *map[string]*string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetDimensions(val *map[string]*string) {
+	if err := j.validateSetDimensionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dimensions",
@@ -647,7 +668,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetDimension
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetEvaluationPeriods(val *float64) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetEvaluationPeriods(val *float64) {
+	if err := j.validateSetEvaluationPeriodsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"evaluationPeriods",
@@ -655,7 +679,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetEvaluatio
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -663,7 +690,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetMaximum(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetMaximum(val *string) {
+	if err := j.validateSetMaximumParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maximum",
@@ -671,7 +701,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetMaximum(v
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetMaxTargetCapacity(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetMaxTargetCapacity(val *string) {
+	if err := j.validateSetMaxTargetCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxTargetCapacity",
@@ -679,7 +712,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetMaxTarget
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetMetricName(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetMetricName(val *string) {
+	if err := j.validateSetMetricNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricName",
@@ -687,7 +723,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetMetricNam
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetMinimum(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetMinimum(val *string) {
+	if err := j.validateSetMinimumParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minimum",
@@ -695,7 +734,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetMinimum(v
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetMinTargetCapacity(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetMinTargetCapacity(val *string) {
+	if err := j.validateSetMinTargetCapacityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minTargetCapacity",
@@ -703,7 +745,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetMinTarget
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetNamespace(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -711,7 +756,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetNamespace
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetOperator(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetOperator(val *string) {
+	if err := j.validateSetOperatorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operator",
@@ -719,7 +767,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetOperator(
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetPeriod(val *float64) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetPeriod(val *float64) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"period",
@@ -727,7 +778,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetPeriod(va
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetPolicyName(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetPolicyName(val *string) {
+	if err := j.validateSetPolicyNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyName",
@@ -735,7 +789,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetPolicyNam
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetStatistic(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetStatistic(val *string) {
+	if err := j.validateSetStatisticParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"statistic",
@@ -743,7 +800,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetStatistic
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetTarget(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetTarget(val *string) {
+	if err := j.validateSetTargetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"target",
@@ -751,7 +811,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetTarget(va
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -759,7 +822,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -767,7 +833,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetThreshold(val *float64) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetThreshold(val *float64) {
+	if err := j.validateSetThresholdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"threshold",
@@ -775,7 +844,10 @@ func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetThreshold
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) SetUnit(val *string) {
+func (j *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference)SetUnit(val *string) {
+	if err := j.validateSetUnitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"unit",
@@ -797,6 +869,9 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) ComputeFqn()
 }
 
 func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -810,6 +885,9 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetAnyMapAtt
 }
 
 func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -823,6 +901,9 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetBooleanAt
 }
 
 func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -836,6 +917,9 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetBooleanMa
 }
 
 func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -849,6 +933,9 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetListAttri
 }
 
 func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -862,6 +949,9 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetNumberAtt
 }
 
 func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -875,6 +965,9 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetNumberLis
 }
 
 func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -888,6 +981,9 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetNumberMap
 }
 
 func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -901,6 +997,9 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetStringAtt
 }
 
 func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -927,6 +1026,9 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) Interpolatio
 }
 
 func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1044,6 +1146,9 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) ResetTarget(
 }
 
 func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupTaintList) WrapsSet() *bool {
 func NewOceanAksVirtualNodeGroupTaintList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAksVirtualNodeGroupTaintList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksVirtualNodeGroupTaintListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksVirtualNodeGroupTaintList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAksVirtualNodeGroupTaintList_Override(o OceanAksVirtualNodeGroupTai
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupTaintList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupTaintList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupTaintList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupTaintList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupTaintList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupTaintList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupTaintList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupTaintList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupTaintList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupTaintList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupTaintList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupTaintList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupTaintList) Get(index *float64) OceanAksVirtualNodeGroupTaintOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAksVirtualNodeGroupTaintOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupTaintList) Get(index *float64) OceanA
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupTaintList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

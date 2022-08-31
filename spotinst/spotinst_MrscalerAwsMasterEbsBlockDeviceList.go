@@ -111,6 +111,9 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) WrapsSet() *bool {
 func NewMrscalerAwsMasterEbsBlockDeviceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MrscalerAwsMasterEbsBlockDeviceList {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsMasterEbsBlockDeviceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMrscalerAwsMasterEbsBlockDeviceList_Override(m MrscalerAwsMasterEbsBlock
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) Get(index *float64) MrscalerAwsMasterEbsBlockDeviceOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MrscalerAwsMasterEbsBlockDeviceOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) Get(index *float64) Mrsc
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

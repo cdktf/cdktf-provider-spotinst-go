@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) WrapsSet() *bo
 func NewElastigroupAwsItfTargetGroupConfigMatcherList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAwsItfTargetGroupConfigMatcherList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsItfTargetGroupConfigMatcherListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAwsItfTargetGroupConfigMatcherList_Override(e ElastigroupAwsI
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) ComputeFqn() *
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) Get(index *float64) ElastigroupAwsItfTargetGroupConfigMatcherOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAwsItfTargetGroupConfigMatcherOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) Get(index *flo
 }
 
 func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -199,6 +199,9 @@ func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) Terr
 func NewStatefulNodeAzureSecretVaultCertificatesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StatefulNodeAzureSecretVaultCertificatesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureSecretVaultCertificatesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewStatefulNodeAzureSecretVaultCertificatesOutputReference_Override(s State
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetCertificateStore(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference)SetCertificateStore(val *string) {
+	if err := j.validateSetCertificateStoreParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificateStore",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetCertificateUrl(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference)SetCertificateUrl(val *string) {
+	if err := j.validateSetCertificateUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificateUrl",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) Comp
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetA
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetB
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetB
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetL
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetN
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetN
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetN
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetS
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) Inte
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) Rese
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

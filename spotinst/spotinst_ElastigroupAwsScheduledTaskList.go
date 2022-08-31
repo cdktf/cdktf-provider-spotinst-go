@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAwsScheduledTaskList) WrapsSet() *bool {
 func NewElastigroupAwsScheduledTaskList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAwsScheduledTaskList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsScheduledTaskListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsScheduledTaskList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAwsScheduledTaskList_Override(e ElastigroupAwsScheduledTaskLi
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScheduledTaskList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsScheduledTaskList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAwsScheduledTaskList) SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScheduledTaskList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsScheduledTaskList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAwsScheduledTaskList) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScheduledTaskList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsScheduledTaskList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAwsScheduledTaskList) SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsScheduledTaskList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsScheduledTaskList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAwsScheduledTaskList) ComputeFqn() *string {
 }
 
 func (e *jsiiProxy_ElastigroupAwsScheduledTaskList) Get(index *float64) ElastigroupAwsScheduledTaskOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAwsScheduledTaskOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAwsScheduledTaskList) Get(index *float64) Elastigr
 }
 
 func (e *jsiiProxy_ElastigroupAwsScheduledTaskList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

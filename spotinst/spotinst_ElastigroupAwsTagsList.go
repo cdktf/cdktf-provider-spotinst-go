@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAwsTagsList) WrapsSet() *bool {
 func NewElastigroupAwsTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAwsTagsList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsTagsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAwsTagsList_Override(e ElastigroupAwsTagsList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsTagsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsTagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAwsTagsList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAwsTagsList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAwsTagsList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAwsTagsList) ComputeFqn() *string {
 }
 
 func (e *jsiiProxy_ElastigroupAwsTagsList) Get(index *float64) ElastigroupAwsTagsOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAwsTagsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAwsTagsList) Get(index *float64) ElastigroupAwsTag
 }
 
 func (e *jsiiProxy_ElastigroupAwsTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

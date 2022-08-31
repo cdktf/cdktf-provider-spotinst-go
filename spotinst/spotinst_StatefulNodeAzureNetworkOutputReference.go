@@ -220,6 +220,9 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) VirtualNetworkNameIn
 func NewStatefulNodeAzureNetworkOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StatefulNodeAzureNetworkOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureNetworkOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureNetworkOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewStatefulNodeAzureNetworkOutputReference_Override(s StatefulNodeAzureNetw
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetInternalValue(val *StatefulNodeAzureNetwork) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference)SetInternalValue(val *StatefulNodeAzureNetwork) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetNetworkResourceGroupName(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference)SetNetworkResourceGroupName(val *string) {
+	if err := j.validateSetNetworkResourceGroupNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"networkResourceGroupName",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetNetworkResourceGr
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference) SetVirtualNetworkName(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkOutputReference)SetVirtualNetworkName(val *string) {
+	if err := j.validateSetVirtualNetworkNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"virtualNetworkName",
@@ -311,6 +335,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) ComputeFqn() *string
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -324,6 +351,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetAnyMapAttribute(t
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -337,6 +367,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetBooleanAttribute(
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -350,6 +383,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetBooleanMapAttribu
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -363,6 +399,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetListAttribute(ter
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -376,6 +415,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetNumberAttribute(t
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -389,6 +431,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetNumberListAttribu
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -402,6 +447,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetNumberMapAttribut
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -415,6 +463,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetStringAttribute(t
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -441,6 +492,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) InterpolationAsList(
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -454,6 +508,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) InterpolationForAttr
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) PutNetworkInterface(value interface{}) {
+	if err := s.validatePutNetworkInterfaceParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putNetworkInterface",
@@ -462,6 +519,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) PutNetworkInterface(
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

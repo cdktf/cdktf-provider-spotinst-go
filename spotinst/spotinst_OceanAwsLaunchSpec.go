@@ -914,6 +914,9 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) UserDataInput() *string {
 func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) OceanAwsLaunchSpec {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsLaunchSpecParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsLaunchSpec{}
 
 	_jsii_.Create(
@@ -936,7 +939,10 @@ func NewOceanAwsLaunchSpec_Override(o OceanAwsLaunchSpec, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetAssociatePublicIpAddress(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetAssociatePublicIpAddress(val interface{}) {
+	if err := j.validateSetAssociatePublicIpAddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"associatePublicIpAddress",
@@ -944,7 +950,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetAssociatePublicIpAddress(val interface
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetConnection(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -952,7 +961,7 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetCount(val *float64) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -960,7 +969,7 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -968,7 +977,7 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -976,7 +985,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetIamInstanceProfile(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetIamInstanceProfile(val *string) {
+	if err := j.validateSetIamInstanceProfileParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"iamInstanceProfile",
@@ -984,7 +996,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetIamInstanceProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetId(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -992,7 +1007,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetImageId(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetImageId(val *string) {
+	if err := j.validateSetImageIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"imageId",
@@ -1000,7 +1018,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetImageId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetInstanceTypes(val *[]*string) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetInstanceTypes(val *[]*string) {
+	if err := j.validateSetInstanceTypesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instanceTypes",
@@ -1008,7 +1029,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetInstanceTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1016,7 +1040,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetName(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1024,7 +1051,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetOceanId(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetOceanId(val *string) {
+	if err := j.validateSetOceanIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"oceanId",
@@ -1032,7 +1062,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetOceanId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetPreferredSpotTypes(val *[]*string) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetPreferredSpotTypes(val *[]*string) {
+	if err := j.validateSetPreferredSpotTypesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"preferredSpotTypes",
@@ -1040,7 +1073,7 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetPreferredSpotTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1048,7 +1081,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1056,7 +1092,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetRestrictScaleDown(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetRestrictScaleDown(val interface{}) {
+	if err := j.validateSetRestrictScaleDownParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"restrictScaleDown",
@@ -1064,7 +1103,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetRestrictScaleDown(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetRootVolumeSize(val *float64) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetRootVolumeSize(val *float64) {
+	if err := j.validateSetRootVolumeSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rootVolumeSize",
@@ -1072,7 +1114,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetRootVolumeSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetSecurityGroups(val *[]*string) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetSecurityGroups(val *[]*string) {
+	if err := j.validateSetSecurityGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"securityGroups",
@@ -1080,7 +1125,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetSecurityGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetSubnetIds(val *[]*string) {
+	if err := j.validateSetSubnetIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subnetIds",
@@ -1088,7 +1136,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetSubnetIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) SetUserData(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetUserData(val *string) {
+	if err := j.validateSetUserDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userData",
@@ -1116,6 +1167,9 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SetUserData(val *string) {
 func OceanAwsLaunchSpec_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateOceanAwsLaunchSpec_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1140,6 +1194,9 @@ func OceanAwsLaunchSpec_TfResourceType() *string {
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
@@ -1148,6 +1205,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) AddOverride(path *string, value interface
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1161,6 +1221,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1174,6 +1237,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1187,6 +1253,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1200,6 +1269,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) GetListAttribute(terraformAttribute *stri
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1213,6 +1285,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) GetNumberAttribute(terraformAttribute *st
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1226,6 +1301,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) GetNumberListAttribute(terraformAttribute
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1239,6 +1317,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1252,6 +1333,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) GetStringAttribute(terraformAttribute *st
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1265,6 +1349,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) GetStringMapAttribute(terraformAttribute 
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1278,6 +1365,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) InterpolationForAttribute(terraformAttrib
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
@@ -1286,6 +1376,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutAutoscaleHeadrooms(value interface{}) {
+	if err := o.validatePutAutoscaleHeadroomsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putAutoscaleHeadrooms",
@@ -1294,6 +1387,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutAutoscaleHeadrooms(value interface{}) 
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutAutoscaleHeadroomsAutomatic(value interface{}) {
+	if err := o.validatePutAutoscaleHeadroomsAutomaticParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putAutoscaleHeadroomsAutomatic",
@@ -1302,6 +1398,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutAutoscaleHeadroomsAutomatic(value inte
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutBlockDeviceMappings(value interface{}) {
+	if err := o.validatePutBlockDeviceMappingsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putBlockDeviceMappings",
@@ -1310,6 +1409,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutBlockDeviceMappings(value interface{})
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutCreateOptions(value *OceanAwsLaunchSpecCreateOptions) {
+	if err := o.validatePutCreateOptionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putCreateOptions",
@@ -1318,6 +1420,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutCreateOptions(value *OceanAwsLaunchSpe
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutDeleteOptions(value *OceanAwsLaunchSpecDeleteOptions) {
+	if err := o.validatePutDeleteOptionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putDeleteOptions",
@@ -1326,6 +1431,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutDeleteOptions(value *OceanAwsLaunchSpe
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutElasticIpPool(value interface{}) {
+	if err := o.validatePutElasticIpPoolParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putElasticIpPool",
@@ -1334,6 +1442,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutElasticIpPool(value interface{}) {
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutLabels(value interface{}) {
+	if err := o.validatePutLabelsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putLabels",
@@ -1342,6 +1453,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutLabels(value interface{}) {
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutResourceLimits(value interface{}) {
+	if err := o.validatePutResourceLimitsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putResourceLimits",
@@ -1350,6 +1464,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutResourceLimits(value interface{}) {
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutSchedulingShutdownHours(value *OceanAwsLaunchSpecSchedulingShutdownHours) {
+	if err := o.validatePutSchedulingShutdownHoursParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putSchedulingShutdownHours",
@@ -1358,6 +1475,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutSchedulingShutdownHours(value *OceanAw
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutSchedulingTask(value interface{}) {
+	if err := o.validatePutSchedulingTaskParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putSchedulingTask",
@@ -1366,6 +1486,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutSchedulingTask(value interface{}) {
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutStrategy(value interface{}) {
+	if err := o.validatePutStrategyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putStrategy",
@@ -1374,6 +1497,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutStrategy(value interface{}) {
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutTags(value interface{}) {
+	if err := o.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putTags",
@@ -1382,6 +1508,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutTags(value interface{}) {
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutTaints(value interface{}) {
+	if err := o.validatePutTaintsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putTaints",
@@ -1390,6 +1519,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutTaints(value interface{}) {
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutUpdatePolicy(value *OceanAwsLaunchSpecUpdatePolicy) {
+	if err := o.validatePutUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putUpdatePolicy",

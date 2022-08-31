@@ -197,6 +197,9 @@ func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) ValueInput() *string
 func NewOceanAwsLaunchSpecLabelsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OceanAwsLaunchSpecLabelsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsLaunchSpecLabelsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewOceanAwsLaunchSpecLabelsOutputReference_Override(o OceanAwsLaunchSpecLab
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetKey(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetKey(val *string) 
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -288,6 +312,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) ComputeFqn() *string
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetAnyMapAttribute(t
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetBooleanAttribute(
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetBooleanMapAttribu
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetListAttribute(ter
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetNumberAttribute(t
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetNumberListAttribu
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetNumberMapAttribut
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetStringAttribute(t
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) InterpolationAsList(
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) InterpolationForAttr
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecLabelsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

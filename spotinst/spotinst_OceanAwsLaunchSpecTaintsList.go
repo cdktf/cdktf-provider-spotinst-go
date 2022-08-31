@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAwsLaunchSpecTaintsList) WrapsSet() *bool {
 func NewOceanAwsLaunchSpecTaintsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAwsLaunchSpecTaintsList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsLaunchSpecTaintsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsLaunchSpecTaintsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAwsLaunchSpecTaintsList_Override(o OceanAwsLaunchSpecTaintsList, te
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecTaintsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpecTaintsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecTaintsList) SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecTaintsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpecTaintsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecTaintsList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecTaintsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAwsLaunchSpecTaintsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecTaintsList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecTaintsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAwsLaunchSpecTaintsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecTaintsList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecTaintsList) Get(index *float64) OceanAwsLaunchSpecTaintsOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAwsLaunchSpecTaintsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecTaintsList) Get(index *float64) OceanAwsLau
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecTaintsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -479,6 +479,9 @@ func (j *jsiiProxy_MultaiRoutingRule) TerraformResourceType() *string {
 func NewMultaiRoutingRule(scope constructs.Construct, id *string, config *MultaiRoutingRuleConfig) MultaiRoutingRule {
 	_init_.Initialize()
 
+	if err := validateNewMultaiRoutingRuleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MultaiRoutingRule{}
 
 	_jsii_.Create(
@@ -501,7 +504,10 @@ func NewMultaiRoutingRule_Override(m MultaiRoutingRule, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetBalancerId(val *string) {
+func (j *jsiiProxy_MultaiRoutingRule)SetBalancerId(val *string) {
+	if err := j.validateSetBalancerIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"balancerId",
@@ -509,7 +515,10 @@ func (j *jsiiProxy_MultaiRoutingRule) SetBalancerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetConnection(val interface{}) {
+func (j *jsiiProxy_MultaiRoutingRule)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -517,7 +526,7 @@ func (j *jsiiProxy_MultaiRoutingRule) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetCount(val *float64) {
+func (j *jsiiProxy_MultaiRoutingRule)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -525,7 +534,7 @@ func (j *jsiiProxy_MultaiRoutingRule) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MultaiRoutingRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -533,7 +542,7 @@ func (j *jsiiProxy_MultaiRoutingRule) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MultaiRoutingRule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -541,7 +550,10 @@ func (j *jsiiProxy_MultaiRoutingRule) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetId(val *string) {
+func (j *jsiiProxy_MultaiRoutingRule)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -549,7 +561,10 @@ func (j *jsiiProxy_MultaiRoutingRule) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MultaiRoutingRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -557,7 +572,10 @@ func (j *jsiiProxy_MultaiRoutingRule) SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetListenerId(val *string) {
+func (j *jsiiProxy_MultaiRoutingRule)SetListenerId(val *string) {
+	if err := j.validateSetListenerIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"listenerId",
@@ -565,7 +583,10 @@ func (j *jsiiProxy_MultaiRoutingRule) SetListenerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetMiddlewareIds(val *[]*string) {
+func (j *jsiiProxy_MultaiRoutingRule)SetMiddlewareIds(val *[]*string) {
+	if err := j.validateSetMiddlewareIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"middlewareIds",
@@ -573,7 +594,10 @@ func (j *jsiiProxy_MultaiRoutingRule) SetMiddlewareIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetPriority(val *float64) {
+func (j *jsiiProxy_MultaiRoutingRule)SetPriority(val *float64) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"priority",
@@ -581,7 +605,7 @@ func (j *jsiiProxy_MultaiRoutingRule) SetPriority(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MultaiRoutingRule)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -589,7 +613,10 @@ func (j *jsiiProxy_MultaiRoutingRule) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MultaiRoutingRule)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -597,7 +624,10 @@ func (j *jsiiProxy_MultaiRoutingRule) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetRoute(val *string) {
+func (j *jsiiProxy_MultaiRoutingRule)SetRoute(val *string) {
+	if err := j.validateSetRouteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"route",
@@ -605,7 +635,10 @@ func (j *jsiiProxy_MultaiRoutingRule) SetRoute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetStrategy(val *string) {
+func (j *jsiiProxy_MultaiRoutingRule)SetStrategy(val *string) {
+	if err := j.validateSetStrategyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"strategy",
@@ -613,7 +646,10 @@ func (j *jsiiProxy_MultaiRoutingRule) SetStrategy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRule) SetTargetSetIds(val *[]*string) {
+func (j *jsiiProxy_MultaiRoutingRule)SetTargetSetIds(val *[]*string) {
+	if err := j.validateSetTargetSetIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"targetSetIds",
@@ -641,6 +677,9 @@ func (j *jsiiProxy_MultaiRoutingRule) SetTargetSetIds(val *[]*string) {
 func MultaiRoutingRule_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMultaiRoutingRule_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -665,6 +704,9 @@ func MultaiRoutingRule_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -673,6 +715,9 @@ func (m *jsiiProxy_MultaiRoutingRule) AddOverride(path *string, value interface{
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -686,6 +731,9 @@ func (m *jsiiProxy_MultaiRoutingRule) GetAnyMapAttribute(terraformAttribute *str
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -699,6 +747,9 @@ func (m *jsiiProxy_MultaiRoutingRule) GetBooleanAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -712,6 +763,9 @@ func (m *jsiiProxy_MultaiRoutingRule) GetBooleanMapAttribute(terraformAttribute 
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -725,6 +779,9 @@ func (m *jsiiProxy_MultaiRoutingRule) GetListAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -738,6 +795,9 @@ func (m *jsiiProxy_MultaiRoutingRule) GetNumberAttribute(terraformAttribute *str
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -751,6 +811,9 @@ func (m *jsiiProxy_MultaiRoutingRule) GetNumberListAttribute(terraformAttribute 
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -764,6 +827,9 @@ func (m *jsiiProxy_MultaiRoutingRule) GetNumberMapAttribute(terraformAttribute *
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -777,6 +843,9 @@ func (m *jsiiProxy_MultaiRoutingRule) GetStringAttribute(terraformAttribute *str
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -790,6 +859,9 @@ func (m *jsiiProxy_MultaiRoutingRule) GetStringMapAttribute(terraformAttribute *
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -803,6 +875,9 @@ func (m *jsiiProxy_MultaiRoutingRule) InterpolationForAttribute(terraformAttribu
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
@@ -811,6 +886,9 @@ func (m *jsiiProxy_MultaiRoutingRule) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (m *jsiiProxy_MultaiRoutingRule) PutTags(value interface{}) {
+	if err := m.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTags",

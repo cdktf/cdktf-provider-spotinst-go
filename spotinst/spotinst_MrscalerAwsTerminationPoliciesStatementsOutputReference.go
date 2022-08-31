@@ -340,6 +340,9 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) Unit
 func NewMrscalerAwsTerminationPoliciesStatementsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MrscalerAwsTerminationPoliciesStatementsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsTerminationPoliciesStatementsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference{}
 
 	_jsii_.Create(
@@ -361,7 +364,10 @@ func NewMrscalerAwsTerminationPoliciesStatementsOutputReference_Override(m Mrsca
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -369,7 +375,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -377,7 +386,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetEvaluationPeriods(val *float64) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetEvaluationPeriods(val *float64) {
+	if err := j.validateSetEvaluationPeriodsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"evaluationPeriods",
@@ -385,7 +397,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetE
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -393,7 +408,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetMetricName(val *string) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetMetricName(val *string) {
+	if err := j.validateSetMetricNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricName",
@@ -401,7 +419,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetM
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetNamespace(val *string) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -409,7 +430,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetN
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetOperator(val *string) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetOperator(val *string) {
+	if err := j.validateSetOperatorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operator",
@@ -417,7 +441,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetO
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetPeriod(val *float64) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetPeriod(val *float64) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"period",
@@ -425,7 +452,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetP
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetStatistic(val *string) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetStatistic(val *string) {
+	if err := j.validateSetStatisticParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"statistic",
@@ -433,7 +463,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetS
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -441,7 +474,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -449,7 +485,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetThreshold(val *float64) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetThreshold(val *float64) {
+	if err := j.validateSetThresholdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"threshold",
@@ -457,7 +496,10 @@ func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) SetUnit(val *string) {
+func (j *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference)SetUnit(val *string) {
+	if err := j.validateSetUnitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"unit",
@@ -479,6 +521,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) Comp
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -492,6 +537,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetA
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -505,6 +553,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetB
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -518,6 +569,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetB
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -531,6 +585,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetL
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -544,6 +601,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetN
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -557,6 +617,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetN
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -570,6 +633,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetN
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -583,6 +649,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetS
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -609,6 +678,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) Inte
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -662,6 +734,9 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) Rese
 }
 
 func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -268,6 +268,9 @@ func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) VirtualNetworkNameInp
 func NewElastigroupAzureNetworkOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastigroupAzureNetworkOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAzureNetworkOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAzureNetworkOutputReference{}
 
 	_jsii_.Create(
@@ -289,7 +292,10 @@ func NewElastigroupAzureNetworkOutputReference_Override(e ElastigroupAzureNetwor
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetAssignPublicIp(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference)SetAssignPublicIp(val interface{}) {
+	if err := j.validateSetAssignPublicIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"assignPublicIp",
@@ -297,7 +303,10 @@ func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetAssignPublicIp(val
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -305,7 +314,10 @@ func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -313,7 +325,10 @@ func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetInternalValue(val *ElastigroupAzureNetwork) {
+func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference)SetInternalValue(val *ElastigroupAzureNetwork) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -321,7 +336,10 @@ func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetResourceGroupName(val *string) {
+func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference)SetResourceGroupName(val *string) {
+	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
@@ -329,7 +347,10 @@ func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetResourceGroupName(
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetSubnetName(val *string) {
+func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference)SetSubnetName(val *string) {
+	if err := j.validateSetSubnetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subnetName",
@@ -337,7 +358,10 @@ func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetSubnetName(val *st
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -345,7 +369,10 @@ func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -353,7 +380,10 @@ func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference) SetVirtualNetworkName(val *string) {
+func (j *jsiiProxy_ElastigroupAzureNetworkOutputReference)SetVirtualNetworkName(val *string) {
+	if err := j.validateSetVirtualNetworkNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"virtualNetworkName",
@@ -375,6 +405,9 @@ func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) ComputeFqn() *string 
 }
 
 func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -388,6 +421,9 @@ func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetAnyMapAttribute(te
 }
 
 func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -401,6 +437,9 @@ func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetBooleanAttribute(t
 }
 
 func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -414,6 +453,9 @@ func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetBooleanMapAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -427,6 +469,9 @@ func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetListAttribute(terr
 }
 
 func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -440,6 +485,9 @@ func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetNumberAttribute(te
 }
 
 func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -453,6 +501,9 @@ func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetNumberListAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -466,6 +517,9 @@ func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetNumberMapAttribute
 }
 
 func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -479,6 +533,9 @@ func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetStringAttribute(te
 }
 
 func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -505,6 +562,9 @@ func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) InterpolationAsList()
 }
 
 func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -518,6 +578,9 @@ func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) InterpolationForAttri
 }
 
 func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) PutAdditionalIpConfigs(value interface{}) {
+	if err := e.validatePutAdditionalIpConfigsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putAdditionalIpConfigs",
@@ -542,6 +605,9 @@ func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) ResetAssignPublicIp()
 }
 
 func (e *jsiiProxy_ElastigroupAzureNetworkOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

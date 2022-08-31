@@ -478,6 +478,9 @@ func (j *jsiiProxy_MultaiTargetSet) WeightInput() *float64 {
 func NewMultaiTargetSet(scope constructs.Construct, id *string, config *MultaiTargetSetConfig) MultaiTargetSet {
 	_init_.Initialize()
 
+	if err := validateNewMultaiTargetSetParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MultaiTargetSet{}
 
 	_jsii_.Create(
@@ -500,7 +503,10 @@ func NewMultaiTargetSet_Override(m MultaiTargetSet, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetBalancerId(val *string) {
+func (j *jsiiProxy_MultaiTargetSet)SetBalancerId(val *string) {
+	if err := j.validateSetBalancerIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"balancerId",
@@ -508,7 +514,10 @@ func (j *jsiiProxy_MultaiTargetSet) SetBalancerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetConnection(val interface{}) {
+func (j *jsiiProxy_MultaiTargetSet)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -516,7 +525,7 @@ func (j *jsiiProxy_MultaiTargetSet) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetCount(val *float64) {
+func (j *jsiiProxy_MultaiTargetSet)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -524,7 +533,7 @@ func (j *jsiiProxy_MultaiTargetSet) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MultaiTargetSet)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -532,7 +541,10 @@ func (j *jsiiProxy_MultaiTargetSet) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetDeploymentId(val *string) {
+func (j *jsiiProxy_MultaiTargetSet)SetDeploymentId(val *string) {
+	if err := j.validateSetDeploymentIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deploymentId",
@@ -540,7 +552,7 @@ func (j *jsiiProxy_MultaiTargetSet) SetDeploymentId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MultaiTargetSet)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -548,7 +560,10 @@ func (j *jsiiProxy_MultaiTargetSet) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetId(val *string) {
+func (j *jsiiProxy_MultaiTargetSet)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -556,7 +571,10 @@ func (j *jsiiProxy_MultaiTargetSet) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MultaiTargetSet)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -564,7 +582,10 @@ func (j *jsiiProxy_MultaiTargetSet) SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetName(val *string) {
+func (j *jsiiProxy_MultaiTargetSet)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -572,7 +593,10 @@ func (j *jsiiProxy_MultaiTargetSet) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetPort(val *float64) {
+func (j *jsiiProxy_MultaiTargetSet)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"port",
@@ -580,7 +604,10 @@ func (j *jsiiProxy_MultaiTargetSet) SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetProtocol(val *string) {
+func (j *jsiiProxy_MultaiTargetSet)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protocol",
@@ -588,7 +615,7 @@ func (j *jsiiProxy_MultaiTargetSet) SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MultaiTargetSet)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -596,7 +623,10 @@ func (j *jsiiProxy_MultaiTargetSet) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MultaiTargetSet)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -604,7 +634,10 @@ func (j *jsiiProxy_MultaiTargetSet) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MultaiTargetSet) SetWeight(val *float64) {
+func (j *jsiiProxy_MultaiTargetSet)SetWeight(val *float64) {
+	if err := j.validateSetWeightParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"weight",
@@ -632,6 +665,9 @@ func (j *jsiiProxy_MultaiTargetSet) SetWeight(val *float64) {
 func MultaiTargetSet_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMultaiTargetSet_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -656,6 +692,9 @@ func MultaiTargetSet_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MultaiTargetSet) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -664,6 +703,9 @@ func (m *jsiiProxy_MultaiTargetSet) AddOverride(path *string, value interface{})
 }
 
 func (m *jsiiProxy_MultaiTargetSet) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -677,6 +719,9 @@ func (m *jsiiProxy_MultaiTargetSet) GetAnyMapAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MultaiTargetSet) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -690,6 +735,9 @@ func (m *jsiiProxy_MultaiTargetSet) GetBooleanAttribute(terraformAttribute *stri
 }
 
 func (m *jsiiProxy_MultaiTargetSet) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -703,6 +751,9 @@ func (m *jsiiProxy_MultaiTargetSet) GetBooleanMapAttribute(terraformAttribute *s
 }
 
 func (m *jsiiProxy_MultaiTargetSet) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -716,6 +767,9 @@ func (m *jsiiProxy_MultaiTargetSet) GetListAttribute(terraformAttribute *string)
 }
 
 func (m *jsiiProxy_MultaiTargetSet) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -729,6 +783,9 @@ func (m *jsiiProxy_MultaiTargetSet) GetNumberAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MultaiTargetSet) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -742,6 +799,9 @@ func (m *jsiiProxy_MultaiTargetSet) GetNumberListAttribute(terraformAttribute *s
 }
 
 func (m *jsiiProxy_MultaiTargetSet) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -755,6 +815,9 @@ func (m *jsiiProxy_MultaiTargetSet) GetNumberMapAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_MultaiTargetSet) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -768,6 +831,9 @@ func (m *jsiiProxy_MultaiTargetSet) GetStringAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MultaiTargetSet) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -781,6 +847,9 @@ func (m *jsiiProxy_MultaiTargetSet) GetStringMapAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_MultaiTargetSet) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -794,6 +863,9 @@ func (m *jsiiProxy_MultaiTargetSet) InterpolationForAttribute(terraformAttribute
 }
 
 func (m *jsiiProxy_MultaiTargetSet) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
@@ -802,6 +874,9 @@ func (m *jsiiProxy_MultaiTargetSet) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (m *jsiiProxy_MultaiTargetSet) PutHealthCheck(value *MultaiTargetSetHealthCheck) {
+	if err := m.validatePutHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putHealthCheck",
@@ -810,6 +885,9 @@ func (m *jsiiProxy_MultaiTargetSet) PutHealthCheck(value *MultaiTargetSetHealthC
 }
 
 func (m *jsiiProxy_MultaiTargetSet) PutTags(value interface{}) {
+	if err := m.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTags",

@@ -257,6 +257,9 @@ func (j *jsiiProxy_SpotinstProvider) TokenInput() *string {
 func NewSpotinstProvider(scope constructs.Construct, id *string, config *SpotinstProviderConfig) SpotinstProvider {
 	_init_.Initialize()
 
+	if err := validateNewSpotinstProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SpotinstProvider{}
 
 	_jsii_.Create(
@@ -279,7 +282,7 @@ func NewSpotinstProvider_Override(s SpotinstProvider, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_SpotinstProvider) SetAccount(val *string) {
+func (j *jsiiProxy_SpotinstProvider)SetAccount(val *string) {
 	_jsii_.Set(
 		j,
 		"account",
@@ -287,7 +290,7 @@ func (j *jsiiProxy_SpotinstProvider) SetAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotinstProvider) SetAlias(val *string) {
+func (j *jsiiProxy_SpotinstProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -295,7 +298,7 @@ func (j *jsiiProxy_SpotinstProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotinstProvider) SetFeatureFlags(val *string) {
+func (j *jsiiProxy_SpotinstProvider)SetFeatureFlags(val *string) {
 	_jsii_.Set(
 		j,
 		"featureFlags",
@@ -303,7 +306,7 @@ func (j *jsiiProxy_SpotinstProvider) SetFeatureFlags(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpotinstProvider) SetToken(val *string) {
+func (j *jsiiProxy_SpotinstProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -331,6 +334,9 @@ func (j *jsiiProxy_SpotinstProvider) SetToken(val *string) {
 func SpotinstProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSpotinstProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -355,6 +361,9 @@ func SpotinstProvider_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SpotinstProvider) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -363,6 +372,9 @@ func (s *jsiiProxy_SpotinstProvider) AddOverride(path *string, value interface{}
 }
 
 func (s *jsiiProxy_SpotinstProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

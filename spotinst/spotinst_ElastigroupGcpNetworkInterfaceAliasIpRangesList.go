@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList) WrapsSet() *
 func NewElastigroupGcpNetworkInterfaceAliasIpRangesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupGcpNetworkInterfaceAliasIpRangesList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGcpNetworkInterfaceAliasIpRangesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupGcpNetworkInterfaceAliasIpRangesList_Override(e ElastigroupGc
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList) ComputeFqn()
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList) Get(index *float64) ElastigroupGcpNetworkInterfaceAliasIpRangesOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupGcpNetworkInterfaceAliasIpRangesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList) Get(index *f
 }
 
 func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

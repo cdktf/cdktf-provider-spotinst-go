@@ -111,6 +111,9 @@ func (j *jsiiProxy_MrscalerAwsInstanceWeightsList) WrapsSet() *bool {
 func NewMrscalerAwsInstanceWeightsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MrscalerAwsInstanceWeightsList {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsInstanceWeightsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsInstanceWeightsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMrscalerAwsInstanceWeightsList_Override(m MrscalerAwsInstanceWeightsList
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsInstanceWeightsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsInstanceWeightsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MrscalerAwsInstanceWeightsList) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsInstanceWeightsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsInstanceWeightsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MrscalerAwsInstanceWeightsList) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsInstanceWeightsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsInstanceWeightsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MrscalerAwsInstanceWeightsList) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsInstanceWeightsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsInstanceWeightsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsList) Get(index *float64) MrscalerAwsInstanceWeightsOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MrscalerAwsInstanceWeightsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsList) Get(index *float64) MrscalerA
 }
 
 func (m *jsiiProxy_MrscalerAwsInstanceWeightsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -389,6 +389,9 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) Terr
 func NewStatefulNodeAzureNetworkNetworkInterfaceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StatefulNodeAzureNetworkNetworkInterfaceOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureNetworkNetworkInterfaceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference{}
 
 	_jsii_.Create(
@@ -410,7 +413,10 @@ func NewStatefulNodeAzureNetworkNetworkInterfaceOutputReference_Override(s State
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetAssignPublicIp(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference)SetAssignPublicIp(val interface{}) {
+	if err := j.validateSetAssignPublicIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"assignPublicIp",
@@ -418,7 +424,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetA
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -426,7 +435,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -434,7 +446,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetEnableIpForwarding(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference)SetEnableIpForwarding(val interface{}) {
+	if err := j.validateSetEnableIpForwardingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enableIpForwarding",
@@ -442,7 +457,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetE
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -450,7 +468,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetIsPrimary(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference)SetIsPrimary(val interface{}) {
+	if err := j.validateSetIsPrimaryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isPrimary",
@@ -458,7 +479,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetPrivateIpAddresses(val *[]*string) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference)SetPrivateIpAddresses(val *[]*string) {
+	if err := j.validateSetPrivateIpAddressesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateIpAddresses",
@@ -466,7 +490,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetP
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetPublicIpSku(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference)SetPublicIpSku(val *string) {
+	if err := j.validateSetPublicIpSkuParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"publicIpSku",
@@ -474,7 +501,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetP
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetSubnetName(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference)SetSubnetName(val *string) {
+	if err := j.validateSetSubnetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subnetName",
@@ -482,7 +512,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetS
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -490,7 +523,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -512,6 +548,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) Comp
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -525,6 +564,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetA
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -538,6 +580,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetB
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -551,6 +596,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetB
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -564,6 +612,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetL
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -577,6 +628,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetN
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -590,6 +644,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetN
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -603,6 +660,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetN
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -616,6 +676,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetS
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -642,6 +705,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) Inte
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -655,6 +721,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) Inte
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) PutAdditionalIpConfigurations(value interface{}) {
+	if err := s.validatePutAdditionalIpConfigurationsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAdditionalIpConfigurations",
@@ -663,6 +732,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) PutA
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) PutApplicationSecurityGroups(value interface{}) {
+	if err := s.validatePutApplicationSecurityGroupsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putApplicationSecurityGroups",
@@ -671,6 +743,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) PutA
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) PutNetworkSecurityGroup(value interface{}) {
+	if err := s.validatePutNetworkSecurityGroupParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putNetworkSecurityGroup",
@@ -679,6 +754,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) PutN
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) PutPublicIps(value interface{}) {
+	if err := s.validatePutPublicIpsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putPublicIps",
@@ -751,6 +829,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) Rese
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

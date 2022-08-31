@@ -111,6 +111,9 @@ func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) WrapsSet() *boo
 func NewStatefulNodeAzureSecretVaultCertificatesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulNodeAzureSecretVaultCertificatesList {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureSecretVaultCertificatesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewStatefulNodeAzureSecretVaultCertificatesList_Override(s StatefulNodeAzur
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) ComputeFqn() *s
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) Get(index *float64) StatefulNodeAzureSecretVaultCertificatesOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns StatefulNodeAzureSecretVaultCertificatesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) Get(index *floa
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

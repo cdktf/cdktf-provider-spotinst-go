@@ -111,6 +111,9 @@ func (j *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList) WrapsSet() *bool {
 func NewMrscalerAwsTaskScalingUpPolicyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MrscalerAwsTaskScalingUpPolicyList {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsTaskScalingUpPolicyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsTaskScalingUpPolicyList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMrscalerAwsTaskScalingUpPolicyList_Override(m MrscalerAwsTaskScalingUpPo
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList) Get(index *float64) MrscalerAwsTaskScalingUpPolicyOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MrscalerAwsTaskScalingUpPolicyOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList) Get(index *float64) Mrsca
 }
 
 func (m *jsiiProxy_MrscalerAwsTaskScalingUpPolicyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

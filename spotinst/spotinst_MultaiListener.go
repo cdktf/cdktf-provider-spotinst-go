@@ -408,6 +408,9 @@ func (j *jsiiProxy_MultaiListener) TlsConfigInput() *MultaiListenerTlsConfig {
 func NewMultaiListener(scope constructs.Construct, id *string, config *MultaiListenerConfig) MultaiListener {
 	_init_.Initialize()
 
+	if err := validateNewMultaiListenerParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MultaiListener{}
 
 	_jsii_.Create(
@@ -430,7 +433,10 @@ func NewMultaiListener_Override(m MultaiListener, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_MultaiListener) SetBalancerId(val *string) {
+func (j *jsiiProxy_MultaiListener)SetBalancerId(val *string) {
+	if err := j.validateSetBalancerIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"balancerId",
@@ -438,7 +444,10 @@ func (j *jsiiProxy_MultaiListener) SetBalancerId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiListener) SetConnection(val interface{}) {
+func (j *jsiiProxy_MultaiListener)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -446,7 +455,7 @@ func (j *jsiiProxy_MultaiListener) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MultaiListener) SetCount(val *float64) {
+func (j *jsiiProxy_MultaiListener)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -454,7 +463,7 @@ func (j *jsiiProxy_MultaiListener) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MultaiListener) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MultaiListener)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -462,7 +471,7 @@ func (j *jsiiProxy_MultaiListener) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiListener) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MultaiListener)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -470,7 +479,10 @@ func (j *jsiiProxy_MultaiListener) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MultaiListener) SetId(val *string) {
+func (j *jsiiProxy_MultaiListener)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -478,7 +490,10 @@ func (j *jsiiProxy_MultaiListener) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiListener) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MultaiListener)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -486,7 +501,10 @@ func (j *jsiiProxy_MultaiListener) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_MultaiListener) SetPort(val *float64) {
+func (j *jsiiProxy_MultaiListener)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"port",
@@ -494,7 +512,10 @@ func (j *jsiiProxy_MultaiListener) SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MultaiListener) SetProtocol(val *string) {
+func (j *jsiiProxy_MultaiListener)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protocol",
@@ -502,7 +523,7 @@ func (j *jsiiProxy_MultaiListener) SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiListener) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MultaiListener)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -510,7 +531,10 @@ func (j *jsiiProxy_MultaiListener) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MultaiListener) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MultaiListener)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -538,6 +562,9 @@ func (j *jsiiProxy_MultaiListener) SetProvisioners(val *[]interface{}) {
 func MultaiListener_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMultaiListener_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -562,6 +589,9 @@ func MultaiListener_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MultaiListener) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -570,6 +600,9 @@ func (m *jsiiProxy_MultaiListener) AddOverride(path *string, value interface{}) 
 }
 
 func (m *jsiiProxy_MultaiListener) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -583,6 +616,9 @@ func (m *jsiiProxy_MultaiListener) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_MultaiListener) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -596,6 +632,9 @@ func (m *jsiiProxy_MultaiListener) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (m *jsiiProxy_MultaiListener) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -609,6 +648,9 @@ func (m *jsiiProxy_MultaiListener) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_MultaiListener) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -622,6 +664,9 @@ func (m *jsiiProxy_MultaiListener) GetListAttribute(terraformAttribute *string) 
 }
 
 func (m *jsiiProxy_MultaiListener) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -635,6 +680,9 @@ func (m *jsiiProxy_MultaiListener) GetNumberAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_MultaiListener) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -648,6 +696,9 @@ func (m *jsiiProxy_MultaiListener) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (m *jsiiProxy_MultaiListener) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -661,6 +712,9 @@ func (m *jsiiProxy_MultaiListener) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (m *jsiiProxy_MultaiListener) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -674,6 +728,9 @@ func (m *jsiiProxy_MultaiListener) GetStringAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_MultaiListener) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -687,6 +744,9 @@ func (m *jsiiProxy_MultaiListener) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (m *jsiiProxy_MultaiListener) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -700,6 +760,9 @@ func (m *jsiiProxy_MultaiListener) InterpolationForAttribute(terraformAttribute 
 }
 
 func (m *jsiiProxy_MultaiListener) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
@@ -708,6 +771,9 @@ func (m *jsiiProxy_MultaiListener) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (m *jsiiProxy_MultaiListener) PutTags(value interface{}) {
+	if err := m.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTags",
@@ -716,6 +782,9 @@ func (m *jsiiProxy_MultaiListener) PutTags(value interface{}) {
 }
 
 func (m *jsiiProxy_MultaiListener) PutTlsConfig(value *MultaiListenerTlsConfig) {
+	if err := m.validatePutTlsConfigParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"putTlsConfig",

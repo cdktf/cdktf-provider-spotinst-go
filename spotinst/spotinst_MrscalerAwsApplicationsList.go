@@ -111,6 +111,9 @@ func (j *jsiiProxy_MrscalerAwsApplicationsList) WrapsSet() *bool {
 func NewMrscalerAwsApplicationsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MrscalerAwsApplicationsList {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsApplicationsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsApplicationsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewMrscalerAwsApplicationsList_Override(m MrscalerAwsApplicationsList, terr
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsApplicationsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsApplicationsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_MrscalerAwsApplicationsList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsApplicationsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsApplicationsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_MrscalerAwsApplicationsList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsApplicationsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsApplicationsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_MrscalerAwsApplicationsList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsApplicationsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsApplicationsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsList) Get(index *float64) MrscalerAwsApplicationsOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns MrscalerAwsApplicationsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsList) Get(index *float64) MrscalerAwsA
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -243,6 +243,9 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) Versio
 func NewStatefulNodeAzureImageMarketplaceImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StatefulNodeAzureImageMarketplaceImageOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureImageMarketplaceImageOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference{}
 
 	_jsii_.Create(
@@ -264,7 +267,10 @@ func NewStatefulNodeAzureImageMarketplaceImageOutputReference_Override(s Statefu
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -272,7 +278,10 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -280,7 +289,10 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -288,7 +300,10 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetInt
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetOffer(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference)SetOffer(val *string) {
+	if err := j.validateSetOfferParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"offer",
@@ -296,7 +311,10 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetOff
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetPublisher(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference)SetPublisher(val *string) {
+	if err := j.validateSetPublisherParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"publisher",
@@ -304,7 +322,10 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetPub
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetSku(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference)SetSku(val *string) {
+	if err := j.validateSetSkuParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sku",
@@ -312,7 +333,10 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetSku
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -320,7 +344,10 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -328,7 +355,10 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) SetVersion(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"version",
@@ -350,6 +380,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) Comput
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -363,6 +396,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetAny
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -376,6 +412,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetBoo
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -389,6 +428,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetBoo
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -402,6 +444,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetLis
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -415,6 +460,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetNum
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -428,6 +476,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetNum
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -441,6 +492,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetNum
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -454,6 +508,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetStr
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) Interp
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -493,6 +553,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) Interp
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

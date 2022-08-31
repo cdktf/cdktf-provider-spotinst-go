@@ -111,6 +111,9 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList) WrapsSet() *boo
 func NewStatefulNodeAzureNetworkNetworkInterfaceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulNodeAzureNetworkNetworkInterfaceList {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureNetworkNetworkInterfaceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewStatefulNodeAzureNetworkNetworkInterfaceList_Override(s StatefulNodeAzur
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList) ComputeFqn() *s
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList) Get(index *float64) StatefulNodeAzureNetworkNetworkInterfaceOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns StatefulNodeAzureNetworkNetworkInterfaceOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList) Get(index *floa
 }
 
 func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -244,6 +244,9 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) TtlInHoursInp
 func NewStatefulNodeAzureDetachDataDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StatefulNodeAzureDetachDataDiskOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureDetachDataDiskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference{}
 
 	_jsii_.Create(
@@ -265,7 +268,10 @@ func NewStatefulNodeAzureDetachDataDiskOutputReference_Override(s StatefulNodeAz
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -273,7 +279,10 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -281,7 +290,10 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetDataDiskName(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference)SetDataDiskName(val *string) {
+	if err := j.validateSetDataDiskNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dataDiskName",
@@ -289,7 +301,10 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetDataDiskNa
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetDataDiskResourceGroupName(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference)SetDataDiskResourceGroupName(val *string) {
+	if err := j.validateSetDataDiskResourceGroupNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dataDiskResourceGroupName",
@@ -297,7 +312,10 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetDataDiskRe
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -305,7 +323,10 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetShouldDeallocate(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference)SetShouldDeallocate(val interface{}) {
+	if err := j.validateSetShouldDeallocateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"shouldDeallocate",
@@ -313,7 +334,10 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetShouldDeal
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -321,7 +345,10 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -329,7 +356,10 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) SetTtlInHours(val *float64) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference)SetTtlInHours(val *float64) {
+	if err := j.validateSetTtlInHoursParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ttlInHours",
@@ -351,6 +381,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) ComputeFqn() 
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -364,6 +397,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetAnyMapAttr
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -377,6 +413,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetBooleanAtt
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -390,6 +429,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetBooleanMap
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -403,6 +445,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetListAttrib
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -416,6 +461,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetNumberAttr
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -429,6 +477,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetNumberList
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -442,6 +493,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetNumberMapA
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -455,6 +509,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetStringAttr
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -481,6 +538,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) Interpolation
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -502,6 +562,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) ResetTtlInHou
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

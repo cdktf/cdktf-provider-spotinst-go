@@ -222,6 +222,9 @@ func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 func NewOceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewOceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference_Override(o O
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) SetCpuPerUnit(val *float64) {
+func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference)SetCpuPerUnit(val *float64) {
+	if err := j.validateSetCpuPerUnitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cpuPerUnit",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) SetMemoryPerUnit(val *float64) {
+func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference)SetMemoryPerUnit(val *float64) {
+	if err := j.validateSetMemoryPerUnitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"memoryPerUnit",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) SetNumOfUnits(val *float64) {
+func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference)SetNumOfUnits(val *float64) {
+	if err := j.validateSetNumOfUnitsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"numOfUnits",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -321,6 +348,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -362,6 +362,9 @@ func (j *jsiiProxy_DataIntegration) TerraformResourceType() *string {
 func NewDataIntegration(scope constructs.Construct, id *string, config *DataIntegrationConfig) DataIntegration {
 	_init_.Initialize()
 
+	if err := validateNewDataIntegrationParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIntegration{}
 
 	_jsii_.Create(
@@ -384,7 +387,10 @@ func NewDataIntegration_Override(d DataIntegration, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_DataIntegration) SetConnection(val interface{}) {
+func (j *jsiiProxy_DataIntegration)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -392,7 +398,7 @@ func (j *jsiiProxy_DataIntegration) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataIntegration) SetCount(val *float64) {
+func (j *jsiiProxy_DataIntegration)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -400,7 +406,7 @@ func (j *jsiiProxy_DataIntegration) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataIntegration) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataIntegration)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -408,7 +414,7 @@ func (j *jsiiProxy_DataIntegration) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataIntegration) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataIntegration)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -416,7 +422,10 @@ func (j *jsiiProxy_DataIntegration) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataIntegration) SetId(val *string) {
+func (j *jsiiProxy_DataIntegration)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -424,7 +433,10 @@ func (j *jsiiProxy_DataIntegration) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIntegration) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataIntegration)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -432,7 +444,10 @@ func (j *jsiiProxy_DataIntegration) SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DataIntegration) SetName(val *string) {
+func (j *jsiiProxy_DataIntegration)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -440,7 +455,7 @@ func (j *jsiiProxy_DataIntegration) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIntegration) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataIntegration)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -448,7 +463,10 @@ func (j *jsiiProxy_DataIntegration) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataIntegration) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataIntegration)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -456,7 +474,10 @@ func (j *jsiiProxy_DataIntegration) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataIntegration) SetStatus(val *string) {
+func (j *jsiiProxy_DataIntegration)SetStatus(val *string) {
+	if err := j.validateSetStatusParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"status",
@@ -484,6 +505,9 @@ func (j *jsiiProxy_DataIntegration) SetStatus(val *string) {
 func DataIntegration_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataIntegration_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -508,6 +532,9 @@ func DataIntegration_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataIntegration) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -516,6 +543,9 @@ func (d *jsiiProxy_DataIntegration) AddOverride(path *string, value interface{})
 }
 
 func (d *jsiiProxy_DataIntegration) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -529,6 +559,9 @@ func (d *jsiiProxy_DataIntegration) GetAnyMapAttribute(terraformAttribute *strin
 }
 
 func (d *jsiiProxy_DataIntegration) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -542,6 +575,9 @@ func (d *jsiiProxy_DataIntegration) GetBooleanAttribute(terraformAttribute *stri
 }
 
 func (d *jsiiProxy_DataIntegration) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -555,6 +591,9 @@ func (d *jsiiProxy_DataIntegration) GetBooleanMapAttribute(terraformAttribute *s
 }
 
 func (d *jsiiProxy_DataIntegration) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -568,6 +607,9 @@ func (d *jsiiProxy_DataIntegration) GetListAttribute(terraformAttribute *string)
 }
 
 func (d *jsiiProxy_DataIntegration) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -581,6 +623,9 @@ func (d *jsiiProxy_DataIntegration) GetNumberAttribute(terraformAttribute *strin
 }
 
 func (d *jsiiProxy_DataIntegration) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -594,6 +639,9 @@ func (d *jsiiProxy_DataIntegration) GetNumberListAttribute(terraformAttribute *s
 }
 
 func (d *jsiiProxy_DataIntegration) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -607,6 +655,9 @@ func (d *jsiiProxy_DataIntegration) GetNumberMapAttribute(terraformAttribute *st
 }
 
 func (d *jsiiProxy_DataIntegration) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -620,6 +671,9 @@ func (d *jsiiProxy_DataIntegration) GetStringAttribute(terraformAttribute *strin
 }
 
 func (d *jsiiProxy_DataIntegration) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -633,6 +687,9 @@ func (d *jsiiProxy_DataIntegration) GetStringMapAttribute(terraformAttribute *st
 }
 
 func (d *jsiiProxy_DataIntegration) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -646,6 +703,9 @@ func (d *jsiiProxy_DataIntegration) InterpolationForAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DataIntegration) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -654,6 +714,9 @@ func (d *jsiiProxy_DataIntegration) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (d *jsiiProxy_DataIntegration) PutS3(value *DataIntegrationS3) {
+	if err := d.validatePutS3Parameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putS3",

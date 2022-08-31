@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) WrapsSet()
 func NewOceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsLaunchSpecAutoscaleHeadroomsAutomaticListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList_Override(o OceanAwsLau
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) SetInterna
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) ComputeFqn
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) Get(index *float64) OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) Get(index 
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList) WrapsSet() *
 func NewOceanAksVirtualNodeGroupLaunchSpecificationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAksVirtualNodeGroupLaunchSpecificationList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksVirtualNodeGroupLaunchSpecificationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAksVirtualNodeGroupLaunchSpecificationList_Override(o OceanAksVirtu
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList) ComputeFqn()
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList) Get(index *float64) OceanAksVirtualNodeGroupLaunchSpecificationOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAksVirtualNodeGroupLaunchSpecificationOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList) Get(index *f
 }
 
 func (o *jsiiProxy_OceanAksVirtualNodeGroupLaunchSpecificationList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

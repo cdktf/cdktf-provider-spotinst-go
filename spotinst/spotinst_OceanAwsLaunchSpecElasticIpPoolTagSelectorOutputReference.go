@@ -198,6 +198,9 @@ func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Te
 func NewOceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewOceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference_Override(o Oce
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) SetInternalValue(val *OceanAwsLaunchSpecElasticIpPoolTagSelector) {
+func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference)SetInternalValue(val *OceanAwsLaunchSpecElasticIpPoolTagSelector) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) SetTagKey(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference)SetTagKey(val *string) {
+	if err := j.validateSetTagKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagKey",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) SetTagValue(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference)SetTagValue(val *string) {
+	if err := j.validateSetTagValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagValue",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Se
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -289,6 +313,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Co
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Ge
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Ge
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Ge
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Ge
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Ge
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Ge
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Ge
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Ge
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) In
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Re
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

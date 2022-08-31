@@ -220,6 +220,9 @@ func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) TypeInput() *
 func NewStatefulNodeAzureSchedulingTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StatefulNodeAzureSchedulingTaskOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureSchedulingTaskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewStatefulNodeAzureSchedulingTaskOutputReference_Override(s StatefulNodeAz
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetCronExpression(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference)SetCronExpression(val *string) {
+	if err := j.validateSetCronExpressionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cronExpression",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetCronExpres
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetIsEnabled(
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) SetType(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -319,6 +346,9 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) ComputeFqn() 
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetAnyMapAttr
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetBooleanAtt
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetBooleanMap
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetListAttrib
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetNumberAttr
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetNumberList
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetNumberMapA
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetStringAttr
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) Interpolation
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) Interpolation
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

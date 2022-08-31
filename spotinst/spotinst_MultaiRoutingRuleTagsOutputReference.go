@@ -197,6 +197,9 @@ func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) ValueInput() *string {
 func NewMultaiRoutingRuleTagsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MultaiRoutingRuleTagsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMultaiRoutingRuleTagsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MultaiRoutingRuleTagsOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewMultaiRoutingRuleTagsOutputReference_Override(m MultaiRoutingRuleTagsOut
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetKey(val *string) {
+func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_MultaiRoutingRuleTagsOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -288,6 +312,9 @@ func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetAnyMapAttribute(terr
 }
 
 func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetBooleanAttribute(ter
 }
 
 func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetBooleanMapAttribute(
 }
 
 func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetListAttribute(terraf
 }
 
 func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetNumberAttribute(terr
 }
 
 func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetNumberListAttribute(
 }
 
 func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetNumberMapAttribute(t
 }
 
 func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetStringAttribute(terr
 }
 
 func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) InterpolationAsList() c
 }
 
 func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) InterpolationForAttribu
 }
 
 func (m *jsiiProxy_MultaiRoutingRuleTagsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

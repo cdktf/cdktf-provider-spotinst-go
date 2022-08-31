@@ -199,6 +199,9 @@ func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) TerraformResour
 func NewElastigroupAwsMultipleMetricsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastigroupAwsMultipleMetricsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsMultipleMetricsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewElastigroupAwsMultipleMetricsOutputReference_Override(e ElastigroupAwsMu
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) SetInternalValue(val *ElastigroupAwsMultipleMetrics) {
+func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference)SetInternalValue(val *ElastigroupAwsMultipleMetrics) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -274,6 +292,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) ComputeFqn() *s
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -287,6 +308,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetAnyMapAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -300,6 +324,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetBooleanAttri
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -313,6 +340,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetBooleanMapAt
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -326,6 +356,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetListAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -339,6 +372,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetNumberAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -352,6 +388,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetNumberListAt
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -365,6 +404,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetNumberMapAtt
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -378,6 +420,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetStringAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -404,6 +449,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) InterpolationAs
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -417,6 +465,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) InterpolationFo
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) PutExpressions(value interface{}) {
+	if err := e.validatePutExpressionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putExpressions",
@@ -425,6 +476,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) PutExpressions(
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) PutMetrics(value interface{}) {
+	if err := e.validatePutMetricsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"putMetrics",
@@ -449,6 +503,9 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) ResetMetrics() 
 }
 
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

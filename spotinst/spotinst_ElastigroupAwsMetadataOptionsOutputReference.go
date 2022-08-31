@@ -198,6 +198,9 @@ func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) TerraformResour
 func NewElastigroupAwsMetadataOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElastigroupAwsMetadataOptionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsMetadataOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewElastigroupAwsMetadataOptionsOutputReference_Override(e ElastigroupAwsMe
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetHttpPutResponseHopLimit(val *float64) {
+func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference)SetHttpPutResponseHopLimit(val *float64) {
+	if err := j.validateSetHttpPutResponseHopLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"httpPutResponseHopLimit",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetHttpPutRespo
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetHttpTokens(val *string) {
+func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference)SetHttpTokens(val *string) {
+	if err := j.validateSetHttpTokensParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"httpTokens",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetHttpTokens(v
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetInternalValue(val *ElastigroupAwsMetadataOptions) {
+func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference)SetInternalValue(val *ElastigroupAwsMetadataOptions) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -267,7 +288,10 @@ func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -289,6 +313,9 @@ func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) ComputeFqn() *s
 }
 
 func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -302,6 +329,9 @@ func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetAnyMapAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -315,6 +345,9 @@ func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetBooleanAttri
 }
 
 func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -328,6 +361,9 @@ func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetBooleanMapAt
 }
 
 func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -341,6 +377,9 @@ func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetListAttribut
 }
 
 func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -354,6 +393,9 @@ func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetNumberAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -367,6 +409,9 @@ func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetNumberListAt
 }
 
 func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetNumberMapAtt
 }
 
 func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetStringAttrib
 }
 
 func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -419,6 +470,9 @@ func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) InterpolationAs
 }
 
 func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -440,6 +494,9 @@ func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) ResetHttpPutRes
 }
 
 func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

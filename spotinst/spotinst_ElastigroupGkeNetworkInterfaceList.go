@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupGkeNetworkInterfaceList) WrapsSet() *bool {
 func NewElastigroupGkeNetworkInterfaceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupGkeNetworkInterfaceList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGkeNetworkInterfaceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGkeNetworkInterfaceList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupGkeNetworkInterfaceList_Override(e ElastigroupGkeNetworkInter
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeNetworkInterfaceList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupGkeNetworkInterfaceList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupGkeNetworkInterfaceList) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeNetworkInterfaceList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupGkeNetworkInterfaceList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupGkeNetworkInterfaceList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeNetworkInterfaceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupGkeNetworkInterfaceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupGkeNetworkInterfaceList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeNetworkInterfaceList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupGkeNetworkInterfaceList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupGkeNetworkInterfaceList) ComputeFqn() *string {
 }
 
 func (e *jsiiProxy_ElastigroupGkeNetworkInterfaceList) Get(index *float64) ElastigroupGkeNetworkInterfaceOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupGkeNetworkInterfaceOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupGkeNetworkInterfaceList) Get(index *float64) Elast
 }
 
 func (e *jsiiProxy_ElastigroupGkeNetworkInterfaceList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

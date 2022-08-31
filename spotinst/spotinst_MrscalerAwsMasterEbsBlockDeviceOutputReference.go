@@ -245,6 +245,9 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) VolumeTypeInp
 func NewMrscalerAwsMasterEbsBlockDeviceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MrscalerAwsMasterEbsBlockDeviceOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsMasterEbsBlockDeviceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference{}
 
 	_jsii_.Create(
@@ -266,7 +269,10 @@ func NewMrscalerAwsMasterEbsBlockDeviceOutputReference_Override(m MrscalerAwsMas
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -274,7 +280,10 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -282,7 +291,10 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -290,7 +302,10 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetIops(val *float64) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference)SetIops(val *float64) {
+	if err := j.validateSetIopsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"iops",
@@ -298,7 +313,10 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetIops(val *
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetSizeInGb(val *float64) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference)SetSizeInGb(val *float64) {
+	if err := j.validateSetSizeInGbParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sizeInGb",
@@ -306,7 +324,10 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetSizeInGb(v
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -314,7 +335,10 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -322,7 +346,10 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetVolumesPerInstance(val *float64) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference)SetVolumesPerInstance(val *float64) {
+	if err := j.validateSetVolumesPerInstanceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumesPerInstance",
@@ -330,7 +357,10 @@ func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetVolumesPer
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) SetVolumeType(val *string) {
+func (j *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference)SetVolumeType(val *string) {
+	if err := j.validateSetVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumeType",
@@ -352,6 +382,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) ComputeFqn() 
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -365,6 +398,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetAnyMapAttr
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -378,6 +414,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetBooleanAtt
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -391,6 +430,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetBooleanMap
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -404,6 +446,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetListAttrib
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -417,6 +462,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetNumberAttr
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -430,6 +478,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetNumberList
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -443,6 +494,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetNumberMapA
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -456,6 +510,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetStringAttr
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -482,6 +539,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) Interpolation
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -511,6 +571,9 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) ResetVolumesP
 }
 
 func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

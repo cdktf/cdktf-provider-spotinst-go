@@ -199,6 +199,9 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 func NewOceanAksNetworkNetworkInterfaceSecurityGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksNetworkNetworkInterfaceSecurityGroupOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewOceanAksNetworkNetworkInterfaceSecurityGroupOutputReference_Override(o O
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) SetInternalValue(val *OceanAksNetworkNetworkInterfaceSecurityGroup) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference)SetInternalValue(val *OceanAksNetworkNetworkInterfaceSecurityGroup) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) SetName(val *string) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) SetResourceGroupName(val *string) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference)SetResourceGroupName(val *string) {
+	if err := j.validateSetResourceGroupNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) 
 }
 
 func (o *jsiiProxy_OceanAksNetworkNetworkInterfaceSecurityGroupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

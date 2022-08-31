@@ -111,6 +111,9 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskList) WrapsSet() *bool {
 func NewManagedInstanceAwsScheduledTaskList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedInstanceAwsScheduledTaskList {
 	_init_.Initialize()
 
+	if err := validateNewManagedInstanceAwsScheduledTaskListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ManagedInstanceAwsScheduledTaskList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewManagedInstanceAwsScheduledTaskList_Override(m ManagedInstanceAwsSchedul
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskList) Get(index *float64) ManagedInstanceAwsScheduledTaskOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ManagedInstanceAwsScheduledTaskOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskList) Get(index *float64) Mana
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

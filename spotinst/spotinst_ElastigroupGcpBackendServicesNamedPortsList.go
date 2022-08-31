@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) WrapsSet() *bool
 func NewElastigroupGcpBackendServicesNamedPortsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupGcpBackendServicesNamedPortsList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGcpBackendServicesNamedPortsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupGcpBackendServicesNamedPortsList_Override(e ElastigroupGcpBac
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) ComputeFqn() *st
 }
 
 func (e *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) Get(index *float64) ElastigroupGcpBackendServicesNamedPortsOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupGcpBackendServicesNamedPortsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) Get(index *float
 }
 
 func (e *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

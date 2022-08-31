@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAksStrategyList) WrapsSet() *bool {
 func NewOceanAksStrategyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAksStrategyList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAksStrategyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAksStrategyList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAksStrategyList_Override(o OceanAksStrategyList, terraformResource 
 	)
 }
 
-func (j *jsiiProxy_OceanAksStrategyList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAksStrategyList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAksStrategyList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanAksStrategyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAksStrategyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAksStrategyList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAksStrategyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAksStrategyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAksStrategyList) SetTerraformResource(val cdktf.IInterpo
 	)
 }
 
-func (j *jsiiProxy_OceanAksStrategyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAksStrategyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAksStrategyList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanAksStrategyList) Get(index *float64) OceanAksStrategyOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAksStrategyOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAksStrategyList) Get(index *float64) OceanAksStrategyOut
 }
 
 func (o *jsiiProxy_OceanAksStrategyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

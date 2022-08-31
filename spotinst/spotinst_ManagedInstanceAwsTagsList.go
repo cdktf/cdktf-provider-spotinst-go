@@ -111,6 +111,9 @@ func (j *jsiiProxy_ManagedInstanceAwsTagsList) WrapsSet() *bool {
 func NewManagedInstanceAwsTagsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedInstanceAwsTagsList {
 	_init_.Initialize()
 
+	if err := validateNewManagedInstanceAwsTagsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ManagedInstanceAwsTagsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewManagedInstanceAwsTagsList_Override(m ManagedInstanceAwsTagsList, terraf
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsTagsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsTagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ManagedInstanceAwsTagsList) SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsTagsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsTagsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ManagedInstanceAwsTagsList) SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsTagsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedInstanceAwsTagsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ManagedInstanceAwsTagsList) SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsTagsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ManagedInstanceAwsTagsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsList) ComputeFqn() *string {
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsList) Get(index *float64) ManagedInstanceAwsTagsOutputReference {
+	if err := m.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ManagedInstanceAwsTagsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsList) Get(index *float64) ManagedInstan
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsTagsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

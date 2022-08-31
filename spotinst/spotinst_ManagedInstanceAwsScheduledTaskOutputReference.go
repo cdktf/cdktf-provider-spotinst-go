@@ -270,6 +270,9 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) TerraformReso
 func NewManagedInstanceAwsScheduledTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ManagedInstanceAwsScheduledTaskOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewManagedInstanceAwsScheduledTaskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference{}
 
 	_jsii_.Create(
@@ -291,7 +294,10 @@ func NewManagedInstanceAwsScheduledTaskOutputReference_Override(m ManagedInstanc
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -299,7 +305,10 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -307,7 +316,10 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetCronExpression(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference)SetCronExpression(val *string) {
+	if err := j.validateSetCronExpressionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cronExpression",
@@ -315,7 +327,10 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetCronExpres
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetFrequency(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference)SetFrequency(val *string) {
+	if err := j.validateSetFrequencyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"frequency",
@@ -323,7 +338,10 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetFrequency(
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -331,7 +349,10 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -339,7 +360,10 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetIsEnabled(
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetStartTime(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference)SetStartTime(val *string) {
+	if err := j.validateSetStartTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"startTime",
@@ -347,7 +371,10 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetStartTime(
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetTaskType(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference)SetTaskType(val *string) {
+	if err := j.validateSetTaskTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"taskType",
@@ -355,7 +382,10 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetTaskType(v
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -363,7 +393,10 @@ func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -385,6 +418,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) ComputeFqn() 
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -398,6 +434,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetAnyMapAttr
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -411,6 +450,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetBooleanAtt
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -424,6 +466,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetBooleanMap
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -437,6 +482,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetListAttrib
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -450,6 +498,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetNumberAttr
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -463,6 +514,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetNumberList
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -476,6 +530,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetNumberMapA
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -489,6 +546,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetStringAttr
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -515,6 +575,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) Interpolation
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -560,6 +623,9 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) ResetStartTim
 }
 
 func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

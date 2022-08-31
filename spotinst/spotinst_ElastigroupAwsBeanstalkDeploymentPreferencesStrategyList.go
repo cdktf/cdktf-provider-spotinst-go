@@ -111,6 +111,9 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) Wra
 func NewElastigroupAwsBeanstalkDeploymentPreferencesStrategyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupAwsBeanstalkDeploymentPreferencesStrategyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewElastigroupAwsBeanstalkDeploymentPreferencesStrategyList_Override(e Elas
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) Set
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) Com
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) Get(index *float64) ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference {
+	if err := e.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ElastigroupAwsBeanstalkDeploymentPreferencesStrategyOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) Get
 }
 
 func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

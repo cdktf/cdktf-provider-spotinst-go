@@ -222,6 +222,9 @@ func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) TerraformR
 func NewElastigroupGkeDiskInitializeParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastigroupGkeDiskInitializeParamsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewElastigroupGkeDiskInitializeParamsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewElastigroupGkeDiskInitializeParamsOutputReference_Override(e Elastigroup
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetDiskSizeGb(val *string) {
+func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference)SetDiskSizeGb(val *string) {
+	if err := j.validateSetDiskSizeGbParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"diskSizeGb",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetDiskSiz
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetDiskType(val *string) {
+func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference)SetDiskType(val *string) {
+	if err := j.validateSetDiskTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"diskType",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetDiskTyp
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetInterna
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetSourceImage(val *string) {
+func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference)SetSourceImage(val *string) {
+	if err := j.validateSetSourceImageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"sourceImage",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetSourceI
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -321,6 +348,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) ComputeFqn
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetAnyMapA
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetBoolean
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetBoolean
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetListAtt
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetNumberA
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetNumberL
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetNumberM
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetStringA
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) Interpolat
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) ResetDiskT
 }
 
 func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

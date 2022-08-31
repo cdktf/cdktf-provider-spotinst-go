@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList) WrapsSet() *bool {
 func NewOceanEcsLaunchSpecBlockDeviceMappingsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanEcsLaunchSpecBlockDeviceMappingsList {
 	_init_.Initialize()
 
+	if err := validateNewOceanEcsLaunchSpecBlockDeviceMappingsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanEcsLaunchSpecBlockDeviceMappingsList_Override(o OceanEcsLaunchSpecB
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList) ComputeFqn() *stri
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList) Get(index *float64) OceanEcsLaunchSpecBlockDeviceMappingsOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanEcsLaunchSpecBlockDeviceMappingsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList) Get(index *float64
 }
 
 func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

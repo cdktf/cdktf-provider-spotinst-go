@@ -111,6 +111,9 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) WrapsSet() *bool 
 func NewStatefulNodeAzureImageMarketplaceImageList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulNodeAzureImageMarketplaceImageList {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureImageMarketplaceImageListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureImageMarketplaceImageList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewStatefulNodeAzureImageMarketplaceImageList_Override(s StatefulNodeAzureI
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) ComputeFqn() *str
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) Get(index *float64) StatefulNodeAzureImageMarketplaceImageOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns StatefulNodeAzureImageMarketplaceImageOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) Get(index *float6
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -222,6 +222,9 @@ func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) VersionInput() *strin
 func NewMrscalerAwsApplicationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MrscalerAwsApplicationsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewMrscalerAwsApplicationsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MrscalerAwsApplicationsOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewMrscalerAwsApplicationsOutputReference_Override(m MrscalerAwsApplication
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetArgs(val *[]*string) {
+func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference)SetArgs(val *[]*string) {
+	if err := j.validateSetArgsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"args",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetArgs(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetName(val *string) {
+func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference) SetVersion(val *string) {
+func (j *jsiiProxy_MrscalerAwsApplicationsOutputReference)SetVersion(val *string) {
+	if err := j.validateSetVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"version",
@@ -321,6 +348,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) ComputeFqn() *string 
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetAnyMapAttribute(te
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetBooleanAttribute(t
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetBooleanMapAttribut
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetListAttribute(terr
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetNumberAttribute(te
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetNumberListAttribut
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetNumberMapAttribute
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetStringAttribute(te
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) InterpolationAsList()
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) ResetVersion() {
 }
 
 func (m *jsiiProxy_MrscalerAwsApplicationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

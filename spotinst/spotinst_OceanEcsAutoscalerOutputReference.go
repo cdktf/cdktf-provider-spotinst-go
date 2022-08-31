@@ -319,6 +319,9 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) TerraformResource() cdktf.
 func NewOceanEcsAutoscalerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanEcsAutoscalerOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanEcsAutoscalerOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanEcsAutoscalerOutputReference{}
 
 	_jsii_.Create(
@@ -340,7 +343,10 @@ func NewOceanEcsAutoscalerOutputReference_Override(o OceanEcsAutoscalerOutputRef
 	)
 }
 
-func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetAutoHeadroomPercentage(val *float64) {
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetAutoHeadroomPercentage(val *float64) {
+	if err := j.validateSetAutoHeadroomPercentageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoHeadroomPercentage",
@@ -348,7 +354,10 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetAutoHeadroomPercentage(
 	)
 }
 
-func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -356,7 +365,10 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -364,7 +376,10 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetCooldown(val *float64) {
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetCooldown(val *float64) {
+	if err := j.validateSetCooldownParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cooldown",
@@ -372,7 +387,10 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetCooldown(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetInternalValue(val *OceanEcsAutoscaler) {
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetInternalValue(val *OceanEcsAutoscaler) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -380,7 +398,10 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetInternalValue(val *Ocea
 	)
 }
 
-func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetIsAutoConfig(val interface{}) {
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetIsAutoConfig(val interface{}) {
+	if err := j.validateSetIsAutoConfigParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isAutoConfig",
@@ -388,7 +409,10 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetIsAutoConfig(val interf
 	)
 }
 
-func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetIsEnabled(val interface{}) {
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"isEnabled",
@@ -396,7 +420,10 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetIsEnabled(val interface
 	)
 }
 
-func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -404,7 +431,10 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -426,6 +456,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -439,6 +472,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetAnyMapAttribute(terrafo
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -452,6 +488,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetBooleanAttribute(terraf
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -465,6 +504,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetBooleanMapAttribute(ter
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -478,6 +520,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetListAttribute(terraform
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -491,6 +536,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetNumberAttribute(terrafo
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -504,6 +552,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetNumberListAttribute(ter
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -517,6 +568,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetNumberMapAttribute(terr
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -530,6 +584,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetStringAttribute(terrafo
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -556,6 +613,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) InterpolationAsList() cdkt
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -569,6 +629,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) InterpolationForAttribute(
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) PutDown(value *OceanEcsAutoscalerDown) {
+	if err := o.validatePutDownParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putDown",
@@ -577,6 +640,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) PutDown(value *OceanEcsAut
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) PutHeadroom(value *OceanEcsAutoscalerHeadroom) {
+	if err := o.validatePutHeadroomParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putHeadroom",
@@ -585,6 +651,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) PutHeadroom(value *OceanEc
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) PutResourceLimits(value *OceanEcsAutoscalerResourceLimits) {
+	if err := o.validatePutResourceLimitsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putResourceLimits",
@@ -649,6 +718,9 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) ResetResourceLimits() {
 }
 
 func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) WrapsSet() *bool {
 func NewOceanAwsLaunchSpecBlockDeviceMappingsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OceanAwsLaunchSpecBlockDeviceMappingsList {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsLaunchSpecBlockDeviceMappingsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOceanAwsLaunchSpecBlockDeviceMappingsList_Override(o OceanAwsLaunchSpecB
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) ComputeFqn() *stri
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) Get(index *float64) OceanAwsLaunchSpecBlockDeviceMappingsOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OceanAwsLaunchSpecBlockDeviceMappingsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) Get(index *float64
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

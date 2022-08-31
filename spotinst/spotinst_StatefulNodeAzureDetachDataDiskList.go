@@ -111,6 +111,9 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskList) WrapsSet() *bool {
 func NewStatefulNodeAzureDetachDataDiskList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulNodeAzureDetachDataDiskList {
 	_init_.Initialize()
 
+	if err := validateNewStatefulNodeAzureDetachDataDiskListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_StatefulNodeAzureDetachDataDiskList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewStatefulNodeAzureDetachDataDiskList_Override(s StatefulNodeAzureDetachDa
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_StatefulNodeAzureDetachDataDiskList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskList) Get(index *float64) StatefulNodeAzureDetachDataDiskOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns StatefulNodeAzureDetachDataDiskOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskList) Get(index *float64) Stat
 }
 
 func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -175,6 +175,9 @@ func (j *jsiiProxy_OceanAwsLoggingExportOutputReference) TerraformResource() cdk
 func NewOceanAwsLoggingExportOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanAwsLoggingExportOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOceanAwsLoggingExportOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OceanAwsLoggingExportOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewOceanAwsLoggingExportOutputReference_Override(o OceanAwsLoggingExportOut
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLoggingExportOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanAwsLoggingExportOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_OceanAwsLoggingExportOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLoggingExportOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanAwsLoggingExportOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_OceanAwsLoggingExportOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLoggingExportOutputReference) SetInternalValue(val *OceanAwsLoggingExport) {
+func (j *jsiiProxy_OceanAwsLoggingExportOutputReference)SetInternalValue(val *OceanAwsLoggingExport) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_OceanAwsLoggingExportOutputReference) SetInternalValue(val *O
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLoggingExportOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanAwsLoggingExportOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_OceanAwsLoggingExportOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLoggingExportOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanAwsLoggingExportOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -250,6 +268,9 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -263,6 +284,9 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetAnyMapAttribute(terr
 }
 
 func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -276,6 +300,9 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetBooleanAttribute(ter
 }
 
 func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -289,6 +316,9 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetBooleanMapAttribute(
 }
 
 func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -302,6 +332,9 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetListAttribute(terraf
 }
 
 func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -315,6 +348,9 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetNumberAttribute(terr
 }
 
 func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -328,6 +364,9 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetNumberListAttribute(
 }
 
 func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -341,6 +380,9 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetNumberMapAttribute(t
 }
 
 func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -354,6 +396,9 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetStringAttribute(terr
 }
 
 func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -380,6 +425,9 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) InterpolationAsList() c
 }
 
 func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -393,6 +441,9 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) InterpolationForAttribu
 }
 
 func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) PutS3(value interface{}) {
+	if err := o.validatePutS3Parameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putS3",
@@ -409,6 +460,9 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) ResetS3() {
 }
 
 func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(
