@@ -97,6 +97,8 @@ type ElastigroupAws interface {
 	ImageId() *string
 	SetImageId(val *string)
 	ImageIdInput() *string
+	Images() ElastigroupAwsImagesList
+	ImagesInput() interface{}
 	InstanceTypesOndemand() *string
 	SetInstanceTypesOndemand(val *string)
 	InstanceTypesOndemandInput() *string
@@ -292,6 +294,7 @@ type ElastigroupAws interface {
 	PutCpuOptions(value *ElastigroupAwsCpuOptions)
 	PutEbsBlockDevice(value interface{})
 	PutEphemeralBlockDevice(value interface{})
+	PutImages(value interface{})
 	PutInstanceTypesWeights(value interface{})
 	PutIntegrationBeanstalk(value *ElastigroupAwsIntegrationBeanstalk)
 	PutIntegrationCodedeploy(value *ElastigroupAwsIntegrationCodedeploy)
@@ -341,6 +344,7 @@ type ElastigroupAws interface {
 	ResetIamInstanceProfile()
 	ResetId()
 	ResetImageId()
+	ResetImages()
 	ResetInstanceTypesPreferredSpot()
 	ResetInstanceTypesWeights()
 	ResetIntegrationBeanstalk()
@@ -906,6 +910,26 @@ func (j *jsiiProxy_ElastigroupAws) ImageIdInput() *string {
 	_jsii_.Get(
 		j,
 		"imageIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) Images() ElastigroupAwsImagesList {
+	var returns ElastigroupAwsImagesList
+	_jsii_.Get(
+		j,
+		"images",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) ImagesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"imagesInput",
 		&returns,
 	)
 	return returns
@@ -3024,6 +3048,17 @@ func (e *jsiiProxy_ElastigroupAws) PutEphemeralBlockDevice(value interface{}) {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAws) PutImages(value interface{}) {
+	if err := e.validatePutImagesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putImages",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAws) PutInstanceTypesWeights(value interface{}) {
 	if err := e.validatePutInstanceTypesWeightsParameters(value); err != nil {
 		panic(err)
@@ -3499,6 +3534,14 @@ func (e *jsiiProxy_ElastigroupAws) ResetImageId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetImageId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAws) ResetImages() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetImages",
 		nil, // no parameters
 	)
 }

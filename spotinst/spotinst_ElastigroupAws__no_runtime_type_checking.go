@@ -66,6 +66,10 @@ func (e *jsiiProxy_ElastigroupAws) validatePutEphemeralBlockDeviceParameters(val
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAws) validatePutImagesParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAws) validatePutInstanceTypesWeightsParameters(value interface{}) error {
 	return nil
 }

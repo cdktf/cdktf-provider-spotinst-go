@@ -83,6 +83,10 @@ type ElastigroupAwsConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#image_id ElastigroupAws#image_id}.
 	ImageId *string `field:"optional" json:"imageId" yaml:"imageId"`
+	// images block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#images ElastigroupAws#images}
+	Images interface{} `field:"optional" json:"images" yaml:"images"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#instance_types_preferred_spot ElastigroupAws#instance_types_preferred_spot}.
 	InstanceTypesPreferredSpot *[]*string `field:"optional" json:"instanceTypesPreferredSpot" yaml:"instanceTypesPreferredSpot"`
 	// instance_types_weights block.
