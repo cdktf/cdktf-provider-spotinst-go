@@ -47,6 +47,8 @@ type OceanEcsLaunchSpecConfig struct {
 	ImageId *string `field:"optional" json:"imageId" yaml:"imageId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs_launch_spec#instance_types OceanEcsLaunchSpec#instance_types}.
 	InstanceTypes *[]*string `field:"optional" json:"instanceTypes" yaml:"instanceTypes"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs_launch_spec#preferred_spot_types OceanEcsLaunchSpec#preferred_spot_types}.
+	PreferredSpotTypes *[]*string `field:"optional" json:"preferredSpotTypes" yaml:"preferredSpotTypes"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs_launch_spec#restrict_scale_down OceanEcsLaunchSpec#restrict_scale_down}.
 	RestrictScaleDown interface{} `field:"optional" json:"restrictScaleDown" yaml:"restrictScaleDown"`
 	// scheduling_task block.

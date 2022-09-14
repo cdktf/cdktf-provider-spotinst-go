@@ -67,6 +67,9 @@ type OceanEcsLaunchSpec interface {
 	OceanId() *string
 	SetOceanId(val *string)
 	OceanIdInput() *string
+	PreferredSpotTypes() *[]*string
+	SetPreferredSpotTypes(val *[]*string)
+	PreferredSpotTypesInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -139,6 +142,7 @@ type OceanEcsLaunchSpec interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreferredSpotTypes()
 	ResetRestrictScaleDown()
 	ResetSchedulingTask()
 	ResetSecurityGroupIds()
@@ -435,6 +439,26 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) OceanIdInput() *string {
 	_jsii_.Get(
 		j,
 		"oceanIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcsLaunchSpec) PreferredSpotTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredSpotTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcsLaunchSpec) PreferredSpotTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredSpotTypesInput",
 		&returns,
 	)
 	return returns
@@ -758,6 +782,17 @@ func (j *jsiiProxy_OceanEcsLaunchSpec)SetOceanId(val *string) {
 	_jsii_.Set(
 		j,
 		"oceanId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanEcsLaunchSpec)SetPreferredSpotTypes(val *[]*string) {
+	if err := j.validateSetPreferredSpotTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredSpotTypes",
 		val,
 	)
 }
@@ -1168,6 +1203,14 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanEcsLaunchSpec) ResetPreferredSpotTypes() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPreferredSpotTypes",
 		nil, // no parameters
 	)
 }

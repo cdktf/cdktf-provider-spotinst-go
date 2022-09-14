@@ -110,6 +110,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) validateSetOceanIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_OceanEcsLaunchSpec) validateSetPreferredSpotTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanEcsLaunchSpec) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
