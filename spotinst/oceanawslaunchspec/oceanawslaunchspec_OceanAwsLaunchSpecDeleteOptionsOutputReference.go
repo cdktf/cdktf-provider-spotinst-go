@@ -25,6 +25,9 @@ type OceanAwsLaunchSpecDeleteOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeleteNodes() interface{}
+	SetDeleteNodes(val interface{})
+	DeleteNodesInput() interface{}
 	ForceDelete() interface{}
 	SetForceDelete(val interface{})
 	ForceDeleteInput() interface{}
@@ -64,6 +67,7 @@ type OceanAwsLaunchSpecDeleteOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDeleteNodes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -104,6 +108,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) CreationStack
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) DeleteNodes() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) DeleteNodesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteNodesInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +239,17 @@ func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference)SetComplexObje
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference)SetDeleteNodes(val interface{}) {
+	if err := j.validateSetDeleteNodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteNodes",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) ResetDeleteNodes() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDeleteNodes",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

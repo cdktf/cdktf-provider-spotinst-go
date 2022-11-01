@@ -56,6 +56,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) validateSetDeleteNodesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) validateSetForceDeleteParameters(val interface{}) error {
 	return nil
 }

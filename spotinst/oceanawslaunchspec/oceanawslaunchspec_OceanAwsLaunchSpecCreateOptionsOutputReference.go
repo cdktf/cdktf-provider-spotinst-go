@@ -64,6 +64,7 @@ type OceanAwsLaunchSpecCreateOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetInitialNodes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -447,6 +448,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpecCreateOptionsOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpecCreateOptionsOutputReference) ResetInitialNodes() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInitialNodes",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecCreateOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
