@@ -87,6 +87,8 @@ type OceanEcsLaunchSpec interface {
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
+	Strategy() OceanEcsLaunchSpecStrategyList
+	StrategyInput() interface{}
 	SubnetIds() *[]*string
 	SetSubnetIds(val *[]*string)
 	SubnetIdsInput() *[]*string
@@ -130,6 +132,7 @@ type OceanEcsLaunchSpec interface {
 	PutAutoscaleHeadrooms(value interface{})
 	PutBlockDeviceMappings(value interface{})
 	PutSchedulingTask(value interface{})
+	PutStrategy(value interface{})
 	PutTags(value interface{})
 	ResetAttributes()
 	ResetAutoscaleHeadrooms()
@@ -145,6 +148,7 @@ type OceanEcsLaunchSpec interface {
 	ResetRestrictScaleDown()
 	ResetSchedulingTask()
 	ResetSecurityGroupIds()
+	ResetStrategy()
 	ResetSubnetIds()
 	ResetTags()
 	ResetUserData()
@@ -548,6 +552,26 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) SecurityGroupIdsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"securityGroupIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcsLaunchSpec) Strategy() OceanEcsLaunchSpecStrategyList {
+	var returns OceanEcsLaunchSpecStrategyList
+	_jsii_.Get(
+		j,
+		"strategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcsLaunchSpec) StrategyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"strategyInput",
 		&returns,
 	)
 	return returns
@@ -1131,6 +1155,17 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) PutSchedulingTask(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanEcsLaunchSpec) PutStrategy(value interface{}) {
+	if err := o.validatePutStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putStrategy",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanEcsLaunchSpec) PutTags(value interface{}) {
 	if err := o.validatePutTagsParameters(value); err != nil {
 		panic(err)
@@ -1234,6 +1269,14 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) ResetSecurityGroupIds() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetSecurityGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanEcsLaunchSpec) ResetStrategy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetStrategy",
 		nil, // no parameters
 	)
 }

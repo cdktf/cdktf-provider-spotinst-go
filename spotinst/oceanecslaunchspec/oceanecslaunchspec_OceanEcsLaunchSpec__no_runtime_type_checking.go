@@ -68,6 +68,10 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) validatePutSchedulingTaskParameters(value
 	return nil
 }
 
+func (o *jsiiProxy_OceanEcsLaunchSpec) validatePutStrategyParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanEcsLaunchSpec) validatePutTagsParameters(value interface{}) error {
 	return nil
 }
