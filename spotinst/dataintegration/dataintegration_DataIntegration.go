@@ -2,10 +2,10 @@ package dataintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v3/dataintegration/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v4/dataintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -512,6 +512,44 @@ func DataIntegration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-spotinst.dataIntegration.DataIntegration",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataIntegration_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataIntegration_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-spotinst.dataIntegration.DataIntegration",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataIntegration_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataIntegration_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-spotinst.dataIntegration.DataIntegration",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

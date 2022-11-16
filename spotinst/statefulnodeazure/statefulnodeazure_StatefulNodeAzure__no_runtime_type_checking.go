@@ -136,6 +136,14 @@ func validateStatefulNodeAzure_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStatefulNodeAzure_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStatefulNodeAzure_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulNodeAzure) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

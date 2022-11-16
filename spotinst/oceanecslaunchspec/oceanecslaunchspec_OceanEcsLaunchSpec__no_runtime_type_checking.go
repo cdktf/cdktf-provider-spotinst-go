@@ -80,6 +80,14 @@ func validateOceanEcsLaunchSpec_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOceanEcsLaunchSpec_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOceanEcsLaunchSpec_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanEcsLaunchSpec) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

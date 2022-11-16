@@ -84,6 +84,14 @@ func validateOceanAws_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOceanAws_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOceanAws_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAws) validateSetAssociatePublicIpAddressParameters(val interface{}) error {
 	return nil
 }

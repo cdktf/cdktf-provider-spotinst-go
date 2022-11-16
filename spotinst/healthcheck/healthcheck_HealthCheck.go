@@ -2,10 +2,10 @@ package healthcheck
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v3/healthcheck/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v4/healthcheck/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -581,6 +581,44 @@ func HealthCheck_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-spotinst.healthCheck.HealthCheck",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HealthCheck_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHealthCheck_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-spotinst.healthCheck.HealthCheck",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HealthCheck_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHealthCheck_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-spotinst.healthCheck.HealthCheck",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -100,6 +100,14 @@ func validateOceanGkeLaunchSpec_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOceanGkeLaunchSpec_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOceanGkeLaunchSpec_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanGkeLaunchSpec) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

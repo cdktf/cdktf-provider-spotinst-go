@@ -56,6 +56,14 @@ func validateOceanAwsExtendedResourceDefinition_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateOceanAwsExtendedResourceDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOceanAwsExtendedResourceDefinition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsExtendedResourceDefinition) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

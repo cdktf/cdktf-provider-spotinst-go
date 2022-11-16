@@ -188,6 +188,14 @@ func validateElastigroupAws_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateElastigroupAws_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElastigroupAws_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAws) validateSetAvailabilityZonesParameters(val *[]*string) error {
 	return nil
 }

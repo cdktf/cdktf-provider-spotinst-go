@@ -60,6 +60,14 @@ func validateDataIntegration_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataIntegration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataIntegration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIntegration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

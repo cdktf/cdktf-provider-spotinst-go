@@ -100,6 +100,14 @@ func validateOceanAks_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOceanAks_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOceanAks_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAks) validateSetAcdIdentifierParameters(val *string) error {
 	return nil
 }

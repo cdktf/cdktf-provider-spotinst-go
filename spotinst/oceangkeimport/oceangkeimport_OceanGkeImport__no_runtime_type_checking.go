@@ -80,6 +80,14 @@ func validateOceanGkeImport_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOceanGkeImport_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOceanGkeImport_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanGkeImport) validateSetBlacklistParameters(val *[]*string) error {
 	return nil
 }

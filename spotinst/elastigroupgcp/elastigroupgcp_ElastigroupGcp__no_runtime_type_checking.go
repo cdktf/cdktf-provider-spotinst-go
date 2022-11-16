@@ -108,6 +108,14 @@ func validateElastigroupGcp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateElastigroupGcp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElastigroupGcp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupGcp) validateSetAutoHealingParameters(val interface{}) error {
 	return nil
 }

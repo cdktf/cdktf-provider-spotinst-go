@@ -56,6 +56,14 @@ func validateMultaiDeployment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMultaiDeployment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMultaiDeployment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MultaiDeployment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

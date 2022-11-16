@@ -120,6 +120,14 @@ func validateMrscalerAws_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMrscalerAws_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMrscalerAws_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MrscalerAws) validateSetAdditionalInfoParameters(val *string) error {
 	return nil
 }

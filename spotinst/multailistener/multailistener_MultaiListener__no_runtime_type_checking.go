@@ -64,6 +64,14 @@ func validateMultaiListener_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMultaiListener_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMultaiListener_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MultaiListener) validateSetBalancerIdParameters(val *string) error {
 	return nil
 }

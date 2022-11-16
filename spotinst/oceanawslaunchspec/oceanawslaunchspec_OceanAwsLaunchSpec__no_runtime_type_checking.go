@@ -112,6 +112,14 @@ func validateOceanAwsLaunchSpec_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOceanAwsLaunchSpec_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOceanAwsLaunchSpec_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetAssociatePublicIpAddressParameters(val interface{}) error {
 	return nil
 }

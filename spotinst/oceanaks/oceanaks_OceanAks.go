@@ -2,10 +2,10 @@ package oceanaks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v3/oceanaks/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v4/oceanaks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1063,6 +1063,44 @@ func OceanAks_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-spotinst.oceanAks.OceanAks",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OceanAks_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOceanAks_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-spotinst.oceanAks.OceanAks",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OceanAks_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOceanAks_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-spotinst.oceanAks.OceanAks",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

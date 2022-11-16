@@ -56,6 +56,14 @@ func validateOceanGkeLaunchSpecImport_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateOceanGkeLaunchSpecImport_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOceanGkeLaunchSpecImport_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanGkeLaunchSpecImport) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

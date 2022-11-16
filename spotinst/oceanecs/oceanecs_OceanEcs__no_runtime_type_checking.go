@@ -88,6 +88,14 @@ func validateOceanEcs_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOceanEcs_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOceanEcs_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanEcs) validateSetAssociatePublicIpAddressParameters(val interface{}) error {
 	return nil
 }

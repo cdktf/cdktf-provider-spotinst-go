@@ -60,6 +60,14 @@ func validateElastigroupAwsSuspension_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateElastigroupAwsSuspension_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElastigroupAwsSuspension_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAwsSuspension) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

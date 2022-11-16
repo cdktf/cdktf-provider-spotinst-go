@@ -100,6 +100,14 @@ func validateElastigroupGke_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateElastigroupGke_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElastigroupGke_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupGke) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

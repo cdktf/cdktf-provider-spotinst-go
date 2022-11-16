@@ -72,6 +72,14 @@ func validateOceanSpark_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOceanSpark_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOceanSpark_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanSpark) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

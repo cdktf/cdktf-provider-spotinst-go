@@ -64,6 +64,14 @@ func validateMultaiTargetSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMultaiTargetSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMultaiTargetSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MultaiTargetSet) validateSetBalancerIdParameters(val *string) error {
 	return nil
 }

@@ -16,6 +16,14 @@ func validateSpotinstProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSpotinstProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpotinstProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func validateNewSpotinstProviderParameters(scope constructs.Construct, id *string, config *SpotinstProviderConfig) error {
 	return nil
 }

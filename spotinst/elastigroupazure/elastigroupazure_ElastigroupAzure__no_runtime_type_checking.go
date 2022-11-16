@@ -108,6 +108,14 @@ func validateElastigroupAzure_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateElastigroupAzure_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElastigroupAzure_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzure) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

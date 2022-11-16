@@ -76,6 +76,14 @@ func validateOceanAksVirtualNodeGroup_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateOceanAksVirtualNodeGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOceanAksVirtualNodeGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksVirtualNodeGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

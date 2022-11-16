@@ -2,10 +2,10 @@ package oceanspark
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v3/oceanspark/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v4/oceanspark/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -549,6 +549,44 @@ func OceanSpark_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-spotinst.oceanSpark.OceanSpark",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OceanSpark_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOceanSpark_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-spotinst.oceanSpark.OceanSpark",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OceanSpark_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOceanSpark_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-spotinst.oceanSpark.OceanSpark",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)
