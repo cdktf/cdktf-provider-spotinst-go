@@ -41,6 +41,10 @@ type OceanAwsConfig struct {
 	EbsOptimized interface{} `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#fallback_to_ondemand OceanAws#fallback_to_ondemand}.
 	FallbackToOndemand interface{} `field:"optional" json:"fallbackToOndemand" yaml:"fallbackToOndemand"`
+	// filters block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#filters OceanAws#filters}
+	Filters *OceanAwsFilters `field:"optional" json:"filters" yaml:"filters"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#grace_period OceanAws#grace_period}.
 	GracePeriod *float64 `field:"optional" json:"gracePeriod" yaml:"gracePeriod"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#iam_instance_profile OceanAws#iam_instance_profile}.

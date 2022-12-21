@@ -20,15 +20,23 @@ type OceanSparkIngressOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Controller() OceanSparkIngressControllerOutputReference
+	ControllerInput() *OceanSparkIngressController
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomEndpoint() OceanSparkIngressCustomEndpointOutputReference
+	CustomEndpointInput() *OceanSparkIngressCustomEndpoint
 	// Experimental.
 	Fqn() *string
 	InternalValue() *OceanSparkIngress
 	SetInternalValue(val *OceanSparkIngress)
+	LoadBalancer() OceanSparkIngressLoadBalancerOutputReference
+	LoadBalancerInput() *OceanSparkIngressLoadBalancer
+	PrivateLink() OceanSparkIngressPrivateLinkOutputReference
+	PrivateLinkInput() *OceanSparkIngressPrivateLink
 	ServiceAnnotations() *map[string]*string
 	SetServiceAnnotations(val *map[string]*string)
 	ServiceAnnotationsInput() *map[string]*string
@@ -64,6 +72,14 @@ type OceanSparkIngressOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutController(value *OceanSparkIngressController)
+	PutCustomEndpoint(value *OceanSparkIngressCustomEndpoint)
+	PutLoadBalancer(value *OceanSparkIngressLoadBalancer)
+	PutPrivateLink(value *OceanSparkIngressPrivateLink)
+	ResetController()
+	ResetCustomEndpoint()
+	ResetLoadBalancer()
+	ResetPrivateLink()
 	ResetServiceAnnotations()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -100,11 +116,51 @@ func (j *jsiiProxy_OceanSparkIngressOutputReference) ComplexObjectIsFromSet() *b
 	return returns
 }
 
+func (j *jsiiProxy_OceanSparkIngressOutputReference) Controller() OceanSparkIngressControllerOutputReference {
+	var returns OceanSparkIngressControllerOutputReference
+	_jsii_.Get(
+		j,
+		"controller",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanSparkIngressOutputReference) ControllerInput() *OceanSparkIngressController {
+	var returns *OceanSparkIngressController
+	_jsii_.Get(
+		j,
+		"controllerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanSparkIngressOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanSparkIngressOutputReference) CustomEndpoint() OceanSparkIngressCustomEndpointOutputReference {
+	var returns OceanSparkIngressCustomEndpointOutputReference
+	_jsii_.Get(
+		j,
+		"customEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanSparkIngressOutputReference) CustomEndpointInput() *OceanSparkIngressCustomEndpoint {
+	var returns *OceanSparkIngressCustomEndpoint
+	_jsii_.Get(
+		j,
+		"customEndpointInput",
 		&returns,
 	)
 	return returns
@@ -125,6 +181,46 @@ func (j *jsiiProxy_OceanSparkIngressOutputReference) InternalValue() *OceanSpark
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanSparkIngressOutputReference) LoadBalancer() OceanSparkIngressLoadBalancerOutputReference {
+	var returns OceanSparkIngressLoadBalancerOutputReference
+	_jsii_.Get(
+		j,
+		"loadBalancer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanSparkIngressOutputReference) LoadBalancerInput() *OceanSparkIngressLoadBalancer {
+	var returns *OceanSparkIngressLoadBalancer
+	_jsii_.Get(
+		j,
+		"loadBalancerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanSparkIngressOutputReference) PrivateLink() OceanSparkIngressPrivateLinkOutputReference {
+	var returns OceanSparkIngressPrivateLinkOutputReference
+	_jsii_.Get(
+		j,
+		"privateLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanSparkIngressOutputReference) PrivateLinkInput() *OceanSparkIngressPrivateLink {
+	var returns *OceanSparkIngressPrivateLink
+	_jsii_.Get(
+		j,
+		"privateLinkInput",
 		&returns,
 	)
 	return returns
@@ -448,6 +544,82 @@ func (o *jsiiProxy_OceanSparkIngressOutputReference) InterpolationForAttribute(p
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OceanSparkIngressOutputReference) PutController(value *OceanSparkIngressController) {
+	if err := o.validatePutControllerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putController",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanSparkIngressOutputReference) PutCustomEndpoint(value *OceanSparkIngressCustomEndpoint) {
+	if err := o.validatePutCustomEndpointParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putCustomEndpoint",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanSparkIngressOutputReference) PutLoadBalancer(value *OceanSparkIngressLoadBalancer) {
+	if err := o.validatePutLoadBalancerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLoadBalancer",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanSparkIngressOutputReference) PutPrivateLink(value *OceanSparkIngressPrivateLink) {
+	if err := o.validatePutPrivateLinkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putPrivateLink",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanSparkIngressOutputReference) ResetController() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetController",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanSparkIngressOutputReference) ResetCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanSparkIngressOutputReference) ResetLoadBalancer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLoadBalancer",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanSparkIngressOutputReference) ResetPrivateLink() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPrivateLink",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OceanSparkIngressOutputReference) ResetServiceAnnotations() {

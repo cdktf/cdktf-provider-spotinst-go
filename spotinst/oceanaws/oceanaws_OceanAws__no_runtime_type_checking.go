@@ -56,6 +56,10 @@ func (o *jsiiProxy_OceanAws) validatePutAutoscalerParameters(value *OceanAwsAuto
 	return nil
 }
 
+func (o *jsiiProxy_OceanAws) validatePutFiltersParameters(value *OceanAwsFilters) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAws) validatePutInstanceMetadataOptionsParameters(value *OceanAwsInstanceMetadataOptions) error {
 	return nil
 }

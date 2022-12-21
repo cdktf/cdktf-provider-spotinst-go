@@ -44,6 +44,22 @@ func (o *jsiiProxy_OceanSparkIngressOutputReference) validateInterpolationForAtt
 	return nil
 }
 
+func (o *jsiiProxy_OceanSparkIngressOutputReference) validatePutControllerParameters(value *OceanSparkIngressController) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanSparkIngressOutputReference) validatePutCustomEndpointParameters(value *OceanSparkIngressCustomEndpoint) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanSparkIngressOutputReference) validatePutLoadBalancerParameters(value *OceanSparkIngressLoadBalancer) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanSparkIngressOutputReference) validatePutPrivateLinkParameters(value *OceanSparkIngressPrivateLink) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanSparkIngressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

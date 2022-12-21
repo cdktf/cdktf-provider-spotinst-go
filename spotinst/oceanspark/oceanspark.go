@@ -122,9 +122,13 @@ func init() {
 		"@cdktf/provider-spotinst.oceanSpark.OceanSparkIngress",
 		reflect.TypeOf((*OceanSparkIngress)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanSpark.OceanSparkIngressController",
+		reflect.TypeOf((*OceanSparkIngressController)(nil)).Elem(),
+	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-spotinst.oceanSpark.OceanSparkIngressOutputReference",
-		reflect.TypeOf((*OceanSparkIngressOutputReference)(nil)).Elem(),
+		"@cdktf/provider-spotinst.oceanSpark.OceanSparkIngressControllerOutputReference",
+		reflect.TypeOf((*OceanSparkIngressControllerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,6 +147,144 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "managed", GoGetter: "Managed"},
+			_jsii_.MemberProperty{JsiiProperty: "managedInput", GoGetter: "ManagedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetManaged", GoMethod: "ResetManaged"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanSparkIngressControllerOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanSpark.OceanSparkIngressCustomEndpoint",
+		reflect.TypeOf((*OceanSparkIngressCustomEndpoint)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanSpark.OceanSparkIngressCustomEndpointOutputReference",
+		reflect.TypeOf((*OceanSparkIngressCustomEndpointOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
+			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAddress", GoMethod: "ResetAddress"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanSparkIngressCustomEndpointOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanSpark.OceanSparkIngressLoadBalancer",
+		reflect.TypeOf((*OceanSparkIngressLoadBalancer)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanSpark.OceanSparkIngressLoadBalancerOutputReference",
+		reflect.TypeOf((*OceanSparkIngressLoadBalancerOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "managed", GoGetter: "Managed"},
+			_jsii_.MemberProperty{JsiiProperty: "managedInput", GoGetter: "ManagedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetManaged", GoMethod: "ResetManaged"},
+			_jsii_.MemberMethod{JsiiMethod: "resetServiceAnnotations", GoMethod: "ResetServiceAnnotations"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetGroupArn", GoMethod: "ResetTargetGroupArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceAnnotations", GoGetter: "ServiceAnnotations"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceAnnotationsInput", GoGetter: "ServiceAnnotationsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetGroupArn", GoGetter: "TargetGroupArn"},
+			_jsii_.MemberProperty{JsiiProperty: "targetGroupArnInput", GoGetter: "TargetGroupArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanSparkIngressLoadBalancerOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanSpark.OceanSparkIngressOutputReference",
+		reflect.TypeOf((*OceanSparkIngressOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "controller", GoGetter: "Controller"},
+			_jsii_.MemberProperty{JsiiProperty: "controllerInput", GoGetter: "ControllerInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "customEndpoint", GoGetter: "CustomEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "customEndpointInput", GoGetter: "CustomEndpointInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "loadBalancer", GoGetter: "LoadBalancer"},
+			_jsii_.MemberProperty{JsiiProperty: "loadBalancerInput", GoGetter: "LoadBalancerInput"},
+			_jsii_.MemberProperty{JsiiProperty: "privateLink", GoGetter: "PrivateLink"},
+			_jsii_.MemberProperty{JsiiProperty: "privateLinkInput", GoGetter: "PrivateLinkInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putController", GoMethod: "PutController"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomEndpoint", GoMethod: "PutCustomEndpoint"},
+			_jsii_.MemberMethod{JsiiMethod: "putLoadBalancer", GoMethod: "PutLoadBalancer"},
+			_jsii_.MemberMethod{JsiiMethod: "putPrivateLink", GoMethod: "PutPrivateLink"},
+			_jsii_.MemberMethod{JsiiMethod: "resetController", GoMethod: "ResetController"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomEndpoint", GoMethod: "ResetCustomEndpoint"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLoadBalancer", GoMethod: "ResetLoadBalancer"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrivateLink", GoMethod: "ResetPrivateLink"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceAnnotations", GoMethod: "ResetServiceAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAnnotations", GoGetter: "ServiceAnnotations"},
@@ -153,6 +295,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OceanSparkIngressOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanSpark.OceanSparkIngressPrivateLink",
+		reflect.TypeOf((*OceanSparkIngressPrivateLink)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanSpark.OceanSparkIngressPrivateLinkOutputReference",
+		reflect.TypeOf((*OceanSparkIngressPrivateLinkOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVpcEndpointService", GoMethod: "ResetVpcEndpointService"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointService", GoGetter: "VpcEndpointService"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointServiceInput", GoGetter: "VpcEndpointServiceInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanSparkIngressPrivateLinkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

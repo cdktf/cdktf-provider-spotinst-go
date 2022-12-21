@@ -51,6 +51,8 @@ type OceanAws interface {
 	FallbackToOndemand() interface{}
 	SetFallbackToOndemand(val interface{})
 	FallbackToOndemandInput() interface{}
+	Filters() OceanAwsFiltersOutputReference
+	FiltersInput() *OceanAwsFilters
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -176,6 +178,7 @@ type OceanAws interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaler(value *OceanAwsAutoscaler)
+	PutFilters(value *OceanAwsFilters)
 	PutInstanceMetadataOptions(value *OceanAwsInstanceMetadataOptions)
 	PutLoadBalancers(value interface{})
 	PutLogging(value *OceanAwsLogging)
@@ -190,6 +193,7 @@ type OceanAws interface {
 	ResetDrainingTimeout()
 	ResetEbsOptimized()
 	ResetFallbackToOndemand()
+	ResetFilters()
 	ResetGracePeriod()
 	ResetIamInstanceProfile()
 	ResetId()
@@ -436,6 +440,26 @@ func (j *jsiiProxy_OceanAws) FallbackToOndemandInput() interface{} {
 	_jsii_.Get(
 		j,
 		"fallbackToOndemandInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) Filters() OceanAwsFiltersOutputReference {
+	var returns OceanAwsFiltersOutputReference
+	_jsii_.Get(
+		j,
+		"filters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) FiltersInput() *OceanAwsFilters {
+	var returns *OceanAwsFilters
+	_jsii_.Get(
+		j,
+		"filtersInput",
 		&returns,
 	)
 	return returns
@@ -1709,6 +1733,17 @@ func (o *jsiiProxy_OceanAws) PutAutoscaler(value *OceanAwsAutoscaler) {
 	)
 }
 
+func (o *jsiiProxy_OceanAws) PutFilters(value *OceanAwsFilters) {
+	if err := o.validatePutFiltersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putFilters",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAws) PutInstanceMetadataOptions(value *OceanAwsInstanceMetadataOptions) {
 	if err := o.validatePutInstanceMetadataOptionsParameters(value); err != nil {
 		panic(err)
@@ -1835,6 +1870,14 @@ func (o *jsiiProxy_OceanAws) ResetFallbackToOndemand() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetFallbackToOndemand",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetFilters() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFilters",
 		nil, // no parameters
 	)
 }
