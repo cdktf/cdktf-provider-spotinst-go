@@ -27,6 +27,9 @@ type ElastigroupAws interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConsiderOdPricing() interface{}
+	SetConsiderOdPricing(val interface{})
+	ConsiderOdPricingInput() interface{}
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -326,6 +329,7 @@ type ElastigroupAws interface {
 	ResetAvailabilityZones()
 	ResetBlockDevicesMode()
 	ResetCapacityUnit()
+	ResetConsiderOdPricing()
 	ResetCpuCredits()
 	ResetCpuOptions()
 	ResetDescription()
@@ -489,6 +493,26 @@ func (j *jsiiProxy_ElastigroupAws) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) ConsiderOdPricing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"considerOdPricing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) ConsiderOdPricingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"considerOdPricingInput",
 		&returns,
 	)
 	return returns
@@ -2248,6 +2272,17 @@ func (j *jsiiProxy_ElastigroupAws)SetConnection(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ElastigroupAws)SetConsiderOdPricing(val interface{}) {
+	if err := j.validateSetConsiderOdPricingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"considerOdPricing",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElastigroupAws)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
@@ -3435,6 +3470,14 @@ func (e *jsiiProxy_ElastigroupAws) ResetCapacityUnit() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetCapacityUnit",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAws) ResetConsiderOdPricing() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetConsiderOdPricing",
 		nil, // no parameters
 	)
 }

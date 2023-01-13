@@ -39,6 +39,8 @@ type ElastigroupAwsConfig struct {
 	BlockDevicesMode *string `field:"optional" json:"blockDevicesMode" yaml:"blockDevicesMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#capacity_unit ElastigroupAws#capacity_unit}.
 	CapacityUnit *string `field:"optional" json:"capacityUnit" yaml:"capacityUnit"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#consider_od_pricing ElastigroupAws#consider_od_pricing}.
+	ConsiderOdPricing interface{} `field:"optional" json:"considerOdPricing" yaml:"considerOdPricing"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#cpu_credits ElastigroupAws#cpu_credits}.
 	CpuCredits *string `field:"optional" json:"cpuCredits" yaml:"cpuCredits"`
 	// cpu_options block.
