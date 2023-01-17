@@ -2,10 +2,10 @@ package oceanaws
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v4/oceanaws/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v5/oceanaws/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -22,6 +22,8 @@ type OceanAws interface {
 	BlacklistInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClusterOrientation() OceanAwsClusterOrientationList
+	ClusterOrientationInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -178,6 +180,7 @@ type OceanAws interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaler(value *OceanAwsAutoscaler)
+	PutClusterOrientation(value interface{})
 	PutFilters(value *OceanAwsFilters)
 	PutInstanceMetadataOptions(value *OceanAwsInstanceMetadataOptions)
 	PutLoadBalancers(value interface{})
@@ -188,6 +191,7 @@ type OceanAws interface {
 	ResetAssociatePublicIpAddress()
 	ResetAutoscaler()
 	ResetBlacklist()
+	ResetClusterOrientation()
 	ResetControllerId()
 	ResetDesiredCapacity()
 	ResetDrainingTimeout()
@@ -300,6 +304,26 @@ func (j *jsiiProxy_OceanAws) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) ClusterOrientation() OceanAwsClusterOrientationList {
+	var returns OceanAwsClusterOrientationList
+	_jsii_.Get(
+		j,
+		"clusterOrientation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) ClusterOrientationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clusterOrientationInput",
 		&returns,
 	)
 	return returns
@@ -1733,6 +1757,17 @@ func (o *jsiiProxy_OceanAws) PutAutoscaler(value *OceanAwsAutoscaler) {
 	)
 }
 
+func (o *jsiiProxy_OceanAws) PutClusterOrientation(value interface{}) {
+	if err := o.validatePutClusterOrientationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putClusterOrientation",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAws) PutFilters(value *OceanAwsFilters) {
 	if err := o.validatePutFiltersParameters(value); err != nil {
 		panic(err)
@@ -1830,6 +1865,14 @@ func (o *jsiiProxy_OceanAws) ResetBlacklist() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetBlacklist",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetClusterOrientation() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetClusterOrientation",
 		nil, // no parameters
 	)
 }

@@ -31,6 +31,10 @@ type OceanAwsConfig struct {
 	Autoscaler *OceanAwsAutoscaler `field:"optional" json:"autoscaler" yaml:"autoscaler"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#blacklist OceanAws#blacklist}.
 	Blacklist *[]*string `field:"optional" json:"blacklist" yaml:"blacklist"`
+	// cluster_orientation block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#cluster_orientation OceanAws#cluster_orientation}
+	ClusterOrientation interface{} `field:"optional" json:"clusterOrientation" yaml:"clusterOrientation"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#controller_id OceanAws#controller_id}.
 	ControllerId *string `field:"optional" json:"controllerId" yaml:"controllerId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#desired_capacity OceanAws#desired_capacity}.
