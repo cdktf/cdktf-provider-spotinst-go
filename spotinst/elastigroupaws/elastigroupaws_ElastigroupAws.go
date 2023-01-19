@@ -101,6 +101,9 @@ type ElastigroupAws interface {
 	ImageIdInput() *string
 	Images() ElastigroupAwsImagesList
 	ImagesInput() interface{}
+	ImmediateOdRecoverThreshold() *float64
+	SetImmediateOdRecoverThreshold(val *float64)
+	ImmediateOdRecoverThresholdInput() *float64
 	InstanceTypesOndemand() *string
 	SetInstanceTypesOndemand(val *string)
 	InstanceTypesOndemandInput() *string
@@ -348,6 +351,7 @@ type ElastigroupAws interface {
 	ResetId()
 	ResetImageId()
 	ResetImages()
+	ResetImmediateOdRecoverThreshold()
 	ResetInstanceTypesPreferredSpot()
 	ResetInstanceTypesWeights()
 	ResetIntegrationBeanstalk()
@@ -953,6 +957,26 @@ func (j *jsiiProxy_ElastigroupAws) ImagesInput() interface{} {
 	_jsii_.Get(
 		j,
 		"imagesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) ImmediateOdRecoverThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"immediateOdRecoverThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) ImmediateOdRecoverThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"immediateOdRecoverThresholdInput",
 		&returns,
 	)
 	return returns
@@ -2472,6 +2496,17 @@ func (j *jsiiProxy_ElastigroupAws)SetImageId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ElastigroupAws)SetImmediateOdRecoverThreshold(val *float64) {
+	if err := j.validateSetImmediateOdRecoverThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"immediateOdRecoverThreshold",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElastigroupAws)SetInstanceTypesOndemand(val *string) {
 	if err := j.validateSetInstanceTypesOndemandParameters(val); err != nil {
 		panic(err)
@@ -3622,6 +3657,14 @@ func (e *jsiiProxy_ElastigroupAws) ResetImages() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetImages",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAws) ResetImmediateOdRecoverThreshold() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetImmediateOdRecoverThreshold",
 		nil, // no parameters
 	)
 }

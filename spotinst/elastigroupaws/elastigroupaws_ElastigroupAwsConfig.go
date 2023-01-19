@@ -88,6 +88,8 @@ type ElastigroupAwsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#images ElastigroupAws#images}
 	Images interface{} `field:"optional" json:"images" yaml:"images"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#immediate_od_recover_threshold ElastigroupAws#immediate_od_recover_threshold}.
+	ImmediateOdRecoverThreshold *float64 `field:"optional" json:"immediateOdRecoverThreshold" yaml:"immediateOdRecoverThreshold"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#instance_types_preferred_spot ElastigroupAws#instance_types_preferred_spot}.
 	InstanceTypesPreferredSpot *[]*string `field:"optional" json:"instanceTypesPreferredSpot" yaml:"instanceTypesPreferredSpot"`
 	// instance_types_weights block.

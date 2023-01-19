@@ -276,6 +276,10 @@ func (j *jsiiProxy_ElastigroupAws) validateSetImageIdParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAws) validateSetImmediateOdRecoverThresholdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAws) validateSetInstanceTypesOndemandParameters(val *string) error {
 	return nil
 }
