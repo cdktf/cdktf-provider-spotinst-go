@@ -1,14 +1,14 @@
-package oceanaws
+package oceanecs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v5/oceanaws/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v5/oceanecs/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type OceanAwsFiltersOutputReference interface {
+type OceanEcsFiltersOutputReference interface {
 	cdktf.ComplexObject
 	Architectures() *[]*string
 	SetArchitectures(val *[]*string)
@@ -48,8 +48,8 @@ type OceanAwsFiltersOutputReference interface {
 	IncludeFamilies() *[]*string
 	SetIncludeFamilies(val *[]*string)
 	IncludeFamiliesInput() *[]*string
-	InternalValue() *OceanAwsFilters
-	SetInternalValue(val *OceanAwsFilters)
+	InternalValue() *OceanEcsFilters
+	SetInternalValue(val *OceanEcsFilters)
 	IsEnaSupported() *string
 	SetIsEnaSupported(val *string)
 	IsEnaSupportedInput() *string
@@ -147,12 +147,12 @@ type OceanAwsFiltersOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for OceanAwsFiltersOutputReference
-type jsiiProxy_OceanAwsFiltersOutputReference struct {
+// The jsii proxy struct for OceanEcsFiltersOutputReference
+type jsiiProxy_OceanEcsFiltersOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) Architectures() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) Architectures() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -162,7 +162,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) Architectures() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) ArchitecturesInput() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) ArchitecturesInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -172,7 +172,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) ArchitecturesInput() *[]*stri
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) Categories() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) Categories() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -182,7 +182,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) Categories() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) CategoriesInput() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) CategoriesInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -192,7 +192,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) CategoriesInput() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -202,7 +202,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) ComplexObjectIndex() interfac
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -212,7 +212,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) ComplexObjectIsFromSet() *boo
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -222,7 +222,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) DiskTypes() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) DiskTypes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -232,7 +232,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) DiskTypes() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) DiskTypesInput() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) DiskTypesInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -242,7 +242,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) DiskTypesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) ExcludeFamilies() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) ExcludeFamilies() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -252,7 +252,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) ExcludeFamilies() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) ExcludeFamiliesInput() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) ExcludeFamiliesInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -262,7 +262,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) ExcludeFamiliesInput() *[]*st
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) ExcludeMetal() interface{} {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) ExcludeMetal() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -272,7 +272,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) ExcludeMetal() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) ExcludeMetalInput() interface{} {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) ExcludeMetalInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -282,7 +282,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) ExcludeMetalInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) Fqn() *string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -292,7 +292,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) Hypervisor() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) Hypervisor() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -302,7 +302,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) Hypervisor() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) HypervisorInput() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) HypervisorInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -312,7 +312,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) HypervisorInput() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) IncludeFamilies() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) IncludeFamilies() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -322,7 +322,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) IncludeFamilies() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) IncludeFamiliesInput() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) IncludeFamiliesInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -332,8 +332,8 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) IncludeFamiliesInput() *[]*st
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) InternalValue() *OceanAwsFilters {
-	var returns *OceanAwsFilters
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) InternalValue() *OceanEcsFilters {
+	var returns *OceanEcsFilters
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -342,7 +342,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) InternalValue() *OceanAwsFilt
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) IsEnaSupported() *string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) IsEnaSupported() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -352,7 +352,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) IsEnaSupported() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) IsEnaSupportedInput() *string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) IsEnaSupportedInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -362,7 +362,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) IsEnaSupportedInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxGpu() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MaxGpu() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -372,7 +372,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxGpu() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxGpuInput() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MaxGpuInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -382,7 +382,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxGpuInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxMemoryGib() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MaxMemoryGib() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -392,7 +392,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxMemoryGib() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxMemoryGibInput() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MaxMemoryGibInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -402,7 +402,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxMemoryGibInput() *float64 
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxNetworkPerformance() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MaxNetworkPerformance() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -412,7 +412,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxNetworkPerformance() *floa
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxNetworkPerformanceInput() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MaxNetworkPerformanceInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -422,7 +422,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxNetworkPerformanceInput() 
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxVcpu() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MaxVcpu() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -432,7 +432,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxVcpu() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxVcpuInput() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MaxVcpuInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -442,7 +442,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MaxVcpuInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinEnis() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MinEnis() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -452,7 +452,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinEnis() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinEnisInput() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MinEnisInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -462,7 +462,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinEnisInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinGpu() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MinGpu() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -472,7 +472,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinGpu() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinGpuInput() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MinGpuInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -482,7 +482,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinGpuInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinMemoryGib() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MinMemoryGib() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -492,7 +492,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinMemoryGib() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinMemoryGibInput() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MinMemoryGibInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -502,7 +502,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinMemoryGibInput() *float64 
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinNetworkPerformance() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MinNetworkPerformance() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -512,7 +512,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinNetworkPerformance() *floa
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinNetworkPerformanceInput() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MinNetworkPerformanceInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -522,7 +522,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinNetworkPerformanceInput() 
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinVcpu() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MinVcpu() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -532,7 +532,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinVcpu() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinVcpuInput() *float64 {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) MinVcpuInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -542,7 +542,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) MinVcpuInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) RootDeviceTypes() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) RootDeviceTypes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -552,7 +552,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) RootDeviceTypes() *[]*string 
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) RootDeviceTypesInput() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) RootDeviceTypesInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -562,7 +562,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) RootDeviceTypesInput() *[]*st
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -572,7 +572,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -582,7 +582,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) TerraformResource() cdktf.IIn
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) VirtualizationTypes() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) VirtualizationTypes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -592,7 +592,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) VirtualizationTypes() *[]*str
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) VirtualizationTypesInput() *[]*string {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) VirtualizationTypesInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -603,16 +603,16 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) VirtualizationTypesInput() *[
 }
 
 
-func NewOceanAwsFiltersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanAwsFiltersOutputReference {
+func NewOceanEcsFiltersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanEcsFiltersOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewOceanAwsFiltersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewOceanEcsFiltersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_OceanAwsFiltersOutputReference{}
+	j := jsiiProxy_OceanEcsFiltersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-spotinst.oceanAws.OceanAwsFiltersOutputReference",
+		"@cdktf/provider-spotinst.oceanEcs.OceanEcsFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -620,17 +620,17 @@ func NewOceanAwsFiltersOutputReference(terraformResource cdktf.IInterpolatingPar
 	return &j
 }
 
-func NewOceanAwsFiltersOutputReference_Override(o OceanAwsFiltersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOceanEcsFiltersOutputReference_Override(o OceanEcsFiltersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-spotinst.oceanAws.OceanAwsFiltersOutputReference",
+		"@cdktf/provider-spotinst.oceanEcs.OceanEcsFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetArchitectures(val *[]*string) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetArchitectures(val *[]*string) {
 	if err := j.validateSetArchitecturesParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +641,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetArchitectures(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetCategories(val *[]*string) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetCategories(val *[]*string) {
 	if err := j.validateSetCategoriesParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +652,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetCategories(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +663,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +674,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetDiskTypes(val *[]*string) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetDiskTypes(val *[]*string) {
 	if err := j.validateSetDiskTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +685,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetDiskTypes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetExcludeFamilies(val *[]*string) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetExcludeFamilies(val *[]*string) {
 	if err := j.validateSetExcludeFamiliesParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +696,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetExcludeFamilies(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetExcludeMetal(val interface{}) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetExcludeMetal(val interface{}) {
 	if err := j.validateSetExcludeMetalParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +707,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetExcludeMetal(val interface{
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetHypervisor(val *[]*string) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetHypervisor(val *[]*string) {
 	if err := j.validateSetHypervisorParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +718,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetHypervisor(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetIncludeFamilies(val *[]*string) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetIncludeFamilies(val *[]*string) {
 	if err := j.validateSetIncludeFamiliesParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +729,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetIncludeFamilies(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetInternalValue(val *OceanAwsFilters) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetInternalValue(val *OceanEcsFilters) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +740,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetInternalValue(val *OceanAws
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetIsEnaSupported(val *string) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetIsEnaSupported(val *string) {
 	if err := j.validateSetIsEnaSupportedParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +751,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetIsEnaSupported(val *string)
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMaxGpu(val *float64) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetMaxGpu(val *float64) {
 	if err := j.validateSetMaxGpuParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,7 +762,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMaxGpu(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMaxMemoryGib(val *float64) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetMaxMemoryGib(val *float64) {
 	if err := j.validateSetMaxMemoryGibParameters(val); err != nil {
 		panic(err)
 	}
@@ -773,7 +773,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMaxMemoryGib(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMaxNetworkPerformance(val *float64) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetMaxNetworkPerformance(val *float64) {
 	if err := j.validateSetMaxNetworkPerformanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +784,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMaxNetworkPerformance(val *
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMaxVcpu(val *float64) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetMaxVcpu(val *float64) {
 	if err := j.validateSetMaxVcpuParameters(val); err != nil {
 		panic(err)
 	}
@@ -795,7 +795,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMaxVcpu(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMinEnis(val *float64) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetMinEnis(val *float64) {
 	if err := j.validateSetMinEnisParameters(val); err != nil {
 		panic(err)
 	}
@@ -806,7 +806,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMinEnis(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMinGpu(val *float64) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetMinGpu(val *float64) {
 	if err := j.validateSetMinGpuParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,7 +817,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMinGpu(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMinMemoryGib(val *float64) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetMinMemoryGib(val *float64) {
 	if err := j.validateSetMinMemoryGibParameters(val); err != nil {
 		panic(err)
 	}
@@ -828,7 +828,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMinMemoryGib(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMinNetworkPerformance(val *float64) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetMinNetworkPerformance(val *float64) {
 	if err := j.validateSetMinNetworkPerformanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +839,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMinNetworkPerformance(val *
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMinVcpu(val *float64) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetMinVcpu(val *float64) {
 	if err := j.validateSetMinVcpuParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +850,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetMinVcpu(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetRootDeviceTypes(val *[]*string) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetRootDeviceTypes(val *[]*string) {
 	if err := j.validateSetRootDeviceTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -861,7 +861,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetRootDeviceTypes(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -872,7 +872,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -883,7 +883,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetVirtualizationTypes(val *[]*string) {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference)SetVirtualizationTypes(val *[]*string) {
 	if err := j.validateSetVirtualizationTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -894,7 +894,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference)SetVirtualizationTypes(val *[]
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ComputeFqn() *string {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -907,7 +907,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -923,7 +923,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -939,7 +939,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetBooleanAttribute(terraform
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -955,7 +955,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetBooleanMapAttribute(terraf
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -971,7 +971,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetListAttribute(terraformAtt
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -987,7 +987,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetNumberAttribute(terraformA
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1003,7 +1003,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetNumberListAttribute(terraf
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1019,7 +1019,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetNumberMapAttribute(terrafo
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1035,7 +1035,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetStringAttribute(terraformA
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -1051,7 +1051,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1064,7 +1064,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) InterpolationAsList() cdktf.I
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -1080,7 +1080,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) InterpolationForAttribute(pro
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetArchitectures() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetArchitectures() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetArchitectures",
@@ -1088,7 +1088,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetArchitectures() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetCategories() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetCategories() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetCategories",
@@ -1096,7 +1096,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetCategories() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetDiskTypes() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetDiskTypes() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetDiskTypes",
@@ -1104,7 +1104,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetDiskTypes() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetExcludeFamilies() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetExcludeFamilies() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetExcludeFamilies",
@@ -1112,7 +1112,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetExcludeFamilies() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetExcludeMetal() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetExcludeMetal() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetExcludeMetal",
@@ -1120,7 +1120,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetExcludeMetal() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetHypervisor() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetHypervisor() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetHypervisor",
@@ -1128,7 +1128,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetHypervisor() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetIncludeFamilies() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetIncludeFamilies() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetIncludeFamilies",
@@ -1136,7 +1136,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetIncludeFamilies() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetIsEnaSupported() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetIsEnaSupported() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetIsEnaSupported",
@@ -1144,7 +1144,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetIsEnaSupported() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMaxGpu() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetMaxGpu() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetMaxGpu",
@@ -1152,7 +1152,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMaxGpu() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMaxMemoryGib() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetMaxMemoryGib() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetMaxMemoryGib",
@@ -1160,7 +1160,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMaxMemoryGib() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMaxNetworkPerformance() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetMaxNetworkPerformance() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetMaxNetworkPerformance",
@@ -1168,7 +1168,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMaxNetworkPerformance() 
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMaxVcpu() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetMaxVcpu() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetMaxVcpu",
@@ -1176,7 +1176,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMaxVcpu() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMinEnis() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetMinEnis() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetMinEnis",
@@ -1184,7 +1184,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMinEnis() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMinGpu() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetMinGpu() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetMinGpu",
@@ -1192,7 +1192,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMinGpu() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMinMemoryGib() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetMinMemoryGib() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetMinMemoryGib",
@@ -1200,7 +1200,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMinMemoryGib() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMinNetworkPerformance() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetMinNetworkPerformance() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetMinNetworkPerformance",
@@ -1208,7 +1208,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMinNetworkPerformance() 
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMinVcpu() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetMinVcpu() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetMinVcpu",
@@ -1216,7 +1216,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetMinVcpu() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetRootDeviceTypes() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetRootDeviceTypes() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetRootDeviceTypes",
@@ -1224,7 +1224,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetRootDeviceTypes() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetVirtualizationTypes() {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ResetVirtualizationTypes() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetVirtualizationTypes",
@@ -1232,7 +1232,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) ResetVirtualizationTypes() {
 	)
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -1248,7 +1248,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) Resolve(_context cdktf.IResol
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) ToString() *string {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

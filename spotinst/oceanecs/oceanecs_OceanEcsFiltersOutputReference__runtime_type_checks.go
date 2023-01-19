@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package oceanaws
+package oceanecs
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetAnyMapAttributePar
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetBooleanAttributePa
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetBooleanMapAttribut
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetListAttributeParam
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetNumberAttributePar
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetNumberListAttribut
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetNumberMapAttribute
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetStringAttributePar
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateInterpolationForAttri
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsFiltersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (o *jsiiProxy_OceanAwsFiltersOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetArchitecturesParameters(val *[]*string) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetArchitecturesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -106,7 +106,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetArchitecturesParam
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetCategoriesParameters(val *[]*string) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetCategoriesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -114,7 +114,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetCategoriesParamete
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetComplexObjectIndex
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetComplexObjectIsFro
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetDiskTypesParameters(val *[]*string) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetDiskTypesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetDiskTypesParameter
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetExcludeFamiliesParameters(val *[]*string) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetExcludeFamiliesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -195,7 +195,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetExcludeFamiliesPar
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetExcludeMetalParameters(val interface{}) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetExcludeMetalParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetExcludeMetalParame
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetHypervisorParameters(val *[]*string) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetHypervisorParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetHypervisorParamete
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetIncludeFamiliesParameters(val *[]*string) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetIncludeFamiliesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetIncludeFamiliesPar
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetInternalValueParameters(val *OceanAwsFilters) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetInternalValueParameters(val *OceanEcsFilters) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -239,7 +239,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetInternalValueParam
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetIsEnaSupportedParameters(val *string) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetIsEnaSupportedParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetIsEnaSupportedPara
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMaxGpuParameters(val *float64) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetMaxGpuParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMaxGpuParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMaxMemoryGibParameters(val *float64) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetMaxMemoryGibParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMaxMemoryGibParame
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMaxNetworkPerformanceParameters(val *float64) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetMaxNetworkPerformanceParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMaxNetworkPerforma
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMaxVcpuParameters(val *float64) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetMaxVcpuParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -279,7 +279,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMaxVcpuParameters(
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMinEnisParameters(val *float64) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetMinEnisParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -287,7 +287,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMinEnisParameters(
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMinGpuParameters(val *float64) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetMinGpuParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMinGpuParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMinMemoryGibParameters(val *float64) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetMinMemoryGibParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMinMemoryGibParame
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMinNetworkPerformanceParameters(val *float64) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetMinNetworkPerformanceParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMinNetworkPerforma
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMinVcpuParameters(val *float64) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetMinVcpuParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetMinVcpuParameters(
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetRootDeviceTypesParameters(val *[]*string) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetRootDeviceTypesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -327,7 +327,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetRootDeviceTypesPar
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -343,7 +343,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetTerraformResourceP
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetVirtualizationTypesParameters(val *[]*string) error {
+func (j *jsiiProxy_OceanEcsFiltersOutputReference) validateSetVirtualizationTypesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -351,7 +351,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetVirtualizationType
 	return nil
 }
 
-func validateNewOceanAwsFiltersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOceanEcsFiltersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

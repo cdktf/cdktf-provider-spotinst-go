@@ -60,6 +60,10 @@ func (o *jsiiProxy_OceanEcs) validatePutBlockDeviceMappingsParameters(value inte
 	return nil
 }
 
+func (o *jsiiProxy_OceanEcs) validatePutFiltersParameters(value *OceanEcsFilters) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanEcs) validatePutInstanceMetadataOptionsParameters(value *OceanEcsInstanceMetadataOptions) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func validateOceanEcs_IsTerraformResourceParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_OceanEcs) validateSetAssociatePublicIpAddressParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OceanEcs) validateSetBlacklistParameters(val *[]*string) error {
 	return nil
 }
 

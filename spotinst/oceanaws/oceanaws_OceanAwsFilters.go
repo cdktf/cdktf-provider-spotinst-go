@@ -17,7 +17,7 @@ type OceanAwsFilters struct {
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#include_families OceanAws#include_families}.
 	IncludeFamilies *[]*string `field:"optional" json:"includeFamilies" yaml:"includeFamilies"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#is_ena_supported OceanAws#is_ena_supported}.
-	IsEnaSupported interface{} `field:"optional" json:"isEnaSupported" yaml:"isEnaSupported"`
+	IsEnaSupported *string `field:"optional" json:"isEnaSupported" yaml:"isEnaSupported"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#max_gpu OceanAws#max_gpu}.
 	MaxGpu *float64 `field:"optional" json:"maxGpu" yaml:"maxGpu"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#max_memory_gib OceanAws#max_memory_gib}.

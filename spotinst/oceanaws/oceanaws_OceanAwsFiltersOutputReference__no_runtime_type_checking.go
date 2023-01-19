@@ -88,7 +88,7 @@ func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetInternalValueParam
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetIsEnaSupportedParameters(val interface{}) error {
+func (j *jsiiProxy_OceanAwsFiltersOutputReference) validateSetIsEnaSupportedParameters(val *string) error {
 	return nil
 }
 

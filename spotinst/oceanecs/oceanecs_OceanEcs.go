@@ -17,6 +17,9 @@ type OceanEcs interface {
 	AssociatePublicIpAddressInput() interface{}
 	Autoscaler() OceanEcsAutoscalerOutputReference
 	AutoscalerInput() *OceanEcsAutoscaler
+	Blacklist() *[]*string
+	SetBlacklist(val *[]*string)
+	BlacklistInput() *[]*string
 	BlockDeviceMappings() OceanEcsBlockDeviceMappingsList
 	BlockDeviceMappingsInput() interface{}
 	// Experimental.
@@ -47,6 +50,8 @@ type OceanEcs interface {
 	EbsOptimized() interface{}
 	SetEbsOptimized(val interface{})
 	EbsOptimizedInput() interface{}
+	Filters() OceanEcsFiltersOutputReference
+	FiltersInput() *OceanEcsFilters
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -167,6 +172,7 @@ type OceanEcs interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaler(value *OceanEcsAutoscaler)
 	PutBlockDeviceMappings(value interface{})
+	PutFilters(value *OceanEcsFilters)
 	PutInstanceMetadataOptions(value *OceanEcsInstanceMetadataOptions)
 	PutLogging(value *OceanEcsLogging)
 	PutOptimizeImages(value *OceanEcsOptimizeImages)
@@ -175,10 +181,12 @@ type OceanEcs interface {
 	PutUpdatePolicy(value *OceanEcsUpdatePolicy)
 	ResetAssociatePublicIpAddress()
 	ResetAutoscaler()
+	ResetBlacklist()
 	ResetBlockDeviceMappings()
 	ResetDesiredCapacity()
 	ResetDrainingTimeout()
 	ResetEbsOptimized()
+	ResetFilters()
 	ResetIamInstanceProfile()
 	ResetId()
 	ResetImageId()
@@ -251,6 +259,26 @@ func (j *jsiiProxy_OceanEcs) AutoscalerInput() *OceanEcsAutoscaler {
 	_jsii_.Get(
 		j,
 		"autoscalerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcs) Blacklist() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blacklist",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcs) BlacklistInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blacklistInput",
 		&returns,
 	)
 	return returns
@@ -401,6 +429,26 @@ func (j *jsiiProxy_OceanEcs) EbsOptimizedInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ebsOptimizedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcs) Filters() OceanEcsFiltersOutputReference {
+	var returns OceanEcsFiltersOutputReference
+	_jsii_.Get(
+		j,
+		"filters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcs) FiltersInput() *OceanEcsFilters {
+	var returns *OceanEcsFilters
+	_jsii_.Get(
+		j,
+		"filtersInput",
 		&returns,
 	)
 	return returns
@@ -1017,6 +1065,17 @@ func (j *jsiiProxy_OceanEcs)SetAssociatePublicIpAddress(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_OceanEcs)SetBlacklist(val *[]*string) {
+	if err := j.validateSetBlacklistParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"blacklist",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OceanEcs)SetClusterName(val *string) {
 	if err := j.validateSetClusterNameParameters(val); err != nil {
 		panic(err)
@@ -1601,6 +1660,17 @@ func (o *jsiiProxy_OceanEcs) PutBlockDeviceMappings(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanEcs) PutFilters(value *OceanEcsFilters) {
+	if err := o.validatePutFiltersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putFilters",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanEcs) PutInstanceMetadataOptions(value *OceanEcsInstanceMetadataOptions) {
 	if err := o.validatePutInstanceMetadataOptionsParameters(value); err != nil {
 		panic(err)
@@ -1683,6 +1753,14 @@ func (o *jsiiProxy_OceanEcs) ResetAutoscaler() {
 	)
 }
 
+func (o *jsiiProxy_OceanEcs) ResetBlacklist() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBlacklist",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OceanEcs) ResetBlockDeviceMappings() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1711,6 +1789,14 @@ func (o *jsiiProxy_OceanEcs) ResetEbsOptimized() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetEbsOptimized",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanEcs) ResetFilters() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFilters",
 		nil, // no parameters
 	)
 }

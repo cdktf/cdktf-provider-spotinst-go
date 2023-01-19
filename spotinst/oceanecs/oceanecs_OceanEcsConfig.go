@@ -35,6 +35,8 @@ type OceanEcsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#autoscaler OceanEcs#autoscaler}
 	Autoscaler *OceanEcsAutoscaler `field:"optional" json:"autoscaler" yaml:"autoscaler"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#blacklist OceanEcs#blacklist}.
+	Blacklist *[]*string `field:"optional" json:"blacklist" yaml:"blacklist"`
 	// block_device_mappings block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#block_device_mappings OceanEcs#block_device_mappings}
@@ -45,6 +47,10 @@ type OceanEcsConfig struct {
 	DrainingTimeout *float64 `field:"optional" json:"drainingTimeout" yaml:"drainingTimeout"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#ebs_optimized OceanEcs#ebs_optimized}.
 	EbsOptimized interface{} `field:"optional" json:"ebsOptimized" yaml:"ebsOptimized"`
+	// filters block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#filters OceanEcs#filters}
+	Filters *OceanEcsFilters `field:"optional" json:"filters" yaml:"filters"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#iam_instance_profile OceanEcs#iam_instance_profile}.
 	IamInstanceProfile *string `field:"optional" json:"iamInstanceProfile" yaml:"iamInstanceProfile"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#id OceanEcs#id}.
