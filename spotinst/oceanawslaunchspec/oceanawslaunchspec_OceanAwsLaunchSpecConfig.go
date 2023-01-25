@@ -23,6 +23,10 @@ type OceanAwsLaunchSpecConfig struct {
 	OceanId *string `field:"required" json:"oceanId" yaml:"oceanId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws_launch_spec#associate_public_ip_address OceanAwsLaunchSpec#associate_public_ip_address}.
 	AssociatePublicIpAddress interface{} `field:"optional" json:"associatePublicIpAddress" yaml:"associatePublicIpAddress"`
+	// autoscale_down block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws_launch_spec#autoscale_down OceanAwsLaunchSpec#autoscale_down}
+	AutoscaleDown interface{} `field:"optional" json:"autoscaleDown" yaml:"autoscaleDown"`
 	// autoscale_headrooms block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws_launch_spec#autoscale_headrooms OceanAwsLaunchSpec#autoscale_headrooms}

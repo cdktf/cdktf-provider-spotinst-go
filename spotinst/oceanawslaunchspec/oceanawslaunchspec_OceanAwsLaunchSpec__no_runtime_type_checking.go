@@ -52,6 +52,10 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutAutoscaleDownParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutAutoscaleHeadroomsParameters(value interface{}) error {
 	return nil
 }

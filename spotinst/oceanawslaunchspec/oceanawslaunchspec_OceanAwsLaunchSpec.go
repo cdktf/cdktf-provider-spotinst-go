@@ -15,6 +15,8 @@ type OceanAwsLaunchSpec interface {
 	AssociatePublicIpAddress() interface{}
 	SetAssociatePublicIpAddress(val interface{})
 	AssociatePublicIpAddressInput() interface{}
+	AutoscaleDown() OceanAwsLaunchSpecAutoscaleDownList
+	AutoscaleDownInput() interface{}
 	AutoscaleHeadrooms() OceanAwsLaunchSpecAutoscaleHeadroomsList
 	AutoscaleHeadroomsAutomatic() OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList
 	AutoscaleHeadroomsAutomaticInput() interface{}
@@ -150,6 +152,7 @@ type OceanAwsLaunchSpec interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutoscaleDown(value interface{})
 	PutAutoscaleHeadrooms(value interface{})
 	PutAutoscaleHeadroomsAutomatic(value interface{})
 	PutBlockDeviceMappings(value interface{})
@@ -165,6 +168,7 @@ type OceanAwsLaunchSpec interface {
 	PutTaints(value interface{})
 	PutUpdatePolicy(value *OceanAwsLaunchSpecUpdatePolicy)
 	ResetAssociatePublicIpAddress()
+	ResetAutoscaleDown()
 	ResetAutoscaleHeadrooms()
 	ResetAutoscaleHeadroomsAutomatic()
 	ResetBlockDeviceMappings()
@@ -223,6 +227,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) AssociatePublicIpAddressInput() interface
 	_jsii_.Get(
 		j,
 		"associatePublicIpAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) AutoscaleDown() OceanAwsLaunchSpecAutoscaleDownList {
+	var returns OceanAwsLaunchSpecAutoscaleDownList
+	_jsii_.Get(
+		j,
+		"autoscaleDown",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) AutoscaleDownInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoscaleDownInput",
 		&returns,
 	)
 	return returns
@@ -1412,6 +1436,17 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) PutAutoscaleDown(value interface{}) {
+	if err := o.validatePutAutoscaleDownParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAutoscaleDown",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutAutoscaleHeadrooms(value interface{}) {
 	if err := o.validatePutAutoscaleHeadroomsParameters(value); err != nil {
 		panic(err)
@@ -1570,6 +1605,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) ResetAssociatePublicIpAddress() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAssociatePublicIpAddress",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpec) ResetAutoscaleDown() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAutoscaleDown",
 		nil, // no parameters
 	)
 }
