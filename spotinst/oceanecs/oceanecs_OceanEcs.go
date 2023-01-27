@@ -27,6 +27,8 @@ type OceanEcs interface {
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
+	ClusterOrientation() OceanEcsClusterOrientationList
+	ClusterOrientationInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -172,6 +174,7 @@ type OceanEcs interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaler(value *OceanEcsAutoscaler)
 	PutBlockDeviceMappings(value interface{})
+	PutClusterOrientation(value interface{})
 	PutFilters(value *OceanEcsFilters)
 	PutInstanceMetadataOptions(value *OceanEcsInstanceMetadataOptions)
 	PutLogging(value *OceanEcsLogging)
@@ -183,6 +186,7 @@ type OceanEcs interface {
 	ResetAutoscaler()
 	ResetBlacklist()
 	ResetBlockDeviceMappings()
+	ResetClusterOrientation()
 	ResetDesiredCapacity()
 	ResetDrainingTimeout()
 	ResetEbsOptimized()
@@ -329,6 +333,26 @@ func (j *jsiiProxy_OceanEcs) ClusterNameInput() *string {
 	_jsii_.Get(
 		j,
 		"clusterNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcs) ClusterOrientation() OceanEcsClusterOrientationList {
+	var returns OceanEcsClusterOrientationList
+	_jsii_.Get(
+		j,
+		"clusterOrientation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcs) ClusterOrientationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clusterOrientationInput",
 		&returns,
 	)
 	return returns
@@ -1660,6 +1684,17 @@ func (o *jsiiProxy_OceanEcs) PutBlockDeviceMappings(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanEcs) PutClusterOrientation(value interface{}) {
+	if err := o.validatePutClusterOrientationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putClusterOrientation",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanEcs) PutFilters(value *OceanEcsFilters) {
 	if err := o.validatePutFiltersParameters(value); err != nil {
 		panic(err)
@@ -1765,6 +1800,14 @@ func (o *jsiiProxy_OceanEcs) ResetBlockDeviceMappings() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetBlockDeviceMappings",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanEcs) ResetClusterOrientation() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetClusterOrientation",
 		nil, // no parameters
 	)
 }

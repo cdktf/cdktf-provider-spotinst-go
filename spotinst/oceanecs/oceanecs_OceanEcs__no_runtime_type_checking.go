@@ -60,6 +60,10 @@ func (o *jsiiProxy_OceanEcs) validatePutBlockDeviceMappingsParameters(value inte
 	return nil
 }
 
+func (o *jsiiProxy_OceanEcs) validatePutClusterOrientationParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanEcs) validatePutFiltersParameters(value *OceanEcsFilters) error {
 	return nil
 }

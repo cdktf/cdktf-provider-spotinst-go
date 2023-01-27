@@ -153,6 +153,37 @@ func (o *jsiiProxy_OceanEcs) validatePutBlockDeviceMappingsParameters(value inte
 	return nil
 }
 
+func (o *jsiiProxy_OceanEcs) validatePutClusterOrientationParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*OceanEcsClusterOrientation:
+		value := value.(*[]*OceanEcsClusterOrientation)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*OceanEcsClusterOrientation:
+		value_ := value.([]*OceanEcsClusterOrientation)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OceanEcsClusterOrientation; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OceanEcs) validatePutFiltersParameters(value *OceanEcsFilters) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

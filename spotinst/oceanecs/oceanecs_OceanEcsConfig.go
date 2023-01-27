@@ -41,6 +41,10 @@ type OceanEcsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#block_device_mappings OceanEcs#block_device_mappings}
 	BlockDeviceMappings interface{} `field:"optional" json:"blockDeviceMappings" yaml:"blockDeviceMappings"`
+	// cluster_orientation block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#cluster_orientation OceanEcs#cluster_orientation}
+	ClusterOrientation interface{} `field:"optional" json:"clusterOrientation" yaml:"clusterOrientation"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#desired_capacity OceanEcs#desired_capacity}.
 	DesiredCapacity *float64 `field:"optional" json:"desiredCapacity" yaml:"desiredCapacity"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#draining_timeout OceanEcs#draining_timeout}.
