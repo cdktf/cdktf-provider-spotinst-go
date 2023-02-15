@@ -44,6 +44,10 @@ type OceanEcsLaunchSpecConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs_launch_spec#image_id OceanEcsLaunchSpec#image_id}.
 	ImageId *string `field:"optional" json:"imageId" yaml:"imageId"`
+	// instance_metadata_options block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs_launch_spec#instance_metadata_options OceanEcsLaunchSpec#instance_metadata_options}
+	InstanceMetadataOptions *OceanEcsLaunchSpecInstanceMetadataOptions `field:"optional" json:"instanceMetadataOptions" yaml:"instanceMetadataOptions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs_launch_spec#instance_types OceanEcsLaunchSpec#instance_types}.
 	InstanceTypes *[]*string `field:"optional" json:"instanceTypes" yaml:"instanceTypes"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs_launch_spec#preferred_spot_types OceanEcsLaunchSpec#preferred_spot_types}.

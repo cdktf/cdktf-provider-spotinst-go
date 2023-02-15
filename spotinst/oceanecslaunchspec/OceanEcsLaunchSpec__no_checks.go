@@ -64,6 +64,10 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) validatePutBlockDeviceMappingsParameters(
 	return nil
 }
 
+func (o *jsiiProxy_OceanEcsLaunchSpec) validatePutInstanceMetadataOptionsParameters(value *OceanEcsLaunchSpecInstanceMetadataOptions) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanEcsLaunchSpec) validatePutSchedulingTaskParameters(value interface{}) error {
 	return nil
 }

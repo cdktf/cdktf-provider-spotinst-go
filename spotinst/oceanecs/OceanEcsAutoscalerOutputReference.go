@@ -47,6 +47,9 @@ type OceanEcsAutoscalerOutputReference interface {
 	IsEnabledInput() interface{}
 	ResourceLimits() OceanEcsAutoscalerResourceLimitsOutputReference
 	ResourceLimitsInput() *OceanEcsAutoscalerResourceLimits
+	ShouldScaleDownNonServiceTasks() interface{}
+	SetShouldScaleDownNonServiceTasks(val interface{})
+	ShouldScaleDownNonServiceTasksInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -89,6 +92,7 @@ type OceanEcsAutoscalerOutputReference interface {
 	ResetIsAutoConfig()
 	ResetIsEnabled()
 	ResetResourceLimits()
+	ResetShouldScaleDownNonServiceTasks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -294,6 +298,26 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) ResourceLimitsInput() *Oce
 	return returns
 }
 
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) ShouldScaleDownNonServiceTasks() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldScaleDownNonServiceTasks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) ShouldScaleDownNonServiceTasksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldScaleDownNonServiceTasksInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -415,6 +439,17 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetIsEnabled(val interface{
 	_jsii_.Set(
 		j,
 		"isEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetShouldScaleDownNonServiceTasks(val interface{}) {
+	if err := j.validateSetShouldScaleDownNonServiceTasksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shouldScaleDownNonServiceTasks",
 		val,
 	)
 }
@@ -712,6 +747,14 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) ResetResourceLimits() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetResourceLimits",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) ResetShouldScaleDownNonServiceTasks() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetShouldScaleDownNonServiceTasks",
 		nil, // no parameters
 	)
 }

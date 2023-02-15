@@ -62,6 +62,8 @@ type OceanAwsLaunchSpec interface {
 	ImageId() *string
 	SetImageId(val *string)
 	ImageIdInput() *string
+	InstanceMetadataOptions() OceanAwsLaunchSpecInstanceMetadataOptionsOutputReference
+	InstanceMetadataOptionsInput() *OceanAwsLaunchSpecInstanceMetadataOptions
 	InstanceTypes() *[]*string
 	SetInstanceTypes(val *[]*string)
 	InstanceTypesInput() *[]*string
@@ -159,6 +161,7 @@ type OceanAwsLaunchSpec interface {
 	PutCreateOptions(value *OceanAwsLaunchSpecCreateOptions)
 	PutDeleteOptions(value *OceanAwsLaunchSpecDeleteOptions)
 	PutElasticIpPool(value interface{})
+	PutInstanceMetadataOptions(value *OceanAwsLaunchSpecInstanceMetadataOptions)
 	PutLabels(value interface{})
 	PutResourceLimits(value interface{})
 	PutSchedulingShutdownHours(value *OceanAwsLaunchSpecSchedulingShutdownHours)
@@ -178,6 +181,7 @@ type OceanAwsLaunchSpec interface {
 	ResetIamInstanceProfile()
 	ResetId()
 	ResetImageId()
+	ResetInstanceMetadataOptions()
 	ResetInstanceTypes()
 	ResetLabels()
 	ResetName()
@@ -507,6 +511,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) ImageIdInput() *string {
 	_jsii_.Get(
 		j,
 		"imageIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) InstanceMetadataOptions() OceanAwsLaunchSpecInstanceMetadataOptionsOutputReference {
+	var returns OceanAwsLaunchSpecInstanceMetadataOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"instanceMetadataOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) InstanceMetadataOptionsInput() *OceanAwsLaunchSpecInstanceMetadataOptions {
+	var returns *OceanAwsLaunchSpecInstanceMetadataOptions
+	_jsii_.Get(
+		j,
+		"instanceMetadataOptionsInput",
 		&returns,
 	)
 	return returns
@@ -1513,6 +1537,17 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutElasticIpPool(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) PutInstanceMetadataOptions(value *OceanAwsLaunchSpecInstanceMetadataOptions) {
+	if err := o.validatePutInstanceMetadataOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putInstanceMetadataOptions",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutLabels(value interface{}) {
 	if err := o.validatePutLabelsParameters(value); err != nil {
 		panic(err)
@@ -1685,6 +1720,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) ResetImageId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetImageId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpec) ResetInstanceMetadataOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInstanceMetadataOptions",
 		nil, // no parameters
 	)
 }

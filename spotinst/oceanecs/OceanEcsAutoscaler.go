@@ -22,5 +22,7 @@ type OceanEcsAutoscaler struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#resource_limits OceanEcs#resource_limits}
 	ResourceLimits *OceanEcsAutoscalerResourceLimits `field:"optional" json:"resourceLimits" yaml:"resourceLimits"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#should_scale_down_non_service_tasks OceanEcs#should_scale_down_non_service_tasks}.
+	ShouldScaleDownNonServiceTasks interface{} `field:"optional" json:"shouldScaleDownNonServiceTasks" yaml:"shouldScaleDownNonServiceTasks"`
 }
 

@@ -88,6 +88,10 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) validateSetIsEnabledParame
 	return nil
 }
 
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) validateSetShouldScaleDownNonServiceTasksParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

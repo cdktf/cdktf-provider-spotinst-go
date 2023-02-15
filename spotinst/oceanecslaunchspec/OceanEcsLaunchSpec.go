@@ -51,6 +51,8 @@ type OceanEcsLaunchSpec interface {
 	ImageId() *string
 	SetImageId(val *string)
 	ImageIdInput() *string
+	InstanceMetadataOptions() OceanEcsLaunchSpecInstanceMetadataOptionsOutputReference
+	InstanceMetadataOptionsInput() *OceanEcsLaunchSpecInstanceMetadataOptions
 	InstanceTypes() *[]*string
 	SetInstanceTypes(val *[]*string)
 	InstanceTypesInput() *[]*string
@@ -131,6 +133,7 @@ type OceanEcsLaunchSpec interface {
 	PutAttributes(value interface{})
 	PutAutoscaleHeadrooms(value interface{})
 	PutBlockDeviceMappings(value interface{})
+	PutInstanceMetadataOptions(value *OceanEcsLaunchSpecInstanceMetadataOptions)
 	PutSchedulingTask(value interface{})
 	PutStrategy(value interface{})
 	PutTags(value interface{})
@@ -140,6 +143,7 @@ type OceanEcsLaunchSpec interface {
 	ResetIamInstanceProfile()
 	ResetId()
 	ResetImageId()
+	ResetInstanceMetadataOptions()
 	ResetInstanceTypes()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -362,6 +366,26 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) ImageIdInput() *string {
 	_jsii_.Get(
 		j,
 		"imageIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcsLaunchSpec) InstanceMetadataOptions() OceanEcsLaunchSpecInstanceMetadataOptionsOutputReference {
+	var returns OceanEcsLaunchSpecInstanceMetadataOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"instanceMetadataOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcsLaunchSpec) InstanceMetadataOptionsInput() *OceanEcsLaunchSpecInstanceMetadataOptions {
+	var returns *OceanEcsLaunchSpecInstanceMetadataOptions
+	_jsii_.Get(
+		j,
+		"instanceMetadataOptionsInput",
 		&returns,
 	)
 	return returns
@@ -1182,6 +1206,17 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) PutBlockDeviceMappings(value interface{})
 	)
 }
 
+func (o *jsiiProxy_OceanEcsLaunchSpec) PutInstanceMetadataOptions(value *OceanEcsLaunchSpecInstanceMetadataOptions) {
+	if err := o.validatePutInstanceMetadataOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putInstanceMetadataOptions",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanEcsLaunchSpec) PutSchedulingTask(value interface{}) {
 	if err := o.validatePutSchedulingTaskParameters(value); err != nil {
 		panic(err)
@@ -1259,6 +1294,14 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) ResetImageId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetImageId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanEcsLaunchSpec) ResetInstanceMetadataOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInstanceMetadataOptions",
 		nil, // no parameters
 	)
 }
