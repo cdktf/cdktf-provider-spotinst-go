@@ -192,6 +192,10 @@ func (j *jsiiProxy_OceanAws) validateSetSpotPercentageParameters(val *float64) e
 	return nil
 }
 
+func (j *jsiiProxy_OceanAws) validateSetSpreadNodesByParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAws) validateSetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }

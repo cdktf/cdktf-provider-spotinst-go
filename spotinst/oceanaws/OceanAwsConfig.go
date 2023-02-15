@@ -92,6 +92,8 @@ type OceanAwsConfig struct {
 	ScheduledTask interface{} `field:"optional" json:"scheduledTask" yaml:"scheduledTask"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#spot_percentage OceanAws#spot_percentage}.
 	SpotPercentage *float64 `field:"optional" json:"spotPercentage" yaml:"spotPercentage"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#spread_nodes_by OceanAws#spread_nodes_by}.
+	SpreadNodesBy *string `field:"optional" json:"spreadNodesBy" yaml:"spreadNodesBy"`
 	// tags block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#tags OceanAws#tags}

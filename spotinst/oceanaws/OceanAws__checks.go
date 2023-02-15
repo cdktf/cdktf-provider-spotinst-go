@@ -609,6 +609,14 @@ func (j *jsiiProxy_OceanAws) validateSetSpotPercentageParameters(val *float64) e
 	return nil
 }
 
+func (j *jsiiProxy_OceanAws) validateSetSpreadNodesByParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OceanAws) validateSetSubnetIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

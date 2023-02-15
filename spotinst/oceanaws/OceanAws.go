@@ -126,6 +126,9 @@ type OceanAws interface {
 	SpotPercentage() *float64
 	SetSpotPercentage(val *float64)
 	SpotPercentageInput() *float64
+	SpreadNodesBy() *string
+	SetSpreadNodesBy(val *string)
+	SpreadNodesByInput() *string
 	SubnetIds() *[]*string
 	SetSubnetIds(val *[]*string)
 	SubnetIdsInput() *[]*string
@@ -217,6 +220,7 @@ type OceanAws interface {
 	ResetRootVolumeSize()
 	ResetScheduledTask()
 	ResetSpotPercentage()
+	ResetSpreadNodesBy()
 	ResetTags()
 	ResetUpdatePolicy()
 	ResetUseAsTemplateOnly()
@@ -909,6 +913,26 @@ func (j *jsiiProxy_OceanAws) SpotPercentageInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAws) SpreadNodesBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"spreadNodesBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) SpreadNodesByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"spreadNodesByInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAws) SubnetIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1410,6 +1434,17 @@ func (j *jsiiProxy_OceanAws)SetSpotPercentage(val *float64) {
 	_jsii_.Set(
 		j,
 		"spotPercentage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws)SetSpreadNodesBy(val *string) {
+	if err := j.validateSetSpreadNodesByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"spreadNodesBy",
 		val,
 	)
 }
@@ -2057,6 +2092,14 @@ func (o *jsiiProxy_OceanAws) ResetSpotPercentage() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetSpotPercentage",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetSpreadNodesBy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSpreadNodesBy",
 		nil, // no parameters
 	)
 }
