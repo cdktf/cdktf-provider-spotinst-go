@@ -38,6 +38,10 @@ type OceanSparkConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_spark#log_collection OceanSpark#log_collection}
 	LogCollection *OceanSparkLogCollection `field:"optional" json:"logCollection" yaml:"logCollection"`
+	// spark block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_spark#spark OceanSpark#spark}
+	Spark *OceanSparkSpark `field:"optional" json:"spark" yaml:"spark"`
 	// webhook block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_spark#webhook OceanSpark#webhook}

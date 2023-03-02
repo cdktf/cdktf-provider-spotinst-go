@@ -64,6 +64,10 @@ func (o *jsiiProxy_OceanSpark) validatePutLogCollectionParameters(value *OceanSp
 	return nil
 }
 
+func (o *jsiiProxy_OceanSpark) validatePutSparkParameters(value *OceanSparkSpark) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanSpark) validatePutWebhookParameters(value *OceanSparkWebhook) error {
 	return nil
 }

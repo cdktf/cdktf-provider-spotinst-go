@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCompute", GoMethod: "PutCompute"},
 			_jsii_.MemberMethod{JsiiMethod: "putIngress", GoMethod: "PutIngress"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogCollection", GoMethod: "PutLogCollection"},
+			_jsii_.MemberMethod{JsiiMethod: "putSpark", GoMethod: "PutSpark"},
 			_jsii_.MemberMethod{JsiiMethod: "putWebhook", GoMethod: "PutWebhook"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompute", GoMethod: "ResetCompute"},
@@ -55,7 +56,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetIngress", GoMethod: "ResetIngress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogCollection", GoMethod: "ResetLogCollection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSpark", GoMethod: "ResetSpark"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWebhook", GoMethod: "ResetWebhook"},
+			_jsii_.MemberProperty{JsiiProperty: "spark", GoGetter: "Spark"},
+			_jsii_.MemberProperty{JsiiProperty: "sparkInput", GoGetter: "SparkInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
@@ -376,6 +380,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OceanSparkLogCollectionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanSpark.OceanSparkSpark",
+		reflect.TypeOf((*OceanSparkSpark)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanSpark.OceanSparkSparkOutputReference",
+		reflect.TypeOf((*OceanSparkSparkOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "additionalAppNamespaces", GoGetter: "AdditionalAppNamespaces"},
+			_jsii_.MemberProperty{JsiiProperty: "additionalAppNamespacesInput", GoGetter: "AdditionalAppNamespacesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalAppNamespaces", GoMethod: "ResetAdditionalAppNamespaces"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanSparkSparkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

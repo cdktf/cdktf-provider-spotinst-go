@@ -64,6 +64,8 @@ type OceanSpark interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Spark() OceanSparkSparkOutputReference
+	SparkInput() *OceanSparkSpark
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -100,6 +102,7 @@ type OceanSpark interface {
 	PutCompute(value *OceanSparkCompute)
 	PutIngress(value *OceanSparkIngress)
 	PutLogCollection(value *OceanSparkLogCollection)
+	PutSpark(value *OceanSparkSpark)
 	PutWebhook(value *OceanSparkWebhook)
 	ResetCompute()
 	ResetId()
@@ -108,6 +111,7 @@ type OceanSpark interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSpark()
 	ResetWebhook()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -349,6 +353,26 @@ func (j *jsiiProxy_OceanSpark) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanSpark) Spark() OceanSparkSparkOutputReference {
+	var returns OceanSparkSparkOutputReference
+	_jsii_.Get(
+		j,
+		"spark",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanSpark) SparkInput() *OceanSparkSpark {
+	var returns *OceanSparkSpark
+	_jsii_.Get(
+		j,
+		"sparkInput",
 		&returns,
 	)
 	return returns
@@ -820,6 +844,17 @@ func (o *jsiiProxy_OceanSpark) PutLogCollection(value *OceanSparkLogCollection) 
 	)
 }
 
+func (o *jsiiProxy_OceanSpark) PutSpark(value *OceanSparkSpark) {
+	if err := o.validatePutSparkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSpark",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanSpark) PutWebhook(value *OceanSparkWebhook) {
 	if err := o.validatePutWebhookParameters(value); err != nil {
 		panic(err)
@@ -867,6 +902,14 @@ func (o *jsiiProxy_OceanSpark) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanSpark) ResetSpark() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSpark",
 		nil, // no parameters
 	)
 }
