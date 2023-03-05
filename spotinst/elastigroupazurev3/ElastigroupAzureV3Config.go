@@ -19,6 +19,8 @@ type ElastigroupAzureV3Config struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure_v3#fallback_to_on_demand ElastigroupAzureV3#fallback_to_on_demand}.
+	FallbackToOnDemand interface{} `field:"required" json:"fallbackToOnDemand" yaml:"fallbackToOnDemand"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure_v3#name ElastigroupAzureV3#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// network block.
@@ -35,14 +37,12 @@ type ElastigroupAzureV3Config struct {
 	ResourceGroupName *string `field:"required" json:"resourceGroupName" yaml:"resourceGroupName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure_v3#spot_sizes ElastigroupAzureV3#spot_sizes}.
 	SpotSizes *[]*string `field:"required" json:"spotSizes" yaml:"spotSizes"`
-	// strategy block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure_v3#strategy ElastigroupAzureV3#strategy}
-	Strategy *ElastigroupAzureV3Strategy `field:"required" json:"strategy" yaml:"strategy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure_v3#custom_data ElastigroupAzureV3#custom_data}.
 	CustomData *string `field:"optional" json:"customData" yaml:"customData"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure_v3#desired_capacity ElastigroupAzureV3#desired_capacity}.
 	DesiredCapacity *float64 `field:"optional" json:"desiredCapacity" yaml:"desiredCapacity"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure_v3#draining_timeout ElastigroupAzureV3#draining_timeout}.
+	DrainingTimeout *float64 `field:"optional" json:"drainingTimeout" yaml:"drainingTimeout"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure_v3#id ElastigroupAzureV3#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -64,5 +64,9 @@ type ElastigroupAzureV3Config struct {
 	MaxSize *float64 `field:"optional" json:"maxSize" yaml:"maxSize"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure_v3#min_size ElastigroupAzureV3#min_size}.
 	MinSize *float64 `field:"optional" json:"minSize" yaml:"minSize"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure_v3#on_demand_count ElastigroupAzureV3#on_demand_count}.
+	OnDemandCount *float64 `field:"optional" json:"onDemandCount" yaml:"onDemandCount"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure_v3#spot_percentage ElastigroupAzureV3#spot_percentage}.
+	SpotPercentage *float64 `field:"optional" json:"spotPercentage" yaml:"spotPercentage"`
 }
 

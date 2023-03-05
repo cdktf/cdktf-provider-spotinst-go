@@ -34,6 +34,12 @@ type ElastigroupAzureV3 interface {
 	DesiredCapacity() *float64
 	SetDesiredCapacity(val *float64)
 	DesiredCapacityInput() *float64
+	DrainingTimeout() *float64
+	SetDrainingTimeout(val *float64)
+	DrainingTimeoutInput() *float64
+	FallbackToOnDemand() interface{}
+	SetFallbackToOnDemand(val interface{})
+	FallbackToOnDemandInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -71,6 +77,9 @@ type ElastigroupAzureV3 interface {
 	OdSizes() *[]*string
 	SetOdSizes(val *[]*string)
 	OdSizesInput() *[]*string
+	OnDemandCount() *float64
+	SetOnDemandCount(val *float64)
+	OnDemandCountInput() *float64
 	Os() *string
 	SetOs(val *string)
 	OsInput() *string
@@ -90,11 +99,12 @@ type ElastigroupAzureV3 interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SpotPercentage() *float64
+	SetSpotPercentage(val *float64)
+	SpotPercentageInput() *float64
 	SpotSizes() *[]*string
 	SetSpotSizes(val *[]*string)
 	SpotSizesInput() *[]*string
-	Strategy() ElastigroupAzureV3StrategyOutputReference
-	StrategyInput() *ElastigroupAzureV3Strategy
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,18 +140,20 @@ type ElastigroupAzureV3 interface {
 	PutLogin(value *ElastigroupAzureV3Login)
 	PutManagedServiceIdentity(value interface{})
 	PutNetwork(value *ElastigroupAzureV3Network)
-	PutStrategy(value *ElastigroupAzureV3Strategy)
 	ResetCustomData()
 	ResetDesiredCapacity()
+	ResetDrainingTimeout()
 	ResetId()
 	ResetImage()
 	ResetLogin()
 	ResetManagedServiceIdentity()
 	ResetMaxSize()
 	ResetMinSize()
+	ResetOnDemandCount()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSpotPercentage()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -242,6 +254,46 @@ func (j *jsiiProxy_ElastigroupAzureV3) DesiredCapacityInput() *float64 {
 	_jsii_.Get(
 		j,
 		"desiredCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) DrainingTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"drainingTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) DrainingTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"drainingTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) FallbackToOnDemand() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fallbackToOnDemand",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) FallbackToOnDemandInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fallbackToOnDemandInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +529,26 @@ func (j *jsiiProxy_ElastigroupAzureV3) OdSizesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) OnDemandCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"onDemandCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) OnDemandCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"onDemandCountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) Os() *string {
 	var returns *string
 	_jsii_.Get(
@@ -567,6 +639,26 @@ func (j *jsiiProxy_ElastigroupAzureV3) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) SpotPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"spotPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) SpotPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"spotPercentageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) SpotSizes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -582,26 +674,6 @@ func (j *jsiiProxy_ElastigroupAzureV3) SpotSizesInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"spotSizesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElastigroupAzureV3) Strategy() ElastigroupAzureV3StrategyOutputReference {
-	var returns ElastigroupAzureV3StrategyOutputReference
-	_jsii_.Get(
-		j,
-		"strategy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElastigroupAzureV3) StrategyInput() *ElastigroupAzureV3Strategy {
-	var returns *ElastigroupAzureV3Strategy
-	_jsii_.Get(
-		j,
-		"strategyInput",
 		&returns,
 	)
 	return returns
@@ -716,6 +788,28 @@ func (j *jsiiProxy_ElastigroupAzureV3)SetDesiredCapacity(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3)SetDrainingTimeout(val *float64) {
+	if err := j.validateSetDrainingTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"drainingTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3)SetFallbackToOnDemand(val interface{}) {
+	if err := j.validateSetFallbackToOnDemandParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fallbackToOnDemand",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -790,6 +884,17 @@ func (j *jsiiProxy_ElastigroupAzureV3)SetOdSizes(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3)SetOnDemandCount(val *float64) {
+	if err := j.validateSetOnDemandCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onDemandCount",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3)SetOs(val *string) {
 	if err := j.validateSetOsParameters(val); err != nil {
 		panic(err)
@@ -838,6 +943,17 @@ func (j *jsiiProxy_ElastigroupAzureV3)SetResourceGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3)SetSpotPercentage(val *float64) {
+	if err := j.validateSetSpotPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"spotPercentage",
 		val,
 	)
 }
@@ -1163,17 +1279,6 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutNetwork(value *ElastigroupAzureV3Netwo
 	)
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3) PutStrategy(value *ElastigroupAzureV3Strategy) {
-	if err := e.validatePutStrategyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		e,
-		"putStrategy",
-		[]interface{}{value},
-	)
-}
-
 func (e *jsiiProxy_ElastigroupAzureV3) ResetCustomData() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1186,6 +1291,14 @@ func (e *jsiiProxy_ElastigroupAzureV3) ResetDesiredCapacity() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDesiredCapacity",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetDrainingTimeout() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDrainingTimeout",
 		nil, // no parameters
 	)
 }
@@ -1238,10 +1351,26 @@ func (e *jsiiProxy_ElastigroupAzureV3) ResetMinSize() {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) ResetOnDemandCount() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOnDemandCount",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetSpotPercentage() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSpotPercentage",
 		nil, // no parameters
 	)
 }

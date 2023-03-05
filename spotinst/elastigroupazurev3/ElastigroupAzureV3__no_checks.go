@@ -68,10 +68,6 @@ func (e *jsiiProxy_ElastigroupAzureV3) validatePutNetworkParameters(value *Elast
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3) validatePutStrategyParameters(value *ElastigroupAzureV3Strategy) error {
-	return nil
-}
-
 func validateElastigroupAzureV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -93,6 +89,14 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetCustomDataParameters(val *stri
 }
 
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetDesiredCapacityParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetDrainingTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetFallbackToOnDemandParameters(val interface{}) error {
 	return nil
 }
 
@@ -120,6 +124,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetOdSizesParameters(val *[]*stri
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetOnDemandCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetOsParameters(val *string) error {
 	return nil
 }
@@ -133,6 +141,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetRegionParameters(val *string) 
 }
 
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetResourceGroupNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetSpotPercentageParameters(val *float64) error {
 	return nil
 }
 
