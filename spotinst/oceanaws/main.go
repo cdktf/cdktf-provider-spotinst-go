@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*OceanAws)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "associateIpv6Address", GoGetter: "AssociateIpv6Address"},
+			_jsii_.MemberProperty{JsiiProperty: "associateIpv6AddressInput", GoGetter: "AssociateIpv6AddressInput"},
 			_jsii_.MemberProperty{JsiiProperty: "associatePublicIpAddress", GoGetter: "AssociatePublicIpAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "associatePublicIpAddressInput", GoGetter: "AssociatePublicIpAddressInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscaler", GoGetter: "Autoscaler"},
@@ -91,6 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAssociateIpv6Address", GoMethod: "ResetAssociateIpv6Address"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssociatePublicIpAddress", GoMethod: "ResetAssociatePublicIpAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscaler", GoMethod: "ResetAutoscaler"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlacklist", GoMethod: "ResetBlacklist"},

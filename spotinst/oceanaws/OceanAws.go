@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws spotinst_ocean_aws}.
 type OceanAws interface {
 	cdktf.TerraformResource
+	AssociateIpv6Address() interface{}
+	SetAssociateIpv6Address(val interface{})
+	AssociateIpv6AddressInput() interface{}
 	AssociatePublicIpAddress() interface{}
 	SetAssociatePublicIpAddress(val interface{})
 	AssociatePublicIpAddressInput() interface{}
@@ -191,6 +194,7 @@ type OceanAws interface {
 	PutScheduledTask(value interface{})
 	PutTags(value interface{})
 	PutUpdatePolicy(value *OceanAwsUpdatePolicy)
+	ResetAssociateIpv6Address()
 	ResetAssociatePublicIpAddress()
 	ResetAutoscaler()
 	ResetBlacklist()
@@ -241,6 +245,26 @@ type OceanAws interface {
 // The jsii proxy struct for OceanAws
 type jsiiProxy_OceanAws struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_OceanAws) AssociateIpv6Address() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"associateIpv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) AssociateIpv6AddressInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"associateIpv6AddressInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OceanAws) AssociatePublicIpAddress() interface{} {
@@ -1153,6 +1177,17 @@ func NewOceanAws_Override(o OceanAws, scope constructs.Construct, id *string, co
 	)
 }
 
+func (j *jsiiProxy_OceanAws)SetAssociateIpv6Address(val interface{}) {
+	if err := j.validateSetAssociateIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"associateIpv6Address",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OceanAws)SetAssociatePublicIpAddress(val interface{}) {
 	if err := j.validateSetAssociatePublicIpAddressParameters(val); err != nil {
 		panic(err)
@@ -1877,6 +1912,14 @@ func (o *jsiiProxy_OceanAws) PutUpdatePolicy(value *OceanAwsUpdatePolicy) {
 		o,
 		"putUpdatePolicy",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetAssociateIpv6Address() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAssociateIpv6Address",
+		nil, // no parameters
 	)
 }
 

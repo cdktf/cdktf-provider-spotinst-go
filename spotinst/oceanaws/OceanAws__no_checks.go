@@ -100,6 +100,10 @@ func validateOceanAws_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_OceanAws) validateSetAssociateIpv6AddressParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAws) validateSetAssociatePublicIpAddressParameters(val interface{}) error {
 	return nil
 }
