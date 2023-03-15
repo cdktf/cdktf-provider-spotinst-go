@@ -64,6 +64,10 @@ func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) validateSetHttp
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) validateSetInstanceMetadataTagsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) validateSetInternalValueParameters(val *ElastigroupAwsMetadataOptions) error {
 	return nil
 }

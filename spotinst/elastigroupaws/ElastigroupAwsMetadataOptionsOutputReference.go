@@ -33,6 +33,9 @@ type ElastigroupAwsMetadataOptionsOutputReference interface {
 	HttpTokens() *string
 	SetHttpTokens(val *string)
 	HttpTokensInput() *string
+	InstanceMetadataTags() *string
+	SetInstanceMetadataTags(val *string)
+	InstanceMetadataTagsInput() *string
 	InternalValue() *ElastigroupAwsMetadataOptions
 	SetInternalValue(val *ElastigroupAwsMetadataOptions)
 	// Experimental.
@@ -68,6 +71,7 @@ type ElastigroupAwsMetadataOptionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetHttpPutResponseHopLimit()
+	ResetInstanceMetadataTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -158,6 +162,26 @@ func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) HttpTokensInput
 	_jsii_.Get(
 		j,
 		"httpTokensInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) InstanceMetadataTags() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceMetadataTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) InstanceMetadataTagsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceMetadataTagsInput",
 		&returns,
 	)
 	return returns
@@ -261,6 +285,17 @@ func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference)SetHttpTokens(va
 	_jsii_.Set(
 		j,
 		"httpTokens",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference)SetInstanceMetadataTags(val *string) {
+	if err := j.validateSetInstanceMetadataTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceMetadataTags",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) ResetHttpPutRes
 	_jsii_.InvokeVoid(
 		e,
 		"resetHttpPutResponseHopLimit",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference) ResetInstanceMetadataTags() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetInstanceMetadataTags",
 		nil, // no parameters
 	)
 }
