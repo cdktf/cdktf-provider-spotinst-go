@@ -38,6 +38,9 @@ type OceanGkeImportUpdatePolicyRollConfigOutputReference interface {
 	LaunchSpecIds() *[]*string
 	SetLaunchSpecIds(val *[]*string)
 	LaunchSpecIdsInput() *[]*string
+	RespectPdb() interface{}
+	SetRespectPdb(val interface{})
+	RespectPdbInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type OceanGkeImportUpdatePolicyRollConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBatchMinHealthyPercentage()
 	ResetLaunchSpecIds()
+	ResetRespectPdb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_OceanGkeImportUpdatePolicyRollConfigOutputReference) LaunchSp
 	return returns
 }
 
+func (j *jsiiProxy_OceanGkeImportUpdatePolicyRollConfigOutputReference) RespectPdb() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"respectPdb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeImportUpdatePolicyRollConfigOutputReference) RespectPdbInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"respectPdbInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanGkeImportUpdatePolicyRollConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -307,6 +331,17 @@ func (j *jsiiProxy_OceanGkeImportUpdatePolicyRollConfigOutputReference)SetLaunch
 	_jsii_.Set(
 		j,
 		"launchSpecIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanGkeImportUpdatePolicyRollConfigOutputReference)SetRespectPdb(val interface{}) {
+	if err := j.validateSetRespectPdbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"respectPdb",
 		val,
 	)
 }
@@ -531,6 +566,14 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyRollConfigOutputReference) ResetLau
 	_jsii_.InvokeVoid(
 		o,
 		"resetLaunchSpecIds",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanGkeImportUpdatePolicyRollConfigOutputReference) ResetRespectPdb() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRespectPdb",
 		nil, // no parameters
 	)
 }

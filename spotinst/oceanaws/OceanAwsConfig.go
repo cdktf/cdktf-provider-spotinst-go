@@ -33,6 +33,10 @@ type OceanAwsConfig struct {
 	Autoscaler *OceanAwsAutoscaler `field:"optional" json:"autoscaler" yaml:"autoscaler"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#blacklist OceanAws#blacklist}.
 	Blacklist *[]*string `field:"optional" json:"blacklist" yaml:"blacklist"`
+	// block_device_mappings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#block_device_mappings OceanAws#block_device_mappings}
+	BlockDeviceMappings interface{} `field:"optional" json:"blockDeviceMappings" yaml:"blockDeviceMappings"`
 	// cluster_orientation block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws#cluster_orientation OceanAws#cluster_orientation}

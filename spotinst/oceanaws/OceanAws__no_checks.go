@@ -56,6 +56,10 @@ func (o *jsiiProxy_OceanAws) validatePutAutoscalerParameters(value *OceanAwsAuto
 	return nil
 }
 
+func (o *jsiiProxy_OceanAws) validatePutBlockDeviceMappingsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAws) validatePutClusterOrientationParameters(value interface{}) error {
 	return nil
 }

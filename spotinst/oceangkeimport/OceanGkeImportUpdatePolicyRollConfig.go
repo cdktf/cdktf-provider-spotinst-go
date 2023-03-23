@@ -8,5 +8,7 @@ type OceanGkeImportUpdatePolicyRollConfig struct {
 	BatchMinHealthyPercentage *float64 `field:"optional" json:"batchMinHealthyPercentage" yaml:"batchMinHealthyPercentage"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_gke_import#launch_spec_ids OceanGkeImport#launch_spec_ids}.
 	LaunchSpecIds *[]*string `field:"optional" json:"launchSpecIds" yaml:"launchSpecIds"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_gke_import#respect_pdb OceanGkeImport#respect_pdb}.
+	RespectPdb interface{} `field:"optional" json:"respectPdb" yaml:"respectPdb"`
 }
 

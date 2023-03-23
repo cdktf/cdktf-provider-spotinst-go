@@ -23,6 +23,8 @@ type OceanAws interface {
 	Blacklist() *[]*string
 	SetBlacklist(val *[]*string)
 	BlacklistInput() *[]*string
+	BlockDeviceMappings() OceanAwsBlockDeviceMappingsList
+	BlockDeviceMappingsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterOrientation() OceanAwsClusterOrientationList
@@ -186,6 +188,7 @@ type OceanAws interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaler(value *OceanAwsAutoscaler)
+	PutBlockDeviceMappings(value interface{})
 	PutClusterOrientation(value interface{})
 	PutFilters(value *OceanAwsFilters)
 	PutInstanceMetadataOptions(value *OceanAwsInstanceMetadataOptions)
@@ -198,6 +201,7 @@ type OceanAws interface {
 	ResetAssociatePublicIpAddress()
 	ResetAutoscaler()
 	ResetBlacklist()
+	ResetBlockDeviceMappings()
 	ResetClusterOrientation()
 	ResetControllerId()
 	ResetDesiredCapacity()
@@ -322,6 +326,26 @@ func (j *jsiiProxy_OceanAws) BlacklistInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"blacklistInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) BlockDeviceMappings() OceanAwsBlockDeviceMappingsList {
+	var returns OceanAwsBlockDeviceMappingsList
+	_jsii_.Get(
+		j,
+		"blockDeviceMappings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) BlockDeviceMappingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"blockDeviceMappingsInput",
 		&returns,
 	)
 	return returns
@@ -1827,6 +1851,17 @@ func (o *jsiiProxy_OceanAws) PutAutoscaler(value *OceanAwsAutoscaler) {
 	)
 }
 
+func (o *jsiiProxy_OceanAws) PutBlockDeviceMappings(value interface{}) {
+	if err := o.validatePutBlockDeviceMappingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBlockDeviceMappings",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAws) PutClusterOrientation(value interface{}) {
 	if err := o.validatePutClusterOrientationParameters(value); err != nil {
 		panic(err)
@@ -1943,6 +1978,14 @@ func (o *jsiiProxy_OceanAws) ResetBlacklist() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetBlacklist",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetBlockDeviceMappings() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBlockDeviceMappings",
 		nil, // no parameters
 	)
 }

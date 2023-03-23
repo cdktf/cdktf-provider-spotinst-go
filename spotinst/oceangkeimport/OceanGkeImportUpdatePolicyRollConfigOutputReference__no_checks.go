@@ -72,6 +72,10 @@ func (j *jsiiProxy_OceanGkeImportUpdatePolicyRollConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_OceanGkeImportUpdatePolicyRollConfigOutputReference) validateSetRespectPdbParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanGkeImportUpdatePolicyRollConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

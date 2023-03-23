@@ -10,9 +10,6 @@ import (
 
 type OceanGkeImportScheduledTaskTasksOutputReference interface {
 	cdktf.ComplexObject
-	BatchSizePercentage() *float64
-	SetBatchSizePercentage(val *float64)
-	BatchSizePercentageInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,6 +35,8 @@ type OceanGkeImportScheduledTaskTasksOutputReference interface {
 	IsEnabled() interface{}
 	SetIsEnabled(val interface{})
 	IsEnabledInput() interface{}
+	TaskParameters() OceanGkeImportScheduledTaskTasksTaskParametersOutputReference
+	TaskParametersInput() *OceanGkeImportScheduledTaskTasksTaskParameters
 	TaskType() *string
 	SetTaskType(val *string)
 	TaskTypeInput() *string
@@ -73,7 +72,8 @@ type OceanGkeImportScheduledTaskTasksOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetBatchSizePercentage()
+	PutTaskParameters(value *OceanGkeImportScheduledTaskTasksTaskParameters)
+	ResetTaskParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -87,26 +87,6 @@ type OceanGkeImportScheduledTaskTasksOutputReference interface {
 // The jsii proxy struct for OceanGkeImportScheduledTaskTasksOutputReference
 type jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) BatchSizePercentage() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"batchSizePercentage",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) BatchSizePercentageInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"batchSizePercentageInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) ComplexObjectIndex() interface{} {
@@ -199,6 +179,26 @@ func (j *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) IsEnabledInp
 	return returns
 }
 
+func (j *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) TaskParameters() OceanGkeImportScheduledTaskTasksTaskParametersOutputReference {
+	var returns OceanGkeImportScheduledTaskTasksTaskParametersOutputReference
+	_jsii_.Get(
+		j,
+		"taskParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) TaskParametersInput() *OceanGkeImportScheduledTaskTasksTaskParameters {
+	var returns *OceanGkeImportScheduledTaskTasksTaskParameters
+	_jsii_.Get(
+		j,
+		"taskParametersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) TaskType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -264,17 +264,6 @@ func NewOceanGkeImportScheduledTaskTasksOutputReference_Override(o OceanGkeImpor
 		"@cdktf/provider-spotinst.oceanGkeImport.OceanGkeImportScheduledTaskTasksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
-	)
-}
-
-func (j *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference)SetBatchSizePercentage(val *float64) {
-	if err := j.validateSetBatchSizePercentageParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"batchSizePercentage",
-		val,
 	)
 }
 
@@ -552,10 +541,21 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) Interpolatio
 	return returns
 }
 
-func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) ResetBatchSizePercentage() {
+func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) PutTaskParameters(value *OceanGkeImportScheduledTaskTasksTaskParameters) {
+	if err := o.validatePutTaskParametersParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
-		"resetBatchSizePercentage",
+		"putTaskParameters",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) ResetTaskParameters() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTaskParameters",
 		nil, // no parameters
 	)
 }

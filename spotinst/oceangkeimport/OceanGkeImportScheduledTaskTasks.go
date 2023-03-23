@@ -8,7 +8,9 @@ type OceanGkeImportScheduledTaskTasks struct {
 	IsEnabled interface{} `field:"required" json:"isEnabled" yaml:"isEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_gke_import#task_type OceanGkeImport#task_type}.
 	TaskType *string `field:"required" json:"taskType" yaml:"taskType"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_gke_import#batch_size_percentage OceanGkeImport#batch_size_percentage}.
-	BatchSizePercentage *float64 `field:"optional" json:"batchSizePercentage" yaml:"batchSizePercentage"`
+	// task_parameters block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_gke_import#task_parameters OceanGkeImport#task_parameters}
+	TaskParameters *OceanGkeImportScheduledTaskTasksTaskParameters `field:"optional" json:"taskParameters" yaml:"taskParameters"`
 }
 

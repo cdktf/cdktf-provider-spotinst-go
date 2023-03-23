@@ -44,11 +44,11 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) validateInte
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) validatePutTaskParametersParameters(value *OceanGkeImportScheduledTaskTasksTaskParameters) error {
 	return nil
 }
 
-func (j *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) validateSetBatchSizePercentageParameters(val *float64) error {
+func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
 
