@@ -156,6 +156,10 @@ func (j *jsiiProxy_ElastigroupGcp) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupGcp) validateSetInstanceNamePrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupGcp) validateSetInstanceTypesOndemandParameters(val *string) error {
 	return nil
 }

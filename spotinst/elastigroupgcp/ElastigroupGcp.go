@@ -69,6 +69,9 @@ type ElastigroupGcp interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InstanceNamePrefix() *string
+	SetInstanceNamePrefix(val *string)
+	InstanceNamePrefixInput() *string
 	InstanceTypesCustom() ElastigroupGcpInstanceTypesCustomList
 	InstanceTypesCustomInput() interface{}
 	InstanceTypesOndemand() *string
@@ -202,6 +205,7 @@ type ElastigroupGcp interface {
 	ResetHealthCheckGracePeriod()
 	ResetHealthCheckType()
 	ResetId()
+	ResetInstanceNamePrefix()
 	ResetInstanceTypesCustom()
 	ResetInstanceTypesOndemand()
 	ResetInstanceTypesPreemptible()
@@ -558,6 +562,26 @@ func (j *jsiiProxy_ElastigroupGcp) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGcp) InstanceNamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceNamePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGcp) InstanceNamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceNamePrefixInput",
 		&returns,
 	)
 	return returns
@@ -1287,6 +1311,17 @@ func (j *jsiiProxy_ElastigroupGcp)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ElastigroupGcp)SetInstanceNamePrefix(val *string) {
+	if err := j.validateSetInstanceNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceNamePrefix",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElastigroupGcp)SetInstanceTypesOndemand(val *string) {
 	if err := j.validateSetInstanceTypesOndemandParameters(val); err != nil {
 		panic(err)
@@ -1964,6 +1999,14 @@ func (e *jsiiProxy_ElastigroupGcp) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupGcp) ResetInstanceNamePrefix() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetInstanceNamePrefix",
 		nil, // no parameters
 	)
 }
