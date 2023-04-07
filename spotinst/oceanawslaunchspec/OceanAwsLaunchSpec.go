@@ -62,6 +62,8 @@ type OceanAwsLaunchSpec interface {
 	ImageId() *string
 	SetImageId(val *string)
 	ImageIdInput() *string
+	Images() OceanAwsLaunchSpecImagesList
+	ImagesInput() interface{}
 	InstanceMetadataOptions() OceanAwsLaunchSpecInstanceMetadataOptionsOutputReference
 	InstanceMetadataOptionsInput() *OceanAwsLaunchSpecInstanceMetadataOptions
 	InstanceTypes() *[]*string
@@ -161,6 +163,7 @@ type OceanAwsLaunchSpec interface {
 	PutCreateOptions(value *OceanAwsLaunchSpecCreateOptions)
 	PutDeleteOptions(value *OceanAwsLaunchSpecDeleteOptions)
 	PutElasticIpPool(value interface{})
+	PutImages(value interface{})
 	PutInstanceMetadataOptions(value *OceanAwsLaunchSpecInstanceMetadataOptions)
 	PutLabels(value interface{})
 	PutResourceLimits(value interface{})
@@ -181,6 +184,7 @@ type OceanAwsLaunchSpec interface {
 	ResetIamInstanceProfile()
 	ResetId()
 	ResetImageId()
+	ResetImages()
 	ResetInstanceMetadataOptions()
 	ResetInstanceTypes()
 	ResetLabels()
@@ -511,6 +515,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) ImageIdInput() *string {
 	_jsii_.Get(
 		j,
 		"imageIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) Images() OceanAwsLaunchSpecImagesList {
+	var returns OceanAwsLaunchSpecImagesList
+	_jsii_.Get(
+		j,
+		"images",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) ImagesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"imagesInput",
 		&returns,
 	)
 	return returns
@@ -1537,6 +1561,17 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutElasticIpPool(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) PutImages(value interface{}) {
+	if err := o.validatePutImagesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putImages",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutInstanceMetadataOptions(value *OceanAwsLaunchSpecInstanceMetadataOptions) {
 	if err := o.validatePutInstanceMetadataOptionsParameters(value); err != nil {
 		panic(err)
@@ -1720,6 +1755,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) ResetImageId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetImageId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpec) ResetImages() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetImages",
 		nil, // no parameters
 	)
 }
