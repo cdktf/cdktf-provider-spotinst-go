@@ -10,6 +10,8 @@ type OceanEcsAutoscaler struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#down OceanEcs#down}
 	Down *OceanEcsAutoscalerDown `field:"optional" json:"down" yaml:"down"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#enable_automatic_and_manual_headroom OceanEcs#enable_automatic_and_manual_headroom}.
+	EnableAutomaticAndManualHeadroom interface{} `field:"optional" json:"enableAutomaticAndManualHeadroom" yaml:"enableAutomaticAndManualHeadroom"`
 	// headroom block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_ecs#headroom OceanEcs#headroom}

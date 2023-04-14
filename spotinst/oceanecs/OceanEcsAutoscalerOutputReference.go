@@ -2,9 +2,9 @@ package oceanecs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v5/oceanecs/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/oceanecs/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,6 +33,9 @@ type OceanEcsAutoscalerOutputReference interface {
 	CreationStack() *[]*string
 	Down() OceanEcsAutoscalerDownOutputReference
 	DownInput() *OceanEcsAutoscalerDown
+	EnableAutomaticAndManualHeadroom() interface{}
+	SetEnableAutomaticAndManualHeadroom(val interface{})
+	EnableAutomaticAndManualHeadroomInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Headroom() OceanEcsAutoscalerHeadroomOutputReference
@@ -88,6 +91,7 @@ type OceanEcsAutoscalerOutputReference interface {
 	ResetAutoHeadroomPercentage()
 	ResetCooldown()
 	ResetDown()
+	ResetEnableAutomaticAndManualHeadroom()
 	ResetHeadroom()
 	ResetIsAutoConfig()
 	ResetIsEnabled()
@@ -193,6 +197,26 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) DownInput() *OceanEcsAutos
 	_jsii_.Get(
 		j,
 		"downInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) EnableAutomaticAndManualHeadroom() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAutomaticAndManualHeadroom",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) EnableAutomaticAndManualHeadroomInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAutomaticAndManualHeadroomInput",
 		&returns,
 	)
 	return returns
@@ -406,6 +430,17 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetCooldown(val *float64) {
 	_jsii_.Set(
 		j,
 		"cooldown",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference)SetEnableAutomaticAndManualHeadroom(val interface{}) {
+	if err := j.validateSetEnableAutomaticAndManualHeadroomParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAutomaticAndManualHeadroom",
 		val,
 	)
 }
@@ -715,6 +750,14 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) ResetDown() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetDown",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) ResetEnableAutomaticAndManualHeadroom() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEnableAutomaticAndManualHeadroom",
 		nil, // no parameters
 	)
 }

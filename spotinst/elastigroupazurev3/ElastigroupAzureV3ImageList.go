@@ -2,9 +2,9 @@ package elastigroupazurev3
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v5/elastigroupazurev3/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/elastigroupazurev3/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

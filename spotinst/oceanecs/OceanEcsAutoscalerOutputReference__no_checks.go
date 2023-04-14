@@ -76,6 +76,10 @@ func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) validateSetCooldownParamet
 	return nil
 }
 
+func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) validateSetEnableAutomaticAndManualHeadroomParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanEcsAutoscalerOutputReference) validateSetInternalValueParameters(val *OceanEcsAutoscaler) error {
 	return nil
 }
