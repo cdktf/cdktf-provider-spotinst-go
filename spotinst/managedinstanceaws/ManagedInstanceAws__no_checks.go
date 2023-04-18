@@ -112,6 +112,10 @@ func (j *jsiiProxy_ManagedInstanceAws) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ManagedInstanceAws) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedInstanceAws) validateSetCpuCreditsParameters(val *string) error {
 	return nil
 }

@@ -148,6 +148,10 @@ func (j *jsiiProxy_StatefulNodeAzure) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzure) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulNodeAzure) validateSetCustomDataParameters(val *string) error {
 	return nil
 }

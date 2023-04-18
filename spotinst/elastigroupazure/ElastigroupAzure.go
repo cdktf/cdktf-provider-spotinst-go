@@ -2,14 +2,14 @@ package elastigroupazure
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/elastigroupazure/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/elastigroupazure/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure spotinst_elastigroup_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/elastigroup_azure spotinst_elastigroup_azure}.
 type ElastigroupAzure interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ElastigroupAzure interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomData() *string
 	SetCustomData(val *string)
 	CustomDataInput() *string
@@ -227,8 +227,8 @@ func (j *jsiiProxy_ElastigroupAzure) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ElastigroupAzure) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ElastigroupAzure) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -878,7 +878,7 @@ func (j *jsiiProxy_ElastigroupAzure) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure spotinst_elastigroup_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/elastigroup_azure spotinst_elastigroup_azure} Resource.
 func NewElastigroupAzure(scope constructs.Construct, id *string, config *ElastigroupAzureConfig) ElastigroupAzure {
 	_init_.Initialize()
 
@@ -896,7 +896,7 @@ func NewElastigroupAzure(scope constructs.Construct, id *string, config *Elastig
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_azure spotinst_elastigroup_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/elastigroup_azure spotinst_elastigroup_azure} Resource.
 func NewElastigroupAzure_Override(e ElastigroupAzure, scope constructs.Construct, id *string, config *ElastigroupAzureConfig) {
 	_init_.Initialize()
 
@@ -918,7 +918,10 @@ func (j *jsiiProxy_ElastigroupAzure)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzure)SetCount(val *float64) {
+func (j *jsiiProxy_ElastigroupAzure)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

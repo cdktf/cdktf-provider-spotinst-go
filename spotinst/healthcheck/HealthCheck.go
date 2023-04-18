@@ -2,14 +2,14 @@ package healthcheck
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/healthcheck/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/healthcheck/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/spotinst/r/health_check spotinst_health_check}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/health_check spotinst_health_check}.
 type HealthCheck interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type HealthCheck interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -173,8 +173,8 @@ func (j *jsiiProxy_HealthCheck) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_HealthCheck) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_HealthCheck) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_HealthCheck) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/health_check spotinst_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/health_check spotinst_health_check} Resource.
 func NewHealthCheck(scope constructs.Construct, id *string, config *HealthCheckConfig) HealthCheck {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewHealthCheck(scope constructs.Construct, id *string, config *HealthCheckC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/health_check spotinst_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/health_check spotinst_health_check} Resource.
 func NewHealthCheck_Override(h HealthCheck, scope constructs.Construct, id *string, config *HealthCheckConfig) {
 	_init_.Initialize()
 
@@ -444,7 +444,10 @@ func (j *jsiiProxy_HealthCheck)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthCheck)SetCount(val *float64) {
+func (j *jsiiProxy_HealthCheck)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

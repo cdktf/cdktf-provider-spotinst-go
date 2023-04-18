@@ -120,6 +120,10 @@ func (j *jsiiProxy_ElastigroupGke) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupGke) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupGke) validateSetDesiredCapacityParameters(val *float64) error {
 	return nil
 }

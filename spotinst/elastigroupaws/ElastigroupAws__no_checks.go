@@ -216,6 +216,10 @@ func (j *jsiiProxy_ElastigroupAws) validateSetConsiderOdPricingParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAws) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAws) validateSetCpuCreditsParameters(val *string) error {
 	return nil
 }

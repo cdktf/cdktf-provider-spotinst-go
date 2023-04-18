@@ -2,14 +2,14 @@ package oceanawslaunchspec
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/oceanawslaunchspec/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/oceanawslaunchspec/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
 type OceanAwsLaunchSpec interface {
 	cdktf.TerraformResource
 	AssociatePublicIpAddress() interface{}
@@ -32,9 +32,9 @@ type OceanAwsLaunchSpec interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateOptions() OceanAwsLaunchSpecCreateOptionsOutputReference
 	CreateOptionsInput() *OceanAwsLaunchSpecCreateOptions
 	DeleteOptions() OceanAwsLaunchSpecDeleteOptionsOutputReference
@@ -350,8 +350,8 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OceanAwsLaunchSpec) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -981,7 +981,7 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) OceanAwsLaunchSpec {
 	_init_.Initialize()
 
@@ -999,7 +999,7 @@ func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec_Override(o OceanAwsLaunchSpec, scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1032,7 +1032,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OceanAwsLaunchSpec)SetCount(val *float64) {
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

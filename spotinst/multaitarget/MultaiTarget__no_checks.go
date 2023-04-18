@@ -76,6 +76,10 @@ func (j *jsiiProxy_MultaiTarget) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_MultaiTarget) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MultaiTarget) validateSetHostParameters(val *string) error {
 	return nil
 }

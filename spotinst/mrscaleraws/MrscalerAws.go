@@ -2,14 +2,14 @@ package mrscaleraws
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/mrscaleraws/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/mrscaleraws/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/spotinst/r/mrscaler_aws spotinst_mrscaler_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/mrscaler_aws spotinst_mrscaler_aws}.
 type MrscalerAws interface {
 	cdktf.TerraformResource
 	AdditionalInfo() *string
@@ -69,9 +69,9 @@ type MrscalerAws interface {
 	SetCoreUnit(val *string)
 	CoreUnitInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomAmiId() *string
 	SetCustomAmiId(val *string)
 	CustomAmiIdInput() *string
@@ -734,8 +734,8 @@ func (j *jsiiProxy_MrscalerAws) CoreUnitInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MrscalerAws) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MrscalerAws) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1735,7 +1735,7 @@ func (j *jsiiProxy_MrscalerAws) VisibleToAllUsersInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/mrscaler_aws spotinst_mrscaler_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/mrscaler_aws spotinst_mrscaler_aws} Resource.
 func NewMrscalerAws(scope constructs.Construct, id *string, config *MrscalerAwsConfig) MrscalerAws {
 	_init_.Initialize()
 
@@ -1753,7 +1753,7 @@ func NewMrscalerAws(scope constructs.Construct, id *string, config *MrscalerAwsC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/mrscaler_aws spotinst_mrscaler_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/mrscaler_aws spotinst_mrscaler_aws} Resource.
 func NewMrscalerAws_Override(m MrscalerAws, scope constructs.Construct, id *string, config *MrscalerAwsConfig) {
 	_init_.Initialize()
 
@@ -1907,7 +1907,10 @@ func (j *jsiiProxy_MrscalerAws)SetCoreUnit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MrscalerAws)SetCount(val *float64) {
+func (j *jsiiProxy_MrscalerAws)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

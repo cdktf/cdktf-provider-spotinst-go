@@ -104,6 +104,10 @@ func (j *jsiiProxy_OceanGkeImport) validateSetControllerClusterIdParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_OceanGkeImport) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanGkeImport) validateSetDesiredCapacityParameters(val *float64) error {
 	return nil
 }

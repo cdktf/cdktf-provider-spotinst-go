@@ -120,6 +120,10 @@ func (j *jsiiProxy_OceanEcs) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_OceanEcs) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanEcs) validateSetDesiredCapacityParameters(val *float64) error {
 	return nil
 }

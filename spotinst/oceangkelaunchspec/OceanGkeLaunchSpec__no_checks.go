@@ -112,6 +112,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpec) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_OceanGkeLaunchSpec) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanGkeLaunchSpec) validateSetIdParameters(val *string) error {
 	return nil
 }

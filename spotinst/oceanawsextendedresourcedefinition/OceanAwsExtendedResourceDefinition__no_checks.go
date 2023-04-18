@@ -68,6 +68,10 @@ func (j *jsiiProxy_OceanAwsExtendedResourceDefinition) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_OceanAwsExtendedResourceDefinition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsExtendedResourceDefinition) validateSetIdParameters(val *string) error {
 	return nil
 }

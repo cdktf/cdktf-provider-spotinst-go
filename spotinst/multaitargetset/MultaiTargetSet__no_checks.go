@@ -80,6 +80,10 @@ func (j *jsiiProxy_MultaiTargetSet) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_MultaiTargetSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MultaiTargetSet) validateSetDeploymentIdParameters(val *string) error {
 	return nil
 }

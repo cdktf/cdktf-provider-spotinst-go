@@ -88,6 +88,10 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAwsBeanstalk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAwsBeanstalk) validateSetDesiredCapacityParameters(val *float64) error {
 	return nil
 }

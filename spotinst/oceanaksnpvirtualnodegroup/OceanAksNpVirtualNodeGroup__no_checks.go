@@ -80,6 +80,10 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetEnableNodePublicIpParameters(val interface{}) error {
 	return nil
 }

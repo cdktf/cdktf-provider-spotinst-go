@@ -68,6 +68,10 @@ func (j *jsiiProxy_MultaiDeployment) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_MultaiDeployment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MultaiDeployment) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -180,6 +180,10 @@ func (j *jsiiProxy_MrscalerAws) validateSetCoreUnitParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_MrscalerAws) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MrscalerAws) validateSetCustomAmiIdParameters(val *string) error {
 	return nil
 }

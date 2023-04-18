@@ -140,6 +140,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetIamInstanceProfileParameters(val *string) error {
 	return nil
 }

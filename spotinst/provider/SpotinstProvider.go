@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/provider/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/spotinst spotinst}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs spotinst}.
 type SpotinstProvider interface {
 	cdktf.TerraformProvider
 	Account() *string
@@ -252,7 +252,7 @@ func (j *jsiiProxy_SpotinstProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst spotinst} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs spotinst} Resource.
 func NewSpotinstProvider(scope constructs.Construct, id *string, config *SpotinstProviderConfig) SpotinstProvider {
 	_init_.Initialize()
 
@@ -270,7 +270,7 @@ func NewSpotinstProvider(scope constructs.Construct, id *string, config *Spotins
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst spotinst} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs spotinst} Resource.
 func NewSpotinstProvider_Override(s SpotinstProvider, scope constructs.Construct, id *string, config *SpotinstProviderConfig) {
 	_init_.Initialize()
 

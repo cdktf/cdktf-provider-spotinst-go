@@ -104,6 +104,10 @@ func (j *jsiiProxy_OceanAksNp) validateSetControllerClusterIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNp) validateSetEnableNodePublicIpParameters(val interface{}) error {
 	return nil
 }

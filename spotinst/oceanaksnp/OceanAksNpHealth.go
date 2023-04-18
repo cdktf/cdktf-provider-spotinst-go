@@ -2,7 +2,7 @@ package oceanaksnp
 
 
 type OceanAksNpHealth struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aks_np#grace_period OceanAksNp#grace_period}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/ocean_aks_np#grace_period OceanAksNp#grace_period}.
 	GracePeriod *float64 `field:"optional" json:"gracePeriod" yaml:"gracePeriod"`
 }
 

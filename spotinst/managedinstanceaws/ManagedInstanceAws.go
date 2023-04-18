@@ -2,14 +2,14 @@ package managedinstanceaws
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/managedinstanceaws/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/managedinstanceaws/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/spotinst/r/managed_instance_aws spotinst_managed_instance_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws}.
 type ManagedInstanceAws interface {
 	cdktf.TerraformResource
 	AutoHealing() interface{}
@@ -29,9 +29,9 @@ type ManagedInstanceAws interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CpuCredits() *string
 	SetCpuCredits(val *string)
 	CpuCreditsInput() *string
@@ -364,8 +364,8 @@ func (j *jsiiProxy_ManagedInstanceAws) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ManagedInstanceAws) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1335,7 +1335,7 @@ func (j *jsiiProxy_ManagedInstanceAws) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/managed_instance_aws spotinst_managed_instance_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
 func NewManagedInstanceAws(scope constructs.Construct, id *string, config *ManagedInstanceAwsConfig) ManagedInstanceAws {
 	_init_.Initialize()
 
@@ -1353,7 +1353,7 @@ func NewManagedInstanceAws(scope constructs.Construct, id *string, config *Manag
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/managed_instance_aws spotinst_managed_instance_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
 func NewManagedInstanceAws_Override(m ManagedInstanceAws, scope constructs.Construct, id *string, config *ManagedInstanceAwsConfig) {
 	_init_.Initialize()
 
@@ -1397,7 +1397,10 @@ func (j *jsiiProxy_ManagedInstanceAws)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws)SetCount(val *float64) {
+func (j *jsiiProxy_ManagedInstanceAws)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

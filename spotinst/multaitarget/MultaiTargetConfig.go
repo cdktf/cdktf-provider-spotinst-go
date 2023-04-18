@@ -8,7 +8,7 @@ type MultaiTargetConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -19,26 +19,26 @@ type MultaiTargetConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/multai_target#balancer_id MultaiTarget#balancer_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/multai_target#balancer_id MultaiTarget#balancer_id}.
 	BalancerId *string `field:"required" json:"balancerId" yaml:"balancerId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/multai_target#host MultaiTarget#host}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/multai_target#host MultaiTarget#host}.
 	Host *string `field:"required" json:"host" yaml:"host"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/multai_target#target_set_id MultaiTarget#target_set_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/multai_target#target_set_id MultaiTarget#target_set_id}.
 	TargetSetId *string `field:"required" json:"targetSetId" yaml:"targetSetId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/multai_target#weight MultaiTarget#weight}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/multai_target#weight MultaiTarget#weight}.
 	Weight *float64 `field:"required" json:"weight" yaml:"weight"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/multai_target#id MultaiTarget#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/multai_target#id MultaiTarget#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/multai_target#name MultaiTarget#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/multai_target#name MultaiTarget#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/multai_target#port MultaiTarget#port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/multai_target#port MultaiTarget#port}.
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 	// tags block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/multai_target#tags MultaiTarget#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/multai_target#tags MultaiTarget#tags}
 	Tags interface{} `field:"optional" json:"tags" yaml:"tags"`
 }
 

@@ -2,13 +2,13 @@ package elastigroupaws
 
 
 type ElastigroupAwsResourceTagSpecification struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#should_tag_amis ElastigroupAws#should_tag_amis}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/elastigroup_aws#should_tag_amis ElastigroupAws#should_tag_amis}.
 	ShouldTagAmis interface{} `field:"optional" json:"shouldTagAmis" yaml:"shouldTagAmis"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#should_tag_enis ElastigroupAws#should_tag_enis}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/elastigroup_aws#should_tag_enis ElastigroupAws#should_tag_enis}.
 	ShouldTagEnis interface{} `field:"optional" json:"shouldTagEnis" yaml:"shouldTagEnis"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#should_tag_snapshots ElastigroupAws#should_tag_snapshots}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/elastigroup_aws#should_tag_snapshots ElastigroupAws#should_tag_snapshots}.
 	ShouldTagSnapshots interface{} `field:"optional" json:"shouldTagSnapshots" yaml:"shouldTagSnapshots"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/spotinst/r/elastigroup_aws#should_tag_volumes ElastigroupAws#should_tag_volumes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/elastigroup_aws#should_tag_volumes ElastigroupAws#should_tag_volumes}.
 	ShouldTagVolumes interface{} `field:"optional" json:"shouldTagVolumes" yaml:"shouldTagVolumes"`
 }
 

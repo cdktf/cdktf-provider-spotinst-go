@@ -76,6 +76,10 @@ func (j *jsiiProxy_MultaiRoutingRule) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_MultaiRoutingRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MultaiRoutingRule) validateSetIdParameters(val *string) error {
 	return nil
 }

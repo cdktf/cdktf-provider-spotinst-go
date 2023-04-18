@@ -124,6 +124,10 @@ func (j *jsiiProxy_OceanAws) validateSetControllerIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_OceanAws) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAws) validateSetDesiredCapacityParameters(val *float64) error {
 	return nil
 }

@@ -120,6 +120,10 @@ func (j *jsiiProxy_ElastigroupAzure) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAzure) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzure) validateSetCustomDataParameters(val *string) error {
 	return nil
 }

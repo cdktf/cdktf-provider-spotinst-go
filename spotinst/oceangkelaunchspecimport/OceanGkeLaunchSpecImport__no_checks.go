@@ -68,6 +68,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecImport) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_OceanGkeLaunchSpecImport) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanGkeLaunchSpecImport) validateSetIdParameters(val *string) error {
 	return nil
 }

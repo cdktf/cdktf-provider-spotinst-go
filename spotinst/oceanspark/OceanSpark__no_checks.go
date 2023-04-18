@@ -88,6 +88,10 @@ func (j *jsiiProxy_OceanSpark) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_OceanSpark) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanSpark) validateSetIdParameters(val *string) error {
 	return nil
 }

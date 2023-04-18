@@ -72,6 +72,10 @@ func (j *jsiiProxy_ElastigroupAwsSuspension) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAwsSuspension) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAwsSuspension) validateSetGroupIdParameters(val *string) error {
 	return nil
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroup) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksVirtualNodeGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksVirtualNodeGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

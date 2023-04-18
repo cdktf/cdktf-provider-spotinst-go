@@ -68,6 +68,10 @@ func (j *jsiiProxy_OceanSparkVirtualNodeGroup) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_OceanSparkVirtualNodeGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanSparkVirtualNodeGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

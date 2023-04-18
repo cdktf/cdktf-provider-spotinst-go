@@ -2,14 +2,14 @@ package oceanaks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v6/oceanaks/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v7/oceanaks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aks spotinst_ocean_aks}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/ocean_aks spotinst_ocean_aks}.
 type OceanAks interface {
 	cdktf.TerraformResource
 	AcdIdentifier() *string
@@ -35,9 +35,9 @@ type OceanAks interface {
 	SetControllerClusterId(val *string)
 	ControllerClusterIdInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomData() *string
 	SetCustomData(val *string)
 	CustomDataInput() *string
@@ -318,8 +318,8 @@ func (j *jsiiProxy_OceanAks) ControllerClusterIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAks) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OceanAks) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -809,7 +809,7 @@ func (j *jsiiProxy_OceanAks) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aks spotinst_ocean_aks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/ocean_aks spotinst_ocean_aks} Resource.
 func NewOceanAks(scope constructs.Construct, id *string, config *OceanAksConfig) OceanAks {
 	_init_.Initialize()
 
@@ -827,7 +827,7 @@ func NewOceanAks(scope constructs.Construct, id *string, config *OceanAksConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/spotinst/r/ocean_aks spotinst_ocean_aks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/ocean_aks spotinst_ocean_aks} Resource.
 func NewOceanAks_Override(o OceanAks, scope constructs.Construct, id *string, config *OceanAksConfig) {
 	_init_.Initialize()
 
@@ -893,7 +893,10 @@ func (j *jsiiProxy_OceanAks)SetControllerClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OceanAks)SetCount(val *float64) {
+func (j *jsiiProxy_OceanAks)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -96,6 +96,10 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_OceanEcsLaunchSpec) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanEcsLaunchSpec) validateSetIamInstanceProfileParameters(val *string) error {
 	return nil
 }

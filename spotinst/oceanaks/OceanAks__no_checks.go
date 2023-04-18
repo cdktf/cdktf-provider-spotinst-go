@@ -128,6 +128,10 @@ func (j *jsiiProxy_OceanAks) validateSetControllerClusterIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_OceanAks) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAks) validateSetCustomDataParameters(val *string) error {
 	return nil
 }
