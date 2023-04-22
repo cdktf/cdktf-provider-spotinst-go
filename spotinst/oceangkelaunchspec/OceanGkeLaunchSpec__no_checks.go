@@ -68,6 +68,10 @@ func (o *jsiiProxy_OceanGkeLaunchSpec) validatePutMetadataParameters(value inter
 	return nil
 }
 
+func (o *jsiiProxy_OceanGkeLaunchSpec) validatePutNetworkInterfacesParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanGkeLaunchSpec) validatePutResourceLimitsParameters(value *OceanGkeLaunchSpecResourceLimits) error {
 	return nil
 }

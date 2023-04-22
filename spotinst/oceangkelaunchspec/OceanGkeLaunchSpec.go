@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.113.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec}.
 type OceanGkeLaunchSpec interface {
 	cdktf.TerraformResource
 	AutoscaleHeadrooms() OceanGkeLaunchSpecAutoscaleHeadroomsList
@@ -57,6 +57,8 @@ type OceanGkeLaunchSpec interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkInterfaces() OceanGkeLaunchSpecNetworkInterfacesList
+	NetworkInterfacesInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	NodePoolName() *string
@@ -142,6 +144,7 @@ type OceanGkeLaunchSpec interface {
 	PutAutoscaleHeadroomsAutomatic(value interface{})
 	PutLabels(value interface{})
 	PutMetadata(value interface{})
+	PutNetworkInterfaces(value interface{})
 	PutResourceLimits(value *OceanGkeLaunchSpecResourceLimits)
 	PutSchedulingTask(value interface{})
 	PutShieldedInstanceConfig(value *OceanGkeLaunchSpecShieldedInstanceConfig)
@@ -156,6 +159,7 @@ type OceanGkeLaunchSpec interface {
 	ResetLabels()
 	ResetMetadata()
 	ResetName()
+	ResetNetworkInterfaces()
 	ResetNodePoolName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -413,6 +417,26 @@ func (j *jsiiProxy_OceanGkeLaunchSpec) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeLaunchSpec) NetworkInterfaces() OceanGkeLaunchSpecNetworkInterfacesList {
+	var returns OceanGkeLaunchSpecNetworkInterfacesList
+	_jsii_.Get(
+		j,
+		"networkInterfaces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeLaunchSpec) NetworkInterfacesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"networkInterfacesInput",
 		&returns,
 	)
 	return returns
@@ -789,7 +813,7 @@ func (j *jsiiProxy_OceanGkeLaunchSpec) UpdatePolicyInput() *OceanGkeLaunchSpecUp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.113.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
 func NewOceanGkeLaunchSpec(scope constructs.Construct, id *string, config *OceanGkeLaunchSpecConfig) OceanGkeLaunchSpec {
 	_init_.Initialize()
 
@@ -807,7 +831,7 @@ func NewOceanGkeLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.112.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.113.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
 func NewOceanGkeLaunchSpec_Override(o OceanGkeLaunchSpec, scope constructs.Construct, id *string, config *OceanGkeLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1317,6 +1341,17 @@ func (o *jsiiProxy_OceanGkeLaunchSpec) PutMetadata(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanGkeLaunchSpec) PutNetworkInterfaces(value interface{}) {
+	if err := o.validatePutNetworkInterfacesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putNetworkInterfaces",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanGkeLaunchSpec) PutResourceLimits(value *OceanGkeLaunchSpecResourceLimits) {
 	if err := o.validatePutResourceLimitsParameters(value); err != nil {
 		panic(err)
@@ -1446,6 +1481,14 @@ func (o *jsiiProxy_OceanGkeLaunchSpec) ResetName() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanGkeLaunchSpec) ResetNetworkInterfaces() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetNetworkInterfaces",
 		nil, // no parameters
 	)
 }
