@@ -353,6 +353,8 @@ func init() {
 		"@cdktf/provider-spotinst.oceanSpark.OceanSparkLogCollectionOutputReference",
 		reflect.TypeOf((*OceanSparkLogCollectionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "collectAppLogs", GoGetter: "CollectAppLogs"},
+			_jsii_.MemberProperty{JsiiProperty: "collectAppLogsInput", GoGetter: "CollectAppLogsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "collectDriverLogs", GoGetter: "CollectDriverLogs"},
 			_jsii_.MemberProperty{JsiiProperty: "collectDriverLogsInput", GoGetter: "CollectDriverLogsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -372,6 +374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCollectAppLogs", GoMethod: "ResetCollectAppLogs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCollectDriverLogs", GoMethod: "ResetCollectDriverLogs"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

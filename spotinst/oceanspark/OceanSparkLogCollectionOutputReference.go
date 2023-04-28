@@ -10,6 +10,9 @@ import (
 
 type OceanSparkLogCollectionOutputReference interface {
 	cdktf.ComplexObject
+	CollectAppLogs() interface{}
+	SetCollectAppLogs(val interface{})
+	CollectAppLogsInput() interface{}
 	CollectDriverLogs() interface{}
 	SetCollectDriverLogs(val interface{})
 	CollectDriverLogsInput() interface{}
@@ -64,6 +67,7 @@ type OceanSparkLogCollectionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCollectAppLogs()
 	ResetCollectDriverLogs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -78,6 +82,26 @@ type OceanSparkLogCollectionOutputReference interface {
 // The jsii proxy struct for OceanSparkLogCollectionOutputReference
 type jsiiProxy_OceanSparkLogCollectionOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_OceanSparkLogCollectionOutputReference) CollectAppLogs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"collectAppLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanSparkLogCollectionOutputReference) CollectAppLogsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"collectAppLogsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OceanSparkLogCollectionOutputReference) CollectDriverLogs() interface{} {
@@ -195,6 +219,17 @@ func NewOceanSparkLogCollectionOutputReference_Override(o OceanSparkLogCollectio
 		"@cdktf/provider-spotinst.oceanSpark.OceanSparkLogCollectionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
+	)
+}
+
+func (j *jsiiProxy_OceanSparkLogCollectionOutputReference)SetCollectAppLogs(val interface{}) {
+	if err := j.validateSetCollectAppLogsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"collectAppLogs",
+		val,
 	)
 }
 
@@ -448,6 +483,14 @@ func (o *jsiiProxy_OceanSparkLogCollectionOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OceanSparkLogCollectionOutputReference) ResetCollectAppLogs() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCollectAppLogs",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OceanSparkLogCollectionOutputReference) ResetCollectDriverLogs() {

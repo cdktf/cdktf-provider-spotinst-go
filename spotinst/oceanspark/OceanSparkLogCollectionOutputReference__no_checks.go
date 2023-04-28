@@ -48,6 +48,10 @@ func (o *jsiiProxy_OceanSparkLogCollectionOutputReference) validateResolveParame
 	return nil
 }
 
+func (j *jsiiProxy_OceanSparkLogCollectionOutputReference) validateSetCollectAppLogsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanSparkLogCollectionOutputReference) validateSetCollectDriverLogsParameters(val interface{}) error {
 	return nil
 }
