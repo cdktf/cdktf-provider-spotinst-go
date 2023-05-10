@@ -2,7 +2,7 @@ package oceanaws
 
 
 type OceanAwsClusterOrientation struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.116.0/docs/resources/ocean_aws#availability_vs_cost OceanAws#availability_vs_cost}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.117.0/docs/resources/ocean_aws#availability_vs_cost OceanAws#availability_vs_cost}.
 	AvailabilityVsCost *string `field:"optional" json:"availabilityVsCost" yaml:"availabilityVsCost"`
 }
 
