@@ -2,9 +2,9 @@ package elastigroupaws
 
 
 type ElastigroupAwsItfTargetGroupConfigTags struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.117.0/docs/resources/elastigroup_aws#tag_key ElastigroupAws#tag_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.0/docs/resources/elastigroup_aws#tag_key ElastigroupAws#tag_key}.
 	TagKey *string `field:"required" json:"tagKey" yaml:"tagKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.117.0/docs/resources/elastigroup_aws#tag_value ElastigroupAws#tag_value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.0/docs/resources/elastigroup_aws#tag_value ElastigroupAws#tag_value}.
 	TagValue *string `field:"optional" json:"tagValue" yaml:"tagValue"`
 }
 

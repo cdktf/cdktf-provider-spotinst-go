@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.117.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3}.
 type ElastigroupAzureV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -105,6 +105,8 @@ type ElastigroupAzureV3 interface {
 	SpotSizes() *[]*string
 	SetSpotSizes(val *[]*string)
 	SpotSizesInput() *[]*string
+	Tags() ElastigroupAzureV3TagsList
+	TagsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -140,6 +142,7 @@ type ElastigroupAzureV3 interface {
 	PutLogin(value *ElastigroupAzureV3Login)
 	PutManagedServiceIdentity(value interface{})
 	PutNetwork(value *ElastigroupAzureV3Network)
+	PutTags(value interface{})
 	ResetCustomData()
 	ResetDesiredCapacity()
 	ResetDrainingTimeout()
@@ -154,6 +157,7 @@ type ElastigroupAzureV3 interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSpotPercentage()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -679,6 +683,26 @@ func (j *jsiiProxy_ElastigroupAzureV3) SpotSizesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) Tags() ElastigroupAzureV3TagsList {
+	var returns ElastigroupAzureV3TagsList
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) TagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -710,7 +734,7 @@ func (j *jsiiProxy_ElastigroupAzureV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.117.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
 func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) ElastigroupAzureV3 {
 	_init_.Initialize()
 
@@ -728,7 +752,7 @@ func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *Elast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.117.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
 func NewElastigroupAzureV3_Override(e ElastigroupAzureV3, scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) {
 	_init_.Initialize()
 
@@ -1282,6 +1306,17 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutNetwork(value *ElastigroupAzureV3Netwo
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) PutTags(value interface{}) {
+	if err := e.validatePutTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTags",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) ResetCustomData() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1374,6 +1409,14 @@ func (e *jsiiProxy_ElastigroupAzureV3) ResetSpotPercentage() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetSpotPercentage",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetTags() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTags",
 		nil, // no parameters
 	)
 }

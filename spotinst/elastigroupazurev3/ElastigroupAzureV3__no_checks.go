@@ -68,6 +68,10 @@ func (e *jsiiProxy_ElastigroupAzureV3) validatePutNetworkParameters(value *Elast
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutTagsParameters(value interface{}) error {
+	return nil
+}
+
 func validateElastigroupAzureV3_IsConstructParameters(x interface{}) error {
 	return nil
 }
