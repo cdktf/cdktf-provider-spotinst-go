@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.0/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.1/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group}.
 type OceanSparkVirtualNodeGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_OceanSparkVirtualNodeGroup) VirtualNodeGroupIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.0/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.1/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group} Resource.
 func NewOceanSparkVirtualNodeGroup(scope constructs.Construct, id *string, config *OceanSparkVirtualNodeGroupConfig) OceanSparkVirtualNodeGroup {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewOceanSparkVirtualNodeGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.0/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.1/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group} Resource.
 func NewOceanSparkVirtualNodeGroup_Override(o OceanSparkVirtualNodeGroup, scope constructs.Construct, id *string, config *OceanSparkVirtualNodeGroupConfig) {
 	_init_.Initialize()
 

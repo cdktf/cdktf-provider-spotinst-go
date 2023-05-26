@@ -4,7 +4,7 @@ package mrscaleraws
 type MrscalerAwsTerminationPolicies struct {
 	// statements block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.0/docs/resources/mrscaler_aws#statements MrscalerAws#statements}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.1/docs/resources/mrscaler_aws#statements MrscalerAws#statements}
 	Statements interface{} `field:"required" json:"statements" yaml:"statements"`
 }
 
