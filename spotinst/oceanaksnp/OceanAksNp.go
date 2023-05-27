@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.1/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.120.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
 type OceanAksNp interface {
 	cdktf.TerraformResource
 	AksClusterName() *string
@@ -62,6 +62,8 @@ type OceanAksNp interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Headrooms() OceanAksNpHeadroomsList
+	HeadroomsInput() interface{}
 	Health() OceanAksNpHealthOutputReference
 	HealthInput() *OceanAksNpHealth
 	Id() *string
@@ -107,6 +109,8 @@ type OceanAksNp interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Scheduling() OceanAksNpSchedulingOutputReference
+	SchedulingInput() *OceanAksNpScheduling
 	SpotPercentage() *float64
 	SetSpotPercentage(val *float64)
 	SpotPercentageInput() *float64
@@ -147,13 +151,16 @@ type OceanAksNp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaler(value *OceanAksNpAutoscaler)
+	PutHeadrooms(value interface{})
 	PutHealth(value *OceanAksNpHealth)
+	PutScheduling(value *OceanAksNpScheduling)
 	PutTaints(value interface{})
 	ResetAutoscaler()
 	ResetAvailabilityZones()
 	ResetControllerClusterId()
 	ResetEnableNodePublicIp()
 	ResetFallbackToOndemand()
+	ResetHeadrooms()
 	ResetHealth()
 	ResetId()
 	ResetLabels()
@@ -166,6 +173,7 @@ type OceanAksNp interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScheduling()
 	ResetSpotPercentage()
 	ResetTags()
 	ResetTaints()
@@ -444,6 +452,26 @@ func (j *jsiiProxy_OceanAksNp) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNp) Headrooms() OceanAksNpHeadroomsList {
+	var returns OceanAksNpHeadroomsList
+	_jsii_.Get(
+		j,
+		"headrooms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNp) HeadroomsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headroomsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAksNp) Health() OceanAksNpHealthOutputReference {
 	var returns OceanAksNpHealthOutputReference
 	_jsii_.Get(
@@ -694,6 +722,26 @@ func (j *jsiiProxy_OceanAksNp) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNp) Scheduling() OceanAksNpSchedulingOutputReference {
+	var returns OceanAksNpSchedulingOutputReference
+	_jsii_.Get(
+		j,
+		"scheduling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNp) SchedulingInput() *OceanAksNpScheduling {
+	var returns *OceanAksNpScheduling
+	_jsii_.Get(
+		j,
+		"schedulingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAksNp) SpotPercentage() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -785,7 +833,7 @@ func (j *jsiiProxy_OceanAksNp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.1/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.120.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpConfig) OceanAksNp {
 	_init_.Initialize()
 
@@ -803,7 +851,7 @@ func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.119.1/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.120.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp_Override(o OceanAksNp, scope constructs.Construct, id *string, config *OceanAksNpConfig) {
 	_init_.Initialize()
 
@@ -1368,6 +1416,17 @@ func (o *jsiiProxy_OceanAksNp) PutAutoscaler(value *OceanAksNpAutoscaler) {
 	)
 }
 
+func (o *jsiiProxy_OceanAksNp) PutHeadrooms(value interface{}) {
+	if err := o.validatePutHeadroomsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putHeadrooms",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAksNp) PutHealth(value *OceanAksNpHealth) {
 	if err := o.validatePutHealthParameters(value); err != nil {
 		panic(err)
@@ -1375,6 +1434,17 @@ func (o *jsiiProxy_OceanAksNp) PutHealth(value *OceanAksNpHealth) {
 	_jsii_.InvokeVoid(
 		o,
 		"putHealth",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanAksNp) PutScheduling(value *OceanAksNpScheduling) {
+	if err := o.validatePutSchedulingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putScheduling",
 		[]interface{}{value},
 	)
 }
@@ -1426,6 +1496,14 @@ func (o *jsiiProxy_OceanAksNp) ResetFallbackToOndemand() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetFallbackToOndemand",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNp) ResetHeadrooms() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetHeadrooms",
 		nil, // no parameters
 	)
 }
@@ -1506,6 +1584,14 @@ func (o *jsiiProxy_OceanAksNp) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNp) ResetScheduling() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetScheduling",
 		nil, // no parameters
 	)
 }

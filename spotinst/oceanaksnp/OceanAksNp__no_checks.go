@@ -56,7 +56,15 @@ func (o *jsiiProxy_OceanAksNp) validatePutAutoscalerParameters(value *OceanAksNp
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNp) validatePutHeadroomsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksNp) validatePutHealthParameters(value *OceanAksNpHealth) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanAksNp) validatePutSchedulingParameters(value *OceanAksNpScheduling) error {
 	return nil
 }
 
