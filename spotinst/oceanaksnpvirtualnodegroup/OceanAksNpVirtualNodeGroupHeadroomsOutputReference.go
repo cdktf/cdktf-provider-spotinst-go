@@ -76,6 +76,7 @@ type OceanAksNpVirtualNodeGroupHeadroomsOutputReference interface {
 	ResetCpuPerUnit()
 	ResetGpuPerUnit()
 	ResetMemoryPerUnit()
+	ResetNumOfUnits()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -574,6 +575,14 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupHeadroomsOutputReference) ResetMemo
 	_jsii_.InvokeVoid(
 		o,
 		"resetMemoryPerUnit",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupHeadroomsOutputReference) ResetNumOfUnits() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetNumOfUnits",
 		nil, // no parameters
 	)
 }

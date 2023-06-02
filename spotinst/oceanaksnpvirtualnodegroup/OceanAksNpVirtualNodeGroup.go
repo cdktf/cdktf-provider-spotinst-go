@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.120.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
 type OceanAksNpVirtualNodeGroup interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -37,6 +37,8 @@ type OceanAksNpVirtualNodeGroup interface {
 	FallbackToOndemand() interface{}
 	SetFallbackToOndemand(val interface{})
 	FallbackToOndemandInput() interface{}
+	Filters() OceanAksNpVirtualNodeGroupFiltersOutputReference
+	FiltersInput() *OceanAksNpVirtualNodeGroupFilters
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -132,11 +134,13 @@ type OceanAksNpVirtualNodeGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilters(value *OceanAksNpVirtualNodeGroupFilters)
 	PutHeadrooms(value interface{})
 	PutTaints(value interface{})
 	ResetAvailabilityZones()
 	ResetEnableNodePublicIp()
 	ResetFallbackToOndemand()
+	ResetFilters()
 	ResetHeadrooms()
 	ResetId()
 	ResetLabels()
@@ -272,6 +276,26 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) FallbackToOndemandInput() interfa
 	_jsii_.Get(
 		j,
 		"fallbackToOndemandInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) Filters() OceanAksNpVirtualNodeGroupFiltersOutputReference {
+	var returns OceanAksNpVirtualNodeGroupFiltersOutputReference
+	_jsii_.Get(
+		j,
+		"filters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) FiltersInput() *OceanAksNpVirtualNodeGroupFilters {
+	var returns *OceanAksNpVirtualNodeGroupFilters
+	_jsii_.Get(
+		j,
+		"filtersInput",
 		&returns,
 	)
 	return returns
@@ -668,7 +692,7 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.120.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) OceanAksNpVirtualNodeGroup {
 	_init_.Initialize()
 
@@ -686,7 +710,7 @@ func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.120.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup_Override(o OceanAksNpVirtualNodeGroup, scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) {
 	_init_.Initialize()
 
@@ -1196,6 +1220,17 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) PutFilters(value *OceanAksNpVirtualNodeGroupFilters) {
+	if err := o.validatePutFiltersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putFilters",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) PutHeadrooms(value interface{}) {
 	if err := o.validatePutHeadroomsParameters(value); err != nil {
 		panic(err)
@@ -1238,6 +1273,14 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetFallbackToOndemand() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetFallbackToOndemand",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetFilters() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFilters",
 		nil, // no parameters
 	)
 }

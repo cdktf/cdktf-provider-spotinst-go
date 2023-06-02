@@ -52,6 +52,10 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validatePutFiltersParameters(value *OceanAksNpVirtualNodeGroupFilters) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validatePutHeadroomsParameters(value interface{}) error {
 	return nil
 }

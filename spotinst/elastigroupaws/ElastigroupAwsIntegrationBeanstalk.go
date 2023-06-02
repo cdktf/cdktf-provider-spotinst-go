@@ -4,13 +4,13 @@ package elastigroupaws
 type ElastigroupAwsIntegrationBeanstalk struct {
 	// deployment_preferences block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.120.0/docs/resources/elastigroup_aws#deployment_preferences ElastigroupAws#deployment_preferences}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/elastigroup_aws#deployment_preferences ElastigroupAws#deployment_preferences}
 	DeploymentPreferences *ElastigroupAwsIntegrationBeanstalkDeploymentPreferences `field:"optional" json:"deploymentPreferences" yaml:"deploymentPreferences"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.120.0/docs/resources/elastigroup_aws#environment_id ElastigroupAws#environment_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/elastigroup_aws#environment_id ElastigroupAws#environment_id}.
 	EnvironmentId *string `field:"optional" json:"environmentId" yaml:"environmentId"`
 	// managed_actions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.120.0/docs/resources/elastigroup_aws#managed_actions ElastigroupAws#managed_actions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/elastigroup_aws#managed_actions ElastigroupAws#managed_actions}
 	ManagedActions *ElastigroupAwsIntegrationBeanstalkManagedActions `field:"optional" json:"managedActions" yaml:"managedActions"`
 }
 

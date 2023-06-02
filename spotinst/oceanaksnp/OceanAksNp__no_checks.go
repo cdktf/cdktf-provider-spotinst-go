@@ -56,6 +56,10 @@ func (o *jsiiProxy_OceanAksNp) validatePutAutoscalerParameters(value *OceanAksNp
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNp) validatePutFiltersParameters(value *OceanAksNpFilters) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksNp) validatePutHeadroomsParameters(value interface{}) error {
 	return nil
 }

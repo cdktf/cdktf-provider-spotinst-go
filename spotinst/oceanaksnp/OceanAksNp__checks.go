@@ -122,6 +122,17 @@ func (o *jsiiProxy_OceanAksNp) validatePutAutoscalerParameters(value *OceanAksNp
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNp) validatePutFiltersParameters(value *OceanAksNpFilters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksNp) validatePutHeadroomsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

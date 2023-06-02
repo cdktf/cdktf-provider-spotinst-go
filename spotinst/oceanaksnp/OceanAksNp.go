@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.120.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
 type OceanAksNp interface {
 	cdktf.TerraformResource
 	AksClusterName() *string
@@ -54,6 +54,8 @@ type OceanAksNp interface {
 	FallbackToOndemand() interface{}
 	SetFallbackToOndemand(val interface{})
 	FallbackToOndemandInput() interface{}
+	Filters() OceanAksNpFiltersOutputReference
+	FiltersInput() *OceanAksNpFilters
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -151,6 +153,7 @@ type OceanAksNp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaler(value *OceanAksNpAutoscaler)
+	PutFilters(value *OceanAksNpFilters)
 	PutHeadrooms(value interface{})
 	PutHealth(value *OceanAksNpHealth)
 	PutScheduling(value *OceanAksNpScheduling)
@@ -160,6 +163,7 @@ type OceanAksNp interface {
 	ResetControllerClusterId()
 	ResetEnableNodePublicIp()
 	ResetFallbackToOndemand()
+	ResetFilters()
 	ResetHeadrooms()
 	ResetHealth()
 	ResetId()
@@ -417,6 +421,26 @@ func (j *jsiiProxy_OceanAksNp) FallbackToOndemandInput() interface{} {
 	_jsii_.Get(
 		j,
 		"fallbackToOndemandInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNp) Filters() OceanAksNpFiltersOutputReference {
+	var returns OceanAksNpFiltersOutputReference
+	_jsii_.Get(
+		j,
+		"filters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNp) FiltersInput() *OceanAksNpFilters {
+	var returns *OceanAksNpFilters
+	_jsii_.Get(
+		j,
+		"filtersInput",
 		&returns,
 	)
 	return returns
@@ -833,7 +857,7 @@ func (j *jsiiProxy_OceanAksNp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.120.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpConfig) OceanAksNp {
 	_init_.Initialize()
 
@@ -851,7 +875,7 @@ func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.120.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp_Override(o OceanAksNp, scope constructs.Construct, id *string, config *OceanAksNpConfig) {
 	_init_.Initialize()
 
@@ -1416,6 +1440,17 @@ func (o *jsiiProxy_OceanAksNp) PutAutoscaler(value *OceanAksNpAutoscaler) {
 	)
 }
 
+func (o *jsiiProxy_OceanAksNp) PutFilters(value *OceanAksNpFilters) {
+	if err := o.validatePutFiltersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putFilters",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAksNp) PutHeadrooms(value interface{}) {
 	if err := o.validatePutHeadroomsParameters(value); err != nil {
 		panic(err)
@@ -1496,6 +1531,14 @@ func (o *jsiiProxy_OceanAksNp) ResetFallbackToOndemand() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetFallbackToOndemand",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNp) ResetFilters() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFilters",
 		nil, // no parameters
 	)
 }
