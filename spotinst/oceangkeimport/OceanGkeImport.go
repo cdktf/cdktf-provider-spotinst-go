@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.122.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import}.
 type OceanGkeImport interface {
 	cdktf.TerraformResource
 	Autoscaler() OceanGkeImportAutoscalerOutputReference
@@ -679,7 +679,7 @@ func (j *jsiiProxy_OceanGkeImport) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.122.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
 func NewOceanGkeImport(scope constructs.Construct, id *string, config *OceanGkeImportConfig) OceanGkeImport {
 	_init_.Initialize()
 
@@ -697,7 +697,7 @@ func NewOceanGkeImport(scope constructs.Construct, id *string, config *OceanGkeI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.122.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
 func NewOceanGkeImport_Override(o OceanGkeImport, scope constructs.Construct, id *string, config *OceanGkeImportConfig) {
 	_init_.Initialize()
 

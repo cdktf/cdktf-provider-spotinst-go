@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.122.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke}.
 type ElastigroupGke interface {
 	cdktf.TerraformResource
 	BackendServices() ElastigroupGkeBackendServicesList
@@ -1027,7 +1027,7 @@ func (j *jsiiProxy_ElastigroupGke) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.122.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
 func NewElastigroupGke(scope constructs.Construct, id *string, config *ElastigroupGkeConfig) ElastigroupGke {
 	_init_.Initialize()
 
@@ -1045,7 +1045,7 @@ func NewElastigroupGke(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.121.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.122.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
 func NewElastigroupGke_Override(e ElastigroupGke, scope constructs.Construct, id *string, config *ElastigroupGkeConfig) {
 	_init_.Initialize()
 
