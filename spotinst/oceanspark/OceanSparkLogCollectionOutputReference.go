@@ -13,9 +13,6 @@ type OceanSparkLogCollectionOutputReference interface {
 	CollectAppLogs() interface{}
 	SetCollectAppLogs(val interface{})
 	CollectAppLogsInput() interface{}
-	CollectDriverLogs() interface{}
-	SetCollectDriverLogs(val interface{})
-	CollectDriverLogsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -68,7 +65,6 @@ type OceanSparkLogCollectionOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCollectAppLogs()
-	ResetCollectDriverLogs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -99,26 +95,6 @@ func (j *jsiiProxy_OceanSparkLogCollectionOutputReference) CollectAppLogsInput()
 	_jsii_.Get(
 		j,
 		"collectAppLogsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OceanSparkLogCollectionOutputReference) CollectDriverLogs() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"collectDriverLogs",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OceanSparkLogCollectionOutputReference) CollectDriverLogsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"collectDriverLogsInput",
 		&returns,
 	)
 	return returns
@@ -229,17 +205,6 @@ func (j *jsiiProxy_OceanSparkLogCollectionOutputReference)SetCollectAppLogs(val 
 	_jsii_.Set(
 		j,
 		"collectAppLogs",
-		val,
-	)
-}
-
-func (j *jsiiProxy_OceanSparkLogCollectionOutputReference)SetCollectDriverLogs(val interface{}) {
-	if err := j.validateSetCollectDriverLogsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"collectDriverLogs",
 		val,
 	)
 }
@@ -489,14 +454,6 @@ func (o *jsiiProxy_OceanSparkLogCollectionOutputReference) ResetCollectAppLogs()
 	_jsii_.InvokeVoid(
 		o,
 		"resetCollectAppLogs",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OceanSparkLogCollectionOutputReference) ResetCollectDriverLogs() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetCollectDriverLogs",
 		nil, // no parameters
 	)
 }

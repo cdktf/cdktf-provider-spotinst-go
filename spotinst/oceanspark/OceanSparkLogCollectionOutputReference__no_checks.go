@@ -52,10 +52,6 @@ func (j *jsiiProxy_OceanSparkLogCollectionOutputReference) validateSetCollectApp
 	return nil
 }
 
-func (j *jsiiProxy_OceanSparkLogCollectionOutputReference) validateSetCollectDriverLogsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_OceanSparkLogCollectionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
