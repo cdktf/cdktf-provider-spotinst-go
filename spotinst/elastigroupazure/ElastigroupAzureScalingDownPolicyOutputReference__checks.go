@@ -228,6 +228,8 @@ func (j *jsiiProxy_ElastigroupAzureScalingDownPolicyOutputReference) validateSet
 
 func (j *jsiiProxy_ElastigroupAzureScalingDownPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ElastigroupAzureScalingDownPolicy:
 		val := val.(*ElastigroupAzureScalingDownPolicy)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -239,11 +241,9 @@ func (j *jsiiProxy_ElastigroupAzureScalingDownPolicyOutputReference) validateSet
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ElastigroupAzureScalingDownPolicy, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ElastigroupAzureScalingDownPolicy; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -227,6 +227,8 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceOutputReference) validateSetCom
 
 func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ElastigroupGcpNetworkInterface:
 		val := val.(*ElastigroupGcpNetworkInterface)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -238,11 +240,9 @@ func (j *jsiiProxy_ElastigroupGcpNetworkInterfaceOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ElastigroupGcpNetworkInterface, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ElastigroupGcpNetworkInterface; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package oceanecslaunchspec
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v8/oceanecslaunchspec/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v9/oceanecslaunchspec/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.122.2/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.123.0/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec}.
 type OceanEcsLaunchSpec interface {
 	cdktf.TerraformResource
 	Attributes() OceanEcsLaunchSpecAttributesList
@@ -692,7 +692,7 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.122.2/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.123.0/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec} Resource.
 func NewOceanEcsLaunchSpec(scope constructs.Construct, id *string, config *OceanEcsLaunchSpecConfig) OceanEcsLaunchSpec {
 	_init_.Initialize()
 
@@ -710,7 +710,7 @@ func NewOceanEcsLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.122.2/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.123.0/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec} Resource.
 func NewOceanEcsLaunchSpec_Override(o OceanEcsLaunchSpec, scope constructs.Construct, id *string, config *OceanEcsLaunchSpecConfig) {
 	_init_.Initialize()
 

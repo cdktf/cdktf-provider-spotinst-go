@@ -165,6 +165,8 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsOutputRefere
 
 func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ElastigroupAwsIntegrationRoute53DomainsRecordSets:
 		val := val.(*ElastigroupAwsIntegrationRoute53DomainsRecordSets)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsOutputRefere
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ElastigroupAwsIntegrationRoute53DomainsRecordSets, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ElastigroupAwsIntegrationRoute53DomainsRecordSets; received %#v (a %T)", val, val)
 		}
 	}
 

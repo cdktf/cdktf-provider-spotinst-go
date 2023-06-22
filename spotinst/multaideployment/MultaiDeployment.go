@@ -2,14 +2,14 @@ package multaideployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v8/multaideployment/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v9/multaideployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.122.2/docs/resources/multai_deployment spotinst_multai_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.123.0/docs/resources/multai_deployment spotinst_multai_deployment}.
 type MultaiDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_MultaiDeployment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.122.2/docs/resources/multai_deployment spotinst_multai_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.123.0/docs/resources/multai_deployment spotinst_multai_deployment} Resource.
 func NewMultaiDeployment(scope constructs.Construct, id *string, config *MultaiDeploymentConfig) MultaiDeployment {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewMultaiDeployment(scope constructs.Construct, id *string, config *MultaiD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.122.2/docs/resources/multai_deployment spotinst_multai_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.123.0/docs/resources/multai_deployment spotinst_multai_deployment} Resource.
 func NewMultaiDeployment_Override(m MultaiDeployment, scope constructs.Construct, id *string, config *MultaiDeploymentConfig) {
 	_init_.Initialize()
 

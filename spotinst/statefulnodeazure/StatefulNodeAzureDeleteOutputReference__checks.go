@@ -193,6 +193,8 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) validateSetDiskTtlInH
 
 func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *StatefulNodeAzureDelete:
 		val := val.(*StatefulNodeAzureDelete)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -204,11 +206,9 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) validateSetInternalVa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *StatefulNodeAzureDelete, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *StatefulNodeAzureDelete; received %#v (a %T)", val, val)
 		}
 	}
 

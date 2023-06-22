@@ -213,6 +213,8 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) validate
 
 func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ElastigroupAwsBeanstalkScheduledTask:
 		val := val.(*ElastigroupAwsBeanstalkScheduledTask)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -224,11 +226,9 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) validate
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ElastigroupAwsBeanstalkScheduledTask, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ElastigroupAwsBeanstalkScheduledTask; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -173,6 +173,8 @@ func (j *jsiiProxy_ElastigroupAzureImageCustomOutputReference) validateSetImageN
 
 func (j *jsiiProxy_ElastigroupAzureImageCustomOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ElastigroupAzureImageCustom:
 		val := val.(*ElastigroupAzureImageCustom)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_ElastigroupAzureImageCustomOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ElastigroupAzureImageCustom, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ElastigroupAzureImageCustom; received %#v (a %T)", val, val)
 		}
 	}
 

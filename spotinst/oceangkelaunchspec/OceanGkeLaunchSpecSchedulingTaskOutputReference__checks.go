@@ -204,6 +204,8 @@ func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskOutputReference) validateSetC
 
 func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *OceanGkeLaunchSpecSchedulingTask:
 		val := val.(*OceanGkeLaunchSpecSchedulingTask)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -215,11 +217,9 @@ func (j *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskOutputReference) validateSetI
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *OceanGkeLaunchSpecSchedulingTask, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OceanGkeLaunchSpecSchedulingTask; received %#v (a %T)", val, val)
 		}
 	}
 

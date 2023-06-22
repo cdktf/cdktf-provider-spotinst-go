@@ -247,6 +247,8 @@ func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) va
 
 func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ElastigroupAzureV3NetworkNetworkInterfaces:
 		val := val.(*ElastigroupAzureV3NetworkNetworkInterfaces)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -258,11 +260,9 @@ func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) va
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ElastigroupAzureV3NetworkNetworkInterfaces, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ElastigroupAzureV3NetworkNetworkInterfaces; received %#v (a %T)", val, val)
 		}
 	}
 

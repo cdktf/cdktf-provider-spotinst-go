@@ -173,6 +173,8 @@ func (j *jsiiProxy_OceanEcsLoggingExportS3OutputReference) validateSetIdParamete
 
 func (j *jsiiProxy_OceanEcsLoggingExportS3OutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *OceanEcsLoggingExportS3:
 		val := val.(*OceanEcsLoggingExportS3)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_OceanEcsLoggingExportS3OutputReference) validateSetInternalVa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *OceanEcsLoggingExportS3, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OceanEcsLoggingExportS3; received %#v (a %T)", val, val)
 		}
 	}
 

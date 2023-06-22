@@ -176,6 +176,8 @@ func (j *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleOutputReference) val
 
 func (j *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ElastigroupAwsItfLoadBalancerListenerRule:
 		val := val.(*ElastigroupAwsItfLoadBalancerListenerRule)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -187,11 +189,9 @@ func (j *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleOutputReference) val
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ElastigroupAwsItfLoadBalancerListenerRule, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ElastigroupAwsItfLoadBalancerListenerRule; received %#v (a %T)", val, val)
 		}
 	}
 

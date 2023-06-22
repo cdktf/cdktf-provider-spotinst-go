@@ -165,6 +165,8 @@ func (j *jsiiProxy_ElastigroupGkeLabelsOutputReference) validateSetComplexObject
 
 func (j *jsiiProxy_ElastigroupGkeLabelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ElastigroupGkeLabels:
 		val := val.(*ElastigroupGkeLabels)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_ElastigroupGkeLabelsOutputReference) validateSetInternalValue
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ElastigroupGkeLabels, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ElastigroupGkeLabels; received %#v (a %T)", val, val)
 		}
 	}
 

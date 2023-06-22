@@ -213,6 +213,8 @@ func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceOutputReference) validateSe
 
 func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ManagedInstanceAwsNetworkInterface:
 		val := val.(*ManagedInstanceAwsNetworkInterface)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -224,11 +226,9 @@ func (j *jsiiProxy_ManagedInstanceAwsNetworkInterfaceOutputReference) validateSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ManagedInstanceAwsNetworkInterface, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ManagedInstanceAwsNetworkInterface; received %#v (a %T)", val, val)
 		}
 	}
 

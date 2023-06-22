@@ -181,6 +181,8 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleAutoscaleHeadroomOutputRefer
 
 func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleAutoscaleHeadroomOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *OceanAksVirtualNodeGroupAutoscaleAutoscaleHeadroom:
 		val := val.(*OceanAksVirtualNodeGroupAutoscaleAutoscaleHeadroom)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleAutoscaleHeadroomOutputRefer
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *OceanAksVirtualNodeGroupAutoscaleAutoscaleHeadroom, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OceanAksVirtualNodeGroupAutoscaleAutoscaleHeadroom; received %#v (a %T)", val, val)
 		}
 	}
 

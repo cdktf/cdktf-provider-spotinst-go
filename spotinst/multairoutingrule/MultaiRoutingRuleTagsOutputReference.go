@@ -2,9 +2,9 @@ package multairoutingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v8/multairoutingrule/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v9/multairoutingrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

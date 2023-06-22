@@ -165,6 +165,8 @@ func (j *jsiiProxy_OceanEcsLaunchSpecTagsOutputReference) validateSetComplexObje
 
 func (j *jsiiProxy_OceanEcsLaunchSpecTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *OceanEcsLaunchSpecTags:
 		val := val.(*OceanEcsLaunchSpecTags)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_OceanEcsLaunchSpecTagsOutputReference) validateSetInternalVal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *OceanEcsLaunchSpecTags, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OceanEcsLaunchSpecTags; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -165,6 +165,8 @@ func (j *jsiiProxy_MrscalerAwsCoreEbsBlockDeviceOutputReference) validateSetComp
 
 func (j *jsiiProxy_MrscalerAwsCoreEbsBlockDeviceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *MrscalerAwsCoreEbsBlockDevice:
 		val := val.(*MrscalerAwsCoreEbsBlockDevice)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_MrscalerAwsCoreEbsBlockDeviceOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MrscalerAwsCoreEbsBlockDevice, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MrscalerAwsCoreEbsBlockDevice; received %#v (a %T)", val, val)
 		}
 	}
 
