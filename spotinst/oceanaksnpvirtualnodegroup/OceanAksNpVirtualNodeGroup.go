@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.123.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.124.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
 type OceanAksNpVirtualNodeGroup interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -692,7 +692,7 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.123.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.124.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) OceanAksNpVirtualNodeGroup {
 	_init_.Initialize()
 
@@ -710,7 +710,7 @@ func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.123.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.124.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup_Override(o OceanAksNpVirtualNodeGroup, scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) {
 	_init_.Initialize()
 
