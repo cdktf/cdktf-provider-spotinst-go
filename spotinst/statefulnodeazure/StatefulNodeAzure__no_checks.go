@@ -232,6 +232,10 @@ func (j *jsiiProxy_StatefulNodeAzure) validateSetSpotSizesParameters(val *[]*str
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzure) validateSetUserDataParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulNodeAzure) validateSetZonesParameters(val *[]*string) error {
 	return nil
 }

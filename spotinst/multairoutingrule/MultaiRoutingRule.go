@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.124.0/docs/resources/multai_routing_rule spotinst_multai_routing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.125.0/docs/resources/multai_routing_rule spotinst_multai_routing_rule}.
 type MultaiRoutingRule interface {
 	cdktf.TerraformResource
 	BalancerId() *string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_MultaiRoutingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.124.0/docs/resources/multai_routing_rule spotinst_multai_routing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.125.0/docs/resources/multai_routing_rule spotinst_multai_routing_rule} Resource.
 func NewMultaiRoutingRule(scope constructs.Construct, id *string, config *MultaiRoutingRuleConfig) MultaiRoutingRule {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewMultaiRoutingRule(scope constructs.Construct, id *string, config *Multai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.124.0/docs/resources/multai_routing_rule spotinst_multai_routing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.125.0/docs/resources/multai_routing_rule spotinst_multai_routing_rule} Resource.
 func NewMultaiRoutingRule_Override(m MultaiRoutingRule, scope constructs.Construct, id *string, config *MultaiRoutingRuleConfig) {
 	_init_.Initialize()
 
