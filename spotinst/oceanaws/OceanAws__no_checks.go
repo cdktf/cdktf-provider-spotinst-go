@@ -80,6 +80,10 @@ func (o *jsiiProxy_OceanAws) validatePutLoggingParameters(value *OceanAwsLogging
 	return nil
 }
 
+func (o *jsiiProxy_OceanAws) validatePutResourceTagSpecificationParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAws) validatePutScheduledTaskParameters(value interface{}) error {
 	return nil
 }
