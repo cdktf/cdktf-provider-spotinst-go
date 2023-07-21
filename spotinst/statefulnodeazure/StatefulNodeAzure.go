@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.126.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.127.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
 type StatefulNodeAzure interface {
 	cdktf.TerraformResource
 	AttachDataDisk() StatefulNodeAzureAttachDataDiskList
@@ -155,6 +155,9 @@ type StatefulNodeAzure interface {
 	UserData() *string
 	SetUserData(val *string)
 	UserDataInput() *string
+	VmName() *string
+	SetVmName(val *string)
+	VmNameInput() *string
 	Zones() *[]*string
 	SetZones(val *[]*string)
 	ZonesInput() *[]*string
@@ -232,6 +235,7 @@ type StatefulNodeAzure interface {
 	ResetTag()
 	ResetUpdateState()
 	ResetUserData()
+	ResetVmName()
 	ResetZones()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -1188,6 +1192,26 @@ func (j *jsiiProxy_StatefulNodeAzure) UserDataInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StatefulNodeAzure) VmName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vmName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzure) VmNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vmNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulNodeAzure) Zones() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1209,7 +1233,7 @@ func (j *jsiiProxy_StatefulNodeAzure) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.126.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.127.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) StatefulNodeAzure {
 	_init_.Initialize()
 
@@ -1227,7 +1251,7 @@ func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *Statef
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.126.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.127.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure_Override(s StatefulNodeAzure, scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) {
 	_init_.Initialize()
 
@@ -1511,6 +1535,17 @@ func (j *jsiiProxy_StatefulNodeAzure)SetUserData(val *string) {
 	_jsii_.Set(
 		j,
 		"userData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulNodeAzure)SetVmName(val *string) {
+	if err := j.validateSetVmNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vmName",
 		val,
 	)
 }
@@ -2224,6 +2259,14 @@ func (s *jsiiProxy_StatefulNodeAzure) ResetUserData() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetUserData",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzure) ResetVmName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVmName",
 		nil, // no parameters
 	)
 }
