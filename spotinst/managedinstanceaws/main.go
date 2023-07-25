@@ -24,6 +24,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "cpuCredits", GoGetter: "CpuCredits"},
 			_jsii_.MemberProperty{JsiiProperty: "cpuCreditsInput", GoGetter: "CpuCreditsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "delete", GoGetter: "Delete"},
+			_jsii_.MemberProperty{JsiiProperty: "deleteInput", GoGetter: "DeleteInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
@@ -102,6 +104,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putBlockDeviceMappings", GoMethod: "PutBlockDeviceMappings"},
+			_jsii_.MemberMethod{JsiiMethod: "putDelete", GoMethod: "PutDelete"},
 			_jsii_.MemberMethod{JsiiMethod: "putIntegrationRoute53", GoMethod: "PutIntegrationRoute53"},
 			_jsii_.MemberMethod{JsiiMethod: "putLoadBalancers", GoMethod: "PutLoadBalancers"},
 			_jsii_.MemberMethod{JsiiMethod: "putManagedInstanceAction", GoMethod: "PutManagedInstanceAction"},
@@ -117,6 +120,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockDeviceMappings", GoMethod: "ResetBlockDeviceMappings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockDevicesMode", GoMethod: "ResetBlockDevicesMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCpuCredits", GoMethod: "ResetCpuCredits"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDelete", GoMethod: "ResetDelete"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDrainingTimeout", GoMethod: "ResetDrainingTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEbsOptimized", GoMethod: "ResetEbsOptimized"},
@@ -305,6 +309,81 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-spotinst.managedInstanceAws.ManagedInstanceAwsConfig",
 		reflect.TypeOf((*ManagedInstanceAwsConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.managedInstanceAws.ManagedInstanceAwsDelete",
+		reflect.TypeOf((*ManagedInstanceAwsDelete)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.managedInstanceAws.ManagedInstanceAwsDeleteList",
+		reflect.TypeOf((*ManagedInstanceAwsDeleteList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ManagedInstanceAwsDeleteList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.managedInstanceAws.ManagedInstanceAwsDeleteOutputReference",
+		reflect.TypeOf((*ManagedInstanceAwsDeleteOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "amiBackupShouldDeleteImages", GoGetter: "AmiBackupShouldDeleteImages"},
+			_jsii_.MemberProperty{JsiiProperty: "amiBackupShouldDeleteImagesInput", GoGetter: "AmiBackupShouldDeleteImagesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "deallocationConfigShouldDeleteImages", GoGetter: "DeallocationConfigShouldDeleteImages"},
+			_jsii_.MemberProperty{JsiiProperty: "deallocationConfigShouldDeleteImagesInput", GoGetter: "DeallocationConfigShouldDeleteImagesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAmiBackupShouldDeleteImages", GoMethod: "ResetAmiBackupShouldDeleteImages"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeallocationConfigShouldDeleteImages", GoMethod: "ResetDeallocationConfigShouldDeleteImages"},
+			_jsii_.MemberMethod{JsiiMethod: "resetShouldDeleteNetworkInterfaces", GoMethod: "ResetShouldDeleteNetworkInterfaces"},
+			_jsii_.MemberMethod{JsiiMethod: "resetShouldDeleteSnapshots", GoMethod: "ResetShouldDeleteSnapshots"},
+			_jsii_.MemberMethod{JsiiMethod: "resetShouldDeleteVolumes", GoMethod: "ResetShouldDeleteVolumes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetShouldTerminateInstance", GoMethod: "ResetShouldTerminateInstance"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "shouldDeleteNetworkInterfaces", GoGetter: "ShouldDeleteNetworkInterfaces"},
+			_jsii_.MemberProperty{JsiiProperty: "shouldDeleteNetworkInterfacesInput", GoGetter: "ShouldDeleteNetworkInterfacesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "shouldDeleteSnapshots", GoGetter: "ShouldDeleteSnapshots"},
+			_jsii_.MemberProperty{JsiiProperty: "shouldDeleteSnapshotsInput", GoGetter: "ShouldDeleteSnapshotsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "shouldDeleteVolumes", GoGetter: "ShouldDeleteVolumes"},
+			_jsii_.MemberProperty{JsiiProperty: "shouldDeleteVolumesInput", GoGetter: "ShouldDeleteVolumesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "shouldTerminateInstance", GoGetter: "ShouldTerminateInstance"},
+			_jsii_.MemberProperty{JsiiProperty: "shouldTerminateInstanceInput", GoGetter: "ShouldTerminateInstanceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ManagedInstanceAwsDeleteOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-spotinst.managedInstanceAws.ManagedInstanceAwsIntegrationRoute53",

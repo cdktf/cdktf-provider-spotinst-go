@@ -56,6 +56,10 @@ func (m *jsiiProxy_ManagedInstanceAws) validatePutBlockDeviceMappingsParameters(
 	return nil
 }
 
+func (m *jsiiProxy_ManagedInstanceAws) validatePutDeleteParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedInstanceAws) validatePutIntegrationRoute53Parameters(value *ManagedInstanceAwsIntegrationRoute53) error {
 	return nil
 }

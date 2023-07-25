@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.127.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.128.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws}.
 type ManagedInstanceAws interface {
 	cdktf.TerraformResource
 	AutoHealing() interface{}
@@ -35,6 +35,8 @@ type ManagedInstanceAws interface {
 	CpuCredits() *string
 	SetCpuCredits(val *string)
 	CpuCreditsInput() *string
+	Delete() ManagedInstanceAwsDeleteList
+	DeleteInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -210,6 +212,7 @@ type ManagedInstanceAws interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBlockDeviceMappings(value interface{})
+	PutDelete(value interface{})
 	PutIntegrationRoute53(value *ManagedInstanceAwsIntegrationRoute53)
 	PutLoadBalancers(value interface{})
 	PutManagedInstanceAction(value *ManagedInstanceAwsManagedInstanceAction)
@@ -222,6 +225,7 @@ type ManagedInstanceAws interface {
 	ResetBlockDeviceMappings()
 	ResetBlockDevicesMode()
 	ResetCpuCredits()
+	ResetDelete()
 	ResetDescription()
 	ResetDrainingTimeout()
 	ResetEbsOptimized()
@@ -389,6 +393,26 @@ func (j *jsiiProxy_ManagedInstanceAws) CpuCreditsInput() *string {
 	_jsii_.Get(
 		j,
 		"cpuCreditsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedInstanceAws) Delete() ManagedInstanceAwsDeleteList {
+	var returns ManagedInstanceAwsDeleteList
+	_jsii_.Get(
+		j,
+		"delete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedInstanceAws) DeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteInput",
 		&returns,
 	)
 	return returns
@@ -1335,7 +1359,7 @@ func (j *jsiiProxy_ManagedInstanceAws) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.127.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.128.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
 func NewManagedInstanceAws(scope constructs.Construct, id *string, config *ManagedInstanceAwsConfig) ManagedInstanceAws {
 	_init_.Initialize()
 
@@ -1353,7 +1377,7 @@ func NewManagedInstanceAws(scope constructs.Construct, id *string, config *Manag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.127.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.128.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
 func NewManagedInstanceAws_Override(m ManagedInstanceAws, scope constructs.Construct, id *string, config *ManagedInstanceAwsConfig) {
 	_init_.Initialize()
 
@@ -2105,6 +2129,17 @@ func (m *jsiiProxy_ManagedInstanceAws) PutBlockDeviceMappings(value interface{})
 	)
 }
 
+func (m *jsiiProxy_ManagedInstanceAws) PutDelete(value interface{}) {
+	if err := m.validatePutDeleteParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putDelete",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ManagedInstanceAws) PutIntegrationRoute53(value *ManagedInstanceAwsIntegrationRoute53) {
 	if err := m.validatePutIntegrationRoute53Parameters(value); err != nil {
 		panic(err)
@@ -2221,6 +2256,14 @@ func (m *jsiiProxy_ManagedInstanceAws) ResetCpuCredits() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetCpuCredits",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedInstanceAws) ResetDelete() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDelete",
 		nil, // no parameters
 	)
 }
