@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.128.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.129.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
 type StatefulNodeAzure interface {
 	cdktf.TerraformResource
 	AttachDataDisk() StatefulNodeAzureAttachDataDiskList
@@ -217,9 +217,12 @@ type StatefulNodeAzure interface {
 	ResetExtension()
 	ResetHealth()
 	ResetId()
+	ResetImage()
 	ResetImportVm()
 	ResetLoadBalancer()
+	ResetLogin()
 	ResetManagedServiceIdentities()
+	ResetNetwork()
 	ResetOsDisk()
 	ResetOsDiskPersistenceMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -1233,7 +1236,7 @@ func (j *jsiiProxy_StatefulNodeAzure) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.128.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.129.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) StatefulNodeAzure {
 	_init_.Initialize()
 
@@ -1251,7 +1254,7 @@ func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *Statef
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.128.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.129.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure_Override(s StatefulNodeAzure, scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) {
 	_init_.Initialize()
 
@@ -2135,6 +2138,14 @@ func (s *jsiiProxy_StatefulNodeAzure) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_StatefulNodeAzure) ResetImage() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetImage",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StatefulNodeAzure) ResetImportVm() {
 	_jsii_.InvokeVoid(
 		s,
@@ -2151,10 +2162,26 @@ func (s *jsiiProxy_StatefulNodeAzure) ResetLoadBalancer() {
 	)
 }
 
+func (s *jsiiProxy_StatefulNodeAzure) ResetLogin() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLogin",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StatefulNodeAzure) ResetManagedServiceIdentities() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetManagedServiceIdentities",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzure) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNetwork",
 		nil, // no parameters
 	)
 }

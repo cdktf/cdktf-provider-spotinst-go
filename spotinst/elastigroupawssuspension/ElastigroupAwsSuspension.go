@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.128.0/docs/resources/elastigroup_aws_suspension spotinst_elastigroup_aws_suspension}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.129.0/docs/resources/elastigroup_aws_suspension spotinst_elastigroup_aws_suspension}.
 type ElastigroupAwsSuspension interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ElastigroupAwsSuspension) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.128.0/docs/resources/elastigroup_aws_suspension spotinst_elastigroup_aws_suspension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.129.0/docs/resources/elastigroup_aws_suspension spotinst_elastigroup_aws_suspension} Resource.
 func NewElastigroupAwsSuspension(scope constructs.Construct, id *string, config *ElastigroupAwsSuspensionConfig) ElastigroupAwsSuspension {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewElastigroupAwsSuspension(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.128.0/docs/resources/elastigroup_aws_suspension spotinst_elastigroup_aws_suspension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.129.0/docs/resources/elastigroup_aws_suspension spotinst_elastigroup_aws_suspension} Resource.
 func NewElastigroupAwsSuspension_Override(e ElastigroupAwsSuspension, scope constructs.Construct, id *string, config *ElastigroupAwsSuspensionConfig) {
 	_init_.Initialize()
 
