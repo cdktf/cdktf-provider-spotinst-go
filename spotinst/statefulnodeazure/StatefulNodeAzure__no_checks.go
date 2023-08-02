@@ -116,6 +116,10 @@ func (s *jsiiProxy_StatefulNodeAzure) validatePutSecretParameters(value interfac
 	return nil
 }
 
+func (s *jsiiProxy_StatefulNodeAzure) validatePutSecurityParameters(value *StatefulNodeAzureSecurity) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulNodeAzure) validatePutSignalParameters(value interface{}) error {
 	return nil
 }

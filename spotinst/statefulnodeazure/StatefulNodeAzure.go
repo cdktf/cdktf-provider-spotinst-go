@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.130.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.131.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
 type StatefulNodeAzure interface {
 	cdktf.TerraformResource
 	AttachDataDisk() StatefulNodeAzureAttachDataDiskList
@@ -120,6 +120,8 @@ type StatefulNodeAzure interface {
 	SchedulingTaskInput() interface{}
 	Secret() StatefulNodeAzureSecretList
 	SecretInput() interface{}
+	Security() StatefulNodeAzureSecurityOutputReference
+	SecurityInput() *StatefulNodeAzureSecurity
 	ShouldPersistDataDisks() interface{}
 	SetShouldPersistDataDisks(val interface{})
 	ShouldPersistDataDisksInput() interface{}
@@ -202,6 +204,7 @@ type StatefulNodeAzure interface {
 	PutOsDisk(value *StatefulNodeAzureOsDisk)
 	PutSchedulingTask(value interface{})
 	PutSecret(value interface{})
+	PutSecurity(value *StatefulNodeAzureSecurity)
 	PutSignal(value interface{})
 	PutStrategy(value *StatefulNodeAzureStrategy)
 	PutTag(value interface{})
@@ -232,6 +235,7 @@ type StatefulNodeAzure interface {
 	ResetPreferredZones()
 	ResetSchedulingTask()
 	ResetSecret()
+	ResetSecurity()
 	ResetShouldPersistVm()
 	ResetShutdownScript()
 	ResetSignal()
@@ -945,6 +949,26 @@ func (j *jsiiProxy_StatefulNodeAzure) SecretInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StatefulNodeAzure) Security() StatefulNodeAzureSecurityOutputReference {
+	var returns StatefulNodeAzureSecurityOutputReference
+	_jsii_.Get(
+		j,
+		"security",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzure) SecurityInput() *StatefulNodeAzureSecurity {
+	var returns *StatefulNodeAzureSecurity
+	_jsii_.Get(
+		j,
+		"securityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulNodeAzure) ShouldPersistDataDisks() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1236,7 +1260,7 @@ func (j *jsiiProxy_StatefulNodeAzure) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.130.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.131.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) StatefulNodeAzure {
 	_init_.Initialize()
 
@@ -1254,7 +1278,7 @@ func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *Statef
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.130.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.131.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure_Override(s StatefulNodeAzure, scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) {
 	_init_.Initialize()
 
@@ -2006,6 +2030,17 @@ func (s *jsiiProxy_StatefulNodeAzure) PutSecret(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_StatefulNodeAzure) PutSecurity(value *StatefulNodeAzureSecurity) {
+	if err := s.validatePutSecurityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSecurity",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StatefulNodeAzure) PutSignal(value interface{}) {
 	if err := s.validatePutSignalParameters(value); err != nil {
 		panic(err)
@@ -2238,6 +2273,14 @@ func (s *jsiiProxy_StatefulNodeAzure) ResetSecret() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSecret",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzure) ResetSecurity() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecurity",
 		nil, // no parameters
 	)
 }

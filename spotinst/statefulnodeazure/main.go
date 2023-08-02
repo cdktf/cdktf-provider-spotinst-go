@@ -99,6 +99,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOsDisk", GoMethod: "PutOsDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "putSchedulingTask", GoMethod: "PutSchedulingTask"},
 			_jsii_.MemberMethod{JsiiMethod: "putSecret", GoMethod: "PutSecret"},
+			_jsii_.MemberMethod{JsiiMethod: "putSecurity", GoMethod: "PutSecurity"},
 			_jsii_.MemberMethod{JsiiMethod: "putSignal", GoMethod: "PutSignal"},
 			_jsii_.MemberMethod{JsiiMethod: "putStrategy", GoMethod: "PutStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTag", GoMethod: "PutTag"},
@@ -130,6 +131,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPreferredZones", GoMethod: "ResetPreferredZones"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchedulingTask", GoMethod: "ResetSchedulingTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecret", GoMethod: "ResetSecret"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecurity", GoMethod: "ResetSecurity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetShouldPersistVm", GoMethod: "ResetShouldPersistVm"},
 			_jsii_.MemberMethod{JsiiMethod: "resetShutdownScript", GoMethod: "ResetShutdownScript"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSignal", GoMethod: "ResetSignal"},
@@ -144,6 +146,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "schedulingTaskInput", GoGetter: "SchedulingTaskInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secret", GoGetter: "Secret"},
 			_jsii_.MemberProperty{JsiiProperty: "secretInput", GoGetter: "SecretInput"},
+			_jsii_.MemberProperty{JsiiProperty: "security", GoGetter: "Security"},
+			_jsii_.MemberProperty{JsiiProperty: "securityInput", GoGetter: "SecurityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "shouldPersistDataDisks", GoGetter: "ShouldPersistDataDisks"},
 			_jsii_.MemberProperty{JsiiProperty: "shouldPersistDataDisksInput", GoGetter: "ShouldPersistDataDisksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "shouldPersistNetwork", GoGetter: "ShouldPersistNetwork"},
@@ -1796,6 +1800,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.statefulNodeAzure.StatefulNodeAzureSecurity",
+		reflect.TypeOf((*StatefulNodeAzureSecurity)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.statefulNodeAzure.StatefulNodeAzureSecurityOutputReference",
+		reflect.TypeOf((*StatefulNodeAzureSecurityOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecureBootEnabled", GoMethod: "ResetSecureBootEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecurityType", GoMethod: "ResetSecurityType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVtpmEnabled", GoMethod: "ResetVtpmEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "secureBootEnabled", GoGetter: "SecureBootEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "secureBootEnabledInput", GoGetter: "SecureBootEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "securityType", GoGetter: "SecurityType"},
+			_jsii_.MemberProperty{JsiiProperty: "securityTypeInput", GoGetter: "SecurityTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vtpmEnabled", GoGetter: "VtpmEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "vtpmEnabledInput", GoGetter: "VtpmEnabledInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_StatefulNodeAzureSecurityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
