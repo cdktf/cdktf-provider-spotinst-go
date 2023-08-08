@@ -136,6 +136,10 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetOsDiskTypeParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetOsSkuParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetOsTypeParameters(val *string) error {
 	return nil
 }

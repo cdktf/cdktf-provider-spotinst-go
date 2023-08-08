@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.131.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.132.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
 type OceanAksNpVirtualNodeGroup interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -82,6 +82,9 @@ type OceanAksNpVirtualNodeGroup interface {
 	OsDiskType() *string
 	SetOsDiskType(val *string)
 	OsDiskTypeInput() *string
+	OsSku() *string
+	SetOsSku(val *string)
+	OsSkuInput() *string
 	OsType() *string
 	SetOsType(val *string)
 	OsTypeInput() *string
@@ -149,6 +152,7 @@ type OceanAksNpVirtualNodeGroup interface {
 	ResetMinCount()
 	ResetOsDiskSizeGb()
 	ResetOsDiskType()
+	ResetOsSku()
 	ResetOsType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -551,6 +555,26 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) OsDiskTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) OsSku() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osSku",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) OsSkuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osSkuInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) OsType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -692,7 +716,7 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.131.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.132.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) OceanAksNpVirtualNodeGroup {
 	_init_.Initialize()
 
@@ -710,7 +734,7 @@ func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.131.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.132.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup_Override(o OceanAksNpVirtualNodeGroup, scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) {
 	_init_.Initialize()
 
@@ -898,6 +922,17 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup)SetOsDiskType(val *string) {
 	_jsii_.Set(
 		j,
 		"osDiskType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup)SetOsSku(val *string) {
+	if err := j.validateSetOsSkuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"osSku",
 		val,
 	)
 }
@@ -1345,6 +1380,14 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetOsDiskType() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOsDiskType",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetOsSku() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOsSku",
 		nil, // no parameters
 	)
 }

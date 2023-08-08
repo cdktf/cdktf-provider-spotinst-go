@@ -136,6 +136,10 @@ func (e *jsiiProxy_ElastigroupAws) validatePutNetworkInterfaceParameters(value i
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAws) validatePutResourceRequirementsParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAws) validatePutResourceTagSpecificationParameters(value interface{}) error {
 	return nil
 }
@@ -325,6 +329,10 @@ func (j *jsiiProxy_ElastigroupAws) validateSetNameParameters(val *string) error 
 }
 
 func (j *jsiiProxy_ElastigroupAws) validateSetOndemandCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAws) validateSetOnDemandTypesParameters(val *[]*string) error {
 	return nil
 }
 

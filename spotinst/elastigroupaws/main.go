@@ -134,6 +134,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "ondemandCount", GoGetter: "OndemandCount"},
 			_jsii_.MemberProperty{JsiiProperty: "ondemandCountInput", GoGetter: "OndemandCountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "onDemandTypes", GoGetter: "OnDemandTypes"},
+			_jsii_.MemberProperty{JsiiProperty: "onDemandTypesInput", GoGetter: "OnDemandTypesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "orientation", GoGetter: "Orientation"},
 			_jsii_.MemberProperty{JsiiProperty: "orientationInput", GoGetter: "OrientationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
@@ -174,6 +176,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMultaiTargetSets", GoMethod: "PutMultaiTargetSets"},
 			_jsii_.MemberMethod{JsiiMethod: "putMultipleMetrics", GoMethod: "PutMultipleMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkInterface", GoMethod: "PutNetworkInterface"},
+			_jsii_.MemberMethod{JsiiMethod: "putResourceRequirements", GoMethod: "PutResourceRequirements"},
 			_jsii_.MemberMethod{JsiiMethod: "putResourceTagSpecification", GoMethod: "PutResourceTagSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "putRevertToSpot", GoMethod: "PutRevertToSpot"},
 			_jsii_.MemberMethod{JsiiMethod: "putScalingDownPolicy", GoMethod: "PutScalingDownPolicy"},
@@ -212,7 +215,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetImageId", GoMethod: "ResetImageId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImages", GoMethod: "ResetImages"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImmediateOdRecoverThreshold", GoMethod: "ResetImmediateOdRecoverThreshold"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTypesOndemand", GoMethod: "ResetInstanceTypesOndemand"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTypesPreferredSpot", GoMethod: "ResetInstanceTypesPreferredSpot"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTypesSpot", GoMethod: "ResetInstanceTypesSpot"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTypesWeights", GoMethod: "ResetInstanceTypesWeights"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIntegrationBeanstalk", GoMethod: "ResetIntegrationBeanstalk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIntegrationCodedeploy", GoMethod: "ResetIntegrationCodedeploy"},
@@ -236,6 +241,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMultipleMetrics", GoMethod: "ResetMultipleMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkInterface", GoMethod: "ResetNetworkInterface"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOndemandCount", GoMethod: "ResetOndemandCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnDemandTypes", GoMethod: "ResetOnDemandTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPersistBlockDevices", GoMethod: "ResetPersistBlockDevices"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPersistPrivateIp", GoMethod: "ResetPersistPrivateIp"},
@@ -244,6 +250,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPreferredAvailabilityZones", GoMethod: "ResetPreferredAvailabilityZones"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivateIps", GoMethod: "ResetPrivateIps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceRequirements", GoMethod: "ResetResourceRequirements"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResourceTagSpecification", GoMethod: "ResetResourceTagSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRevertToSpot", GoMethod: "ResetRevertToSpot"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScalingDownPolicy", GoMethod: "ResetScalingDownPolicy"},
@@ -265,6 +272,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetUtilizeReservedInstances", GoMethod: "ResetUtilizeReservedInstances"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWaitForCapacity", GoMethod: "ResetWaitForCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWaitForCapacityTimeout", GoMethod: "ResetWaitForCapacityTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceRequirements", GoGetter: "ResourceRequirements"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceRequirementsInput", GoGetter: "ResourceRequirementsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceTagSpecification", GoGetter: "ResourceTagSpecification"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceTagSpecificationInput", GoGetter: "ResourceTagSpecificationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "revertToSpot", GoGetter: "RevertToSpot"},
@@ -3123,6 +3132,86 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElastigroupAwsNetworkInterfaceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsResourceRequirements",
+		reflect.TypeOf((*ElastigroupAwsResourceRequirements)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsResourceRequirementsList",
+		reflect.TypeOf((*ElastigroupAwsResourceRequirementsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ElastigroupAwsResourceRequirementsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsResourceRequirementsOutputReference",
+		reflect.TypeOf((*ElastigroupAwsResourceRequirementsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedInstanceFamilies", GoGetter: "ExcludedInstanceFamilies"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedInstanceFamiliesInput", GoGetter: "ExcludedInstanceFamiliesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedInstanceGenerations", GoGetter: "ExcludedInstanceGenerations"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedInstanceGenerationsInput", GoGetter: "ExcludedInstanceGenerationsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedInstanceTypes", GoGetter: "ExcludedInstanceTypes"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedInstanceTypesInput", GoGetter: "ExcludedInstanceTypesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredGpuMaximum", GoGetter: "RequiredGpuMaximum"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredGpuMaximumInput", GoGetter: "RequiredGpuMaximumInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredGpuMinimum", GoGetter: "RequiredGpuMinimum"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredGpuMinimumInput", GoGetter: "RequiredGpuMinimumInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredMemoryMaximum", GoGetter: "RequiredMemoryMaximum"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredMemoryMaximumInput", GoGetter: "RequiredMemoryMaximumInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredMemoryMinimum", GoGetter: "RequiredMemoryMinimum"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredMemoryMinimumInput", GoGetter: "RequiredMemoryMinimumInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredVcpuMaximum", GoGetter: "RequiredVcpuMaximum"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredVcpuMaximumInput", GoGetter: "RequiredVcpuMaximumInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredVcpuMinimum", GoGetter: "RequiredVcpuMinimum"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredVcpuMinimumInput", GoGetter: "RequiredVcpuMinimumInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludedInstanceFamilies", GoMethod: "ResetExcludedInstanceFamilies"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludedInstanceGenerations", GoMethod: "ResetExcludedInstanceGenerations"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludedInstanceTypes", GoMethod: "ResetExcludedInstanceTypes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequiredGpuMaximum", GoMethod: "ResetRequiredGpuMaximum"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequiredGpuMinimum", GoMethod: "ResetRequiredGpuMinimum"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ElastigroupAwsResourceRequirementsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.131.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.132.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
 type ElastigroupAws interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -174,6 +174,9 @@ type ElastigroupAws interface {
 	OndemandCount() *float64
 	SetOndemandCount(val *float64)
 	OndemandCountInput() *float64
+	OnDemandTypes() *[]*string
+	SetOnDemandTypes(val *[]*string)
+	OnDemandTypesInput() *[]*string
 	Orientation() *string
 	SetOrientation(val *string)
 	OrientationInput() *string
@@ -211,6 +214,8 @@ type ElastigroupAws interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ResourceRequirements() ElastigroupAwsResourceRequirementsList
+	ResourceRequirementsInput() interface{}
 	ResourceTagSpecification() ElastigroupAwsResourceTagSpecificationList
 	ResourceTagSpecificationInput() interface{}
 	RevertToSpot() ElastigroupAwsRevertToSpotOutputReference
@@ -317,6 +322,7 @@ type ElastigroupAws interface {
 	PutMultaiTargetSets(value interface{})
 	PutMultipleMetrics(value *ElastigroupAwsMultipleMetrics)
 	PutNetworkInterface(value interface{})
+	PutResourceRequirements(value interface{})
 	PutResourceTagSpecification(value interface{})
 	PutRevertToSpot(value *ElastigroupAwsRevertToSpot)
 	PutScalingDownPolicy(value interface{})
@@ -352,7 +358,9 @@ type ElastigroupAws interface {
 	ResetImageId()
 	ResetImages()
 	ResetImmediateOdRecoverThreshold()
+	ResetInstanceTypesOndemand()
 	ResetInstanceTypesPreferredSpot()
+	ResetInstanceTypesSpot()
 	ResetInstanceTypesWeights()
 	ResetIntegrationBeanstalk()
 	ResetIntegrationCodedeploy()
@@ -376,6 +384,7 @@ type ElastigroupAws interface {
 	ResetMultipleMetrics()
 	ResetNetworkInterface()
 	ResetOndemandCount()
+	ResetOnDemandTypes()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -386,6 +395,7 @@ type ElastigroupAws interface {
 	ResetPreferredAvailabilityZones()
 	ResetPrivateIps()
 	ResetRegion()
+	ResetResourceRequirements()
 	ResetResourceTagSpecification()
 	ResetRevertToSpot()
 	ResetScalingDownPolicy()
@@ -1542,6 +1552,26 @@ func (j *jsiiProxy_ElastigroupAws) OndemandCountInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAws) OnDemandTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onDemandTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) OnDemandTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"onDemandTypesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAws) Orientation() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1747,6 +1777,26 @@ func (j *jsiiProxy_ElastigroupAws) RegionInput() *string {
 	_jsii_.Get(
 		j,
 		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) ResourceRequirements() ElastigroupAwsResourceRequirementsList {
+	var returns ElastigroupAwsResourceRequirementsList
+	_jsii_.Get(
+		j,
+		"resourceRequirements",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) ResourceRequirementsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceRequirementsInput",
 		&returns,
 	)
 	return returns
@@ -2223,7 +2273,7 @@ func (j *jsiiProxy_ElastigroupAws) WaitForCapacityTimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.131.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.132.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws(scope constructs.Construct, id *string, config *ElastigroupAwsConfig) ElastigroupAws {
 	_init_.Initialize()
 
@@ -2241,7 +2291,7 @@ func NewElastigroupAws(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.131.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.132.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws_Override(e ElastigroupAws, scope constructs.Construct, id *string, config *ElastigroupAwsConfig) {
 	_init_.Initialize()
 
@@ -2627,6 +2677,17 @@ func (j *jsiiProxy_ElastigroupAws)SetOndemandCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"ondemandCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAws)SetOnDemandTypes(val *[]*string) {
+	if err := j.validateSetOnDemandTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onDemandTypes",
 		val,
 	)
 }
@@ -3356,6 +3417,17 @@ func (e *jsiiProxy_ElastigroupAws) PutNetworkInterface(value interface{}) {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAws) PutResourceRequirements(value interface{}) {
+	if err := e.validatePutResourceRequirementsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putResourceRequirements",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAws) PutResourceTagSpecification(value interface{}) {
 	if err := e.validatePutResourceTagSpecificationParameters(value); err != nil {
 		panic(err)
@@ -3672,10 +3744,26 @@ func (e *jsiiProxy_ElastigroupAws) ResetImmediateOdRecoverThreshold() {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAws) ResetInstanceTypesOndemand() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetInstanceTypesOndemand",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAws) ResetInstanceTypesPreferredSpot() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetInstanceTypesPreferredSpot",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAws) ResetInstanceTypesSpot() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetInstanceTypesSpot",
 		nil, // no parameters
 	)
 }
@@ -3864,6 +3952,14 @@ func (e *jsiiProxy_ElastigroupAws) ResetOndemandCount() {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAws) ResetOnDemandTypes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOnDemandTypes",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAws) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
@@ -3924,6 +4020,14 @@ func (e *jsiiProxy_ElastigroupAws) ResetRegion() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAws) ResetResourceRequirements() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetResourceRequirements",
 		nil, // no parameters
 	)
 }

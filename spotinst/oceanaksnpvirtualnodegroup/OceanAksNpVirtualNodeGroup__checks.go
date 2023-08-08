@@ -426,6 +426,14 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetOsDiskTypeParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetOsSkuParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetOsTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

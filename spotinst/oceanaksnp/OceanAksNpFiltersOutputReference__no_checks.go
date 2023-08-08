@@ -60,6 +60,10 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetExcludeSeriesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetInternalValueParameters(val *OceanAksNpFilters) error {
 	return nil
 }

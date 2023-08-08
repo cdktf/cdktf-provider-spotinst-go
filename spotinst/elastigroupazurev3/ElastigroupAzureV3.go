@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.131.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.132.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3}.
 type ElastigroupAzureV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -734,7 +734,7 @@ func (j *jsiiProxy_ElastigroupAzureV3) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.131.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.132.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
 func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) ElastigroupAzureV3 {
 	_init_.Initialize()
 
@@ -752,7 +752,7 @@ func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *Elast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.131.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.132.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
 func NewElastigroupAzureV3_Override(e ElastigroupAzureV3, scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) {
 	_init_.Initialize()
 

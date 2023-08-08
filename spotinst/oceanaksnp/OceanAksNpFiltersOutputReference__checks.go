@@ -171,6 +171,14 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetExcludeSeriesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetInternalValueParameters(val *OceanAksNpFilters) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

@@ -164,6 +164,10 @@ func (j *jsiiProxy_OceanAksNp) validateSetOsDiskTypeParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNp) validateSetOsSkuParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNp) validateSetOsTypeParameters(val *string) error {
 	return nil
 }

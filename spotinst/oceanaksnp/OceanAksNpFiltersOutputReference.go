@@ -28,6 +28,9 @@ type OceanAksNpFiltersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludeSeries() *[]*string
+	SetExcludeSeries(val *[]*string)
+	ExcludeSeriesInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *OceanAksNpFilters
@@ -80,6 +83,7 @@ type OceanAksNpFiltersOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetArchitectures()
+	ResetExcludeSeries()
 	ResetMaxMemoryGib()
 	ResetMaxVcpu()
 	ResetMinMemoryGib()
@@ -145,6 +149,26 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) CreationStack() *[]*string 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) ExcludeSeries() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeSeries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) ExcludeSeriesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeSeriesInput",
 		&returns,
 	)
 	return returns
@@ -347,6 +371,17 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetComplexObjectIsFromSet(va
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetExcludeSeries(val *[]*string) {
+	if err := j.validateSetExcludeSeriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeSeries",
 		val,
 	)
 }
@@ -629,6 +664,14 @@ func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetArchitectures() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetArchitectures",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetExcludeSeries() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetExcludeSeries",
 		nil, // no parameters
 	)
 }
