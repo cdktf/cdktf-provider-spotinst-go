@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.132.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.133.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
 type StatefulNodeAzure interface {
 	cdktf.TerraformResource
 	AttachDataDisk() StatefulNodeAzureAttachDataDiskList
@@ -97,9 +97,9 @@ type StatefulNodeAzure interface {
 	PreferredSpotSizes() *[]*string
 	SetPreferredSpotSizes(val *[]*string)
 	PreferredSpotSizesInput() *[]*string
-	PreferredZones() *string
-	SetPreferredZones(val *string)
-	PreferredZonesInput() *string
+	PreferredZone() *string
+	SetPreferredZone(val *string)
+	PreferredZoneInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -232,7 +232,7 @@ type StatefulNodeAzure interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreferredSpotSizes()
-	ResetPreferredZones()
+	ResetPreferredZone()
 	ResetSchedulingTask()
 	ResetSecret()
 	ResetSecurity()
@@ -819,21 +819,21 @@ func (j *jsiiProxy_StatefulNodeAzure) PreferredSpotSizesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) PreferredZones() *string {
+func (j *jsiiProxy_StatefulNodeAzure) PreferredZone() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"preferredZones",
+		"preferredZone",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) PreferredZonesInput() *string {
+func (j *jsiiProxy_StatefulNodeAzure) PreferredZoneInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"preferredZonesInput",
+		"preferredZoneInput",
 		&returns,
 	)
 	return returns
@@ -1260,7 +1260,7 @@ func (j *jsiiProxy_StatefulNodeAzure) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.132.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.133.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) StatefulNodeAzure {
 	_init_.Initialize()
 
@@ -1278,7 +1278,7 @@ func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *Statef
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.132.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.133.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure_Override(s StatefulNodeAzure, scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) {
 	_init_.Initialize()
 
@@ -1437,13 +1437,13 @@ func (j *jsiiProxy_StatefulNodeAzure)SetPreferredSpotSizes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure)SetPreferredZones(val *string) {
-	if err := j.validateSetPreferredZonesParameters(val); err != nil {
+func (j *jsiiProxy_StatefulNodeAzure)SetPreferredZone(val *string) {
+	if err := j.validateSetPreferredZoneParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"preferredZones",
+		"preferredZone",
 		val,
 	)
 }
@@ -2253,10 +2253,10 @@ func (s *jsiiProxy_StatefulNodeAzure) ResetPreferredSpotSizes() {
 	)
 }
 
-func (s *jsiiProxy_StatefulNodeAzure) ResetPreferredZones() {
+func (s *jsiiProxy_StatefulNodeAzure) ResetPreferredZone() {
 	_jsii_.InvokeVoid(
 		s,
-		"resetPreferredZones",
+		"resetPreferredZone",
 		nil, // no parameters
 	)
 }

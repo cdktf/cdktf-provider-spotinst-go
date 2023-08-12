@@ -196,7 +196,7 @@ func (j *jsiiProxy_StatefulNodeAzure) validateSetPreferredSpotSizesParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) validateSetPreferredZonesParameters(val *string) error {
+func (j *jsiiProxy_StatefulNodeAzure) validateSetPreferredZoneParameters(val *string) error {
 	return nil
 }
 
