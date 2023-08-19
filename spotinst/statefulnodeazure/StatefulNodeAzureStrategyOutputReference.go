@@ -10,6 +10,8 @@ import (
 
 type StatefulNodeAzureStrategyOutputReference interface {
 	cdktf.ComplexObject
+	CapacityReservation() StatefulNodeAzureStrategyCapacityReservationList
+	CapacityReservationInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -75,7 +77,9 @@ type StatefulNodeAzureStrategyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCapacityReservation(value interface{})
 	PutRevertToSpot(value *StatefulNodeAzureStrategyRevertToSpot)
+	ResetCapacityReservation()
 	ResetDrainingTimeout()
 	ResetOptimizationWindows()
 	ResetPreferredLifeCycle()
@@ -93,6 +97,26 @@ type StatefulNodeAzureStrategyOutputReference interface {
 // The jsii proxy struct for StatefulNodeAzureStrategyOutputReference
 type jsiiProxy_StatefulNodeAzureStrategyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) CapacityReservation() StatefulNodeAzureStrategyCapacityReservationList {
+	var returns StatefulNodeAzureStrategyCapacityReservationList
+	_jsii_.Get(
+		j,
+		"capacityReservation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) CapacityReservationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"capacityReservationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) ComplexObjectIndex() interface{} {
@@ -578,6 +602,17 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) PutCapacityReservation(value interface{}) {
+	if err := s.validatePutCapacityReservationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCapacityReservation",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) PutRevertToSpot(value *StatefulNodeAzureStrategyRevertToSpot) {
 	if err := s.validatePutRevertToSpotParameters(value); err != nil {
 		panic(err)
@@ -586,6 +621,14 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) PutRevertToSpot(val
 		s,
 		"putRevertToSpot",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) ResetCapacityReservation() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCapacityReservation",
+		nil, // no parameters
 	)
 }
 

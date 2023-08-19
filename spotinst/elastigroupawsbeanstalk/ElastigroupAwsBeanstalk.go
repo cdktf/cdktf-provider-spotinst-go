@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.133.0/docs/resources/elastigroup_aws_beanstalk spotinst_elastigroup_aws_beanstalk}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.134.0/docs/resources/elastigroup_aws_beanstalk spotinst_elastigroup_aws_beanstalk}.
 type ElastigroupAwsBeanstalk interface {
 	cdktf.TerraformResource
 	BeanstalkEnvironmentId() *string
@@ -591,7 +591,7 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.133.0/docs/resources/elastigroup_aws_beanstalk spotinst_elastigroup_aws_beanstalk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.134.0/docs/resources/elastigroup_aws_beanstalk spotinst_elastigroup_aws_beanstalk} Resource.
 func NewElastigroupAwsBeanstalk(scope constructs.Construct, id *string, config *ElastigroupAwsBeanstalkConfig) ElastigroupAwsBeanstalk {
 	_init_.Initialize()
 
@@ -609,7 +609,7 @@ func NewElastigroupAwsBeanstalk(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.133.0/docs/resources/elastigroup_aws_beanstalk spotinst_elastigroup_aws_beanstalk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.134.0/docs/resources/elastigroup_aws_beanstalk spotinst_elastigroup_aws_beanstalk} Resource.
 func NewElastigroupAwsBeanstalk_Override(e ElastigroupAwsBeanstalk, scope constructs.Construct, id *string, config *ElastigroupAwsBeanstalkConfig) {
 	_init_.Initialize()
 

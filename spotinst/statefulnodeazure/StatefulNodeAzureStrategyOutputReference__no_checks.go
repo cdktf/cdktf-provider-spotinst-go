@@ -44,6 +44,10 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateInterpolati
 	return nil
 }
 
+func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validatePutCapacityReservationParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validatePutRevertToSpotParameters(value *StatefulNodeAzureStrategyRevertToSpot) error {
 	return nil
 }
