@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package elastigroupazure
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v9/elastigroupazure/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/elastigroupazure/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
