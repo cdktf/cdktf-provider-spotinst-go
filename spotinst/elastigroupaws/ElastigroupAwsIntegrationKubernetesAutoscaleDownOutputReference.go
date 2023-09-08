@@ -35,6 +35,9 @@ type ElastigroupAwsIntegrationKubernetesAutoscaleDownOutputReference interface {
 	Fqn() *string
 	InternalValue() *ElastigroupAwsIntegrationKubernetesAutoscaleDown
 	SetInternalValue(val *ElastigroupAwsIntegrationKubernetesAutoscaleDown)
+	MaxScaleDownPercentage() *float64
+	SetMaxScaleDownPercentage(val *float64)
+	MaxScaleDownPercentageInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type ElastigroupAwsIntegrationKubernetesAutoscaleDownOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEvaluationPeriods()
+	ResetMaxScaleDownPercentage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleDownOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleDownOutputReference) MaxScaleDownPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxScaleDownPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleDownOutputReference) MaxScaleDownPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxScaleDownPercentageInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleDownOutputReferen
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleDownOutputReference)SetMaxScaleDownPercentage(val *float64) {
+	if err := j.validateSetMaxScaleDownPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxScaleDownPercentage",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleDownOutputReferen
 	_jsii_.InvokeVoid(
 		e,
 		"resetEvaluationPeriods",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleDownOutputReference) ResetMaxScaleDownPercentage() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMaxScaleDownPercentage",
 		nil, // no parameters
 	)
 }

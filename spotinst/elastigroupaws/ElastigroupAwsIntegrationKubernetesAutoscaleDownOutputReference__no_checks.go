@@ -67,6 +67,10 @@ func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleDownOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleDownOutputReference) validateSetMaxScaleDownPercentageParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleDownOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

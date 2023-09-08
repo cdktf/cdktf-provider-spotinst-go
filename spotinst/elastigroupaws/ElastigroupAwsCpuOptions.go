@@ -5,7 +5,7 @@ package elastigroupaws
 
 
 type ElastigroupAwsCpuOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.135.0/docs/resources/elastigroup_aws#threads_per_core ElastigroupAws#threads_per_core}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.136.0/docs/resources/elastigroup_aws#threads_per_core ElastigroupAws#threads_per_core}.
 	ThreadsPerCore *float64 `field:"required" json:"threadsPerCore" yaml:"threadsPerCore"`
 }
 
