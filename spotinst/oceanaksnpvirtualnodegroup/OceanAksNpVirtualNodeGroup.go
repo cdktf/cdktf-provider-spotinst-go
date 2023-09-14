@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.136.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.138.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
 type OceanAksNpVirtualNodeGroup interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -55,6 +55,9 @@ type OceanAksNpVirtualNodeGroup interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KubernetesVersion() *string
+	SetKubernetesVersion(val *string)
+	KubernetesVersionInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -149,6 +152,7 @@ type OceanAksNpVirtualNodeGroup interface {
 	ResetFilters()
 	ResetHeadrooms()
 	ResetId()
+	ResetKubernetesVersion()
 	ResetLabels()
 	ResetMaxCount()
 	ResetMaxPodsPerNode()
@@ -373,6 +377,26 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) KubernetesVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kubernetesVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) KubernetesVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kubernetesVersionInput",
 		&returns,
 	)
 	return returns
@@ -719,7 +743,7 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.136.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.138.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) OceanAksNpVirtualNodeGroup {
 	_init_.Initialize()
 
@@ -737,7 +761,7 @@ func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.136.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.138.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup_Override(o OceanAksNpVirtualNodeGroup, scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) {
 	_init_.Initialize()
 
@@ -826,6 +850,17 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup)SetKubernetesVersion(val *string) {
+	if err := j.validateSetKubernetesVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kubernetesVersion",
 		val,
 	)
 }
@@ -1335,6 +1370,14 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetKubernetesVersion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetKubernetesVersion",
 		nil, // no parameters
 	)
 }

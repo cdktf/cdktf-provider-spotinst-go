@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.136.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.138.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
 type OceanAksNp interface {
 	cdktf.TerraformResource
 	AksClusterName() *string
@@ -74,6 +74,9 @@ type OceanAksNp interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KubernetesVersion() *string
+	SetKubernetesVersion(val *string)
+	KubernetesVersionInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -173,6 +176,7 @@ type OceanAksNp interface {
 	ResetHeadrooms()
 	ResetHealth()
 	ResetId()
+	ResetKubernetesVersion()
 	ResetLabels()
 	ResetMaxCount()
 	ResetMaxPodsPerNode()
@@ -543,6 +547,26 @@ func (j *jsiiProxy_OceanAksNp) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNp) KubernetesVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kubernetesVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNp) KubernetesVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kubernetesVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAksNp) Labels() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -884,7 +908,7 @@ func (j *jsiiProxy_OceanAksNp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.136.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.138.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpConfig) OceanAksNp {
 	_init_.Initialize()
 
@@ -902,7 +926,7 @@ func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.136.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.138.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp_Override(o OceanAksNp, scope constructs.Construct, id *string, config *OceanAksNpConfig) {
 	_init_.Initialize()
 
@@ -1046,6 +1070,17 @@ func (j *jsiiProxy_OceanAksNp)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAksNp)SetKubernetesVersion(val *string) {
+	if err := j.validateSetKubernetesVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kubernetesVersion",
 		val,
 	)
 }
@@ -1601,6 +1636,14 @@ func (o *jsiiProxy_OceanAksNp) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNp) ResetKubernetesVersion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetKubernetesVersion",
 		nil, // no parameters
 	)
 }

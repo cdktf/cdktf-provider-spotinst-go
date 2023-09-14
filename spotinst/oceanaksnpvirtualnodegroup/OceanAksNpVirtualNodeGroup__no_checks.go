@@ -103,6 +103,10 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetIdParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetKubernetesVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

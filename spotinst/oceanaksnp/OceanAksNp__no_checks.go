@@ -135,6 +135,10 @@ func (j *jsiiProxy_OceanAksNp) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNp) validateSetKubernetesVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNp) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
