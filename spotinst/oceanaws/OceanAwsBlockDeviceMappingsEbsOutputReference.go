@@ -31,6 +31,8 @@ type OceanAwsBlockDeviceMappingsEbsOutputReference interface {
 	DeleteOnTermination() interface{}
 	SetDeleteOnTermination(val interface{})
 	DeleteOnTerminationInput() interface{}
+	DynamicIops() OceanAwsBlockDeviceMappingsEbsDynamicIopsOutputReference
+	DynamicIopsInput() *OceanAwsBlockDeviceMappingsEbsDynamicIops
 	DynamicVolumeSize() OceanAwsBlockDeviceMappingsEbsDynamicVolumeSizeOutputReference
 	DynamicVolumeSizeInput() *OceanAwsBlockDeviceMappingsEbsDynamicVolumeSize
 	Encrypted() interface{}
@@ -90,8 +92,10 @@ type OceanAwsBlockDeviceMappingsEbsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDynamicIops(value *OceanAwsBlockDeviceMappingsEbsDynamicIops)
 	PutDynamicVolumeSize(value *OceanAwsBlockDeviceMappingsEbsDynamicVolumeSize)
 	ResetDeleteOnTermination()
+	ResetDynamicIops()
 	ResetDynamicVolumeSize()
 	ResetEncrypted()
 	ResetIops()
@@ -160,6 +164,26 @@ func (j *jsiiProxy_OceanAwsBlockDeviceMappingsEbsOutputReference) DeleteOnTermin
 	_jsii_.Get(
 		j,
 		"deleteOnTerminationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsBlockDeviceMappingsEbsOutputReference) DynamicIops() OceanAwsBlockDeviceMappingsEbsDynamicIopsOutputReference {
+	var returns OceanAwsBlockDeviceMappingsEbsDynamicIopsOutputReference
+	_jsii_.Get(
+		j,
+		"dynamicIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsBlockDeviceMappingsEbsOutputReference) DynamicIopsInput() *OceanAwsBlockDeviceMappingsEbsDynamicIops {
+	var returns *OceanAwsBlockDeviceMappingsEbsDynamicIops
+	_jsii_.Get(
+		j,
+		"dynamicIopsInput",
 		&returns,
 	)
 	return returns
@@ -722,6 +746,17 @@ func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsOutputReference) InterpolationF
 	return returns
 }
 
+func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsOutputReference) PutDynamicIops(value *OceanAwsBlockDeviceMappingsEbsDynamicIops) {
+	if err := o.validatePutDynamicIopsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putDynamicIops",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsOutputReference) PutDynamicVolumeSize(value *OceanAwsBlockDeviceMappingsEbsDynamicVolumeSize) {
 	if err := o.validatePutDynamicVolumeSizeParameters(value); err != nil {
 		panic(err)
@@ -737,6 +772,14 @@ func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsOutputReference) ResetDeleteOnT
 	_jsii_.InvokeVoid(
 		o,
 		"resetDeleteOnTermination",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsOutputReference) ResetDynamicIops() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDynamicIops",
 		nil, // no parameters
 	)
 }

@@ -47,6 +47,10 @@ func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsOutputReference) validateInterp
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsOutputReference) validatePutDynamicIopsParameters(value *OceanAwsBlockDeviceMappingsEbsDynamicIops) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsOutputReference) validatePutDynamicVolumeSizeParameters(value *OceanAwsBlockDeviceMappingsEbsDynamicVolumeSize) error {
 	return nil
 }
