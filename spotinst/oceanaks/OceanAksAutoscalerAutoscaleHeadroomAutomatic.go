@@ -5,9 +5,9 @@ package oceanaks
 
 
 type OceanAksAutoscalerAutoscaleHeadroomAutomatic struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.139.0/docs/resources/ocean_aks#is_enabled OceanAks#is_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.140.0/docs/resources/ocean_aks#is_enabled OceanAks#is_enabled}.
 	IsEnabled interface{} `field:"optional" json:"isEnabled" yaml:"isEnabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.139.0/docs/resources/ocean_aks#percentage OceanAks#percentage}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.140.0/docs/resources/ocean_aks#percentage OceanAks#percentage}.
 	Percentage *float64 `field:"optional" json:"percentage" yaml:"percentage"`
 }
 
