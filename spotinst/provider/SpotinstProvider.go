@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.140.0/docs spotinst}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.142.0/docs spotinst}.
 type SpotinstProvider interface {
 	cdktf.TerraformProvider
 	Account() *string
@@ -255,7 +255,7 @@ func (j *jsiiProxy_SpotinstProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.140.0/docs spotinst} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.142.0/docs spotinst} Resource.
 func NewSpotinstProvider(scope constructs.Construct, id *string, config *SpotinstProviderConfig) SpotinstProvider {
 	_init_.Initialize()
 
@@ -273,7 +273,7 @@ func NewSpotinstProvider(scope constructs.Construct, id *string, config *Spotins
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.140.0/docs spotinst} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.142.0/docs spotinst} Resource.
 func NewSpotinstProvider_Override(s SpotinstProvider, scope constructs.Construct, id *string, config *SpotinstProviderConfig) {
 	_init_.Initialize()
 

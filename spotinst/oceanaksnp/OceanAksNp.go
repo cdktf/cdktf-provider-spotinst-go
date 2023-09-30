@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.140.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.142.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
 type OceanAksNp interface {
 	cdktf.TerraformResource
 	AksClusterName() *string
@@ -168,7 +168,6 @@ type OceanAksNp interface {
 	PutScheduling(value *OceanAksNpScheduling)
 	PutTaints(value interface{})
 	ResetAutoscaler()
-	ResetAvailabilityZones()
 	ResetControllerClusterId()
 	ResetEnableNodePublicIp()
 	ResetFallbackToOndemand()
@@ -908,7 +907,7 @@ func (j *jsiiProxy_OceanAksNp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.140.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.142.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpConfig) OceanAksNp {
 	_init_.Initialize()
 
@@ -926,7 +925,7 @@ func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.140.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.142.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp_Override(o OceanAksNp, scope constructs.Construct, id *string, config *OceanAksNpConfig) {
 	_init_.Initialize()
 
@@ -1572,14 +1571,6 @@ func (o *jsiiProxy_OceanAksNp) ResetAutoscaler() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAutoscaler",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OceanAksNp) ResetAvailabilityZones() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetAvailabilityZones",
 		nil, // no parameters
 	)
 }

@@ -92,7 +92,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTaints", GoMethod: "PutTaints"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscaler", GoMethod: "ResetAutoscaler"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityZones", GoMethod: "ResetAvailabilityZones"},
 			_jsii_.MemberMethod{JsiiMethod: "resetControllerClusterId", GoMethod: "ResetControllerClusterId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableNodePublicIp", GoMethod: "ResetEnableNodePublicIp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFallbackToOndemand", GoMethod: "ResetFallbackToOndemand"},
