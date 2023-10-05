@@ -7,7 +7,7 @@ package oceanaksnp
 type OceanAksNpAutoscalerAutoscaleHeadroom struct {
 	// automatic block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.142.0/docs/resources/ocean_aks_np#automatic OceanAksNp#automatic}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/ocean_aks_np#automatic OceanAksNp#automatic}
 	Automatic *OceanAksNpAutoscalerAutoscaleHeadroomAutomatic `field:"optional" json:"automatic" yaml:"automatic"`
 }
 

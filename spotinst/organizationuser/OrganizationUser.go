@@ -1,0 +1,1007 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package organizationuser
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/organizationuser/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/organization_user spotinst_organization_user}.
+type OrganizationUser interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() interface{}
+	// Experimental.
+	SetCount(val interface{})
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Email() *string
+	SetEmail(val *string)
+	EmailInput() *string
+	FirstName() *string
+	SetFirstName(val *string)
+	FirstNameInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	LastName() *string
+	SetLastName(val *string)
+	LastNameInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	Password() *string
+	SetPassword(val *string)
+	PasswordInput() *string
+	Policies() OrganizationUserPoliciesList
+	PoliciesInput() interface{}
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Role() *string
+	SetRole(val *string)
+	RoleInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	UserGroupIds() *[]*string
+	SetUserGroupIds(val *[]*string)
+	UserGroupIdsInput() *[]*string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutPolicies(value interface{})
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPassword()
+	ResetPolicies()
+	ResetRole()
+	ResetUserGroupIds()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for OrganizationUser
+type jsiiProxy_OrganizationUser struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_OrganizationUser) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) Count() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) Email() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"email",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) EmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"emailInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) FirstName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firstName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) FirstNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firstNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) LastName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) LastNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) Password() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"password",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) PasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) Policies() OrganizationUserPoliciesList {
+	var returns OrganizationUserPoliciesList
+	_jsii_.Get(
+		j,
+		"policies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) PoliciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"policiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) Role() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"role",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) RoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) UserGroupIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userGroupIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationUser) UserGroupIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userGroupIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/organization_user spotinst_organization_user} Resource.
+func NewOrganizationUser(scope constructs.Construct, id *string, config *OrganizationUserConfig) OrganizationUser {
+	_init_.Initialize()
+
+	if err := validateNewOrganizationUserParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_OrganizationUser{}
+
+	_jsii_.Create(
+		"@cdktf/provider-spotinst.organizationUser.OrganizationUser",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/organization_user spotinst_organization_user} Resource.
+func NewOrganizationUser_Override(o OrganizationUser, scope constructs.Construct, id *string, config *OrganizationUserConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-spotinst.organizationUser.OrganizationUser",
+		[]interface{}{scope, id, config},
+		o,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetEmail(val *string) {
+	if err := j.validateSetEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"email",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetFirstName(val *string) {
+	if err := j.validateSetFirstNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"firstName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetLastName(val *string) {
+	if err := j.validateSetLastNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lastName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetRole(val *string) {
+	if err := j.validateSetRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"role",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationUser)SetUserGroupIds(val *[]*string) {
+	if err := j.validateSetUserGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userGroupIds",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func OrganizationUser_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOrganizationUser_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-spotinst.organizationUser.OrganizationUser",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OrganizationUser_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOrganizationUser_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-spotinst.organizationUser.OrganizationUser",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OrganizationUser_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOrganizationUser_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-spotinst.organizationUser.OrganizationUser",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func OrganizationUser_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-spotinst.organizationUser.OrganizationUser",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) AddOverride(path *string, value interface{}) {
+	if err := o.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (o *jsiiProxy_OrganizationUser) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		o,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		o,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		o,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		o,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		o,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		o,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		o,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) OverrideLogicalId(newLogicalId *string) {
+	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (o *jsiiProxy_OrganizationUser) PutPolicies(value interface{}) {
+	if err := o.validatePutPoliciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putPolicies",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OrganizationUser) ResetId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationUser) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationUser) ResetPassword() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationUser) ResetPolicies() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPolicies",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationUser) ResetRole() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRole",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationUser) ResetUserGroupIds() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUserGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationUser) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		o,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		o,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OrganizationUser) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

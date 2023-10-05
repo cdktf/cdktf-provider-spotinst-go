@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.142.0/docs/resources/multai_balancer spotinst_multai_balancer}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/multai_balancer spotinst_multai_balancer}.
 type MultaiBalancer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -408,7 +408,7 @@ func (j *jsiiProxy_MultaiBalancer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.142.0/docs/resources/multai_balancer spotinst_multai_balancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/multai_balancer spotinst_multai_balancer} Resource.
 func NewMultaiBalancer(scope constructs.Construct, id *string, config *MultaiBalancerConfig) MultaiBalancer {
 	_init_.Initialize()
 
@@ -426,7 +426,7 @@ func NewMultaiBalancer(scope constructs.Construct, id *string, config *MultaiBal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.142.0/docs/resources/multai_balancer spotinst_multai_balancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/multai_balancer spotinst_multai_balancer} Resource.
 func NewMultaiBalancer_Override(m MultaiBalancer, scope constructs.Construct, id *string, config *MultaiBalancerConfig) {
 	_init_.Initialize()
 
