@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/organization_user spotinst_organization_user}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.144.0/docs/resources/organization_user spotinst_organization_user}.
 type OrganizationUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -454,7 +454,7 @@ func (j *jsiiProxy_OrganizationUser) UserGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/organization_user spotinst_organization_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.144.0/docs/resources/organization_user spotinst_organization_user} Resource.
 func NewOrganizationUser(scope constructs.Construct, id *string, config *OrganizationUserConfig) OrganizationUser {
 	_init_.Initialize()
 
@@ -472,7 +472,7 @@ func NewOrganizationUser(scope constructs.Construct, id *string, config *Organiz
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/organization_user spotinst_organization_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.144.0/docs/resources/organization_user spotinst_organization_user} Resource.
 func NewOrganizationUser_Override(o OrganizationUser, scope constructs.Construct, id *string, config *OrganizationUserConfig) {
 	_init_.Initialize()
 

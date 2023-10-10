@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.144.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
 type OceanAwsLaunchSpec interface {
 	cdktf.TerraformResource
 	AssociatePublicIpAddress() interface{}
@@ -71,6 +71,8 @@ type OceanAwsLaunchSpec interface {
 	InstanceMetadataOptionsInput() *OceanAwsLaunchSpecInstanceMetadataOptions
 	InstanceTypes() *[]*string
 	SetInstanceTypes(val *[]*string)
+	InstanceTypesFilters() OceanAwsLaunchSpecInstanceTypesFiltersOutputReference
+	InstanceTypesFiltersInput() *OceanAwsLaunchSpecInstanceTypesFilters
 	InstanceTypesInput() *[]*string
 	Labels() OceanAwsLaunchSpecLabelsList
 	LabelsInput() interface{}
@@ -168,6 +170,7 @@ type OceanAwsLaunchSpec interface {
 	PutElasticIpPool(value interface{})
 	PutImages(value interface{})
 	PutInstanceMetadataOptions(value *OceanAwsLaunchSpecInstanceMetadataOptions)
+	PutInstanceTypesFilters(value *OceanAwsLaunchSpecInstanceTypesFilters)
 	PutLabels(value interface{})
 	PutResourceLimits(value interface{})
 	PutSchedulingShutdownHours(value *OceanAwsLaunchSpecSchedulingShutdownHours)
@@ -190,6 +193,7 @@ type OceanAwsLaunchSpec interface {
 	ResetImages()
 	ResetInstanceMetadataOptions()
 	ResetInstanceTypes()
+	ResetInstanceTypesFilters()
 	ResetLabels()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -568,6 +572,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) InstanceTypes() *[]*string {
 	_jsii_.Get(
 		j,
 		"instanceTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) InstanceTypesFilters() OceanAwsLaunchSpecInstanceTypesFiltersOutputReference {
+	var returns OceanAwsLaunchSpecInstanceTypesFiltersOutputReference
+	_jsii_.Get(
+		j,
+		"instanceTypesFilters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) InstanceTypesFiltersInput() *OceanAwsLaunchSpecInstanceTypesFilters {
+	var returns *OceanAwsLaunchSpecInstanceTypesFilters
+	_jsii_.Get(
+		j,
+		"instanceTypesFiltersInput",
 		&returns,
 	)
 	return returns
@@ -984,7 +1008,7 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.144.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) OceanAwsLaunchSpec {
 	_init_.Initialize()
 
@@ -1002,7 +1026,7 @@ func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.144.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec_Override(o OceanAwsLaunchSpec, scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1589,6 +1613,17 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutInstanceMetadataOptions(value *OceanAw
 	)
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) PutInstanceTypesFilters(value *OceanAwsLaunchSpecInstanceTypesFilters) {
+	if err := o.validatePutInstanceTypesFiltersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putInstanceTypesFilters",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutLabels(value interface{}) {
 	if err := o.validatePutLabelsParameters(value); err != nil {
 		panic(err)
@@ -1785,6 +1820,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) ResetInstanceTypes() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetInstanceTypes",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpec) ResetInstanceTypesFilters() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInstanceTypesFilters",
 		nil, // no parameters
 	)
 }

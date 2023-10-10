@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/ocean_gke_launch_spec_import spotinst_ocean_gke_launch_spec_import}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.144.0/docs/resources/ocean_gke_launch_spec_import spotinst_ocean_gke_launch_spec_import}.
 type OceanGkeLaunchSpecImport interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_OceanGkeLaunchSpecImport) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/ocean_gke_launch_spec_import spotinst_ocean_gke_launch_spec_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.144.0/docs/resources/ocean_gke_launch_spec_import spotinst_ocean_gke_launch_spec_import} Resource.
 func NewOceanGkeLaunchSpecImport(scope constructs.Construct, id *string, config *OceanGkeLaunchSpecImportConfig) OceanGkeLaunchSpecImport {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewOceanGkeLaunchSpecImport(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.143.0/docs/resources/ocean_gke_launch_spec_import spotinst_ocean_gke_launch_spec_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.144.0/docs/resources/ocean_gke_launch_spec_import spotinst_ocean_gke_launch_spec_import} Resource.
 func NewOceanGkeLaunchSpecImport_Override(o OceanGkeLaunchSpecImport, scope constructs.Construct, id *string, config *OceanGkeLaunchSpecImportConfig) {
 	_init_.Initialize()
 

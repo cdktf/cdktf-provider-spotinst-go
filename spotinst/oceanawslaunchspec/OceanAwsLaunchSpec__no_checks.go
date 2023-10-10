@@ -91,6 +91,10 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutInstanceMetadataOptionsParamet
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutInstanceTypesFiltersParameters(value *OceanAwsLaunchSpecInstanceTypesFilters) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutLabelsParameters(value interface{}) error {
 	return nil
 }
