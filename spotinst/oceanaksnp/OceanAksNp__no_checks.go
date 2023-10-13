@@ -179,6 +179,10 @@ func (j *jsiiProxy_OceanAksNp) validateSetOsTypeParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNp) validateSetPodSubnetIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNp) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
@@ -188,6 +192,10 @@ func (j *jsiiProxy_OceanAksNp) validateSetSpotPercentageParameters(val *float64)
 }
 
 func (j *jsiiProxy_OceanAksNp) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OceanAksNp) validateSetVnetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }
 

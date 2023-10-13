@@ -518,6 +518,14 @@ func (j *jsiiProxy_OceanAksNp) validateSetOsTypeParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNp) validateSetPodSubnetIdsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNp) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
@@ -573,6 +581,14 @@ func (j *jsiiProxy_OceanAksNp) validateSetSpotPercentageParameters(val *float64)
 }
 
 func (j *jsiiProxy_OceanAksNp) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OceanAksNp) validateSetVnetSubnetIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

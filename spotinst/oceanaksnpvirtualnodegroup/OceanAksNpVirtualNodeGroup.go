@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.144.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
 type OceanAksNpVirtualNodeGroup interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -94,6 +94,9 @@ type OceanAksNpVirtualNodeGroup interface {
 	OsType() *string
 	SetOsType(val *string)
 	OsTypeInput() *string
+	PodSubnetIds() *[]*string
+	SetPodSubnetIds(val *[]*string)
+	PodSubnetIdsInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -118,6 +121,9 @@ type OceanAksNpVirtualNodeGroup interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VnetSubnetIds() *[]*string
+	SetVnetSubnetIds(val *[]*string)
+	VnetSubnetIdsInput() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -164,9 +170,11 @@ type OceanAksNpVirtualNodeGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPodSubnetIds()
 	ResetSpotPercentage()
 	ResetTags()
 	ResetTaints()
+	ResetVnetSubnetIds()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -622,6 +630,26 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) OsTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) PodSubnetIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"podSubnetIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) PodSubnetIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"podSubnetIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -742,8 +770,28 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) VnetSubnetIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"vnetSubnetIds",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.144.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) VnetSubnetIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"vnetSubnetIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) OceanAksNpVirtualNodeGroup {
 	_init_.Initialize()
 
@@ -761,7 +809,7 @@ func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.144.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup_Override(o OceanAksNpVirtualNodeGroup, scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) {
 	_init_.Initialize()
 
@@ -986,6 +1034,17 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup)SetOsType(val *string) {
 	)
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup)SetPodSubnetIds(val *[]*string) {
+	if err := j.validateSetPodSubnetIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"podSubnetIds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroup)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -1023,6 +1082,17 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup)SetVnetSubnetIds(val *[]*string) {
+	if err := j.validateSetVnetSubnetIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vnetSubnetIds",
 		val,
 	)
 }
@@ -1454,6 +1524,14 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetOverrideLogicalId() {
 	)
 }
 
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetPodSubnetIds() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPodSubnetIds",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetSpotPercentage() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1474,6 +1552,14 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetTaints() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTaints",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetVnetSubnetIds() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetVnetSubnetIds",
 		nil, // no parameters
 	)
 }

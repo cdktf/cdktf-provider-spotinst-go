@@ -151,6 +151,10 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetOsTypeParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetPodSubnetIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
@@ -160,6 +164,10 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetSpotPercentageParamete
 }
 
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) validateSetVnetSubnetIdsParameters(val *[]*string) error {
 	return nil
 }
 
