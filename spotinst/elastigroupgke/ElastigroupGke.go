@@ -5,14 +5,14 @@ package elastigroupgke
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/elastigroupgke/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/elastigroupgke/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke}.
 type ElastigroupGke interface {
 	cdktf.TerraformResource
 	BackendServices() ElastigroupGkeBackendServicesList
@@ -1030,7 +1030,7 @@ func (j *jsiiProxy_ElastigroupGke) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
 func NewElastigroupGke(scope constructs.Construct, id *string, config *ElastigroupGkeConfig) ElastigroupGke {
 	_init_.Initialize()
 
@@ -1048,7 +1048,7 @@ func NewElastigroupGke(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
 func NewElastigroupGke_Override(e ElastigroupGke, scope constructs.Construct, id *string, config *ElastigroupGkeConfig) {
 	_init_.Initialize()
 

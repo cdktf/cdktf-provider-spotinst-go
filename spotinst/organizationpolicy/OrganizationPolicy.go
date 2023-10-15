@@ -5,14 +5,14 @@ package organizationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/organizationpolicy/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/organizationpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/organization_policy spotinst_organization_policy}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/organization_policy spotinst_organization_policy}.
 type OrganizationPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -359,7 +359,7 @@ func (j *jsiiProxy_OrganizationPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/organization_policy spotinst_organization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/organization_policy spotinst_organization_policy} Resource.
 func NewOrganizationPolicy(scope constructs.Construct, id *string, config *OrganizationPolicyConfig) OrganizationPolicy {
 	_init_.Initialize()
 
@@ -377,7 +377,7 @@ func NewOrganizationPolicy(scope constructs.Construct, id *string, config *Organ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/organization_policy spotinst_organization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/organization_policy spotinst_organization_policy} Resource.
 func NewOrganizationPolicy_Override(o OrganizationPolicy, scope constructs.Construct, id *string, config *OrganizationPolicyConfig) {
 	_init_.Initialize()
 

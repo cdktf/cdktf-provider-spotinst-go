@@ -5,14 +5,14 @@ package healthcheck
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/healthcheck/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/healthcheck/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/health_check spotinst_health_check}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/health_check spotinst_health_check}.
 type HealthCheck interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -407,7 +407,7 @@ func (j *jsiiProxy_HealthCheck) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/health_check spotinst_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/health_check spotinst_health_check} Resource.
 func NewHealthCheck(scope constructs.Construct, id *string, config *HealthCheckConfig) HealthCheck {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewHealthCheck(scope constructs.Construct, id *string, config *HealthCheckC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/health_check spotinst_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/health_check spotinst_health_check} Resource.
 func NewHealthCheck_Override(h HealthCheck, scope constructs.Construct, id *string, config *HealthCheckConfig) {
 	_init_.Initialize()
 

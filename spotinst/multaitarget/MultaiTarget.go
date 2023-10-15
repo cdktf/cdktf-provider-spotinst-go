@@ -5,14 +5,14 @@ package multaitarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/multaitarget/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/multaitarget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/multai_target spotinst_multai_target}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/multai_target spotinst_multai_target}.
 type MultaiTarget interface {
 	cdktf.TerraformResource
 	BalancerId() *string
@@ -453,7 +453,7 @@ func (j *jsiiProxy_MultaiTarget) WeightInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/multai_target spotinst_multai_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/multai_target spotinst_multai_target} Resource.
 func NewMultaiTarget(scope constructs.Construct, id *string, config *MultaiTargetConfig) MultaiTarget {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewMultaiTarget(scope constructs.Construct, id *string, config *MultaiTarge
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/multai_target spotinst_multai_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/multai_target spotinst_multai_target} Resource.
 func NewMultaiTarget_Override(m MultaiTarget, scope constructs.Construct, id *string, config *MultaiTargetConfig) {
 	_init_.Initialize()
 

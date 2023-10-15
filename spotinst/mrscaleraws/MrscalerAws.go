@@ -5,14 +5,14 @@ package mrscaleraws
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/mrscaleraws/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/mrscaleraws/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/mrscaler_aws spotinst_mrscaler_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/mrscaler_aws spotinst_mrscaler_aws}.
 type MrscalerAws interface {
 	cdktf.TerraformResource
 	AdditionalInfo() *string
@@ -1738,7 +1738,7 @@ func (j *jsiiProxy_MrscalerAws) VisibleToAllUsersInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/mrscaler_aws spotinst_mrscaler_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/mrscaler_aws spotinst_mrscaler_aws} Resource.
 func NewMrscalerAws(scope constructs.Construct, id *string, config *MrscalerAwsConfig) MrscalerAws {
 	_init_.Initialize()
 
@@ -1756,7 +1756,7 @@ func NewMrscalerAws(scope constructs.Construct, id *string, config *MrscalerAwsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/mrscaler_aws spotinst_mrscaler_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/mrscaler_aws spotinst_mrscaler_aws} Resource.
 func NewMrscalerAws_Override(m MrscalerAws, scope constructs.Construct, id *string, config *MrscalerAwsConfig) {
 	_init_.Initialize()
 

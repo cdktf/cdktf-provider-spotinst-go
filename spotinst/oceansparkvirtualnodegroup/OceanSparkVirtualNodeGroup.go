@@ -5,14 +5,14 @@ package oceansparkvirtualnodegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/oceansparkvirtualnodegroup/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/oceansparkvirtualnodegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group}.
 type OceanSparkVirtualNodeGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_OceanSparkVirtualNodeGroup) VirtualNodeGroupIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group} Resource.
 func NewOceanSparkVirtualNodeGroup(scope constructs.Construct, id *string, config *OceanSparkVirtualNodeGroupConfig) OceanSparkVirtualNodeGroup {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewOceanSparkVirtualNodeGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group} Resource.
 func NewOceanSparkVirtualNodeGroup_Override(o OceanSparkVirtualNodeGroup, scope constructs.Construct, id *string, config *OceanSparkVirtualNodeGroupConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package oceanaksnp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/oceanaksnp/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/oceanaksnp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
 type OceanAksNp interface {
 	cdktf.TerraformResource
 	AksClusterName() *string
@@ -955,7 +955,7 @@ func (j *jsiiProxy_OceanAksNp) VnetSubnetIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpConfig) OceanAksNp {
 	_init_.Initialize()
 
@@ -973,7 +973,7 @@ func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp_Override(o OceanAksNp, scope constructs.Construct, id *string, config *OceanAksNpConfig) {
 	_init_.Initialize()
 

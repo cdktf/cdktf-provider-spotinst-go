@@ -5,14 +5,14 @@ package elastigroupazure
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/elastigroupazure/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/elastigroupazure/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/elastigroup_azure spotinst_elastigroup_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/elastigroup_azure spotinst_elastigroup_azure}.
 type ElastigroupAzure interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -881,7 +881,7 @@ func (j *jsiiProxy_ElastigroupAzure) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/elastigroup_azure spotinst_elastigroup_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/elastigroup_azure spotinst_elastigroup_azure} Resource.
 func NewElastigroupAzure(scope constructs.Construct, id *string, config *ElastigroupAzureConfig) ElastigroupAzure {
 	_init_.Initialize()
 
@@ -899,7 +899,7 @@ func NewElastigroupAzure(scope constructs.Construct, id *string, config *Elastig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/elastigroup_azure spotinst_elastigroup_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/elastigroup_azure spotinst_elastigroup_azure} Resource.
 func NewElastigroupAzure_Override(e ElastigroupAzure, scope constructs.Construct, id *string, config *ElastigroupAzureConfig) {
 	_init_.Initialize()
 

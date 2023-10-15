@@ -101,6 +101,14 @@ func (o *jsiiProxy_OceanAksNpFiltersOutputReference) validateResolveParameters(_
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetAcceleratedNetworkingParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetArchitecturesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -174,6 +182,14 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetComplexObjectIsF
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetDiskPerformanceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetExcludeSeriesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -185,6 +201,14 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetExcludeSeriesPar
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetInternalValueParameters(val *OceanAksNpFilters) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetMaxGpuParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -206,7 +230,31 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetMaxVcpuParameter
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetMinDataParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetMinGpuParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetMinMemoryGibParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetMinNicsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -239,6 +287,14 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetTerraformAttribu
 }
 
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetVmTypesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

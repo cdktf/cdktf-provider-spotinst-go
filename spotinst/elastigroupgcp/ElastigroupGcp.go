@@ -5,14 +5,14 @@ package elastigroupgcp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/elastigroupgcp/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/elastigroupgcp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp}.
 type ElastigroupGcp interface {
 	cdktf.TerraformResource
 	AutoHealing() interface{}
@@ -1151,7 +1151,7 @@ func (j *jsiiProxy_ElastigroupGcp) UnhealthyDurationInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp} Resource.
 func NewElastigroupGcp(scope constructs.Construct, id *string, config *ElastigroupGcpConfig) ElastigroupGcp {
 	_init_.Initialize()
 
@@ -1169,7 +1169,7 @@ func NewElastigroupGcp(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp} Resource.
 func NewElastigroupGcp_Override(e ElastigroupGcp, scope constructs.Construct, id *string, config *ElastigroupGcpConfig) {
 	_init_.Initialize()
 

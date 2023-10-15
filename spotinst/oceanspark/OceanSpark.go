@@ -5,14 +5,14 @@ package oceanspark
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/oceanspark/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/oceanspark/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/ocean_spark spotinst_ocean_spark}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/ocean_spark spotinst_ocean_spark}.
 type OceanSpark interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -432,7 +432,7 @@ func (j *jsiiProxy_OceanSpark) WebhookInput() *OceanSparkWebhook {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/ocean_spark spotinst_ocean_spark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/ocean_spark spotinst_ocean_spark} Resource.
 func NewOceanSpark(scope constructs.Construct, id *string, config *OceanSparkConfig) OceanSpark {
 	_init_.Initialize()
 
@@ -450,7 +450,7 @@ func NewOceanSpark(scope constructs.Construct, id *string, config *OceanSparkCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.145.0/docs/resources/ocean_spark spotinst_ocean_spark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.146.0/docs/resources/ocean_spark spotinst_ocean_spark} Resource.
 func NewOceanSpark_Override(o OceanSpark, scope constructs.Construct, id *string, config *OceanSparkConfig) {
 	_init_.Initialize()
 

@@ -51,6 +51,10 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateRes
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetAcceleratedNetworkingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetArchitecturesParameters(val *[]*string) error {
 	return nil
 }
@@ -63,11 +67,19 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetDiskPerformanceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetExcludeSeriesParameters(val *[]*string) error {
 	return nil
 }
 
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetInternalValueParameters(val *OceanAksNpVirtualNodeGroupFilters) error {
+	return nil
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetMaxGpuParameters(val *float64) error {
 	return nil
 }
 
@@ -79,7 +91,19 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetMinDataParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetMinGpuParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetMinMemoryGibParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetMinNicsParameters(val *float64) error {
 	return nil
 }
 
@@ -96,6 +120,10 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSet
 }
 
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetVmTypesParameters(val *[]*string) error {
 	return nil
 }
 

@@ -5,14 +5,17 @@ package oceanaksnp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/oceanaksnp/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/oceanaksnp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type OceanAksNpFiltersOutputReference interface {
 	cdktf.ComplexObject
+	AcceleratedNetworking() *string
+	SetAcceleratedNetworking(val *string)
+	AcceleratedNetworkingInput() *string
 	Architectures() *[]*string
 	SetArchitectures(val *[]*string)
 	ArchitecturesInput() *[]*string
@@ -31,6 +34,9 @@ type OceanAksNpFiltersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DiskPerformance() *string
+	SetDiskPerformance(val *string)
+	DiskPerformanceInput() *string
 	ExcludeSeries() *[]*string
 	SetExcludeSeries(val *[]*string)
 	ExcludeSeriesInput() *[]*string
@@ -38,15 +44,27 @@ type OceanAksNpFiltersOutputReference interface {
 	Fqn() *string
 	InternalValue() *OceanAksNpFilters
 	SetInternalValue(val *OceanAksNpFilters)
+	MaxGpu() *float64
+	SetMaxGpu(val *float64)
+	MaxGpuInput() *float64
 	MaxMemoryGib() *float64
 	SetMaxMemoryGib(val *float64)
 	MaxMemoryGibInput() *float64
 	MaxVcpu() *float64
 	SetMaxVcpu(val *float64)
 	MaxVcpuInput() *float64
+	MinData() *float64
+	SetMinData(val *float64)
+	MinDataInput() *float64
+	MinGpu() *float64
+	SetMinGpu(val *float64)
+	MinGpuInput() *float64
 	MinMemoryGib() *float64
 	SetMinMemoryGib(val *float64)
 	MinMemoryGibInput() *float64
+	MinNics() *float64
+	SetMinNics(val *float64)
+	MinNicsInput() *float64
 	MinVcpu() *float64
 	SetMinVcpu(val *float64)
 	MinVcpuInput() *float64
@@ -61,6 +79,9 @@ type OceanAksNpFiltersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VmTypes() *[]*string
+	SetVmTypes(val *[]*string)
+	VmTypesInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -85,13 +106,20 @@ type OceanAksNpFiltersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAcceleratedNetworking()
 	ResetArchitectures()
+	ResetDiskPerformance()
 	ResetExcludeSeries()
+	ResetMaxGpu()
 	ResetMaxMemoryGib()
 	ResetMaxVcpu()
+	ResetMinData()
+	ResetMinGpu()
 	ResetMinMemoryGib()
+	ResetMinNics()
 	ResetMinVcpu()
 	ResetSeries()
+	ResetVmTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -105,6 +133,26 @@ type OceanAksNpFiltersOutputReference interface {
 // The jsii proxy struct for OceanAksNpFiltersOutputReference
 type jsiiProxy_OceanAksNpFiltersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) AcceleratedNetworking() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceleratedNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) AcceleratedNetworkingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"acceleratedNetworkingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference) Architectures() *[]*string {
@@ -157,6 +205,26 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) CreationStack() *[]*string 
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) DiskPerformance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskPerformance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) DiskPerformanceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskPerformanceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference) ExcludeSeries() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -192,6 +260,26 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) InternalValue() *OceanAksNp
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MaxGpu() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxGpu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MaxGpuInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxGpuInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +325,46 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MaxVcpuInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MinData() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MinDataInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MinGpu() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minGpu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MinGpuInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minGpuInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MinMemoryGib() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -252,6 +380,26 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MinMemoryGibInput() *float6
 	_jsii_.Get(
 		j,
 		"minMemoryGibInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MinNics() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MinNicsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNicsInput",
 		&returns,
 	)
 	return returns
@@ -317,6 +465,26 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) TerraformResource() cdktf.I
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) VmTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"vmTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) VmTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"vmTypesInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewOceanAksNpFiltersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanAksNpFiltersOutputReference {
 	_init_.Initialize()
@@ -342,6 +510,17 @@ func NewOceanAksNpFiltersOutputReference_Override(o OceanAksNpFiltersOutputRefer
 		"@cdktf/provider-spotinst.oceanAksNp.OceanAksNpFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
+	)
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetAcceleratedNetworking(val *string) {
+	if err := j.validateSetAcceleratedNetworkingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceleratedNetworking",
+		val,
 	)
 }
 
@@ -378,6 +557,17 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetComplexObjectIsFromSet(va
 	)
 }
 
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetDiskPerformance(val *string) {
+	if err := j.validateSetDiskPerformanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskPerformance",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetExcludeSeries(val *[]*string) {
 	if err := j.validateSetExcludeSeriesParameters(val); err != nil {
 		panic(err)
@@ -396,6 +586,17 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetInternalValue(val *OceanA
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetMaxGpu(val *float64) {
+	if err := j.validateSetMaxGpuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxGpu",
 		val,
 	)
 }
@@ -422,6 +623,28 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetMaxVcpu(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetMinData(val *float64) {
+	if err := j.validateSetMinDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetMinGpu(val *float64) {
+	if err := j.validateSetMinGpuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minGpu",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetMinMemoryGib(val *float64) {
 	if err := j.validateSetMinMemoryGibParameters(val); err != nil {
 		panic(err)
@@ -429,6 +652,17 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetMinMemoryGib(val *float64
 	_jsii_.Set(
 		j,
 		"minMemoryGib",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetMinNics(val *float64) {
+	if err := j.validateSetMinNicsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minNics",
 		val,
 	)
 }
@@ -473,6 +707,17 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetTerraformResource(val cdk
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetVmTypes(val *[]*string) {
+	if err := j.validateSetVmTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vmTypes",
 		val,
 	)
 }
@@ -663,6 +908,14 @@ func (o *jsiiProxy_OceanAksNpFiltersOutputReference) InterpolationForAttribute(p
 	return returns
 }
 
+func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetAcceleratedNetworking() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAcceleratedNetworking",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetArchitectures() {
 	_jsii_.InvokeVoid(
 		o,
@@ -671,10 +924,26 @@ func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetArchitectures() {
 	)
 }
 
+func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetDiskPerformance() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDiskPerformance",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetExcludeSeries() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetExcludeSeries",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetMaxGpu() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMaxGpu",
 		nil, // no parameters
 	)
 }
@@ -695,10 +964,34 @@ func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetMaxVcpu() {
 	)
 }
 
+func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetMinData() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMinData",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetMinGpu() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMinGpu",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetMinMemoryGib() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetMinMemoryGib",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetMinNics() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMinNics",
 		nil, // no parameters
 	)
 }
@@ -715,6 +1008,14 @@ func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetSeries() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetSeries",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetVmTypes() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetVmTypes",
 		nil, // no parameters
 	)
 }

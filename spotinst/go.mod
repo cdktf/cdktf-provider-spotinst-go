@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10
+module github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11
 
 go 1.18
 

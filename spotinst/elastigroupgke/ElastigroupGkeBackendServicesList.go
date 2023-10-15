@@ -5,9 +5,9 @@ package elastigroupgke
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v10/elastigroupgke/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v11/elastigroupgke/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
