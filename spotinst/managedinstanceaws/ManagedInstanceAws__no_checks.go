@@ -7,6 +7,10 @@ package managedinstanceaws
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagedInstanceAws) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedInstanceAws) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_ManagedInstanceAws) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (m *jsiiProxy_ManagedInstanceAws) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedInstanceAws) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedInstanceAws) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -92,6 +104,10 @@ func (m *jsiiProxy_ManagedInstanceAws) validatePutScheduledTaskParameters(value 
 }
 
 func (m *jsiiProxy_ManagedInstanceAws) validatePutTagsParameters(value interface{}) error {
+	return nil
+}
+
+func validateManagedInstanceAws_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

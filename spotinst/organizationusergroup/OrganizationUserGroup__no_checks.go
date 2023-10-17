@@ -7,6 +7,10 @@ package organizationusergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationUserGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationUserGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OrganizationUserGroup) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationUserGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationUserGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationUserGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (o *jsiiProxy_OrganizationUserGroup) validateOverrideLogicalIdParameters(ne
 }
 
 func (o *jsiiProxy_OrganizationUserGroup) validatePutPoliciesParameters(value interface{}) error {
+	return nil
+}
+
+func validateOrganizationUserGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

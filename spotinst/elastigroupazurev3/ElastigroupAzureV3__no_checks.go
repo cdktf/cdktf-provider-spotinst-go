@@ -7,6 +7,10 @@ package elastigroupazurev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElastigroupAzureV3) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_ElastigroupAzureV3) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (e *jsiiProxy_ElastigroupAzureV3) validatePutNetworkParameters(value *Elast
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) validatePutTagsParameters(value interface{}) error {
+	return nil
+}
+
+func validateElastigroupAzureV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

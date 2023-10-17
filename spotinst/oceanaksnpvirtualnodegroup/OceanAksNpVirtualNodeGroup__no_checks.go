@@ -7,6 +7,10 @@ package oceanaksnpvirtualnodegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validateGetStringMapAttributePara
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validatePutHeadroomsParameters(va
 }
 
 func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validatePutTaintsParameters(value interface{}) error {
+	return nil
+}
+
+func validateOceanAksNpVirtualNodeGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

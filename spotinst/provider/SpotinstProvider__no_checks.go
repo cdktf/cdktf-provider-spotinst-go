@@ -15,6 +15,10 @@ func (s *jsiiProxy_SpotinstProvider) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func validateSpotinstProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateSpotinstProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

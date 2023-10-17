@@ -7,6 +7,10 @@ package oceanawsextendedresourcedefinition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) validateGetStringMapAttri
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOceanAwsExtendedResourceDefinition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

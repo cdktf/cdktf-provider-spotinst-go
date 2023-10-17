@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-spotinst.statefulNodeAzure.StatefulNodeAzure",
 		reflect.TypeOf((*StatefulNodeAzure)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "attachDataDisk", GoGetter: "AttachDataDisk"},
 			_jsii_.MemberProperty{JsiiProperty: "attachDataDiskInput", GoGetter: "AttachDataDiskInput"},
@@ -56,6 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "image", GoGetter: "Image"},
 			_jsii_.MemberProperty{JsiiProperty: "imageInput", GoGetter: "ImageInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "importVm", GoGetter: "ImportVm"},
 			_jsii_.MemberProperty{JsiiProperty: "importVmInput", GoGetter: "ImportVmInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -66,6 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "loginInput", GoGetter: "LoginInput"},
 			_jsii_.MemberProperty{JsiiProperty: "managedServiceIdentities", GoGetter: "ManagedServiceIdentities"},
 			_jsii_.MemberProperty{JsiiProperty: "managedServiceIdentitiesInput", GoGetter: "ManagedServiceIdentitiesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},

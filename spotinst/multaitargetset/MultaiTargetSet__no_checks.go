@@ -7,6 +7,10 @@ package multaitargetset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MultaiTargetSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MultaiTargetSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MultaiTargetSet) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MultaiTargetSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MultaiTargetSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MultaiTargetSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MultaiTargetSet) validatePutHealthCheckParameters(value *Mult
 }
 
 func (m *jsiiProxy_MultaiTargetSet) validatePutTagsParameters(value interface{}) error {
+	return nil
+}
+
+func validateMultaiTargetSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

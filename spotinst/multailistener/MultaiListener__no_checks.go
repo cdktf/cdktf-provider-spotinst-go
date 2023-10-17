@@ -7,6 +7,10 @@ package multailistener
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MultaiListener) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MultaiListener) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MultaiListener) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (m *jsiiProxy_MultaiListener) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MultaiListener) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MultaiListener) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MultaiListener) validatePutTagsParameters(value interface{}) 
 }
 
 func (m *jsiiProxy_MultaiListener) validatePutTlsConfigParameters(value *MultaiListenerTlsConfig) error {
+	return nil
+}
+
+func validateMultaiListener_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

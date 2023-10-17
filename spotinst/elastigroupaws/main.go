@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAws",
 		reflect.TypeOf((*ElastigroupAws)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZones", GoGetter: "AvailabilityZones"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZonesInput", GoGetter: "AvailabilityZonesInput"},
@@ -80,6 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "imagesInput", GoGetter: "ImagesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "immediateOdRecoverThreshold", GoGetter: "ImmediateOdRecoverThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "immediateOdRecoverThresholdInput", GoGetter: "ImmediateOdRecoverThresholdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypesOndemand", GoGetter: "InstanceTypesOndemand"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypesOndemandInput", GoGetter: "InstanceTypesOndemandInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypesPreferredSpot", GoGetter: "InstanceTypesPreferredSpot"},
@@ -126,6 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "minimumInstanceLifetimeInput", GoGetter: "MinimumInstanceLifetimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minSize", GoGetter: "MinSize"},
 			_jsii_.MemberProperty{JsiiProperty: "minSizeInput", GoGetter: "MinSizeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "multaiTargetSets", GoGetter: "MultaiTargetSets"},
 			_jsii_.MemberProperty{JsiiProperty: "multaiTargetSetsInput", GoGetter: "MultaiTargetSetsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "multipleMetrics", GoGetter: "MultipleMetrics"},

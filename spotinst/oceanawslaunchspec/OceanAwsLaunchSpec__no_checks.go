@@ -7,6 +7,10 @@ package oceanawslaunchspec
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpec) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -124,6 +136,10 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutTaintsParameters(value interfa
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutUpdatePolicyParameters(value *OceanAwsLaunchSpecUpdatePolicy) error {
+	return nil
+}
+
+func validateOceanAwsLaunchSpec_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

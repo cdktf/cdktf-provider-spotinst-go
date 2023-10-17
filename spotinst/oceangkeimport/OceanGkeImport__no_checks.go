@@ -7,6 +7,10 @@ package oceangkeimport
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OceanGkeImport) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanGkeImport) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OceanGkeImport) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (o *jsiiProxy_OceanGkeImport) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanGkeImport) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanGkeImport) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (o *jsiiProxy_OceanGkeImport) validatePutStrategyParameters(value interface
 }
 
 func (o *jsiiProxy_OceanGkeImport) validatePutUpdatePolicyParameters(value *OceanGkeImportUpdatePolicy) error {
+	return nil
+}
+
+func validateOceanGkeImport_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

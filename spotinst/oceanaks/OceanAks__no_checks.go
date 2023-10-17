@@ -7,6 +7,10 @@ package oceanaks
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OceanAks) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAks) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OceanAks) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (o *jsiiProxy_OceanAks) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAks) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanAks) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -96,6 +108,10 @@ func (o *jsiiProxy_OceanAks) validatePutTagParameters(value interface{}) error {
 }
 
 func (o *jsiiProxy_OceanAks) validatePutVmSizesParameters(value interface{}) error {
+	return nil
+}
+
+func validateOceanAks_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

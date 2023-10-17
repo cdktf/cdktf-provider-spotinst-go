@@ -7,6 +7,10 @@ package organizationprogrammaticuser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationProgrammaticUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationProgrammaticUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OrganizationProgrammaticUser) validateGetStringMapAttributePa
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationProgrammaticUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationProgrammaticUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationProgrammaticUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (o *jsiiProxy_OrganizationProgrammaticUser) validatePutAccountsParameters(v
 }
 
 func (o *jsiiProxy_OrganizationProgrammaticUser) validatePutPoliciesParameters(value interface{}) error {
+	return nil
+}
+
+func validateOrganizationProgrammaticUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

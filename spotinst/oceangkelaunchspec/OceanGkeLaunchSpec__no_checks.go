@@ -7,6 +7,10 @@ package oceangkelaunchspec
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OceanGkeLaunchSpec) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanGkeLaunchSpec) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OceanGkeLaunchSpec) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (o *jsiiProxy_OceanGkeLaunchSpec) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanGkeLaunchSpec) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanGkeLaunchSpec) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -100,6 +112,10 @@ func (o *jsiiProxy_OceanGkeLaunchSpec) validatePutTaintsParameters(value interfa
 }
 
 func (o *jsiiProxy_OceanGkeLaunchSpec) validatePutUpdatePolicyParameters(value *OceanGkeLaunchSpecUpdatePolicy) error {
+	return nil
+}
+
+func validateOceanGkeLaunchSpec_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

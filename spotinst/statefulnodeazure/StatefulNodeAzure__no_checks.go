@@ -7,6 +7,10 @@ package statefulnodeazure
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StatefulNodeAzure) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulNodeAzure) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StatefulNodeAzure) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_StatefulNodeAzure) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulNodeAzure) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StatefulNodeAzure) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -136,6 +148,10 @@ func (s *jsiiProxy_StatefulNodeAzure) validatePutTagParameters(value interface{}
 }
 
 func (s *jsiiProxy_StatefulNodeAzure) validatePutUpdateStateParameters(value interface{}) error {
+	return nil
+}
+
+func validateStatefulNodeAzure_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

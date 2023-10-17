@@ -7,6 +7,10 @@ package elastigroupawssuspension
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElastigroupAwsSuspension) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAwsSuspension) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_ElastigroupAwsSuspension) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAwsSuspension) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAwsSuspension) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAwsSuspension) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_ElastigroupAwsSuspension) validateOverrideLogicalIdParameters
 }
 
 func (e *jsiiProxy_ElastigroupAwsSuspension) validatePutSuspensionParameters(value interface{}) error {
+	return nil
+}
+
+func validateElastigroupAwsSuspension_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

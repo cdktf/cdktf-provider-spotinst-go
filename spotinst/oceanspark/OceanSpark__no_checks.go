@@ -7,6 +7,10 @@ package oceanspark
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OceanSpark) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanSpark) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OceanSpark) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (o *jsiiProxy_OceanSpark) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanSpark) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanSpark) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (o *jsiiProxy_OceanSpark) validatePutSparkParameters(value *OceanSparkSpark
 }
 
 func (o *jsiiProxy_OceanSpark) validatePutWebhookParameters(value *OceanSparkWebhook) error {
+	return nil
+}
+
+func validateOceanSpark_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

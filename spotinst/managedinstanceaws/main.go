@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-spotinst.managedInstanceAws.ManagedInstanceAws",
 		reflect.TypeOf((*ManagedInstanceAws)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoHealing", GoGetter: "AutoHealing"},
 			_jsii_.MemberProperty{JsiiProperty: "autoHealingInput", GoGetter: "AutoHealingInput"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "imageId", GoGetter: "ImageId"},
 			_jsii_.MemberProperty{JsiiProperty: "imageIdInput", GoGetter: "ImageIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypes", GoGetter: "InstanceTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypesInput", GoGetter: "InstanceTypesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "integrationRoute53", GoGetter: "IntegrationRoute53"},
@@ -80,6 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "managedInstanceActionInput", GoGetter: "ManagedInstanceActionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minimumInstanceLifetime", GoGetter: "MinimumInstanceLifetime"},
 			_jsii_.MemberProperty{JsiiProperty: "minimumInstanceLifetimeInput", GoGetter: "MinimumInstanceLifetimeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInterface", GoGetter: "NetworkInterface"},

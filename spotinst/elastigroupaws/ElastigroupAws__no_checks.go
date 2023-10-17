@@ -7,6 +7,10 @@ package elastigroupaws
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElastigroupAws) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAws) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_ElastigroupAws) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAws) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAws) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAws) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -188,6 +200,10 @@ func (e *jsiiProxy_ElastigroupAws) validatePutTagsParameters(value interface{}) 
 }
 
 func (e *jsiiProxy_ElastigroupAws) validatePutUpdatePolicyParameters(value *ElastigroupAwsUpdatePolicy) error {
+	return nil
+}
+
+func validateElastigroupAws_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

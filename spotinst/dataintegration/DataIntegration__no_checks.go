@@ -7,6 +7,10 @@ package dataintegration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataIntegration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIntegration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataIntegration) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (d *jsiiProxy_DataIntegration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIntegration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataIntegration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataIntegration) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (d *jsiiProxy_DataIntegration) validatePutS3Parameters(value *DataIntegrationS3) error {
+	return nil
+}
+
+func validateDataIntegration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupGke.ElastigroupGke",
 		reflect.TypeOf((*ElastigroupGke)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "backendServices", GoGetter: "BackendServices"},
 			_jsii_.MemberProperty{JsiiProperty: "backendServicesInput", GoGetter: "BackendServicesInput"},
@@ -50,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "gpuInput", GoGetter: "GpuInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceNamePrefix", GoGetter: "InstanceNamePrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceNamePrefixInput", GoGetter: "InstanceNamePrefixInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypesCustom", GoGetter: "InstanceTypesCustom"},
@@ -74,6 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minSize", GoGetter: "MinSize"},
 			_jsii_.MemberProperty{JsiiProperty: "minSizeInput", GoGetter: "MinSizeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInterface", GoGetter: "NetworkInterface"},
