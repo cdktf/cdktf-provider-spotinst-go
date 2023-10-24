@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.147.0/docs/resources/subscription spotinst_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.148.0/docs/resources/subscription spotinst_subscription}.
 type Subscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_Subscription) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.147.0/docs/resources/subscription spotinst_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.148.0/docs/resources/subscription spotinst_subscription} Resource.
 func NewSubscription(scope constructs.Construct, id *string, config *SubscriptionConfig) Subscription {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewSubscription(scope constructs.Construct, id *string, config *Subscriptio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.147.0/docs/resources/subscription spotinst_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.148.0/docs/resources/subscription spotinst_subscription} Resource.
 func NewSubscription_Override(s Subscription, scope constructs.Construct, id *string, config *SubscriptionConfig) {
 	_init_.Initialize()
 

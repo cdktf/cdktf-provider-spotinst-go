@@ -7,7 +7,7 @@ package oceanaksnp
 type OceanAksNpScheduling struct {
 	// shutdown_hours block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.147.0/docs/resources/ocean_aks_np#shutdown_hours OceanAksNp#shutdown_hours}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.148.0/docs/resources/ocean_aks_np#shutdown_hours OceanAksNp#shutdown_hours}
 	ShutdownHours *OceanAksNpSchedulingShutdownHours `field:"optional" json:"shutdownHours" yaml:"shutdownHours"`
 }
 

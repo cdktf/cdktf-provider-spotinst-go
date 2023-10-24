@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.147.0/docs/resources/multai_listener spotinst_multai_listener}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.148.0/docs/resources/multai_listener spotinst_multai_listener}.
 type MultaiListener interface {
 	cdktf.TerraformResource
 	BalancerId() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_MultaiListener) TlsConfigInput() *MultaiListenerTlsConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.147.0/docs/resources/multai_listener spotinst_multai_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.148.0/docs/resources/multai_listener spotinst_multai_listener} Resource.
 func NewMultaiListener(scope constructs.Construct, id *string, config *MultaiListenerConfig) MultaiListener {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewMultaiListener(scope constructs.Construct, id *string, config *MultaiLis
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.147.0/docs/resources/multai_listener spotinst_multai_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.148.0/docs/resources/multai_listener spotinst_multai_listener} Resource.
 func NewMultaiListener_Override(m MultaiListener, scope constructs.Construct, id *string, config *MultaiListenerConfig) {
 	_init_.Initialize()
 
