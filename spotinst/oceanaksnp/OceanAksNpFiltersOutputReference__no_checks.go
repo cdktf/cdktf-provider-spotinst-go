@@ -91,7 +91,7 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetMaxVcpuParameter
 	return nil
 }
 
-func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetMinDataParameters(val *float64) error {
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetMinDiskParameters(val *float64) error {
 	return nil
 }
 

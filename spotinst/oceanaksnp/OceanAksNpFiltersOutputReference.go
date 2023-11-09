@@ -53,9 +53,9 @@ type OceanAksNpFiltersOutputReference interface {
 	MaxVcpu() *float64
 	SetMaxVcpu(val *float64)
 	MaxVcpuInput() *float64
-	MinData() *float64
-	SetMinData(val *float64)
-	MinDataInput() *float64
+	MinDisk() *float64
+	SetMinDisk(val *float64)
+	MinDiskInput() *float64
 	MinGpu() *float64
 	SetMinGpu(val *float64)
 	MinGpuInput() *float64
@@ -113,7 +113,7 @@ type OceanAksNpFiltersOutputReference interface {
 	ResetMaxGpu()
 	ResetMaxMemoryGib()
 	ResetMaxVcpu()
-	ResetMinData()
+	ResetMinDisk()
 	ResetMinGpu()
 	ResetMinMemoryGib()
 	ResetMinNics()
@@ -325,21 +325,21 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MaxVcpuInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MinData() *float64 {
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MinDisk() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"minData",
+		"minDisk",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MinDataInput() *float64 {
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) MinDiskInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"minDataInput",
+		"minDiskInput",
 		&returns,
 	)
 	return returns
@@ -623,13 +623,13 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetMaxVcpu(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetMinData(val *float64) {
-	if err := j.validateSetMinDataParameters(val); err != nil {
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference)SetMinDisk(val *float64) {
+	if err := j.validateSetMinDiskParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"minData",
+		"minDisk",
 		val,
 	)
 }
@@ -964,10 +964,10 @@ func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetMaxVcpu() {
 	)
 }
 
-func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetMinData() {
+func (o *jsiiProxy_OceanAksNpFiltersOutputReference) ResetMinDisk() {
 	_jsii_.InvokeVoid(
 		o,
-		"resetMinData",
+		"resetMinDisk",
 		nil, // no parameters
 	)
 }

@@ -53,9 +53,9 @@ type OceanAksNpVirtualNodeGroupFiltersOutputReference interface {
 	MaxVcpu() *float64
 	SetMaxVcpu(val *float64)
 	MaxVcpuInput() *float64
-	MinData() *float64
-	SetMinData(val *float64)
-	MinDataInput() *float64
+	MinDisk() *float64
+	SetMinDisk(val *float64)
+	MinDiskInput() *float64
 	MinGpu() *float64
 	SetMinGpu(val *float64)
 	MinGpuInput() *float64
@@ -113,7 +113,7 @@ type OceanAksNpVirtualNodeGroupFiltersOutputReference interface {
 	ResetMaxGpu()
 	ResetMaxMemoryGib()
 	ResetMaxVcpu()
-	ResetMinData()
+	ResetMinDisk()
 	ResetMinGpu()
 	ResetMinMemoryGib()
 	ResetMinNics()
@@ -325,21 +325,21 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) MaxVcpuInpu
 	return returns
 }
 
-func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) MinData() *float64 {
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) MinDisk() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"minData",
+		"minDisk",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) MinDataInput() *float64 {
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) MinDiskInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"minDataInput",
+		"minDiskInput",
 		&returns,
 	)
 	return returns
@@ -623,13 +623,13 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference)SetMaxVcpu(v
 	)
 }
 
-func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference)SetMinData(val *float64) {
-	if err := j.validateSetMinDataParameters(val); err != nil {
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference)SetMinDisk(val *float64) {
+	if err := j.validateSetMinDiskParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"minData",
+		"minDisk",
 		val,
 	)
 }
@@ -964,10 +964,10 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) ResetMaxVcp
 	)
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) ResetMinData() {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) ResetMinDisk() {
 	_jsii_.InvokeVoid(
 		o,
-		"resetMinData",
+		"resetMinDisk",
 		nil, // no parameters
 	)
 }

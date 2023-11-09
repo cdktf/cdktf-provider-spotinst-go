@@ -91,7 +91,7 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetMinDataParameters(val *float64) error {
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetMinDiskParameters(val *float64) error {
 	return nil
 }
 

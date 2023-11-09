@@ -230,7 +230,7 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetMaxVcpuParameter
 	return nil
 }
 
-func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetMinDataParameters(val *float64) error {
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetMinDiskParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
