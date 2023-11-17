@@ -22,22 +22,22 @@ type HealthCheckConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.149.0/docs/resources/health_check#proxy_address HealthCheck#proxy_address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.0/docs/resources/health_check#proxy_address HealthCheck#proxy_address}.
 	ProxyAddress *string `field:"required" json:"proxyAddress" yaml:"proxyAddress"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.149.0/docs/resources/health_check#resource_id HealthCheck#resource_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.0/docs/resources/health_check#resource_id HealthCheck#resource_id}.
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// check block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.149.0/docs/resources/health_check#check HealthCheck#check}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.0/docs/resources/health_check#check HealthCheck#check}
 	Check *HealthCheckCheck `field:"optional" json:"check" yaml:"check"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.149.0/docs/resources/health_check#id HealthCheck#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.0/docs/resources/health_check#id HealthCheck#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.149.0/docs/resources/health_check#name HealthCheck#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.0/docs/resources/health_check#name HealthCheck#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.149.0/docs/resources/health_check#proxy_port HealthCheck#proxy_port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.0/docs/resources/health_check#proxy_port HealthCheck#proxy_port}.
 	ProxyPort *float64 `field:"optional" json:"proxyPort" yaml:"proxyPort"`
 }
 

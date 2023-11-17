@@ -79,6 +79,10 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) validatePutBlockDeviceMappingsParameters(
 	return nil
 }
 
+func (o *jsiiProxy_OceanEcsLaunchSpec) validatePutImagesParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanEcsLaunchSpec) validatePutInstanceMetadataOptionsParameters(value *OceanEcsLaunchSpecInstanceMetadataOptions) error {
 	return nil
 }

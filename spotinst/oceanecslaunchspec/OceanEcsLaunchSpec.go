@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.149.0/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.0/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec}.
 type OceanEcsLaunchSpec interface {
 	cdktf.TerraformResource
 	Attributes() OceanEcsLaunchSpecAttributesList
@@ -54,6 +54,8 @@ type OceanEcsLaunchSpec interface {
 	ImageId() *string
 	SetImageId(val *string)
 	ImageIdInput() *string
+	Images() OceanEcsLaunchSpecImagesList
+	ImagesInput() interface{}
 	InstanceMetadataOptions() OceanEcsLaunchSpecInstanceMetadataOptionsOutputReference
 	InstanceMetadataOptionsInput() *OceanEcsLaunchSpecInstanceMetadataOptions
 	InstanceTypes() *[]*string
@@ -144,6 +146,7 @@ type OceanEcsLaunchSpec interface {
 	PutAttributes(value interface{})
 	PutAutoscaleHeadrooms(value interface{})
 	PutBlockDeviceMappings(value interface{})
+	PutImages(value interface{})
 	PutInstanceMetadataOptions(value *OceanEcsLaunchSpecInstanceMetadataOptions)
 	PutSchedulingTask(value interface{})
 	PutStrategy(value interface{})
@@ -154,6 +157,7 @@ type OceanEcsLaunchSpec interface {
 	ResetIamInstanceProfile()
 	ResetId()
 	ResetImageId()
+	ResetImages()
 	ResetInstanceMetadataOptions()
 	ResetInstanceTypes()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -377,6 +381,26 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) ImageIdInput() *string {
 	_jsii_.Get(
 		j,
 		"imageIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcsLaunchSpec) Images() OceanEcsLaunchSpecImagesList {
+	var returns OceanEcsLaunchSpecImagesList
+	_jsii_.Get(
+		j,
+		"images",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcsLaunchSpec) ImagesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"imagesInput",
 		&returns,
 	)
 	return returns
@@ -703,7 +727,7 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.149.0/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.0/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec} Resource.
 func NewOceanEcsLaunchSpec(scope constructs.Construct, id *string, config *OceanEcsLaunchSpecConfig) OceanEcsLaunchSpec {
 	_init_.Initialize()
 
@@ -721,7 +745,7 @@ func NewOceanEcsLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.149.0/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.0/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec} Resource.
 func NewOceanEcsLaunchSpec_Override(o OceanEcsLaunchSpec, scope constructs.Construct, id *string, config *OceanEcsLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1272,6 +1296,17 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) PutBlockDeviceMappings(value interface{})
 	)
 }
 
+func (o *jsiiProxy_OceanEcsLaunchSpec) PutImages(value interface{}) {
+	if err := o.validatePutImagesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putImages",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanEcsLaunchSpec) PutInstanceMetadataOptions(value *OceanEcsLaunchSpecInstanceMetadataOptions) {
 	if err := o.validatePutInstanceMetadataOptionsParameters(value); err != nil {
 		panic(err)
@@ -1360,6 +1395,14 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) ResetImageId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetImageId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanEcsLaunchSpec) ResetImages() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetImages",
 		nil, // no parameters
 	)
 }

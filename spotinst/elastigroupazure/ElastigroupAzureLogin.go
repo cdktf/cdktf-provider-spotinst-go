@@ -5,11 +5,11 @@ package elastigroupazure
 
 
 type ElastigroupAzureLogin struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.149.0/docs/resources/elastigroup_azure#user_name ElastigroupAzure#user_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.0/docs/resources/elastigroup_azure#user_name ElastigroupAzure#user_name}.
 	UserName *string `field:"required" json:"userName" yaml:"userName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.149.0/docs/resources/elastigroup_azure#password ElastigroupAzure#password}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.0/docs/resources/elastigroup_azure#password ElastigroupAzure#password}.
 	Password *string `field:"optional" json:"password" yaml:"password"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.149.0/docs/resources/elastigroup_azure#ssh_public_key ElastigroupAzure#ssh_public_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.0/docs/resources/elastigroup_azure#ssh_public_key ElastigroupAzure#ssh_public_key}.
 	SshPublicKey *string `field:"optional" json:"sshPublicKey" yaml:"sshPublicKey"`
 }
 
