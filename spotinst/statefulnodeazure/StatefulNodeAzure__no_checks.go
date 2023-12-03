@@ -123,6 +123,10 @@ func (s *jsiiProxy_StatefulNodeAzure) validatePutOsDiskParameters(value *Statefu
 	return nil
 }
 
+func (s *jsiiProxy_StatefulNodeAzure) validatePutProximityPlacementGroupsParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulNodeAzure) validatePutSchedulingTaskParameters(value interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.1/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
 type StatefulNodeAzure interface {
 	cdktf.TerraformResource
 	AttachDataDisk() StatefulNodeAzureAttachDataDiskList
@@ -111,6 +111,8 @@ type StatefulNodeAzure interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	ProximityPlacementGroups() StatefulNodeAzureProximityPlacementGroupsList
+	ProximityPlacementGroupsInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
@@ -213,6 +215,7 @@ type StatefulNodeAzure interface {
 	PutManagedServiceIdentities(value interface{})
 	PutNetwork(value *StatefulNodeAzureNetwork)
 	PutOsDisk(value *StatefulNodeAzureOsDisk)
+	PutProximityPlacementGroups(value interface{})
 	PutSchedulingTask(value interface{})
 	PutSecret(value interface{})
 	PutSecurity(value *StatefulNodeAzureSecurity)
@@ -244,6 +247,7 @@ type StatefulNodeAzure interface {
 	ResetOverrideLogicalId()
 	ResetPreferredSpotSizes()
 	ResetPreferredZone()
+	ResetProximityPlacementGroups()
 	ResetSchedulingTask()
 	ResetSecret()
 	ResetSecurity()
@@ -870,6 +874,26 @@ func (j *jsiiProxy_StatefulNodeAzure) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StatefulNodeAzure) ProximityPlacementGroups() StatefulNodeAzureProximityPlacementGroupsList {
+	var returns StatefulNodeAzureProximityPlacementGroupsList
+	_jsii_.Get(
+		j,
+		"proximityPlacementGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzure) ProximityPlacementGroupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"proximityPlacementGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulNodeAzure) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1271,7 +1295,7 @@ func (j *jsiiProxy_StatefulNodeAzure) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.1/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) StatefulNodeAzure {
 	_init_.Initialize()
 
@@ -1289,7 +1313,7 @@ func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *Statef
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.150.1/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure_Override(s StatefulNodeAzure, scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) {
 	_init_.Initialize()
 
@@ -2071,6 +2095,17 @@ func (s *jsiiProxy_StatefulNodeAzure) PutOsDisk(value *StatefulNodeAzureOsDisk) 
 	)
 }
 
+func (s *jsiiProxy_StatefulNodeAzure) PutProximityPlacementGroups(value interface{}) {
+	if err := s.validatePutProximityPlacementGroupsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putProximityPlacementGroups",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StatefulNodeAzure) PutSchedulingTask(value interface{}) {
 	if err := s.validatePutSchedulingTaskParameters(value); err != nil {
 		panic(err)
@@ -2320,6 +2355,14 @@ func (s *jsiiProxy_StatefulNodeAzure) ResetPreferredZone() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPreferredZone",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzure) ResetProximityPlacementGroups() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProximityPlacementGroups",
 		nil, // no parameters
 	)
 }
