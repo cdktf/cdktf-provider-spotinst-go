@@ -59,7 +59,15 @@ func (o *jsiiProxy_OceanSpark) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (o *jsiiProxy_OceanSpark) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanSpark) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanSpark) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

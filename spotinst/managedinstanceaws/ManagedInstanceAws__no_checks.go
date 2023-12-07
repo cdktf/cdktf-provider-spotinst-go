@@ -59,7 +59,15 @@ func (m *jsiiProxy_ManagedInstanceAws) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (m *jsiiProxy_ManagedInstanceAws) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedInstanceAws) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedInstanceAws) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

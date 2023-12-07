@@ -59,7 +59,15 @@ func (e *jsiiProxy_ElastigroupGcp) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupGcp) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupGcp) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupGcp) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

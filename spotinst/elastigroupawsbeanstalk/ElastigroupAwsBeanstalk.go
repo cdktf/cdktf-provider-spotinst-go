@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/elastigroup_aws_beanstalk spotinst_elastigroup_aws_beanstalk}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/elastigroup_aws_beanstalk spotinst_elastigroup_aws_beanstalk}.
 type ElastigroupAwsBeanstalk interface {
 	cdktf.TerraformResource
 	BeanstalkEnvironmentId() *string
@@ -124,12 +124,22 @@ type ElastigroupAwsBeanstalk interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -602,7 +612,7 @@ func (j *jsiiProxy_ElastigroupAwsBeanstalk) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/elastigroup_aws_beanstalk spotinst_elastigroup_aws_beanstalk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/elastigroup_aws_beanstalk spotinst_elastigroup_aws_beanstalk} Resource.
 func NewElastigroupAwsBeanstalk(scope constructs.Construct, id *string, config *ElastigroupAwsBeanstalkConfig) ElastigroupAwsBeanstalk {
 	_init_.Initialize()
 
@@ -620,7 +630,7 @@ func NewElastigroupAwsBeanstalk(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/elastigroup_aws_beanstalk spotinst_elastigroup_aws_beanstalk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/elastigroup_aws_beanstalk spotinst_elastigroup_aws_beanstalk} Resource.
 func NewElastigroupAwsBeanstalk_Override(e ElastigroupAwsBeanstalk, scope constructs.Construct, id *string, config *ElastigroupAwsBeanstalkConfig) {
 	_init_.Initialize()
 
@@ -1089,6 +1099,19 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (e *jsiiProxy_ElastigroupAwsBeanstalk) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1116,6 +1139,17 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) InterpolationForAttribute(terraformA
 	return returns
 }
 
+func (e *jsiiProxy_ElastigroupAwsBeanstalk) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1124,6 +1158,17 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) MoveTo(moveTarget *string, index int
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAwsBeanstalk) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (e *jsiiProxy_ElastigroupAwsSuspension) validateInterpolationForAttributePa
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAwsSuspension) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAwsSuspension) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAwsSuspension) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

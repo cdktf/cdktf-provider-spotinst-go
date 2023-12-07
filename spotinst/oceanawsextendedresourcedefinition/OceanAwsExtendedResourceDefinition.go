@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_aws_extended_resource_definition spotinst_ocean_aws_extended_resource_definition}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_aws_extended_resource_definition spotinst_ocean_aws_extended_resource_definition}.
 type OceanAwsExtendedResourceDefinition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -94,12 +94,22 @@ type OceanAwsExtendedResourceDefinition interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -343,7 +353,7 @@ func (j *jsiiProxy_OceanAwsExtendedResourceDefinition) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_aws_extended_resource_definition spotinst_ocean_aws_extended_resource_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_aws_extended_resource_definition spotinst_ocean_aws_extended_resource_definition} Resource.
 func NewOceanAwsExtendedResourceDefinition(scope constructs.Construct, id *string, config *OceanAwsExtendedResourceDefinitionConfig) OceanAwsExtendedResourceDefinition {
 	_init_.Initialize()
 
@@ -361,7 +371,7 @@ func NewOceanAwsExtendedResourceDefinition(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_aws_extended_resource_definition spotinst_ocean_aws_extended_resource_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_aws_extended_resource_definition spotinst_ocean_aws_extended_resource_definition} Resource.
 func NewOceanAwsExtendedResourceDefinition_Override(o OceanAwsExtendedResourceDefinition, scope constructs.Construct, id *string, config *OceanAwsExtendedResourceDefinitionConfig) {
 	_init_.Initialize()
 
@@ -742,6 +752,19 @@ func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) GetStringMapAttribute(ter
 	return returns
 }
 
+func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -769,6 +792,17 @@ func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) InterpolationForAttribute
 	return returns
 }
 
+func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -777,6 +811,17 @@ func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) MoveTo(moveTarget *string
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

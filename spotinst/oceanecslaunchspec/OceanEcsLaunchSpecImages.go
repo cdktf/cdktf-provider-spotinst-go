@@ -5,7 +5,7 @@ package oceanecslaunchspec
 
 
 type OceanEcsLaunchSpecImages struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_ecs_launch_spec#image_id OceanEcsLaunchSpec#image_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_ecs_launch_spec#image_id OceanEcsLaunchSpec#image_id}.
 	ImageId *string `field:"optional" json:"imageId" yaml:"imageId"`
 }
 

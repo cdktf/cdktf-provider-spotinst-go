@@ -59,7 +59,15 @@ func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) validateInterpolationForA
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanAwsExtendedResourceDefinition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalk) validateInterpolationForAttributePar
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAwsBeanstalk) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAwsBeanstalk) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAwsBeanstalk) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

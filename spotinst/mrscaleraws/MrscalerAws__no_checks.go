@@ -59,7 +59,15 @@ func (m *jsiiProxy_MrscalerAws) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MrscalerAws) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MrscalerAws) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MrscalerAws) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (e *jsiiProxy_ElastigroupAzure) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzure) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzure) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzure) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

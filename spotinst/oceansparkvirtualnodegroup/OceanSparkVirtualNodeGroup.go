@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group}.
 type OceanSparkVirtualNodeGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -94,12 +94,22 @@ type OceanSparkVirtualNodeGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -343,7 +353,7 @@ func (j *jsiiProxy_OceanSparkVirtualNodeGroup) VirtualNodeGroupIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group} Resource.
 func NewOceanSparkVirtualNodeGroup(scope constructs.Construct, id *string, config *OceanSparkVirtualNodeGroupConfig) OceanSparkVirtualNodeGroup {
 	_init_.Initialize()
 
@@ -361,7 +371,7 @@ func NewOceanSparkVirtualNodeGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_spark_virtual_node_group spotinst_ocean_spark_virtual_node_group} Resource.
 func NewOceanSparkVirtualNodeGroup_Override(o OceanSparkVirtualNodeGroup, scope constructs.Construct, id *string, config *OceanSparkVirtualNodeGroupConfig) {
 	_init_.Initialize()
 
@@ -742,6 +752,19 @@ func (o *jsiiProxy_OceanSparkVirtualNodeGroup) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (o *jsiiProxy_OceanSparkVirtualNodeGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_OceanSparkVirtualNodeGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -769,6 +792,17 @@ func (o *jsiiProxy_OceanSparkVirtualNodeGroup) InterpolationForAttribute(terrafo
 	return returns
 }
 
+func (o *jsiiProxy_OceanSparkVirtualNodeGroup) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_OceanSparkVirtualNodeGroup) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -777,6 +811,17 @@ func (o *jsiiProxy_OceanSparkVirtualNodeGroup) MoveTo(moveTarget *string, index 
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_OceanSparkVirtualNodeGroup) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

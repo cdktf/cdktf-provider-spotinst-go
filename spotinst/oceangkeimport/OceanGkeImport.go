@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_gke_import spotinst_ocean_gke_import}.
 type OceanGkeImport interface {
 	cdktf.TerraformResource
 	Autoscaler() OceanGkeImportAutoscalerOutputReference
@@ -131,12 +131,22 @@ type OceanGkeImport interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -690,7 +700,7 @@ func (j *jsiiProxy_OceanGkeImport) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
 func NewOceanGkeImport(scope constructs.Construct, id *string, config *OceanGkeImportConfig) OceanGkeImport {
 	_init_.Initialize()
 
@@ -708,7 +718,7 @@ func NewOceanGkeImport(scope constructs.Construct, id *string, config *OceanGkeI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
 func NewOceanGkeImport_Override(o OceanGkeImport, scope constructs.Construct, id *string, config *OceanGkeImportConfig) {
 	_init_.Initialize()
 
@@ -1177,6 +1187,19 @@ func (o *jsiiProxy_OceanGkeImport) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (o *jsiiProxy_OceanGkeImport) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_OceanGkeImport) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1204,6 +1227,17 @@ func (o *jsiiProxy_OceanGkeImport) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (o *jsiiProxy_OceanGkeImport) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_OceanGkeImport) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1212,6 +1246,17 @@ func (o *jsiiProxy_OceanGkeImport) MoveTo(moveTarget *string, index interface{})
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_OceanGkeImport) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

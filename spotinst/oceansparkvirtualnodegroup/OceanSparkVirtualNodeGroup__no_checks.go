@@ -59,7 +59,15 @@ func (o *jsiiProxy_OceanSparkVirtualNodeGroup) validateInterpolationForAttribute
 	return nil
 }
 
+func (o *jsiiProxy_OceanSparkVirtualNodeGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanSparkVirtualNodeGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanSparkVirtualNodeGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

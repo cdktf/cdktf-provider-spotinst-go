@@ -59,7 +59,15 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpec) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_StatefulNodeAzure) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_StatefulNodeAzure) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulNodeAzure) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StatefulNodeAzure) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

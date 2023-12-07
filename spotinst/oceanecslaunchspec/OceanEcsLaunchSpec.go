@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec}.
 type OceanEcsLaunchSpec interface {
 	cdktf.TerraformResource
 	Attributes() OceanEcsLaunchSpecAttributesList
@@ -134,12 +134,22 @@ type OceanEcsLaunchSpec interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -727,7 +737,7 @@ func (j *jsiiProxy_OceanEcsLaunchSpec) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec} Resource.
 func NewOceanEcsLaunchSpec(scope constructs.Construct, id *string, config *OceanEcsLaunchSpecConfig) OceanEcsLaunchSpec {
 	_init_.Initialize()
 
@@ -745,7 +755,7 @@ func NewOceanEcsLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.0/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/ocean_ecs_launch_spec spotinst_ocean_ecs_launch_spec} Resource.
 func NewOceanEcsLaunchSpec_Override(o OceanEcsLaunchSpec, scope constructs.Construct, id *string, config *OceanEcsLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1214,6 +1224,19 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (o *jsiiProxy_OceanEcsLaunchSpec) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_OceanEcsLaunchSpec) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1241,6 +1264,17 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (o *jsiiProxy_OceanEcsLaunchSpec) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_OceanEcsLaunchSpec) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1249,6 +1283,17 @@ func (o *jsiiProxy_OceanEcsLaunchSpec) MoveTo(moveTarget *string, index interfac
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_OceanEcsLaunchSpec) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
