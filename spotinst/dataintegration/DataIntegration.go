@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/data_integration spotinst_data_integration}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.0/docs/resources/data_integration spotinst_data_integration}.
 type DataIntegration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataIntegration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/data_integration spotinst_data_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.0/docs/resources/data_integration spotinst_data_integration} Resource.
 func NewDataIntegration(scope constructs.Construct, id *string, config *DataIntegrationConfig) DataIntegration {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDataIntegration(scope constructs.Construct, id *string, config *DataInte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/data_integration spotinst_data_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.0/docs/resources/data_integration spotinst_data_integration} Resource.
 func NewDataIntegration_Override(d DataIntegration, scope constructs.Construct, id *string, config *DataIntegrationConfig) {
 	_init_.Initialize()
 

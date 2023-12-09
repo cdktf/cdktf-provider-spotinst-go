@@ -494,6 +494,17 @@ func (e *jsiiProxy_ElastigroupAws) validatePutItfParameters(value interface{}) e
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAws) validatePutLoggingParameters(value *ElastigroupAwsLogging) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAws) validatePutMetadataOptionsParameters(value *ElastigroupAwsMetadataOptions) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/organization_programmatic_user spotinst_organization_programmatic_user}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.0/docs/resources/organization_programmatic_user spotinst_organization_programmatic_user}.
 type OrganizationProgrammaticUser interface {
 	cdktf.TerraformResource
 	Accounts() OrganizationProgrammaticUserAccountsList
@@ -426,7 +426,7 @@ func (j *jsiiProxy_OrganizationProgrammaticUser) UserGroupIdsInput() *[]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/organization_programmatic_user spotinst_organization_programmatic_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.0/docs/resources/organization_programmatic_user spotinst_organization_programmatic_user} Resource.
 func NewOrganizationProgrammaticUser(scope constructs.Construct, id *string, config *OrganizationProgrammaticUserConfig) OrganizationProgrammaticUser {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewOrganizationProgrammaticUser(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/organization_programmatic_user spotinst_organization_programmatic_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.0/docs/resources/organization_programmatic_user spotinst_organization_programmatic_user} Resource.
 func NewOrganizationProgrammaticUser_Override(o OrganizationProgrammaticUser, scope constructs.Construct, id *string, config *OrganizationProgrammaticUserConfig) {
 	_init_.Initialize()
 

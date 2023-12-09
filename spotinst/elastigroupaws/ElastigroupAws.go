@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
 type ElastigroupAws interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -152,6 +152,8 @@ type ElastigroupAws interface {
 	LifetimePeriod() *string
 	SetLifetimePeriod(val *string)
 	LifetimePeriodInput() *string
+	Logging() ElastigroupAwsLoggingOutputReference
+	LoggingInput() *ElastigroupAwsLogging
 	MaxSize() *float64
 	SetMaxSize(val *float64)
 	MaxSizeInput() *float64
@@ -339,6 +341,7 @@ type ElastigroupAws interface {
 	PutIntegrationRancher(value *ElastigroupAwsIntegrationRancher)
 	PutIntegrationRoute53(value *ElastigroupAwsIntegrationRoute53)
 	PutItf(value interface{})
+	PutLogging(value *ElastigroupAwsLogging)
 	PutMetadataOptions(value *ElastigroupAwsMetadataOptions)
 	PutMultaiTargetSets(value interface{})
 	PutMultipleMetrics(value *ElastigroupAwsMultipleMetrics)
@@ -397,6 +400,7 @@ type ElastigroupAws interface {
 	ResetItf()
 	ResetKeyName()
 	ResetLifetimePeriod()
+	ResetLogging()
 	ResetMaxSize()
 	ResetMetadataOptions()
 	ResetMinimumInstanceLifetime()
@@ -1383,6 +1387,26 @@ func (j *jsiiProxy_ElastigroupAws) LifetimePeriodInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAws) Logging() ElastigroupAwsLoggingOutputReference {
+	var returns ElastigroupAwsLoggingOutputReference
+	_jsii_.Get(
+		j,
+		"logging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) LoggingInput() *ElastigroupAwsLogging {
+	var returns *ElastigroupAwsLogging
+	_jsii_.Get(
+		j,
+		"loggingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAws) MaxSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -2294,7 +2318,7 @@ func (j *jsiiProxy_ElastigroupAws) WaitForCapacityTimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws(scope constructs.Construct, id *string, config *ElastigroupAwsConfig) ElastigroupAws {
 	_init_.Initialize()
 
@@ -2312,7 +2336,7 @@ func NewElastigroupAws(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.151.1/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws_Override(e ElastigroupAws, scope constructs.Construct, id *string, config *ElastigroupAwsConfig) {
 	_init_.Initialize()
 
@@ -3481,6 +3505,17 @@ func (e *jsiiProxy_ElastigroupAws) PutItf(value interface{}) {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAws) PutLogging(value *ElastigroupAwsLogging) {
+	if err := e.validatePutLoggingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putLogging",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAws) PutMetadataOptions(value *ElastigroupAwsMetadataOptions) {
 	if err := e.validatePutMetadataOptionsParameters(value); err != nil {
 		panic(err)
@@ -3992,6 +4027,14 @@ func (e *jsiiProxy_ElastigroupAws) ResetLifetimePeriod() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetLifetimePeriod",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAws) ResetLogging() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetLogging",
 		nil, // no parameters
 	)
 }

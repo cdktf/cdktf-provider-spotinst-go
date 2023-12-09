@@ -143,6 +143,10 @@ func (e *jsiiProxy_ElastigroupAws) validatePutItfParameters(value interface{}) e
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAws) validatePutLoggingParameters(value *ElastigroupAwsLogging) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAws) validatePutMetadataOptionsParameters(value *ElastigroupAwsMetadataOptions) error {
 	return nil
 }
