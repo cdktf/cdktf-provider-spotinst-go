@@ -5,9 +5,9 @@ package oceanecs
 
 
 type OceanEcsTags struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.0/docs/resources/ocean_ecs#key OceanEcs#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.1/docs/resources/ocean_ecs#key OceanEcs#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.0/docs/resources/ocean_ecs#value OceanEcs#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.153.1/docs/resources/ocean_ecs#value OceanEcs#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 
