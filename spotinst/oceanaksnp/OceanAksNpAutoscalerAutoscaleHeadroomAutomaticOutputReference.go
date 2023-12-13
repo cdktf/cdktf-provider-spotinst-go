@@ -32,6 +32,9 @@ type OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference interface {
 	Fqn() *string
 	InternalValue() *OceanAksNpAutoscalerAutoscaleHeadroomAutomatic
 	SetInternalValue(val *OceanAksNpAutoscalerAutoscaleHeadroomAutomatic)
+	IsEnabled() interface{}
+	SetIsEnabled(val interface{})
+	IsEnabledInput() interface{}
 	Percentage() *float64
 	SetPercentage(val *float64)
 	PercentageInput() *float64
@@ -67,6 +70,7 @@ type OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIsEnabled()
 	ResetPercentage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference) IsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference) IsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isEnabledInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +254,17 @@ func (j *jsiiProxy_OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference)SetIsEnabled(val interface{}) {
+	if err := j.validateSetIsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isEnabled",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (o *jsiiProxy_OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference) ResetIsEnabled() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetIsEnabled",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference) ResetPercentage() {

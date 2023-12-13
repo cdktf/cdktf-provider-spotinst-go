@@ -63,6 +63,10 @@ func (j *jsiiProxy_OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference) validateSetIsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpAutoscalerAutoscaleHeadroomAutomaticOutputReference) validateSetPercentageParameters(val *float64) error {
 	return nil
 }
