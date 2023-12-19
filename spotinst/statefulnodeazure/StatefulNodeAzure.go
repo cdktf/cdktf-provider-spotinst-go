@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.155.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.156.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
 type StatefulNodeAzure interface {
 	cdktf.TerraformResource
 	AttachDataDisk() StatefulNodeAzureAttachDataDiskList
@@ -1305,7 +1305,7 @@ func (j *jsiiProxy_StatefulNodeAzure) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.155.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.156.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) StatefulNodeAzure {
 	_init_.Initialize()
 
@@ -1323,7 +1323,7 @@ func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *Statef
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.155.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.156.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure_Override(s StatefulNodeAzure, scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) {
 	_init_.Initialize()
 

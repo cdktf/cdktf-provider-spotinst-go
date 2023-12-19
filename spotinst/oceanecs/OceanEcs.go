@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.155.0/docs/resources/ocean_ecs spotinst_ocean_ecs}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.156.0/docs/resources/ocean_ecs spotinst_ocean_ecs}.
 type OceanEcs interface {
 	cdktf.TerraformResource
 	AssociatePublicIpAddress() interface{}
@@ -1070,7 +1070,7 @@ func (j *jsiiProxy_OceanEcs) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.155.0/docs/resources/ocean_ecs spotinst_ocean_ecs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.156.0/docs/resources/ocean_ecs spotinst_ocean_ecs} Resource.
 func NewOceanEcs(scope constructs.Construct, id *string, config *OceanEcsConfig) OceanEcs {
 	_init_.Initialize()
 
@@ -1088,7 +1088,7 @@ func NewOceanEcs(scope constructs.Construct, id *string, config *OceanEcsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.155.0/docs/resources/ocean_ecs spotinst_ocean_ecs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.156.0/docs/resources/ocean_ecs spotinst_ocean_ecs} Resource.
 func NewOceanEcs_Override(o OceanEcs, scope constructs.Construct, id *string, config *OceanEcsConfig) {
 	_init_.Initialize()
 
