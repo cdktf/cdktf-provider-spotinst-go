@@ -217,6 +217,14 @@ func (j *jsiiProxy_OceanAwsUpdatePolicyOutputReference) validateSetConditionedRo
 	return nil
 }
 
+func (j *jsiiProxy_OceanAwsUpdatePolicyOutputReference) validateSetConditionedRollParamsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsUpdatePolicyOutputReference) validateSetInternalValueParameters(val *OceanAwsUpdatePolicy) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

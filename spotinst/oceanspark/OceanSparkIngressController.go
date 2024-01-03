@@ -5,7 +5,7 @@ package oceanspark
 
 
 type OceanSparkIngressController struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.156.0/docs/resources/ocean_spark#managed OceanSpark#managed}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.157.0/docs/resources/ocean_spark#managed OceanSpark#managed}.
 	Managed interface{} `field:"optional" json:"managed" yaml:"managed"`
 }
 

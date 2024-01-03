@@ -29,6 +29,9 @@ type OceanAwsUpdatePolicyOutputReference interface {
 	ConditionedRoll() interface{}
 	SetConditionedRoll(val interface{})
 	ConditionedRollInput() interface{}
+	ConditionedRollParams() *[]*string
+	SetConditionedRollParams(val *[]*string)
+	ConditionedRollParamsInput() *[]*string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -78,6 +81,7 @@ type OceanAwsUpdatePolicyOutputReference interface {
 	PutRollConfig(value *OceanAwsUpdatePolicyRollConfig)
 	ResetAutoApplyTags()
 	ResetConditionedRoll()
+	ResetConditionedRollParams()
 	ResetRollConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_OceanAwsUpdatePolicyOutputReference) ConditionedRollInput() i
 	_jsii_.Get(
 		j,
 		"conditionedRollInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsUpdatePolicyOutputReference) ConditionedRollParams() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"conditionedRollParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsUpdatePolicyOutputReference) ConditionedRollParamsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"conditionedRollParamsInput",
 		&returns,
 	)
 	return returns
@@ -312,6 +336,17 @@ func (j *jsiiProxy_OceanAwsUpdatePolicyOutputReference)SetConditionedRoll(val in
 	_jsii_.Set(
 		j,
 		"conditionedRoll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAwsUpdatePolicyOutputReference)SetConditionedRollParams(val *[]*string) {
+	if err := j.validateSetConditionedRollParamsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"conditionedRollParams",
 		val,
 	)
 }
@@ -569,6 +604,14 @@ func (o *jsiiProxy_OceanAwsUpdatePolicyOutputReference) ResetConditionedRoll() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetConditionedRoll",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsUpdatePolicyOutputReference) ResetConditionedRollParams() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetConditionedRollParams",
 		nil, // no parameters
 	)
 }

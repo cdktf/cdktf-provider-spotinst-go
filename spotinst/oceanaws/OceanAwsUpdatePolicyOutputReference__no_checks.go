@@ -71,6 +71,10 @@ func (j *jsiiProxy_OceanAwsUpdatePolicyOutputReference) validateSetConditionedRo
 	return nil
 }
 
+func (j *jsiiProxy_OceanAwsUpdatePolicyOutputReference) validateSetConditionedRollParamsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsUpdatePolicyOutputReference) validateSetInternalValueParameters(val *OceanAwsUpdatePolicy) error {
 	return nil
 }
