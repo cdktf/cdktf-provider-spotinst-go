@@ -1,6 +1,6 @@
-# CDKTF Go bindings for spotinst/spotinst provider version 1.157.0
+# CDKTF Go bindings for spotinst/spotinst provider version 1.158.0
 
-This repo builds and publishes the [Terraform spotinst provider](https://registry.terraform.io/providers/spotinst/spotinst/1.157.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform spotinst provider](https://registry.terraform.io/providers/spotinst/spotinst/1.158.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
@@ -20,7 +20,7 @@ This project is explicitly not tracking the Terraform spotinst provider version 
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform spotinst provider](https://registry.terraform.io/providers/spotinst/spotinst/1.157.0)
+* [Terraform spotinst provider](https://registry.terraform.io/providers/spotinst/spotinst/1.158.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

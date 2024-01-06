@@ -171,7 +171,7 @@ func (j *jsiiProxy_ManagedInstanceAws) validateSetEnableMonitoringParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) validateSetFallBackToOdParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedInstanceAws) validateSetFallbackToOndemandParameters(val interface{}) error {
 	return nil
 }
 

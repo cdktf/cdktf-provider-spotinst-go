@@ -687,7 +687,7 @@ func (j *jsiiProxy_ManagedInstanceAws) validateSetEnableMonitoringParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) validateSetFallBackToOdParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedInstanceAws) validateSetFallbackToOndemandParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

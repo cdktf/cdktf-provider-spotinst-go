@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.157.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.158.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws}.
 type ManagedInstanceAws interface {
 	cdktf.TerraformResource
 	AutoHealing() interface{}
@@ -59,9 +59,9 @@ type ManagedInstanceAws interface {
 	EnableMonitoring() interface{}
 	SetEnableMonitoring(val interface{})
 	EnableMonitoringInput() interface{}
-	FallBackToOd() interface{}
-	SetFallBackToOd(val interface{})
-	FallBackToOdInput() interface{}
+	FallbackToOndemand() interface{}
+	SetFallbackToOndemand(val interface{})
+	FallbackToOndemandInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -252,7 +252,7 @@ type ManagedInstanceAws interface {
 	ResetEbsOptimized()
 	ResetElasticIp()
 	ResetEnableMonitoring()
-	ResetFallBackToOd()
+	ResetFallbackToOndemand()
 	ResetGracePeriod()
 	ResetHealthCheckType()
 	ResetIamInstanceProfile()
@@ -549,21 +549,21 @@ func (j *jsiiProxy_ManagedInstanceAws) EnableMonitoringInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) FallBackToOd() interface{} {
+func (j *jsiiProxy_ManagedInstanceAws) FallbackToOndemand() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"fallBackToOd",
+		"fallbackToOndemand",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ManagedInstanceAws) FallBackToOdInput() interface{} {
+func (j *jsiiProxy_ManagedInstanceAws) FallbackToOndemandInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"fallBackToOdInput",
+		"fallbackToOndemandInput",
 		&returns,
 	)
 	return returns
@@ -1380,7 +1380,7 @@ func (j *jsiiProxy_ManagedInstanceAws) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.157.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.158.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
 func NewManagedInstanceAws(scope constructs.Construct, id *string, config *ManagedInstanceAwsConfig) ManagedInstanceAws {
 	_init_.Initialize()
 
@@ -1398,7 +1398,7 @@ func NewManagedInstanceAws(scope constructs.Construct, id *string, config *Manag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.157.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.158.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
 func NewManagedInstanceAws_Override(m ManagedInstanceAws, scope constructs.Construct, id *string, config *ManagedInstanceAwsConfig) {
 	_init_.Initialize()
 
@@ -1527,13 +1527,13 @@ func (j *jsiiProxy_ManagedInstanceAws)SetEnableMonitoring(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAws)SetFallBackToOd(val interface{}) {
-	if err := j.validateSetFallBackToOdParameters(val); err != nil {
+func (j *jsiiProxy_ManagedInstanceAws)SetFallbackToOndemand(val interface{}) {
+	if err := j.validateSetFallbackToOndemandParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"fallBackToOd",
+		"fallbackToOndemand",
 		val,
 	)
 }
@@ -2416,10 +2416,10 @@ func (m *jsiiProxy_ManagedInstanceAws) ResetEnableMonitoring() {
 	)
 }
 
-func (m *jsiiProxy_ManagedInstanceAws) ResetFallBackToOd() {
+func (m *jsiiProxy_ManagedInstanceAws) ResetFallbackToOndemand() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetFallBackToOd",
+		"resetFallbackToOndemand",
 		nil, // no parameters
 	)
 }
