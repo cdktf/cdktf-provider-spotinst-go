@@ -7,6 +7,10 @@ package organizationprogrammaticuser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationProgrammaticUserAccountsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationProgrammaticUserAccountsList) validateGetParameters(index *float64) error {
 	return nil
 }

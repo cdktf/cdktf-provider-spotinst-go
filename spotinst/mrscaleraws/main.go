@@ -217,6 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "strategy", GoGetter: "Strategy"},
 			_jsii_.MemberProperty{JsiiProperty: "strategyInput", GoGetter: "StrategyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "taskDesiredCapacity", GoGetter: "TaskDesiredCapacity"},
@@ -246,6 +247,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
+			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
@@ -266,6 +268,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsApplicationsList",
 		reflect.TypeOf((*MrscalerAwsApplicationsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -331,6 +334,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsBootstrapActionsFileList",
 		reflect.TypeOf((*MrscalerAwsBootstrapActionsFileList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -396,6 +400,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsConfigurationsFileList",
 		reflect.TypeOf((*MrscalerAwsConfigurationsFileList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -457,6 +462,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsCoreEbsBlockDeviceList",
 		reflect.TypeOf((*MrscalerAwsCoreEbsBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -524,6 +530,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsCoreScalingDownPolicyList",
 		reflect.TypeOf((*MrscalerAwsCoreScalingDownPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -630,6 +637,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsCoreScalingUpPolicyList",
 		reflect.TypeOf((*MrscalerAwsCoreScalingUpPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -736,6 +744,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsInstanceWeightsList",
 		reflect.TypeOf((*MrscalerAwsInstanceWeightsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -797,6 +806,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsMasterEbsBlockDeviceList",
 		reflect.TypeOf((*MrscalerAwsMasterEbsBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -904,6 +914,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsScheduledTaskList",
 		reflect.TypeOf((*MrscalerAwsScheduledTaskList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -979,6 +990,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsStepsFileList",
 		reflect.TypeOf((*MrscalerAwsStepsFileList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1040,6 +1052,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsTagsList",
 		reflect.TypeOf((*MrscalerAwsTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1101,6 +1114,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsTaskEbsBlockDeviceList",
 		reflect.TypeOf((*MrscalerAwsTaskEbsBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1168,6 +1182,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsTaskScalingDownPolicyList",
 		reflect.TypeOf((*MrscalerAwsTaskScalingDownPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1274,6 +1289,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsTaskScalingUpPolicyList",
 		reflect.TypeOf((*MrscalerAwsTaskScalingUpPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1380,6 +1396,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsTerminationPoliciesList",
 		reflect.TypeOf((*MrscalerAwsTerminationPoliciesList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1440,6 +1457,7 @@ func init() {
 		"@cdktf/provider-spotinst.mrscalerAws.MrscalerAwsTerminationPoliciesStatementsList",
 		reflect.TypeOf((*MrscalerAwsTerminationPoliciesStatementsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

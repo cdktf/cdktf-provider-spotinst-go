@@ -5,10 +5,10 @@ package oceanecs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v12/oceanecs/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v13/oceanecs/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -235,6 +235,9 @@ type OceanEcs interface {
 	ResetUtilizeReservedInstances()
 	ResetWhitelist()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -2121,6 +2124,32 @@ func (o *jsiiProxy_OceanEcs) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		o,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanEcs) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		o,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OceanEcs) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

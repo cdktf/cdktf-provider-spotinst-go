@@ -7,6 +7,10 @@ package elastigroupgcp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupGcpBackendServicesNamedPortsList) validateGetParameters(index *float64) error {
 	return nil
 }

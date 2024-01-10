@@ -7,6 +7,10 @@ package managedinstanceaws
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersList) validateGetParameters(index *float64) error {
 	return nil
 }

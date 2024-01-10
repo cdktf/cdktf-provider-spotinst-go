@@ -7,6 +7,10 @@ package oceanaksvirtualnodegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleAutoscaleHeadroomList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksVirtualNodeGroupAutoscaleAutoscaleHeadroomList) validateGetParameters(index *float64) error {
 	return nil
 }

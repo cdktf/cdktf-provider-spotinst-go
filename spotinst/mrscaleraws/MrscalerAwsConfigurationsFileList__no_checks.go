@@ -7,6 +7,10 @@ package mrscaleraws
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MrscalerAwsConfigurationsFileList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MrscalerAwsConfigurationsFileList) validateGetParameters(index *float64) error {
 	return nil
 }

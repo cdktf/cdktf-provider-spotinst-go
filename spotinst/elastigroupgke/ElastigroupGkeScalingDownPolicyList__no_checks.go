@@ -7,6 +7,10 @@ package elastigroupgke
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyList) validateGetParameters(index *float64) error {
 	return nil
 }

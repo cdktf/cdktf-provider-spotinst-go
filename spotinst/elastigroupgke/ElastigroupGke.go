@@ -5,10 +5,10 @@ package elastigroupgke
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v12/elastigroupgke/internal"
+	"github.com/cdktf/cdktf-provider-spotinst-go/spotinst/v13/elastigroupgke/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -233,6 +233,9 @@ type ElastigroupGke interface {
 	ResetStartupScript()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -2096,6 +2099,32 @@ func (e *jsiiProxy_ElastigroupGke) SynthesizeAttributes() *map[string]interface{
 	_jsii_.Invoke(
 		e,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastigroupGke) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		e,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_ElastigroupGke) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

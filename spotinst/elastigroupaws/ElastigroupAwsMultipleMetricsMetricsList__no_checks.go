@@ -7,6 +7,10 @@ package elastigroupaws
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) validateGetParameters(index *float64) error {
 	return nil
 }

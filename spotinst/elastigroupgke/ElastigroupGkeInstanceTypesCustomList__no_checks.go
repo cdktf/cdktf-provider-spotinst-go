@@ -7,6 +7,10 @@ package elastigroupgke
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package oceanecslaunchspec
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanEcsLaunchSpecSchedulingTaskTaskHeadroomList) validateGetParameters(index *float64) error {
 	return nil
 }

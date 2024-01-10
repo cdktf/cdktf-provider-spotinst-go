@@ -7,6 +7,10 @@ package elastigroupazurev3
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesApplicationSecurityGroupList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesApplicationSecurityGroupList) validateGetParameters(index *float64) error {
 	return nil
 }

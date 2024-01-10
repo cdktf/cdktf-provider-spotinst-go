@@ -316,6 +316,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "subnetIds", GoGetter: "SubnetIds"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetIdsInput", GoGetter: "SubnetIdsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetGroupArns", GoGetter: "TargetGroupArns"},
@@ -323,6 +324,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
+			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
@@ -395,6 +397,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsEbsBlockDeviceList",
 		reflect.TypeOf((*ElastigroupAwsEbsBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -478,6 +481,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsEphemeralBlockDeviceList",
 		reflect.TypeOf((*ElastigroupAwsEphemeralBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -543,6 +547,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsImagesImageList",
 		reflect.TypeOf((*ElastigroupAwsImagesImageList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -598,6 +603,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsImagesList",
 		reflect.TypeOf((*ElastigroupAwsImagesList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -658,6 +664,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsInstanceTypesWeightsList",
 		reflect.TypeOf((*ElastigroupAwsInstanceTypesWeightsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -946,6 +953,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsIntegrationCodedeployDeploymentGroupsList",
 		reflect.TypeOf((*ElastigroupAwsIntegrationCodedeployDeploymentGroupsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1191,6 +1199,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsIntegrationEcsAutoscaleAttributesList",
 		reflect.TypeOf((*ElastigroupAwsIntegrationEcsAutoscaleAttributesList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1609,6 +1618,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList",
 		reflect.TypeOf((*ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1815,6 +1825,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsIntegrationNomadAutoscaleConstraintsList",
 		reflect.TypeOf((*ElastigroupAwsIntegrationNomadAutoscaleConstraintsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2066,6 +2077,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsIntegrationRoute53DomainsList",
 		reflect.TypeOf((*ElastigroupAwsIntegrationRoute53DomainsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2134,6 +2146,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsIntegrationRoute53DomainsRecordSetsList",
 		reflect.TypeOf((*ElastigroupAwsIntegrationRoute53DomainsRecordSetsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2274,6 +2287,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsItfList",
 		reflect.TypeOf((*ElastigroupAwsItfList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2299,6 +2313,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsItfLoadBalancerList",
 		reflect.TypeOf((*ElastigroupAwsItfLoadBalancerList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2324,6 +2339,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsItfLoadBalancerListenerRuleList",
 		reflect.TypeOf((*ElastigroupAwsItfLoadBalancerListenerRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2513,6 +2529,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsItfTargetGroupConfigList",
 		reflect.TypeOf((*ElastigroupAwsItfTargetGroupConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2538,6 +2555,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsItfTargetGroupConfigMatcherList",
 		reflect.TypeOf((*ElastigroupAwsItfTargetGroupConfigMatcherList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2670,6 +2688,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsItfTargetGroupConfigTagsList",
 		reflect.TypeOf((*ElastigroupAwsItfTargetGroupConfigTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2776,6 +2795,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsLoggingExportS3List",
 		reflect.TypeOf((*ElastigroupAwsLoggingExportS3List)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2915,6 +2935,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsMultaiTargetSetsList",
 		reflect.TypeOf((*ElastigroupAwsMultaiTargetSetsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2980,6 +3001,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsMultipleMetricsExpressionsList",
 		reflect.TypeOf((*ElastigroupAwsMultipleMetricsExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3045,6 +3067,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsMultipleMetricsMetricsDimensionsList",
 		reflect.TypeOf((*ElastigroupAwsMultipleMetricsMetricsDimensionsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3103,6 +3126,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsMultipleMetricsMetricsList",
 		reflect.TypeOf((*ElastigroupAwsMultipleMetricsMetricsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3219,6 +3243,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsNetworkInterfaceList",
 		reflect.TypeOf((*ElastigroupAwsNetworkInterfaceList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3299,6 +3324,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsResourceRequirementsList",
 		reflect.TypeOf((*ElastigroupAwsResourceRequirementsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3379,6 +3405,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsResourceTagSpecificationList",
 		reflect.TypeOf((*ElastigroupAwsResourceTagSpecificationList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3493,6 +3520,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsScalingDownPolicyDimensionsList",
 		reflect.TypeOf((*ElastigroupAwsScalingDownPolicyDimensionsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3551,6 +3579,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsScalingDownPolicyList",
 		reflect.TypeOf((*ElastigroupAwsScalingDownPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3726,6 +3755,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsScalingDownPolicyStepAdjustmentsList",
 		reflect.TypeOf((*ElastigroupAwsScalingDownPolicyStepAdjustmentsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3788,6 +3818,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsScalingStrategyList",
 		reflect.TypeOf((*ElastigroupAwsScalingStrategyList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3855,6 +3886,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsScalingTargetPolicyDimensionsList",
 		reflect.TypeOf((*ElastigroupAwsScalingTargetPolicyDimensionsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -3913,6 +3945,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsScalingTargetPolicyList",
 		reflect.TypeOf((*ElastigroupAwsScalingTargetPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4010,6 +4043,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsScalingUpPolicyDimensionsList",
 		reflect.TypeOf((*ElastigroupAwsScalingUpPolicyDimensionsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4068,6 +4102,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsScalingUpPolicyList",
 		reflect.TypeOf((*ElastigroupAwsScalingUpPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4243,6 +4278,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsScalingUpPolicyStepAdjustmentsList",
 		reflect.TypeOf((*ElastigroupAwsScalingUpPolicyStepAdjustmentsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4305,6 +4341,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsScheduledTaskList",
 		reflect.TypeOf((*ElastigroupAwsScheduledTaskList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4406,6 +4443,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsSignalList",
 		reflect.TypeOf((*ElastigroupAwsSignalList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4516,6 +4554,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsStatefulInstanceActionList",
 		reflect.TypeOf((*ElastigroupAwsStatefulInstanceActionList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -4577,6 +4616,7 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsTagsList",
 		reflect.TypeOf((*ElastigroupAwsTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

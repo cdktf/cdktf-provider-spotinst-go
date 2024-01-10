@@ -7,6 +7,10 @@ package statefulnodeazure
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StatefulNodeAzureStrategyCapacityReservationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulNodeAzureStrategyCapacityReservationList) validateGetParameters(index *float64) error {
 	return nil
 }
