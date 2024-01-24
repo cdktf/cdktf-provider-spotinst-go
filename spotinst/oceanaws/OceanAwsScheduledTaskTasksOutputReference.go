@@ -38,6 +38,8 @@ type OceanAwsScheduledTaskTasksOutputReference interface {
 	IsEnabled() interface{}
 	SetIsEnabled(val interface{})
 	IsEnabledInput() interface{}
+	Parameters() OceanAwsScheduledTaskTasksParametersOutputReference
+	ParametersInput() *OceanAwsScheduledTaskTasksParameters
 	TaskType() *string
 	SetTaskType(val *string)
 	TaskTypeInput() *string
@@ -73,6 +75,8 @@ type OceanAwsScheduledTaskTasksOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutParameters(value *OceanAwsScheduledTaskTasksParameters)
+	ResetParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) IsEnabledInput() i
 	_jsii_.Get(
 		j,
 		"isEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) Parameters() OceanAwsScheduledTaskTasksParametersOutputReference {
+	var returns OceanAwsScheduledTaskTasksParametersOutputReference
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) ParametersInput() *OceanAwsScheduledTaskTasksParameters {
+	var returns *OceanAwsScheduledTaskTasksParameters
+	_jsii_.Get(
+		j,
+		"parametersInput",
 		&returns,
 	)
 	return returns
@@ -518,6 +542,25 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) PutParameters(value *OceanAwsScheduledTaskTasksParameters) {
+	if err := o.validatePutParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putParameters",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) ResetParameters() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetParameters",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

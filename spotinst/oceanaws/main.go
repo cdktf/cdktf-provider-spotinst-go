@@ -1228,6 +1228,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isEnabled", GoGetter: "IsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "isEnabledInput", GoGetter: "IsEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "parameters", GoGetter: "Parameters"},
+			_jsii_.MemberProperty{JsiiProperty: "parametersInput", GoGetter: "ParametersInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putParameters", GoMethod: "PutParameters"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParameters", GoMethod: "ResetParameters"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "taskType", GoGetter: "TaskType"},
 			_jsii_.MemberProperty{JsiiProperty: "taskTypeInput", GoGetter: "TaskTypeInput"},
@@ -1237,6 +1241,195 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OceanAwsScheduledTaskTasksOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanAws.OceanAwsScheduledTaskTasksParameters",
+		reflect.TypeOf((*OceanAwsScheduledTaskTasksParameters)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanAws.OceanAwsScheduledTaskTasksParametersAmiAutoUpdate",
+		reflect.TypeOf((*OceanAwsScheduledTaskTasksParametersAmiAutoUpdate)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanAws.OceanAwsScheduledTaskTasksParametersAmiAutoUpdateAmiAutoUpdateClusterRoll",
+		reflect.TypeOf((*OceanAwsScheduledTaskTasksParametersAmiAutoUpdateAmiAutoUpdateClusterRoll)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanAws.OceanAwsScheduledTaskTasksParametersAmiAutoUpdateAmiAutoUpdateClusterRollOutputReference",
+		reflect.TypeOf((*OceanAwsScheduledTaskTasksParametersAmiAutoUpdateAmiAutoUpdateClusterRollOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "batchMinHealthyPercentage", GoGetter: "BatchMinHealthyPercentage"},
+			_jsii_.MemberProperty{JsiiProperty: "batchMinHealthyPercentageInput", GoGetter: "BatchMinHealthyPercentageInput"},
+			_jsii_.MemberProperty{JsiiProperty: "batchSizePercentage", GoGetter: "BatchSizePercentage"},
+			_jsii_.MemberProperty{JsiiProperty: "batchSizePercentageInput", GoGetter: "BatchSizePercentageInput"},
+			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
+			_jsii_.MemberProperty{JsiiProperty: "commentInput", GoGetter: "CommentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBatchMinHealthyPercentage", GoMethod: "ResetBatchMinHealthyPercentage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBatchSizePercentage", GoMethod: "ResetBatchSizePercentage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetComment", GoMethod: "ResetComment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRespectPdb", GoMethod: "ResetRespectPdb"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "respectPdb", GoGetter: "RespectPdb"},
+			_jsii_.MemberProperty{JsiiProperty: "respectPdbInput", GoGetter: "RespectPdbInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanAwsScheduledTaskTasksParametersAmiAutoUpdateAmiAutoUpdateClusterRollOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanAws.OceanAwsScheduledTaskTasksParametersAmiAutoUpdateOutputReference",
+		reflect.TypeOf((*OceanAwsScheduledTaskTasksParametersAmiAutoUpdateOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "amiAutoUpdateClusterRoll", GoGetter: "AmiAutoUpdateClusterRoll"},
+			_jsii_.MemberProperty{JsiiProperty: "amiAutoUpdateClusterRollInput", GoGetter: "AmiAutoUpdateClusterRollInput"},
+			_jsii_.MemberProperty{JsiiProperty: "applyRoll", GoGetter: "ApplyRoll"},
+			_jsii_.MemberProperty{JsiiProperty: "applyRollInput", GoGetter: "ApplyRollInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "minorVersion", GoGetter: "MinorVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "minorVersionInput", GoGetter: "MinorVersionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "patch", GoGetter: "Patch"},
+			_jsii_.MemberProperty{JsiiProperty: "patchInput", GoGetter: "PatchInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAmiAutoUpdateClusterRoll", GoMethod: "PutAmiAutoUpdateClusterRoll"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAmiAutoUpdateClusterRoll", GoMethod: "ResetAmiAutoUpdateClusterRoll"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApplyRoll", GoMethod: "ResetApplyRoll"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinorVersion", GoMethod: "ResetMinorVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPatch", GoMethod: "ResetPatch"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanAwsScheduledTaskTasksParametersAmiAutoUpdateOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanAws.OceanAwsScheduledTaskTasksParametersOutputReference",
+		reflect.TypeOf((*OceanAwsScheduledTaskTasksParametersOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "amiAutoUpdate", GoGetter: "AmiAutoUpdate"},
+			_jsii_.MemberProperty{JsiiProperty: "amiAutoUpdateInput", GoGetter: "AmiAutoUpdateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "parametersClusterRoll", GoGetter: "ParametersClusterRoll"},
+			_jsii_.MemberProperty{JsiiProperty: "parametersClusterRollInput", GoGetter: "ParametersClusterRollInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAmiAutoUpdate", GoMethod: "PutAmiAutoUpdate"},
+			_jsii_.MemberMethod{JsiiMethod: "putParametersClusterRoll", GoMethod: "PutParametersClusterRoll"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAmiAutoUpdate", GoMethod: "ResetAmiAutoUpdate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParametersClusterRoll", GoMethod: "ResetParametersClusterRoll"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanAwsScheduledTaskTasksParametersOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanAws.OceanAwsScheduledTaskTasksParametersParametersClusterRoll",
+		reflect.TypeOf((*OceanAwsScheduledTaskTasksParametersParametersClusterRoll)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanAws.OceanAwsScheduledTaskTasksParametersParametersClusterRollOutputReference",
+		reflect.TypeOf((*OceanAwsScheduledTaskTasksParametersParametersClusterRollOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "batchMinHealthyPercentage", GoGetter: "BatchMinHealthyPercentage"},
+			_jsii_.MemberProperty{JsiiProperty: "batchMinHealthyPercentageInput", GoGetter: "BatchMinHealthyPercentageInput"},
+			_jsii_.MemberProperty{JsiiProperty: "batchSizePercentage", GoGetter: "BatchSizePercentage"},
+			_jsii_.MemberProperty{JsiiProperty: "batchSizePercentageInput", GoGetter: "BatchSizePercentageInput"},
+			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
+			_jsii_.MemberProperty{JsiiProperty: "commentInput", GoGetter: "CommentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBatchMinHealthyPercentage", GoMethod: "ResetBatchMinHealthyPercentage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBatchSizePercentage", GoMethod: "ResetBatchSizePercentage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetComment", GoMethod: "ResetComment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRespectPdb", GoMethod: "ResetRespectPdb"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "respectPdb", GoGetter: "RespectPdb"},
+			_jsii_.MemberProperty{JsiiProperty: "respectPdbInput", GoGetter: "RespectPdbInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanAwsScheduledTaskTasksParametersParametersClusterRollOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

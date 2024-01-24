@@ -47,6 +47,10 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) validateInterpolat
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) validatePutParametersParameters(value *OceanAwsScheduledTaskTasksParameters) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
