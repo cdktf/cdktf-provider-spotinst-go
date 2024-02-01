@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.160.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.160.1/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
 type OceanAksNp interface {
 	cdktf.TerraformResource
 	AksClusterName() *string
@@ -975,7 +975,7 @@ func (j *jsiiProxy_OceanAksNp) VnetSubnetIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.160.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.160.1/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpConfig) OceanAksNp {
 	_init_.Initialize()
 
@@ -993,7 +993,7 @@ func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.160.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.160.1/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp_Override(o OceanAksNp, scope constructs.Construct, id *string, config *OceanAksNpConfig) {
 	_init_.Initialize()
 
