@@ -30,8 +30,8 @@ type OceanAwsScheduledTaskOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *OceanAwsScheduledTask
+	SetInternalValue(val *OceanAwsScheduledTask)
 	ShutdownHours() OceanAwsScheduledTaskShutdownHoursOutputReference
 	ShutdownHoursInput() *OceanAwsScheduledTaskShutdownHours
 	Tasks() OceanAwsScheduledTaskTasksList
@@ -127,8 +127,8 @@ func (j *jsiiProxy_OceanAwsScheduledTaskOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAwsScheduledTaskOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OceanAwsScheduledTaskOutputReference) InternalValue() *OceanAwsScheduledTask {
+	var returns *OceanAwsScheduledTask
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -198,29 +198,29 @@ func (j *jsiiProxy_OceanAwsScheduledTaskOutputReference) TerraformResource() cdk
 }
 
 
-func NewOceanAwsScheduledTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OceanAwsScheduledTaskOutputReference {
+func NewOceanAwsScheduledTaskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OceanAwsScheduledTaskOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewOceanAwsScheduledTaskOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewOceanAwsScheduledTaskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_OceanAwsScheduledTaskOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-spotinst.oceanAws.OceanAwsScheduledTaskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewOceanAwsScheduledTaskOutputReference_Override(o OceanAwsScheduledTaskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewOceanAwsScheduledTaskOutputReference_Override(o OceanAwsScheduledTaskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-spotinst.oceanAws.OceanAwsScheduledTaskOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
 }
@@ -247,7 +247,7 @@ func (j *jsiiProxy_OceanAwsScheduledTaskOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_OceanAwsScheduledTaskOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OceanAwsScheduledTaskOutputReference)SetInternalValue(val *OceanAwsScheduledTask) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

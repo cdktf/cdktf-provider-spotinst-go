@@ -67,7 +67,7 @@ func (j *jsiiProxy_OceanAwsScheduledTaskOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_OceanAwsScheduledTaskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OceanAwsScheduledTaskOutputReference) validateSetInternalValueParameters(val *OceanAwsScheduledTask) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_OceanAwsScheduledTaskOutputReference) validateSetTerraformRes
 	return nil
 }
 
-func validateNewOceanAwsScheduledTaskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOceanAwsScheduledTaskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

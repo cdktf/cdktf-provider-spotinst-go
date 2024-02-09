@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.160.1/docs/resources/ocean_aws spotinst_ocean_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.160.2/docs/resources/ocean_aws spotinst_ocean_aws}.
 type OceanAws interface {
 	cdktf.TerraformResource
 	AssociateIpv6Address() interface{}
@@ -128,8 +128,8 @@ type OceanAws interface {
 	RootVolumeSize() *float64
 	SetRootVolumeSize(val *float64)
 	RootVolumeSizeInput() *float64
-	ScheduledTask() OceanAwsScheduledTaskList
-	ScheduledTaskInput() interface{}
+	ScheduledTask() OceanAwsScheduledTaskOutputReference
+	ScheduledTaskInput() *OceanAwsScheduledTask
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
@@ -218,7 +218,7 @@ type OceanAws interface {
 	PutLoadBalancers(value interface{})
 	PutLogging(value *OceanAwsLogging)
 	PutResourceTagSpecification(value interface{})
-	PutScheduledTask(value interface{})
+	PutScheduledTask(value *OceanAwsScheduledTask)
 	PutTags(value interface{})
 	PutUpdatePolicy(value *OceanAwsUpdatePolicy)
 	ResetAssociateIpv6Address()
@@ -949,8 +949,8 @@ func (j *jsiiProxy_OceanAws) RootVolumeSizeInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAws) ScheduledTask() OceanAwsScheduledTaskList {
-	var returns OceanAwsScheduledTaskList
+func (j *jsiiProxy_OceanAws) ScheduledTask() OceanAwsScheduledTaskOutputReference {
+	var returns OceanAwsScheduledTaskOutputReference
 	_jsii_.Get(
 		j,
 		"scheduledTask",
@@ -959,8 +959,8 @@ func (j *jsiiProxy_OceanAws) ScheduledTask() OceanAwsScheduledTaskList {
 	return returns
 }
 
-func (j *jsiiProxy_OceanAws) ScheduledTaskInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OceanAws) ScheduledTaskInput() *OceanAwsScheduledTask {
+	var returns *OceanAwsScheduledTask
 	_jsii_.Get(
 		j,
 		"scheduledTaskInput",
@@ -1220,7 +1220,7 @@ func (j *jsiiProxy_OceanAws) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.160.1/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.160.2/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig) OceanAws {
 	_init_.Initialize()
 
@@ -1238,7 +1238,7 @@ func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.160.1/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.160.2/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws_Override(o OceanAws, scope constructs.Construct, id *string, config *OceanAwsConfig) {
 	_init_.Initialize()
 
@@ -2066,7 +2066,7 @@ func (o *jsiiProxy_OceanAws) PutResourceTagSpecification(value interface{}) {
 	)
 }
 
-func (o *jsiiProxy_OceanAws) PutScheduledTask(value interface{}) {
+func (o *jsiiProxy_OceanAws) PutScheduledTask(value *OceanAwsScheduledTask) {
 	if err := o.validatePutScheduledTaskParameters(value); err != nil {
 		panic(err)
 	}

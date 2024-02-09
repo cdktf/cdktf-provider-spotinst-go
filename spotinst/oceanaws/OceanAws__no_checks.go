@@ -107,7 +107,7 @@ func (o *jsiiProxy_OceanAws) validatePutResourceTagSpecificationParameters(value
 	return nil
 }
 
-func (o *jsiiProxy_OceanAws) validatePutScheduledTaskParameters(value interface{}) error {
+func (o *jsiiProxy_OceanAws) validatePutScheduledTaskParameters(value *OceanAwsScheduledTask) error {
 	return nil
 }
 
