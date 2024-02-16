@@ -67,6 +67,10 @@ func (j *jsiiProxy_OceanAwsAutoscalerAutoscaleDownOutputReference) validateSetIn
 	return nil
 }
 
+func (j *jsiiProxy_OceanAwsAutoscalerAutoscaleDownOutputReference) validateSetIsAggressiveScaleDownEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsAutoscalerAutoscaleDownOutputReference) validateSetMaxScaleDownPercentageParameters(val *float64) error {
 	return nil
 }

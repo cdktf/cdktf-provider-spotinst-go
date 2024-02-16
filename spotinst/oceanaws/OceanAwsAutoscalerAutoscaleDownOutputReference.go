@@ -35,6 +35,9 @@ type OceanAwsAutoscalerAutoscaleDownOutputReference interface {
 	Fqn() *string
 	InternalValue() *OceanAwsAutoscalerAutoscaleDown
 	SetInternalValue(val *OceanAwsAutoscalerAutoscaleDown)
+	IsAggressiveScaleDownEnabled() interface{}
+	SetIsAggressiveScaleDownEnabled(val interface{})
+	IsAggressiveScaleDownEnabledInput() interface{}
 	MaxScaleDownPercentage() *float64
 	SetMaxScaleDownPercentage(val *float64)
 	MaxScaleDownPercentageInput() *float64
@@ -71,6 +74,7 @@ type OceanAwsAutoscalerAutoscaleDownOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEvaluationPeriods()
+	ResetIsAggressiveScaleDownEnabled()
 	ResetMaxScaleDownPercentage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_OceanAwsAutoscalerAutoscaleDownOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsAutoscalerAutoscaleDownOutputReference) IsAggressiveScaleDownEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isAggressiveScaleDownEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsAutoscalerAutoscaleDownOutputReference) IsAggressiveScaleDownEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isAggressiveScaleDownEnabledInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_OceanAwsAutoscalerAutoscaleDownOutputReference)SetInternalVal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAwsAutoscalerAutoscaleDownOutputReference)SetIsAggressiveScaleDownEnabled(val interface{}) {
+	if err := j.validateSetIsAggressiveScaleDownEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isAggressiveScaleDownEnabled",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (o *jsiiProxy_OceanAwsAutoscalerAutoscaleDownOutputReference) ResetEvaluati
 	_jsii_.InvokeVoid(
 		o,
 		"resetEvaluationPeriods",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsAutoscalerAutoscaleDownOutputReference) ResetIsAggressiveScaleDownEnabled() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetIsAggressiveScaleDownEnabled",
 		nil, // no parameters
 	)
 }
