@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.161.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.162.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
 type OceanAksNpVirtualNodeGroup interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -121,6 +121,8 @@ type OceanAksNpVirtualNodeGroup interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatePolicy() OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference
+	UpdatePolicyInput() *OceanAksNpVirtualNodeGroupUpdatePolicy
 	VnetSubnetIds() *[]*string
 	SetVnetSubnetIds(val *[]*string)
 	VnetSubnetIdsInput() *[]*string
@@ -170,6 +172,7 @@ type OceanAksNpVirtualNodeGroup interface {
 	PutFilters(value *OceanAksNpVirtualNodeGroupFilters)
 	PutHeadrooms(value interface{})
 	PutTaints(value interface{})
+	PutUpdatePolicy(value *OceanAksNpVirtualNodeGroupUpdatePolicy)
 	ResetAvailabilityZones()
 	ResetEnableNodePublicIp()
 	ResetFallbackToOndemand()
@@ -192,6 +195,7 @@ type OceanAksNpVirtualNodeGroup interface {
 	ResetSpotPercentage()
 	ResetTags()
 	ResetTaints()
+	ResetUpdatePolicy()
 	ResetVnetSubnetIds()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -791,6 +795,26 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) UpdatePolicy() OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference {
+	var returns OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"updatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) UpdatePolicyInput() *OceanAksNpVirtualNodeGroupUpdatePolicy {
+	var returns *OceanAksNpVirtualNodeGroupUpdatePolicy
+	_jsii_.Get(
+		j,
+		"updatePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) VnetSubnetIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -812,7 +836,7 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) VnetSubnetIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.161.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.162.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) OceanAksNpVirtualNodeGroup {
 	_init_.Initialize()
 
@@ -830,7 +854,7 @@ func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.161.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.162.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup_Override(o OceanAksNpVirtualNodeGroup, scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) {
 	_init_.Initialize()
 
@@ -1504,6 +1528,17 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) PutTaints(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) PutUpdatePolicy(value *OceanAksNpVirtualNodeGroupUpdatePolicy) {
+	if err := o.validatePutUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetAvailabilityZones() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1660,6 +1695,14 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetTaints() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTaints",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUpdatePolicy",
 		nil, // no parameters
 	)
 }

@@ -7,7 +7,7 @@ package elastigroupaws
 type ElastigroupAwsImages struct {
 	// image block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.161.0/docs/resources/elastigroup_aws#image ElastigroupAws#image}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.162.0/docs/resources/elastigroup_aws#image ElastigroupAws#image}
 	Image interface{} `field:"required" json:"image" yaml:"image"`
 }
 

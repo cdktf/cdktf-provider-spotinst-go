@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.161.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.162.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
 type OceanAksNp interface {
 	cdktf.TerraformResource
 	AksClusterName() *string
@@ -139,6 +139,8 @@ type OceanAksNp interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdatePolicy() OceanAksNpUpdatePolicyOutputReference
+	UpdatePolicyInput() *OceanAksNpUpdatePolicy
 	VnetSubnetIds() *[]*string
 	SetVnetSubnetIds(val *[]*string)
 	VnetSubnetIdsInput() *[]*string
@@ -191,6 +193,7 @@ type OceanAksNp interface {
 	PutHealth(value *OceanAksNpHealth)
 	PutScheduling(value *OceanAksNpScheduling)
 	PutTaints(value interface{})
+	PutUpdatePolicy(value *OceanAksNpUpdatePolicy)
 	ResetAutoscaler()
 	ResetEnableNodePublicIp()
 	ResetFallbackToOndemand()
@@ -215,6 +218,7 @@ type OceanAksNp interface {
 	ResetSpotPercentage()
 	ResetTags()
 	ResetTaints()
+	ResetUpdatePolicy()
 	ResetVnetSubnetIds()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -954,6 +958,26 @@ func (j *jsiiProxy_OceanAksNp) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNp) UpdatePolicy() OceanAksNpUpdatePolicyOutputReference {
+	var returns OceanAksNpUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"updatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNp) UpdatePolicyInput() *OceanAksNpUpdatePolicy {
+	var returns *OceanAksNpUpdatePolicy
+	_jsii_.Get(
+		j,
+		"updatePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAksNp) VnetSubnetIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -975,7 +999,7 @@ func (j *jsiiProxy_OceanAksNp) VnetSubnetIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.161.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.162.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpConfig) OceanAksNp {
 	_init_.Initialize()
 
@@ -993,7 +1017,7 @@ func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.161.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.162.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp_Override(o OceanAksNp, scope constructs.Construct, id *string, config *OceanAksNpConfig) {
 	_init_.Initialize()
 
@@ -1744,6 +1768,17 @@ func (o *jsiiProxy_OceanAksNp) PutTaints(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanAksNp) PutUpdatePolicy(value *OceanAksNpUpdatePolicy) {
+	if err := o.validatePutUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAksNp) ResetAutoscaler() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1916,6 +1951,14 @@ func (o *jsiiProxy_OceanAksNp) ResetTaints() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTaints",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNp) ResetUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUpdatePolicy",
 		nil, // no parameters
 	)
 }

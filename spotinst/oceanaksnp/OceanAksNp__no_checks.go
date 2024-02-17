@@ -99,6 +99,10 @@ func (o *jsiiProxy_OceanAksNp) validatePutTaintsParameters(value interface{}) er
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNp) validatePutUpdatePolicyParameters(value *OceanAksNpUpdatePolicy) error {
+	return nil
+}
+
 func validateOceanAksNp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -87,6 +87,10 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validatePutTaintsParameters(value
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validatePutUpdatePolicyParameters(value *OceanAksNpVirtualNodeGroupUpdatePolicy) error {
+	return nil
+}
+
 func validateOceanAksNpVirtualNodeGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
