@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.162.0/docs spotinst}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.164.0/docs spotinst}.
 type SpotinstProvider interface {
 	cdktf.TerraformProvider
 	Account() *string
@@ -25,6 +25,9 @@ type SpotinstProvider interface {
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	FeatureFlags() *string
 	SetFeatureFlags(val *string)
 	FeatureFlagsInput() *string
@@ -54,6 +57,7 @@ type SpotinstProvider interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccount()
 	ResetAlias()
+	ResetEnabled()
 	ResetFeatureFlags()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_SpotinstProvider) ConstructNodeMetadata() *map[string]interfa
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotinstProvider) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotinstProvider) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -258,7 +282,7 @@ func (j *jsiiProxy_SpotinstProvider) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.162.0/docs spotinst} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.164.0/docs spotinst} Resource.
 func NewSpotinstProvider(scope constructs.Construct, id *string, config *SpotinstProviderConfig) SpotinstProvider {
 	_init_.Initialize()
 
@@ -276,7 +300,7 @@ func NewSpotinstProvider(scope constructs.Construct, id *string, config *Spotins
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.162.0/docs spotinst} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.164.0/docs spotinst} Resource.
 func NewSpotinstProvider_Override(s SpotinstProvider, scope constructs.Construct, id *string, config *SpotinstProviderConfig) {
 	_init_.Initialize()
 
@@ -299,6 +323,17 @@ func (j *jsiiProxy_SpotinstProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpotinstProvider)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -456,6 +491,14 @@ func (s *jsiiProxy_SpotinstProvider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAlias",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpotinstProvider) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

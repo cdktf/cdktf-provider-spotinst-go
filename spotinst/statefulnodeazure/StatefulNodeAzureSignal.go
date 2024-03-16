@@ -5,9 +5,9 @@ package statefulnodeazure
 
 
 type StatefulNodeAzureSignal struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.162.0/docs/resources/stateful_node_azure#timeout StatefulNodeAzure#timeout}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.164.0/docs/resources/stateful_node_azure#timeout StatefulNodeAzure#timeout}.
 	Timeout *float64 `field:"required" json:"timeout" yaml:"timeout"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.162.0/docs/resources/stateful_node_azure#type StatefulNodeAzure#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.164.0/docs/resources/stateful_node_azure#type StatefulNodeAzure#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

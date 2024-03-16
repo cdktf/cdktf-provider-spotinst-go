@@ -63,11 +63,23 @@ func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) validateSetEncryptedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) validateSetInternalValueParameters(val *ManagedInstanceAwsBlockDeviceMappingsEbs) error {
 	return nil
 }
 
 func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) validateSetIopsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) validateSetKmsKeyIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) validateSetSnapshotIdParameters(val *string) error {
 	return nil
 }
 

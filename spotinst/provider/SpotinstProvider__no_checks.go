@@ -31,6 +31,10 @@ func validateSpotinstProvider_IsTerraformProviderParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_SpotinstProvider) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewSpotinstProviderParameters(scope constructs.Construct, id *string, config *SpotinstProviderConfig) error {
 	return nil
 }

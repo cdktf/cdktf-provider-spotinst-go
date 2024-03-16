@@ -11,6 +11,7 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
 	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 func (s *jsiiProxy_SpotinstProvider) validateAddOverrideParameters(path *string, value interface{}) error {
@@ -68,6 +69,23 @@ func validateSpotinstProvider_IsTerraformElementParameters(x interface{}) error 
 func validateSpotinstProvider_IsTerraformProviderParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SpotinstProvider) validateSetEnabledParameters(val interface{}) error {
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

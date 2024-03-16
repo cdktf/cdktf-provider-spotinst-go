@@ -31,6 +31,9 @@ type ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference interface {
 	DeleteOnTermination() interface{}
 	SetDeleteOnTermination(val interface{})
 	DeleteOnTerminationInput() interface{}
+	Encrypted() interface{}
+	SetEncrypted(val interface{})
+	EncryptedInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ManagedInstanceAwsBlockDeviceMappingsEbs
@@ -38,6 +41,12 @@ type ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference interface {
 	Iops() *float64
 	SetIops(val *float64)
 	IopsInput() *float64
+	KmsKeyId() *string
+	SetKmsKeyId(val *string)
+	KmsKeyIdInput() *string
+	SnapshotId() *string
+	SetSnapshotId(val *string)
+	SnapshotIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,7 +89,10 @@ type ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDeleteOnTermination()
+	ResetEncrypted()
 	ResetIops()
+	ResetKmsKeyId()
+	ResetSnapshotId()
 	ResetThroughput()
 	ResetVolumeSize()
 	ResetVolumeType()
@@ -149,6 +161,26 @@ func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) Dele
 	return returns
 }
 
+func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) Encrypted() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encrypted",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) EncryptedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encryptedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -184,6 +216,46 @@ func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) Iops
 	_jsii_.Get(
 		j,
 		"iopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) KmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) KmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) SnapshotId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) SnapshotIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotIdInput",
 		&returns,
 	)
 	return returns
@@ -330,6 +402,17 @@ func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference)SetDe
 	)
 }
 
+func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference)SetEncrypted(val interface{}) {
+	if err := j.validateSetEncryptedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encrypted",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference)SetInternalValue(val *ManagedInstanceAwsBlockDeviceMappingsEbs) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -348,6 +431,28 @@ func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference)SetIo
 	_jsii_.Set(
 		j,
 		"iops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference)SetKmsKeyId(val *string) {
+	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference)SetSnapshotId(val *string) {
+	if err := j.validateSetSnapshotIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshotId",
 		val,
 	)
 }
@@ -601,10 +706,34 @@ func (m *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) Rese
 	)
 }
 
+func (m *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) ResetEncrypted() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEncrypted",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) ResetIops() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetIops",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) ResetKmsKeyId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetKmsKeyId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsEbsOutputReference) ResetSnapshotId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSnapshotId",
 		nil, // no parameters
 	)
 }
