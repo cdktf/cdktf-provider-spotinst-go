@@ -179,6 +179,10 @@ func (j *jsiiProxy_OceanAws) validateSetGracePeriodParameters(val *float64) erro
 	return nil
 }
 
+func (j *jsiiProxy_OceanAws) validateSetHealthCheckUnhealthyDurationBeforeReplacementParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAws) validateSetIamInstanceProfileParameters(val *string) error {
 	return nil
 }

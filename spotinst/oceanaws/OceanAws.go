@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.164.0/docs/resources/ocean_aws spotinst_ocean_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.0/docs/resources/ocean_aws spotinst_ocean_aws}.
 type OceanAws interface {
 	cdktf.TerraformResource
 	AssociateIpv6Address() interface{}
@@ -74,6 +74,9 @@ type OceanAws interface {
 	GracePeriod() *float64
 	SetGracePeriod(val *float64)
 	GracePeriodInput() *float64
+	HealthCheckUnhealthyDurationBeforeReplacement() *float64
+	SetHealthCheckUnhealthyDurationBeforeReplacement(val *float64)
+	HealthCheckUnhealthyDurationBeforeReplacementInput() *float64
 	IamInstanceProfile() *string
 	SetIamInstanceProfile(val *string)
 	IamInstanceProfileInput() *string
@@ -234,6 +237,7 @@ type OceanAws interface {
 	ResetFallbackToOndemand()
 	ResetFilters()
 	ResetGracePeriod()
+	ResetHealthCheckUnhealthyDurationBeforeReplacement()
 	ResetIamInstanceProfile()
 	ResetId()
 	ResetImageId()
@@ -614,6 +618,26 @@ func (j *jsiiProxy_OceanAws) GracePeriodInput() *float64 {
 	_jsii_.Get(
 		j,
 		"gracePeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) HealthCheckUnhealthyDurationBeforeReplacement() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"healthCheckUnhealthyDurationBeforeReplacement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) HealthCheckUnhealthyDurationBeforeReplacementInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"healthCheckUnhealthyDurationBeforeReplacementInput",
 		&returns,
 	)
 	return returns
@@ -1220,7 +1244,7 @@ func (j *jsiiProxy_OceanAws) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.164.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig) OceanAws {
 	_init_.Initialize()
 
@@ -1238,7 +1262,7 @@ func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.164.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws_Override(o OceanAws, scope constructs.Construct, id *string, config *OceanAwsConfig) {
 	_init_.Initialize()
 
@@ -1382,6 +1406,17 @@ func (j *jsiiProxy_OceanAws)SetGracePeriod(val *float64) {
 	_jsii_.Set(
 		j,
 		"gracePeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws)SetHealthCheckUnhealthyDurationBeforeReplacement(val *float64) {
+	if err := j.validateSetHealthCheckUnhealthyDurationBeforeReplacementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"healthCheckUnhealthyDurationBeforeReplacement",
 		val,
 	)
 }
@@ -2199,6 +2234,14 @@ func (o *jsiiProxy_OceanAws) ResetGracePeriod() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetGracePeriod",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetHealthCheckUnhealthyDurationBeforeReplacement() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetHealthCheckUnhealthyDurationBeforeReplacement",
 		nil, // no parameters
 	)
 }
