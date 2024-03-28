@@ -5,13 +5,13 @@ package oceanaks
 
 
 type OceanAksImageMarketplace struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.0/docs/resources/ocean_aks#offer OceanAks#offer}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.1/docs/resources/ocean_aks#offer OceanAks#offer}.
 	Offer *string `field:"optional" json:"offer" yaml:"offer"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.0/docs/resources/ocean_aks#publisher OceanAks#publisher}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.1/docs/resources/ocean_aks#publisher OceanAks#publisher}.
 	Publisher *string `field:"optional" json:"publisher" yaml:"publisher"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.0/docs/resources/ocean_aks#sku OceanAks#sku}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.1/docs/resources/ocean_aks#sku OceanAks#sku}.
 	Sku *string `field:"optional" json:"sku" yaml:"sku"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.0/docs/resources/ocean_aks#version OceanAks#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.1/docs/resources/ocean_aks#version OceanAks#version}.
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 
