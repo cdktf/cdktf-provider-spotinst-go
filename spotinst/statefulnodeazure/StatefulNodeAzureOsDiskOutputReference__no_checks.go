@@ -51,6 +51,10 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) validateResolveParame
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) validateSetCachingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

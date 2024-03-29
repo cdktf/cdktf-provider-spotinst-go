@@ -143,6 +143,14 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateResolvePara
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetAvailabilityVsCostParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -239,6 +247,14 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetFallback
 func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetInternalValueParameters(val *StatefulNodeAzureStrategy) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetOdWindowsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -13,6 +13,9 @@ import (
 
 type StatefulNodeAzureStrategyOutputReference interface {
 	cdktf.ComplexObject
+	AvailabilityVsCost() *float64
+	SetAvailabilityVsCost(val *float64)
+	AvailabilityVsCostInput() *float64
 	CapacityReservation() StatefulNodeAzureStrategyCapacityReservationList
 	CapacityReservationInput() interface{}
 	// the index of the complex object in a list.
@@ -40,6 +43,9 @@ type StatefulNodeAzureStrategyOutputReference interface {
 	Fqn() *string
 	InternalValue() *StatefulNodeAzureStrategy
 	SetInternalValue(val *StatefulNodeAzureStrategy)
+	OdWindows() *[]*string
+	SetOdWindows(val *[]*string)
+	OdWindowsInput() *[]*string
 	OptimizationWindows() *[]*string
 	SetOptimizationWindows(val *[]*string)
 	OptimizationWindowsInput() *[]*string
@@ -82,8 +88,10 @@ type StatefulNodeAzureStrategyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCapacityReservation(value interface{})
 	PutRevertToSpot(value *StatefulNodeAzureStrategyRevertToSpot)
+	ResetAvailabilityVsCost()
 	ResetCapacityReservation()
 	ResetDrainingTimeout()
+	ResetOdWindows()
 	ResetOptimizationWindows()
 	ResetPreferredLifeCycle()
 	ResetRevertToSpot()
@@ -100,6 +108,26 @@ type StatefulNodeAzureStrategyOutputReference interface {
 // The jsii proxy struct for StatefulNodeAzureStrategyOutputReference
 type jsiiProxy_StatefulNodeAzureStrategyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) AvailabilityVsCost() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityVsCost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) AvailabilityVsCostInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityVsCostInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) CapacityReservation() StatefulNodeAzureStrategyCapacityReservationList {
@@ -207,6 +235,26 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) InternalValue() *St
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) OdWindows() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"odWindows",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) OdWindowsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"odWindowsInput",
 		&returns,
 	)
 	return returns
@@ -320,6 +368,17 @@ func NewStatefulNodeAzureStrategyOutputReference_Override(s StatefulNodeAzureStr
 	)
 }
 
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetAvailabilityVsCost(val *float64) {
+	if err := j.validateSetAvailabilityVsCostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availabilityVsCost",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -371,6 +430,17 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetInternalValue(val
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetOdWindows(val *[]*string) {
+	if err := j.validateSetOdWindowsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"odWindows",
 		val,
 	)
 }
@@ -627,6 +697,14 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) PutRevertToSpot(val
 	)
 }
 
+func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) ResetAvailabilityVsCost() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAvailabilityVsCost",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) ResetCapacityReservation() {
 	_jsii_.InvokeVoid(
 		s,
@@ -639,6 +717,14 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) ResetDrainingTimeou
 	_jsii_.InvokeVoid(
 		s,
 		"resetDrainingTimeout",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) ResetOdWindows() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOdWindows",
 		nil, // no parameters
 	)
 }

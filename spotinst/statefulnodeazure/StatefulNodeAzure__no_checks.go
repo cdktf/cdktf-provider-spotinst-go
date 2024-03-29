@@ -203,6 +203,10 @@ func (j *jsiiProxy_StatefulNodeAzure) validateSetIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzure) validateSetLicenseTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulNodeAzure) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -272,6 +276,10 @@ func (j *jsiiProxy_StatefulNodeAzure) validateSetUserDataParameters(val *string)
 }
 
 func (j *jsiiProxy_StatefulNodeAzure) validateSetVmNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StatefulNodeAzure) validateSetVmNamePrefixParameters(val *string) error {
 	return nil
 }
 

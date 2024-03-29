@@ -101,6 +101,14 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) validateResolveParame
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) validateSetCachingParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

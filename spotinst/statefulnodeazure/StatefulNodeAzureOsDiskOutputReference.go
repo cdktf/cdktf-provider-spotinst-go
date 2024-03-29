@@ -13,6 +13,9 @@ import (
 
 type StatefulNodeAzureOsDiskOutputReference interface {
 	cdktf.ComplexObject
+	Caching() *string
+	SetCaching(val *string)
+	CachingInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type StatefulNodeAzureOsDiskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCaching()
 	ResetSizeGb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -84,6 +88,26 @@ type StatefulNodeAzureOsDiskOutputReference interface {
 // The jsii proxy struct for StatefulNodeAzureOsDiskOutputReference
 type jsiiProxy_StatefulNodeAzureOsDiskOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) Caching() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caching",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) CachingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cachingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) ComplexObjectIndex() interface{} {
@@ -221,6 +245,17 @@ func NewStatefulNodeAzureOsDiskOutputReference_Override(s StatefulNodeAzureOsDis
 		"@cdktf/provider-spotinst.statefulNodeAzure.StatefulNodeAzureOsDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
+	)
+}
+
+func (j *jsiiProxy_StatefulNodeAzureOsDiskOutputReference)SetCaching(val *string) {
+	if err := j.validateSetCachingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"caching",
+		val,
 	)
 }
 
@@ -485,6 +520,14 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) ResetCaching() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCaching",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) ResetSizeGb() {

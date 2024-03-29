@@ -5,9 +5,9 @@ package elastigroupaws
 
 
 type ElastigroupAwsIntegrationCodedeployDeploymentGroups struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.1/docs/resources/elastigroup_aws#application_name ElastigroupAws#application_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.166.0/docs/resources/elastigroup_aws#application_name ElastigroupAws#application_name}.
 	ApplicationName *string `field:"required" json:"applicationName" yaml:"applicationName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.1/docs/resources/elastigroup_aws#deployment_group_name ElastigroupAws#deployment_group_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.166.0/docs/resources/elastigroup_aws#deployment_group_name ElastigroupAws#deployment_group_name}.
 	DeploymentGroupName *string `field:"required" json:"deploymentGroupName" yaml:"deploymentGroupName"`
 }
 

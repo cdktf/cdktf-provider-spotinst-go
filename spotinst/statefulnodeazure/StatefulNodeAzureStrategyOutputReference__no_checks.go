@@ -59,6 +59,10 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateResolvePara
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetAvailabilityVsCostParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -76,6 +80,10 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetFallback
 }
 
 func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetInternalValueParameters(val *StatefulNodeAzureStrategy) error {
+	return nil
+}
+
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetOdWindowsParameters(val *[]*string) error {
 	return nil
 }
 

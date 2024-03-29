@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.1/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.166.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
 type StatefulNodeAzure interface {
 	cdktf.TerraformResource
 	AttachDataDisk() StatefulNodeAzureAttachDataDiskList
@@ -69,6 +69,9 @@ type StatefulNodeAzure interface {
 	ImageInput() *StatefulNodeAzureImage
 	ImportVm() StatefulNodeAzureImportVmList
 	ImportVmInput() interface{}
+	LicenseType() *string
+	SetLicenseType(val *string)
+	LicenseTypeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -165,6 +168,9 @@ type StatefulNodeAzure interface {
 	VmName() *string
 	SetVmName(val *string)
 	VmNameInput() *string
+	VmNamePrefix() *string
+	SetVmNamePrefix(val *string)
+	VmNamePrefixInput() *string
 	Zones() *[]*string
 	SetZones(val *[]*string)
 	ZonesInput() *[]*string
@@ -246,6 +252,7 @@ type StatefulNodeAzure interface {
 	ResetId()
 	ResetImage()
 	ResetImportVm()
+	ResetLicenseType()
 	ResetLoadBalancer()
 	ResetLogin()
 	ResetManagedServiceIdentities()
@@ -268,6 +275,7 @@ type StatefulNodeAzure interface {
 	ResetUpdateState()
 	ResetUserData()
 	ResetVmName()
+	ResetVmNamePrefix()
 	ResetZones()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -622,6 +630,26 @@ func (j *jsiiProxy_StatefulNodeAzure) ImportVmInput() interface{} {
 	_jsii_.Get(
 		j,
 		"importVmInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzure) LicenseType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"licenseType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzure) LicenseTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"licenseTypeInput",
 		&returns,
 	)
 	return returns
@@ -1287,6 +1315,26 @@ func (j *jsiiProxy_StatefulNodeAzure) VmNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StatefulNodeAzure) VmNamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vmNamePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzure) VmNamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vmNamePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulNodeAzure) Zones() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1308,7 +1356,7 @@ func (j *jsiiProxy_StatefulNodeAzure) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.1/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.166.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) StatefulNodeAzure {
 	_init_.Initialize()
 
@@ -1326,7 +1374,7 @@ func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *Statef
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.165.1/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.166.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure_Override(s StatefulNodeAzure, scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) {
 	_init_.Initialize()
 
@@ -1415,6 +1463,17 @@ func (j *jsiiProxy_StatefulNodeAzure)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulNodeAzure)SetLicenseType(val *string) {
+	if err := j.validateSetLicenseTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"licenseType",
 		val,
 	)
 }
@@ -1621,6 +1680,17 @@ func (j *jsiiProxy_StatefulNodeAzure)SetVmName(val *string) {
 	_jsii_.Set(
 		j,
 		"vmName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulNodeAzure)SetVmNamePrefix(val *string) {
+	if err := j.validateSetVmNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vmNamePrefix",
 		val,
 	)
 }
@@ -2335,6 +2405,14 @@ func (s *jsiiProxy_StatefulNodeAzure) ResetImportVm() {
 	)
 }
 
+func (s *jsiiProxy_StatefulNodeAzure) ResetLicenseType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLicenseType",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StatefulNodeAzure) ResetLoadBalancer() {
 	_jsii_.InvokeVoid(
 		s,
@@ -2491,6 +2569,14 @@ func (s *jsiiProxy_StatefulNodeAzure) ResetVmName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetVmName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzure) ResetVmNamePrefix() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVmNamePrefix",
 		nil, // no parameters
 	)
 }
