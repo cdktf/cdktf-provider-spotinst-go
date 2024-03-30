@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.166.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.167.1/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
 type OceanAwsLaunchSpec interface {
 	cdktf.TerraformResource
 	AssociatePublicIpAddress() interface{}
@@ -48,6 +48,8 @@ type OceanAwsLaunchSpec interface {
 	SetDependsOn(val *[]*string)
 	ElasticIpPool() OceanAwsLaunchSpecElasticIpPoolList
 	ElasticIpPoolInput() interface{}
+	EphemeralStorage() OceanAwsLaunchSpecEphemeralStorageList
+	EphemeralStorageInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -186,6 +188,7 @@ type OceanAwsLaunchSpec interface {
 	PutCreateOptions(value *OceanAwsLaunchSpecCreateOptions)
 	PutDeleteOptions(value *OceanAwsLaunchSpecDeleteOptions)
 	PutElasticIpPool(value interface{})
+	PutEphemeralStorage(value interface{})
 	PutImages(value interface{})
 	PutInstanceMetadataOptions(value *OceanAwsLaunchSpecInstanceMetadataOptions)
 	PutInstanceTypesFilters(value *OceanAwsLaunchSpecInstanceTypesFilters)
@@ -205,6 +208,7 @@ type OceanAwsLaunchSpec interface {
 	ResetCreateOptions()
 	ResetDeleteOptions()
 	ResetElasticIpPool()
+	ResetEphemeralStorage()
 	ResetIamInstanceProfile()
 	ResetId()
 	ResetImageId()
@@ -453,6 +457,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) ElasticIpPoolInput() interface{} {
 	_jsii_.Get(
 		j,
 		"elasticIpPoolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) EphemeralStorage() OceanAwsLaunchSpecEphemeralStorageList {
+	var returns OceanAwsLaunchSpecEphemeralStorageList
+	_jsii_.Get(
+		j,
+		"ephemeralStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) EphemeralStorageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ephemeralStorageInput",
 		&returns,
 	)
 	return returns
@@ -1029,7 +1053,7 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.166.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.167.1/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) OceanAwsLaunchSpec {
 	_init_.Initialize()
 
@@ -1047,7 +1071,7 @@ func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.166.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.167.1/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec_Override(o OceanAwsLaunchSpec, scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1699,6 +1723,17 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutElasticIpPool(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) PutEphemeralStorage(value interface{}) {
+	if err := o.validatePutEphemeralStorageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putEphemeralStorage",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutImages(value interface{}) {
 	if err := o.validatePutImagesParameters(value); err != nil {
 		panic(err)
@@ -1880,6 +1915,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) ResetElasticIpPool() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetElasticIpPool",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpec) ResetEphemeralStorage() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetEphemeralStorage",
 		nil, // no parameters
 	)
 }

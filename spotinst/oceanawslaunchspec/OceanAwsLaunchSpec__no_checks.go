@@ -103,6 +103,10 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutElasticIpPoolParameters(value 
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutEphemeralStorageParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutImagesParameters(value interface{}) error {
 	return nil
 }
