@@ -5,9 +5,9 @@ package mrscaleraws
 
 
 type MrscalerAwsBootstrapActionsFile struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.167.1/docs/resources/mrscaler_aws#bucket MrscalerAws#bucket}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.168.1/docs/resources/mrscaler_aws#bucket MrscalerAws#bucket}.
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.167.1/docs/resources/mrscaler_aws#key MrscalerAws#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.168.1/docs/resources/mrscaler_aws#key MrscalerAws#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
 }
 
