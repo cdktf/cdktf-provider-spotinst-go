@@ -5,7 +5,7 @@ package oceangkelaunchspec
 
 
 type OceanGkeLaunchSpecStorage struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.168.1/docs/resources/ocean_gke_launch_spec#local_ssd_count OceanGkeLaunchSpec#local_ssd_count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.168.2/docs/resources/ocean_gke_launch_spec#local_ssd_count OceanGkeLaunchSpec#local_ssd_count}.
 	LocalSsdCount *float64 `field:"optional" json:"localSsdCount" yaml:"localSsdCount"`
 }
 
