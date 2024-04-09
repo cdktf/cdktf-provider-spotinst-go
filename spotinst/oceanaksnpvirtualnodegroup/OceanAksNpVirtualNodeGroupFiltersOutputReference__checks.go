@@ -198,6 +198,14 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetGpuTypesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetInternalValueParameters(val *OceanAksNpVirtualNodeGroupFilters) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

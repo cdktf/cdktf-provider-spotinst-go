@@ -75,6 +75,10 @@ func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetExcludeSeriesPar
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetGpuTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpFiltersOutputReference) validateSetInternalValueParameters(val *OceanAksNpFilters) error {
 	return nil
 }

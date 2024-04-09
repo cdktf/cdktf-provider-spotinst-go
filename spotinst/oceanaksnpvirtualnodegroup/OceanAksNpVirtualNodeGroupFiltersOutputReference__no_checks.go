@@ -75,6 +75,10 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetGpuTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) validateSetInternalValueParameters(val *OceanAksNpVirtualNodeGroupFilters) error {
 	return nil
 }

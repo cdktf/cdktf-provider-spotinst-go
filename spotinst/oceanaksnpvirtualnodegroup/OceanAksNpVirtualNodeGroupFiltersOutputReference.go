@@ -42,6 +42,9 @@ type OceanAksNpVirtualNodeGroupFiltersOutputReference interface {
 	ExcludeSeriesInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	GpuTypes() *[]*string
+	SetGpuTypes(val *[]*string)
+	GpuTypesInput() *[]*string
 	InternalValue() *OceanAksNpVirtualNodeGroupFilters
 	SetInternalValue(val *OceanAksNpVirtualNodeGroupFilters)
 	MaxGpu() *float64
@@ -110,6 +113,7 @@ type OceanAksNpVirtualNodeGroupFiltersOutputReference interface {
 	ResetArchitectures()
 	ResetDiskPerformance()
 	ResetExcludeSeries()
+	ResetGpuTypes()
 	ResetMaxGpu()
 	ResetMaxMemoryGib()
 	ResetMaxVcpu()
@@ -250,6 +254,26 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) GpuTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"gpuTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) GpuTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"gpuTypesInput",
 		&returns,
 	)
 	return returns
@@ -575,6 +599,17 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference)SetExcludeSe
 	_jsii_.Set(
 		j,
 		"excludeSeries",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference)SetGpuTypes(val *[]*string) {
+	if err := j.validateSetGpuTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpuTypes",
 		val,
 	)
 }
@@ -936,6 +971,14 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) ResetExclud
 	_jsii_.InvokeVoid(
 		o,
 		"resetExcludeSeries",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupFiltersOutputReference) ResetGpuTypes() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGpuTypes",
 		nil, // no parameters
 	)
 }

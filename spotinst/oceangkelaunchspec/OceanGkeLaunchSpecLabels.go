@@ -5,9 +5,9 @@ package oceangkelaunchspec
 
 
 type OceanGkeLaunchSpecLabels struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.168.2/docs/resources/ocean_gke_launch_spec#key OceanGkeLaunchSpec#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.169.0/docs/resources/ocean_gke_launch_spec#key OceanGkeLaunchSpec#key}.
 	Key *string `field:"optional" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.168.2/docs/resources/ocean_gke_launch_spec#value OceanGkeLaunchSpec#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.169.0/docs/resources/ocean_gke_launch_spec#value OceanGkeLaunchSpec#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 
