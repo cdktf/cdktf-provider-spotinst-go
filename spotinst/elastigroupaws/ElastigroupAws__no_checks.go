@@ -123,10 +123,6 @@ func (e *jsiiProxy_ElastigroupAws) validatePutIntegrationMesosphereParameters(va
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAws) validatePutIntegrationMultaiRuntimeParameters(value *ElastigroupAwsIntegrationMultaiRuntime) error {
-	return nil
-}
-
 func (e *jsiiProxy_ElastigroupAws) validatePutIntegrationNomadParameters(value *ElastigroupAwsIntegrationNomad) error {
 	return nil
 }
@@ -148,10 +144,6 @@ func (e *jsiiProxy_ElastigroupAws) validatePutLoggingParameters(value *Elastigro
 }
 
 func (e *jsiiProxy_ElastigroupAws) validatePutMetadataOptionsParameters(value *ElastigroupAwsMetadataOptions) error {
-	return nil
-}
-
-func (e *jsiiProxy_ElastigroupAws) validatePutMultaiTargetSetsParameters(value interface{}) error {
 	return nil
 }
 

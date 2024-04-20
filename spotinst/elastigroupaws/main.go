@@ -105,8 +105,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "integrationKubernetesInput", GoGetter: "IntegrationKubernetesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "integrationMesosphere", GoGetter: "IntegrationMesosphere"},
 			_jsii_.MemberProperty{JsiiProperty: "integrationMesosphereInput", GoGetter: "IntegrationMesosphereInput"},
-			_jsii_.MemberProperty{JsiiProperty: "integrationMultaiRuntime", GoGetter: "IntegrationMultaiRuntime"},
-			_jsii_.MemberProperty{JsiiProperty: "integrationMultaiRuntimeInput", GoGetter: "IntegrationMultaiRuntimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "integrationNomad", GoGetter: "IntegrationNomad"},
 			_jsii_.MemberProperty{JsiiProperty: "integrationNomadInput", GoGetter: "IntegrationNomadInput"},
 			_jsii_.MemberProperty{JsiiProperty: "integrationRancher", GoGetter: "IntegrationRancher"},
@@ -134,8 +132,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
-			_jsii_.MemberProperty{JsiiProperty: "multaiTargetSets", GoGetter: "MultaiTargetSets"},
-			_jsii_.MemberProperty{JsiiProperty: "multaiTargetSetsInput", GoGetter: "MultaiTargetSetsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "multipleMetrics", GoGetter: "MultipleMetrics"},
 			_jsii_.MemberProperty{JsiiProperty: "multipleMetricsInput", GoGetter: "MultipleMetricsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
@@ -178,14 +174,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putIntegrationGitlab", GoMethod: "PutIntegrationGitlab"},
 			_jsii_.MemberMethod{JsiiMethod: "putIntegrationKubernetes", GoMethod: "PutIntegrationKubernetes"},
 			_jsii_.MemberMethod{JsiiMethod: "putIntegrationMesosphere", GoMethod: "PutIntegrationMesosphere"},
-			_jsii_.MemberMethod{JsiiMethod: "putIntegrationMultaiRuntime", GoMethod: "PutIntegrationMultaiRuntime"},
 			_jsii_.MemberMethod{JsiiMethod: "putIntegrationNomad", GoMethod: "PutIntegrationNomad"},
 			_jsii_.MemberMethod{JsiiMethod: "putIntegrationRancher", GoMethod: "PutIntegrationRancher"},
 			_jsii_.MemberMethod{JsiiMethod: "putIntegrationRoute53", GoMethod: "PutIntegrationRoute53"},
 			_jsii_.MemberMethod{JsiiMethod: "putItf", GoMethod: "PutItf"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogging", GoMethod: "PutLogging"},
 			_jsii_.MemberMethod{JsiiMethod: "putMetadataOptions", GoMethod: "PutMetadataOptions"},
-			_jsii_.MemberMethod{JsiiMethod: "putMultaiTargetSets", GoMethod: "PutMultaiTargetSets"},
 			_jsii_.MemberMethod{JsiiMethod: "putMultipleMetrics", GoMethod: "PutMultipleMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkInterface", GoMethod: "PutNetworkInterface"},
 			_jsii_.MemberMethod{JsiiMethod: "putResourceRequirements", GoMethod: "PutResourceRequirements"},
@@ -238,7 +232,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetIntegrationGitlab", GoMethod: "ResetIntegrationGitlab"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIntegrationKubernetes", GoMethod: "ResetIntegrationKubernetes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIntegrationMesosphere", GoMethod: "ResetIntegrationMesosphere"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIntegrationMultaiRuntime", GoMethod: "ResetIntegrationMultaiRuntime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIntegrationNomad", GoMethod: "ResetIntegrationNomad"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIntegrationRancher", GoMethod: "ResetIntegrationRancher"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIntegrationRoute53", GoMethod: "ResetIntegrationRoute53"},
@@ -250,7 +243,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMetadataOptions", GoMethod: "ResetMetadataOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinimumInstanceLifetime", GoMethod: "ResetMinimumInstanceLifetime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinSize", GoMethod: "ResetMinSize"},
-			_jsii_.MemberMethod{JsiiMethod: "resetMultaiTargetSets", GoMethod: "ResetMultaiTargetSets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMultipleMetrics", GoMethod: "ResetMultipleMetrics"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkInterface", GoMethod: "ResetNetworkInterface"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOndemandCount", GoMethod: "ResetOndemandCount"},
@@ -1776,44 +1768,6 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsIntegrationMultaiRuntime",
-		reflect.TypeOf((*ElastigroupAwsIntegrationMultaiRuntime)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsIntegrationMultaiRuntimeOutputReference",
-		reflect.TypeOf((*ElastigroupAwsIntegrationMultaiRuntimeOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "deploymentId", GoGetter: "DeploymentId"},
-			_jsii_.MemberProperty{JsiiProperty: "deploymentIdInput", GoGetter: "DeploymentIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ElastigroupAwsIntegrationMultaiRuntimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsIntegrationNomad",
 		reflect.TypeOf((*ElastigroupAwsIntegrationNomad)(nil)).Elem(),
 	)
@@ -2923,68 +2877,6 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElastigroupAwsMetadataOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
-			return &j
-		},
-	)
-	_jsii_.RegisterStruct(
-		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsMultaiTargetSets",
-		reflect.TypeOf((*ElastigroupAwsMultaiTargetSets)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsMultaiTargetSetsList",
-		reflect.TypeOf((*ElastigroupAwsMultaiTargetSetsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ElastigroupAwsMultaiTargetSetsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAwsMultaiTargetSetsOutputReference",
-		reflect.TypeOf((*ElastigroupAwsMultaiTargetSetsOutputReference)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberProperty{JsiiProperty: "balancerId", GoGetter: "BalancerId"},
-			_jsii_.MemberProperty{JsiiProperty: "balancerIdInput", GoGetter: "BalancerIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
-			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
-			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSetId", GoGetter: "TargetSetId"},
-			_jsii_.MemberProperty{JsiiProperty: "targetSetIdInput", GoGetter: "TargetSetIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ElastigroupAwsMultaiTargetSetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

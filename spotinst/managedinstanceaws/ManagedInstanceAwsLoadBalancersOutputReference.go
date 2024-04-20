@@ -16,15 +16,6 @@ type ManagedInstanceAwsLoadBalancersOutputReference interface {
 	Arn() *string
 	SetArn(val *string)
 	ArnInput() *string
-	AutoWeight() interface{}
-	SetAutoWeight(val interface{})
-	AutoWeightInput() interface{}
-	AzAwareness() interface{}
-	SetAzAwareness(val interface{})
-	AzAwarenessInput() interface{}
-	BalancerId() *string
-	SetBalancerId(val *string)
-	BalancerIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -47,9 +38,6 @@ type ManagedInstanceAwsLoadBalancersOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	TargetSetId() *string
-	SetTargetSetId(val *string)
-	TargetSetIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -86,11 +74,7 @@ type ManagedInstanceAwsLoadBalancersOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetArn()
-	ResetAutoWeight()
-	ResetAzAwareness()
-	ResetBalancerId()
 	ResetName()
-	ResetTargetSetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -121,66 +105,6 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) ArnInput() *s
 	_jsii_.Get(
 		j,
 		"arnInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) AutoWeight() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"autoWeight",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) AutoWeightInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"autoWeightInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) AzAwareness() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"azAwareness",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) AzAwarenessInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"azAwarenessInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) BalancerId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"balancerId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) BalancerIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"balancerIdInput",
 		&returns,
 	)
 	return returns
@@ -251,26 +175,6 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) NameInput() *
 	_jsii_.Get(
 		j,
 		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) TargetSetId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"targetSetId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) TargetSetIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"targetSetIdInput",
 		&returns,
 	)
 	return returns
@@ -355,39 +259,6 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetArn(val *st
 	)
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetAutoWeight(val interface{}) {
-	if err := j.validateSetAutoWeightParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"autoWeight",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetAzAwareness(val interface{}) {
-	if err := j.validateSetAzAwarenessParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"azAwareness",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetBalancerId(val *string) {
-	if err := j.validateSetBalancerIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"balancerId",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -428,17 +299,6 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetName(val *s
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference)SetTargetSetId(val *string) {
-	if err := j.validateSetTargetSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"targetSetId",
 		val,
 	)
 }
@@ -670,42 +530,10 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) ResetArn() {
 	)
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) ResetAutoWeight() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetAutoWeight",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) ResetAzAwareness() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetAzAwareness",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) ResetBalancerId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetBalancerId",
-		nil, // no parameters
-	)
-}
-
 func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetName",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) ResetTargetSetId() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetTargetSetId",
 		nil, // no parameters
 	)
 }

@@ -55,18 +55,6 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) validateSetAr
 	return nil
 }
 
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) validateSetAutoWeightParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) validateSetAzAwarenessParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) validateSetBalancerIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -80,10 +68,6 @@ func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) validateSetIn
 }
 
 func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ManagedInstanceAwsLoadBalancersOutputReference) validateSetTargetSetIdParameters(val *string) error {
 	return nil
 }
 

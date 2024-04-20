@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.169.1/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.170.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
 type ElastigroupAws interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -132,8 +132,6 @@ type ElastigroupAws interface {
 	IntegrationKubernetesInput() *ElastigroupAwsIntegrationKubernetes
 	IntegrationMesosphere() ElastigroupAwsIntegrationMesosphereOutputReference
 	IntegrationMesosphereInput() *ElastigroupAwsIntegrationMesosphere
-	IntegrationMultaiRuntime() ElastigroupAwsIntegrationMultaiRuntimeOutputReference
-	IntegrationMultaiRuntimeInput() *ElastigroupAwsIntegrationMultaiRuntime
 	IntegrationNomad() ElastigroupAwsIntegrationNomadOutputReference
 	IntegrationNomadInput() *ElastigroupAwsIntegrationNomad
 	IntegrationRancher() ElastigroupAwsIntegrationRancherOutputReference
@@ -165,8 +163,6 @@ type ElastigroupAws interface {
 	MinSize() *float64
 	SetMinSize(val *float64)
 	MinSizeInput() *float64
-	MultaiTargetSets() ElastigroupAwsMultaiTargetSetsList
-	MultaiTargetSetsInput() interface{}
 	MultipleMetrics() ElastigroupAwsMultipleMetricsOutputReference
 	MultipleMetricsInput() *ElastigroupAwsMultipleMetrics
 	Name() *string
@@ -336,14 +332,12 @@ type ElastigroupAws interface {
 	PutIntegrationGitlab(value *ElastigroupAwsIntegrationGitlab)
 	PutIntegrationKubernetes(value *ElastigroupAwsIntegrationKubernetes)
 	PutIntegrationMesosphere(value *ElastigroupAwsIntegrationMesosphere)
-	PutIntegrationMultaiRuntime(value *ElastigroupAwsIntegrationMultaiRuntime)
 	PutIntegrationNomad(value *ElastigroupAwsIntegrationNomad)
 	PutIntegrationRancher(value *ElastigroupAwsIntegrationRancher)
 	PutIntegrationRoute53(value *ElastigroupAwsIntegrationRoute53)
 	PutItf(value interface{})
 	PutLogging(value *ElastigroupAwsLogging)
 	PutMetadataOptions(value *ElastigroupAwsMetadataOptions)
-	PutMultaiTargetSets(value interface{})
 	PutMultipleMetrics(value *ElastigroupAwsMultipleMetrics)
 	PutNetworkInterface(value interface{})
 	PutResourceRequirements(value interface{})
@@ -393,7 +387,6 @@ type ElastigroupAws interface {
 	ResetIntegrationGitlab()
 	ResetIntegrationKubernetes()
 	ResetIntegrationMesosphere()
-	ResetIntegrationMultaiRuntime()
 	ResetIntegrationNomad()
 	ResetIntegrationRancher()
 	ResetIntegrationRoute53()
@@ -405,7 +398,6 @@ type ElastigroupAws interface {
 	ResetMetadataOptions()
 	ResetMinimumInstanceLifetime()
 	ResetMinSize()
-	ResetMultaiTargetSets()
 	ResetMultipleMetrics()
 	ResetNetworkInterface()
 	ResetOndemandCount()
@@ -1240,26 +1232,6 @@ func (j *jsiiProxy_ElastigroupAws) IntegrationMesosphereInput() *ElastigroupAwsI
 	return returns
 }
 
-func (j *jsiiProxy_ElastigroupAws) IntegrationMultaiRuntime() ElastigroupAwsIntegrationMultaiRuntimeOutputReference {
-	var returns ElastigroupAwsIntegrationMultaiRuntimeOutputReference
-	_jsii_.Get(
-		j,
-		"integrationMultaiRuntime",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElastigroupAws) IntegrationMultaiRuntimeInput() *ElastigroupAwsIntegrationMultaiRuntime {
-	var returns *ElastigroupAwsIntegrationMultaiRuntime
-	_jsii_.Get(
-		j,
-		"integrationMultaiRuntimeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ElastigroupAws) IntegrationNomad() ElastigroupAwsIntegrationNomadOutputReference {
 	var returns ElastigroupAwsIntegrationNomadOutputReference
 	_jsii_.Get(
@@ -1485,26 +1457,6 @@ func (j *jsiiProxy_ElastigroupAws) MinSizeInput() *float64 {
 	_jsii_.Get(
 		j,
 		"minSizeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElastigroupAws) MultaiTargetSets() ElastigroupAwsMultaiTargetSetsList {
-	var returns ElastigroupAwsMultaiTargetSetsList
-	_jsii_.Get(
-		j,
-		"multaiTargetSets",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElastigroupAws) MultaiTargetSetsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"multaiTargetSetsInput",
 		&returns,
 	)
 	return returns
@@ -2321,7 +2273,7 @@ func (j *jsiiProxy_ElastigroupAws) WaitForCapacityTimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.169.1/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.170.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws(scope constructs.Construct, id *string, config *ElastigroupAwsConfig) ElastigroupAws {
 	_init_.Initialize()
 
@@ -2339,7 +2291,7 @@ func NewElastigroupAws(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.169.1/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.170.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws_Override(e ElastigroupAws, scope constructs.Construct, id *string, config *ElastigroupAwsConfig) {
 	_init_.Initialize()
 
@@ -3453,17 +3405,6 @@ func (e *jsiiProxy_ElastigroupAws) PutIntegrationMesosphere(value *ElastigroupAw
 	)
 }
 
-func (e *jsiiProxy_ElastigroupAws) PutIntegrationMultaiRuntime(value *ElastigroupAwsIntegrationMultaiRuntime) {
-	if err := e.validatePutIntegrationMultaiRuntimeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		e,
-		"putIntegrationMultaiRuntime",
-		[]interface{}{value},
-	)
-}
-
 func (e *jsiiProxy_ElastigroupAws) PutIntegrationNomad(value *ElastigroupAwsIntegrationNomad) {
 	if err := e.validatePutIntegrationNomadParameters(value); err != nil {
 		panic(err)
@@ -3526,17 +3467,6 @@ func (e *jsiiProxy_ElastigroupAws) PutMetadataOptions(value *ElastigroupAwsMetad
 	_jsii_.InvokeVoid(
 		e,
 		"putMetadataOptions",
-		[]interface{}{value},
-	)
-}
-
-func (e *jsiiProxy_ElastigroupAws) PutMultaiTargetSets(value interface{}) {
-	if err := e.validatePutMultaiTargetSetsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		e,
-		"putMultaiTargetSets",
 		[]interface{}{value},
 	)
 }
@@ -3978,14 +3908,6 @@ func (e *jsiiProxy_ElastigroupAws) ResetIntegrationMesosphere() {
 	)
 }
 
-func (e *jsiiProxy_ElastigroupAws) ResetIntegrationMultaiRuntime() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetIntegrationMultaiRuntime",
-		nil, // no parameters
-	)
-}
-
 func (e *jsiiProxy_ElastigroupAws) ResetIntegrationNomad() {
 	_jsii_.InvokeVoid(
 		e,
@@ -4070,14 +3992,6 @@ func (e *jsiiProxy_ElastigroupAws) ResetMinSize() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetMinSize",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_ElastigroupAws) ResetMultaiTargetSets() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetMultaiTargetSets",
 		nil, // no parameters
 	)
 }
