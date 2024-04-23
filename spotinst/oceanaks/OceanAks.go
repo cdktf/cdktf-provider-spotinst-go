@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.170.0/docs/resources/ocean_aks spotinst_ocean_aks}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.171.0/docs/resources/ocean_aks spotinst_ocean_aks}.
 type OceanAks interface {
 	cdktf.TerraformResource
 	AcdIdentifier() *string
@@ -833,7 +833,7 @@ func (j *jsiiProxy_OceanAks) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.170.0/docs/resources/ocean_aks spotinst_ocean_aks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.171.0/docs/resources/ocean_aks spotinst_ocean_aks} Resource.
 func NewOceanAks(scope constructs.Construct, id *string, config *OceanAksConfig) OceanAks {
 	_init_.Initialize()
 
@@ -851,7 +851,7 @@ func NewOceanAks(scope constructs.Construct, id *string, config *OceanAksConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.170.0/docs/resources/ocean_aks spotinst_ocean_aks} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.171.0/docs/resources/ocean_aks spotinst_ocean_aks} Resource.
 func NewOceanAks_Override(o OceanAks, scope constructs.Construct, id *string, config *OceanAksConfig) {
 	_init_.Initialize()
 
