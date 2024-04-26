@@ -124,7 +124,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthCheckUnhealthyDurationBeforeReplacement", GoMethod: "ResetHealthCheckUnhealthyDurationBeforeReplacement"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIamInstanceProfile", GoMethod: "ResetIamInstanceProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetImageId", GoMethod: "ResetImageId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceMetadataOptions", GoMethod: "ResetInstanceMetadataOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyName", GoMethod: "ResetKeyName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLoadBalancers", GoMethod: "ResetLoadBalancers"},

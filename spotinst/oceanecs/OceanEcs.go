@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.171.0/docs/resources/ocean_ecs spotinst_ocean_ecs}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.171.1/docs/resources/ocean_ecs spotinst_ocean_ecs}.
 type OceanEcs interface {
 	cdktf.TerraformResource
 	AssociatePublicIpAddress() interface{}
@@ -214,7 +214,6 @@ type OceanEcs interface {
 	ResetFilters()
 	ResetIamInstanceProfile()
 	ResetId()
-	ResetImageId()
 	ResetInstanceMetadataOptions()
 	ResetKeyPair()
 	ResetLogging()
@@ -1073,7 +1072,7 @@ func (j *jsiiProxy_OceanEcs) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.171.0/docs/resources/ocean_ecs spotinst_ocean_ecs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.171.1/docs/resources/ocean_ecs spotinst_ocean_ecs} Resource.
 func NewOceanEcs(scope constructs.Construct, id *string, config *OceanEcsConfig) OceanEcs {
 	_init_.Initialize()
 
@@ -1091,7 +1090,7 @@ func NewOceanEcs(scope constructs.Construct, id *string, config *OceanEcsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.171.0/docs/resources/ocean_ecs spotinst_ocean_ecs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.171.1/docs/resources/ocean_ecs spotinst_ocean_ecs} Resource.
 func NewOceanEcs_Override(o OceanEcs, scope constructs.Construct, id *string, config *OceanEcsConfig) {
 	_init_.Initialize()
 
@@ -1970,14 +1969,6 @@ func (o *jsiiProxy_OceanEcs) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OceanEcs) ResetImageId() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetImageId",
 		nil, // no parameters
 	)
 }
