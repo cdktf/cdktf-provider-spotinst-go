@@ -198,6 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "policyAccountIdsInput", GoGetter: "PolicyAccountIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "policyId", GoGetter: "PolicyId"},
 			_jsii_.MemberProperty{JsiiProperty: "policyIdInput", GoGetter: "PolicyIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPolicyAccountIds", GoMethod: "ResetPolicyAccountIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

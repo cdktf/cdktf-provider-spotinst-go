@@ -70,6 +70,7 @@ type OrganizationProgrammaticUserPoliciesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPolicyAccountIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -484,6 +485,14 @@ func (o *jsiiProxy_OrganizationProgrammaticUserPoliciesOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OrganizationProgrammaticUserPoliciesOutputReference) ResetPolicyAccountIds() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPolicyAccountIds",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OrganizationProgrammaticUserPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
