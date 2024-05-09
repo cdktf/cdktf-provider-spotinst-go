@@ -75,6 +75,10 @@ func (o *jsiiProxy_OceanAws) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (o *jsiiProxy_OceanAws) validatePutAttachLoadBalancerParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAws) validatePutAutoscalerParameters(value *OceanAwsAutoscaler) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (o *jsiiProxy_OceanAws) validatePutBlockDeviceMappingsParameters(value inte
 }
 
 func (o *jsiiProxy_OceanAws) validatePutClusterOrientationParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanAws) validatePutDetachLoadBalancerParameters(value interface{}) error {
 	return nil
 }
 

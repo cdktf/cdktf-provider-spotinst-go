@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.171.4/docs/resources/ocean_aws spotinst_ocean_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.172.0/docs/resources/ocean_aws spotinst_ocean_aws}.
 type OceanAws interface {
 	cdktf.TerraformResource
 	AssociateIpv6Address() interface{}
@@ -21,6 +21,8 @@ type OceanAws interface {
 	AssociatePublicIpAddress() interface{}
 	SetAssociatePublicIpAddress(val interface{})
 	AssociatePublicIpAddressInput() interface{}
+	AttachLoadBalancer() OceanAwsAttachLoadBalancerList
+	AttachLoadBalancerInput() interface{}
 	Autoscaler() OceanAwsAutoscalerOutputReference
 	AutoscalerInput() *OceanAwsAutoscaler
 	Blacklist() *[]*string
@@ -52,6 +54,8 @@ type OceanAws interface {
 	DesiredCapacity() *float64
 	SetDesiredCapacity(val *float64)
 	DesiredCapacityInput() *float64
+	DetachLoadBalancer() OceanAwsDetachLoadBalancerList
+	DetachLoadBalancerInput() interface{}
 	DrainingTimeout() *float64
 	SetDrainingTimeout(val *float64)
 	DrainingTimeoutInput() *float64
@@ -213,9 +217,11 @@ type OceanAws interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAttachLoadBalancer(value interface{})
 	PutAutoscaler(value *OceanAwsAutoscaler)
 	PutBlockDeviceMappings(value interface{})
 	PutClusterOrientation(value interface{})
+	PutDetachLoadBalancer(value interface{})
 	PutFilters(value *OceanAwsFilters)
 	PutInstanceMetadataOptions(value *OceanAwsInstanceMetadataOptions)
 	PutLoadBalancers(value interface{})
@@ -226,12 +232,14 @@ type OceanAws interface {
 	PutUpdatePolicy(value *OceanAwsUpdatePolicy)
 	ResetAssociateIpv6Address()
 	ResetAssociatePublicIpAddress()
+	ResetAttachLoadBalancer()
 	ResetAutoscaler()
 	ResetBlacklist()
 	ResetBlockDeviceMappings()
 	ResetClusterOrientation()
 	ResetControllerId()
 	ResetDesiredCapacity()
+	ResetDetachLoadBalancer()
 	ResetDrainingTimeout()
 	ResetEbsOptimized()
 	ResetFallbackToOndemand()
@@ -317,6 +325,26 @@ func (j *jsiiProxy_OceanAws) AssociatePublicIpAddressInput() interface{} {
 	_jsii_.Get(
 		j,
 		"associatePublicIpAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) AttachLoadBalancer() OceanAwsAttachLoadBalancerList {
+	var returns OceanAwsAttachLoadBalancerList
+	_jsii_.Get(
+		j,
+		"attachLoadBalancer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) AttachLoadBalancerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"attachLoadBalancerInput",
 		&returns,
 	)
 	return returns
@@ -487,6 +515,26 @@ func (j *jsiiProxy_OceanAws) DesiredCapacityInput() *float64 {
 	_jsii_.Get(
 		j,
 		"desiredCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) DetachLoadBalancer() OceanAwsDetachLoadBalancerList {
+	var returns OceanAwsDetachLoadBalancerList
+	_jsii_.Get(
+		j,
+		"detachLoadBalancer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) DetachLoadBalancerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"detachLoadBalancerInput",
 		&returns,
 	)
 	return returns
@@ -1243,7 +1291,7 @@ func (j *jsiiProxy_OceanAws) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.171.4/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.172.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig) OceanAws {
 	_init_.Initialize()
 
@@ -1261,7 +1309,7 @@ func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.171.4/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.172.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws_Override(o OceanAws, scope constructs.Construct, id *string, config *OceanAwsConfig) {
 	_init_.Initialize()
 
@@ -2012,6 +2060,17 @@ func (o *jsiiProxy_OceanAws) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (o *jsiiProxy_OceanAws) PutAttachLoadBalancer(value interface{}) {
+	if err := o.validatePutAttachLoadBalancerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAttachLoadBalancer",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAws) PutAutoscaler(value *OceanAwsAutoscaler) {
 	if err := o.validatePutAutoscalerParameters(value); err != nil {
 		panic(err)
@@ -2041,6 +2100,17 @@ func (o *jsiiProxy_OceanAws) PutClusterOrientation(value interface{}) {
 	_jsii_.InvokeVoid(
 		o,
 		"putClusterOrientation",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanAws) PutDetachLoadBalancer(value interface{}) {
+	if err := o.validatePutDetachLoadBalancerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putDetachLoadBalancer",
 		[]interface{}{value},
 	)
 }
@@ -2149,6 +2219,14 @@ func (o *jsiiProxy_OceanAws) ResetAssociatePublicIpAddress() {
 	)
 }
 
+func (o *jsiiProxy_OceanAws) ResetAttachLoadBalancer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAttachLoadBalancer",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OceanAws) ResetAutoscaler() {
 	_jsii_.InvokeVoid(
 		o,
@@ -2193,6 +2271,14 @@ func (o *jsiiProxy_OceanAws) ResetDesiredCapacity() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetDesiredCapacity",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetDetachLoadBalancer() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDetachLoadBalancer",
 		nil, // no parameters
 	)
 }

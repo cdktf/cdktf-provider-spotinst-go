@@ -207,6 +207,37 @@ func (o *jsiiProxy_OceanAws) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (o *jsiiProxy_OceanAws) validatePutAttachLoadBalancerParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*OceanAwsAttachLoadBalancer:
+		value := value.(*[]*OceanAwsAttachLoadBalancer)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*OceanAwsAttachLoadBalancer:
+		value_ := value.([]*OceanAwsAttachLoadBalancer)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OceanAwsAttachLoadBalancer; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OceanAws) validatePutAutoscalerParameters(value *OceanAwsAutoscaler) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -274,6 +305,37 @@ func (o *jsiiProxy_OceanAws) validatePutClusterOrientationParameters(value inter
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OceanAwsClusterOrientation; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_OceanAws) validatePutDetachLoadBalancerParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*OceanAwsDetachLoadBalancer:
+		value := value.(*[]*OceanAwsDetachLoadBalancer)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*OceanAwsDetachLoadBalancer:
+		value_ := value.([]*OceanAwsDetachLoadBalancer)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OceanAwsDetachLoadBalancer; received %#v (a %T)", value, value)
 		}
 	}
 
