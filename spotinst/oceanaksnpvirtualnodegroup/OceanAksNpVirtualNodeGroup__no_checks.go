@@ -83,6 +83,10 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validatePutHeadroomsParameters(va
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validatePutLinuxOsConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) validatePutTaintsParameters(value interface{}) error {
 	return nil
 }

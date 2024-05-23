@@ -34,6 +34,8 @@ type OceanAksNpSchedulingOutputReference interface {
 	SetInternalValue(val *OceanAksNpScheduling)
 	ShutdownHours() OceanAksNpSchedulingShutdownHoursOutputReference
 	ShutdownHoursInput() *OceanAksNpSchedulingShutdownHours
+	Tasks() OceanAksNpSchedulingTasksList
+	TasksInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type OceanAksNpSchedulingOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutShutdownHours(value *OceanAksNpSchedulingShutdownHours)
+	PutTasks(value interface{})
 	ResetShutdownHours()
+	ResetTasks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_OceanAksNpSchedulingOutputReference) ShutdownHoursInput() *Oc
 	_jsii_.Get(
 		j,
 		"shutdownHoursInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpSchedulingOutputReference) Tasks() OceanAksNpSchedulingTasksList {
+	var returns OceanAksNpSchedulingTasksList
+	_jsii_.Get(
+		j,
+		"tasks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpSchedulingOutputReference) TasksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tasksInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) PutShutdownHours(value *
 	)
 }
 
+func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) PutTasks(value interface{}) {
+	if err := o.validatePutTasksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTasks",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) ResetShutdownHours() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetShutdownHours",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) ResetTasks() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTasks",
 		nil, // no parameters
 	)
 }

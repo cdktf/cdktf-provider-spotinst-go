@@ -91,6 +91,10 @@ func (o *jsiiProxy_OceanAksNp) validatePutHealthParameters(value *OceanAksNpHeal
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNp) validatePutLinuxOsConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksNp) validatePutSchedulingParameters(value *OceanAksNpScheduling) error {
 	return nil
 }

@@ -51,6 +51,10 @@ func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) validatePutShutdownHours
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) validatePutTasksParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

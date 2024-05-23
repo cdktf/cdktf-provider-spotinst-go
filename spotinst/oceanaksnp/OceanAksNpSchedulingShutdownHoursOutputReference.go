@@ -71,6 +71,7 @@ type OceanAksNpSchedulingShutdownHoursOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIsEnabled()
+	ResetTimeWindows()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -491,6 +492,14 @@ func (o *jsiiProxy_OceanAksNpSchedulingShutdownHoursOutputReference) ResetIsEnab
 	_jsii_.InvokeVoid(
 		o,
 		"resetIsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpSchedulingShutdownHoursOutputReference) ResetTimeWindows() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTimeWindows",
 		nil, // no parameters
 	)
 }

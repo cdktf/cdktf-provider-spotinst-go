@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.173.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.175.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
 type OceanAksNpVirtualNodeGroup interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -65,6 +65,8 @@ type OceanAksNpVirtualNodeGroup interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LinuxOsConfig() OceanAksNpVirtualNodeGroupLinuxOsConfigList
+	LinuxOsConfigInput() interface{}
 	MaxCount() *float64
 	SetMaxCount(val *float64)
 	MaxCountInput() *float64
@@ -171,6 +173,7 @@ type OceanAksNpVirtualNodeGroup interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFilters(value *OceanAksNpVirtualNodeGroupFilters)
 	PutHeadrooms(value interface{})
+	PutLinuxOsConfig(value interface{})
 	PutTaints(value interface{})
 	PutUpdatePolicy(value *OceanAksNpVirtualNodeGroupUpdatePolicy)
 	ResetAvailabilityZones()
@@ -181,6 +184,7 @@ type OceanAksNpVirtualNodeGroup interface {
 	ResetId()
 	ResetKubernetesVersion()
 	ResetLabels()
+	ResetLinuxOsConfig()
 	ResetMaxCount()
 	ResetMaxPodsPerNode()
 	ResetMinCount()
@@ -460,6 +464,26 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) Lifecycle() *cdktf.TerraformResou
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) LinuxOsConfig() OceanAksNpVirtualNodeGroupLinuxOsConfigList {
+	var returns OceanAksNpVirtualNodeGroupLinuxOsConfigList
+	_jsii_.Get(
+		j,
+		"linuxOsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) LinuxOsConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"linuxOsConfigInput",
 		&returns,
 	)
 	return returns
@@ -836,7 +860,7 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) VnetSubnetIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.173.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.175.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) OceanAksNpVirtualNodeGroup {
 	_init_.Initialize()
 
@@ -854,7 +878,7 @@ func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.173.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.175.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup_Override(o OceanAksNpVirtualNodeGroup, scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) {
 	_init_.Initialize()
 
@@ -1517,6 +1541,17 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) PutHeadrooms(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) PutLinuxOsConfig(value interface{}) {
+	if err := o.validatePutLinuxOsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLinuxOsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) PutTaints(value interface{}) {
 	if err := o.validatePutTaintsParameters(value); err != nil {
 		panic(err)
@@ -1599,6 +1634,14 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetLabels() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetLinuxOsConfig() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLinuxOsConfig",
 		nil, // no parameters
 	)
 }

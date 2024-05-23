@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.173.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.175.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
 type OceanAksNp interface {
 	cdktf.TerraformResource
 	AksClusterName() *string
@@ -84,6 +84,8 @@ type OceanAksNp interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LinuxOsConfig() OceanAksNpLinuxOsConfigList
+	LinuxOsConfigInput() interface{}
 	MaxCount() *float64
 	SetMaxCount(val *float64)
 	MaxCountInput() *float64
@@ -191,6 +193,7 @@ type OceanAksNp interface {
 	PutFilters(value *OceanAksNpFilters)
 	PutHeadrooms(value interface{})
 	PutHealth(value *OceanAksNpHealth)
+	PutLinuxOsConfig(value interface{})
 	PutScheduling(value *OceanAksNpScheduling)
 	PutTaints(value interface{})
 	PutUpdatePolicy(value *OceanAksNpUpdatePolicy)
@@ -203,6 +206,7 @@ type OceanAksNp interface {
 	ResetId()
 	ResetKubernetesVersion()
 	ResetLabels()
+	ResetLinuxOsConfig()
 	ResetMaxCount()
 	ResetMaxPodsPerNode()
 	ResetMinCount()
@@ -628,6 +632,26 @@ func (j *jsiiProxy_OceanAksNp) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNp) LinuxOsConfig() OceanAksNpLinuxOsConfigList {
+	var returns OceanAksNpLinuxOsConfigList
+	_jsii_.Get(
+		j,
+		"linuxOsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNp) LinuxOsConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"linuxOsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAksNp) MaxCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -999,7 +1023,7 @@ func (j *jsiiProxy_OceanAksNp) VnetSubnetIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.173.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.175.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpConfig) OceanAksNp {
 	_init_.Initialize()
 
@@ -1017,7 +1041,7 @@ func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.173.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.175.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp_Override(o OceanAksNp, scope constructs.Construct, id *string, config *OceanAksNpConfig) {
 	_init_.Initialize()
 
@@ -1746,6 +1770,17 @@ func (o *jsiiProxy_OceanAksNp) PutHealth(value *OceanAksNpHealth) {
 	)
 }
 
+func (o *jsiiProxy_OceanAksNp) PutLinuxOsConfig(value interface{}) {
+	if err := o.validatePutLinuxOsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLinuxOsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAksNp) PutScheduling(value *OceanAksNpScheduling) {
 	if err := o.validatePutSchedulingParameters(value); err != nil {
 		panic(err)
@@ -1847,6 +1882,14 @@ func (o *jsiiProxy_OceanAksNp) ResetLabels() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNp) ResetLinuxOsConfig() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLinuxOsConfig",
 		nil, // no parameters
 	)
 }
