@@ -7,7 +7,7 @@ package oceanaksnp
 type OceanAksNpLinuxOsConfig struct {
 	// sysctls block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.175.0/docs/resources/ocean_aks_np#sysctls OceanAksNp#sysctls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.176.0/docs/resources/ocean_aks_np#sysctls OceanAksNp#sysctls}
 	Sysctls interface{} `field:"optional" json:"sysctls" yaml:"sysctls"`
 }
 

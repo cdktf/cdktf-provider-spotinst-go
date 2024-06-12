@@ -75,6 +75,10 @@ func (j *jsiiProxy_StatefulNodeAzureImageGalleryOutputReference) validateSetInte
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzureImageGalleryOutputReference) validateSetSpotAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulNodeAzureImageGalleryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

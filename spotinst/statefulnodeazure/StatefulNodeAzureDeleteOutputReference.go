@@ -50,6 +50,9 @@ type StatefulNodeAzureDeleteOutputReference interface {
 	PublicIpTtlInHours() *float64
 	SetPublicIpTtlInHours(val *float64)
 	PublicIpTtlInHoursInput() *float64
+	ShouldDeregisterFromLb() interface{}
+	SetShouldDeregisterFromLb(val interface{})
+	ShouldDeregisterFromLbInput() interface{}
 	ShouldTerminateVm() interface{}
 	SetShouldTerminateVm(val interface{})
 	ShouldTerminateVmInput() interface{}
@@ -94,6 +97,7 @@ type StatefulNodeAzureDeleteOutputReference interface {
 	ResetDiskTtlInHours()
 	ResetNetworkTtlInHours()
 	ResetPublicIpTtlInHours()
+	ResetShouldDeregisterFromLb()
 	ResetSnapshotTtlInHours()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -275,6 +279,26 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) PublicIpTtlInHoursInp
 	_jsii_.Get(
 		j,
 		"publicIpTtlInHoursInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ShouldDeregisterFromLb() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldDeregisterFromLb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ShouldDeregisterFromLbInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldDeregisterFromLbInput",
 		&returns,
 	)
 	return returns
@@ -483,6 +507,17 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetPublicIpTtlInHours(
 	_jsii_.Set(
 		j,
 		"publicIpTtlInHours",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetShouldDeregisterFromLb(val interface{}) {
+	if err := j.validateSetShouldDeregisterFromLbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shouldDeregisterFromLb",
 		val,
 	)
 }
@@ -748,6 +783,14 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ResetPublicIpTtlInHou
 	_jsii_.InvokeVoid(
 		s,
 		"resetPublicIpTtlInHours",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ResetShouldDeregisterFromLb() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetShouldDeregisterFromLb",
 		nil, // no parameters
 	)
 }

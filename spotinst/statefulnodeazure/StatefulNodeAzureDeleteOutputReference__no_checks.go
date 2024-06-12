@@ -87,6 +87,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) validateSetPublicIpTt
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) validateSetShouldDeregisterFromLbParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) validateSetShouldTerminateVmParameters(val interface{}) error {
 	return nil
 }

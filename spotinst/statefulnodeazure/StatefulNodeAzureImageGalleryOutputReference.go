@@ -41,6 +41,9 @@ type StatefulNodeAzureImageGalleryOutputReference interface {
 	ImageNameInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	SpotAccountId() *string
+	SetSpotAccountId(val *string)
+	SpotAccountIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type StatefulNodeAzureImageGalleryOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSpotAccountId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -196,6 +200,26 @@ func (j *jsiiProxy_StatefulNodeAzureImageGalleryOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureImageGalleryOutputReference) SpotAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"spotAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureImageGalleryOutputReference) SpotAccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"spotAccountIdInput",
 		&returns,
 	)
 	return returns
@@ -331,6 +355,17 @@ func (j *jsiiProxy_StatefulNodeAzureImageGalleryOutputReference)SetInternalValue
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulNodeAzureImageGalleryOutputReference)SetSpotAccountId(val *string) {
+	if err := j.validateSetSpotAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"spotAccountId",
 		val,
 	)
 }
@@ -552,6 +587,14 @@ func (s *jsiiProxy_StatefulNodeAzureImageGalleryOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StatefulNodeAzureImageGalleryOutputReference) ResetSpotAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSpotAccountId",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StatefulNodeAzureImageGalleryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
