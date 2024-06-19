@@ -5,7 +5,7 @@ package oceancdverificationtemplate
 
 
 type OceancdVerificationTemplateMetricsBaselineBaselineProviderPrometheus struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.176.1/docs/resources/oceancd_verification_template#prometheus_query OceancdVerificationTemplate#prometheus_query}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.177.0/docs/resources/oceancd_verification_template#prometheus_query OceancdVerificationTemplate#prometheus_query}.
 	PrometheusQuery *string `field:"required" json:"prometheusQuery" yaml:"prometheusQuery"`
 }
 
