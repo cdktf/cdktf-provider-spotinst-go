@@ -207,6 +207,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetOceanIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetPreferredOdTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetPreferredSpotTypesParameters(val *[]*string) error {
 	return nil
 }

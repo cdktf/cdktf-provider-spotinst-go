@@ -882,6 +882,14 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetOceanIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetPreferredOdTypesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetPreferredSpotTypesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

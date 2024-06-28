@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.177.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.179.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
 type OceanAwsLaunchSpec interface {
 	cdktf.TerraformResource
 	AssociatePublicIpAddress() interface{}
@@ -90,6 +90,9 @@ type OceanAwsLaunchSpec interface {
 	OceanId() *string
 	SetOceanId(val *string)
 	OceanIdInput() *string
+	PreferredOdTypes() *[]*string
+	SetPreferredOdTypes(val *[]*string)
+	PreferredOdTypesInput() *[]*string
 	PreferredSpotTypes() *[]*string
 	SetPreferredSpotTypes(val *[]*string)
 	PreferredSpotTypesInput() *[]*string
@@ -221,6 +224,7 @@ type OceanAwsLaunchSpec interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreferredOdTypes()
 	ResetPreferredSpotTypes()
 	ResetResourceLimits()
 	ResetRestrictScaleDown()
@@ -732,6 +736,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) OceanIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpec) PreferredOdTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredOdTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) PreferredOdTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredOdTypesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAwsLaunchSpec) PreferredSpotTypes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1053,7 +1077,7 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.177.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.179.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) OceanAwsLaunchSpec {
 	_init_.Initialize()
 
@@ -1071,7 +1095,7 @@ func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.177.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.179.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec_Override(o OceanAwsLaunchSpec, scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1204,6 +1228,17 @@ func (j *jsiiProxy_OceanAwsLaunchSpec)SetOceanId(val *string) {
 	_jsii_.Set(
 		j,
 		"oceanId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetPreferredOdTypes(val *[]*string) {
+	if err := j.validateSetPreferredOdTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredOdTypes",
 		val,
 	)
 }
@@ -2003,6 +2038,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpec) ResetPreferredOdTypes() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPreferredOdTypes",
 		nil, // no parameters
 	)
 }
