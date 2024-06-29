@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.179.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
 type StatefulNodeAzure interface {
 	cdktf.TerraformResource
 	AttachDataDisk() StatefulNodeAzureAttachDataDiskList
@@ -89,9 +89,6 @@ type StatefulNodeAzure interface {
 	NetworkInput() *StatefulNodeAzureNetwork
 	// The tree node.
 	Node() constructs.Node
-	OdSizes() *[]*string
-	SetOdSizes(val *[]*string)
-	OdSizesInput() *[]*string
 	Os() *string
 	SetOs(val *string)
 	OsDisk() StatefulNodeAzureOsDiskOutputReference
@@ -100,9 +97,6 @@ type StatefulNodeAzure interface {
 	SetOsDiskPersistenceMode(val *string)
 	OsDiskPersistenceModeInput() *string
 	OsInput() *string
-	PreferredSpotSizes() *[]*string
-	SetPreferredSpotSizes(val *[]*string)
-	PreferredSpotSizesInput() *[]*string
 	PreferredZone() *string
 	SetPreferredZone(val *string)
 	PreferredZoneInput() *string
@@ -147,9 +141,6 @@ type StatefulNodeAzure interface {
 	ShutdownScriptInput() *string
 	Signal() StatefulNodeAzureSignalList
 	SignalInput() interface{}
-	SpotSizes() *[]*string
-	SetSpotSizes(val *[]*string)
-	SpotSizesInput() *[]*string
 	Strategy() StatefulNodeAzureStrategyOutputReference
 	StrategyInput() *StatefulNodeAzureStrategy
 	Tag() StatefulNodeAzureTagList
@@ -171,6 +162,8 @@ type StatefulNodeAzure interface {
 	VmNamePrefix() *string
 	SetVmNamePrefix(val *string)
 	VmNamePrefixInput() *string
+	VmSizes() StatefulNodeAzureVmSizesOutputReference
+	VmSizesInput() *StatefulNodeAzureVmSizes
 	Zones() *[]*string
 	SetZones(val *[]*string)
 	ZonesInput() *[]*string
@@ -239,6 +232,7 @@ type StatefulNodeAzure interface {
 	PutStrategy(value *StatefulNodeAzureStrategy)
 	PutTag(value interface{})
 	PutUpdateState(value interface{})
+	PutVmSizes(value *StatefulNodeAzureVmSizes)
 	ResetAttachDataDisk()
 	ResetBootDiagnostics()
 	ResetCustomData()
@@ -262,7 +256,6 @@ type StatefulNodeAzure interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPreferredSpotSizes()
 	ResetPreferredZone()
 	ResetProximityPlacementGroups()
 	ResetSchedulingTask()
@@ -775,26 +768,6 @@ func (j *jsiiProxy_StatefulNodeAzure) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) OdSizes() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"odSizes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StatefulNodeAzure) OdSizesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"odSizesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_StatefulNodeAzure) Os() *string {
 	var returns *string
 	_jsii_.Get(
@@ -850,26 +823,6 @@ func (j *jsiiProxy_StatefulNodeAzure) OsInput() *string {
 	_jsii_.Get(
 		j,
 		"osInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StatefulNodeAzure) PreferredSpotSizes() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"preferredSpotSizes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StatefulNodeAzure) PreferredSpotSizesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"preferredSpotSizesInput",
 		&returns,
 	)
 	return returns
@@ -1165,26 +1118,6 @@ func (j *jsiiProxy_StatefulNodeAzure) SignalInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) SpotSizes() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"spotSizes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StatefulNodeAzure) SpotSizesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"spotSizesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_StatefulNodeAzure) Strategy() StatefulNodeAzureStrategyOutputReference {
 	var returns StatefulNodeAzureStrategyOutputReference
 	_jsii_.Get(
@@ -1335,6 +1268,26 @@ func (j *jsiiProxy_StatefulNodeAzure) VmNamePrefixInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StatefulNodeAzure) VmSizes() StatefulNodeAzureVmSizesOutputReference {
+	var returns StatefulNodeAzureVmSizesOutputReference
+	_jsii_.Get(
+		j,
+		"vmSizes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzure) VmSizesInput() *StatefulNodeAzureVmSizes {
+	var returns *StatefulNodeAzureVmSizes
+	_jsii_.Get(
+		j,
+		"vmSizesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulNodeAzure) Zones() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1356,7 +1309,7 @@ func (j *jsiiProxy_StatefulNodeAzure) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.179.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) StatefulNodeAzure {
 	_init_.Initialize()
 
@@ -1374,7 +1327,7 @@ func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *Statef
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.179.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure_Override(s StatefulNodeAzure, scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) {
 	_init_.Initialize()
 
@@ -1500,17 +1453,6 @@ func (j *jsiiProxy_StatefulNodeAzure)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzure)SetOdSizes(val *[]*string) {
-	if err := j.validateSetOdSizesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"odSizes",
-		val,
-	)
-}
-
 func (j *jsiiProxy_StatefulNodeAzure)SetOs(val *string) {
 	if err := j.validateSetOsParameters(val); err != nil {
 		panic(err)
@@ -1529,17 +1471,6 @@ func (j *jsiiProxy_StatefulNodeAzure)SetOsDiskPersistenceMode(val *string) {
 	_jsii_.Set(
 		j,
 		"osDiskPersistenceMode",
-		val,
-	)
-}
-
-func (j *jsiiProxy_StatefulNodeAzure)SetPreferredSpotSizes(val *[]*string) {
-	if err := j.validateSetPreferredSpotSizesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"preferredSpotSizes",
 		val,
 	)
 }
@@ -1647,17 +1578,6 @@ func (j *jsiiProxy_StatefulNodeAzure)SetShutdownScript(val *string) {
 	_jsii_.Set(
 		j,
 		"shutdownScript",
-		val,
-	)
-}
-
-func (j *jsiiProxy_StatefulNodeAzure)SetSpotSizes(val *[]*string) {
-	if err := j.validateSetSpotSizesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"spotSizes",
 		val,
 	)
 }
@@ -2301,6 +2221,17 @@ func (s *jsiiProxy_StatefulNodeAzure) PutUpdateState(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_StatefulNodeAzure) PutVmSizes(value *StatefulNodeAzureVmSizes) {
+	if err := s.validatePutVmSizesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putVmSizes",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StatefulNodeAzure) ResetAttachDataDisk() {
 	_jsii_.InvokeVoid(
 		s,
@@ -2465,14 +2396,6 @@ func (s *jsiiProxy_StatefulNodeAzure) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_StatefulNodeAzure) ResetPreferredSpotSizes() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetPreferredSpotSizes",
 		nil, // no parameters
 	)
 }

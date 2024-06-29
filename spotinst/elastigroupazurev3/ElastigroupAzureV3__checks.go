@@ -322,6 +322,17 @@ func (e *jsiiProxy_ElastigroupAzureV3) validatePutTagsParameters(value interface
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutVmSizesParameters(value *ElastigroupAzureV3VmSizes) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateElastigroupAzureV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -536,14 +547,6 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetNameParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) validateSetOdSizesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetOnDemandCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -623,14 +626,6 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetResourceGroupNameParameters(va
 }
 
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetSpotPercentageParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ElastigroupAzureV3) validateSetSpotSizesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

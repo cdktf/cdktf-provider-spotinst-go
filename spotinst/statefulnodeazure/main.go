@@ -79,8 +79,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInput", GoGetter: "NetworkInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
-			_jsii_.MemberProperty{JsiiProperty: "odSizes", GoGetter: "OdSizes"},
-			_jsii_.MemberProperty{JsiiProperty: "odSizesInput", GoGetter: "OdSizesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "os", GoGetter: "Os"},
 			_jsii_.MemberProperty{JsiiProperty: "osDisk", GoGetter: "OsDisk"},
 			_jsii_.MemberProperty{JsiiProperty: "osDiskInput", GoGetter: "OsDiskInput"},
@@ -88,8 +86,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "osDiskPersistenceModeInput", GoGetter: "OsDiskPersistenceModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "osInput", GoGetter: "OsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
-			_jsii_.MemberProperty{JsiiProperty: "preferredSpotSizes", GoGetter: "PreferredSpotSizes"},
-			_jsii_.MemberProperty{JsiiProperty: "preferredSpotSizesInput", GoGetter: "PreferredSpotSizesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "preferredZone", GoGetter: "PreferredZone"},
 			_jsii_.MemberProperty{JsiiProperty: "preferredZoneInput", GoGetter: "PreferredZoneInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
@@ -118,6 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putStrategy", GoMethod: "PutStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTag", GoMethod: "PutTag"},
 			_jsii_.MemberMethod{JsiiMethod: "putUpdateState", GoMethod: "PutUpdateState"},
+			_jsii_.MemberMethod{JsiiMethod: "putVmSizes", GoMethod: "PutVmSizes"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
@@ -142,7 +139,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOsDisk", GoMethod: "ResetOsDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOsDiskPersistenceMode", GoMethod: "ResetOsDiskPersistenceMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPreferredSpotSizes", GoMethod: "ResetPreferredSpotSizes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreferredZone", GoMethod: "ResetPreferredZone"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProximityPlacementGroups", GoMethod: "ResetProximityPlacementGroups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchedulingTask", GoMethod: "ResetSchedulingTask"},
@@ -177,8 +173,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "shutdownScriptInput", GoGetter: "ShutdownScriptInput"},
 			_jsii_.MemberProperty{JsiiProperty: "signal", GoGetter: "Signal"},
 			_jsii_.MemberProperty{JsiiProperty: "signalInput", GoGetter: "SignalInput"},
-			_jsii_.MemberProperty{JsiiProperty: "spotSizes", GoGetter: "SpotSizes"},
-			_jsii_.MemberProperty{JsiiProperty: "spotSizesInput", GoGetter: "SpotSizesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "strategy", GoGetter: "Strategy"},
 			_jsii_.MemberProperty{JsiiProperty: "strategyInput", GoGetter: "StrategyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -200,6 +194,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmNameInput", GoGetter: "VmNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vmNamePrefix", GoGetter: "VmNamePrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "vmNamePrefixInput", GoGetter: "VmNamePrefixInput"},
+			_jsii_.MemberProperty{JsiiProperty: "vmSizes", GoGetter: "VmSizes"},
+			_jsii_.MemberProperty{JsiiProperty: "vmSizesInput", GoGetter: "VmSizesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
 			_jsii_.MemberProperty{JsiiProperty: "zonesInput", GoGetter: "ZonesInput"},
 		},
@@ -2373,6 +2369,49 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StatefulNodeAzureUpdateStateOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.statefulNodeAzure.StatefulNodeAzureVmSizes",
+		reflect.TypeOf((*StatefulNodeAzureVmSizes)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.statefulNodeAzure.StatefulNodeAzureVmSizesOutputReference",
+		reflect.TypeOf((*StatefulNodeAzureVmSizesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "odSizes", GoGetter: "OdSizes"},
+			_jsii_.MemberProperty{JsiiProperty: "odSizesInput", GoGetter: "OdSizesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "preferredSpotSizes", GoGetter: "PreferredSpotSizes"},
+			_jsii_.MemberProperty{JsiiProperty: "preferredSpotSizesInput", GoGetter: "PreferredSpotSizesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPreferredSpotSizes", GoMethod: "ResetPreferredSpotSizes"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "spotSizes", GoGetter: "SpotSizes"},
+			_jsii_.MemberProperty{JsiiProperty: "spotSizesInput", GoGetter: "SpotSizesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_StatefulNodeAzureVmSizesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

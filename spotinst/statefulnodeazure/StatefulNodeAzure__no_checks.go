@@ -163,6 +163,10 @@ func (s *jsiiProxy_StatefulNodeAzure) validatePutUpdateStateParameters(value int
 	return nil
 }
 
+func (s *jsiiProxy_StatefulNodeAzure) validatePutVmSizesParameters(value *StatefulNodeAzureVmSizes) error {
+	return nil
+}
+
 func validateStatefulNodeAzure_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -215,19 +219,11 @@ func (j *jsiiProxy_StatefulNodeAzure) validateSetNameParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) validateSetOdSizesParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_StatefulNodeAzure) validateSetOsParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_StatefulNodeAzure) validateSetOsDiskPersistenceModeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_StatefulNodeAzure) validateSetPreferredSpotSizesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -264,10 +260,6 @@ func (j *jsiiProxy_StatefulNodeAzure) validateSetShouldPersistVmParameters(val i
 }
 
 func (j *jsiiProxy_StatefulNodeAzure) validateSetShutdownScriptParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_StatefulNodeAzure) validateSetSpotSizesParameters(val *[]*string) error {
 	return nil
 }
 

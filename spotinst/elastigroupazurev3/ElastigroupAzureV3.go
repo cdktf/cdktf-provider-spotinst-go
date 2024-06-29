@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.179.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3}.
 type ElastigroupAzureV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,9 +77,6 @@ type ElastigroupAzureV3 interface {
 	NetworkInput() *ElastigroupAzureV3Network
 	// The tree node.
 	Node() constructs.Node
-	OdSizes() *[]*string
-	SetOdSizes(val *[]*string)
-	OdSizesInput() *[]*string
 	OnDemandCount() *float64
 	SetOnDemandCount(val *float64)
 	OnDemandCountInput() *float64
@@ -105,9 +102,6 @@ type ElastigroupAzureV3 interface {
 	SpotPercentage() *float64
 	SetSpotPercentage(val *float64)
 	SpotPercentageInput() *float64
-	SpotSizes() *[]*string
-	SetSpotSizes(val *[]*string)
-	SpotSizesInput() *[]*string
 	Tags() ElastigroupAzureV3TagsList
 	TagsInput() interface{}
 	// Experimental.
@@ -116,6 +110,8 @@ type ElastigroupAzureV3 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VmSizes() ElastigroupAzureV3VmSizesOutputReference
+	VmSizesInput() *ElastigroupAzureV3VmSizes
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -164,6 +160,7 @@ type ElastigroupAzureV3 interface {
 	PutManagedServiceIdentity(value interface{})
 	PutNetwork(value *ElastigroupAzureV3Network)
 	PutTags(value interface{})
+	PutVmSizes(value *ElastigroupAzureV3VmSizes)
 	ResetCustomData()
 	ResetDesiredCapacity()
 	ResetDrainingTimeout()
@@ -537,26 +534,6 @@ func (j *jsiiProxy_ElastigroupAzureV3) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) OdSizes() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"odSizes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElastigroupAzureV3) OdSizesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"odSizesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ElastigroupAzureV3) OnDemandCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -687,26 +664,6 @@ func (j *jsiiProxy_ElastigroupAzureV3) SpotPercentageInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) SpotSizes() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"spotSizes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElastigroupAzureV3) SpotSizesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"spotSizesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ElastigroupAzureV3) Tags() ElastigroupAzureV3TagsList {
 	var returns ElastigroupAzureV3TagsList
 	_jsii_.Get(
@@ -757,8 +714,28 @@ func (j *jsiiProxy_ElastigroupAzureV3) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) VmSizes() ElastigroupAzureV3VmSizesOutputReference {
+	var returns ElastigroupAzureV3VmSizesOutputReference
+	_jsii_.Get(
+		j,
+		"vmSizes",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.179.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
+func (j *jsiiProxy_ElastigroupAzureV3) VmSizesInput() *ElastigroupAzureV3VmSizes {
+	var returns *ElastigroupAzureV3VmSizes
+	_jsii_.Get(
+		j,
+		"vmSizesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
 func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) ElastigroupAzureV3 {
 	_init_.Initialize()
 
@@ -776,7 +753,7 @@ func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *Elast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.179.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
 func NewElastigroupAzureV3_Override(e ElastigroupAzureV3, scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) {
 	_init_.Initialize()
 
@@ -924,17 +901,6 @@ func (j *jsiiProxy_ElastigroupAzureV3)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3)SetOdSizes(val *[]*string) {
-	if err := j.validateSetOdSizesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"odSizes",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ElastigroupAzureV3)SetOnDemandCount(val *float64) {
 	if err := j.validateSetOnDemandCountParameters(val); err != nil {
 		panic(err)
@@ -1005,17 +971,6 @@ func (j *jsiiProxy_ElastigroupAzureV3)SetSpotPercentage(val *float64) {
 	_jsii_.Set(
 		j,
 		"spotPercentage",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ElastigroupAzureV3)SetSpotSizes(val *[]*string) {
-	if err := j.validateSetSpotSizesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"spotSizes",
 		val,
 	)
 }
@@ -1424,6 +1379,17 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutTags(value interface{}) {
 	_jsii_.InvokeVoid(
 		e,
 		"putTags",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) PutVmSizes(value *ElastigroupAzureV3VmSizes) {
+	if err := e.validatePutVmSizesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putVmSizes",
 		[]interface{}{value},
 	)
 }

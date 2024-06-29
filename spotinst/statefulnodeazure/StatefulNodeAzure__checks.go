@@ -749,6 +749,17 @@ func (s *jsiiProxy_StatefulNodeAzure) validatePutUpdateStateParameters(value int
 	return nil
 }
 
+func (s *jsiiProxy_StatefulNodeAzure) validatePutVmSizesParameters(value *StatefulNodeAzureVmSizes) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateStatefulNodeAzure_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -935,14 +946,6 @@ func (j *jsiiProxy_StatefulNodeAzure) validateSetNameParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) validateSetOdSizesParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_StatefulNodeAzure) validateSetOsParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -952,14 +955,6 @@ func (j *jsiiProxy_StatefulNodeAzure) validateSetOsParameters(val *string) error
 }
 
 func (j *jsiiProxy_StatefulNodeAzure) validateSetOsDiskPersistenceModeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_StatefulNodeAzure) validateSetPreferredSpotSizesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -1118,14 +1113,6 @@ func (j *jsiiProxy_StatefulNodeAzure) validateSetShouldPersistVmParameters(val i
 }
 
 func (j *jsiiProxy_StatefulNodeAzure) validateSetShutdownScriptParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_StatefulNodeAzure) validateSetSpotSizesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

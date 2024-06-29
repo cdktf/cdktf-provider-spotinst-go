@@ -7,7 +7,7 @@ package oceanaksnp
 type OceanAksNpSchedulingTasksParameters struct {
 	// parameters_cluster_roll block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.179.0/docs/resources/ocean_aks_np#parameters_cluster_roll OceanAksNp#parameters_cluster_roll}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.0/docs/resources/ocean_aks_np#parameters_cluster_roll OceanAksNp#parameters_cluster_roll}
 	ParametersClusterRoll *OceanAksNpSchedulingTasksParametersParametersClusterRoll `field:"optional" json:"parametersClusterRoll" yaml:"parametersClusterRoll"`
 }
 

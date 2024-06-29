@@ -95,6 +95,10 @@ func (e *jsiiProxy_ElastigroupAzureV3) validatePutTagsParameters(value interface
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutVmSizesParameters(value *ElastigroupAzureV3VmSizes) error {
+	return nil
+}
+
 func validateElastigroupAzureV3_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -155,10 +159,6 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetNameParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_ElastigroupAzureV3) validateSetOdSizesParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetOnDemandCountParameters(val *float64) error {
 	return nil
 }
@@ -180,10 +180,6 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetResourceGroupNameParameters(va
 }
 
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetSpotPercentageParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_ElastigroupAzureV3) validateSetSpotSizesParameters(val *[]*string) error {
 	return nil
 }
 
