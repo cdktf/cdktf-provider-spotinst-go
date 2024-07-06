@@ -5,7 +5,7 @@ package elastigroupaws
 
 
 type ElastigroupAwsIntegrationMesosphere struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.1/docs/resources/elastigroup_aws#api_server ElastigroupAws#api_server}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.2/docs/resources/elastigroup_aws#api_server ElastigroupAws#api_server}.
 	ApiServer *string `field:"required" json:"apiServer" yaml:"apiServer"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.1/docs/resources/oceancd_verification_provider spotinst_oceancd_verification_provider}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.2/docs/resources/oceancd_verification_provider spotinst_oceancd_verification_provider}.
 type OceancdVerificationProvider interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -476,7 +476,7 @@ func (j *jsiiProxy_OceancdVerificationProvider) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.1/docs/resources/oceancd_verification_provider spotinst_oceancd_verification_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.2/docs/resources/oceancd_verification_provider spotinst_oceancd_verification_provider} Resource.
 func NewOceancdVerificationProvider(scope constructs.Construct, id *string, config *OceancdVerificationProviderConfig) OceancdVerificationProvider {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewOceancdVerificationProvider(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.1/docs/resources/oceancd_verification_provider spotinst_oceancd_verification_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.2/docs/resources/oceancd_verification_provider spotinst_oceancd_verification_provider} Resource.
 func NewOceancdVerificationProvider_Override(o OceancdVerificationProvider, scope constructs.Construct, id *string, config *OceancdVerificationProviderConfig) {
 	_init_.Initialize()
 
