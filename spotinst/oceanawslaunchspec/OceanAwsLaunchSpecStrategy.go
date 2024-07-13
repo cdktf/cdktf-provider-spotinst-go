@@ -5,7 +5,7 @@ package oceanawslaunchspec
 
 
 type OceanAwsLaunchSpecStrategy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.2/docs/resources/ocean_aws_launch_spec#spot_percentage OceanAwsLaunchSpec#spot_percentage}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.181.0/docs/resources/ocean_aws_launch_spec#spot_percentage OceanAwsLaunchSpec#spot_percentage}.
 	SpotPercentage *float64 `field:"optional" json:"spotPercentage" yaml:"spotPercentage"`
 }
 

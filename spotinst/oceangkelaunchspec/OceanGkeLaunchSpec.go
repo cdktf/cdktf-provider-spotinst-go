@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.2/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.181.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec}.
 type OceanGkeLaunchSpec interface {
 	cdktf.TerraformResource
 	AutoscaleHeadrooms() OceanGkeLaunchSpecAutoscaleHeadroomsList
@@ -31,6 +31,8 @@ type OceanGkeLaunchSpec interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateOptions() OceanGkeLaunchSpecCreateOptionsOutputReference
+	CreateOptionsInput() *OceanGkeLaunchSpecCreateOptions
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,6 +165,7 @@ type OceanGkeLaunchSpec interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaleHeadrooms(value interface{})
 	PutAutoscaleHeadroomsAutomatic(value interface{})
+	PutCreateOptions(value *OceanGkeLaunchSpecCreateOptions)
 	PutLabels(value interface{})
 	PutMetadata(value interface{})
 	PutNetworkInterfaces(value interface{})
@@ -175,6 +178,7 @@ type OceanGkeLaunchSpec interface {
 	PutUpdatePolicy(value *OceanGkeLaunchSpecUpdatePolicy)
 	ResetAutoscaleHeadrooms()
 	ResetAutoscaleHeadroomsAutomatic()
+	ResetCreateOptions()
 	ResetId()
 	ResetInstanceTypes()
 	ResetLabels()
@@ -291,6 +295,26 @@ func (j *jsiiProxy_OceanGkeLaunchSpec) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeLaunchSpec) CreateOptions() OceanGkeLaunchSpecCreateOptionsOutputReference {
+	var returns OceanGkeLaunchSpecCreateOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"createOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeLaunchSpec) CreateOptionsInput() *OceanGkeLaunchSpecCreateOptions {
+	var returns *OceanGkeLaunchSpecCreateOptions
+	_jsii_.Get(
+		j,
+		"createOptionsInput",
 		&returns,
 	)
 	return returns
@@ -837,7 +861,7 @@ func (j *jsiiProxy_OceanGkeLaunchSpec) UpdatePolicyInput() *OceanGkeLaunchSpecUp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.2/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.181.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
 func NewOceanGkeLaunchSpec(scope constructs.Construct, id *string, config *OceanGkeLaunchSpecConfig) OceanGkeLaunchSpec {
 	_init_.Initialize()
 
@@ -855,7 +879,7 @@ func NewOceanGkeLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.180.2/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.181.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
 func NewOceanGkeLaunchSpec_Override(o OceanGkeLaunchSpec, scope constructs.Construct, id *string, config *OceanGkeLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1430,6 +1454,17 @@ func (o *jsiiProxy_OceanGkeLaunchSpec) PutAutoscaleHeadroomsAutomatic(value inte
 	)
 }
 
+func (o *jsiiProxy_OceanGkeLaunchSpec) PutCreateOptions(value *OceanGkeLaunchSpecCreateOptions) {
+	if err := o.validatePutCreateOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putCreateOptions",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanGkeLaunchSpec) PutLabels(value interface{}) {
 	if err := o.validatePutLabelsParameters(value); err != nil {
 		panic(err)
@@ -1552,6 +1587,14 @@ func (o *jsiiProxy_OceanGkeLaunchSpec) ResetAutoscaleHeadroomsAutomatic() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAutoscaleHeadroomsAutomatic",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanGkeLaunchSpec) ResetCreateOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCreateOptions",
 		nil, // no parameters
 	)
 }

@@ -83,6 +83,10 @@ func (o *jsiiProxy_OceanGkeLaunchSpec) validatePutAutoscaleHeadroomsAutomaticPar
 	return nil
 }
 
+func (o *jsiiProxy_OceanGkeLaunchSpec) validatePutCreateOptionsParameters(value *OceanGkeLaunchSpecCreateOptions) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanGkeLaunchSpec) validatePutLabelsParameters(value interface{}) error {
 	return nil
 }
