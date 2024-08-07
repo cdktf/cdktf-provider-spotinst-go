@@ -5,9 +5,9 @@ package oceancdverificationtemplate
 
 
 type OceancdVerificationTemplateMetricsBaselineBaselineProviderDatadog struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.182.0/docs/resources/oceancd_verification_template#datadog_query OceancdVerificationTemplate#datadog_query}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.184.0/docs/resources/oceancd_verification_template#datadog_query OceancdVerificationTemplate#datadog_query}.
 	DatadogQuery *string `field:"required" json:"datadogQuery" yaml:"datadogQuery"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.182.0/docs/resources/oceancd_verification_template#duration OceancdVerificationTemplate#duration}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.184.0/docs/resources/oceancd_verification_template#duration OceancdVerificationTemplate#duration}.
 	Duration *string `field:"optional" json:"duration" yaml:"duration"`
 }
 

@@ -95,6 +95,10 @@ func (m *jsiiProxy_ManagedInstanceAws) validatePutManagedInstanceActionParameter
 	return nil
 }
 
+func (m *jsiiProxy_ManagedInstanceAws) validatePutMetadataOptionsParameters(value *ManagedInstanceAwsMetadataOptions) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedInstanceAws) validatePutNetworkInterfaceParameters(value interface{}) error {
 	return nil
 }

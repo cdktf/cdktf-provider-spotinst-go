@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.182.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.184.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws}.
 type ManagedInstanceAws interface {
 	cdktf.TerraformResource
 	AutoHealing() interface{}
@@ -104,6 +104,8 @@ type ManagedInstanceAws interface {
 	LoadBalancersInput() interface{}
 	ManagedInstanceAction() ManagedInstanceAwsManagedInstanceActionOutputReference
 	ManagedInstanceActionInput() *ManagedInstanceAwsManagedInstanceAction
+	MetadataOptions() ManagedInstanceAwsMetadataOptionsOutputReference
+	MetadataOptionsInput() *ManagedInstanceAwsMetadataOptions
 	MinimumInstanceLifetime() *float64
 	SetMinimumInstanceLifetime(val *float64)
 	MinimumInstanceLifetimeInput() *float64
@@ -237,6 +239,7 @@ type ManagedInstanceAws interface {
 	PutIntegrationRoute53(value *ManagedInstanceAwsIntegrationRoute53)
 	PutLoadBalancers(value interface{})
 	PutManagedInstanceAction(value *ManagedInstanceAwsManagedInstanceAction)
+	PutMetadataOptions(value *ManagedInstanceAwsMetadataOptions)
 	PutNetworkInterface(value interface{})
 	PutResourceTagSpecification(value interface{})
 	PutRevertToSpot(value *ManagedInstanceAwsRevertToSpot)
@@ -262,6 +265,7 @@ type ManagedInstanceAws interface {
 	ResetLifeCycle()
 	ResetLoadBalancers()
 	ResetManagedInstanceAction()
+	ResetMetadataOptions()
 	ResetMinimumInstanceLifetime()
 	ResetNetworkInterface()
 	ResetOptimizationWindows()
@@ -832,6 +836,26 @@ func (j *jsiiProxy_ManagedInstanceAws) ManagedInstanceActionInput() *ManagedInst
 	return returns
 }
 
+func (j *jsiiProxy_ManagedInstanceAws) MetadataOptions() ManagedInstanceAwsMetadataOptionsOutputReference {
+	var returns ManagedInstanceAwsMetadataOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"metadataOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedInstanceAws) MetadataOptionsInput() *ManagedInstanceAwsMetadataOptions {
+	var returns *ManagedInstanceAwsMetadataOptions
+	_jsii_.Get(
+		j,
+		"metadataOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedInstanceAws) MinimumInstanceLifetime() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1383,7 +1407,7 @@ func (j *jsiiProxy_ManagedInstanceAws) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.182.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.184.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
 func NewManagedInstanceAws(scope constructs.Construct, id *string, config *ManagedInstanceAwsConfig) ManagedInstanceAws {
 	_init_.Initialize()
 
@@ -1401,7 +1425,7 @@ func NewManagedInstanceAws(scope constructs.Construct, id *string, config *Manag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.182.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.184.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
 func NewManagedInstanceAws_Override(m ManagedInstanceAws, scope constructs.Construct, id *string, config *ManagedInstanceAwsConfig) {
 	_init_.Initialize()
 
@@ -2284,6 +2308,17 @@ func (m *jsiiProxy_ManagedInstanceAws) PutManagedInstanceAction(value *ManagedIn
 	)
 }
 
+func (m *jsiiProxy_ManagedInstanceAws) PutMetadataOptions(value *ManagedInstanceAwsMetadataOptions) {
+	if err := m.validatePutMetadataOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putMetadataOptions",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ManagedInstanceAws) PutNetworkInterface(value interface{}) {
 	if err := m.validatePutNetworkInterfaceParameters(value); err != nil {
 		panic(err)
@@ -2495,6 +2530,14 @@ func (m *jsiiProxy_ManagedInstanceAws) ResetManagedInstanceAction() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetManagedInstanceAction",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedInstanceAws) ResetMetadataOptions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMetadataOptions",
 		nil, // no parameters
 	)
 }

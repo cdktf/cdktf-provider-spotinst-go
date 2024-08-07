@@ -81,6 +81,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancersInput", GoGetter: "LoadBalancersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "managedInstanceAction", GoGetter: "ManagedInstanceAction"},
 			_jsii_.MemberProperty{JsiiProperty: "managedInstanceActionInput", GoGetter: "ManagedInstanceActionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "metadataOptions", GoGetter: "MetadataOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "metadataOptionsInput", GoGetter: "MetadataOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minimumInstanceLifetime", GoGetter: "MinimumInstanceLifetime"},
 			_jsii_.MemberProperty{JsiiProperty: "minimumInstanceLifetimeInput", GoGetter: "MinimumInstanceLifetimeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -117,6 +119,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putIntegrationRoute53", GoMethod: "PutIntegrationRoute53"},
 			_jsii_.MemberMethod{JsiiMethod: "putLoadBalancers", GoMethod: "PutLoadBalancers"},
 			_jsii_.MemberMethod{JsiiMethod: "putManagedInstanceAction", GoMethod: "PutManagedInstanceAction"},
+			_jsii_.MemberMethod{JsiiMethod: "putMetadataOptions", GoMethod: "PutMetadataOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkInterface", GoMethod: "PutNetworkInterface"},
 			_jsii_.MemberMethod{JsiiMethod: "putResourceTagSpecification", GoMethod: "PutResourceTagSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "putRevertToSpot", GoMethod: "PutRevertToSpot"},
@@ -145,6 +148,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLifeCycle", GoMethod: "ResetLifeCycle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLoadBalancers", GoMethod: "ResetLoadBalancers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetManagedInstanceAction", GoMethod: "ResetManagedInstanceAction"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetadataOptions", GoMethod: "ResetMetadataOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinimumInstanceLifetime", GoMethod: "ResetMinimumInstanceLifetime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkInterface", GoMethod: "ResetNetworkInterface"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOptimizationWindows", GoMethod: "ResetOptimizationWindows"},
@@ -681,6 +685,50 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedInstanceAwsManagedInstanceActionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.managedInstanceAws.ManagedInstanceAwsMetadataOptions",
+		reflect.TypeOf((*ManagedInstanceAwsMetadataOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.managedInstanceAws.ManagedInstanceAwsMetadataOptionsOutputReference",
+		reflect.TypeOf((*ManagedInstanceAwsMetadataOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "httpPutResponseHopLimit", GoGetter: "HttpPutResponseHopLimit"},
+			_jsii_.MemberProperty{JsiiProperty: "httpPutResponseHopLimitInput", GoGetter: "HttpPutResponseHopLimitInput"},
+			_jsii_.MemberProperty{JsiiProperty: "httpTokens", GoGetter: "HttpTokens"},
+			_jsii_.MemberProperty{JsiiProperty: "httpTokensInput", GoGetter: "HttpTokensInput"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceMetadataTags", GoGetter: "InstanceMetadataTags"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceMetadataTagsInput", GoGetter: "InstanceMetadataTagsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHttpPutResponseHopLimit", GoMethod: "ResetHttpPutResponseHopLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstanceMetadataTags", GoMethod: "ResetInstanceMetadataTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ManagedInstanceAwsMetadataOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

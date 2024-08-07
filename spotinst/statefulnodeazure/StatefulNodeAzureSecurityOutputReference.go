@@ -23,11 +23,17 @@ type StatefulNodeAzureSecurityOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialOsDiskEncryption() interface{}
+	SetConfidentialOsDiskEncryption(val interface{})
+	ConfidentialOsDiskEncryptionInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EncryptionAtHost() interface{}
+	SetEncryptionAtHost(val interface{})
+	EncryptionAtHostInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *StatefulNodeAzureSecurity
@@ -73,6 +79,8 @@ type StatefulNodeAzureSecurityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConfidentialOsDiskEncryption()
+	ResetEncryptionAtHost()
 	ResetSecureBootEnabled()
 	ResetSecurityType()
 	ResetVtpmEnabled()
@@ -111,11 +119,51 @@ func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) ComplexObjectIsFrom
 	return returns
 }
 
+func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) ConfidentialOsDiskEncryption() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"confidentialOsDiskEncryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) ConfidentialOsDiskEncryptionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"confidentialOsDiskEncryptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) EncryptionAtHost() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encryptionAtHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) EncryptionAtHostInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encryptionAtHostInput",
 		&returns,
 	)
 	return returns
@@ -267,6 +315,28 @@ func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference)SetComplexObjectIsFr
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference)SetConfidentialOsDiskEncryption(val interface{}) {
+	if err := j.validateSetConfidentialOsDiskEncryptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"confidentialOsDiskEncryption",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference)SetEncryptionAtHost(val interface{}) {
+	if err := j.validateSetEncryptionAtHostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionAtHost",
 		val,
 	)
 }
@@ -521,6 +591,22 @@ func (s *jsiiProxy_StatefulNodeAzureSecurityOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StatefulNodeAzureSecurityOutputReference) ResetConfidentialOsDiskEncryption() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetConfidentialOsDiskEncryption",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzureSecurityOutputReference) ResetEncryptionAtHost() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEncryptionAtHost",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StatefulNodeAzureSecurityOutputReference) ResetSecureBootEnabled() {
