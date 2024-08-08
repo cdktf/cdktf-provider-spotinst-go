@@ -28,6 +28,9 @@ type OceanAwsLaunchSpecStrategyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DrainingTimeout() *float64
+	SetDrainingTimeout(val *float64)
+	DrainingTimeoutInput() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -67,6 +70,7 @@ type OceanAwsLaunchSpecStrategyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDrainingTimeout()
 	ResetSpotPercentage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) CreationStack() *[
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) DrainingTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"drainingTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) DrainingTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"drainingTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference)SetComplexObjectIsF
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference)SetDrainingTimeout(val *float64) {
+	if err := j.validateSetDrainingTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"drainingTimeout",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) ResetDrainingTimeout() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDrainingTimeout",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) ResetSpotPercentage() {

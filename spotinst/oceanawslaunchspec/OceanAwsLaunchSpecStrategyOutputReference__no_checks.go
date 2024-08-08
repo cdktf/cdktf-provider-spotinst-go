@@ -59,6 +59,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateSetDrainingTimeoutParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
