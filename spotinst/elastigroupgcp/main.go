@@ -93,6 +93,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "ondemandCount", GoGetter: "OndemandCount"},
 			_jsii_.MemberProperty{JsiiProperty: "ondemandCountInput", GoGetter: "OndemandCountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "optimizationWindows", GoGetter: "OptimizationWindows"},
+			_jsii_.MemberProperty{JsiiProperty: "optimizationWindowsInput", GoGetter: "OptimizationWindowsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "preemptiblePercentage", GoGetter: "PreemptiblePercentage"},
 			_jsii_.MemberProperty{JsiiProperty: "preemptiblePercentageInput", GoGetter: "PreemptiblePercentageInput"},
@@ -109,6 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLabels", GoMethod: "PutLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "putMetadata", GoMethod: "PutMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkInterface", GoMethod: "PutNetworkInterface"},
+			_jsii_.MemberMethod{JsiiMethod: "putRevertToPreemptible", GoMethod: "PutRevertToPreemptible"},
 			_jsii_.MemberMethod{JsiiMethod: "putScalingDownPolicy", GoMethod: "PutScalingDownPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putScalingUpPolicy", GoMethod: "PutScalingUpPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putScheduledTask", GoMethod: "PutScheduledTask"},
@@ -138,9 +141,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMinSize", GoMethod: "ResetMinSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkInterface", GoMethod: "ResetNetworkInterface"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOndemandCount", GoMethod: "ResetOndemandCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOptimizationWindows", GoMethod: "ResetOptimizationWindows"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreemptiblePercentage", GoMethod: "ResetPreemptiblePercentage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProvisioningModel", GoMethod: "ResetProvisioningModel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRevertToPreemptible", GoMethod: "ResetRevertToPreemptible"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScalingDownPolicy", GoMethod: "ResetScalingDownPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScalingUpPolicy", GoMethod: "ResetScalingUpPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScheduledTask", GoMethod: "ResetScheduledTask"},
@@ -150,6 +155,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSubnets", GoMethod: "ResetSubnets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUnhealthyDuration", GoMethod: "ResetUnhealthyDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "revertToPreemptible", GoGetter: "RevertToPreemptible"},
+			_jsii_.MemberProperty{JsiiProperty: "revertToPreemptibleInput", GoGetter: "RevertToPreemptibleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "scalingDownPolicy", GoGetter: "ScalingDownPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "scalingDownPolicyInput", GoGetter: "ScalingDownPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "scalingUpPolicy", GoGetter: "ScalingUpPolicy"},
@@ -1159,6 +1166,66 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElastigroupGcpNetworkInterfaceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.elastigroupGcp.ElastigroupGcpRevertToPreemptible",
+		reflect.TypeOf((*ElastigroupGcpRevertToPreemptible)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.elastigroupGcp.ElastigroupGcpRevertToPreemptibleList",
+		reflect.TypeOf((*ElastigroupGcpRevertToPreemptibleList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ElastigroupGcpRevertToPreemptibleList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.elastigroupGcp.ElastigroupGcpRevertToPreemptibleOutputReference",
+		reflect.TypeOf((*ElastigroupGcpRevertToPreemptibleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "performAt", GoGetter: "PerformAt"},
+			_jsii_.MemberProperty{JsiiProperty: "performAtInput", GoGetter: "PerformAtInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ElastigroupGcpRevertToPreemptibleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -111,6 +111,10 @@ func (e *jsiiProxy_ElastigroupGke) validatePutNetworkInterfaceParameters(value i
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupGke) validatePutRevertToPreemptibleParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupGke) validatePutScalingDownPolicyParameters(value interface{}) error {
 	return nil
 }
@@ -204,6 +208,10 @@ func (j *jsiiProxy_ElastigroupGke) validateSetNodeImageParameters(val *string) e
 }
 
 func (j *jsiiProxy_ElastigroupGke) validateSetOndemandCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupGke) validateSetOptimizationWindowsParameters(val *[]*string) error {
 	return nil
 }
 

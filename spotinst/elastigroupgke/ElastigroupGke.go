@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.185.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.186.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke}.
 type ElastigroupGke interface {
 	cdktf.TerraformResource
 	BackendServices() ElastigroupGkeBackendServicesList
@@ -108,6 +108,9 @@ type ElastigroupGke interface {
 	OndemandCount() *float64
 	SetOndemandCount(val *float64)
 	OndemandCountInput() *float64
+	OptimizationWindows() *[]*string
+	SetOptimizationWindows(val *[]*string)
+	OptimizationWindowsInput() *[]*string
 	PreemptiblePercentage() *float64
 	SetPreemptiblePercentage(val *float64)
 	PreemptiblePercentageInput() *float64
@@ -124,6 +127,8 @@ type ElastigroupGke interface {
 	ProvisioningModelInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	RevertToPreemptible() ElastigroupGkeRevertToPreemptibleList
+	RevertToPreemptibleInput() interface{}
 	ScalingDownPolicy() ElastigroupGkeScalingDownPolicyList
 	ScalingDownPolicyInput() interface{}
 	ScalingUpPolicy() ElastigroupGkeScalingUpPolicyList
@@ -198,6 +203,7 @@ type ElastigroupGke interface {
 	PutLabels(value interface{})
 	PutMetadata(value interface{})
 	PutNetworkInterface(value interface{})
+	PutRevertToPreemptible(value interface{})
 	PutScalingDownPolicy(value interface{})
 	PutScalingUpPolicy(value interface{})
 	ResetBackendServices()
@@ -221,11 +227,13 @@ type ElastigroupGke interface {
 	ResetNetworkInterface()
 	ResetNodeImage()
 	ResetOndemandCount()
+	ResetOptimizationWindows()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreemptiblePercentage()
 	ResetProvisioningModel()
+	ResetRevertToPreemptible()
 	ResetScalingDownPolicy()
 	ResetScalingUpPolicy()
 	ResetServiceAccount()
@@ -830,6 +838,26 @@ func (j *jsiiProxy_ElastigroupGke) OndemandCountInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupGke) OptimizationWindows() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optimizationWindows",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGke) OptimizationWindowsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optimizationWindowsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupGke) PreemptiblePercentage() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -895,6 +923,26 @@ func (j *jsiiProxy_ElastigroupGke) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGke) RevertToPreemptible() ElastigroupGkeRevertToPreemptibleList {
+	var returns ElastigroupGkeRevertToPreemptibleList
+	_jsii_.Get(
+		j,
+		"revertToPreemptible",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGke) RevertToPreemptibleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"revertToPreemptibleInput",
 		&returns,
 	)
 	return returns
@@ -1051,7 +1099,7 @@ func (j *jsiiProxy_ElastigroupGke) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.185.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.186.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
 func NewElastigroupGke(scope constructs.Construct, id *string, config *ElastigroupGkeConfig) ElastigroupGke {
 	_init_.Initialize()
 
@@ -1069,7 +1117,7 @@ func NewElastigroupGke(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.185.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.186.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
 func NewElastigroupGke_Override(e ElastigroupGke, scope constructs.Construct, id *string, config *ElastigroupGkeConfig) {
 	_init_.Initialize()
 
@@ -1290,6 +1338,17 @@ func (j *jsiiProxy_ElastigroupGke)SetOndemandCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"ondemandCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupGke)SetOptimizationWindows(val *[]*string) {
+	if err := j.validateSetOptimizationWindowsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optimizationWindows",
 		val,
 	)
 }
@@ -1831,6 +1890,17 @@ func (e *jsiiProxy_ElastigroupGke) PutNetworkInterface(value interface{}) {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupGke) PutRevertToPreemptible(value interface{}) {
+	if err := e.validatePutRevertToPreemptibleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putRevertToPreemptible",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupGke) PutScalingDownPolicy(value interface{}) {
 	if err := e.validatePutScalingDownPolicyParameters(value); err != nil {
 		panic(err)
@@ -2021,6 +2091,14 @@ func (e *jsiiProxy_ElastigroupGke) ResetOndemandCount() {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupGke) ResetOptimizationWindows() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOptimizationWindows",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupGke) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
@@ -2041,6 +2119,14 @@ func (e *jsiiProxy_ElastigroupGke) ResetProvisioningModel() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetProvisioningModel",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupGke) ResetRevertToPreemptible() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRevertToPreemptible",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package oceancdrolloutspec
 
 
 type OceancdRolloutSpecTrafficIstioVirtualServicesTlsRoutes struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.185.0/docs/resources/oceancd_rollout_spec#port OceancdRolloutSpec#port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.186.0/docs/resources/oceancd_rollout_spec#port OceancdRolloutSpec#port}.
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.185.0/docs/resources/oceancd_rollout_spec#sni_hosts OceancdRolloutSpec#sni_hosts}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.186.0/docs/resources/oceancd_rollout_spec#sni_hosts OceancdRolloutSpec#sni_hosts}.
 	SniHosts *[]*string `field:"optional" json:"sniHosts" yaml:"sniHosts"`
 }
 
