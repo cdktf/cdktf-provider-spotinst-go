@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.187.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.188.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
 type ElastigroupAws interface {
 	cdktf.TerraformResource
+	AutoHealing() interface{}
+	SetAutoHealing(val interface{})
+	AutoHealingInput() interface{}
 	AvailabilityZones() *[]*string
 	SetAvailabilityZones(val *[]*string)
 	AvailabilityZonesInput() *[]*string
@@ -219,6 +222,9 @@ type ElastigroupAws interface {
 	ResourceRequirementsInput() interface{}
 	ResourceTagSpecification() ElastigroupAwsResourceTagSpecificationList
 	ResourceTagSpecificationInput() interface{}
+	RestrictSingleAz() interface{}
+	SetRestrictSingleAz(val interface{})
+	RestrictSingleAzInput() interface{}
 	RevertToSpot() ElastigroupAwsRevertToSpotOutputReference
 	RevertToSpotInput() *ElastigroupAwsRevertToSpot
 	ScalingDownPolicy() ElastigroupAwsScalingDownPolicyList
@@ -353,6 +359,7 @@ type ElastigroupAws interface {
 	PutStatefulInstanceAction(value interface{})
 	PutTags(value interface{})
 	PutUpdatePolicy(value *ElastigroupAwsUpdatePolicy)
+	ResetAutoHealing()
 	ResetAvailabilityZones()
 	ResetBlockDevicesMode()
 	ResetCapacityUnit()
@@ -414,6 +421,7 @@ type ElastigroupAws interface {
 	ResetRegion()
 	ResetResourceRequirements()
 	ResetResourceTagSpecification()
+	ResetRestrictSingleAz()
 	ResetRevertToSpot()
 	ResetScalingDownPolicy()
 	ResetScalingStrategy()
@@ -450,6 +458,26 @@ type ElastigroupAws interface {
 // The jsii proxy struct for ElastigroupAws
 type jsiiProxy_ElastigroupAws struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ElastigroupAws) AutoHealing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoHealing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) AutoHealingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoHealingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ElastigroupAws) AvailabilityZones() *[]*string {
@@ -1822,6 +1850,26 @@ func (j *jsiiProxy_ElastigroupAws) ResourceTagSpecificationInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAws) RestrictSingleAz() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"restrictSingleAz",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) RestrictSingleAzInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"restrictSingleAzInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAws) RevertToSpot() ElastigroupAwsRevertToSpotOutputReference {
 	var returns ElastigroupAwsRevertToSpotOutputReference
 	_jsii_.Get(
@@ -2273,7 +2321,7 @@ func (j *jsiiProxy_ElastigroupAws) WaitForCapacityTimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.187.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.188.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws(scope constructs.Construct, id *string, config *ElastigroupAwsConfig) ElastigroupAws {
 	_init_.Initialize()
 
@@ -2291,7 +2339,7 @@ func NewElastigroupAws(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.187.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.188.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws_Override(e ElastigroupAws, scope constructs.Construct, id *string, config *ElastigroupAwsConfig) {
 	_init_.Initialize()
 
@@ -2299,6 +2347,17 @@ func NewElastigroupAws_Override(e ElastigroupAws, scope constructs.Construct, id
 		"@cdktf/provider-spotinst.elastigroupAws.ElastigroupAws",
 		[]interface{}{scope, id, config},
 		e,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAws)SetAutoHealing(val interface{}) {
+	if err := j.validateSetAutoHealingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoHealing",
+		val,
 	)
 }
 
@@ -2806,6 +2865,17 @@ func (j *jsiiProxy_ElastigroupAws)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAws)SetRestrictSingleAz(val interface{}) {
+	if err := j.validateSetRestrictSingleAzParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restrictSingleAz",
 		val,
 	)
 }
@@ -3636,6 +3706,14 @@ func (e *jsiiProxy_ElastigroupAws) PutUpdatePolicy(value *ElastigroupAwsUpdatePo
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAws) ResetAutoHealing() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAutoHealing",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAws) ResetAvailabilityZones() {
 	_jsii_.InvokeVoid(
 		e,
@@ -4104,6 +4182,14 @@ func (e *jsiiProxy_ElastigroupAws) ResetResourceTagSpecification() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetResourceTagSpecification",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAws) ResetRestrictSingleAz() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRestrictSingleAz",
 		nil, // no parameters
 	)
 }

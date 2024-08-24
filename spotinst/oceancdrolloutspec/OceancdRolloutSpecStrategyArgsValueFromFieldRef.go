@@ -5,7 +5,7 @@ package oceancdrolloutspec
 
 
 type OceancdRolloutSpecStrategyArgsValueFromFieldRef struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.187.0/docs/resources/oceancd_rollout_spec#field_path OceancdRolloutSpec#field_path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.188.0/docs/resources/oceancd_rollout_spec#field_path OceancdRolloutSpec#field_path}.
 	FieldPath *string `field:"required" json:"fieldPath" yaml:"fieldPath"`
 }
 

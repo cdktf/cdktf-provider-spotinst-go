@@ -7,7 +7,7 @@ package organizationpolicy
 type OrganizationPolicyPolicyContent struct {
 	// statements block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.187.0/docs/resources/organization_policy#statements OrganizationPolicy#statements}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.188.0/docs/resources/organization_policy#statements OrganizationPolicy#statements}
 	Statements interface{} `field:"required" json:"statements" yaml:"statements"`
 }
 

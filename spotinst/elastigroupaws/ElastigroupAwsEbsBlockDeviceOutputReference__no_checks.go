@@ -47,6 +47,14 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) validateInterpol
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) validatePutDynamicIopsParameters(value *ElastigroupAwsEbsBlockDeviceDynamicIops) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) validatePutDynamicVolumeSizeParameters(value *ElastigroupAwsEbsBlockDeviceDynamicVolumeSize) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

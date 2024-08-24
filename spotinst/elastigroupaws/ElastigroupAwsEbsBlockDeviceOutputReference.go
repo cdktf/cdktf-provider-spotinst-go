@@ -34,6 +34,10 @@ type ElastigroupAwsEbsBlockDeviceOutputReference interface {
 	DeviceName() *string
 	SetDeviceName(val *string)
 	DeviceNameInput() *string
+	DynamicIops() ElastigroupAwsEbsBlockDeviceDynamicIopsOutputReference
+	DynamicIopsInput() *ElastigroupAwsEbsBlockDeviceDynamicIops
+	DynamicVolumeSize() ElastigroupAwsEbsBlockDeviceDynamicVolumeSizeOutputReference
+	DynamicVolumeSizeInput() *ElastigroupAwsEbsBlockDeviceDynamicVolumeSize
 	Encrypted() interface{}
 	SetEncrypted(val interface{})
 	EncryptedInput() interface{}
@@ -91,7 +95,11 @@ type ElastigroupAwsEbsBlockDeviceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDynamicIops(value *ElastigroupAwsEbsBlockDeviceDynamicIops)
+	PutDynamicVolumeSize(value *ElastigroupAwsEbsBlockDeviceDynamicVolumeSize)
 	ResetDeleteOnTermination()
+	ResetDynamicIops()
+	ResetDynamicVolumeSize()
 	ResetEncrypted()
 	ResetIops()
 	ResetKmsKeyId()
@@ -179,6 +187,46 @@ func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) DeviceNameInput(
 	_jsii_.Get(
 		j,
 		"deviceNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) DynamicIops() ElastigroupAwsEbsBlockDeviceDynamicIopsOutputReference {
+	var returns ElastigroupAwsEbsBlockDeviceDynamicIopsOutputReference
+	_jsii_.Get(
+		j,
+		"dynamicIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) DynamicIopsInput() *ElastigroupAwsEbsBlockDeviceDynamicIops {
+	var returns *ElastigroupAwsEbsBlockDeviceDynamicIops
+	_jsii_.Get(
+		j,
+		"dynamicIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) DynamicVolumeSize() ElastigroupAwsEbsBlockDeviceDynamicVolumeSizeOutputReference {
+	var returns ElastigroupAwsEbsBlockDeviceDynamicVolumeSizeOutputReference
+	_jsii_.Get(
+		j,
+		"dynamicVolumeSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) DynamicVolumeSizeInput() *ElastigroupAwsEbsBlockDeviceDynamicVolumeSize {
+	var returns *ElastigroupAwsEbsBlockDeviceDynamicVolumeSize
+	_jsii_.Get(
+		j,
+		"dynamicVolumeSizeInput",
 		&returns,
 	)
 	return returns
@@ -732,10 +780,48 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) InterpolationFor
 	return returns
 }
 
+func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) PutDynamicIops(value *ElastigroupAwsEbsBlockDeviceDynamicIops) {
+	if err := e.validatePutDynamicIopsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putDynamicIops",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) PutDynamicVolumeSize(value *ElastigroupAwsEbsBlockDeviceDynamicVolumeSize) {
+	if err := e.validatePutDynamicVolumeSizeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putDynamicVolumeSize",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) ResetDeleteOnTermination() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDeleteOnTermination",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) ResetDynamicIops() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDynamicIops",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) ResetDynamicVolumeSize() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDynamicVolumeSize",
 		nil, // no parameters
 	)
 }

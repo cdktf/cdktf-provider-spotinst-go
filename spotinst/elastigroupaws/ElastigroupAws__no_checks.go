@@ -223,6 +223,10 @@ func validateElastigroupAws_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAws) validateSetAutoHealingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAws) validateSetAvailabilityZonesParameters(val *[]*string) error {
 	return nil
 }
@@ -396,6 +400,10 @@ func (j *jsiiProxy_ElastigroupAws) validateSetProvisionersParameters(val *[]inte
 }
 
 func (j *jsiiProxy_ElastigroupAws) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAws) validateSetRestrictSingleAzParameters(val interface{}) error {
 	return nil
 }
 
