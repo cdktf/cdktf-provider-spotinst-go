@@ -103,6 +103,10 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetTerrafor
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetVmAdminsParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewStatefulNodeAzureStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

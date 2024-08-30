@@ -2205,12 +2205,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOptimizationWindows", GoMethod: "ResetOptimizationWindows"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreferredLifeCycle", GoMethod: "ResetPreferredLifeCycle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRevertToSpot", GoMethod: "ResetRevertToSpot"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVmAdmins", GoMethod: "ResetVmAdmins"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "revertToSpot", GoGetter: "RevertToSpot"},
 			_jsii_.MemberProperty{JsiiProperty: "revertToSpotInput", GoGetter: "RevertToSpotInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vmAdmins", GoGetter: "VmAdmins"},
+			_jsii_.MemberProperty{JsiiProperty: "vmAdminsInput", GoGetter: "VmAdminsInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_StatefulNodeAzureStrategyOutputReference{}

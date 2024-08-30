@@ -139,10 +139,6 @@ func (j *jsiiProxy_OceanRightSizingRule) validateSetProvisionersParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_OceanRightSizingRule) validateSetRestartPodsParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_OceanRightSizingRule) validateSetRuleNameParameters(val *string) error {
 	return nil
 }

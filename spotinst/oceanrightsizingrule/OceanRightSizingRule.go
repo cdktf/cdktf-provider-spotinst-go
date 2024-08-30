@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.188.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.189.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule}.
 type OceanRightSizingRule interface {
 	cdktf.TerraformResource
 	AttachWorkloads() OceanRightSizingRuleAttachWorkloadsList
@@ -73,9 +73,6 @@ type OceanRightSizingRule interface {
 	RecommendationApplicationMinThresholdInput() interface{}
 	RecommendationApplicationOverheadValues() OceanRightSizingRuleRecommendationApplicationOverheadValuesList
 	RecommendationApplicationOverheadValuesInput() interface{}
-	RestartPods() interface{}
-	SetRestartPods(val interface{})
-	RestartPodsInput() interface{}
 	RuleName() *string
 	SetRuleName(val *string)
 	RuleNameInput() *string
@@ -144,7 +141,6 @@ type OceanRightSizingRule interface {
 	ResetRecommendationApplicationBoundaries()
 	ResetRecommendationApplicationMinThreshold()
 	ResetRecommendationApplicationOverheadValues()
-	ResetRestartPods()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -453,26 +449,6 @@ func (j *jsiiProxy_OceanRightSizingRule) RecommendationApplicationOverheadValues
 	return returns
 }
 
-func (j *jsiiProxy_OceanRightSizingRule) RestartPods() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"restartPods",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OceanRightSizingRule) RestartPodsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"restartPodsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_OceanRightSizingRule) RuleName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -524,7 +500,7 @@ func (j *jsiiProxy_OceanRightSizingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.188.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.189.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
 func NewOceanRightSizingRule(scope constructs.Construct, id *string, config *OceanRightSizingRuleConfig) OceanRightSizingRule {
 	_init_.Initialize()
 
@@ -542,7 +518,7 @@ func NewOceanRightSizingRule(scope constructs.Construct, id *string, config *Oce
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.188.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.189.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
 func NewOceanRightSizingRule_Override(o OceanRightSizingRule, scope constructs.Construct, id *string, config *OceanRightSizingRuleConfig) {
 	_init_.Initialize()
 
@@ -639,17 +615,6 @@ func (j *jsiiProxy_OceanRightSizingRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_OceanRightSizingRule)SetRestartPods(val interface{}) {
-	if err := j.validateSetRestartPodsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"restartPods",
 		val,
 	)
 }
@@ -1144,14 +1109,6 @@ func (o *jsiiProxy_OceanRightSizingRule) ResetRecommendationApplicationOverheadV
 	_jsii_.InvokeVoid(
 		o,
 		"resetRecommendationApplicationOverheadValues",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OceanRightSizingRule) ResetRestartPods() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetRestartPods",
 		nil, // no parameters
 	)
 }

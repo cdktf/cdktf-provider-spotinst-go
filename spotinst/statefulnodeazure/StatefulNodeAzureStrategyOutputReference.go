@@ -62,6 +62,9 @@ type StatefulNodeAzureStrategyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VmAdmins() *[]*string
+	SetVmAdmins(val *[]*string)
+	VmAdminsInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -95,6 +98,7 @@ type StatefulNodeAzureStrategyOutputReference interface {
 	ResetOptimizationWindows()
 	ResetPreferredLifeCycle()
 	ResetRevertToSpot()
+	ResetVmAdmins()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -340,6 +344,26 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) TerraformResource()
 	return returns
 }
 
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) VmAdmins() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"vmAdmins",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) VmAdminsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"vmAdminsInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewStatefulNodeAzureStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StatefulNodeAzureStrategyOutputReference {
 	_init_.Initialize()
@@ -485,6 +509,17 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetTerraformResource
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference)SetVmAdmins(val *[]*string) {
+	if err := j.validateSetVmAdminsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vmAdmins",
 		val,
 	)
 }
@@ -749,6 +784,14 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) ResetRevertToSpot()
 	_jsii_.InvokeVoid(
 		s,
 		"resetRevertToSpot",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzureStrategyOutputReference) ResetVmAdmins() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVmAdmins",
 		nil, // no parameters
 	)
 }

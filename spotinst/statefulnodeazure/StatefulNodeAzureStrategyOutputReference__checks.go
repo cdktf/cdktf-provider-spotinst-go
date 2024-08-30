@@ -292,6 +292,14 @@ func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetTerrafor
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzureStrategyOutputReference) validateSetVmAdminsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewStatefulNodeAzureStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
