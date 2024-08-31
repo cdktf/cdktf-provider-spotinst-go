@@ -32,6 +32,8 @@ type ElastigroupAzureV3ImageOutputReference interface {
 	CustomInput() interface{}
 	// Experimental.
 	Fqn() *string
+	GalleryImage() ElastigroupAzureV3ImageGalleryImageList
+	GalleryImageInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Marketplace() ElastigroupAzureV3ImageMarketplaceList
@@ -69,8 +71,10 @@ type ElastigroupAzureV3ImageOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustom(value interface{})
+	PutGalleryImage(value interface{})
 	PutMarketplace(value interface{})
 	ResetCustom()
+	ResetGalleryImage()
 	ResetMarketplace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -142,6 +146,26 @@ func (j *jsiiProxy_ElastigroupAzureV3ImageOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3ImageOutputReference) GalleryImage() ElastigroupAzureV3ImageGalleryImageList {
+	var returns ElastigroupAzureV3ImageGalleryImageList
+	_jsii_.Get(
+		j,
+		"galleryImage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3ImageOutputReference) GalleryImageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"galleryImageInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +501,17 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) PutCustom(value inter
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) PutGalleryImage(value interface{}) {
+	if err := e.validatePutGalleryImageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putGalleryImage",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) PutMarketplace(value interface{}) {
 	if err := e.validatePutMarketplaceParameters(value); err != nil {
 		panic(err)
@@ -492,6 +527,14 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) ResetCustom() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetCustom",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) ResetGalleryImage() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetGalleryImage",
 		nil, // no parameters
 	)
 }

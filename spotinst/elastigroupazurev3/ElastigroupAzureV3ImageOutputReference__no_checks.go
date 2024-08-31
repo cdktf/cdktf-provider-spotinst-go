@@ -51,6 +51,10 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) validatePutCustomPara
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) validatePutGalleryImageParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) validatePutMarketplaceParameters(value interface{}) error {
 	return nil
 }
