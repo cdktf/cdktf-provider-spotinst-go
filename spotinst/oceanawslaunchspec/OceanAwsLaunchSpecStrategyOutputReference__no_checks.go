@@ -79,6 +79,14 @@ func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateSetTerrafo
 	return nil
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateSetUtilizeCommitmentsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateSetUtilizeReservedInstancesParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewOceanAwsLaunchSpecStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

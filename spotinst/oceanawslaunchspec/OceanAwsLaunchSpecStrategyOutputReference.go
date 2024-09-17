@@ -46,6 +46,12 @@ type OceanAwsLaunchSpecStrategyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UtilizeCommitments() interface{}
+	SetUtilizeCommitments(val interface{})
+	UtilizeCommitmentsInput() interface{}
+	UtilizeReservedInstances() interface{}
+	SetUtilizeReservedInstances(val interface{})
+	UtilizeReservedInstancesInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +78,8 @@ type OceanAwsLaunchSpecStrategyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDrainingTimeout()
 	ResetSpotPercentage()
+	ResetUtilizeCommitments()
+	ResetUtilizeReservedInstances()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +205,46 @@ func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) TerraformResource(
 	return returns
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) UtilizeCommitments() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"utilizeCommitments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) UtilizeCommitmentsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"utilizeCommitmentsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) UtilizeReservedInstances() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"utilizeReservedInstances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) UtilizeReservedInstancesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"utilizeReservedInstancesInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewOceanAwsLaunchSpecStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OceanAwsLaunchSpecStrategyOutputReference {
 	_init_.Initialize()
@@ -298,6 +346,28 @@ func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference)SetTerraformResourc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference)SetUtilizeCommitments(val interface{}) {
+	if err := j.validateSetUtilizeCommitmentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"utilizeCommitments",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference)SetUtilizeReservedInstances(val interface{}) {
+	if err := j.validateSetUtilizeReservedInstancesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"utilizeReservedInstances",
 		val,
 	)
 }
@@ -500,6 +570,22 @@ func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) ResetSpotPercentag
 	_jsii_.InvokeVoid(
 		o,
 		"resetSpotPercentage",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) ResetUtilizeCommitments() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUtilizeCommitments",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) ResetUtilizeReservedInstances() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUtilizeReservedInstances",
 		nil, // no parameters
 	)
 }

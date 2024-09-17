@@ -1342,12 +1342,18 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDrainingTimeout", GoMethod: "ResetDrainingTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSpotPercentage", GoMethod: "ResetSpotPercentage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUtilizeCommitments", GoMethod: "ResetUtilizeCommitments"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUtilizeReservedInstances", GoMethod: "ResetUtilizeReservedInstances"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "spotPercentage", GoGetter: "SpotPercentage"},
 			_jsii_.MemberProperty{JsiiProperty: "spotPercentageInput", GoGetter: "SpotPercentageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "utilizeCommitments", GoGetter: "UtilizeCommitments"},
+			_jsii_.MemberProperty{JsiiProperty: "utilizeCommitmentsInput", GoGetter: "UtilizeCommitmentsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "utilizeReservedInstances", GoGetter: "UtilizeReservedInstances"},
+			_jsii_.MemberProperty{JsiiProperty: "utilizeReservedInstancesInput", GoGetter: "UtilizeReservedInstancesInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference{}
