@@ -5,11 +5,11 @@ package oceancdrolloutspec
 
 
 type OceancdRolloutSpecStrategy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.191.0/docs/resources/oceancd_rollout_spec#strategy_name OceancdRolloutSpec#strategy_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.192.0/docs/resources/oceancd_rollout_spec#strategy_name OceancdRolloutSpec#strategy_name}.
 	StrategyName *string `field:"required" json:"strategyName" yaml:"strategyName"`
 	// args block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.191.0/docs/resources/oceancd_rollout_spec#args OceancdRolloutSpec#args}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.192.0/docs/resources/oceancd_rollout_spec#args OceancdRolloutSpec#args}
 	Args interface{} `field:"optional" json:"args" yaml:"args"`
 }
 
