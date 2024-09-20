@@ -41,6 +41,9 @@ type OceanGkeImportStrategyOutputReference interface {
 	ProvisioningModel() *string
 	SetProvisioningModel(val *string)
 	ProvisioningModelInput() *string
+	ShouldUtilizeCommitments() interface{}
+	SetShouldUtilizeCommitments(val interface{})
+	ShouldUtilizeCommitmentsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type OceanGkeImportStrategyOutputReference interface {
 	ResetDrainingTimeout()
 	ResetPreemptiblePercentage()
 	ResetProvisioningModel()
+	ResetShouldUtilizeCommitments()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -201,6 +205,26 @@ func (j *jsiiProxy_OceanGkeImportStrategyOutputReference) ProvisioningModelInput
 	return returns
 }
 
+func (j *jsiiProxy_OceanGkeImportStrategyOutputReference) ShouldUtilizeCommitments() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldUtilizeCommitments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeImportStrategyOutputReference) ShouldUtilizeCommitmentsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldUtilizeCommitmentsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanGkeImportStrategyOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -311,6 +335,17 @@ func (j *jsiiProxy_OceanGkeImportStrategyOutputReference)SetProvisioningModel(va
 	_jsii_.Set(
 		j,
 		"provisioningModel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanGkeImportStrategyOutputReference)SetShouldUtilizeCommitments(val interface{}) {
+	if err := j.validateSetShouldUtilizeCommitmentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shouldUtilizeCommitments",
 		val,
 	)
 }
@@ -543,6 +578,14 @@ func (o *jsiiProxy_OceanGkeImportStrategyOutputReference) ResetProvisioningModel
 	_jsii_.InvokeVoid(
 		o,
 		"resetProvisioningModel",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanGkeImportStrategyOutputReference) ResetShouldUtilizeCommitments() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetShouldUtilizeCommitments",
 		nil, // no parameters
 	)
 }

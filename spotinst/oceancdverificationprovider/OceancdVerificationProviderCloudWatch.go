@@ -5,7 +5,7 @@ package oceancdverificationprovider
 
 
 type OceancdVerificationProviderCloudWatch struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.192.0/docs/resources/oceancd_verification_provider#iam_arn OceancdVerificationProvider#iam_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.193.0/docs/resources/oceancd_verification_provider#iam_arn OceancdVerificationProvider#iam_arn}.
 	IamArn *string `field:"required" json:"iamArn" yaml:"iamArn"`
 }
 
