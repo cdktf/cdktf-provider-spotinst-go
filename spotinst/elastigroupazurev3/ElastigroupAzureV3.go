@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.193.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.194.1/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3}.
 type ElastigroupAzureV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -99,6 +99,10 @@ type ElastigroupAzureV3 interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	ScalingDownPolicy() ElastigroupAzureV3ScalingDownPolicyList
+	ScalingDownPolicyInput() interface{}
+	ScalingUpPolicy() ElastigroupAzureV3ScalingUpPolicyList
+	ScalingUpPolicyInput() interface{}
 	SpotPercentage() *float64
 	SetSpotPercentage(val *float64)
 	SpotPercentageInput() *float64
@@ -159,6 +163,8 @@ type ElastigroupAzureV3 interface {
 	PutLogin(value *ElastigroupAzureV3Login)
 	PutManagedServiceIdentity(value interface{})
 	PutNetwork(value *ElastigroupAzureV3Network)
+	PutScalingDownPolicy(value interface{})
+	PutScalingUpPolicy(value interface{})
 	PutTags(value interface{})
 	PutVmSizes(value *ElastigroupAzureV3VmSizes)
 	ResetCustomData()
@@ -174,6 +180,8 @@ type ElastigroupAzureV3 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScalingDownPolicy()
+	ResetScalingUpPolicy()
 	ResetSpotPercentage()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
@@ -644,6 +652,46 @@ func (j *jsiiProxy_ElastigroupAzureV3) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) ScalingDownPolicy() ElastigroupAzureV3ScalingDownPolicyList {
+	var returns ElastigroupAzureV3ScalingDownPolicyList
+	_jsii_.Get(
+		j,
+		"scalingDownPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) ScalingDownPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scalingDownPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) ScalingUpPolicy() ElastigroupAzureV3ScalingUpPolicyList {
+	var returns ElastigroupAzureV3ScalingUpPolicyList
+	_jsii_.Get(
+		j,
+		"scalingUpPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) ScalingUpPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"scalingUpPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) SpotPercentage() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -735,7 +783,7 @@ func (j *jsiiProxy_ElastigroupAzureV3) VmSizesInput() *ElastigroupAzureV3VmSizes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.193.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.194.1/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
 func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) ElastigroupAzureV3 {
 	_init_.Initialize()
 
@@ -753,7 +801,7 @@ func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *Elast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.193.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.194.1/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
 func NewElastigroupAzureV3_Override(e ElastigroupAzureV3, scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) {
 	_init_.Initialize()
 
@@ -1372,6 +1420,28 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutNetwork(value *ElastigroupAzureV3Netwo
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) PutScalingDownPolicy(value interface{}) {
+	if err := e.validatePutScalingDownPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putScalingDownPolicy",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) PutScalingUpPolicy(value interface{}) {
+	if err := e.validatePutScalingUpPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putScalingUpPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) PutTags(value interface{}) {
 	if err := e.validatePutTagsParameters(value); err != nil {
 		panic(err)
@@ -1478,6 +1548,22 @@ func (e *jsiiProxy_ElastigroupAzureV3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetScalingDownPolicy() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetScalingDownPolicy",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetScalingUpPolicy() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetScalingUpPolicy",
 		nil, // no parameters
 	)
 }

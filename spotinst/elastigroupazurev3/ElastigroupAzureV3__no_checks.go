@@ -91,6 +91,14 @@ func (e *jsiiProxy_ElastigroupAzureV3) validatePutNetworkParameters(value *Elast
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutScalingDownPolicyParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutScalingUpPolicyParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) validatePutTagsParameters(value interface{}) error {
 	return nil
 }
