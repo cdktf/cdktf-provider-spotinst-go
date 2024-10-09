@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.194.1/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3}.
 type ElastigroupAzureV3 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,6 +40,8 @@ type ElastigroupAzureV3 interface {
 	DrainingTimeout() *float64
 	SetDrainingTimeout(val *float64)
 	DrainingTimeoutInput() *float64
+	Extensions() ElastigroupAzureV3ExtensionsList
+	ExtensionsInput() interface{}
 	FallbackToOnDemand() interface{}
 	SetFallbackToOnDemand(val interface{})
 	FallbackToOnDemandInput() interface{}
@@ -159,6 +161,7 @@ type ElastigroupAzureV3 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutExtensions(value interface{})
 	PutImage(value interface{})
 	PutLogin(value *ElastigroupAzureV3Login)
 	PutManagedServiceIdentity(value interface{})
@@ -170,6 +173,7 @@ type ElastigroupAzureV3 interface {
 	ResetCustomData()
 	ResetDesiredCapacity()
 	ResetDrainingTimeout()
+	ResetExtensions()
 	ResetId()
 	ResetImage()
 	ResetLogin()
@@ -307,6 +311,26 @@ func (j *jsiiProxy_ElastigroupAzureV3) DrainingTimeoutInput() *float64 {
 	_jsii_.Get(
 		j,
 		"drainingTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) Extensions() ElastigroupAzureV3ExtensionsList {
+	var returns ElastigroupAzureV3ExtensionsList
+	_jsii_.Get(
+		j,
+		"extensions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) ExtensionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extensionsInput",
 		&returns,
 	)
 	return returns
@@ -783,7 +807,7 @@ func (j *jsiiProxy_ElastigroupAzureV3) VmSizesInput() *ElastigroupAzureV3VmSizes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.194.1/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
 func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) ElastigroupAzureV3 {
 	_init_.Initialize()
 
@@ -801,7 +825,7 @@ func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *Elast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.194.1/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
 func NewElastigroupAzureV3_Override(e ElastigroupAzureV3, scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) {
 	_init_.Initialize()
 
@@ -1376,6 +1400,17 @@ func (e *jsiiProxy_ElastigroupAzureV3) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) PutExtensions(value interface{}) {
+	if err := e.validatePutExtensionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putExtensions",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) PutImage(value interface{}) {
 	if err := e.validatePutImageParameters(value); err != nil {
 		panic(err)
@@ -1484,6 +1519,14 @@ func (e *jsiiProxy_ElastigroupAzureV3) ResetDrainingTimeout() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDrainingTimeout",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetExtensions() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetExtensions",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,10 @@ func (e *jsiiProxy_ElastigroupAzureV3) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutExtensionsParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) validatePutImageParameters(value interface{}) error {
 	return nil
 }

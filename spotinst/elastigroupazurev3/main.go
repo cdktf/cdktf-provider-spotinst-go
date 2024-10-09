@@ -27,6 +27,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "desiredCapacityInput", GoGetter: "DesiredCapacityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "drainingTimeout", GoGetter: "DrainingTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "drainingTimeoutInput", GoGetter: "DrainingTimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "extensions", GoGetter: "Extensions"},
+			_jsii_.MemberProperty{JsiiProperty: "extensionsInput", GoGetter: "ExtensionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fallbackToOnDemand", GoGetter: "FallbackToOnDemand"},
 			_jsii_.MemberProperty{JsiiProperty: "fallbackToOnDemandInput", GoGetter: "FallbackToOnDemandInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
@@ -72,6 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putExtensions", GoMethod: "PutExtensions"},
 			_jsii_.MemberMethod{JsiiMethod: "putImage", GoMethod: "PutImage"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogin", GoMethod: "PutLogin"},
 			_jsii_.MemberMethod{JsiiMethod: "putManagedServiceIdentity", GoMethod: "PutManagedServiceIdentity"},
@@ -86,6 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomData", GoMethod: "ResetCustomData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDesiredCapacity", GoMethod: "ResetDesiredCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDrainingTimeout", GoMethod: "ResetDrainingTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExtensions", GoMethod: "ResetExtensions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImage", GoMethod: "ResetImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogin", GoMethod: "ResetLogin"},
@@ -129,6 +133,127 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-spotinst.elastigroupAzureV3.ElastigroupAzureV3Config",
 		reflect.TypeOf((*ElastigroupAzureV3Config)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.elastigroupAzureV3.ElastigroupAzureV3Extensions",
+		reflect.TypeOf((*ElastigroupAzureV3Extensions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.elastigroupAzureV3.ElastigroupAzureV3ExtensionsList",
+		reflect.TypeOf((*ElastigroupAzureV3ExtensionsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ElastigroupAzureV3ExtensionsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.elastigroupAzureV3.ElastigroupAzureV3ExtensionsOutputReference",
+		reflect.TypeOf((*ElastigroupAzureV3ExtensionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "apiVersionInput", GoGetter: "ApiVersionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enableAutomaticUpgrade", GoGetter: "EnableAutomaticUpgrade"},
+			_jsii_.MemberProperty{JsiiProperty: "enableAutomaticUpgradeInput", GoGetter: "EnableAutomaticUpgradeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "minorVersionAutoUpgrade", GoGetter: "MinorVersionAutoUpgrade"},
+			_jsii_.MemberProperty{JsiiProperty: "minorVersionAutoUpgradeInput", GoGetter: "MinorVersionAutoUpgradeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "protectedSettings", GoGetter: "ProtectedSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "protectedSettingsFromKeyVault", GoGetter: "ProtectedSettingsFromKeyVault"},
+			_jsii_.MemberProperty{JsiiProperty: "protectedSettingsFromKeyVaultInput", GoGetter: "ProtectedSettingsFromKeyVaultInput"},
+			_jsii_.MemberProperty{JsiiProperty: "protectedSettingsInput", GoGetter: "ProtectedSettingsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "publicSettings", GoGetter: "PublicSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "publicSettingsInput", GoGetter: "PublicSettingsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "publisher", GoGetter: "Publisher"},
+			_jsii_.MemberProperty{JsiiProperty: "publisherInput", GoGetter: "PublisherInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putProtectedSettingsFromKeyVault", GoMethod: "PutProtectedSettingsFromKeyVault"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableAutomaticUpgrade", GoMethod: "ResetEnableAutomaticUpgrade"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtectedSettings", GoMethod: "ResetProtectedSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtectedSettingsFromKeyVault", GoMethod: "ResetProtectedSettingsFromKeyVault"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPublicSettings", GoMethod: "ResetPublicSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ElastigroupAzureV3ExtensionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.elastigroupAzureV3.ElastigroupAzureV3ExtensionsProtectedSettingsFromKeyVault",
+		reflect.TypeOf((*ElastigroupAzureV3ExtensionsProtectedSettingsFromKeyVault)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.elastigroupAzureV3.ElastigroupAzureV3ExtensionsProtectedSettingsFromKeyVaultOutputReference",
+		reflect.TypeOf((*ElastigroupAzureV3ExtensionsProtectedSettingsFromKeyVaultOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "secretUrl", GoGetter: "SecretUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "secretUrlInput", GoGetter: "SecretUrlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceVault", GoGetter: "SourceVault"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceVaultInput", GoGetter: "SourceVaultInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ElastigroupAzureV3ExtensionsProtectedSettingsFromKeyVaultOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-spotinst.elastigroupAzureV3.ElastigroupAzureV3Image",
