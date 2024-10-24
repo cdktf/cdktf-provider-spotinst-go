@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.1/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule}.
 type OceanRightSizingRule interface {
 	cdktf.TerraformResource
 	AttachWorkloads() OceanRightSizingRuleAttachWorkloadsList
@@ -500,7 +500,7 @@ func (j *jsiiProxy_OceanRightSizingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.1/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
 func NewOceanRightSizingRule(scope constructs.Construct, id *string, config *OceanRightSizingRuleConfig) OceanRightSizingRule {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewOceanRightSizingRule(scope constructs.Construct, id *string, config *Oce
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.1/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
 func NewOceanRightSizingRule_Override(o OceanRightSizingRule, scope constructs.Construct, id *string, config *OceanRightSizingRuleConfig) {
 	_init_.Initialize()
 

@@ -35,6 +35,9 @@ type OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *OceanAwsLaunchSpecUpdatePolicyRollConfig
 	SetInternalValue(val *OceanAwsLaunchSpecUpdatePolicyRollConfig)
+	RespectPdb() interface{}
+	SetRespectPdb(val interface{})
+	RespectPdbInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRespectPdb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference) RespectPdb() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"respectPdb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference) RespectPdbInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"respectPdbInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference)SetIn
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference)SetRespectPdb(val interface{}) {
+	if err := j.validateSetRespectPdbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"respectPdb",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference) ResetRespectPdb() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRespectPdb",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

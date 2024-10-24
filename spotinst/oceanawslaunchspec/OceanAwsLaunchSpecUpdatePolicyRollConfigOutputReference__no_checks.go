@@ -67,6 +67,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference) validateSetRespectPdbParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsLaunchSpecUpdatePolicyRollConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
