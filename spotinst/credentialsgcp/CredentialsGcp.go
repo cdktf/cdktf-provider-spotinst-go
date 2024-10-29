@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.1/docs/resources/credentials_gcp spotinst_credentials_gcp}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.196.0/docs/resources/credentials_gcp spotinst_credentials_gcp}.
 type CredentialsGcp interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -563,7 +563,7 @@ func (j *jsiiProxy_CredentialsGcp) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.1/docs/resources/credentials_gcp spotinst_credentials_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.196.0/docs/resources/credentials_gcp spotinst_credentials_gcp} Resource.
 func NewCredentialsGcp(scope constructs.Construct, id *string, config *CredentialsGcpConfig) CredentialsGcp {
 	_init_.Initialize()
 
@@ -581,7 +581,7 @@ func NewCredentialsGcp(scope constructs.Construct, id *string, config *Credentia
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.1/docs/resources/credentials_gcp spotinst_credentials_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.196.0/docs/resources/credentials_gcp spotinst_credentials_gcp} Resource.
 func NewCredentialsGcp_Override(c CredentialsGcp, scope constructs.Construct, id *string, config *CredentialsGcpConfig) {
 	_init_.Initialize()
 

@@ -55,6 +55,10 @@ func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) va
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validatePutSecurityGroupParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -71,11 +75,23 @@ func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validateSetEnableIpForwardingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validateSetIsPrimaryParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validateSetPrivateIpAddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validateSetPublicIpSkuParameters(val *string) error {
 	return nil
 }
 

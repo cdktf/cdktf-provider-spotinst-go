@@ -207,6 +207,79 @@ func (e *jsiiProxy_ElastigroupAzureV3) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutBootDiagnosticsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ElastigroupAzureV3BootDiagnostics:
+		value := value.(*[]*ElastigroupAzureV3BootDiagnostics)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ElastigroupAzureV3BootDiagnostics:
+		value_ := value.([]*ElastigroupAzureV3BootDiagnostics)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ElastigroupAzureV3BootDiagnostics; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutCapacityReservationParameters(value *ElastigroupAzureV3CapacityReservation) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutDataDiskParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ElastigroupAzureV3DataDisk:
+		value := value.(*[]*ElastigroupAzureV3DataDisk)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ElastigroupAzureV3DataDisk:
+		value_ := value.([]*ElastigroupAzureV3DataDisk)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ElastigroupAzureV3DataDisk; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) validatePutExtensionsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -238,6 +311,17 @@ func (e *jsiiProxy_ElastigroupAzureV3) validatePutExtensionsParameters(value int
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutHealthParameters(value *ElastigroupAzureV3Health) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) validatePutImageParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -263,6 +347,37 @@ func (e *jsiiProxy_ElastigroupAzureV3) validatePutImageParameters(value interfac
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ElastigroupAzureV3Image; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutLoadBalancerParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ElastigroupAzureV3LoadBalancer:
+		value := value.(*[]*ElastigroupAzureV3LoadBalancer)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ElastigroupAzureV3LoadBalancer:
+		value_ := value.([]*ElastigroupAzureV3LoadBalancer)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ElastigroupAzureV3LoadBalancer; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -312,6 +427,59 @@ func (e *jsiiProxy_ElastigroupAzureV3) validatePutManagedServiceIdentityParamete
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) validatePutNetworkParameters(value *ElastigroupAzureV3Network) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutOsDiskParameters(value *ElastigroupAzureV3OsDisk) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutProximityPlacementGroupsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ElastigroupAzureV3ProximityPlacementGroups:
+		value := value.(*[]*ElastigroupAzureV3ProximityPlacementGroups)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ElastigroupAzureV3ProximityPlacementGroups:
+		value_ := value.([]*ElastigroupAzureV3ProximityPlacementGroups)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ElastigroupAzureV3ProximityPlacementGroups; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutRevertToSpotParameters(value *ElastigroupAzureV3RevertToSpot) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -378,6 +546,110 @@ func (e *jsiiProxy_ElastigroupAzureV3) validatePutScalingUpPolicyParameters(valu
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ElastigroupAzureV3ScalingUpPolicy; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutSchedulingTaskParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ElastigroupAzureV3SchedulingTask:
+		value := value.(*[]*ElastigroupAzureV3SchedulingTask)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ElastigroupAzureV3SchedulingTask:
+		value_ := value.([]*ElastigroupAzureV3SchedulingTask)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ElastigroupAzureV3SchedulingTask; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutSecretParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ElastigroupAzureV3Secret:
+		value := value.(*[]*ElastigroupAzureV3Secret)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ElastigroupAzureV3Secret:
+		value_ := value.([]*ElastigroupAzureV3Secret)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ElastigroupAzureV3Secret; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutSecurityParameters(value *ElastigroupAzureV3Security) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutSignalParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ElastigroupAzureV3Signal:
+		value := value.(*[]*ElastigroupAzureV3Signal)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ElastigroupAzureV3Signal:
+		value_ := value.([]*ElastigroupAzureV3Signal)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ElastigroupAzureV3Signal; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -461,6 +733,14 @@ func validateElastigroupAzureV3_IsTerraformElementParameters(x interface{}) erro
 func validateElastigroupAzureV3_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetAvailabilityVsCostParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -564,6 +844,14 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetCustomDataParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetDesiredCapacityParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -648,7 +936,23 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetOnDemandCountParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetOptimizationWindowsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetOsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetPreferredZonesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -718,7 +1022,39 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetResourceGroupNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetShutdownScriptParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetSpotPercentageParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetUserDataParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetVmNamePrefixParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetZonesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

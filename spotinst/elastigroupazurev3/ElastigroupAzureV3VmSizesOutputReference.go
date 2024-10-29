@@ -35,6 +35,9 @@ type ElastigroupAzureV3VmSizesOutputReference interface {
 	OdSizes() *[]*string
 	SetOdSizes(val *[]*string)
 	OdSizesInput() *[]*string
+	PreferredSpotSizes() *[]*string
+	SetPreferredSpotSizes(val *[]*string)
+	PreferredSpotSizesInput() *[]*string
 	SpotSizes() *[]*string
 	SetSpotSizes(val *[]*string)
 	SpotSizesInput() *[]*string
@@ -70,6 +73,7 @@ type ElastigroupAzureV3VmSizesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPreferredSpotSizes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,6 +154,26 @@ func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) OdSizesInput() *[]*
 	_jsii_.Get(
 		j,
 		"odSizesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) PreferredSpotSizes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredSpotSizes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) PreferredSpotSizesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredSpotSizesInput",
 		&returns,
 	)
 	return returns
@@ -263,6 +287,17 @@ func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference)SetOdSizes(val *[]*s
 	_jsii_.Set(
 		j,
 		"odSizes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference)SetPreferredSpotSizes(val *[]*string) {
+	if err := j.validateSetPreferredSpotSizesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredSpotSizes",
 		val,
 	)
 }
@@ -484,6 +519,14 @@ func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) ResetPreferredSpotSizes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetPreferredSpotSizes",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -155,6 +155,37 @@ func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) va
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validatePutSecurityGroupParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ElastigroupAzureV3NetworkNetworkInterfacesSecurityGroup:
+		value := value.(*[]*ElastigroupAzureV3NetworkNetworkInterfacesSecurityGroup)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ElastigroupAzureV3NetworkNetworkInterfacesSecurityGroup:
+		value_ := value.([]*ElastigroupAzureV3NetworkNetworkInterfacesSecurityGroup)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ElastigroupAzureV3NetworkNetworkInterfacesSecurityGroup; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -248,6 +279,26 @@ func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validateSetEnableIpForwardingParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -287,6 +338,22 @@ func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) va
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validateSetPrivateIpAddressesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) validateSetPublicIpSkuParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

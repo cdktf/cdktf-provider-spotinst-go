@@ -75,11 +75,31 @@ func (e *jsiiProxy_ElastigroupAzureV3) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutBootDiagnosticsParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutCapacityReservationParameters(value *ElastigroupAzureV3CapacityReservation) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutDataDiskParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) validatePutExtensionsParameters(value interface{}) error {
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutHealthParameters(value *ElastigroupAzureV3Health) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) validatePutImageParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutLoadBalancerParameters(value interface{}) error {
 	return nil
 }
 
@@ -95,11 +115,39 @@ func (e *jsiiProxy_ElastigroupAzureV3) validatePutNetworkParameters(value *Elast
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutOsDiskParameters(value *ElastigroupAzureV3OsDisk) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutProximityPlacementGroupsParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutRevertToSpotParameters(value *ElastigroupAzureV3RevertToSpot) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) validatePutScalingDownPolicyParameters(value interface{}) error {
 	return nil
 }
 
 func (e *jsiiProxy_ElastigroupAzureV3) validatePutScalingUpPolicyParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutSchedulingTaskParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutSecretParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutSecurityParameters(value *ElastigroupAzureV3Security) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) validatePutSignalParameters(value interface{}) error {
 	return nil
 }
 
@@ -127,6 +175,10 @@ func validateElastigroupAzureV3_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetAvailabilityVsCostParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -136,6 +188,10 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetCountParameters(val interface{
 }
 
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetCustomDataParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
@@ -175,7 +231,15 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetOnDemandCountParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetOptimizationWindowsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetOsParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetPreferredZonesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -191,7 +255,23 @@ func (j *jsiiProxy_ElastigroupAzureV3) validateSetResourceGroupNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetShutdownScriptParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) validateSetSpotPercentageParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetUserDataParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetVmNamePrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) validateSetZonesParameters(val *[]*string) error {
 	return nil
 }
 

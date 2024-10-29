@@ -35,6 +35,9 @@ type ElastigroupAzureV3NetworkNetworkInterfacesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableIpForwarding() interface{}
+	SetEnableIpForwarding(val interface{})
+	EnableIpForwardingInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -42,6 +45,14 @@ type ElastigroupAzureV3NetworkNetworkInterfacesOutputReference interface {
 	IsPrimary() interface{}
 	SetIsPrimary(val interface{})
 	IsPrimaryInput() interface{}
+	PrivateIpAddresses() *[]*string
+	SetPrivateIpAddresses(val *[]*string)
+	PrivateIpAddressesInput() *[]*string
+	PublicIpSku() *string
+	SetPublicIpSku(val *string)
+	PublicIpSkuInput() *string
+	SecurityGroup() ElastigroupAzureV3NetworkNetworkInterfacesSecurityGroupList
+	SecurityGroupInput() interface{}
 	SubnetName() *string
 	SetSubnetName(val *string)
 	SubnetNameInput() *string
@@ -79,8 +90,13 @@ type ElastigroupAzureV3NetworkNetworkInterfacesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdditionalIpConfigs(value interface{})
 	PutApplicationSecurityGroup(value interface{})
+	PutSecurityGroup(value interface{})
 	ResetAdditionalIpConfigs()
 	ResetApplicationSecurityGroup()
+	ResetEnableIpForwarding()
+	ResetPrivateIpAddresses()
+	ResetPublicIpSku()
+	ResetSecurityGroup()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -186,6 +202,26 @@ func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) Cr
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) EnableIpForwarding() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableIpForwarding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) EnableIpForwardingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableIpForwardingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -221,6 +257,66 @@ func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) Is
 	_jsii_.Get(
 		j,
 		"isPrimaryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) PrivateIpAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"privateIpAddresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) PrivateIpAddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"privateIpAddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) PublicIpSku() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicIpSku",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) PublicIpSkuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicIpSkuInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) SecurityGroup() ElastigroupAzureV3NetworkNetworkInterfacesSecurityGroupList {
+	var returns ElastigroupAzureV3NetworkNetworkInterfacesSecurityGroupList
+	_jsii_.Get(
+		j,
+		"securityGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) SecurityGroupInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"securityGroupInput",
 		&returns,
 	)
 	return returns
@@ -327,6 +423,17 @@ func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference)Set
 	)
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference)SetEnableIpForwarding(val interface{}) {
+	if err := j.validateSetEnableIpForwardingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableIpForwarding",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -345,6 +452,28 @@ func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference)Set
 	_jsii_.Set(
 		j,
 		"isPrimary",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference)SetPrivateIpAddresses(val *[]*string) {
+	if err := j.validateSetPrivateIpAddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateIpAddresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference)SetPublicIpSku(val *string) {
+	if err := j.validateSetPublicIpSkuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicIpSku",
 		val,
 	)
 }
@@ -590,6 +719,17 @@ func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) Pu
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) PutSecurityGroup(value interface{}) {
+	if err := e.validatePutSecurityGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putSecurityGroup",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) ResetAdditionalIpConfigs() {
 	_jsii_.InvokeVoid(
 		e,
@@ -602,6 +742,38 @@ func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) Re
 	_jsii_.InvokeVoid(
 		e,
 		"resetApplicationSecurityGroup",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) ResetEnableIpForwarding() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEnableIpForwarding",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) ResetPrivateIpAddresses() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetPrivateIpAddresses",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) ResetPublicIpSku() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetPublicIpSku",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) ResetSecurityGroup() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSecurityGroup",
 		nil, // no parameters
 	)
 }

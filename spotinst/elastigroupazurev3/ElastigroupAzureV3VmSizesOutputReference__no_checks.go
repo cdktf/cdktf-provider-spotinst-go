@@ -67,6 +67,10 @@ func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateSetOdSizesP
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateSetPreferredSpotSizesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateSetSpotSizesParameters(val *[]*string) error {
 	return nil
 }

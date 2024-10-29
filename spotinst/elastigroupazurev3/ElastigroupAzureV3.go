@@ -12,9 +12,16 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.1/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.196.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3}.
 type ElastigroupAzureV3 interface {
 	cdktf.TerraformResource
+	AvailabilityVsCost() *float64
+	SetAvailabilityVsCost(val *float64)
+	AvailabilityVsCostInput() *float64
+	BootDiagnostics() ElastigroupAzureV3BootDiagnosticsList
+	BootDiagnosticsInput() interface{}
+	CapacityReservation() ElastigroupAzureV3CapacityReservationOutputReference
+	CapacityReservationInput() *ElastigroupAzureV3CapacityReservation
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -30,10 +37,15 @@ type ElastigroupAzureV3 interface {
 	CustomData() *string
 	SetCustomData(val *string)
 	CustomDataInput() *string
+	DataDisk() ElastigroupAzureV3DataDiskList
+	DataDiskInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	DesiredCapacity() *float64
 	SetDesiredCapacity(val *float64)
 	DesiredCapacityInput() *float64
@@ -53,6 +65,8 @@ type ElastigroupAzureV3 interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Health() ElastigroupAzureV3HealthOutputReference
+	HealthInput() *ElastigroupAzureV3Health
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -62,6 +76,8 @@ type ElastigroupAzureV3 interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBalancer() ElastigroupAzureV3LoadBalancerList
+	LoadBalancerInput() interface{}
 	Login() ElastigroupAzureV3LoginOutputReference
 	LoginInput() *ElastigroupAzureV3Login
 	ManagedServiceIdentity() ElastigroupAzureV3ManagedServiceIdentityList
@@ -82,9 +98,17 @@ type ElastigroupAzureV3 interface {
 	OnDemandCount() *float64
 	SetOnDemandCount(val *float64)
 	OnDemandCountInput() *float64
+	OptimizationWindows() *[]*string
+	SetOptimizationWindows(val *[]*string)
+	OptimizationWindowsInput() *[]*string
 	Os() *string
 	SetOs(val *string)
+	OsDisk() ElastigroupAzureV3OsDiskOutputReference
+	OsDiskInput() *ElastigroupAzureV3OsDisk
 	OsInput() *string
+	PreferredZones() *[]*string
+	SetPreferredZones(val *[]*string)
+	PreferredZonesInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -93,6 +117,8 @@ type ElastigroupAzureV3 interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	ProximityPlacementGroups() ElastigroupAzureV3ProximityPlacementGroupsList
+	ProximityPlacementGroupsInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
@@ -101,10 +127,23 @@ type ElastigroupAzureV3 interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	RevertToSpot() ElastigroupAzureV3RevertToSpotOutputReference
+	RevertToSpotInput() *ElastigroupAzureV3RevertToSpot
 	ScalingDownPolicy() ElastigroupAzureV3ScalingDownPolicyList
 	ScalingDownPolicyInput() interface{}
 	ScalingUpPolicy() ElastigroupAzureV3ScalingUpPolicyList
 	ScalingUpPolicyInput() interface{}
+	SchedulingTask() ElastigroupAzureV3SchedulingTaskList
+	SchedulingTaskInput() interface{}
+	Secret() ElastigroupAzureV3SecretList
+	SecretInput() interface{}
+	Security() ElastigroupAzureV3SecurityOutputReference
+	SecurityInput() *ElastigroupAzureV3Security
+	ShutdownScript() *string
+	SetShutdownScript(val *string)
+	ShutdownScriptInput() *string
+	Signal() ElastigroupAzureV3SignalList
+	SignalInput() interface{}
 	SpotPercentage() *float64
 	SetSpotPercentage(val *float64)
 	SpotPercentageInput() *float64
@@ -116,8 +155,17 @@ type ElastigroupAzureV3 interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserData() *string
+	SetUserData(val *string)
+	UserDataInput() *string
+	VmNamePrefix() *string
+	SetVmNamePrefix(val *string)
+	VmNamePrefixInput() *string
 	VmSizes() ElastigroupAzureV3VmSizesOutputReference
 	VmSizesInput() *ElastigroupAzureV3VmSizes
+	Zones() *[]*string
+	SetZones(val *[]*string)
+	ZonesInput() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -161,33 +209,65 @@ type ElastigroupAzureV3 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBootDiagnostics(value interface{})
+	PutCapacityReservation(value *ElastigroupAzureV3CapacityReservation)
+	PutDataDisk(value interface{})
 	PutExtensions(value interface{})
+	PutHealth(value *ElastigroupAzureV3Health)
 	PutImage(value interface{})
+	PutLoadBalancer(value interface{})
 	PutLogin(value *ElastigroupAzureV3Login)
 	PutManagedServiceIdentity(value interface{})
 	PutNetwork(value *ElastigroupAzureV3Network)
+	PutOsDisk(value *ElastigroupAzureV3OsDisk)
+	PutProximityPlacementGroups(value interface{})
+	PutRevertToSpot(value *ElastigroupAzureV3RevertToSpot)
 	PutScalingDownPolicy(value interface{})
 	PutScalingUpPolicy(value interface{})
+	PutSchedulingTask(value interface{})
+	PutSecret(value interface{})
+	PutSecurity(value *ElastigroupAzureV3Security)
+	PutSignal(value interface{})
 	PutTags(value interface{})
 	PutVmSizes(value *ElastigroupAzureV3VmSizes)
+	ResetAvailabilityVsCost()
+	ResetBootDiagnostics()
+	ResetCapacityReservation()
 	ResetCustomData()
+	ResetDataDisk()
+	ResetDescription()
 	ResetDesiredCapacity()
 	ResetDrainingTimeout()
 	ResetExtensions()
+	ResetHealth()
 	ResetId()
 	ResetImage()
+	ResetLoadBalancer()
 	ResetLogin()
 	ResetManagedServiceIdentity()
 	ResetMaxSize()
 	ResetMinSize()
 	ResetOnDemandCount()
+	ResetOptimizationWindows()
+	ResetOsDisk()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreferredZones()
+	ResetProximityPlacementGroups()
+	ResetRevertToSpot()
 	ResetScalingDownPolicy()
 	ResetScalingUpPolicy()
+	ResetSchedulingTask()
+	ResetSecret()
+	ResetSecurity()
+	ResetShutdownScript()
+	ResetSignal()
 	ResetSpotPercentage()
 	ResetTags()
+	ResetUserData()
+	ResetVmNamePrefix()
+	ResetZones()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -204,6 +284,66 @@ type ElastigroupAzureV3 interface {
 // The jsii proxy struct for ElastigroupAzureV3
 type jsiiProxy_ElastigroupAzureV3 struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) AvailabilityVsCost() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityVsCost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) AvailabilityVsCostInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityVsCostInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) BootDiagnostics() ElastigroupAzureV3BootDiagnosticsList {
+	var returns ElastigroupAzureV3BootDiagnosticsList
+	_jsii_.Get(
+		j,
+		"bootDiagnostics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) BootDiagnosticsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bootDiagnosticsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) CapacityReservation() ElastigroupAzureV3CapacityReservationOutputReference {
+	var returns ElastigroupAzureV3CapacityReservationOutputReference
+	_jsii_.Get(
+		j,
+		"capacityReservation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) CapacityReservationInput() *ElastigroupAzureV3CapacityReservation {
+	var returns *ElastigroupAzureV3CapacityReservation
+	_jsii_.Get(
+		j,
+		"capacityReservationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ElastigroupAzureV3) CdktfStack() cdktf.TerraformStack {
@@ -266,11 +406,51 @@ func (j *jsiiProxy_ElastigroupAzureV3) CustomDataInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) DataDisk() ElastigroupAzureV3DataDiskList {
+	var returns ElastigroupAzureV3DataDiskList
+	_jsii_.Get(
+		j,
+		"dataDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) DataDiskInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataDiskInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -386,6 +566,26 @@ func (j *jsiiProxy_ElastigroupAzureV3) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) Health() ElastigroupAzureV3HealthOutputReference {
+	var returns ElastigroupAzureV3HealthOutputReference
+	_jsii_.Get(
+		j,
+		"health",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) HealthInput() *ElastigroupAzureV3Health {
+	var returns *ElastigroupAzureV3Health
+	_jsii_.Get(
+		j,
+		"healthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -431,6 +631,26 @@ func (j *jsiiProxy_ElastigroupAzureV3) Lifecycle() *cdktf.TerraformResourceLifec
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) LoadBalancer() ElastigroupAzureV3LoadBalancerList {
+	var returns ElastigroupAzureV3LoadBalancerList
+	_jsii_.Get(
+		j,
+		"loadBalancer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) LoadBalancerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"loadBalancerInput",
 		&returns,
 	)
 	return returns
@@ -586,6 +806,26 @@ func (j *jsiiProxy_ElastigroupAzureV3) OnDemandCountInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) OptimizationWindows() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optimizationWindows",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) OptimizationWindowsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optimizationWindowsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) Os() *string {
 	var returns *string
 	_jsii_.Get(
@@ -596,11 +836,51 @@ func (j *jsiiProxy_ElastigroupAzureV3) Os() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) OsDisk() ElastigroupAzureV3OsDiskOutputReference {
+	var returns ElastigroupAzureV3OsDiskOutputReference
+	_jsii_.Get(
+		j,
+		"osDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) OsDiskInput() *ElastigroupAzureV3OsDisk {
+	var returns *ElastigroupAzureV3OsDisk
+	_jsii_.Get(
+		j,
+		"osDiskInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) OsInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"osInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) PreferredZones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) PreferredZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredZonesInput",
 		&returns,
 	)
 	return returns
@@ -621,6 +901,26 @@ func (j *jsiiProxy_ElastigroupAzureV3) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) ProximityPlacementGroups() ElastigroupAzureV3ProximityPlacementGroupsList {
+	var returns ElastigroupAzureV3ProximityPlacementGroupsList
+	_jsii_.Get(
+		j,
+		"proximityPlacementGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) ProximityPlacementGroupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"proximityPlacementGroupsInput",
 		&returns,
 	)
 	return returns
@@ -676,6 +976,26 @@ func (j *jsiiProxy_ElastigroupAzureV3) ResourceGroupNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) RevertToSpot() ElastigroupAzureV3RevertToSpotOutputReference {
+	var returns ElastigroupAzureV3RevertToSpotOutputReference
+	_jsii_.Get(
+		j,
+		"revertToSpot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) RevertToSpotInput() *ElastigroupAzureV3RevertToSpot {
+	var returns *ElastigroupAzureV3RevertToSpot
+	_jsii_.Get(
+		j,
+		"revertToSpotInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) ScalingDownPolicy() ElastigroupAzureV3ScalingDownPolicyList {
 	var returns ElastigroupAzureV3ScalingDownPolicyList
 	_jsii_.Get(
@@ -711,6 +1031,106 @@ func (j *jsiiProxy_ElastigroupAzureV3) ScalingUpPolicyInput() interface{} {
 	_jsii_.Get(
 		j,
 		"scalingUpPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) SchedulingTask() ElastigroupAzureV3SchedulingTaskList {
+	var returns ElastigroupAzureV3SchedulingTaskList
+	_jsii_.Get(
+		j,
+		"schedulingTask",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) SchedulingTaskInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"schedulingTaskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) Secret() ElastigroupAzureV3SecretList {
+	var returns ElastigroupAzureV3SecretList
+	_jsii_.Get(
+		j,
+		"secret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) SecretInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) Security() ElastigroupAzureV3SecurityOutputReference {
+	var returns ElastigroupAzureV3SecurityOutputReference
+	_jsii_.Get(
+		j,
+		"security",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) SecurityInput() *ElastigroupAzureV3Security {
+	var returns *ElastigroupAzureV3Security
+	_jsii_.Get(
+		j,
+		"securityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) ShutdownScript() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shutdownScript",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) ShutdownScriptInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shutdownScriptInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) Signal() ElastigroupAzureV3SignalList {
+	var returns ElastigroupAzureV3SignalList
+	_jsii_.Get(
+		j,
+		"signal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) SignalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"signalInput",
 		&returns,
 	)
 	return returns
@@ -786,6 +1206,46 @@ func (j *jsiiProxy_ElastigroupAzureV3) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) UserData() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) UserDataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) VmNamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vmNamePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3) VmNamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vmNamePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3) VmSizes() ElastigroupAzureV3VmSizesOutputReference {
 	var returns ElastigroupAzureV3VmSizesOutputReference
 	_jsii_.Get(
@@ -806,8 +1266,28 @@ func (j *jsiiProxy_ElastigroupAzureV3) VmSizesInput() *ElastigroupAzureV3VmSizes
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3) Zones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zones",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.1/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
+func (j *jsiiProxy_ElastigroupAzureV3) ZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"zonesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.196.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
 func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) ElastigroupAzureV3 {
 	_init_.Initialize()
 
@@ -825,7 +1305,7 @@ func NewElastigroupAzureV3(scope constructs.Construct, id *string, config *Elast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.195.1/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.196.0/docs/resources/elastigroup_azure_v3 spotinst_elastigroup_azure_v3} Resource.
 func NewElastigroupAzureV3_Override(e ElastigroupAzureV3, scope constructs.Construct, id *string, config *ElastigroupAzureV3Config) {
 	_init_.Initialize()
 
@@ -833,6 +1313,17 @@ func NewElastigroupAzureV3_Override(e ElastigroupAzureV3, scope constructs.Const
 		"@cdktf/provider-spotinst.elastigroupAzureV3.ElastigroupAzureV3",
 		[]interface{}{scope, id, config},
 		e,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3)SetAvailabilityVsCost(val *float64) {
+	if err := j.validateSetAvailabilityVsCostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availabilityVsCost",
+		val,
 	)
 }
 
@@ -873,6 +1364,17 @@ func (j *jsiiProxy_ElastigroupAzureV3)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -984,6 +1486,17 @@ func (j *jsiiProxy_ElastigroupAzureV3)SetOnDemandCount(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3)SetOptimizationWindows(val *[]*string) {
+	if err := j.validateSetOptimizationWindowsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optimizationWindows",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3)SetOs(val *string) {
 	if err := j.validateSetOsParameters(val); err != nil {
 		panic(err)
@@ -991,6 +1504,17 @@ func (j *jsiiProxy_ElastigroupAzureV3)SetOs(val *string) {
 	_jsii_.Set(
 		j,
 		"os",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3)SetPreferredZones(val *[]*string) {
+	if err := j.validateSetPreferredZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredZones",
 		val,
 	)
 }
@@ -1036,6 +1560,17 @@ func (j *jsiiProxy_ElastigroupAzureV3)SetResourceGroupName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3)SetShutdownScript(val *string) {
+	if err := j.validateSetShutdownScriptParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shutdownScript",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3)SetSpotPercentage(val *float64) {
 	if err := j.validateSetSpotPercentageParameters(val); err != nil {
 		panic(err)
@@ -1043,6 +1578,39 @@ func (j *jsiiProxy_ElastigroupAzureV3)SetSpotPercentage(val *float64) {
 	_jsii_.Set(
 		j,
 		"spotPercentage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3)SetUserData(val *string) {
+	if err := j.validateSetUserDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userData",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3)SetVmNamePrefix(val *string) {
+	if err := j.validateSetVmNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vmNamePrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3)SetZones(val *[]*string) {
+	if err := j.validateSetZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zones",
 		val,
 	)
 }
@@ -1400,6 +1968,39 @@ func (e *jsiiProxy_ElastigroupAzureV3) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) PutBootDiagnostics(value interface{}) {
+	if err := e.validatePutBootDiagnosticsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putBootDiagnostics",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) PutCapacityReservation(value *ElastigroupAzureV3CapacityReservation) {
+	if err := e.validatePutCapacityReservationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putCapacityReservation",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) PutDataDisk(value interface{}) {
+	if err := e.validatePutDataDiskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putDataDisk",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) PutExtensions(value interface{}) {
 	if err := e.validatePutExtensionsParameters(value); err != nil {
 		panic(err)
@@ -1411,6 +2012,17 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutExtensions(value interface{}) {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) PutHealth(value *ElastigroupAzureV3Health) {
+	if err := e.validatePutHealthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putHealth",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) PutImage(value interface{}) {
 	if err := e.validatePutImageParameters(value); err != nil {
 		panic(err)
@@ -1418,6 +2030,17 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutImage(value interface{}) {
 	_jsii_.InvokeVoid(
 		e,
 		"putImage",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) PutLoadBalancer(value interface{}) {
+	if err := e.validatePutLoadBalancerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putLoadBalancer",
 		[]interface{}{value},
 	)
 }
@@ -1455,6 +2078,39 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutNetwork(value *ElastigroupAzureV3Netwo
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) PutOsDisk(value *ElastigroupAzureV3OsDisk) {
+	if err := e.validatePutOsDiskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putOsDisk",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) PutProximityPlacementGroups(value interface{}) {
+	if err := e.validatePutProximityPlacementGroupsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putProximityPlacementGroups",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) PutRevertToSpot(value *ElastigroupAzureV3RevertToSpot) {
+	if err := e.validatePutRevertToSpotParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putRevertToSpot",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) PutScalingDownPolicy(value interface{}) {
 	if err := e.validatePutScalingDownPolicyParameters(value); err != nil {
 		panic(err)
@@ -1473,6 +2129,50 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutScalingUpPolicy(value interface{}) {
 	_jsii_.InvokeVoid(
 		e,
 		"putScalingUpPolicy",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) PutSchedulingTask(value interface{}) {
+	if err := e.validatePutSchedulingTaskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putSchedulingTask",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) PutSecret(value interface{}) {
+	if err := e.validatePutSecretParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putSecret",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) PutSecurity(value *ElastigroupAzureV3Security) {
+	if err := e.validatePutSecurityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putSecurity",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) PutSignal(value interface{}) {
+	if err := e.validatePutSignalParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putSignal",
 		[]interface{}{value},
 	)
 }
@@ -1499,10 +2199,50 @@ func (e *jsiiProxy_ElastigroupAzureV3) PutVmSizes(value *ElastigroupAzureV3VmSiz
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) ResetAvailabilityVsCost() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAvailabilityVsCost",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetBootDiagnostics() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetBootDiagnostics",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetCapacityReservation() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCapacityReservation",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) ResetCustomData() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetCustomData",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetDataDisk() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDataDisk",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetDescription() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDescription",
 		nil, // no parameters
 	)
 }
@@ -1531,6 +2271,14 @@ func (e *jsiiProxy_ElastigroupAzureV3) ResetExtensions() {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) ResetHealth() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetHealth",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1543,6 +2291,14 @@ func (e *jsiiProxy_ElastigroupAzureV3) ResetImage() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetImage",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetLoadBalancer() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetLoadBalancer",
 		nil, // no parameters
 	)
 }
@@ -1587,10 +2343,50 @@ func (e *jsiiProxy_ElastigroupAzureV3) ResetOnDemandCount() {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) ResetOptimizationWindows() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOptimizationWindows",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetOsDisk() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOsDisk",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetPreferredZones() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetPreferredZones",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetProximityPlacementGroups() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetProximityPlacementGroups",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetRevertToSpot() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRevertToSpot",
 		nil, // no parameters
 	)
 }
@@ -1611,6 +2407,46 @@ func (e *jsiiProxy_ElastigroupAzureV3) ResetScalingUpPolicy() {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3) ResetSchedulingTask() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSchedulingTask",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetSecret() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSecret",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetSecurity() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSecurity",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetShutdownScript() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetShutdownScript",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetSignal() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSignal",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3) ResetSpotPercentage() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1623,6 +2459,30 @@ func (e *jsiiProxy_ElastigroupAzureV3) ResetTags() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetUserData() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetUserData",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetVmNamePrefix() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetVmNamePrefix",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3) ResetZones() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetZones",
 		nil, // no parameters
 	)
 }
