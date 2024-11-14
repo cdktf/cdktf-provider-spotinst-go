@@ -25,6 +25,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "detachWorkloads", GoGetter: "DetachWorkloads"},
 			_jsii_.MemberProperty{JsiiProperty: "detachWorkloadsInput", GoGetter: "DetachWorkloadsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "excludePreliminaryRecommendations", GoGetter: "ExcludePreliminaryRecommendations"},
+			_jsii_.MemberProperty{JsiiProperty: "excludePreliminaryRecommendationsInput", GoGetter: "ExcludePreliminaryRecommendationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -55,12 +57,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAttachWorkloads", GoMethod: "PutAttachWorkloads"},
 			_jsii_.MemberMethod{JsiiMethod: "putDetachWorkloads", GoMethod: "PutDetachWorkloads"},
 			_jsii_.MemberMethod{JsiiMethod: "putRecommendationApplicationBoundaries", GoMethod: "PutRecommendationApplicationBoundaries"},
+			_jsii_.MemberMethod{JsiiMethod: "putRecommendationApplicationHpa", GoMethod: "PutRecommendationApplicationHpa"},
 			_jsii_.MemberMethod{JsiiMethod: "putRecommendationApplicationIntervals", GoMethod: "PutRecommendationApplicationIntervals"},
 			_jsii_.MemberMethod{JsiiMethod: "putRecommendationApplicationMinThreshold", GoMethod: "PutRecommendationApplicationMinThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "putRecommendationApplicationOverheadValues", GoMethod: "PutRecommendationApplicationOverheadValues"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "recommendationApplicationBoundaries", GoGetter: "RecommendationApplicationBoundaries"},
 			_jsii_.MemberProperty{JsiiProperty: "recommendationApplicationBoundariesInput", GoGetter: "RecommendationApplicationBoundariesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "recommendationApplicationHpa", GoGetter: "RecommendationApplicationHpa"},
+			_jsii_.MemberProperty{JsiiProperty: "recommendationApplicationHpaInput", GoGetter: "RecommendationApplicationHpaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "recommendationApplicationIntervals", GoGetter: "RecommendationApplicationIntervals"},
 			_jsii_.MemberProperty{JsiiProperty: "recommendationApplicationIntervalsInput", GoGetter: "RecommendationApplicationIntervalsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "recommendationApplicationMinThreshold", GoGetter: "RecommendationApplicationMinThreshold"},
@@ -69,12 +74,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "recommendationApplicationOverheadValuesInput", GoGetter: "RecommendationApplicationOverheadValuesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAttachWorkloads", GoMethod: "ResetAttachWorkloads"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDetachWorkloads", GoMethod: "ResetDetachWorkloads"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludePreliminaryRecommendations", GoMethod: "ResetExcludePreliminaryRecommendations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOceanId", GoMethod: "ResetOceanId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRecommendationApplicationBoundaries", GoMethod: "ResetRecommendationApplicationBoundaries"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRecommendationApplicationHpa", GoMethod: "ResetRecommendationApplicationHpa"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRecommendationApplicationMinThreshold", GoMethod: "ResetRecommendationApplicationMinThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRecommendationApplicationOverheadValues", GoMethod: "ResetRecommendationApplicationOverheadValues"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRestartReplicas", GoMethod: "ResetRestartReplicas"},
+			_jsii_.MemberProperty{JsiiProperty: "restartReplicas", GoGetter: "RestartReplicas"},
+			_jsii_.MemberProperty{JsiiProperty: "restartReplicasInput", GoGetter: "RestartReplicasInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ruleName", GoGetter: "RuleName"},
 			_jsii_.MemberProperty{JsiiProperty: "ruleNameInput", GoGetter: "RuleNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -677,6 +687,67 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OceanRightSizingRuleRecommendationApplicationBoundariesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanRightSizingRule.OceanRightSizingRuleRecommendationApplicationHpa",
+		reflect.TypeOf((*OceanRightSizingRuleRecommendationApplicationHpa)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanRightSizingRule.OceanRightSizingRuleRecommendationApplicationHpaList",
+		reflect.TypeOf((*OceanRightSizingRuleRecommendationApplicationHpaList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanRightSizingRuleRecommendationApplicationHpaList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanRightSizingRule.OceanRightSizingRuleRecommendationApplicationHpaOutputReference",
+		reflect.TypeOf((*OceanRightSizingRuleRecommendationApplicationHpaOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowHpaRecommendations", GoGetter: "AllowHpaRecommendations"},
+			_jsii_.MemberProperty{JsiiProperty: "allowHpaRecommendationsInput", GoGetter: "AllowHpaRecommendationsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowHpaRecommendations", GoMethod: "ResetAllowHpaRecommendations"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanRightSizingRuleRecommendationApplicationHpaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -87,6 +87,10 @@ func (o *jsiiProxy_OceanRightSizingRule) validatePutRecommendationApplicationBou
 	return nil
 }
 
+func (o *jsiiProxy_OceanRightSizingRule) validatePutRecommendationApplicationHpaParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanRightSizingRule) validatePutRecommendationApplicationIntervalsParameters(value interface{}) error {
 	return nil
 }
@@ -123,6 +127,10 @@ func (j *jsiiProxy_OceanRightSizingRule) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_OceanRightSizingRule) validateSetExcludePreliminaryRecommendationsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanRightSizingRule) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -136,6 +144,10 @@ func (j *jsiiProxy_OceanRightSizingRule) validateSetOceanIdParameters(val *strin
 }
 
 func (j *jsiiProxy_OceanRightSizingRule) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OceanRightSizingRule) validateSetRestartReplicasParameters(val *string) error {
 	return nil
 }
 

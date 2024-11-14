@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.196.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.197.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule}.
 type OceanRightSizingRule interface {
 	cdktf.TerraformResource
 	AttachWorkloads() OceanRightSizingRuleAttachWorkloadsList
@@ -35,6 +35,9 @@ type OceanRightSizingRule interface {
 	SetDependsOn(val *[]*string)
 	DetachWorkloads() OceanRightSizingRuleDetachWorkloadsList
 	DetachWorkloadsInput() interface{}
+	ExcludePreliminaryRecommendations() interface{}
+	SetExcludePreliminaryRecommendations(val interface{})
+	ExcludePreliminaryRecommendationsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -67,12 +70,17 @@ type OceanRightSizingRule interface {
 	RawOverrides() interface{}
 	RecommendationApplicationBoundaries() OceanRightSizingRuleRecommendationApplicationBoundariesList
 	RecommendationApplicationBoundariesInput() interface{}
+	RecommendationApplicationHpa() OceanRightSizingRuleRecommendationApplicationHpaList
+	RecommendationApplicationHpaInput() interface{}
 	RecommendationApplicationIntervals() OceanRightSizingRuleRecommendationApplicationIntervalsList
 	RecommendationApplicationIntervalsInput() interface{}
 	RecommendationApplicationMinThreshold() OceanRightSizingRuleRecommendationApplicationMinThresholdList
 	RecommendationApplicationMinThresholdInput() interface{}
 	RecommendationApplicationOverheadValues() OceanRightSizingRuleRecommendationApplicationOverheadValuesList
 	RecommendationApplicationOverheadValuesInput() interface{}
+	RestartReplicas() *string
+	SetRestartReplicas(val *string)
+	RestartReplicasInput() *string
 	RuleName() *string
 	SetRuleName(val *string)
 	RuleNameInput() *string
@@ -128,19 +136,23 @@ type OceanRightSizingRule interface {
 	PutAttachWorkloads(value interface{})
 	PutDetachWorkloads(value interface{})
 	PutRecommendationApplicationBoundaries(value interface{})
+	PutRecommendationApplicationHpa(value interface{})
 	PutRecommendationApplicationIntervals(value interface{})
 	PutRecommendationApplicationMinThreshold(value interface{})
 	PutRecommendationApplicationOverheadValues(value interface{})
 	ResetAttachWorkloads()
 	ResetDetachWorkloads()
+	ResetExcludePreliminaryRecommendations()
 	ResetId()
 	ResetOceanId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRecommendationApplicationBoundaries()
+	ResetRecommendationApplicationHpa()
 	ResetRecommendationApplicationMinThreshold()
 	ResetRecommendationApplicationOverheadValues()
+	ResetRestartReplicas()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -244,6 +256,26 @@ func (j *jsiiProxy_OceanRightSizingRule) DetachWorkloadsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"detachWorkloadsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanRightSizingRule) ExcludePreliminaryRecommendations() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludePreliminaryRecommendations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanRightSizingRule) ExcludePreliminaryRecommendationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludePreliminaryRecommendationsInput",
 		&returns,
 	)
 	return returns
@@ -389,6 +421,26 @@ func (j *jsiiProxy_OceanRightSizingRule) RecommendationApplicationBoundariesInpu
 	return returns
 }
 
+func (j *jsiiProxy_OceanRightSizingRule) RecommendationApplicationHpa() OceanRightSizingRuleRecommendationApplicationHpaList {
+	var returns OceanRightSizingRuleRecommendationApplicationHpaList
+	_jsii_.Get(
+		j,
+		"recommendationApplicationHpa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanRightSizingRule) RecommendationApplicationHpaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"recommendationApplicationHpaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanRightSizingRule) RecommendationApplicationIntervals() OceanRightSizingRuleRecommendationApplicationIntervalsList {
 	var returns OceanRightSizingRuleRecommendationApplicationIntervalsList
 	_jsii_.Get(
@@ -449,6 +501,26 @@ func (j *jsiiProxy_OceanRightSizingRule) RecommendationApplicationOverheadValues
 	return returns
 }
 
+func (j *jsiiProxy_OceanRightSizingRule) RestartReplicas() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restartReplicas",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanRightSizingRule) RestartReplicasInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restartReplicasInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanRightSizingRule) RuleName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -500,7 +572,7 @@ func (j *jsiiProxy_OceanRightSizingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.196.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.197.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
 func NewOceanRightSizingRule(scope constructs.Construct, id *string, config *OceanRightSizingRuleConfig) OceanRightSizingRule {
 	_init_.Initialize()
 
@@ -518,7 +590,7 @@ func NewOceanRightSizingRule(scope constructs.Construct, id *string, config *Oce
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.196.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.197.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
 func NewOceanRightSizingRule_Override(o OceanRightSizingRule, scope constructs.Construct, id *string, config *OceanRightSizingRuleConfig) {
 	_init_.Initialize()
 
@@ -555,6 +627,17 @@ func (j *jsiiProxy_OceanRightSizingRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanRightSizingRule)SetExcludePreliminaryRecommendations(val interface{}) {
+	if err := j.validateSetExcludePreliminaryRecommendationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludePreliminaryRecommendations",
 		val,
 	)
 }
@@ -615,6 +698,17 @@ func (j *jsiiProxy_OceanRightSizingRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanRightSizingRule)SetRestartReplicas(val *string) {
+	if err := j.validateSetRestartReplicasParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restartReplicas",
 		val,
 	)
 }
@@ -1016,6 +1110,17 @@ func (o *jsiiProxy_OceanRightSizingRule) PutRecommendationApplicationBoundaries(
 	)
 }
 
+func (o *jsiiProxy_OceanRightSizingRule) PutRecommendationApplicationHpa(value interface{}) {
+	if err := o.validatePutRecommendationApplicationHpaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putRecommendationApplicationHpa",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanRightSizingRule) PutRecommendationApplicationIntervals(value interface{}) {
 	if err := o.validatePutRecommendationApplicationIntervalsParameters(value); err != nil {
 		panic(err)
@@ -1065,6 +1170,14 @@ func (o *jsiiProxy_OceanRightSizingRule) ResetDetachWorkloads() {
 	)
 }
 
+func (o *jsiiProxy_OceanRightSizingRule) ResetExcludePreliminaryRecommendations() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetExcludePreliminaryRecommendations",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OceanRightSizingRule) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1097,6 +1210,14 @@ func (o *jsiiProxy_OceanRightSizingRule) ResetRecommendationApplicationBoundarie
 	)
 }
 
+func (o *jsiiProxy_OceanRightSizingRule) ResetRecommendationApplicationHpa() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRecommendationApplicationHpa",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OceanRightSizingRule) ResetRecommendationApplicationMinThreshold() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1109,6 +1230,14 @@ func (o *jsiiProxy_OceanRightSizingRule) ResetRecommendationApplicationOverheadV
 	_jsii_.InvokeVoid(
 		o,
 		"resetRecommendationApplicationOverheadValues",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanRightSizingRule) ResetRestartReplicas() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRestartReplicas",
 		nil, // no parameters
 	)
 }
