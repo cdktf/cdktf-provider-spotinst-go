@@ -5,15 +5,15 @@ package oceanrightsizingrule
 
 
 type OceanRightSizingRuleAttachWorkloadsNamespaces struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.197.0/docs/resources/ocean_right_sizing_rule#namespace_name OceanRightSizingRule#namespace_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.197.1/docs/resources/ocean_right_sizing_rule#namespace_name OceanRightSizingRule#namespace_name}.
 	NamespaceName *string `field:"required" json:"namespaceName" yaml:"namespaceName"`
 	// labels block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.197.0/docs/resources/ocean_right_sizing_rule#labels OceanRightSizingRule#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.197.1/docs/resources/ocean_right_sizing_rule#labels OceanRightSizingRule#labels}
 	Labels interface{} `field:"optional" json:"labels" yaml:"labels"`
 	// workloads block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.197.0/docs/resources/ocean_right_sizing_rule#workloads OceanRightSizingRule#workloads}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.197.1/docs/resources/ocean_right_sizing_rule#workloads OceanRightSizingRule#workloads}
 	Workloads interface{} `field:"optional" json:"workloads" yaml:"workloads"`
 }
 
