@@ -67,6 +67,10 @@ func (j *jsiiProxy_OceanGkeImportAutoscalerDownOutputReference) validateSetInter
 	return nil
 }
 
+func (j *jsiiProxy_OceanGkeImportAutoscalerDownOutputReference) validateSetIsAggressiveScaleDownEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanGkeImportAutoscalerDownOutputReference) validateSetMaxScaleDownPercentageParameters(val *float64) error {
 	return nil
 }

@@ -83,6 +83,10 @@ func (o *jsiiProxy_OceanGkeImport) validatePutBackendServicesParameters(value in
 	return nil
 }
 
+func (o *jsiiProxy_OceanGkeImport) validatePutFiltersParameters(value *OceanGkeImportFilters) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanGkeImport) validatePutScheduledTaskParameters(value interface{}) error {
 	return nil
 }

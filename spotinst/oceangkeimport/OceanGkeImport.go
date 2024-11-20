@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.197.1/docs/resources/ocean_gke_import spotinst_ocean_gke_import}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.198.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import}.
 type OceanGkeImport interface {
 	cdktf.TerraformResource
 	Autoscaler() OceanGkeImportAutoscalerOutputReference
@@ -48,6 +48,8 @@ type OceanGkeImport interface {
 	DesiredCapacity() *float64
 	SetDesiredCapacity(val *float64)
 	DesiredCapacityInput() *float64
+	Filters() OceanGkeImportFiltersOutputReference
+	FiltersInput() *OceanGkeImportFilters
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -152,6 +154,7 @@ type OceanGkeImport interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaler(value *OceanGkeImportAutoscaler)
 	PutBackendServices(value interface{})
+	PutFilters(value *OceanGkeImportFilters)
 	PutScheduledTask(value interface{})
 	PutShieldedInstanceConfig(value *OceanGkeImportShieldedInstanceConfig)
 	PutStrategy(value interface{})
@@ -161,6 +164,7 @@ type OceanGkeImport interface {
 	ResetBlacklist()
 	ResetControllerClusterId()
 	ResetDesiredCapacity()
+	ResetFilters()
 	ResetId()
 	ResetMaxSize()
 	ResetMinSize()
@@ -367,6 +371,26 @@ func (j *jsiiProxy_OceanGkeImport) DesiredCapacityInput() *float64 {
 	_jsii_.Get(
 		j,
 		"desiredCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeImport) Filters() OceanGkeImportFiltersOutputReference {
+	var returns OceanGkeImportFiltersOutputReference
+	_jsii_.Get(
+		j,
+		"filters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeImport) FiltersInput() *OceanGkeImportFilters {
+	var returns *OceanGkeImportFilters
+	_jsii_.Get(
+		j,
+		"filtersInput",
 		&returns,
 	)
 	return returns
@@ -703,7 +727,7 @@ func (j *jsiiProxy_OceanGkeImport) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.197.1/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.198.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
 func NewOceanGkeImport(scope constructs.Construct, id *string, config *OceanGkeImportConfig) OceanGkeImport {
 	_init_.Initialize()
 
@@ -721,7 +745,7 @@ func NewOceanGkeImport(scope constructs.Construct, id *string, config *OceanGkeI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.197.1/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.198.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
 func NewOceanGkeImport_Override(o OceanGkeImport, scope constructs.Construct, id *string, config *OceanGkeImportConfig) {
 	_init_.Initialize()
 
@@ -1296,6 +1320,17 @@ func (o *jsiiProxy_OceanGkeImport) PutBackendServices(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanGkeImport) PutFilters(value *OceanGkeImportFilters) {
+	if err := o.validatePutFiltersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putFilters",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanGkeImport) PutScheduledTask(value interface{}) {
 	if err := o.validatePutScheduledTaskParameters(value); err != nil {
 		panic(err)
@@ -1376,6 +1411,14 @@ func (o *jsiiProxy_OceanGkeImport) ResetDesiredCapacity() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetDesiredCapacity",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanGkeImport) ResetFilters() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFilters",
 		nil, // no parameters
 	)
 }
