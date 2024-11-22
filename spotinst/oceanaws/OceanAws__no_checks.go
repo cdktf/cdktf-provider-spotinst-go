@@ -235,6 +235,10 @@ func (j *jsiiProxy_OceanAws) validateSetRegionParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_OceanAws) validateSetReservedEnisParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAws) validateSetRootVolumeSizeParameters(val *float64) error {
 	return nil
 }

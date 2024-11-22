@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.198.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.199.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
 type OceanAwsLaunchSpec interface {
 	cdktf.TerraformResource
 	AssociatePublicIpAddress() interface{}
@@ -106,6 +106,9 @@ type OceanAwsLaunchSpec interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReservedEnis() *float64
+	SetReservedEnis(val *float64)
+	ReservedEnisInput() *float64
 	ResourceLimits() OceanAwsLaunchSpecResourceLimitsList
 	ResourceLimitsInput() interface{}
 	RestrictScaleDown() interface{}
@@ -226,6 +229,7 @@ type OceanAwsLaunchSpec interface {
 	ResetOverrideLogicalId()
 	ResetPreferredOdTypes()
 	ResetPreferredSpotTypes()
+	ResetReservedEnis()
 	ResetResourceLimits()
 	ResetRestrictScaleDown()
 	ResetRootVolumeSize()
@@ -806,6 +810,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpec) ReservedEnis() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"reservedEnis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) ReservedEnisInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"reservedEnisInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAwsLaunchSpec) ResourceLimits() OceanAwsLaunchSpecResourceLimitsList {
 	var returns OceanAwsLaunchSpecResourceLimitsList
 	_jsii_.Get(
@@ -1077,7 +1101,7 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.198.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.199.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) OceanAwsLaunchSpec {
 	_init_.Initialize()
 
@@ -1095,7 +1119,7 @@ func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.198.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.199.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec_Override(o OceanAwsLaunchSpec, scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1269,6 +1293,17 @@ func (j *jsiiProxy_OceanAwsLaunchSpec)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec)SetReservedEnis(val *float64) {
+	if err := j.validateSetReservedEnisParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reservedEnis",
 		val,
 	)
 }
@@ -2054,6 +2089,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) ResetPreferredSpotTypes() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetPreferredSpotTypes",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpec) ResetReservedEnis() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetReservedEnis",
 		nil, // no parameters
 	)
 }

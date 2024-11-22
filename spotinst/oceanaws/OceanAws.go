@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.198.0/docs/resources/ocean_aws spotinst_ocean_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.199.0/docs/resources/ocean_aws spotinst_ocean_aws}.
 type OceanAws interface {
 	cdktf.TerraformResource
 	AssociateIpv6Address() interface{}
@@ -130,6 +130,9 @@ type OceanAws interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ReservedEnis() *float64
+	SetReservedEnis(val *float64)
+	ReservedEnisInput() *float64
 	ResourceTagSpecification() OceanAwsResourceTagSpecificationList
 	ResourceTagSpecificationInput() interface{}
 	RootVolumeSize() *float64
@@ -260,6 +263,7 @@ type OceanAws interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetReservedEnis()
 	ResetResourceTagSpecification()
 	ResetRootVolumeSize()
 	ResetScheduledTask()
@@ -980,6 +984,26 @@ func (j *jsiiProxy_OceanAws) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAws) ReservedEnis() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"reservedEnis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) ReservedEnisInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"reservedEnisInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAws) ResourceTagSpecification() OceanAwsResourceTagSpecificationList {
 	var returns OceanAwsResourceTagSpecificationList
 	_jsii_.Get(
@@ -1291,7 +1315,7 @@ func (j *jsiiProxy_OceanAws) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.198.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.199.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig) OceanAws {
 	_init_.Initialize()
 
@@ -1309,7 +1333,7 @@ func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.198.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.199.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws_Override(o OceanAws, scope constructs.Construct, id *string, config *OceanAwsConfig) {
 	_init_.Initialize()
 
@@ -1593,6 +1617,17 @@ func (j *jsiiProxy_OceanAws)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws)SetReservedEnis(val *float64) {
+	if err := j.validateSetReservedEnisParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reservedEnis",
 		val,
 	)
 }
@@ -2423,6 +2458,14 @@ func (o *jsiiProxy_OceanAws) ResetRegion() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetReservedEnis() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetReservedEnis",
 		nil, // no parameters
 	)
 }

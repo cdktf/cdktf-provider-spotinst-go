@@ -219,6 +219,10 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetReservedEnisParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAwsLaunchSpec) validateSetRestrictScaleDownParameters(val interface{}) error {
 	return nil
 }
