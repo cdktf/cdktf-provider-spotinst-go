@@ -47,6 +47,10 @@ func (s *jsiiProxy_StatefulNodeAzureVmSizesOutputReference) validateInterpolatio
 	return nil
 }
 
+func (s *jsiiProxy_StatefulNodeAzureVmSizesOutputReference) validatePutSpotSizeAttributesParameters(value *StatefulNodeAzureVmSizesSpotSizeAttributes) error {
+	return nil
+}
+
 func (s *jsiiProxy_StatefulNodeAzureVmSizesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -56,6 +60,10 @@ func (j *jsiiProxy_StatefulNodeAzureVmSizesOutputReference) validateSetComplexOb
 }
 
 func (j *jsiiProxy_StatefulNodeAzureVmSizesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_StatefulNodeAzureVmSizesOutputReference) validateSetExcludedVmSizesParameters(val *[]*string) error {
 	return nil
 }
 
