@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.200.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.201.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group}.
 type OceanAksNpVirtualNodeGroup interface {
 	cdktf.TerraformResource
 	AvailabilityZones() *[]*string
@@ -109,6 +109,8 @@ type OceanAksNpVirtualNodeGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Scheduling() OceanAksNpVirtualNodeGroupSchedulingOutputReference
+	SchedulingInput() *OceanAksNpVirtualNodeGroupScheduling
 	SpotPercentage() *float64
 	SetSpotPercentage(val *float64)
 	SpotPercentageInput() *float64
@@ -174,6 +176,7 @@ type OceanAksNpVirtualNodeGroup interface {
 	PutFilters(value *OceanAksNpVirtualNodeGroupFilters)
 	PutHeadrooms(value interface{})
 	PutLinuxOsConfig(value interface{})
+	PutScheduling(value *OceanAksNpVirtualNodeGroupScheduling)
 	PutTaints(value interface{})
 	PutUpdatePolicy(value *OceanAksNpVirtualNodeGroupUpdatePolicy)
 	ResetAvailabilityZones()
@@ -196,6 +199,7 @@ type OceanAksNpVirtualNodeGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPodSubnetIds()
+	ResetScheduling()
 	ResetSpotPercentage()
 	ResetTags()
 	ResetTaints()
@@ -729,6 +733,26 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) Scheduling() OceanAksNpVirtualNodeGroupSchedulingOutputReference {
+	var returns OceanAksNpVirtualNodeGroupSchedulingOutputReference
+	_jsii_.Get(
+		j,
+		"scheduling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) SchedulingInput() *OceanAksNpVirtualNodeGroupScheduling {
+	var returns *OceanAksNpVirtualNodeGroupScheduling
+	_jsii_.Get(
+		j,
+		"schedulingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) SpotPercentage() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -860,7 +884,7 @@ func (j *jsiiProxy_OceanAksNpVirtualNodeGroup) VnetSubnetIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.200.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.201.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) OceanAksNpVirtualNodeGroup {
 	_init_.Initialize()
 
@@ -878,7 +902,7 @@ func NewOceanAksNpVirtualNodeGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.200.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.201.0/docs/resources/ocean_aks_np_virtual_node_group spotinst_ocean_aks_np_virtual_node_group} Resource.
 func NewOceanAksNpVirtualNodeGroup_Override(o OceanAksNpVirtualNodeGroup, scope constructs.Construct, id *string, config *OceanAksNpVirtualNodeGroupConfig) {
 	_init_.Initialize()
 
@@ -1552,6 +1576,17 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) PutLinuxOsConfig(value interface{
 	)
 }
 
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) PutScheduling(value *OceanAksNpVirtualNodeGroupScheduling) {
+	if err := o.validatePutSchedulingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putScheduling",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) PutTaints(value interface{}) {
 	if err := o.validatePutTaintsParameters(value); err != nil {
 		panic(err)
@@ -1714,6 +1749,14 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetPodSubnetIds() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetPodSubnetIds",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroup) ResetScheduling() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetScheduling",
 		nil, // no parameters
 	)
 }
