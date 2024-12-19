@@ -91,6 +91,10 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) validateSetShouldDere
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) validateSetShouldRevertToOdParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) validateSetShouldTerminateVmParameters(val interface{}) error {
 	return nil
 }

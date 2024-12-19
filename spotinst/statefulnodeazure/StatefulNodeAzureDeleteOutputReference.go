@@ -53,6 +53,9 @@ type StatefulNodeAzureDeleteOutputReference interface {
 	ShouldDeregisterFromLb() interface{}
 	SetShouldDeregisterFromLb(val interface{})
 	ShouldDeregisterFromLbInput() interface{}
+	ShouldRevertToOd() interface{}
+	SetShouldRevertToOd(val interface{})
+	ShouldRevertToOdInput() interface{}
 	ShouldTerminateVm() interface{}
 	SetShouldTerminateVm(val interface{})
 	ShouldTerminateVmInput() interface{}
@@ -94,10 +97,15 @@ type StatefulNodeAzureDeleteOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDiskShouldDeallocate()
 	ResetDiskTtlInHours()
+	ResetNetworkShouldDeallocate()
 	ResetNetworkTtlInHours()
+	ResetPublicIpShouldDeallocate()
 	ResetPublicIpTtlInHours()
 	ResetShouldDeregisterFromLb()
+	ResetShouldRevertToOd()
+	ResetSnapshotShouldDeallocate()
 	ResetSnapshotTtlInHours()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -299,6 +307,26 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ShouldDeregisterFromL
 	_jsii_.Get(
 		j,
 		"shouldDeregisterFromLbInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ShouldRevertToOd() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldRevertToOd",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ShouldRevertToOdInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldRevertToOdInput",
 		&returns,
 	)
 	return returns
@@ -518,6 +546,17 @@ func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetShouldDeregisterFro
 	_jsii_.Set(
 		j,
 		"shouldDeregisterFromLb",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulNodeAzureDeleteOutputReference)SetShouldRevertToOd(val interface{}) {
+	if err := j.validateSetShouldRevertToOdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shouldRevertToOd",
 		val,
 	)
 }
@@ -763,6 +802,14 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) InterpolationForAttri
 	return returns
 }
 
+func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ResetDiskShouldDeallocate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDiskShouldDeallocate",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ResetDiskTtlInHours() {
 	_jsii_.InvokeVoid(
 		s,
@@ -771,10 +818,26 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ResetDiskTtlInHours()
 	)
 }
 
+func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ResetNetworkShouldDeallocate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNetworkShouldDeallocate",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ResetNetworkTtlInHours() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetNetworkTtlInHours",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ResetPublicIpShouldDeallocate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPublicIpShouldDeallocate",
 		nil, // no parameters
 	)
 }
@@ -791,6 +854,22 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ResetShouldDeregister
 	_jsii_.InvokeVoid(
 		s,
 		"resetShouldDeregisterFromLb",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ResetShouldRevertToOd() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetShouldRevertToOd",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StatefulNodeAzureDeleteOutputReference) ResetSnapshotShouldDeallocate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSnapshotShouldDeallocate",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package oceancdverificationtemplate
 
 
 type OceancdVerificationTemplateMetricsBaselineBaselineProviderNewRelic struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.201.0/docs/resources/oceancd_verification_template#new_relic_query OceancdVerificationTemplate#new_relic_query}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.202.0/docs/resources/oceancd_verification_template#new_relic_query OceancdVerificationTemplate#new_relic_query}.
 	NewRelicQuery *string `field:"required" json:"newRelicQuery" yaml:"newRelicQuery"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.201.0/docs/resources/oceancd_verification_template#profile OceancdVerificationTemplate#profile}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.202.0/docs/resources/oceancd_verification_template#profile OceancdVerificationTemplate#profile}.
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
 }
 
