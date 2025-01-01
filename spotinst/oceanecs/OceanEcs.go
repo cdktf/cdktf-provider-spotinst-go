@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.202.0/docs/resources/ocean_ecs spotinst_ocean_ecs}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.203.0/docs/resources/ocean_ecs spotinst_ocean_ecs}.
 type OceanEcs interface {
 	cdktf.TerraformResource
 	AssociatePublicIpAddress() interface{}
@@ -55,6 +55,9 @@ type OceanEcs interface {
 	EbsOptimized() interface{}
 	SetEbsOptimized(val interface{})
 	EbsOptimizedInput() interface{}
+	FallbackToOndemand() interface{}
+	SetFallbackToOndemand(val interface{})
+	FallbackToOndemandInput() interface{}
 	Filters() OceanEcsFiltersOutputReference
 	FiltersInput() *OceanEcsFilters
 	// Experimental.
@@ -211,6 +214,7 @@ type OceanEcs interface {
 	ResetDesiredCapacity()
 	ResetDrainingTimeout()
 	ResetEbsOptimized()
+	ResetFallbackToOndemand()
 	ResetFilters()
 	ResetIamInstanceProfile()
 	ResetId()
@@ -476,6 +480,26 @@ func (j *jsiiProxy_OceanEcs) EbsOptimizedInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ebsOptimizedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcs) FallbackToOndemand() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fallbackToOndemand",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanEcs) FallbackToOndemandInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fallbackToOndemandInput",
 		&returns,
 	)
 	return returns
@@ -1072,7 +1096,7 @@ func (j *jsiiProxy_OceanEcs) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.202.0/docs/resources/ocean_ecs spotinst_ocean_ecs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.203.0/docs/resources/ocean_ecs spotinst_ocean_ecs} Resource.
 func NewOceanEcs(scope constructs.Construct, id *string, config *OceanEcsConfig) OceanEcs {
 	_init_.Initialize()
 
@@ -1090,7 +1114,7 @@ func NewOceanEcs(scope constructs.Construct, id *string, config *OceanEcsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.202.0/docs/resources/ocean_ecs spotinst_ocean_ecs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.203.0/docs/resources/ocean_ecs spotinst_ocean_ecs} Resource.
 func NewOceanEcs_Override(o OceanEcs, scope constructs.Construct, id *string, config *OceanEcsConfig) {
 	_init_.Initialize()
 
@@ -1193,6 +1217,17 @@ func (j *jsiiProxy_OceanEcs)SetEbsOptimized(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ebsOptimized",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanEcs)SetFallbackToOndemand(val interface{}) {
+	if err := j.validateSetFallbackToOndemandParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fallbackToOndemand",
 		val,
 	)
 }
@@ -1945,6 +1980,14 @@ func (o *jsiiProxy_OceanEcs) ResetEbsOptimized() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetEbsOptimized",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanEcs) ResetFallbackToOndemand() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFallbackToOndemand",
 		nil, // no parameters
 	)
 }

@@ -163,6 +163,10 @@ func (j *jsiiProxy_OceanEcs) validateSetEbsOptimizedParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_OceanEcs) validateSetFallbackToOndemandParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanEcs) validateSetIamInstanceProfileParameters(val *string) error {
 	return nil
 }
