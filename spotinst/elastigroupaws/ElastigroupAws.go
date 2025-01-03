@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.203.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.204.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
 type ElastigroupAws interface {
 	cdktf.TerraformResource
 	AutoHealing() interface{}
@@ -2321,7 +2321,7 @@ func (j *jsiiProxy_ElastigroupAws) WaitForCapacityTimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.203.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.204.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws(scope constructs.Construct, id *string, config *ElastigroupAwsConfig) ElastigroupAws {
 	_init_.Initialize()
 
@@ -2339,7 +2339,7 @@ func NewElastigroupAws(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.203.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.204.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws_Override(e ElastigroupAws, scope constructs.Construct, id *string, config *ElastigroupAwsConfig) {
 	_init_.Initialize()
 
