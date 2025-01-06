@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.204.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke}.
 type ElastigroupGke interface {
 	cdktf.TerraformResource
 	BackendServices() ElastigroupGkeBackendServicesList
@@ -92,6 +92,9 @@ type ElastigroupGke interface {
 	MaxSizeInput() *float64
 	Metadata() ElastigroupGkeMetadataList
 	MetadataInput() interface{}
+	MinCpuPlatform() *string
+	SetMinCpuPlatform(val *string)
+	MinCpuPlatformInput() *string
 	MinSize() *float64
 	SetMinSize(val *float64)
 	MinSizeInput() *float64
@@ -136,6 +139,9 @@ type ElastigroupGke interface {
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
+	ShouldUtilizeCommitments() interface{}
+	SetShouldUtilizeCommitments(val interface{})
+	ShouldUtilizeCommitmentsInput() interface{}
 	ShutdownScript() *string
 	SetShutdownScript(val *string)
 	ShutdownScriptInput() *string
@@ -223,6 +229,7 @@ type ElastigroupGke interface {
 	ResetLabels()
 	ResetMaxSize()
 	ResetMetadata()
+	ResetMinCpuPlatform()
 	ResetMinSize()
 	ResetNetworkInterface()
 	ResetNodeImage()
@@ -237,6 +244,7 @@ type ElastigroupGke interface {
 	ResetScalingDownPolicy()
 	ResetScalingUpPolicy()
 	ResetServiceAccount()
+	ResetShouldUtilizeCommitments()
 	ResetShutdownScript()
 	ResetStartupScript()
 	ResetTags()
@@ -728,6 +736,26 @@ func (j *jsiiProxy_ElastigroupGke) MetadataInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupGke) MinCpuPlatform() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"minCpuPlatform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGke) MinCpuPlatformInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"minCpuPlatformInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupGke) MinSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1008,6 +1036,26 @@ func (j *jsiiProxy_ElastigroupGke) ServiceAccountInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupGke) ShouldUtilizeCommitments() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldUtilizeCommitments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGke) ShouldUtilizeCommitmentsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldUtilizeCommitmentsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupGke) ShutdownScript() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1099,7 +1147,7 @@ func (j *jsiiProxy_ElastigroupGke) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.204.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
 func NewElastigroupGke(scope constructs.Construct, id *string, config *ElastigroupGkeConfig) ElastigroupGke {
 	_init_.Initialize()
 
@@ -1117,7 +1165,7 @@ func NewElastigroupGke(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.204.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.0/docs/resources/elastigroup_gke spotinst_elastigroup_gke} Resource.
 func NewElastigroupGke_Override(e ElastigroupGke, scope constructs.Construct, id *string, config *ElastigroupGkeConfig) {
 	_init_.Initialize()
 
@@ -1298,6 +1346,17 @@ func (j *jsiiProxy_ElastigroupGke)SetMaxSize(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ElastigroupGke)SetMinCpuPlatform(val *string) {
+	if err := j.validateSetMinCpuPlatformParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minCpuPlatform",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElastigroupGke)SetMinSize(val *float64) {
 	if err := j.validateSetMinSizeParameters(val); err != nil {
 		panic(err)
@@ -1401,6 +1460,17 @@ func (j *jsiiProxy_ElastigroupGke)SetServiceAccount(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupGke)SetShouldUtilizeCommitments(val interface{}) {
+	if err := j.validateSetShouldUtilizeCommitmentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shouldUtilizeCommitments",
 		val,
 	)
 }
@@ -2059,6 +2129,14 @@ func (e *jsiiProxy_ElastigroupGke) ResetMetadata() {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupGke) ResetMinCpuPlatform() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMinCpuPlatform",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupGke) ResetMinSize() {
 	_jsii_.InvokeVoid(
 		e,
@@ -2151,6 +2229,14 @@ func (e *jsiiProxy_ElastigroupGke) ResetServiceAccount() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupGke) ResetShouldUtilizeCommitments() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetShouldUtilizeCommitments",
 		nil, // no parameters
 	)
 }

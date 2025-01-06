@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.204.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp}.
 type ElastigroupGcp interface {
 	cdktf.TerraformResource
 	AutoHealing() interface{}
@@ -101,6 +101,9 @@ type ElastigroupGcp interface {
 	MaxSizeInput() *float64
 	Metadata() ElastigroupGcpMetadataList
 	MetadataInput() interface{}
+	MinCpuPlatform() *string
+	SetMinCpuPlatform(val *string)
+	MinCpuPlatformInput() *string
 	MinSize() *float64
 	SetMinSize(val *float64)
 	MinSizeInput() *float64
@@ -120,6 +123,9 @@ type ElastigroupGcp interface {
 	PreemptiblePercentage() *float64
 	SetPreemptiblePercentage(val *float64)
 	PreemptiblePercentageInput() *float64
+	PreferredAvailabilityZones() *[]*string
+	SetPreferredAvailabilityZones(val *[]*string)
+	PreferredAvailabilityZonesInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -144,6 +150,9 @@ type ElastigroupGcp interface {
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
+	ShouldUtilizeCommitments() interface{}
+	SetShouldUtilizeCommitments(val interface{})
+	ShouldUtilizeCommitmentsInput() interface{}
 	ShutdownScript() *string
 	SetShutdownScript(val *string)
 	ShutdownScriptInput() *string
@@ -242,6 +251,7 @@ type ElastigroupGcp interface {
 	ResetLabels()
 	ResetMaxSize()
 	ResetMetadata()
+	ResetMinCpuPlatform()
 	ResetMinSize()
 	ResetNetworkInterface()
 	ResetOndemandCount()
@@ -250,12 +260,14 @@ type ElastigroupGcp interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPreemptiblePercentage()
+	ResetPreferredAvailabilityZones()
 	ResetProvisioningModel()
 	ResetRevertToPreemptible()
 	ResetScalingDownPolicy()
 	ResetScalingUpPolicy()
 	ResetScheduledTask()
 	ResetServiceAccount()
+	ResetShouldUtilizeCommitments()
 	ResetShutdownScript()
 	ResetStartupScript()
 	ResetSubnets()
@@ -809,6 +821,26 @@ func (j *jsiiProxy_ElastigroupGcp) MetadataInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupGcp) MinCpuPlatform() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"minCpuPlatform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGcp) MinCpuPlatformInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"minCpuPlatformInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupGcp) MinSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -934,6 +966,26 @@ func (j *jsiiProxy_ElastigroupGcp) PreemptiblePercentageInput() *float64 {
 	_jsii_.Get(
 		j,
 		"preemptiblePercentageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGcp) PreferredAvailabilityZones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredAvailabilityZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGcp) PreferredAvailabilityZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredAvailabilityZonesInput",
 		&returns,
 	)
 	return returns
@@ -1089,6 +1141,26 @@ func (j *jsiiProxy_ElastigroupGcp) ServiceAccountInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupGcp) ShouldUtilizeCommitments() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldUtilizeCommitments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGcp) ShouldUtilizeCommitmentsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shouldUtilizeCommitmentsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupGcp) ShutdownScript() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1220,7 +1292,7 @@ func (j *jsiiProxy_ElastigroupGcp) UnhealthyDurationInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.204.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp} Resource.
 func NewElastigroupGcp(scope constructs.Construct, id *string, config *ElastigroupGcpConfig) ElastigroupGcp {
 	_init_.Initialize()
 
@@ -1238,7 +1310,7 @@ func NewElastigroupGcp(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.204.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp} Resource.
 func NewElastigroupGcp_Override(e ElastigroupGcp, scope constructs.Construct, id *string, config *ElastigroupGcpConfig) {
 	_init_.Initialize()
 
@@ -1452,6 +1524,17 @@ func (j *jsiiProxy_ElastigroupGcp)SetMaxSize(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ElastigroupGcp)SetMinCpuPlatform(val *string) {
+	if err := j.validateSetMinCpuPlatformParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minCpuPlatform",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElastigroupGcp)SetMinSize(val *float64) {
 	if err := j.validateSetMinSizeParameters(val); err != nil {
 		panic(err)
@@ -1507,6 +1590,17 @@ func (j *jsiiProxy_ElastigroupGcp)SetPreemptiblePercentage(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ElastigroupGcp)SetPreferredAvailabilityZones(val *[]*string) {
+	if err := j.validateSetPreferredAvailabilityZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredAvailabilityZones",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElastigroupGcp)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -1544,6 +1638,17 @@ func (j *jsiiProxy_ElastigroupGcp)SetServiceAccount(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupGcp)SetShouldUtilizeCommitments(val interface{}) {
+	if err := j.validateSetShouldUtilizeCommitmentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shouldUtilizeCommitments",
 		val,
 	)
 }
@@ -2267,6 +2372,14 @@ func (e *jsiiProxy_ElastigroupGcp) ResetMetadata() {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupGcp) ResetMinCpuPlatform() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMinCpuPlatform",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupGcp) ResetMinSize() {
 	_jsii_.InvokeVoid(
 		e,
@@ -2315,6 +2428,14 @@ func (e *jsiiProxy_ElastigroupGcp) ResetPreemptiblePercentage() {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupGcp) ResetPreferredAvailabilityZones() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetPreferredAvailabilityZones",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupGcp) ResetProvisioningModel() {
 	_jsii_.InvokeVoid(
 		e,
@@ -2359,6 +2480,14 @@ func (e *jsiiProxy_ElastigroupGcp) ResetServiceAccount() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupGcp) ResetShouldUtilizeCommitments() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetShouldUtilizeCommitments",
 		nil, // no parameters
 	)
 }

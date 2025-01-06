@@ -195,6 +195,10 @@ func (j *jsiiProxy_ElastigroupGke) validateSetMaxSizeParameters(val *float64) er
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupGke) validateSetMinCpuPlatformParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupGke) validateSetMinSizeParameters(val *float64) error {
 	return nil
 }
@@ -228,6 +232,10 @@ func (j *jsiiProxy_ElastigroupGke) validateSetProvisioningModelParameters(val *s
 }
 
 func (j *jsiiProxy_ElastigroupGke) validateSetServiceAccountParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupGke) validateSetShouldUtilizeCommitmentsParameters(val interface{}) error {
 	return nil
 }
 

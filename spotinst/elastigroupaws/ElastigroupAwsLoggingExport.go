@@ -7,7 +7,7 @@ package elastigroupaws
 type ElastigroupAwsLoggingExport struct {
 	// s3 block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.204.0/docs/resources/elastigroup_aws#s3 ElastigroupAws#s3}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.0/docs/resources/elastigroup_aws#s3 ElastigroupAws#s3}
 	S3 interface{} `field:"optional" json:"s3" yaml:"s3"`
 }
 
