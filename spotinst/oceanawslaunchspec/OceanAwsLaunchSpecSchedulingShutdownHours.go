@@ -5,9 +5,9 @@ package oceanawslaunchspec
 
 
 type OceanAwsLaunchSpecSchedulingShutdownHours struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.0/docs/resources/ocean_aws_launch_spec#time_windows OceanAwsLaunchSpec#time_windows}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.1/docs/resources/ocean_aws_launch_spec#time_windows OceanAwsLaunchSpec#time_windows}.
 	TimeWindows *[]*string `field:"required" json:"timeWindows" yaml:"timeWindows"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.0/docs/resources/ocean_aws_launch_spec#is_enabled OceanAwsLaunchSpec#is_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.1/docs/resources/ocean_aws_launch_spec#is_enabled OceanAwsLaunchSpec#is_enabled}.
 	IsEnabled interface{} `field:"optional" json:"isEnabled" yaml:"isEnabled"`
 }
 
