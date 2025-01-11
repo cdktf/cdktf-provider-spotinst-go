@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.1/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec}.
 type OceanGkeLaunchSpec interface {
 	cdktf.TerraformResource
 	AutoscaleHeadrooms() OceanGkeLaunchSpecAutoscaleHeadroomsList
@@ -861,7 +861,7 @@ func (j *jsiiProxy_OceanGkeLaunchSpec) UpdatePolicyInput() *OceanGkeLaunchSpecUp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.1/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
 func NewOceanGkeLaunchSpec(scope constructs.Construct, id *string, config *OceanGkeLaunchSpecConfig) OceanGkeLaunchSpec {
 	_init_.Initialize()
 
@@ -879,7 +879,7 @@ func NewOceanGkeLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.1/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
 func NewOceanGkeLaunchSpec_Override(o OceanGkeLaunchSpec, scope constructs.Construct, id *string, config *OceanGkeLaunchSpecConfig) {
 	_init_.Initialize()
 

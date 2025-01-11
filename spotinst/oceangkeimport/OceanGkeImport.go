@@ -12,11 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.1/docs/resources/ocean_gke_import spotinst_ocean_gke_import}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import}.
 type OceanGkeImport interface {
 	cdktf.TerraformResource
 	Autoscaler() OceanGkeImportAutoscalerOutputReference
 	AutoscalerInput() *OceanGkeImportAutoscaler
+	AutoUpdate() OceanGkeImportAutoUpdateList
+	AutoUpdateInput() interface{}
 	BackendServices() OceanGkeImportBackendServicesList
 	BackendServicesInput() interface{}
 	Blacklist() *[]*string
@@ -153,6 +155,7 @@ type OceanGkeImport interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaler(value *OceanGkeImportAutoscaler)
+	PutAutoUpdate(value interface{})
 	PutBackendServices(value interface{})
 	PutFilters(value *OceanGkeImportFilters)
 	PutScheduledTask(value interface{})
@@ -160,6 +163,7 @@ type OceanGkeImport interface {
 	PutStrategy(value interface{})
 	PutUpdatePolicy(value *OceanGkeImportUpdatePolicy)
 	ResetAutoscaler()
+	ResetAutoUpdate()
 	ResetBackendServices()
 	ResetBlacklist()
 	ResetControllerClusterId()
@@ -211,6 +215,26 @@ func (j *jsiiProxy_OceanGkeImport) AutoscalerInput() *OceanGkeImportAutoscaler {
 	_jsii_.Get(
 		j,
 		"autoscalerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeImport) AutoUpdate() OceanGkeImportAutoUpdateList {
+	var returns OceanGkeImportAutoUpdateList
+	_jsii_.Get(
+		j,
+		"autoUpdate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeImport) AutoUpdateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoUpdateInput",
 		&returns,
 	)
 	return returns
@@ -727,7 +751,7 @@ func (j *jsiiProxy_OceanGkeImport) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.1/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
 func NewOceanGkeImport(scope constructs.Construct, id *string, config *OceanGkeImportConfig) OceanGkeImport {
 	_init_.Initialize()
 
@@ -745,7 +769,7 @@ func NewOceanGkeImport(scope constructs.Construct, id *string, config *OceanGkeI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.205.1/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/ocean_gke_import spotinst_ocean_gke_import} Resource.
 func NewOceanGkeImport_Override(o OceanGkeImport, scope constructs.Construct, id *string, config *OceanGkeImportConfig) {
 	_init_.Initialize()
 
@@ -1309,6 +1333,17 @@ func (o *jsiiProxy_OceanGkeImport) PutAutoscaler(value *OceanGkeImportAutoscaler
 	)
 }
 
+func (o *jsiiProxy_OceanGkeImport) PutAutoUpdate(value interface{}) {
+	if err := o.validatePutAutoUpdateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAutoUpdate",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanGkeImport) PutBackendServices(value interface{}) {
 	if err := o.validatePutBackendServicesParameters(value); err != nil {
 		panic(err)
@@ -1379,6 +1414,14 @@ func (o *jsiiProxy_OceanGkeImport) ResetAutoscaler() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAutoscaler",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanGkeImport) ResetAutoUpdate() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAutoUpdate",
 		nil, // no parameters
 	)
 }

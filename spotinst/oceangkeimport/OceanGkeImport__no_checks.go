@@ -79,6 +79,10 @@ func (o *jsiiProxy_OceanGkeImport) validatePutAutoscalerParameters(value *OceanG
 	return nil
 }
 
+func (o *jsiiProxy_OceanGkeImport) validatePutAutoUpdateParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanGkeImport) validatePutBackendServicesParameters(value interface{}) error {
 	return nil
 }
