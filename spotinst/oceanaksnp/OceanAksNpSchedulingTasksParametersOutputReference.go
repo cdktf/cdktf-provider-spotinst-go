@@ -34,6 +34,8 @@ type OceanAksNpSchedulingTasksParametersOutputReference interface {
 	SetInternalValue(val *OceanAksNpSchedulingTasksParameters)
 	ParametersClusterRoll() OceanAksNpSchedulingTasksParametersParametersClusterRollOutputReference
 	ParametersClusterRollInput() *OceanAksNpSchedulingTasksParametersParametersClusterRoll
+	ParametersUpgradeConfig() OceanAksNpSchedulingTasksParametersParametersUpgradeConfigOutputReference
+	ParametersUpgradeConfigInput() *OceanAksNpSchedulingTasksParametersParametersUpgradeConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type OceanAksNpSchedulingTasksParametersOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutParametersClusterRoll(value *OceanAksNpSchedulingTasksParametersParametersClusterRoll)
+	PutParametersUpgradeConfig(value *OceanAksNpSchedulingTasksParametersParametersUpgradeConfig)
 	ResetParametersClusterRoll()
+	ResetParametersUpgradeConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_OceanAksNpSchedulingTasksParametersOutputReference) Parameter
 	_jsii_.Get(
 		j,
 		"parametersClusterRollInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpSchedulingTasksParametersOutputReference) ParametersUpgradeConfig() OceanAksNpSchedulingTasksParametersParametersUpgradeConfigOutputReference {
+	var returns OceanAksNpSchedulingTasksParametersParametersUpgradeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"parametersUpgradeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpSchedulingTasksParametersOutputReference) ParametersUpgradeConfigInput() *OceanAksNpSchedulingTasksParametersParametersUpgradeConfig {
+	var returns *OceanAksNpSchedulingTasksParametersParametersUpgradeConfig
+	_jsii_.Get(
+		j,
+		"parametersUpgradeConfigInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (o *jsiiProxy_OceanAksNpSchedulingTasksParametersOutputReference) PutParame
 	)
 }
 
+func (o *jsiiProxy_OceanAksNpSchedulingTasksParametersOutputReference) PutParametersUpgradeConfig(value *OceanAksNpSchedulingTasksParametersParametersUpgradeConfig) {
+	if err := o.validatePutParametersUpgradeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putParametersUpgradeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAksNpSchedulingTasksParametersOutputReference) ResetParametersClusterRoll() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetParametersClusterRoll",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpSchedulingTasksParametersOutputReference) ResetParametersUpgradeConfig() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetParametersUpgradeConfig",
 		nil, // no parameters
 	)
 }

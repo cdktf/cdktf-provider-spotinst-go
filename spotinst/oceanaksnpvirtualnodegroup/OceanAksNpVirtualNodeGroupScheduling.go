@@ -7,7 +7,7 @@ package oceanaksnpvirtualnodegroup
 type OceanAksNpVirtualNodeGroupScheduling struct {
 	// shutdown_hours block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/ocean_aks_np_virtual_node_group#shutdown_hours OceanAksNpVirtualNodeGroup#shutdown_hours}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.207.0/docs/resources/ocean_aks_np_virtual_node_group#shutdown_hours OceanAksNpVirtualNodeGroup#shutdown_hours}
 	ShutdownHours *OceanAksNpVirtualNodeGroupSchedulingShutdownHours `field:"optional" json:"shutdownHours" yaml:"shutdownHours"`
 }
 

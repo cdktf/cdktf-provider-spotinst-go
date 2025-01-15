@@ -302,6 +302,17 @@ func (o *jsiiProxy_OceanAksNp) validatePutLinuxOsConfigParameters(value interfac
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNp) validatePutLoggingParameters(value *OceanAksNpLogging) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksNp) validatePutSchedulingParameters(value *OceanAksNpScheduling) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -345,6 +356,17 @@ func (o *jsiiProxy_OceanAksNp) validatePutTaintsParameters(value interface{}) er
 }
 
 func (o *jsiiProxy_OceanAksNp) validatePutUpdatePolicyParameters(value *OceanAksNpUpdatePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_OceanAksNp) validatePutVngTemplateSchedulingParameters(value *OceanAksNpVngTemplateScheduling) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

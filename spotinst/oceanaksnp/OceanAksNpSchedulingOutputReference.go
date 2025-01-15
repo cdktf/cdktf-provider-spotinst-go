@@ -34,6 +34,8 @@ type OceanAksNpSchedulingOutputReference interface {
 	SetInternalValue(val *OceanAksNpScheduling)
 	ShutdownHours() OceanAksNpSchedulingShutdownHoursOutputReference
 	ShutdownHoursInput() *OceanAksNpSchedulingShutdownHours
+	SuspensionHours() OceanAksNpSchedulingSuspensionHoursOutputReference
+	SuspensionHoursInput() *OceanAksNpSchedulingSuspensionHours
 	Tasks() OceanAksNpSchedulingTasksList
 	TasksInput() interface{}
 	// Experimental.
@@ -69,8 +71,10 @@ type OceanAksNpSchedulingOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutShutdownHours(value *OceanAksNpSchedulingShutdownHours)
+	PutSuspensionHours(value *OceanAksNpSchedulingSuspensionHours)
 	PutTasks(value interface{})
 	ResetShutdownHours()
+	ResetSuspensionHours()
 	ResetTasks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_OceanAksNpSchedulingOutputReference) ShutdownHoursInput() *Oc
 	_jsii_.Get(
 		j,
 		"shutdownHoursInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpSchedulingOutputReference) SuspensionHours() OceanAksNpSchedulingSuspensionHoursOutputReference {
+	var returns OceanAksNpSchedulingSuspensionHoursOutputReference
+	_jsii_.Get(
+		j,
+		"suspensionHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNpSchedulingOutputReference) SuspensionHoursInput() *OceanAksNpSchedulingSuspensionHours {
+	var returns *OceanAksNpSchedulingSuspensionHours
+	_jsii_.Get(
+		j,
+		"suspensionHoursInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +501,17 @@ func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) PutShutdownHours(value *
 	)
 }
 
+func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) PutSuspensionHours(value *OceanAksNpSchedulingSuspensionHours) {
+	if err := o.validatePutSuspensionHoursParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSuspensionHours",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) PutTasks(value interface{}) {
 	if err := o.validatePutTasksParameters(value); err != nil {
 		panic(err)
@@ -492,6 +527,14 @@ func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) ResetShutdownHours() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetShutdownHours",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) ResetSuspensionHours() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSuspensionHours",
 		nil, // no parameters
 	)
 }

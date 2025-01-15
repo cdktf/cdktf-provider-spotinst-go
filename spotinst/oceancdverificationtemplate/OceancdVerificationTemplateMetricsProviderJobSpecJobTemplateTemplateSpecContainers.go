@@ -5,11 +5,11 @@ package oceancdverificationtemplate
 
 
 type OceancdVerificationTemplateMetricsProviderJobSpecJobTemplateTemplateSpecContainers struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/oceancd_verification_template#command OceancdVerificationTemplate#command}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.207.0/docs/resources/oceancd_verification_template#command OceancdVerificationTemplate#command}.
 	Command *[]*string `field:"required" json:"command" yaml:"command"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/oceancd_verification_template#container_name OceancdVerificationTemplate#container_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.207.0/docs/resources/oceancd_verification_template#container_name OceancdVerificationTemplate#container_name}.
 	ContainerName *string `field:"required" json:"containerName" yaml:"containerName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/oceancd_verification_template#image OceancdVerificationTemplate#image}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.207.0/docs/resources/oceancd_verification_template#image OceancdVerificationTemplate#image}.
 	Image *string `field:"required" json:"image" yaml:"image"`
 }
 

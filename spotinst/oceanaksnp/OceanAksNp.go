@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.207.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np}.
 type OceanAksNp interface {
 	cdktf.TerraformResource
 	AksClusterName() *string
@@ -86,6 +86,8 @@ type OceanAksNp interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LinuxOsConfig() OceanAksNpLinuxOsConfigList
 	LinuxOsConfigInput() interface{}
+	Logging() OceanAksNpLoggingOutputReference
+	LoggingInput() *OceanAksNpLogging
 	MaxCount() *float64
 	SetMaxCount(val *float64)
 	MaxCountInput() *float64
@@ -146,6 +148,8 @@ type OceanAksNp interface {
 	VnetSubnetIds() *[]*string
 	SetVnetSubnetIds(val *[]*string)
 	VnetSubnetIdsInput() *[]*string
+	VngTemplateScheduling() OceanAksNpVngTemplateSchedulingOutputReference
+	VngTemplateSchedulingInput() *OceanAksNpVngTemplateScheduling
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -194,9 +198,11 @@ type OceanAksNp interface {
 	PutHeadrooms(value interface{})
 	PutHealth(value *OceanAksNpHealth)
 	PutLinuxOsConfig(value interface{})
+	PutLogging(value *OceanAksNpLogging)
 	PutScheduling(value *OceanAksNpScheduling)
 	PutTaints(value interface{})
 	PutUpdatePolicy(value *OceanAksNpUpdatePolicy)
+	PutVngTemplateScheduling(value *OceanAksNpVngTemplateScheduling)
 	ResetAutoscaler()
 	ResetEnableNodePublicIp()
 	ResetFallbackToOndemand()
@@ -207,6 +213,7 @@ type OceanAksNp interface {
 	ResetKubernetesVersion()
 	ResetLabels()
 	ResetLinuxOsConfig()
+	ResetLogging()
 	ResetMaxCount()
 	ResetMaxPodsPerNode()
 	ResetMinCount()
@@ -224,6 +231,7 @@ type OceanAksNp interface {
 	ResetTaints()
 	ResetUpdatePolicy()
 	ResetVnetSubnetIds()
+	ResetVngTemplateScheduling()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -652,6 +660,26 @@ func (j *jsiiProxy_OceanAksNp) LinuxOsConfigInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNp) Logging() OceanAksNpLoggingOutputReference {
+	var returns OceanAksNpLoggingOutputReference
+	_jsii_.Get(
+		j,
+		"logging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAksNp) LoggingInput() *OceanAksNpLogging {
+	var returns *OceanAksNpLogging
+	_jsii_.Get(
+		j,
+		"loggingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAksNp) MaxCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1022,8 +1050,28 @@ func (j *jsiiProxy_OceanAksNp) VnetSubnetIdsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAksNp) VngTemplateScheduling() OceanAksNpVngTemplateSchedulingOutputReference {
+	var returns OceanAksNpVngTemplateSchedulingOutputReference
+	_jsii_.Get(
+		j,
+		"vngTemplateScheduling",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+func (j *jsiiProxy_OceanAksNp) VngTemplateSchedulingInput() *OceanAksNpVngTemplateScheduling {
+	var returns *OceanAksNpVngTemplateScheduling
+	_jsii_.Get(
+		j,
+		"vngTemplateSchedulingInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.207.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpConfig) OceanAksNp {
 	_init_.Initialize()
 
@@ -1041,7 +1089,7 @@ func NewOceanAksNp(scope constructs.Construct, id *string, config *OceanAksNpCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.206.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.207.0/docs/resources/ocean_aks_np spotinst_ocean_aks_np} Resource.
 func NewOceanAksNp_Override(o OceanAksNp, scope constructs.Construct, id *string, config *OceanAksNpConfig) {
 	_init_.Initialize()
 
@@ -1781,6 +1829,17 @@ func (o *jsiiProxy_OceanAksNp) PutLinuxOsConfig(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanAksNp) PutLogging(value *OceanAksNpLogging) {
+	if err := o.validatePutLoggingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLogging",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAksNp) PutScheduling(value *OceanAksNpScheduling) {
 	if err := o.validatePutSchedulingParameters(value); err != nil {
 		panic(err)
@@ -1810,6 +1869,17 @@ func (o *jsiiProxy_OceanAksNp) PutUpdatePolicy(value *OceanAksNpUpdatePolicy) {
 	_jsii_.InvokeVoid(
 		o,
 		"putUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OceanAksNp) PutVngTemplateScheduling(value *OceanAksNpVngTemplateScheduling) {
+	if err := o.validatePutVngTemplateSchedulingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putVngTemplateScheduling",
 		[]interface{}{value},
 	)
 }
@@ -1890,6 +1960,14 @@ func (o *jsiiProxy_OceanAksNp) ResetLinuxOsConfig() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetLinuxOsConfig",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNp) ResetLogging() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLogging",
 		nil, // no parameters
 	)
 }
@@ -2010,6 +2088,14 @@ func (o *jsiiProxy_OceanAksNp) ResetVnetSubnetIds() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetVnetSubnetIds",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAksNp) ResetVngTemplateScheduling() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetVngTemplateScheduling",
 		nil, // no parameters
 	)
 }

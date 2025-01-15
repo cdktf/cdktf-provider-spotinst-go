@@ -51,6 +51,10 @@ func (o *jsiiProxy_OceanAksNpSchedulingTasksParametersOutputReference) validateP
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNpSchedulingTasksParametersOutputReference) validatePutParametersUpgradeConfigParameters(value *OceanAksNpSchedulingTasksParametersParametersUpgradeConfig) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksNpSchedulingTasksParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -95,6 +95,10 @@ func (o *jsiiProxy_OceanAksNp) validatePutLinuxOsConfigParameters(value interfac
 	return nil
 }
 
+func (o *jsiiProxy_OceanAksNp) validatePutLoggingParameters(value *OceanAksNpLogging) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAksNp) validatePutSchedulingParameters(value *OceanAksNpScheduling) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (o *jsiiProxy_OceanAksNp) validatePutTaintsParameters(value interface{}) er
 }
 
 func (o *jsiiProxy_OceanAksNp) validatePutUpdatePolicyParameters(value *OceanAksNpUpdatePolicy) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanAksNp) validatePutVngTemplateSchedulingParameters(value *OceanAksNpVngTemplateScheduling) error {
 	return nil
 }
 
