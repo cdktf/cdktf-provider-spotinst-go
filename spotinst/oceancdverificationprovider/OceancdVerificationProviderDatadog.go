@@ -5,11 +5,11 @@ package oceancdverificationprovider
 
 
 type OceancdVerificationProviderDatadog struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.207.0/docs/resources/oceancd_verification_provider#address OceancdVerificationProvider#address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.208.0/docs/resources/oceancd_verification_provider#address OceancdVerificationProvider#address}.
 	Address *string `field:"required" json:"address" yaml:"address"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.207.0/docs/resources/oceancd_verification_provider#api_key OceancdVerificationProvider#api_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.208.0/docs/resources/oceancd_verification_provider#api_key OceancdVerificationProvider#api_key}.
 	ApiKey *string `field:"required" json:"apiKey" yaml:"apiKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.207.0/docs/resources/oceancd_verification_provider#app_key OceancdVerificationProvider#app_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.208.0/docs/resources/oceancd_verification_provider#app_key OceancdVerificationProvider#app_key}.
 	AppKey *string `field:"required" json:"appKey" yaml:"appKey"`
 }
 

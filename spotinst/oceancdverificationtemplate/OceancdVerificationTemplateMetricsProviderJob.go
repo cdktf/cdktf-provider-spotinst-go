@@ -7,7 +7,7 @@ package oceancdverificationtemplate
 type OceancdVerificationTemplateMetricsProviderJob struct {
 	// spec block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.207.0/docs/resources/oceancd_verification_template#spec OceancdVerificationTemplate#spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.208.0/docs/resources/oceancd_verification_template#spec OceancdVerificationTemplate#spec}
 	Spec interface{} `field:"required" json:"spec" yaml:"spec"`
 }
 
