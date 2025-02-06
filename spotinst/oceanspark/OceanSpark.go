@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.208.0/docs/resources/ocean_spark spotinst_ocean_spark}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.209.1/docs/resources/ocean_spark spotinst_ocean_spark}.
 type OceanSpark interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,8 @@ type OceanSpark interface {
 	TerraformResourceType() *string
 	Webhook() OceanSparkWebhookOutputReference
 	WebhookInput() *OceanSparkWebhook
+	Workspaces() OceanSparkWorkspacesOutputReference
+	WorkspacesInput() *OceanSparkWorkspaces
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -125,6 +127,7 @@ type OceanSpark interface {
 	PutLogCollection(value *OceanSparkLogCollection)
 	PutSpark(value *OceanSparkSpark)
 	PutWebhook(value *OceanSparkWebhook)
+	PutWorkspaces(value *OceanSparkWorkspaces)
 	ResetCompute()
 	ResetId()
 	ResetIngress()
@@ -134,6 +137,7 @@ type OceanSpark interface {
 	ResetOverrideLogicalId()
 	ResetSpark()
 	ResetWebhook()
+	ResetWorkspaces()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -452,8 +456,28 @@ func (j *jsiiProxy_OceanSpark) WebhookInput() *OceanSparkWebhook {
 	return returns
 }
 
+func (j *jsiiProxy_OceanSpark) Workspaces() OceanSparkWorkspacesOutputReference {
+	var returns OceanSparkWorkspacesOutputReference
+	_jsii_.Get(
+		j,
+		"workspaces",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.208.0/docs/resources/ocean_spark spotinst_ocean_spark} Resource.
+func (j *jsiiProxy_OceanSpark) WorkspacesInput() *OceanSparkWorkspaces {
+	var returns *OceanSparkWorkspaces
+	_jsii_.Get(
+		j,
+		"workspacesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.209.1/docs/resources/ocean_spark spotinst_ocean_spark} Resource.
 func NewOceanSpark(scope constructs.Construct, id *string, config *OceanSparkConfig) OceanSpark {
 	_init_.Initialize()
 
@@ -471,7 +495,7 @@ func NewOceanSpark(scope constructs.Construct, id *string, config *OceanSparkCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.208.0/docs/resources/ocean_spark spotinst_ocean_spark} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.209.1/docs/resources/ocean_spark spotinst_ocean_spark} Resource.
 func NewOceanSpark_Override(o OceanSpark, scope constructs.Construct, id *string, config *OceanSparkConfig) {
 	_init_.Initialize()
 
@@ -980,6 +1004,17 @@ func (o *jsiiProxy_OceanSpark) PutWebhook(value *OceanSparkWebhook) {
 	)
 }
 
+func (o *jsiiProxy_OceanSpark) PutWorkspaces(value *OceanSparkWorkspaces) {
+	if err := o.validatePutWorkspacesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putWorkspaces",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanSpark) ResetCompute() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1032,6 +1067,14 @@ func (o *jsiiProxy_OceanSpark) ResetWebhook() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetWebhook",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanSpark) ResetWorkspaces() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetWorkspaces",
 		nil, // no parameters
 	)
 }

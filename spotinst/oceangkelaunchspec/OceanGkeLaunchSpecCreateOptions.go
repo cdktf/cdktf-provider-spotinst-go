@@ -5,7 +5,7 @@ package oceangkelaunchspec
 
 
 type OceanGkeLaunchSpecCreateOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.208.0/docs/resources/ocean_gke_launch_spec#initial_nodes OceanGkeLaunchSpec#initial_nodes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.209.1/docs/resources/ocean_gke_launch_spec#initial_nodes OceanGkeLaunchSpec#initial_nodes}.
 	InitialNodes *float64 `field:"optional" json:"initialNodes" yaml:"initialNodes"`
 }
 

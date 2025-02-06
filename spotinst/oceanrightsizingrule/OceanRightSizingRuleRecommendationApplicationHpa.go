@@ -5,7 +5,7 @@ package oceanrightsizingrule
 
 
 type OceanRightSizingRuleRecommendationApplicationHpa struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.208.0/docs/resources/ocean_right_sizing_rule#allow_hpa_recommendations OceanRightSizingRule#allow_hpa_recommendations}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.209.1/docs/resources/ocean_right_sizing_rule#allow_hpa_recommendations OceanRightSizingRule#allow_hpa_recommendations}.
 	AllowHpaRecommendations interface{} `field:"optional" json:"allowHpaRecommendations" yaml:"allowHpaRecommendations"`
 }
 

@@ -95,6 +95,10 @@ func (o *jsiiProxy_OceanSpark) validatePutWebhookParameters(value *OceanSparkWeb
 	return nil
 }
 
+func (o *jsiiProxy_OceanSpark) validatePutWorkspacesParameters(value *OceanSparkWorkspaces) error {
+	return nil
+}
+
 func validateOceanSpark_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
