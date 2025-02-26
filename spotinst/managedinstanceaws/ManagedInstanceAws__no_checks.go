@@ -103,6 +103,10 @@ func (m *jsiiProxy_ManagedInstanceAws) validatePutNetworkInterfaceParameters(val
 	return nil
 }
 
+func (m *jsiiProxy_ManagedInstanceAws) validatePutResourceRequirementsParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedInstanceAws) validatePutResourceTagSpecificationParameters(value interface{}) error {
 	return nil
 }
@@ -248,6 +252,10 @@ func (j *jsiiProxy_ManagedInstanceAws) validateSetPlacementTenancyParameters(val
 }
 
 func (j *jsiiProxy_ManagedInstanceAws) validateSetPreferredTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ManagedInstanceAws) validateSetPreferredTypesParameters(val *[]*string) error {
 	return nil
 }
 

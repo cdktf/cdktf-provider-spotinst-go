@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.209.2/docs/resources/managed_instance_aws spotinst_managed_instance_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.210.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws}.
 type ManagedInstanceAws interface {
 	cdktf.TerraformResource
 	AutoHealing() interface{}
@@ -137,6 +137,9 @@ type ManagedInstanceAws interface {
 	PreferredType() *string
 	SetPreferredType(val *string)
 	PreferredTypeInput() *string
+	PreferredTypes() *[]*string
+	SetPreferredTypes(val *[]*string)
+	PreferredTypesInput() *[]*string
 	PrivateIp() *string
 	SetPrivateIp(val *string)
 	PrivateIpInput() *string
@@ -156,6 +159,8 @@ type ManagedInstanceAws interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ResourceRequirements() ManagedInstanceAwsResourceRequirementsList
+	ResourceRequirementsInput() interface{}
 	ResourceTagSpecification() ManagedInstanceAwsResourceTagSpecificationList
 	ResourceTagSpecificationInput() interface{}
 	RevertToSpot() ManagedInstanceAwsRevertToSpotOutputReference
@@ -241,6 +246,7 @@ type ManagedInstanceAws interface {
 	PutManagedInstanceAction(value *ManagedInstanceAwsManagedInstanceAction)
 	PutMetadataOptions(value *ManagedInstanceAwsMetadataOptions)
 	PutNetworkInterface(value interface{})
+	PutResourceRequirements(value interface{})
 	PutResourceTagSpecification(value interface{})
 	PutRevertToSpot(value *ManagedInstanceAwsRevertToSpot)
 	PutScheduledTask(value interface{})
@@ -260,6 +266,7 @@ type ManagedInstanceAws interface {
 	ResetHealthCheckType()
 	ResetIamInstanceProfile()
 	ResetId()
+	ResetInstanceTypes()
 	ResetIntegrationRoute53()
 	ResetKeyPair()
 	ResetLifeCycle()
@@ -277,8 +284,10 @@ type ManagedInstanceAws interface {
 	ResetPersistRootDevice()
 	ResetPlacementTenancy()
 	ResetPreferredType()
+	ResetPreferredTypes()
 	ResetPrivateIp()
 	ResetRegion()
+	ResetResourceRequirements()
 	ResetResourceTagSpecification()
 	ResetRevertToSpot()
 	ResetScheduledTask()
@@ -1066,6 +1075,26 @@ func (j *jsiiProxy_ManagedInstanceAws) PreferredTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ManagedInstanceAws) PreferredTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedInstanceAws) PreferredTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredTypesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ManagedInstanceAws) PrivateIp() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1151,6 +1180,26 @@ func (j *jsiiProxy_ManagedInstanceAws) RegionInput() *string {
 	_jsii_.Get(
 		j,
 		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedInstanceAws) ResourceRequirements() ManagedInstanceAwsResourceRequirementsList {
+	var returns ManagedInstanceAwsResourceRequirementsList
+	_jsii_.Get(
+		j,
+		"resourceRequirements",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ManagedInstanceAws) ResourceRequirementsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"resourceRequirementsInput",
 		&returns,
 	)
 	return returns
@@ -1407,7 +1456,7 @@ func (j *jsiiProxy_ManagedInstanceAws) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.209.2/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.210.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
 func NewManagedInstanceAws(scope constructs.Construct, id *string, config *ManagedInstanceAwsConfig) ManagedInstanceAws {
 	_init_.Initialize()
 
@@ -1425,7 +1474,7 @@ func NewManagedInstanceAws(scope constructs.Construct, id *string, config *Manag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.209.2/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.210.0/docs/resources/managed_instance_aws spotinst_managed_instance_aws} Resource.
 func NewManagedInstanceAws_Override(m ManagedInstanceAws, scope constructs.Construct, id *string, config *ManagedInstanceAwsConfig) {
 	_init_.Initialize()
 
@@ -1767,6 +1816,17 @@ func (j *jsiiProxy_ManagedInstanceAws)SetPreferredType(val *string) {
 	_jsii_.Set(
 		j,
 		"preferredType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ManagedInstanceAws)SetPreferredTypes(val *[]*string) {
+	if err := j.validateSetPreferredTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredTypes",
 		val,
 	)
 }
@@ -2330,6 +2390,17 @@ func (m *jsiiProxy_ManagedInstanceAws) PutNetworkInterface(value interface{}) {
 	)
 }
 
+func (m *jsiiProxy_ManagedInstanceAws) PutResourceRequirements(value interface{}) {
+	if err := m.validatePutResourceRequirementsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putResourceRequirements",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_ManagedInstanceAws) PutResourceTagSpecification(value interface{}) {
 	if err := m.validatePutResourceTagSpecificationParameters(value); err != nil {
 		panic(err)
@@ -2494,6 +2565,14 @@ func (m *jsiiProxy_ManagedInstanceAws) ResetId() {
 	)
 }
 
+func (m *jsiiProxy_ManagedInstanceAws) ResetInstanceTypes() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetInstanceTypes",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_ManagedInstanceAws) ResetIntegrationRoute53() {
 	_jsii_.InvokeVoid(
 		m,
@@ -2614,6 +2693,14 @@ func (m *jsiiProxy_ManagedInstanceAws) ResetPreferredType() {
 	)
 }
 
+func (m *jsiiProxy_ManagedInstanceAws) ResetPreferredTypes() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPreferredTypes",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_ManagedInstanceAws) ResetPrivateIp() {
 	_jsii_.InvokeVoid(
 		m,
@@ -2626,6 +2713,14 @@ func (m *jsiiProxy_ManagedInstanceAws) ResetRegion() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_ManagedInstanceAws) ResetResourceRequirements() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetResourceRequirements",
 		nil, // no parameters
 	)
 }

@@ -108,6 +108,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "placementTenancyInput", GoGetter: "PlacementTenancyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "preferredType", GoGetter: "PreferredType"},
 			_jsii_.MemberProperty{JsiiProperty: "preferredTypeInput", GoGetter: "PreferredTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "preferredTypes", GoGetter: "PreferredTypes"},
+			_jsii_.MemberProperty{JsiiProperty: "preferredTypesInput", GoGetter: "PreferredTypesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "privateIp", GoGetter: "PrivateIp"},
 			_jsii_.MemberProperty{JsiiProperty: "privateIpInput", GoGetter: "PrivateIpInput"},
 			_jsii_.MemberProperty{JsiiProperty: "product", GoGetter: "Product"},
@@ -121,6 +123,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putManagedInstanceAction", GoMethod: "PutManagedInstanceAction"},
 			_jsii_.MemberMethod{JsiiMethod: "putMetadataOptions", GoMethod: "PutMetadataOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkInterface", GoMethod: "PutNetworkInterface"},
+			_jsii_.MemberMethod{JsiiMethod: "putResourceRequirements", GoMethod: "PutResourceRequirements"},
 			_jsii_.MemberMethod{JsiiMethod: "putResourceTagSpecification", GoMethod: "PutResourceTagSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "putRevertToSpot", GoMethod: "PutRevertToSpot"},
 			_jsii_.MemberMethod{JsiiMethod: "putScheduledTask", GoMethod: "PutScheduledTask"},
@@ -143,6 +146,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthCheckType", GoMethod: "ResetHealthCheckType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIamInstanceProfile", GoMethod: "ResetIamInstanceProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTypes", GoMethod: "ResetInstanceTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIntegrationRoute53", GoMethod: "ResetIntegrationRoute53"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKeyPair", GoMethod: "ResetKeyPair"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLifeCycle", GoMethod: "ResetLifeCycle"},
@@ -158,8 +162,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPersistRootDevice", GoMethod: "ResetPersistRootDevice"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlacementTenancy", GoMethod: "ResetPlacementTenancy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreferredType", GoMethod: "ResetPreferredType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPreferredTypes", GoMethod: "ResetPreferredTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivateIp", GoMethod: "ResetPrivateIp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceRequirements", GoMethod: "ResetResourceRequirements"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResourceTagSpecification", GoMethod: "ResetResourceTagSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRevertToSpot", GoMethod: "ResetRevertToSpot"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScheduledTask", GoMethod: "ResetScheduledTask"},
@@ -169,6 +175,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetUnhealthyDuration", GoMethod: "ResetUnhealthyDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserData", GoMethod: "ResetUserData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUtilizeReservedInstances", GoMethod: "ResetUtilizeReservedInstances"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceRequirements", GoGetter: "ResourceRequirements"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceRequirementsInput", GoGetter: "ResourceRequirementsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceTagSpecification", GoGetter: "ResourceTagSpecification"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceTagSpecificationInput", GoGetter: "ResourceTagSpecificationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "revertToSpot", GoGetter: "RevertToSpot"},
@@ -795,6 +803,87 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ManagedInstanceAwsNetworkInterfaceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.managedInstanceAws.ManagedInstanceAwsResourceRequirements",
+		reflect.TypeOf((*ManagedInstanceAwsResourceRequirements)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.managedInstanceAws.ManagedInstanceAwsResourceRequirementsList",
+		reflect.TypeOf((*ManagedInstanceAwsResourceRequirementsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ManagedInstanceAwsResourceRequirementsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.managedInstanceAws.ManagedInstanceAwsResourceRequirementsOutputReference",
+		reflect.TypeOf((*ManagedInstanceAwsResourceRequirementsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedInstanceFamilies", GoGetter: "ExcludedInstanceFamilies"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedInstanceFamiliesInput", GoGetter: "ExcludedInstanceFamiliesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedInstanceGenerations", GoGetter: "ExcludedInstanceGenerations"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedInstanceGenerationsInput", GoGetter: "ExcludedInstanceGenerationsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedInstanceTypes", GoGetter: "ExcludedInstanceTypes"},
+			_jsii_.MemberProperty{JsiiProperty: "excludedInstanceTypesInput", GoGetter: "ExcludedInstanceTypesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredGpuMaximum", GoGetter: "RequiredGpuMaximum"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredGpuMaximumInput", GoGetter: "RequiredGpuMaximumInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredGpuMinimum", GoGetter: "RequiredGpuMinimum"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredGpuMinimumInput", GoGetter: "RequiredGpuMinimumInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredMemoryMaximum", GoGetter: "RequiredMemoryMaximum"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredMemoryMaximumInput", GoGetter: "RequiredMemoryMaximumInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredMemoryMinimum", GoGetter: "RequiredMemoryMinimum"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredMemoryMinimumInput", GoGetter: "RequiredMemoryMinimumInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredVcpuMaximum", GoGetter: "RequiredVcpuMaximum"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredVcpuMaximumInput", GoGetter: "RequiredVcpuMaximumInput"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredVcpuMinimum", GoGetter: "RequiredVcpuMinimum"},
+			_jsii_.MemberProperty{JsiiProperty: "requiredVcpuMinimumInput", GoGetter: "RequiredVcpuMinimumInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludedInstanceFamilies", GoMethod: "ResetExcludedInstanceFamilies"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludedInstanceGenerations", GoMethod: "ResetExcludedInstanceGenerations"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludedInstanceTypes", GoMethod: "ResetExcludedInstanceTypes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequiredGpuMaximum", GoMethod: "ResetRequiredGpuMaximum"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRequiredGpuMinimum", GoMethod: "ResetRequiredGpuMinimum"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ManagedInstanceAwsResourceRequirementsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

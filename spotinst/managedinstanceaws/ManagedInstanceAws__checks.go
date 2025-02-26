@@ -364,6 +364,37 @@ func (m *jsiiProxy_ManagedInstanceAws) validatePutNetworkInterfaceParameters(val
 	return nil
 }
 
+func (m *jsiiProxy_ManagedInstanceAws) validatePutResourceRequirementsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ManagedInstanceAwsResourceRequirements:
+		value := value.(*[]*ManagedInstanceAwsResourceRequirements)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ManagedInstanceAwsResourceRequirements:
+		value_ := value.([]*ManagedInstanceAwsResourceRequirements)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ManagedInstanceAwsResourceRequirements; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_ManagedInstanceAws) validatePutResourceTagSpecificationParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -891,6 +922,14 @@ func (j *jsiiProxy_ManagedInstanceAws) validateSetPlacementTenancyParameters(val
 }
 
 func (j *jsiiProxy_ManagedInstanceAws) validateSetPreferredTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ManagedInstanceAws) validateSetPreferredTypesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
