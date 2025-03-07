@@ -123,6 +123,10 @@ func (e *jsiiProxy_ElastigroupGke) validatePutScalingUpPolicyParameters(value in
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupGke) validatePutShieldedInstanceConfigParameters(value *ElastigroupGkeShieldedInstanceConfig) error {
+	return nil
+}
+
 func validateElastigroupGke_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

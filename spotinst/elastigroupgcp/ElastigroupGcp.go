@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.210.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.211.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp}.
 type ElastigroupGcp interface {
 	cdktf.TerraformResource
 	AutoHealing() interface{}
@@ -150,6 +150,8 @@ type ElastigroupGcp interface {
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
+	ShieldedInstanceConfig() ElastigroupGcpShieldedInstanceConfigOutputReference
+	ShieldedInstanceConfigInput() *ElastigroupGcpShieldedInstanceConfig
 	ShouldUtilizeCommitments() interface{}
 	SetShouldUtilizeCommitments(val interface{})
 	ShouldUtilizeCommitmentsInput() interface{}
@@ -229,6 +231,7 @@ type ElastigroupGcp interface {
 	PutScalingDownPolicy(value interface{})
 	PutScalingUpPolicy(value interface{})
 	PutScheduledTask(value interface{})
+	PutShieldedInstanceConfig(value *ElastigroupGcpShieldedInstanceConfig)
 	PutSubnets(value interface{})
 	ResetAutoHealing()
 	ResetAvailabilityZones()
@@ -267,6 +270,7 @@ type ElastigroupGcp interface {
 	ResetScalingUpPolicy()
 	ResetScheduledTask()
 	ResetServiceAccount()
+	ResetShieldedInstanceConfig()
 	ResetShouldUtilizeCommitments()
 	ResetShutdownScript()
 	ResetStartupScript()
@@ -1141,6 +1145,26 @@ func (j *jsiiProxy_ElastigroupGcp) ServiceAccountInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupGcp) ShieldedInstanceConfig() ElastigroupGcpShieldedInstanceConfigOutputReference {
+	var returns ElastigroupGcpShieldedInstanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGcp) ShieldedInstanceConfigInput() *ElastigroupGcpShieldedInstanceConfig {
+	var returns *ElastigroupGcpShieldedInstanceConfig
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupGcp) ShouldUtilizeCommitments() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1292,7 +1316,7 @@ func (j *jsiiProxy_ElastigroupGcp) UnhealthyDurationInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.210.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.211.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp} Resource.
 func NewElastigroupGcp(scope constructs.Construct, id *string, config *ElastigroupGcpConfig) ElastigroupGcp {
 	_init_.Initialize()
 
@@ -1310,7 +1334,7 @@ func NewElastigroupGcp(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.210.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.211.0/docs/resources/elastigroup_gcp spotinst_elastigroup_gcp} Resource.
 func NewElastigroupGcp_Override(e ElastigroupGcp, scope constructs.Construct, id *string, config *ElastigroupGcpConfig) {
 	_init_.Initialize()
 
@@ -2193,6 +2217,17 @@ func (e *jsiiProxy_ElastigroupGcp) PutScheduledTask(value interface{}) {
 	)
 }
 
+func (e *jsiiProxy_ElastigroupGcp) PutShieldedInstanceConfig(value *ElastigroupGcpShieldedInstanceConfig) {
+	if err := e.validatePutShieldedInstanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putShieldedInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupGcp) PutSubnets(value interface{}) {
 	if err := e.validatePutSubnetsParameters(value); err != nil {
 		panic(err)
@@ -2480,6 +2515,14 @@ func (e *jsiiProxy_ElastigroupGcp) ResetServiceAccount() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupGcp) ResetShieldedInstanceConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetShieldedInstanceConfig",
 		nil, // no parameters
 	)
 }

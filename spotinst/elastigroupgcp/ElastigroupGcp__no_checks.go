@@ -127,6 +127,10 @@ func (e *jsiiProxy_ElastigroupGcp) validatePutScheduledTaskParameters(value inte
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupGcp) validatePutShieldedInstanceConfigParameters(value *ElastigroupGcpShieldedInstanceConfig) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupGcp) validatePutSubnetsParameters(value interface{}) error {
 	return nil
 }

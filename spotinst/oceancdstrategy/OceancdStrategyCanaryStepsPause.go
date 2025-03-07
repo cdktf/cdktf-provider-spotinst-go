@@ -5,7 +5,7 @@ package oceancdstrategy
 
 
 type OceancdStrategyCanaryStepsPause struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.210.0/docs/resources/oceancd_strategy#duration OceancdStrategy#duration}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.211.0/docs/resources/oceancd_strategy#duration OceancdStrategy#duration}.
 	Duration *string `field:"optional" json:"duration" yaml:"duration"`
 }
 
