@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.211.0/docs/resources/organization_user_group spotinst_organization_user_group}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.212.0/docs/resources/organization_user_group spotinst_organization_user_group}.
 type OrganizationUserGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_OrganizationUserGroup) UserIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.211.0/docs/resources/organization_user_group spotinst_organization_user_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.212.0/docs/resources/organization_user_group spotinst_organization_user_group} Resource.
 func NewOrganizationUserGroup(scope constructs.Construct, id *string, config *OrganizationUserGroupConfig) OrganizationUserGroup {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewOrganizationUserGroup(scope constructs.Construct, id *string, config *Or
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.211.0/docs/resources/organization_user_group spotinst_organization_user_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.212.0/docs/resources/organization_user_group spotinst_organization_user_group} Resource.
 func NewOrganizationUserGroup_Override(o OrganizationUserGroup, scope constructs.Construct, id *string, config *OrganizationUserGroupConfig) {
 	_init_.Initialize()
 

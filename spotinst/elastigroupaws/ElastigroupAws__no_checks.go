@@ -75,6 +75,10 @@ func (e *jsiiProxy_ElastigroupAws) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAws) validatePutAvailabilityZonesParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAws) validatePutCpuOptionsParameters(value *ElastigroupAwsCpuOptions) error {
 	return nil
 }
@@ -224,10 +228,6 @@ func validateElastigroupAws_IsTerraformResourceParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_ElastigroupAws) validateSetAutoHealingParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ElastigroupAws) validateSetAvailabilityZonesParameters(val *[]*string) error {
 	return nil
 }
 

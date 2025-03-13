@@ -12,15 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.211.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.212.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
 type ElastigroupAws interface {
 	cdktf.TerraformResource
 	AutoHealing() interface{}
 	SetAutoHealing(val interface{})
 	AutoHealingInput() interface{}
-	AvailabilityZones() *[]*string
-	SetAvailabilityZones(val *[]*string)
-	AvailabilityZonesInput() *[]*string
+	AvailabilityZones() ElastigroupAwsAvailabilityZonesList
+	AvailabilityZonesInput() interface{}
 	BlockDevicesMode() *string
 	SetBlockDevicesMode(val *string)
 	BlockDevicesModeInput() *string
@@ -326,6 +325,7 @@ type ElastigroupAws interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAvailabilityZones(value interface{})
 	PutCpuOptions(value *ElastigroupAwsCpuOptions)
 	PutEbsBlockDevice(value interface{})
 	PutEphemeralBlockDevice(value interface{})
@@ -480,8 +480,8 @@ func (j *jsiiProxy_ElastigroupAws) AutoHealingInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ElastigroupAws) AvailabilityZones() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ElastigroupAws) AvailabilityZones() ElastigroupAwsAvailabilityZonesList {
+	var returns ElastigroupAwsAvailabilityZonesList
 	_jsii_.Get(
 		j,
 		"availabilityZones",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_ElastigroupAws) AvailabilityZones() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ElastigroupAws) AvailabilityZonesInput() *[]*string {
-	var returns *[]*string
+func (j *jsiiProxy_ElastigroupAws) AvailabilityZonesInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"availabilityZonesInput",
@@ -2321,7 +2321,7 @@ func (j *jsiiProxy_ElastigroupAws) WaitForCapacityTimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.211.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.212.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws(scope constructs.Construct, id *string, config *ElastigroupAwsConfig) ElastigroupAws {
 	_init_.Initialize()
 
@@ -2339,7 +2339,7 @@ func NewElastigroupAws(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.211.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.212.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws_Override(e ElastigroupAws, scope constructs.Construct, id *string, config *ElastigroupAwsConfig) {
 	_init_.Initialize()
 
@@ -2357,17 +2357,6 @@ func (j *jsiiProxy_ElastigroupAws)SetAutoHealing(val interface{}) {
 	_jsii_.Set(
 		j,
 		"autoHealing",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ElastigroupAws)SetAvailabilityZones(val *[]*string) {
-	if err := j.validateSetAvailabilityZonesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"availabilityZones",
 		val,
 	)
 }
@@ -3340,6 +3329,17 @@ func (e *jsiiProxy_ElastigroupAws) OverrideLogicalId(newLogicalId *string) {
 		e,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAws) PutAvailabilityZones(value interface{}) {
+	if err := e.validatePutAvailabilityZonesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putAvailabilityZones",
+		[]interface{}{value},
 	)
 }
 
