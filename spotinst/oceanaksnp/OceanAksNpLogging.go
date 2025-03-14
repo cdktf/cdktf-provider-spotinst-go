@@ -7,7 +7,7 @@ package oceanaksnp
 type OceanAksNpLogging struct {
 	// export block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.212.0/docs/resources/ocean_aks_np#export OceanAksNp#export}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.213.0/docs/resources/ocean_aks_np#export OceanAksNp#export}
 	Export *OceanAksNpLoggingExport `field:"optional" json:"export" yaml:"export"`
 }
 
