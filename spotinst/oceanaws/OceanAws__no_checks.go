@@ -103,6 +103,10 @@ func (o *jsiiProxy_OceanAws) validatePutInstanceMetadataOptionsParameters(value 
 	return nil
 }
 
+func (o *jsiiProxy_OceanAws) validatePutInstanceStorePolicyParameters(value *OceanAwsInstanceStorePolicy) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAws) validatePutLoadBalancersParameters(value interface{}) error {
 	return nil
 }

@@ -63,6 +63,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceMetadataOptions", GoGetter: "InstanceMetadataOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceMetadataOptionsInput", GoGetter: "InstanceMetadataOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceStorePolicy", GoGetter: "InstanceStorePolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceStorePolicyInput", GoGetter: "InstanceStorePolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypes", GoGetter: "InstanceTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypesFilters", GoGetter: "InstanceTypesFilters"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypesFiltersInput", GoGetter: "InstanceTypesFiltersInput"},
@@ -96,6 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEphemeralStorage", GoMethod: "PutEphemeralStorage"},
 			_jsii_.MemberMethod{JsiiMethod: "putImages", GoMethod: "PutImages"},
 			_jsii_.MemberMethod{JsiiMethod: "putInstanceMetadataOptions", GoMethod: "PutInstanceMetadataOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putInstanceStorePolicy", GoMethod: "PutInstanceStorePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putInstanceTypesFilters", GoMethod: "PutInstanceTypesFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "putLabels", GoMethod: "PutLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "putResourceLimits", GoMethod: "PutResourceLimits"},
@@ -122,6 +125,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetImageId", GoMethod: "ResetImageId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImages", GoMethod: "ResetImages"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceMetadataOptions", GoMethod: "ResetInstanceMetadataOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstanceStorePolicy", GoMethod: "ResetInstanceStorePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTypes", GoMethod: "ResetInstanceTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTypesFilters", GoMethod: "ResetInstanceTypesFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
@@ -896,6 +900,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OceanAwsLaunchSpecInstanceMetadataOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanAwsLaunchSpec.OceanAwsLaunchSpecInstanceStorePolicy",
+		reflect.TypeOf((*OceanAwsLaunchSpecInstanceStorePolicy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanAwsLaunchSpec.OceanAwsLaunchSpecInstanceStorePolicyOutputReference",
+		reflect.TypeOf((*OceanAwsLaunchSpecInstanceStorePolicyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceStorePolicyType", GoGetter: "InstanceStorePolicyType"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceStorePolicyTypeInput", GoGetter: "InstanceStorePolicyTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstanceStorePolicyType", GoMethod: "ResetInstanceStorePolicyType"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanAwsLaunchSpecInstanceStorePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.213.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.214.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
 type OceanAwsLaunchSpec interface {
 	cdktf.TerraformResource
 	AssociatePublicIpAddress() interface{}
@@ -71,6 +71,8 @@ type OceanAwsLaunchSpec interface {
 	ImagesInput() interface{}
 	InstanceMetadataOptions() OceanAwsLaunchSpecInstanceMetadataOptionsOutputReference
 	InstanceMetadataOptionsInput() *OceanAwsLaunchSpecInstanceMetadataOptions
+	InstanceStorePolicy() OceanAwsLaunchSpecInstanceStorePolicyOutputReference
+	InstanceStorePolicyInput() *OceanAwsLaunchSpecInstanceStorePolicy
 	InstanceTypes() *[]*string
 	SetInstanceTypes(val *[]*string)
 	InstanceTypesFilters() OceanAwsLaunchSpecInstanceTypesFiltersOutputReference
@@ -197,6 +199,7 @@ type OceanAwsLaunchSpec interface {
 	PutEphemeralStorage(value interface{})
 	PutImages(value interface{})
 	PutInstanceMetadataOptions(value *OceanAwsLaunchSpecInstanceMetadataOptions)
+	PutInstanceStorePolicy(value *OceanAwsLaunchSpecInstanceStorePolicy)
 	PutInstanceTypesFilters(value *OceanAwsLaunchSpecInstanceTypesFilters)
 	PutLabels(value interface{})
 	PutResourceLimits(value interface{})
@@ -220,6 +223,7 @@ type OceanAwsLaunchSpec interface {
 	ResetImageId()
 	ResetImages()
 	ResetInstanceMetadataOptions()
+	ResetInstanceStorePolicy()
 	ResetInstanceTypes()
 	ResetInstanceTypesFilters()
 	ResetLabels()
@@ -615,6 +619,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) InstanceMetadataOptionsInput() *OceanAwsL
 	_jsii_.Get(
 		j,
 		"instanceMetadataOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) InstanceStorePolicy() OceanAwsLaunchSpecInstanceStorePolicyOutputReference {
+	var returns OceanAwsLaunchSpecInstanceStorePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"instanceStorePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) InstanceStorePolicyInput() *OceanAwsLaunchSpecInstanceStorePolicy {
+	var returns *OceanAwsLaunchSpecInstanceStorePolicy
+	_jsii_.Get(
+		j,
+		"instanceStorePolicyInput",
 		&returns,
 	)
 	return returns
@@ -1101,7 +1125,7 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.213.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.214.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) OceanAwsLaunchSpec {
 	_init_.Initialize()
 
@@ -1119,7 +1143,7 @@ func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.213.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.214.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec_Override(o OceanAwsLaunchSpec, scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1826,6 +1850,17 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutInstanceMetadataOptions(value *OceanAw
 	)
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) PutInstanceStorePolicy(value *OceanAwsLaunchSpecInstanceStorePolicy) {
+	if err := o.validatePutInstanceStorePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putInstanceStorePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutInstanceTypesFilters(value *OceanAwsLaunchSpecInstanceTypesFilters) {
 	if err := o.validatePutInstanceTypesFiltersParameters(value); err != nil {
 		panic(err)
@@ -2033,6 +2068,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) ResetInstanceMetadataOptions() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetInstanceMetadataOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpec) ResetInstanceStorePolicy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInstanceStorePolicy",
 		nil, // no parameters
 	)
 }

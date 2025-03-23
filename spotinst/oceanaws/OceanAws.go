@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.213.0/docs/resources/ocean_aws spotinst_ocean_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.214.0/docs/resources/ocean_aws spotinst_ocean_aws}.
 type OceanAws interface {
 	cdktf.TerraformResource
 	AssociateIpv6Address() interface{}
@@ -92,6 +92,8 @@ type OceanAws interface {
 	ImageIdInput() *string
 	InstanceMetadataOptions() OceanAwsInstanceMetadataOptionsOutputReference
 	InstanceMetadataOptionsInput() *OceanAwsInstanceMetadataOptions
+	InstanceStorePolicy() OceanAwsInstanceStorePolicyOutputReference
+	InstanceStorePolicyInput() *OceanAwsInstanceStorePolicy
 	KeyName() *string
 	SetKeyName(val *string)
 	KeyNameInput() *string
@@ -227,6 +229,7 @@ type OceanAws interface {
 	PutDetachLoadBalancer(value interface{})
 	PutFilters(value *OceanAwsFilters)
 	PutInstanceMetadataOptions(value *OceanAwsInstanceMetadataOptions)
+	PutInstanceStorePolicy(value *OceanAwsInstanceStorePolicy)
 	PutLoadBalancers(value interface{})
 	PutLogging(value *OceanAwsLogging)
 	PutResourceTagSpecification(value interface{})
@@ -252,6 +255,7 @@ type OceanAws interface {
 	ResetIamInstanceProfile()
 	ResetId()
 	ResetInstanceMetadataOptions()
+	ResetInstanceStorePolicy()
 	ResetKeyName()
 	ResetLoadBalancers()
 	ResetLogging()
@@ -769,6 +773,26 @@ func (j *jsiiProxy_OceanAws) InstanceMetadataOptionsInput() *OceanAwsInstanceMet
 	_jsii_.Get(
 		j,
 		"instanceMetadataOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) InstanceStorePolicy() OceanAwsInstanceStorePolicyOutputReference {
+	var returns OceanAwsInstanceStorePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"instanceStorePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) InstanceStorePolicyInput() *OceanAwsInstanceStorePolicy {
+	var returns *OceanAwsInstanceStorePolicy
+	_jsii_.Get(
+		j,
+		"instanceStorePolicyInput",
 		&returns,
 	)
 	return returns
@@ -1315,7 +1339,7 @@ func (j *jsiiProxy_OceanAws) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.213.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.214.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig) OceanAws {
 	_init_.Initialize()
 
@@ -1333,7 +1357,7 @@ func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.213.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.214.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws_Override(o OceanAws, scope constructs.Construct, id *string, config *OceanAwsConfig) {
 	_init_.Initialize()
 
@@ -2172,6 +2196,17 @@ func (o *jsiiProxy_OceanAws) PutInstanceMetadataOptions(value *OceanAwsInstanceM
 	)
 }
 
+func (o *jsiiProxy_OceanAws) PutInstanceStorePolicy(value *OceanAwsInstanceStorePolicy) {
+	if err := o.validatePutInstanceStorePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putInstanceStorePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAws) PutLoadBalancers(value interface{}) {
 	if err := o.validatePutLoadBalancersParameters(value); err != nil {
 		panic(err)
@@ -2386,6 +2421,14 @@ func (o *jsiiProxy_OceanAws) ResetInstanceMetadataOptions() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetInstanceMetadataOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetInstanceStorePolicy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInstanceStorePolicy",
 		nil, // no parameters
 	)
 }
