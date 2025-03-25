@@ -339,6 +339,10 @@ func (j *jsiiProxy_ElastigroupAws) validateSetLifetimePeriodParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAws) validateSetMaxReplacementsPercentageParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAws) validateSetMaxSizeParameters(val *float64) error {
 	return nil
 }

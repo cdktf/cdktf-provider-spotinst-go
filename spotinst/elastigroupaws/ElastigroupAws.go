@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.214.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.215.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws}.
 type ElastigroupAws interface {
 	cdktf.TerraformResource
 	AutoHealing() interface{}
@@ -155,6 +155,9 @@ type ElastigroupAws interface {
 	LifetimePeriodInput() *string
 	Logging() ElastigroupAwsLoggingOutputReference
 	LoggingInput() *ElastigroupAwsLogging
+	MaxReplacementsPercentage() *float64
+	SetMaxReplacementsPercentage(val *float64)
+	MaxReplacementsPercentageInput() *float64
 	MaxSize() *float64
 	SetMaxSize(val *float64)
 	MaxSizeInput() *float64
@@ -401,6 +404,7 @@ type ElastigroupAws interface {
 	ResetKeyName()
 	ResetLifetimePeriod()
 	ResetLogging()
+	ResetMaxReplacementsPercentage()
 	ResetMaxSize()
 	ResetMetadataOptions()
 	ResetMinimumInstanceLifetime()
@@ -1410,6 +1414,26 @@ func (j *jsiiProxy_ElastigroupAws) LoggingInput() *ElastigroupAwsLogging {
 	return returns
 }
 
+func (j *jsiiProxy_ElastigroupAws) MaxReplacementsPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxReplacementsPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAws) MaxReplacementsPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxReplacementsPercentageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElastigroupAws) MaxSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -2321,7 +2345,7 @@ func (j *jsiiProxy_ElastigroupAws) WaitForCapacityTimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.214.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.215.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws(scope constructs.Construct, id *string, config *ElastigroupAwsConfig) ElastigroupAws {
 	_init_.Initialize()
 
@@ -2339,7 +2363,7 @@ func NewElastigroupAws(scope constructs.Construct, id *string, config *Elastigro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.214.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.215.0/docs/resources/elastigroup_aws spotinst_elastigroup_aws} Resource.
 func NewElastigroupAws_Override(e ElastigroupAws, scope constructs.Construct, id *string, config *ElastigroupAwsConfig) {
 	_init_.Initialize()
 
@@ -2681,6 +2705,17 @@ func (j *jsiiProxy_ElastigroupAws)SetLifetimePeriod(val *string) {
 	_jsii_.Set(
 		j,
 		"lifetimePeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAws)SetMaxReplacementsPercentage(val *float64) {
+	if err := j.validateSetMaxReplacementsPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxReplacementsPercentage",
 		val,
 	)
 }
@@ -4038,6 +4073,14 @@ func (e *jsiiProxy_ElastigroupAws) ResetLogging() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetLogging",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAws) ResetMaxReplacementsPercentage() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMaxReplacementsPercentage",
 		nil, // no parameters
 	)
 }

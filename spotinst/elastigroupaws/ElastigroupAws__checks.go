@@ -1296,6 +1296,14 @@ func (j *jsiiProxy_ElastigroupAws) validateSetLifetimePeriodParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAws) validateSetMaxReplacementsPercentageParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAws) validateSetMaxSizeParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

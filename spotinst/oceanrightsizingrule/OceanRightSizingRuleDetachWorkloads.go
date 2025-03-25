@@ -7,7 +7,7 @@ package oceanrightsizingrule
 type OceanRightSizingRuleDetachWorkloads struct {
 	// namespaces block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.214.0/docs/resources/ocean_right_sizing_rule#namespaces OceanRightSizingRule#namespaces}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.215.0/docs/resources/ocean_right_sizing_rule#namespaces OceanRightSizingRule#namespaces}
 	Namespaces interface{} `field:"required" json:"namespaces" yaml:"namespaces"`
 }
 
