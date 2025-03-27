@@ -75,6 +75,10 @@ func (j *jsiiProxy_OceanGkeImportStrategyOutputReference) validateSetProvisionin
 	return nil
 }
 
+func (j *jsiiProxy_OceanGkeImportStrategyOutputReference) validateSetScalingOrientationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanGkeImportStrategyOutputReference) validateSetShouldUtilizeCommitmentsParameters(val interface{}) error {
 	return nil
 }

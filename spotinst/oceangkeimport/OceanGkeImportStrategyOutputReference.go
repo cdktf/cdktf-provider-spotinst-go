@@ -41,6 +41,9 @@ type OceanGkeImportStrategyOutputReference interface {
 	ProvisioningModel() *string
 	SetProvisioningModel(val *string)
 	ProvisioningModelInput() *string
+	ScalingOrientation() *string
+	SetScalingOrientation(val *string)
+	ScalingOrientationInput() *string
 	ShouldUtilizeCommitments() interface{}
 	SetShouldUtilizeCommitments(val interface{})
 	ShouldUtilizeCommitmentsInput() interface{}
@@ -79,6 +82,7 @@ type OceanGkeImportStrategyOutputReference interface {
 	ResetDrainingTimeout()
 	ResetPreemptiblePercentage()
 	ResetProvisioningModel()
+	ResetScalingOrientation()
 	ResetShouldUtilizeCommitments()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_OceanGkeImportStrategyOutputReference) ProvisioningModelInput
 	_jsii_.Get(
 		j,
 		"provisioningModelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeImportStrategyOutputReference) ScalingOrientation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingOrientation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeImportStrategyOutputReference) ScalingOrientationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingOrientationInput",
 		&returns,
 	)
 	return returns
@@ -335,6 +359,17 @@ func (j *jsiiProxy_OceanGkeImportStrategyOutputReference)SetProvisioningModel(va
 	_jsii_.Set(
 		j,
 		"provisioningModel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanGkeImportStrategyOutputReference)SetScalingOrientation(val *string) {
+	if err := j.validateSetScalingOrientationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scalingOrientation",
 		val,
 	)
 }
@@ -578,6 +613,14 @@ func (o *jsiiProxy_OceanGkeImportStrategyOutputReference) ResetProvisioningModel
 	_jsii_.InvokeVoid(
 		o,
 		"resetProvisioningModel",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanGkeImportStrategyOutputReference) ResetScalingOrientation() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetScalingOrientation",
 		nil, // no parameters
 	)
 }

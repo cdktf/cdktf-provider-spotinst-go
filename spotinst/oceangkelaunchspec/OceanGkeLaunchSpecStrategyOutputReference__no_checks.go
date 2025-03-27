@@ -67,6 +67,10 @@ func (j *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference) validateSetPreempt
 	return nil
 }
 
+func (j *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference) validateSetScalingOrientationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

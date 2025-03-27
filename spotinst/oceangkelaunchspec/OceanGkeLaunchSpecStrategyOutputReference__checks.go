@@ -198,6 +198,14 @@ func (j *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference) validateSetPreempt
 	return nil
 }
 
+func (j *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference) validateSetScalingOrientationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

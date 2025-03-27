@@ -35,6 +35,9 @@ type OceanGkeLaunchSpecStrategyOutputReference interface {
 	PreemptiblePercentage() *float64
 	SetPreemptiblePercentage(val *float64)
 	PreemptiblePercentageInput() *float64
+	ScalingOrientation() *string
+	SetScalingOrientation(val *string)
+	ScalingOrientationInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type OceanGkeLaunchSpecStrategyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPreemptiblePercentage()
+	ResetScalingOrientation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference) PreemptiblePercent
 	_jsii_.Get(
 		j,
 		"preemptiblePercentageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference) ScalingOrientation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingOrientation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference) ScalingOrientationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingOrientationInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference)SetPreemptiblePerce
 	_jsii_.Set(
 		j,
 		"preemptiblePercentage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference)SetScalingOrientation(val *string) {
+	if err := j.validateSetScalingOrientationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scalingOrientation",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (o *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference) ResetPreemptiblePe
 	_jsii_.InvokeVoid(
 		o,
 		"resetPreemptiblePercentage",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanGkeLaunchSpecStrategyOutputReference) ResetScalingOrientation() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetScalingOrientation",
 		nil, // no parameters
 	)
 }
