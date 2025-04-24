@@ -5,9 +5,9 @@ package elastigroupgcp
 
 
 type ElastigroupGcpInstanceTypesCustom struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.216.1/docs/resources/elastigroup_gcp#memory_gib ElastigroupGcp#memory_gib}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.216.2/docs/resources/elastigroup_gcp#memory_gib ElastigroupGcp#memory_gib}.
 	MemoryGib *float64 `field:"required" json:"memoryGib" yaml:"memoryGib"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.216.1/docs/resources/elastigroup_gcp#vcpu ElastigroupGcp#vcpu}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.216.2/docs/resources/elastigroup_gcp#vcpu ElastigroupGcp#vcpu}.
 	Vcpu *float64 `field:"required" json:"vcpu" yaml:"vcpu"`
 }
 
