@@ -63,6 +63,10 @@ func (j *jsiiProxy_ElastigroupAzureV3SecurityOutputReference) validateSetConfide
 	return nil
 }
 
+func (j *jsiiProxy_ElastigroupAzureV3SecurityOutputReference) validateSetEncryptionAtHostParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastigroupAzureV3SecurityOutputReference) validateSetInternalValueParameters(val *ElastigroupAzureV3Security) error {
 	return nil
 }

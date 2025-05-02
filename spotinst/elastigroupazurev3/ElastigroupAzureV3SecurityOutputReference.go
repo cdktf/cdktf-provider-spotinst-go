@@ -31,6 +31,9 @@ type ElastigroupAzureV3SecurityOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EncryptionAtHost() interface{}
+	SetEncryptionAtHost(val interface{})
+	EncryptionAtHostInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ElastigroupAzureV3Security
@@ -77,6 +80,7 @@ type ElastigroupAzureV3SecurityOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetConfidentialOsDiskEncryption()
+	ResetEncryptionAtHost()
 	ResetSecureBootEnabled()
 	ResetSecurityType()
 	ResetVtpmEnabled()
@@ -140,6 +144,26 @@ func (j *jsiiProxy_ElastigroupAzureV3SecurityOutputReference) CreationStack() *[
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3SecurityOutputReference) EncryptionAtHost() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encryptionAtHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3SecurityOutputReference) EncryptionAtHostInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encryptionAtHostInput",
 		&returns,
 	)
 	return returns
@@ -302,6 +326,17 @@ func (j *jsiiProxy_ElastigroupAzureV3SecurityOutputReference)SetConfidentialOsDi
 	_jsii_.Set(
 		j,
 		"confidentialOsDiskEncryption",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3SecurityOutputReference)SetEncryptionAtHost(val interface{}) {
+	if err := j.validateSetEncryptionAtHostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionAtHost",
 		val,
 	)
 }
@@ -562,6 +597,14 @@ func (e *jsiiProxy_ElastigroupAzureV3SecurityOutputReference) ResetConfidentialO
 	_jsii_.InvokeVoid(
 		e,
 		"resetConfidentialOsDiskEncryption",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3SecurityOutputReference) ResetEncryptionAtHost() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEncryptionAtHost",
 		nil, // no parameters
 	)
 }
