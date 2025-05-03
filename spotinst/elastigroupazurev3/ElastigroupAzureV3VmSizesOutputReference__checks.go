@@ -93,6 +93,17 @@ func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateInterpolati
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validatePutSpotSizeAttributesParameters(value *ElastigroupAzureV3VmSizesSpotSizeAttributes) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -159,6 +170,14 @@ func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateSetComplexO
 }
 
 func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateSetExcludedVmSizesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

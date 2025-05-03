@@ -47,6 +47,10 @@ func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateInterpolati
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validatePutSpotSizeAttributesParameters(value *ElastigroupAzureV3VmSizesSpotSizeAttributes) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -56,6 +60,10 @@ func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateSetComplexO
 }
 
 func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) validateSetExcludedVmSizesParameters(val *[]*string) error {
 	return nil
 }
 

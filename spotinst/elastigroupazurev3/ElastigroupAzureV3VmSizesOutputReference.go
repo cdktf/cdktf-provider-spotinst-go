@@ -28,6 +28,9 @@ type ElastigroupAzureV3VmSizesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludedVmSizes() *[]*string
+	SetExcludedVmSizes(val *[]*string)
+	ExcludedVmSizesInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ElastigroupAzureV3VmSizes
@@ -38,6 +41,8 @@ type ElastigroupAzureV3VmSizesOutputReference interface {
 	PreferredSpotSizes() *[]*string
 	SetPreferredSpotSizes(val *[]*string)
 	PreferredSpotSizesInput() *[]*string
+	SpotSizeAttributes() ElastigroupAzureV3VmSizesSpotSizeAttributesOutputReference
+	SpotSizeAttributesInput() *ElastigroupAzureV3VmSizesSpotSizeAttributes
 	SpotSizes() *[]*string
 	SetSpotSizes(val *[]*string)
 	SpotSizesInput() *[]*string
@@ -73,7 +78,11 @@ type ElastigroupAzureV3VmSizesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSpotSizeAttributes(value *ElastigroupAzureV3VmSizesSpotSizeAttributes)
+	ResetExcludedVmSizes()
 	ResetPreferredSpotSizes()
+	ResetSpotSizeAttributes()
+	ResetSpotSizes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -114,6 +123,26 @@ func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) CreationStack() *[]
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) ExcludedVmSizes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedVmSizes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) ExcludedVmSizesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedVmSizesInput",
 		&returns,
 	)
 	return returns
@@ -174,6 +203,26 @@ func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) PreferredSpotSizesI
 	_jsii_.Get(
 		j,
 		"preferredSpotSizesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) SpotSizeAttributes() ElastigroupAzureV3VmSizesSpotSizeAttributesOutputReference {
+	var returns ElastigroupAzureV3VmSizesSpotSizeAttributesOutputReference
+	_jsii_.Get(
+		j,
+		"spotSizeAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) SpotSizeAttributesInput() *ElastigroupAzureV3VmSizesSpotSizeAttributes {
+	var returns *ElastigroupAzureV3VmSizesSpotSizeAttributes
+	_jsii_.Get(
+		j,
+		"spotSizeAttributesInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +314,17 @@ func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference)SetComplexObjectIsFr
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference)SetExcludedVmSizes(val *[]*string) {
+	if err := j.validateSetExcludedVmSizesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludedVmSizes",
 		val,
 	)
 }
@@ -521,10 +581,45 @@ func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) PutSpotSizeAttributes(value *ElastigroupAzureV3VmSizesSpotSizeAttributes) {
+	if err := e.validatePutSpotSizeAttributesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putSpotSizeAttributes",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) ResetExcludedVmSizes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetExcludedVmSizes",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) ResetPreferredSpotSizes() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPreferredSpotSizes",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) ResetSpotSizeAttributes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSpotSizeAttributes",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElastigroupAzureV3VmSizesOutputReference) ResetSpotSizes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSpotSizes",
 		nil, // no parameters
 	)
 }
