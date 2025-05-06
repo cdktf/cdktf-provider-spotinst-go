@@ -7,7 +7,7 @@ package oceanaksnp
 type OceanAksNpLoggingExport struct {
 	// azure_blob block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.0/docs/resources/ocean_aks_np#azure_blob OceanAksNp#azure_blob}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.1/docs/resources/ocean_aks_np#azure_blob OceanAksNp#azure_blob}
 	AzureBlob interface{} `field:"optional" json:"azureBlob" yaml:"azureBlob"`
 }
 

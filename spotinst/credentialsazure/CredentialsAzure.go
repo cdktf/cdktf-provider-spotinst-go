@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.0/docs/resources/credentials_azure spotinst_credentials_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.1/docs/resources/credentials_azure spotinst_credentials_azure}.
 type CredentialsAzure interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_CredentialsAzure) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.0/docs/resources/credentials_azure spotinst_credentials_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.1/docs/resources/credentials_azure spotinst_credentials_azure} Resource.
 func NewCredentialsAzure(scope constructs.Construct, id *string, config *CredentialsAzureConfig) CredentialsAzure {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewCredentialsAzure(scope constructs.Construct, id *string, config *Credent
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.0/docs/resources/credentials_azure spotinst_credentials_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.1/docs/resources/credentials_azure spotinst_credentials_azure} Resource.
 func NewCredentialsAzure_Override(c CredentialsAzure, scope constructs.Construct, id *string, config *CredentialsAzureConfig) {
 	_init_.Initialize()
 
