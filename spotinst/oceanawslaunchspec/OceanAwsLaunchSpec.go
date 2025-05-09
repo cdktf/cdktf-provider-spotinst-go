@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.1/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.219.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
 type OceanAwsLaunchSpec interface {
 	cdktf.TerraformResource
 	AssociatePublicIpAddress() interface{}
@@ -126,6 +126,8 @@ type OceanAwsLaunchSpec interface {
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
+	StartupTaints() OceanAwsLaunchSpecStartupTaintsList
+	StartupTaintsInput() interface{}
 	Strategy() OceanAwsLaunchSpecStrategyList
 	StrategyInput() interface{}
 	SubnetIds() *[]*string
@@ -205,6 +207,7 @@ type OceanAwsLaunchSpec interface {
 	PutResourceLimits(value interface{})
 	PutSchedulingShutdownHours(value *OceanAwsLaunchSpecSchedulingShutdownHours)
 	PutSchedulingTask(value interface{})
+	PutStartupTaints(value interface{})
 	PutStrategy(value interface{})
 	PutTags(value interface{})
 	PutTaints(value interface{})
@@ -240,6 +243,7 @@ type OceanAwsLaunchSpec interface {
 	ResetSchedulingShutdownHours()
 	ResetSchedulingTask()
 	ResetSecurityGroups()
+	ResetStartupTaints()
 	ResetStrategy()
 	ResetSubnetIds()
 	ResetTags()
@@ -974,6 +978,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) SecurityGroupsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpec) StartupTaints() OceanAwsLaunchSpecStartupTaintsList {
+	var returns OceanAwsLaunchSpecStartupTaintsList
+	_jsii_.Get(
+		j,
+		"startupTaints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) StartupTaintsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"startupTaintsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAwsLaunchSpec) Strategy() OceanAwsLaunchSpecStrategyList {
 	var returns OceanAwsLaunchSpecStrategyList
 	_jsii_.Get(
@@ -1125,7 +1149,7 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.1/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.219.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) OceanAwsLaunchSpec {
 	_init_.Initialize()
 
@@ -1143,7 +1167,7 @@ func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.1/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.219.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec_Override(o OceanAwsLaunchSpec, scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1916,6 +1940,17 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutSchedulingTask(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) PutStartupTaints(value interface{}) {
+	if err := o.validatePutStartupTaintsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putStartupTaints",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutStrategy(value interface{}) {
 	if err := o.validatePutStrategyParameters(value); err != nil {
 		panic(err)
@@ -2188,6 +2223,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) ResetSecurityGroups() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetSecurityGroups",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpec) ResetStartupTaints() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetStartupTaints",
 		nil, // no parameters
 	)
 }

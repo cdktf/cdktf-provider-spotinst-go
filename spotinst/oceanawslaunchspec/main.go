@@ -104,6 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putResourceLimits", GoMethod: "PutResourceLimits"},
 			_jsii_.MemberMethod{JsiiMethod: "putSchedulingShutdownHours", GoMethod: "PutSchedulingShutdownHours"},
 			_jsii_.MemberMethod{JsiiMethod: "putSchedulingTask", GoMethod: "PutSchedulingTask"},
+			_jsii_.MemberMethod{JsiiMethod: "putStartupTaints", GoMethod: "PutStartupTaints"},
 			_jsii_.MemberMethod{JsiiMethod: "putStrategy", GoMethod: "PutStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTags", GoMethod: "PutTags"},
 			_jsii_.MemberMethod{JsiiMethod: "putTaints", GoMethod: "PutTaints"},
@@ -140,6 +141,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSchedulingShutdownHours", GoMethod: "ResetSchedulingShutdownHours"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchedulingTask", GoMethod: "ResetSchedulingTask"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecurityGroups", GoMethod: "ResetSecurityGroups"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStartupTaints", GoMethod: "ResetStartupTaints"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStrategy", GoMethod: "ResetStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubnetIds", GoMethod: "ResetSubnetIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
@@ -158,6 +160,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "schedulingTaskInput", GoGetter: "SchedulingTaskInput"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroups", GoGetter: "SecurityGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupsInput", GoGetter: "SecurityGroupsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "startupTaints", GoGetter: "StartupTaints"},
+			_jsii_.MemberProperty{JsiiProperty: "startupTaintsInput", GoGetter: "StartupTaintsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "strategy", GoGetter: "Strategy"},
 			_jsii_.MemberProperty{JsiiProperty: "strategyInput", GoGetter: "StrategyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetIds", GoGetter: "SubnetIds"},
@@ -1333,6 +1337,73 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OceanAwsLaunchSpecSchedulingTaskTaskHeadroomOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanAwsLaunchSpec.OceanAwsLaunchSpecStartupTaints",
+		reflect.TypeOf((*OceanAwsLaunchSpecStartupTaints)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanAwsLaunchSpec.OceanAwsLaunchSpecStartupTaintsList",
+		reflect.TypeOf((*OceanAwsLaunchSpecStartupTaintsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanAwsLaunchSpecStartupTaintsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanAwsLaunchSpec.OceanAwsLaunchSpecStartupTaintsOutputReference",
+		reflect.TypeOf((*OceanAwsLaunchSpecStartupTaintsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "effect", GoGetter: "Effect"},
+			_jsii_.MemberProperty{JsiiProperty: "effectInput", GoGetter: "EffectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "key", GoGetter: "Key"},
+			_jsii_.MemberProperty{JsiiProperty: "keyInput", GoGetter: "KeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEffect", GoMethod: "ResetEffect"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKey", GoMethod: "ResetKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValue", GoMethod: "ResetValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanAwsLaunchSpecStartupTaintsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

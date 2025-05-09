@@ -123,6 +123,10 @@ func (o *jsiiProxy_OceanAws) validatePutScheduledTaskParameters(value *OceanAwsS
 	return nil
 }
 
+func (o *jsiiProxy_OceanAws) validatePutStartupTaintsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAws) validatePutTagsParameters(value interface{}) error {
 	return nil
 }

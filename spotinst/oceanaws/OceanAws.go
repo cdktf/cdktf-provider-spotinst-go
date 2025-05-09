@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.1/docs/resources/ocean_aws spotinst_ocean_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.219.0/docs/resources/ocean_aws spotinst_ocean_aws}.
 type OceanAws interface {
 	cdktf.TerraformResource
 	AssociateIpv6Address() interface{}
@@ -151,6 +151,8 @@ type OceanAws interface {
 	SpreadNodesBy() *string
 	SetSpreadNodesBy(val *string)
 	SpreadNodesByInput() *string
+	StartupTaints() OceanAwsStartupTaintsList
+	StartupTaintsInput() interface{}
 	SubnetIds() *[]*string
 	SetSubnetIds(val *[]*string)
 	SubnetIdsInput() *[]*string
@@ -234,6 +236,7 @@ type OceanAws interface {
 	PutLogging(value *OceanAwsLogging)
 	PutResourceTagSpecification(value interface{})
 	PutScheduledTask(value *OceanAwsScheduledTask)
+	PutStartupTaints(value interface{})
 	PutTags(value interface{})
 	PutUpdatePolicy(value *OceanAwsUpdatePolicy)
 	ResetAssociateIpv6Address()
@@ -273,6 +276,7 @@ type OceanAws interface {
 	ResetScheduledTask()
 	ResetSpotPercentage()
 	ResetSpreadNodesBy()
+	ResetStartupTaints()
 	ResetTags()
 	ResetUpdatePolicy()
 	ResetUseAsTemplateOnly()
@@ -1148,6 +1152,26 @@ func (j *jsiiProxy_OceanAws) SpreadNodesByInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAws) StartupTaints() OceanAwsStartupTaintsList {
+	var returns OceanAwsStartupTaintsList
+	_jsii_.Get(
+		j,
+		"startupTaints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) StartupTaintsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"startupTaintsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAws) SubnetIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1339,7 +1363,7 @@ func (j *jsiiProxy_OceanAws) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.1/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.219.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig) OceanAws {
 	_init_.Initialize()
 
@@ -1357,7 +1381,7 @@ func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.218.1/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.219.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws_Override(o OceanAws, scope constructs.Construct, id *string, config *OceanAwsConfig) {
 	_init_.Initialize()
 
@@ -2251,6 +2275,17 @@ func (o *jsiiProxy_OceanAws) PutScheduledTask(value *OceanAwsScheduledTask) {
 	)
 }
 
+func (o *jsiiProxy_OceanAws) PutStartupTaints(value interface{}) {
+	if err := o.validatePutStartupTaintsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putStartupTaints",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAws) PutTags(value interface{}) {
 	if err := o.validatePutTagsParameters(value); err != nil {
 		panic(err)
@@ -2549,6 +2584,14 @@ func (o *jsiiProxy_OceanAws) ResetSpreadNodesBy() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetSpreadNodesBy",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetStartupTaints() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetStartupTaints",
 		nil, // no parameters
 	)
 }

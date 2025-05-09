@@ -139,6 +139,10 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutSchedulingTaskParameters(value
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutStartupTaintsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutStrategyParameters(value interface{}) error {
 	return nil
 }
