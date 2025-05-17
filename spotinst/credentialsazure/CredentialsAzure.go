@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.219.0/docs/resources/credentials_azure spotinst_credentials_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.0/docs/resources/credentials_azure spotinst_credentials_azure}.
 type CredentialsAzure interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -40,6 +40,9 @@ type CredentialsAzure interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpirationDate() *string
+	SetExpirationDate(val *string)
+	ExpirationDateInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -122,6 +125,7 @@ type CredentialsAzure interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetExpirationDate()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -249,6 +253,26 @@ func (j *jsiiProxy_CredentialsAzure) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CredentialsAzure) ExpirationDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CredentialsAzure) ExpirationDateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationDateInput",
 		&returns,
 	)
 	return returns
@@ -425,7 +449,7 @@ func (j *jsiiProxy_CredentialsAzure) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.219.0/docs/resources/credentials_azure spotinst_credentials_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.0/docs/resources/credentials_azure spotinst_credentials_azure} Resource.
 func NewCredentialsAzure(scope constructs.Construct, id *string, config *CredentialsAzureConfig) CredentialsAzure {
 	_init_.Initialize()
 
@@ -443,7 +467,7 @@ func NewCredentialsAzure(scope constructs.Construct, id *string, config *Credent
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.219.0/docs/resources/credentials_azure spotinst_credentials_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.0/docs/resources/credentials_azure spotinst_credentials_azure} Resource.
 func NewCredentialsAzure_Override(c CredentialsAzure, scope constructs.Construct, id *string, config *CredentialsAzureConfig) {
 	_init_.Initialize()
 
@@ -513,6 +537,17 @@ func (j *jsiiProxy_CredentialsAzure)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CredentialsAzure)SetExpirationDate(val *string) {
+	if err := j.validateSetExpirationDateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expirationDate",
 		val,
 	)
 }
@@ -938,6 +973,14 @@ func (c *jsiiProxy_CredentialsAzure) OverrideLogicalId(newLogicalId *string) {
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CredentialsAzure) ResetExpirationDate() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExpirationDate",
+		nil, // no parameters
 	)
 }
 

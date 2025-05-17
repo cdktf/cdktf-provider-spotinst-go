@@ -111,6 +111,10 @@ func (j *jsiiProxy_CredentialsAzure) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_CredentialsAzure) validateSetExpirationDateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CredentialsAzure) validateSetIdParameters(val *string) error {
 	return nil
 }
