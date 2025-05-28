@@ -255,10 +255,6 @@ func (j *jsiiProxy_StatefulNodeAzure) validateSetShouldPersistOsDiskParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) validateSetShouldPersistVmParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_StatefulNodeAzure) validateSetShutdownScriptParameters(val *string) error {
 	return nil
 }

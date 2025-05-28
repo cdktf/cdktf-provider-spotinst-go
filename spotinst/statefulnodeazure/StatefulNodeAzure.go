@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.2/docs/resources/stateful_node_azure spotinst_stateful_node_azure}.
 type StatefulNodeAzure interface {
 	cdktf.TerraformResource
 	AttachDataDisk() StatefulNodeAzureAttachDataDiskList
@@ -133,9 +133,6 @@ type StatefulNodeAzure interface {
 	ShouldPersistOsDisk() interface{}
 	SetShouldPersistOsDisk(val interface{})
 	ShouldPersistOsDiskInput() interface{}
-	ShouldPersistVm() interface{}
-	SetShouldPersistVm(val interface{})
-	ShouldPersistVmInput() interface{}
 	ShutdownScript() *string
 	SetShutdownScript(val *string)
 	ShutdownScriptInput() *string
@@ -261,7 +258,6 @@ type StatefulNodeAzure interface {
 	ResetSchedulingTask()
 	ResetSecret()
 	ResetSecurity()
-	ResetShouldPersistVm()
 	ResetShutdownScript()
 	ResetSignal()
 	ResetTag()
@@ -1058,26 +1054,6 @@ func (j *jsiiProxy_StatefulNodeAzure) ShouldPersistOsDiskInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StatefulNodeAzure) ShouldPersistVm() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"shouldPersistVm",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StatefulNodeAzure) ShouldPersistVmInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"shouldPersistVmInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_StatefulNodeAzure) ShutdownScript() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1309,7 +1285,7 @@ func (j *jsiiProxy_StatefulNodeAzure) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.2/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) StatefulNodeAzure {
 	_init_.Initialize()
 
@@ -1327,7 +1303,7 @@ func NewStatefulNodeAzure(scope constructs.Construct, id *string, config *Statef
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.0/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.2/docs/resources/stateful_node_azure spotinst_stateful_node_azure} Resource.
 func NewStatefulNodeAzure_Override(s StatefulNodeAzure, scope constructs.Construct, id *string, config *StatefulNodeAzureConfig) {
 	_init_.Initialize()
 
@@ -1556,17 +1532,6 @@ func (j *jsiiProxy_StatefulNodeAzure)SetShouldPersistOsDisk(val interface{}) {
 	_jsii_.Set(
 		j,
 		"shouldPersistOsDisk",
-		val,
-	)
-}
-
-func (j *jsiiProxy_StatefulNodeAzure)SetShouldPersistVm(val interface{}) {
-	if err := j.validateSetShouldPersistVmParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"shouldPersistVm",
 		val,
 	)
 }
@@ -2436,14 +2401,6 @@ func (s *jsiiProxy_StatefulNodeAzure) ResetSecurity() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSecurity",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_StatefulNodeAzure) ResetShouldPersistVm() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetShouldPersistVm",
 		nil, // no parameters
 	)
 }
