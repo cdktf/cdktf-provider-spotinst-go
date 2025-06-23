@@ -5,7 +5,7 @@ package oceangkeimport
 
 
 type OceanGkeImportAutoUpdate struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.2/docs/resources/ocean_gke_import#is_enabled OceanGkeImport#is_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.3/docs/resources/ocean_gke_import#is_enabled OceanGkeImport#is_enabled}.
 	IsEnabled interface{} `field:"optional" json:"isEnabled" yaml:"isEnabled"`
 }
 

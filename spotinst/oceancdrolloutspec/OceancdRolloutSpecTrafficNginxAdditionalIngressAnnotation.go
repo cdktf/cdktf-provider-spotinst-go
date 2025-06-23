@@ -5,9 +5,9 @@ package oceancdrolloutspec
 
 
 type OceancdRolloutSpecTrafficNginxAdditionalIngressAnnotation struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.2/docs/resources/oceancd_rollout_spec#canary_by_header OceancdRolloutSpec#canary_by_header}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.3/docs/resources/oceancd_rollout_spec#canary_by_header OceancdRolloutSpec#canary_by_header}.
 	CanaryByHeader *string `field:"optional" json:"canaryByHeader" yaml:"canaryByHeader"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.2/docs/resources/oceancd_rollout_spec#key1 OceancdRolloutSpec#key1}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.3/docs/resources/oceancd_rollout_spec#key1 OceancdRolloutSpec#key1}.
 	Key1 *string `field:"optional" json:"key1" yaml:"key1"`
 }
 
