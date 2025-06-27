@@ -5,7 +5,7 @@ package elastigroupgcp
 
 
 type ElastigroupGcpIntegrationGkeAutoscaleDown struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.3/docs/resources/elastigroup_gcp#evaluation_periods ElastigroupGcp#evaluation_periods}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.4/docs/resources/elastigroup_gcp#evaluation_periods ElastigroupGcp#evaluation_periods}.
 	EvaluationPeriods *float64 `field:"optional" json:"evaluationPeriods" yaml:"evaluationPeriods"`
 }
 

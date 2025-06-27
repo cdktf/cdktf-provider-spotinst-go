@@ -23,9 +23,9 @@ type StatefulNodeAzureSecurityOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ConfidentialOsDiskEncryption() interface{}
-	SetConfidentialOsDiskEncryption(val interface{})
-	ConfidentialOsDiskEncryptionInput() interface{}
+	ConfidentialOsDiskEncryption() *string
+	SetConfidentialOsDiskEncryption(val *string)
+	ConfidentialOsDiskEncryptionInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) ComplexObjectIsFrom
 	return returns
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) ConfidentialOsDiskEncryption() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) ConfidentialOsDiskEncryption() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"confidentialOsDiskEncryption",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) ConfidentialOsDiskE
 	return returns
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) ConfidentialOsDiskEncryptionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) ConfidentialOsDiskEncryptionInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"confidentialOsDiskEncryptionInput",
@@ -319,7 +319,7 @@ func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference)SetConfidentialOsDiskEncryption(val interface{}) {
+func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference)SetConfidentialOsDiskEncryption(val *string) {
 	if err := j.validateSetConfidentialOsDiskEncryptionParameters(val); err != nil {
 		panic(err)
 	}

@@ -59,7 +59,7 @@ func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) validateSetConfidentialOsDiskEncryptionParameters(val interface{}) error {
+func (j *jsiiProxy_StatefulNodeAzureSecurityOutputReference) validateSetConfidentialOsDiskEncryptionParameters(val *string) error {
 	return nil
 }
 
