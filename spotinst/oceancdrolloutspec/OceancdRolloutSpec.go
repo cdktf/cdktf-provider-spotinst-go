@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.4/docs/resources/oceancd_rollout_spec spotinst_oceancd_rollout_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.221.0/docs/resources/oceancd_rollout_spec spotinst_oceancd_rollout_spec}.
 type OceancdRolloutSpec interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -452,7 +452,7 @@ func (j *jsiiProxy_OceancdRolloutSpec) TrafficInput() *OceancdRolloutSpecTraffic
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.4/docs/resources/oceancd_rollout_spec spotinst_oceancd_rollout_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.221.0/docs/resources/oceancd_rollout_spec spotinst_oceancd_rollout_spec} Resource.
 func NewOceancdRolloutSpec(scope constructs.Construct, id *string, config *OceancdRolloutSpecConfig) OceancdRolloutSpec {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewOceancdRolloutSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.220.4/docs/resources/oceancd_rollout_spec spotinst_oceancd_rollout_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.221.0/docs/resources/oceancd_rollout_spec spotinst_oceancd_rollout_spec} Resource.
 func NewOceancdRolloutSpec_Override(o OceancdRolloutSpec, scope constructs.Construct, id *string, config *OceancdRolloutSpecConfig) {
 	_init_.Initialize()
 

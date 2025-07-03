@@ -13,6 +13,8 @@ import (
 
 type ElastigroupGkeBackendServicesOutputReference interface {
 	cdktf.ComplexObject
+	BackendBalancing() ElastigroupGkeBackendServicesBackendBalancingOutputReference
+	BackendBalancingInput() *ElastigroupGkeBackendServicesBackendBalancing
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -75,7 +77,9 @@ type ElastigroupGkeBackendServicesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBackendBalancing(value *ElastigroupGkeBackendServicesBackendBalancing)
 	PutNamedPorts(value interface{})
+	ResetBackendBalancing()
 	ResetLocationType()
 	ResetNamedPorts()
 	ResetScheme()
@@ -92,6 +96,26 @@ type ElastigroupGkeBackendServicesOutputReference interface {
 // The jsii proxy struct for ElastigroupGkeBackendServicesOutputReference
 type jsiiProxy_ElastigroupGkeBackendServicesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) BackendBalancing() ElastigroupGkeBackendServicesBackendBalancingOutputReference {
+	var returns ElastigroupGkeBackendServicesBackendBalancingOutputReference
+	_jsii_.Get(
+		j,
+		"backendBalancing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) BackendBalancingInput() *ElastigroupGkeBackendServicesBackendBalancing {
+	var returns *ElastigroupGkeBackendServicesBackendBalancing
+	_jsii_.Get(
+		j,
+		"backendBalancingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) ComplexObjectIndex() interface{} {
@@ -546,6 +570,17 @@ func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) InterpolationFo
 	return returns
 }
 
+func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) PutBackendBalancing(value *ElastigroupGkeBackendServicesBackendBalancing) {
+	if err := e.validatePutBackendBalancingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putBackendBalancing",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) PutNamedPorts(value interface{}) {
 	if err := e.validatePutNamedPortsParameters(value); err != nil {
 		panic(err)
@@ -554,6 +589,14 @@ func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) PutNamedPorts(v
 		e,
 		"putNamedPorts",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) ResetBackendBalancing() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetBackendBalancing",
+		nil, // no parameters
 	)
 }
 

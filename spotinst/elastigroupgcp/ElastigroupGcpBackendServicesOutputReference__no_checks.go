@@ -47,6 +47,10 @@ func (e *jsiiProxy_ElastigroupGcpBackendServicesOutputReference) validateInterpo
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupGcpBackendServicesOutputReference) validatePutBackendBalancingParameters(value *ElastigroupGcpBackendServicesBackendBalancing) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupGcpBackendServicesOutputReference) validatePutNamedPortsParameters(value interface{}) error {
 	return nil
 }

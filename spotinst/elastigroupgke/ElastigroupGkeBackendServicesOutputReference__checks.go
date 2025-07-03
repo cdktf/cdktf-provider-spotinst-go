@@ -93,6 +93,17 @@ func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) validateInterpo
 	return nil
 }
 
+func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) validatePutBackendBalancingParameters(value *ElastigroupGkeBackendServicesBackendBalancing) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) validatePutNamedPortsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

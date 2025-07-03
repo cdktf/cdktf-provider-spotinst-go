@@ -208,6 +208,48 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupGcp.ElastigroupGcpBackendServices",
 		reflect.TypeOf((*ElastigroupGcpBackendServices)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.elastigroupGcp.ElastigroupGcpBackendServicesBackendBalancing",
+		reflect.TypeOf((*ElastigroupGcpBackendServicesBackendBalancing)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.elastigroupGcp.ElastigroupGcpBackendServicesBackendBalancingOutputReference",
+		reflect.TypeOf((*ElastigroupGcpBackendServicesBackendBalancingOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "backendBalancingMode", GoGetter: "BackendBalancingMode"},
+			_jsii_.MemberProperty{JsiiProperty: "backendBalancingModeInput", GoGetter: "BackendBalancingModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxRatePerInstance", GoGetter: "MaxRatePerInstance"},
+			_jsii_.MemberProperty{JsiiProperty: "maxRatePerInstanceInput", GoGetter: "MaxRatePerInstanceInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBackendBalancingMode", GoMethod: "ResetBackendBalancingMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxRatePerInstance", GoMethod: "ResetMaxRatePerInstance"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ElastigroupGcpBackendServicesBackendBalancingOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-spotinst.elastigroupGcp.ElastigroupGcpBackendServicesList",
 		reflect.TypeOf((*ElastigroupGcpBackendServicesList)(nil)).Elem(),
@@ -296,6 +338,8 @@ func init() {
 		"@cdktf/provider-spotinst.elastigroupGcp.ElastigroupGcpBackendServicesOutputReference",
 		reflect.TypeOf((*ElastigroupGcpBackendServicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "backendBalancing", GoGetter: "BackendBalancing"},
+			_jsii_.MemberProperty{JsiiProperty: "backendBalancingInput", GoGetter: "BackendBalancingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -317,7 +361,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationTypeInput", GoGetter: "LocationTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "namedPorts", GoGetter: "NamedPorts"},
 			_jsii_.MemberProperty{JsiiProperty: "namedPortsInput", GoGetter: "NamedPortsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putBackendBalancing", GoMethod: "PutBackendBalancing"},
 			_jsii_.MemberMethod{JsiiMethod: "putNamedPorts", GoMethod: "PutNamedPorts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBackendBalancing", GoMethod: "ResetBackendBalancing"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocationType", GoMethod: "ResetLocationType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNamedPorts", GoMethod: "ResetNamedPorts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScheme", GoMethod: "ResetScheme"},
