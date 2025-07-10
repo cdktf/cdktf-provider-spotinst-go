@@ -47,6 +47,10 @@ func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateInterpolat
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validatePutOrientationParameters(value *OceanAwsLaunchSpecStrategyOrientation) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -5,7 +5,7 @@ package oceanaksnp
 
 
 type OceanAksNpLinuxOsConfigSysctls struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.222.1/docs/resources/ocean_aks_np#vm_max_map_count OceanAksNp#vm_max_map_count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/ocean_aks_np#vm_max_map_count OceanAksNp#vm_max_map_count}.
 	VmMaxMapCount *float64 `field:"optional" json:"vmMaxMapCount" yaml:"vmMaxMapCount"`
 }
 

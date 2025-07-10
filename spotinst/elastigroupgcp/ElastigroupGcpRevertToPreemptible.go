@@ -5,7 +5,7 @@ package elastigroupgcp
 
 
 type ElastigroupGcpRevertToPreemptible struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.222.1/docs/resources/elastigroup_gcp#perform_at ElastigroupGcp#perform_at}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/elastigroup_gcp#perform_at ElastigroupGcp#perform_at}.
 	PerformAt *string `field:"required" json:"performAt" yaml:"performAt"`
 }
 

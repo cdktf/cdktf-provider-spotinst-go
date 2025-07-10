@@ -35,6 +35,8 @@ type OceanAwsLaunchSpecStrategyOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Orientation() OceanAwsLaunchSpecStrategyOrientationOutputReference
+	OrientationInput() *OceanAwsLaunchSpecStrategyOrientation
 	SpotPercentage() *float64
 	SetSpotPercentage(val *float64)
 	SpotPercentageInput() *float64
@@ -76,7 +78,9 @@ type OceanAwsLaunchSpecStrategyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutOrientation(value *OceanAwsLaunchSpecStrategyOrientation)
 	ResetDrainingTimeout()
+	ResetOrientation()
 	ResetSpotPercentage()
 	ResetUtilizeCommitments()
 	ResetUtilizeReservedInstances()
@@ -160,6 +164,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) InternalValue() in
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) Orientation() OceanAwsLaunchSpecStrategyOrientationOutputReference {
+	var returns OceanAwsLaunchSpecStrategyOrientationOutputReference
+	_jsii_.Get(
+		j,
+		"orientation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) OrientationInput() *OceanAwsLaunchSpecStrategyOrientation {
+	var returns *OceanAwsLaunchSpecStrategyOrientation
+	_jsii_.Get(
+		j,
+		"orientationInput",
 		&returns,
 	)
 	return returns
@@ -558,10 +582,29 @@ func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) InterpolationForAt
 	return returns
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) PutOrientation(value *OceanAwsLaunchSpecStrategyOrientation) {
+	if err := o.validatePutOrientationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putOrientation",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) ResetDrainingTimeout() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetDrainingTimeout",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) ResetOrientation() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOrientation",
 		nil, // no parameters
 	)
 }
