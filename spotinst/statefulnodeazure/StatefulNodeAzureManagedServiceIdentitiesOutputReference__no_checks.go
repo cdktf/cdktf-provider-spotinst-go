@@ -71,6 +71,10 @@ func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesOutputReference) validateSetSubscriptionIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

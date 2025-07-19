@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/oceancd_strategy spotinst_oceancd_strategy}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/oceancd_strategy spotinst_oceancd_strategy}.
 type OceancdStrategy interface {
 	cdktf.TerraformResource
 	Canary() OceancdStrategyCanaryOutputReference
@@ -381,7 +381,7 @@ func (j *jsiiProxy_OceancdStrategy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/oceancd_strategy spotinst_oceancd_strategy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/oceancd_strategy spotinst_oceancd_strategy} Resource.
 func NewOceancdStrategy(scope constructs.Construct, id *string, config *OceancdStrategyConfig) OceancdStrategy {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewOceancdStrategy(scope constructs.Construct, id *string, config *OceancdS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/oceancd_strategy spotinst_oceancd_strategy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/oceancd_strategy spotinst_oceancd_strategy} Resource.
 func NewOceancdStrategy_Override(o OceancdStrategy, scope constructs.Construct, id *string, config *OceancdStrategyConfig) {
 	_init_.Initialize()
 

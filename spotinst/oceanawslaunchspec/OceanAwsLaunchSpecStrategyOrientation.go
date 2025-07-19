@@ -5,7 +5,7 @@ package oceanawslaunchspec
 
 
 type OceanAwsLaunchSpecStrategyOrientation struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/ocean_aws_launch_spec#availability_vs_cost OceanAwsLaunchSpec#availability_vs_cost}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/ocean_aws_launch_spec#availability_vs_cost OceanAwsLaunchSpec#availability_vs_cost}.
 	AvailabilityVsCost *string `field:"optional" json:"availabilityVsCost" yaml:"availabilityVsCost"`
 }
 

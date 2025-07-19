@@ -38,6 +38,9 @@ type StatefulNodeAzureManagedServiceIdentitiesOutputReference interface {
 	ResourceGroupName() *string
 	SetResourceGroupName(val *string)
 	ResourceGroupNameInput() *string
+	SubscriptionId() *string
+	SetSubscriptionId(val *string)
+	SubscriptionIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type StatefulNodeAzureManagedServiceIdentitiesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSubscriptionId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -175,6 +179,26 @@ func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesOutputReference) Res
 	return returns
 }
 
+func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesOutputReference) SubscriptionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesOutputReference) SubscriptionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -274,6 +298,17 @@ func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesOutputReference)SetR
 	_jsii_.Set(
 		j,
 		"resourceGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesOutputReference)SetSubscriptionId(val *string) {
+	if err := j.validateSetSubscriptionIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subscriptionId",
 		val,
 	)
 }
@@ -484,6 +519,14 @@ func (s *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesOutputReference) Int
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesOutputReference) ResetSubscriptionId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSubscriptionId",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -24,28 +24,28 @@ type NotificationCenterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// compute_policy_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/notification_center#compute_policy_config NotificationCenter#compute_policy_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/notification_center#compute_policy_config NotificationCenter#compute_policy_config}
 	ComputePolicyConfig *NotificationCenterComputePolicyConfig `field:"required" json:"computePolicyConfig" yaml:"computePolicyConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/notification_center#privacy_level NotificationCenter#privacy_level}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/notification_center#privacy_level NotificationCenter#privacy_level}.
 	PrivacyLevel *string `field:"required" json:"privacyLevel" yaml:"privacyLevel"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/notification_center#description NotificationCenter#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/notification_center#description NotificationCenter#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/notification_center#id NotificationCenter#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/notification_center#id NotificationCenter#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/notification_center#is_active NotificationCenter#is_active}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/notification_center#is_active NotificationCenter#is_active}.
 	IsActive interface{} `field:"optional" json:"isActive" yaml:"isActive"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/notification_center#name NotificationCenter#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/notification_center#name NotificationCenter#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// registered_users block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/notification_center#registered_users NotificationCenter#registered_users}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/notification_center#registered_users NotificationCenter#registered_users}
 	RegisteredUsers interface{} `field:"optional" json:"registeredUsers" yaml:"registeredUsers"`
 	// subscriptions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/notification_center#subscriptions NotificationCenter#subscriptions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/notification_center#subscriptions NotificationCenter#subscriptions}
 	Subscriptions interface{} `field:"optional" json:"subscriptions" yaml:"subscriptions"`
 }
 

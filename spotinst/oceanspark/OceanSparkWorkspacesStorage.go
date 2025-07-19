@@ -7,7 +7,7 @@ package oceanspark
 type OceanSparkWorkspacesStorage struct {
 	// defaults block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.223.0/docs/resources/ocean_spark#defaults OceanSpark#defaults}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/ocean_spark#defaults OceanSpark#defaults}
 	Defaults *OceanSparkWorkspacesStorageDefaults `field:"optional" json:"defaults" yaml:"defaults"`
 }
 
