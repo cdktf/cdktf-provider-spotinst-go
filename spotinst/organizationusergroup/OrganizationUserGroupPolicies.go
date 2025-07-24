@@ -5,9 +5,9 @@ package organizationusergroup
 
 
 type OrganizationUserGroupPolicies struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/organization_user_group#account_ids OrganizationUserGroup#account_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/organization_user_group#account_ids OrganizationUserGroup#account_ids}.
 	AccountIds *[]*string `field:"required" json:"accountIds" yaml:"accountIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/organization_user_group#policy_id OrganizationUserGroup#policy_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/organization_user_group#policy_id OrganizationUserGroup#policy_id}.
 	PolicyId *string `field:"required" json:"policyId" yaml:"policyId"`
 }
 

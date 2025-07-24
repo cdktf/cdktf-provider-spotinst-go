@@ -5,11 +5,11 @@ package managedinstanceaws
 
 
 type ManagedInstanceAwsLoadBalancers struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/managed_instance_aws#type ManagedInstanceAws#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/managed_instance_aws#type ManagedInstanceAws#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/managed_instance_aws#arn ManagedInstanceAws#arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/managed_instance_aws#arn ManagedInstanceAws#arn}.
 	Arn *string `field:"optional" json:"arn" yaml:"arn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.0/docs/resources/managed_instance_aws#name ManagedInstanceAws#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/managed_instance_aws#name ManagedInstanceAws#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 
