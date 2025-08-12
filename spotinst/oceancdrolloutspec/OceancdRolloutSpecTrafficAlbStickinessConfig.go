@@ -5,9 +5,9 @@ package oceancdrolloutspec
 
 
 type OceancdRolloutSpecTrafficAlbStickinessConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/oceancd_rollout_spec#duration_seconds OceancdRolloutSpec#duration_seconds}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.0/docs/resources/oceancd_rollout_spec#duration_seconds OceancdRolloutSpec#duration_seconds}.
 	DurationSeconds *float64 `field:"optional" json:"durationSeconds" yaml:"durationSeconds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/oceancd_rollout_spec#enabled OceancdRolloutSpec#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.0/docs/resources/oceancd_rollout_spec#enabled OceancdRolloutSpec#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

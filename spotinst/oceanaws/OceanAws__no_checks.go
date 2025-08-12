@@ -235,6 +235,10 @@ func (j *jsiiProxy_OceanAws) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_OceanAws) validateSetPrimaryIpv6Parameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanAws) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

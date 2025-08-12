@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/account_aws spotinst_account_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.0/docs/resources/account_aws spotinst_account_aws}.
 type AccountAws interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_AccountAws) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/account_aws spotinst_account_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.0/docs/resources/account_aws spotinst_account_aws} Resource.
 func NewAccountAws(scope constructs.Construct, id *string, config *AccountAwsConfig) AccountAws {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewAccountAws(scope constructs.Construct, id *string, config *AccountAwsCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/account_aws spotinst_account_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.0/docs/resources/account_aws spotinst_account_aws} Resource.
 func NewAccountAws_Override(a AccountAws, scope constructs.Construct, id *string, config *AccountAwsConfig) {
 	_init_.Initialize()
 

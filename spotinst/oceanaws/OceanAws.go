@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/ocean_aws spotinst_ocean_aws}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.0/docs/resources/ocean_aws spotinst_ocean_aws}.
 type OceanAws interface {
 	cdktf.TerraformResource
 	AssociateIpv6Address() interface{}
@@ -119,6 +119,9 @@ type OceanAws interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PrimaryIpv6() interface{}
+	SetPrimaryIpv6(val interface{})
+	PrimaryIpv6Input() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -269,6 +272,7 @@ type OceanAws interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrimaryIpv6()
 	ResetRegion()
 	ResetReservedEnis()
 	ResetResourceTagSpecification()
@@ -962,6 +966,26 @@ func (j *jsiiProxy_OceanAws) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_OceanAws) PrimaryIpv6() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"primaryIpv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAws) PrimaryIpv6Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"primaryIpv6Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAws) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -1363,7 +1387,7 @@ func (j *jsiiProxy_OceanAws) WhitelistInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig) OceanAws {
 	_init_.Initialize()
 
@@ -1381,7 +1405,7 @@ func NewOceanAws(scope constructs.Construct, id *string, config *OceanAwsConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.224.1/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.0/docs/resources/ocean_aws spotinst_ocean_aws} Resource.
 func NewOceanAws_Override(o OceanAws, scope constructs.Construct, id *string, config *OceanAwsConfig) {
 	_init_.Initialize()
 
@@ -1635,6 +1659,17 @@ func (j *jsiiProxy_OceanAws)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAws)SetPrimaryIpv6(val interface{}) {
+	if err := j.validateSetPrimaryIpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"primaryIpv6",
 		val,
 	)
 }
@@ -2528,6 +2563,14 @@ func (o *jsiiProxy_OceanAws) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAws) ResetPrimaryIpv6() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetPrimaryIpv6",
 		nil, // no parameters
 	)
 }
