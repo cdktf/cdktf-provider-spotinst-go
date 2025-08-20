@@ -5,7 +5,7 @@ package oceancdrolloutspec
 
 
 type OceancdRolloutSpecTrafficAmbassador struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.0/docs/resources/oceancd_rollout_spec#mappings OceancdRolloutSpec#mappings}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.1/docs/resources/oceancd_rollout_spec#mappings OceancdRolloutSpec#mappings}.
 	Mappings *[]*string `field:"required" json:"mappings" yaml:"mappings"`
 }
 
