@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.1/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.226.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec}.
 type OceanGkeLaunchSpec interface {
 	cdktf.TerraformResource
 	AutoscaleHeadrooms() OceanGkeLaunchSpecAutoscaleHeadroomsList
@@ -37,6 +37,8 @@ type OceanGkeLaunchSpec interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Filters() OceanGkeLaunchSpecFiltersOutputReference
+	FiltersInput() *OceanGkeLaunchSpecFilters
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -166,6 +168,7 @@ type OceanGkeLaunchSpec interface {
 	PutAutoscaleHeadrooms(value interface{})
 	PutAutoscaleHeadroomsAutomatic(value interface{})
 	PutCreateOptions(value *OceanGkeLaunchSpecCreateOptions)
+	PutFilters(value *OceanGkeLaunchSpecFilters)
 	PutLabels(value interface{})
 	PutMetadata(value interface{})
 	PutNetworkInterfaces(value interface{})
@@ -179,6 +182,7 @@ type OceanGkeLaunchSpec interface {
 	ResetAutoscaleHeadrooms()
 	ResetAutoscaleHeadroomsAutomatic()
 	ResetCreateOptions()
+	ResetFilters()
 	ResetId()
 	ResetInstanceTypes()
 	ResetLabels()
@@ -325,6 +329,26 @@ func (j *jsiiProxy_OceanGkeLaunchSpec) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeLaunchSpec) Filters() OceanGkeLaunchSpecFiltersOutputReference {
+	var returns OceanGkeLaunchSpecFiltersOutputReference
+	_jsii_.Get(
+		j,
+		"filters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanGkeLaunchSpec) FiltersInput() *OceanGkeLaunchSpecFilters {
+	var returns *OceanGkeLaunchSpecFilters
+	_jsii_.Get(
+		j,
+		"filtersInput",
 		&returns,
 	)
 	return returns
@@ -861,7 +885,7 @@ func (j *jsiiProxy_OceanGkeLaunchSpec) UpdatePolicyInput() *OceanGkeLaunchSpecUp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.1/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.226.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
 func NewOceanGkeLaunchSpec(scope constructs.Construct, id *string, config *OceanGkeLaunchSpecConfig) OceanGkeLaunchSpec {
 	_init_.Initialize()
 
@@ -879,7 +903,7 @@ func NewOceanGkeLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.1/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.226.0/docs/resources/ocean_gke_launch_spec spotinst_ocean_gke_launch_spec} Resource.
 func NewOceanGkeLaunchSpec_Override(o OceanGkeLaunchSpec, scope constructs.Construct, id *string, config *OceanGkeLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1465,6 +1489,17 @@ func (o *jsiiProxy_OceanGkeLaunchSpec) PutCreateOptions(value *OceanGkeLaunchSpe
 	)
 }
 
+func (o *jsiiProxy_OceanGkeLaunchSpec) PutFilters(value *OceanGkeLaunchSpecFilters) {
+	if err := o.validatePutFiltersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putFilters",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanGkeLaunchSpec) PutLabels(value interface{}) {
 	if err := o.validatePutLabelsParameters(value); err != nil {
 		panic(err)
@@ -1595,6 +1630,14 @@ func (o *jsiiProxy_OceanGkeLaunchSpec) ResetCreateOptions() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetCreateOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanGkeLaunchSpec) ResetFilters() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFilters",
 		nil, // no parameters
 	)
 }

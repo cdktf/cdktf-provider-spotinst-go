@@ -27,6 +27,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "createOptions", GoGetter: "CreateOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "createOptionsInput", GoGetter: "CreateOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "filters", GoGetter: "Filters"},
+			_jsii_.MemberProperty{JsiiProperty: "filtersInput", GoGetter: "FiltersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -69,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAutoscaleHeadrooms", GoMethod: "PutAutoscaleHeadrooms"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutoscaleHeadroomsAutomatic", GoMethod: "PutAutoscaleHeadroomsAutomatic"},
 			_jsii_.MemberMethod{JsiiMethod: "putCreateOptions", GoMethod: "PutCreateOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putFilters", GoMethod: "PutFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "putLabels", GoMethod: "PutLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "putMetadata", GoMethod: "PutMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkInterfaces", GoMethod: "PutNetworkInterfaces"},
@@ -83,6 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscaleHeadrooms", GoMethod: "ResetAutoscaleHeadrooms"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscaleHeadroomsAutomatic", GoMethod: "ResetAutoscaleHeadroomsAutomatic"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreateOptions", GoMethod: "ResetCreateOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFilters", GoMethod: "ResetFilters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTypes", GoMethod: "ResetInstanceTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
@@ -315,6 +319,60 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OceanGkeLaunchSpecCreateOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanGkeLaunchSpec.OceanGkeLaunchSpecFilters",
+		reflect.TypeOf((*OceanGkeLaunchSpecFilters)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanGkeLaunchSpec.OceanGkeLaunchSpecFiltersOutputReference",
+		reflect.TypeOf((*OceanGkeLaunchSpecFiltersOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeFamilies", GoGetter: "ExcludeFamilies"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeFamiliesInput", GoGetter: "ExcludeFamiliesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "includeFamilies", GoGetter: "IncludeFamilies"},
+			_jsii_.MemberProperty{JsiiProperty: "includeFamiliesInput", GoGetter: "IncludeFamiliesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxMemoryGib", GoGetter: "MaxMemoryGib"},
+			_jsii_.MemberProperty{JsiiProperty: "maxMemoryGibInput", GoGetter: "MaxMemoryGibInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maxVcpu", GoGetter: "MaxVcpu"},
+			_jsii_.MemberProperty{JsiiProperty: "maxVcpuInput", GoGetter: "MaxVcpuInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minMemoryGib", GoGetter: "MinMemoryGib"},
+			_jsii_.MemberProperty{JsiiProperty: "minMemoryGibInput", GoGetter: "MinMemoryGibInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minVcpu", GoGetter: "MinVcpu"},
+			_jsii_.MemberProperty{JsiiProperty: "minVcpuInput", GoGetter: "MinVcpuInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludeFamilies", GoMethod: "ResetExcludeFamilies"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncludeFamilies", GoMethod: "ResetIncludeFamilies"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxMemoryGib", GoMethod: "ResetMaxMemoryGib"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxVcpu", GoMethod: "ResetMaxVcpu"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinMemoryGib", GoMethod: "ResetMinMemoryGib"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinVcpu", GoMethod: "ResetMinVcpu"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanGkeLaunchSpecFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

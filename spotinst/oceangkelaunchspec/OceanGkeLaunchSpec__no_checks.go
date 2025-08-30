@@ -87,6 +87,10 @@ func (o *jsiiProxy_OceanGkeLaunchSpec) validatePutCreateOptionsParameters(value 
 	return nil
 }
 
+func (o *jsiiProxy_OceanGkeLaunchSpec) validatePutFiltersParameters(value *OceanGkeLaunchSpecFilters) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanGkeLaunchSpec) validatePutLabelsParameters(value interface{}) error {
 	return nil
 }

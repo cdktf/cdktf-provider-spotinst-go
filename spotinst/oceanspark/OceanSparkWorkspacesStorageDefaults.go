@@ -9,7 +9,7 @@ type OceanSparkWorkspacesStorageDefaults struct {
 	//
 	// Leave it empty to use the cluster defaults.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.225.1/docs/resources/ocean_spark#storage_class_name OceanSpark#storage_class_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.226.0/docs/resources/ocean_spark#storage_class_name OceanSpark#storage_class_name}
 	StorageClassName *string `field:"optional" json:"storageClassName" yaml:"storageClassName"`
 }
 
