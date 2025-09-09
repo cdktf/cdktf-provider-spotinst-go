@@ -5,9 +5,9 @@ package elastigroupazurev3
 
 
 type ElastigroupAzureV3ScalingDownPolicyDimensions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.226.0/docs/resources/elastigroup_azure_v3#name ElastigroupAzureV3#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.227.0/docs/resources/elastigroup_azure_v3#name ElastigroupAzureV3#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.226.0/docs/resources/elastigroup_azure_v3#value ElastigroupAzureV3#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.227.0/docs/resources/elastigroup_azure_v3#value ElastigroupAzureV3#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

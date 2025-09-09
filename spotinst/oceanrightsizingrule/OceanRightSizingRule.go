@@ -12,11 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.226.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.227.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule}.
 type OceanRightSizingRule interface {
 	cdktf.TerraformResource
 	AttachWorkloads() OceanRightSizingRuleAttachWorkloadsList
 	AttachWorkloadsInput() interface{}
+	AutoApplyDefinition() OceanRightSizingRuleAutoApplyDefinitionList
+	AutoApplyDefinitionInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -134,6 +136,7 @@ type OceanRightSizingRule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAttachWorkloads(value interface{})
+	PutAutoApplyDefinition(value interface{})
 	PutDetachWorkloads(value interface{})
 	PutRecommendationApplicationBoundaries(value interface{})
 	PutRecommendationApplicationHpa(value interface{})
@@ -141,6 +144,7 @@ type OceanRightSizingRule interface {
 	PutRecommendationApplicationMinThreshold(value interface{})
 	PutRecommendationApplicationOverheadValues(value interface{})
 	ResetAttachWorkloads()
+	ResetAutoApplyDefinition()
 	ResetDetachWorkloads()
 	ResetExcludePreliminaryRecommendations()
 	ResetId()
@@ -186,6 +190,26 @@ func (j *jsiiProxy_OceanRightSizingRule) AttachWorkloadsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"attachWorkloadsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanRightSizingRule) AutoApplyDefinition() OceanRightSizingRuleAutoApplyDefinitionList {
+	var returns OceanRightSizingRuleAutoApplyDefinitionList
+	_jsii_.Get(
+		j,
+		"autoApplyDefinition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanRightSizingRule) AutoApplyDefinitionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoApplyDefinitionInput",
 		&returns,
 	)
 	return returns
@@ -572,7 +596,7 @@ func (j *jsiiProxy_OceanRightSizingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.226.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.227.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
 func NewOceanRightSizingRule(scope constructs.Construct, id *string, config *OceanRightSizingRuleConfig) OceanRightSizingRule {
 	_init_.Initialize()
 
@@ -590,7 +614,7 @@ func NewOceanRightSizingRule(scope constructs.Construct, id *string, config *Oce
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.226.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.227.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
 func NewOceanRightSizingRule_Override(o OceanRightSizingRule, scope constructs.Construct, id *string, config *OceanRightSizingRuleConfig) {
 	_init_.Initialize()
 
@@ -1088,6 +1112,17 @@ func (o *jsiiProxy_OceanRightSizingRule) PutAttachWorkloads(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanRightSizingRule) PutAutoApplyDefinition(value interface{}) {
+	if err := o.validatePutAutoApplyDefinitionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putAutoApplyDefinition",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanRightSizingRule) PutDetachWorkloads(value interface{}) {
 	if err := o.validatePutDetachWorkloadsParameters(value); err != nil {
 		panic(err)
@@ -1158,6 +1193,14 @@ func (o *jsiiProxy_OceanRightSizingRule) ResetAttachWorkloads() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAttachWorkloads",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanRightSizingRule) ResetAutoApplyDefinition() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAutoApplyDefinition",
 		nil, // no parameters
 	)
 }

@@ -7,7 +7,7 @@ package oceanecs
 type OceanEcsLogging struct {
 	// export block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.226.0/docs/resources/ocean_ecs#export OceanEcs#export}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.227.0/docs/resources/ocean_ecs#export OceanEcs#export}
 	Export *OceanEcsLoggingExport `field:"optional" json:"export" yaml:"export"`
 }
 

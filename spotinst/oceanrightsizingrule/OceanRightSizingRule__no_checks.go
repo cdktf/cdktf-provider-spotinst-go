@@ -79,6 +79,10 @@ func (o *jsiiProxy_OceanRightSizingRule) validatePutAttachWorkloadsParameters(va
 	return nil
 }
 
+func (o *jsiiProxy_OceanRightSizingRule) validatePutAutoApplyDefinitionParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanRightSizingRule) validatePutDetachWorkloadsParameters(value interface{}) error {
 	return nil
 }
