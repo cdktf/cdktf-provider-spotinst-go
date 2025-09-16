@@ -131,6 +131,10 @@ func (j *jsiiProxy_OceanRightSizingRule) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_OceanRightSizingRule) validateSetDownsideOnlyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OceanRightSizingRule) validateSetExcludePreliminaryRecommendationsParameters(val interface{}) error {
 	return nil
 }

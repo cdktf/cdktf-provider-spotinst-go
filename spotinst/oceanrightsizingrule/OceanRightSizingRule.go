@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.227.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.228.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule}.
 type OceanRightSizingRule interface {
 	cdktf.TerraformResource
 	AttachWorkloads() OceanRightSizingRuleAttachWorkloadsList
@@ -37,6 +37,9 @@ type OceanRightSizingRule interface {
 	SetDependsOn(val *[]*string)
 	DetachWorkloads() OceanRightSizingRuleDetachWorkloadsList
 	DetachWorkloadsInput() interface{}
+	DownsideOnly() interface{}
+	SetDownsideOnly(val interface{})
+	DownsideOnlyInput() interface{}
 	ExcludePreliminaryRecommendations() interface{}
 	SetExcludePreliminaryRecommendations(val interface{})
 	ExcludePreliminaryRecommendationsInput() interface{}
@@ -146,6 +149,7 @@ type OceanRightSizingRule interface {
 	ResetAttachWorkloads()
 	ResetAutoApplyDefinition()
 	ResetDetachWorkloads()
+	ResetDownsideOnly()
 	ResetExcludePreliminaryRecommendations()
 	ResetId()
 	ResetOceanId()
@@ -280,6 +284,26 @@ func (j *jsiiProxy_OceanRightSizingRule) DetachWorkloadsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"detachWorkloadsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanRightSizingRule) DownsideOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"downsideOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanRightSizingRule) DownsideOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"downsideOnlyInput",
 		&returns,
 	)
 	return returns
@@ -596,7 +620,7 @@ func (j *jsiiProxy_OceanRightSizingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.227.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.228.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
 func NewOceanRightSizingRule(scope constructs.Construct, id *string, config *OceanRightSizingRuleConfig) OceanRightSizingRule {
 	_init_.Initialize()
 
@@ -614,7 +638,7 @@ func NewOceanRightSizingRule(scope constructs.Construct, id *string, config *Oce
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.227.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.228.0/docs/resources/ocean_right_sizing_rule spotinst_ocean_right_sizing_rule} Resource.
 func NewOceanRightSizingRule_Override(o OceanRightSizingRule, scope constructs.Construct, id *string, config *OceanRightSizingRuleConfig) {
 	_init_.Initialize()
 
@@ -651,6 +675,17 @@ func (j *jsiiProxy_OceanRightSizingRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanRightSizingRule)SetDownsideOnly(val interface{}) {
+	if err := j.validateSetDownsideOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"downsideOnly",
 		val,
 	)
 }
@@ -1209,6 +1244,14 @@ func (o *jsiiProxy_OceanRightSizingRule) ResetDetachWorkloads() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetDetachWorkloads",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanRightSizingRule) ResetDownsideOnly() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDownsideOnly",
 		nil, // no parameters
 	)
 }
