@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.228.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.229.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec}.
 type OceanAwsLaunchSpec interface {
 	cdktf.TerraformResource
 	AssociatePublicIpAddress() interface{}
@@ -84,6 +84,8 @@ type OceanAwsLaunchSpec interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBalancers() OceanAwsLaunchSpecLoadBalancersList
+	LoadBalancersInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -204,6 +206,7 @@ type OceanAwsLaunchSpec interface {
 	PutInstanceStorePolicy(value *OceanAwsLaunchSpecInstanceStorePolicy)
 	PutInstanceTypesFilters(value *OceanAwsLaunchSpecInstanceTypesFilters)
 	PutLabels(value interface{})
+	PutLoadBalancers(value interface{})
 	PutResourceLimits(value interface{})
 	PutSchedulingShutdownHours(value *OceanAwsLaunchSpecSchedulingShutdownHours)
 	PutSchedulingTask(value interface{})
@@ -230,6 +233,7 @@ type OceanAwsLaunchSpec interface {
 	ResetInstanceTypes()
 	ResetInstanceTypesFilters()
 	ResetLabels()
+	ResetLoadBalancers()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -718,6 +722,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
+func (j *jsiiProxy_OceanAwsLaunchSpec) LoadBalancers() OceanAwsLaunchSpecLoadBalancersList {
+	var returns OceanAwsLaunchSpecLoadBalancersList
+	_jsii_.Get(
+		j,
+		"loadBalancers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpec) LoadBalancersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"loadBalancersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OceanAwsLaunchSpec) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1149,7 +1173,7 @@ func (j *jsiiProxy_OceanAwsLaunchSpec) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.228.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.229.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) OceanAwsLaunchSpec {
 	_init_.Initialize()
 
@@ -1167,7 +1191,7 @@ func NewOceanAwsLaunchSpec(scope constructs.Construct, id *string, config *Ocean
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.228.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.229.0/docs/resources/ocean_aws_launch_spec spotinst_ocean_aws_launch_spec} Resource.
 func NewOceanAwsLaunchSpec_Override(o OceanAwsLaunchSpec, scope constructs.Construct, id *string, config *OceanAwsLaunchSpecConfig) {
 	_init_.Initialize()
 
@@ -1907,6 +1931,17 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) PutLabels(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) PutLoadBalancers(value interface{}) {
+	if err := o.validatePutLoadBalancersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLoadBalancers",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) PutResourceLimits(value interface{}) {
 	if err := o.validatePutResourceLimitsParameters(value); err != nil {
 		panic(err)
@@ -2135,6 +2170,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) ResetLabels() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpec) ResetLoadBalancers() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLoadBalancers",
 		nil, // no parameters
 	)
 }

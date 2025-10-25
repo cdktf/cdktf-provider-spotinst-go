@@ -127,6 +127,10 @@ func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutLabelsParameters(value interfa
 	return nil
 }
 
+func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutLoadBalancersParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OceanAwsLaunchSpec) validatePutResourceLimitsParameters(value interface{}) error {
 	return nil
 }
