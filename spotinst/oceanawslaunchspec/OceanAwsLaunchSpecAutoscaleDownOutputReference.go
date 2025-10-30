@@ -32,6 +32,9 @@ type OceanAwsLaunchSpecAutoscaleDownOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	IsAggressiveScaleDownEnabled() interface{}
+	SetIsAggressiveScaleDownEnabled(val interface{})
+	IsAggressiveScaleDownEnabledInput() interface{}
 	MaxScaleDownPercentage() *float64
 	SetMaxScaleDownPercentage(val *float64)
 	MaxScaleDownPercentageInput() *float64
@@ -67,6 +70,7 @@ type OceanAwsLaunchSpecAutoscaleDownOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIsAggressiveScaleDownEnabled()
 	ResetMaxScaleDownPercentage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleDownOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleDownOutputReference) IsAggressiveScaleDownEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isAggressiveScaleDownEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleDownOutputReference) IsAggressiveScaleDownEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isAggressiveScaleDownEnabledInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +254,17 @@ func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleDownOutputReference)SetInternalVal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecAutoscaleDownOutputReference)SetIsAggressiveScaleDownEnabled(val interface{}) {
+	if err := j.validateSetIsAggressiveScaleDownEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isAggressiveScaleDownEnabled",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleDownOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleDownOutputReference) ResetIsAggressiveScaleDownEnabled() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetIsAggressiveScaleDownEnabled",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleDownOutputReference) ResetMaxScaleDownPercentage() {

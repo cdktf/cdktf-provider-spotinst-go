@@ -5,9 +5,9 @@ package oceancdverificationtemplate
 
 
 type OceancdVerificationTemplateMetricsProviderJenkinsJenkinsParameters struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.229.0/docs/resources/oceancd_verification_template#parameter_key OceancdVerificationTemplate#parameter_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.230.0/docs/resources/oceancd_verification_template#parameter_key OceancdVerificationTemplate#parameter_key}.
 	ParameterKey *string `field:"required" json:"parameterKey" yaml:"parameterKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.229.0/docs/resources/oceancd_verification_template#parameter_value OceancdVerificationTemplate#parameter_value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.230.0/docs/resources/oceancd_verification_template#parameter_value OceancdVerificationTemplate#parameter_value}.
 	ParameterValue *string `field:"required" json:"parameterValue" yaml:"parameterValue"`
 }
 

@@ -7,7 +7,7 @@ package oceancdstrategy
 type OceancdStrategyRolling struct {
 	// steps block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.229.0/docs/resources/oceancd_strategy#steps OceancdStrategy#steps}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.230.0/docs/resources/oceancd_strategy#steps OceancdStrategy#steps}
 	Steps interface{} `field:"required" json:"steps" yaml:"steps"`
 }
 

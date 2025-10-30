@@ -5,7 +5,7 @@ package oceancdrolloutspec
 
 
 type OceancdRolloutSpecFailurePolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.229.0/docs/resources/oceancd_rollout_spec#action OceancdRolloutSpec#action}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/spotinst/spotinst/1.230.0/docs/resources/oceancd_rollout_spec#action OceancdRolloutSpec#action}.
 	Action *string `field:"required" json:"action" yaml:"action"`
 }
 
