@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsScalingUpPolicyStepAdjustmentsList) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsScalingUpPolicyStepAdjustmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsScalingUpPolicyStepAdjustmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

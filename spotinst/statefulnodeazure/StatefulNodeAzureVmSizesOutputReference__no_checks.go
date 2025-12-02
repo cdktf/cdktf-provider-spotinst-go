@@ -43,7 +43,7 @@ func (s *jsiiProxy_StatefulNodeAzureVmSizesOutputReference) validateGetStringMap
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureVmSizesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureVmSizesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_StatefulNodeAzureVmSizesOutputReference) validatePutSpotSizeA
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureVmSizesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureVmSizesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

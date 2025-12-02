@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanEcsTagsList) validateGetParameters(index *float64) error
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

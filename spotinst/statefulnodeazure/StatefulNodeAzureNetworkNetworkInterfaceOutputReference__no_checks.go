@@ -43,7 +43,7 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

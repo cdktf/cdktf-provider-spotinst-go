@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) validateGetParamet
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

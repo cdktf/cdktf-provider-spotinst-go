@@ -71,12 +71,12 @@ type ElastigroupAzureV3CapacityReservationOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCapacityReservationGroups(value *ElastigroupAzureV3CapacityReservationCapacityReservationGroups)
 	ResetCapacityReservationGroups()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -494,8 +494,8 @@ func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) Interpo
 	return returns
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -503,7 +503,7 @@ func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) Interpo
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -529,8 +529,8 @@ func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) ResetCa
 	)
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -538,7 +538,7 @@ func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) Resolve
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

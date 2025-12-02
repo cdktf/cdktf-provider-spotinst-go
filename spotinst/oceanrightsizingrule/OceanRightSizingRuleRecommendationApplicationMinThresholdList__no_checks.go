@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationMinThresholdList
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationMinThresholdList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationMinThresholdList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) validateGetP
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53DomainsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

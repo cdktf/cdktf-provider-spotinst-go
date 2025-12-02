@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficNginxAdditionalIngressAnnotationOutp
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficNginxAdditionalIngressAnnotationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficNginxAdditionalIngressAnnotationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficNginxAdditionalIngressAnnotationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficNginxAdditionalIngressAnnotationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

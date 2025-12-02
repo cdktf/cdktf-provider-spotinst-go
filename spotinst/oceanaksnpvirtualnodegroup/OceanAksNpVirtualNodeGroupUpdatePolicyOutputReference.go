@@ -71,13 +71,13 @@ type OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutRollConfig(value *OceanAksNpVirtualNodeGroupUpdatePolicyRollConfig)
 	ResetConditionedRoll()
 	ResetRollConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -495,8 +495,8 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) Interp
 	return returns
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -504,7 +504,7 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) Interp
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -538,8 +538,8 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) ResetR
 	)
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -547,7 +547,7 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) Resolv
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

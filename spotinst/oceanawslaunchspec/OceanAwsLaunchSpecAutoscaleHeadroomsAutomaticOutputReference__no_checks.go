@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticOutputReference)
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

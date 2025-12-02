@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) validateGet
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

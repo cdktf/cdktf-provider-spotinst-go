@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3TagsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3TagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3TagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

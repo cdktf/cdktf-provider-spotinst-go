@@ -15,7 +15,7 @@ func (m *jsiiProxy_MrscalerAwsConfigurationsFileList) validateGetParameters(inde
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsConfigurationsFileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsConfigurationsFileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

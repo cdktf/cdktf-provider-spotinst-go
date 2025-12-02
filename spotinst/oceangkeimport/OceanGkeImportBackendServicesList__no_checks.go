@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesList) validateGetParameters(inde
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportBackendServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeImportBackendServicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesOutputReference) v
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAliasIpRangesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

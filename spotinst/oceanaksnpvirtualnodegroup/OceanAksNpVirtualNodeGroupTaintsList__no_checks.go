@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupTaintsList) validateGetParameters(i
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupTaintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupTaintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

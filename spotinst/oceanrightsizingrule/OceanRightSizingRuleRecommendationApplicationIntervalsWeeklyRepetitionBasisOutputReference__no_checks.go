@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsWeeklyR
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsWeeklyRepetitionBasisOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsWeeklyRepetitionBasisOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsWeeklyRepetitionBasisOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsWeeklyRepetitionBasisOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

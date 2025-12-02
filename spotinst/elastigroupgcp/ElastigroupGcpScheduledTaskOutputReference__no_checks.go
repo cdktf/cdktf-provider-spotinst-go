@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

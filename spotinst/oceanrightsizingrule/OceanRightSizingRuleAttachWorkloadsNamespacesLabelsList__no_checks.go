@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanRightSizingRuleAttachWorkloadsNamespacesLabelsList) vali
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleAttachWorkloadsNamespacesLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanRightSizingRuleAttachWorkloadsNamespacesLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

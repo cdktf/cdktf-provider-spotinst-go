@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) vali
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

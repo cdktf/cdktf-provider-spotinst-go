@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

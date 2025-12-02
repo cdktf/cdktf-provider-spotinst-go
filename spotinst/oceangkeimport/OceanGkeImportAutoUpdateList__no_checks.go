@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanGkeImportAutoUpdateList) validateGetParameters(index *fl
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportAutoUpdateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeImportAutoUpdateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

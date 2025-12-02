@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) validateGetPara
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3ManagedServiceIdentityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

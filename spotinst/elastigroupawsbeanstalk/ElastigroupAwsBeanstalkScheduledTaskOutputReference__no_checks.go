@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

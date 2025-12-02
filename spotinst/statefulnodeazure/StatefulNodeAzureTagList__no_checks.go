@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureTagList) validateGetParameters(index *float6
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

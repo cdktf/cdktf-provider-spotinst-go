@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureOsDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

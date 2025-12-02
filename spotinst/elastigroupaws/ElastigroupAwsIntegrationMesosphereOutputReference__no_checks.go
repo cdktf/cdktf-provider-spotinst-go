@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationMesosphereOutputReference) validateG
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationMesosphereOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationMesosphereOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationMesosphereOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationMesosphereOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

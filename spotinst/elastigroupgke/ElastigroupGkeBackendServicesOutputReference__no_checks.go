@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) validatePutName
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGkeBackendServicesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) validateGetParameters
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsEphemeralBlockDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationGkeAutoscaleLabelsList) validateGetP
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeIntegrationGkeAutoscaleLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGkeIntegrationGkeAutoscaleLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

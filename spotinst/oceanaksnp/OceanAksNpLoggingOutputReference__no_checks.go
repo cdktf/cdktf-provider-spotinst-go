@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAksNpLoggingOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpLoggingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpLoggingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAksNpLoggingOutputReference) validatePutExportParameters
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpLoggingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpLoggingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

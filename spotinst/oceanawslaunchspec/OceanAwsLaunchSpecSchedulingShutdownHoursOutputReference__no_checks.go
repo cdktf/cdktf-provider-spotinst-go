@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAwsLaunchSpecSchedulingShutdownHoursOutputReference) val
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecSchedulingShutdownHoursOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecSchedulingShutdownHoursOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecSchedulingShutdownHoursOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecSchedulingShutdownHoursOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

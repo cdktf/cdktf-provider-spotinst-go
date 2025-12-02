@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAzureV3LoadBalancerOutputReference) validateGetStr
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3LoadBalancerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAzureV3LoadBalancerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3LoadBalancerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3LoadBalancerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

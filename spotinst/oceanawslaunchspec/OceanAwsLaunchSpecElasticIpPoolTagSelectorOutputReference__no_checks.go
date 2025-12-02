@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) va
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolTagSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

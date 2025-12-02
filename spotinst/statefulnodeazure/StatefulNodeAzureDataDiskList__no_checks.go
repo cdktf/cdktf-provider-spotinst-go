@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureDataDiskList) validateGetParameters(index *f
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureDataDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureDataDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

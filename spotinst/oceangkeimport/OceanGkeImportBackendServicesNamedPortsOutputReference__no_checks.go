@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanGkeImportBackendServicesNamedPortsOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportBackendServicesNamedPortsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanGkeImportBackendServicesNamedPortsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportBackendServicesNamedPortsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeImportBackendServicesNamedPortsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

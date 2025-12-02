@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedInstanceAwsTagsList) validateGetParameters(index *floa
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedInstanceAwsTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

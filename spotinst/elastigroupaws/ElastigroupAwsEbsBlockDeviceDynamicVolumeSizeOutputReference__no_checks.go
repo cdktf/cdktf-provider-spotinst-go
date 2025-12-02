@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceDynamicVolumeSizeOutputReference)
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceDynamicVolumeSizeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceDynamicVolumeSizeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceDynamicVolumeSizeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceDynamicVolumeSizeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) valid
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

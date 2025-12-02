@@ -43,7 +43,11 @@ func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) validatePutDynamicIopsParameters(value *OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIops) error {
 	return nil
 }
 
@@ -51,7 +55,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

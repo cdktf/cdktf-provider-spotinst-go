@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfacePublicIpsOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfacePublicIpsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfacePublicIpsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfacePublicIpsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfacePublicIpsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanSparkWorkspacesStorageOutputReference) validateGetString
 	return nil
 }
 
-func (o *jsiiProxy_OceanSparkWorkspacesStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanSparkWorkspacesStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanSparkWorkspacesStorageOutputReference) validatePutDefaul
 	return nil
 }
 
-func (o *jsiiProxy_OceanSparkWorkspacesStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanSparkWorkspacesStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

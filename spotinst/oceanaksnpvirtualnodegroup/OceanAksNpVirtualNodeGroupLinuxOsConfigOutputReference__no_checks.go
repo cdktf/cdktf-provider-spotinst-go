@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupLinuxOsConfigOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupLinuxOsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupLinuxOsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupLinuxOsConfigOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupLinuxOsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupLinuxOsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesOutputRefere
 	return nil
 }
 
-func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesOutputRefere
 	return nil
 }
 
-func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

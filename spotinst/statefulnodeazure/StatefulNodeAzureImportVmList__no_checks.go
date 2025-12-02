@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureImportVmList) validateGetParameters(index *f
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureImportVmList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureImportVmList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

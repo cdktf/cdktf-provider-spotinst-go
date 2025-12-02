@@ -15,7 +15,7 @@ func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesList) valida
 	return nil
 }
 
-func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

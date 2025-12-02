@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAwsLoggingExportS3List) validateGetParameters(index *flo
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLoggingExportS3List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLoggingExportS3List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

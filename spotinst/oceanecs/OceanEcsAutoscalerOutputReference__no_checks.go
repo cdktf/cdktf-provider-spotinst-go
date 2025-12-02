@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) validatePutResourceLimitsP
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsAutoscalerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

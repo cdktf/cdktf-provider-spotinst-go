@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupGcpDiskInitializeParamsList) validateGetParameters
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpDiskInitializeParamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGcpDiskInitializeParamsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

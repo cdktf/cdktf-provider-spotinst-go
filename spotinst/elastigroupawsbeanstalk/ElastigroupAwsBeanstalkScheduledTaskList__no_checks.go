@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskList) validateGetParamete
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsBeanstalkScheduledTaskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

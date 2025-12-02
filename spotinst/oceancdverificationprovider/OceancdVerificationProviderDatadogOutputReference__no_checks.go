@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceancdVerificationProviderDatadogOutputReference) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_OceancdVerificationProviderDatadogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdVerificationProviderDatadogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceancdVerificationProviderDatadogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdVerificationProviderDatadogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

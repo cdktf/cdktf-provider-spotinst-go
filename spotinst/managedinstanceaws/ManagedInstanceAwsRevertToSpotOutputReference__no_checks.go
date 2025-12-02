@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedInstanceAwsRevertToSpotOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsRevertToSpotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedInstanceAwsRevertToSpotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsRevertToSpotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedInstanceAwsRevertToSpotOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

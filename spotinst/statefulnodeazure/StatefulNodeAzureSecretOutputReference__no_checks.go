@@ -43,7 +43,7 @@ func (s *jsiiProxy_StatefulNodeAzureSecretOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureSecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureSecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_StatefulNodeAzureSecretOutputReference) validatePutVaultCerti
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureSecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureSecretOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

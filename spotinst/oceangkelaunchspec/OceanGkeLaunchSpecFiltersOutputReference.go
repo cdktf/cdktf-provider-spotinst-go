@@ -81,7 +81,7 @@ type OceanGkeLaunchSpecFiltersOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetExcludeFamilies()
 	ResetIncludeFamilies()
 	ResetMaxMemoryGib()
@@ -90,7 +90,7 @@ type OceanGkeLaunchSpecFiltersOutputReference interface {
 	ResetMinVcpu()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -612,8 +612,8 @@ func (o *jsiiProxy_OceanGkeLaunchSpecFiltersOutputReference) InterpolationAsList
 	return returns
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecFiltersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OceanGkeLaunchSpecFiltersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -621,7 +621,7 @@ func (o *jsiiProxy_OceanGkeLaunchSpecFiltersOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -676,8 +676,8 @@ func (o *jsiiProxy_OceanGkeLaunchSpecFiltersOutputReference) ResetMinVcpu() {
 	)
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecFiltersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OceanGkeLaunchSpecFiltersOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -685,7 +685,7 @@ func (o *jsiiProxy_OceanGkeLaunchSpecFiltersOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

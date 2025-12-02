@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAksNpLinuxOsConfigOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpLinuxOsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpLinuxOsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAksNpLinuxOsConfigOutputReference) validatePutSysctlsPar
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpLinuxOsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpLinuxOsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

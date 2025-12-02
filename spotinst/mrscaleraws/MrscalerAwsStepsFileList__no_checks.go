@@ -15,7 +15,7 @@ func (m *jsiiProxy_MrscalerAwsStepsFileList) validateGetParameters(index *float6
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsStepsFileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsStepsFileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

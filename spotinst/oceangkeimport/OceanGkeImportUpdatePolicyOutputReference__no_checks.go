@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) validateGetStringM
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) validatePutRollCon
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeImportUpdatePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyRevertToSpotOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureStrategyRevertToSpotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureStrategyRevertToSpotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureStrategyRevertToSpotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureStrategyRevertToSpotOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

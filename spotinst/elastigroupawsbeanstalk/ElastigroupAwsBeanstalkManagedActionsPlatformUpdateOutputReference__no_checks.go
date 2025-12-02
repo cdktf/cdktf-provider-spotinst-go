@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkManagedActionsPlatformUpdateOutputRefe
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsBeanstalkManagedActionsPlatformUpdateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsBeanstalkManagedActionsPlatformUpdateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsBeanstalkManagedActionsPlatformUpdateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsBeanstalkManagedActionsPlatformUpdateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

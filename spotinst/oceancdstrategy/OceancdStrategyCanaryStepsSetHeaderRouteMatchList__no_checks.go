@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceancdStrategyCanaryStepsSetHeaderRouteMatchList) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_OceancdStrategyCanaryStepsSetHeaderRouteMatchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdStrategyCanaryStepsSetHeaderRouteMatchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -87,7 +87,7 @@ type ElastigroupAzureV3NetworkNetworkInterfacesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAdditionalIpConfigs(value interface{})
 	PutApplicationSecurityGroup(value interface{})
 	PutSecurityGroup(value interface{})
@@ -99,7 +99,7 @@ type ElastigroupAzureV3NetworkNetworkInterfacesOutputReference interface {
 	ResetSecurityGroup()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -681,8 +681,8 @@ func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) In
 	return returns
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -690,7 +690,7 @@ func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) In
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -778,8 +778,8 @@ func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) Re
 	)
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -787,7 +787,7 @@ func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesOutputReference) Re
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

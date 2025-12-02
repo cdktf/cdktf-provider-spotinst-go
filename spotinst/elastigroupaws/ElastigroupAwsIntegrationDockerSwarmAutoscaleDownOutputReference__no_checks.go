@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationDockerSwarmAutoscaleDownOutputRefere
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationDockerSwarmAutoscaleDownOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationDockerSwarmAutoscaleDownOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationDockerSwarmAutoscaleDownOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationDockerSwarmAutoscaleDownOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

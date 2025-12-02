@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceancdStrategyCanaryStepsList) validateGetParameters(index *
 	return nil
 }
 
-func (o *jsiiProxy_OceancdStrategyCanaryStepsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdStrategyCanaryStepsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

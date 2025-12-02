@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) validateGetPara
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

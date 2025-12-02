@@ -29,9 +29,9 @@ func (e *jsiiProxy_ElastigroupAzureV3SecretSourceVaultList) validateGetParameter
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3SecretSourceVaultList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_ElastigroupAzureV3SecretSourceVaultList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

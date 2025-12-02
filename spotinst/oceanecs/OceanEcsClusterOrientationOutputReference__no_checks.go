@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanEcsClusterOrientationOutputReference) validateGetStringM
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsClusterOrientationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanEcsClusterOrientationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsClusterOrientationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsClusterOrientationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

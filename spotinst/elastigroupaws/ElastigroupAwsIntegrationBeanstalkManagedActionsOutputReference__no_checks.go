@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkManagedActionsOutputReferen
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkManagedActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkManagedActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkManagedActionsOutputReferen
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkManagedActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationBeanstalkManagedActionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

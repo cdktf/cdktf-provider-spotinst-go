@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupGcpSubnetsList) validateGetParameters(index *float
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpSubnetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGcpSubnetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

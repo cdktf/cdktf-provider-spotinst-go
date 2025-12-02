@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceancdStrategyCanaryOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (o *jsiiProxy_OceancdStrategyCanaryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdStrategyCanaryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OceancdStrategyCanaryOutputReference) validatePutStepsParamet
 	return nil
 }
 
-func (o *jsiiProxy_OceancdStrategyCanaryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdStrategyCanaryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) validatePutMarketplac
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

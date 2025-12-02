@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolOutputReference) validateGetSt
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolOutputReference) validatePutTa
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecElasticIpPoolOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

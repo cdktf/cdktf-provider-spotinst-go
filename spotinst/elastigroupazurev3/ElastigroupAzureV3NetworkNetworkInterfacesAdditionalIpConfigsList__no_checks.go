@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesAdditionalIpConfigs
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesAdditionalIpConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesAdditionalIpConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

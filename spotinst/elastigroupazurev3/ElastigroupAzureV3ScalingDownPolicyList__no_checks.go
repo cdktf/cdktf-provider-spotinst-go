@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3ScalingDownPolicyList) validateGetParameter
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ScalingDownPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3ScalingDownPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

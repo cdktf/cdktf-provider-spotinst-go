@@ -15,7 +15,7 @@ func (m *jsiiProxy_MrscalerAwsTagsList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

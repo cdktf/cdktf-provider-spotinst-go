@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

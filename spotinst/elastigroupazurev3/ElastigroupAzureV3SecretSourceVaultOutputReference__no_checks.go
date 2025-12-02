@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAzureV3SecretSourceVaultOutputReference) validateG
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3SecretSourceVaultOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAzureV3SecretSourceVaultOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3SecretSourceVaultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3SecretSourceVaultOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

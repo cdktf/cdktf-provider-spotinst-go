@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulNodeAzureAttachDataDiskOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureAttachDataDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureAttachDataDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureAttachDataDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureAttachDataDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

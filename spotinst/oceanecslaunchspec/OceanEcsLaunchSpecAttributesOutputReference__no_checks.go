@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanEcsLaunchSpecAttributesOutputReference) validateGetStrin
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsLaunchSpecAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanEcsLaunchSpecAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsLaunchSpecAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsLaunchSpecAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

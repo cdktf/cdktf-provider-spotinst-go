@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupGkeBackendServicesNamedPortsList) validateGetParam
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeBackendServicesNamedPortsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGkeBackendServicesNamedPortsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

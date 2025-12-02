@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAksNpHeadroomsList) validateGetParameters(index *float64
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpHeadroomsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpHeadroomsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

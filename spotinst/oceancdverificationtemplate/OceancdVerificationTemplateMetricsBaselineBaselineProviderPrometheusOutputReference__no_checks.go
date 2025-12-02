@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceancdVerificationTemplateMetricsBaselineBaselineProviderPro
 	return nil
 }
 
-func (o *jsiiProxy_OceancdVerificationTemplateMetricsBaselineBaselineProviderPrometheusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdVerificationTemplateMetricsBaselineBaselineProviderPrometheusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceancdVerificationTemplateMetricsBaselineBaselineProviderPrometheusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdVerificationTemplateMetricsBaselineBaselineProviderPrometheusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) validateGetSt
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecDeleteOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

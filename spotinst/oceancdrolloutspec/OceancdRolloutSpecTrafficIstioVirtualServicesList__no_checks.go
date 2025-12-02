@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioVirtualServicesList) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioVirtualServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioVirtualServicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

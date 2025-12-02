@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsOutputReference) valid
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsOutputReference) valid
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

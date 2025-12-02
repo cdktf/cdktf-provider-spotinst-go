@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationEcsAutoscaleAttributesList) validate
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationEcsAutoscaleAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationEcsAutoscaleAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

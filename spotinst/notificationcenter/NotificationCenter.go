@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.230.0/docs/resources/notification_center spotinst_notification_center}.
+// Represents a {@link https://registry.terraform.io/providers/spotinst/spotinst/1.231.0/docs/resources/notification_center spotinst_notification_center}.
 type NotificationCenter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -476,7 +476,7 @@ func (j *jsiiProxy_NotificationCenter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.230.0/docs/resources/notification_center spotinst_notification_center} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.231.0/docs/resources/notification_center spotinst_notification_center} Resource.
 func NewNotificationCenter(scope constructs.Construct, id *string, config *NotificationCenterConfig) NotificationCenter {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewNotificationCenter(scope constructs.Construct, id *string, config *Notif
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.230.0/docs/resources/notification_center spotinst_notification_center} Resource.
+// Create a new {@link https://registry.terraform.io/providers/spotinst/spotinst/1.231.0/docs/resources/notification_center spotinst_notification_center} Resource.
 func NewNotificationCenter_Override(n NotificationCenter, scope constructs.Construct, id *string, config *NotificationCenterConfig) {
 	_init_.Initialize()
 

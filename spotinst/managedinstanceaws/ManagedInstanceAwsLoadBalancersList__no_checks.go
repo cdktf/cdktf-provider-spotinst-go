@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersList) validateGetParameters(in
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedInstanceAwsLoadBalancersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

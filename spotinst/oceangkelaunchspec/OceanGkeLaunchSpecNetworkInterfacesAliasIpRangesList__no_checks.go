@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesAliasIpRangesList) validat
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesAliasIpRangesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesAliasIpRangesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

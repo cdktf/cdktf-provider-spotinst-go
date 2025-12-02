@@ -397,6 +397,48 @@ func init() {
 		reflect.TypeOf((*OceanAwsLaunchSpecBlockDeviceMappingsEbs)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-spotinst.oceanAwsLaunchSpec.OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIops",
+		reflect.TypeOf((*OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIops)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-spotinst.oceanAwsLaunchSpec.OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIopsOutputReference",
+		reflect.TypeOf((*OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIopsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "baseSize", GoGetter: "BaseSize"},
+			_jsii_.MemberProperty{JsiiProperty: "baseSizeInput", GoGetter: "BaseSizeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resource", GoGetter: "Resource"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceInput", GoGetter: "ResourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sizePerResourceUnit", GoGetter: "SizePerResourceUnit"},
+			_jsii_.MemberProperty{JsiiProperty: "sizePerResourceUnitInput", GoGetter: "SizePerResourceUnitInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIopsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-spotinst.oceanAwsLaunchSpec.OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicVolumeSize",
 		reflect.TypeOf((*OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicVolumeSize)(nil)).Elem(),
 	)
@@ -448,6 +490,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "deleteOnTermination", GoGetter: "DeleteOnTermination"},
 			_jsii_.MemberProperty{JsiiProperty: "deleteOnTerminationInput", GoGetter: "DeleteOnTerminationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicIops", GoGetter: "DynamicIops"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicIopsInput", GoGetter: "DynamicIopsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dynamicVolumeSize", GoGetter: "DynamicVolumeSize"},
 			_jsii_.MemberProperty{JsiiProperty: "dynamicVolumeSizeInput", GoGetter: "DynamicVolumeSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "encrypted", GoGetter: "Encrypted"},
@@ -469,8 +513,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "iopsInput", GoGetter: "IopsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyId", GoGetter: "KmsKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyIdInput", GoGetter: "KmsKeyIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putDynamicIops", GoMethod: "PutDynamicIops"},
 			_jsii_.MemberMethod{JsiiMethod: "putDynamicVolumeSize", GoMethod: "PutDynamicVolumeSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteOnTermination", GoMethod: "ResetDeleteOnTermination"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDynamicIops", GoMethod: "ResetDynamicIops"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDynamicVolumeSize", GoMethod: "ResetDynamicVolumeSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncrypted", GoMethod: "ResetEncrypted"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIops", GoMethod: "ResetIops"},

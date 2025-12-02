@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) validateGetParamete
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsStatefulInstanceActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

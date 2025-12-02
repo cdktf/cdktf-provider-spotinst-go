@@ -41,7 +41,7 @@ type OceanAwsLaunchSpecStartupTaintsList interface {
 	Get(index *float64) OceanAwsLaunchSpecStartupTaintsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (o *jsiiProxy_OceanAwsLaunchSpecStartupTaintsList) Get(index *float64) Ocea
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecStartupTaintsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OceanAwsLaunchSpecStartupTaintsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecStartupTaintsList) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

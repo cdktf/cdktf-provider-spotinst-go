@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanRightSizingRuleAutoApplyDefinitionOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleAutoApplyDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanRightSizingRuleAutoApplyDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleAutoApplyDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanRightSizingRuleAutoApplyDefinitionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

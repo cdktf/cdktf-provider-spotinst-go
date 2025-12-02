@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageGalleryImageList) validateGetParameter
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ImageGalleryImageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3ImageGalleryImageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

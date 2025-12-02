@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAwsLoggingExportOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsLoggingExportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsLoggingExportOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ElastigroupAwsLoggingExportOutputReference) validatePutS3Para
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsLoggingExportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsLoggingExportOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

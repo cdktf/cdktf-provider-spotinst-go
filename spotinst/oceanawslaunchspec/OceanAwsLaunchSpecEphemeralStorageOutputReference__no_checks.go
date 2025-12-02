@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAwsLaunchSpecEphemeralStorageOutputReference) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecEphemeralStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecEphemeralStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecEphemeralStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecEphemeralStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

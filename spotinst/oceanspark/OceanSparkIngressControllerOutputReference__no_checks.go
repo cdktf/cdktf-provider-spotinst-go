@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanSparkIngressControllerOutputReference) validateGetString
 	return nil
 }
 
-func (o *jsiiProxy_OceanSparkIngressControllerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanSparkIngressControllerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanSparkIngressControllerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanSparkIngressControllerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

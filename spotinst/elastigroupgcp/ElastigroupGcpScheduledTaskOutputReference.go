@@ -81,7 +81,7 @@ type ElastigroupGcpScheduledTaskOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCronExpression()
 	ResetIsEnabled()
 	ResetMaxCapacity()
@@ -89,7 +89,7 @@ type ElastigroupGcpScheduledTaskOutputReference interface {
 	ResetTargetCapacity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -611,8 +611,8 @@ func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -620,7 +620,7 @@ func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -667,8 +667,8 @@ func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) ResetTargetCapaci
 	)
 }
 
-func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -676,7 +676,7 @@ func (e *jsiiProxy_ElastigroupGcpScheduledTaskOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

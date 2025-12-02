@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) validateGetParamete
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsMultipleMetricsMetricsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

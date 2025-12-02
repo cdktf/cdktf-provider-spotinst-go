@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulNodeAzureUpdateStateOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureUpdateStateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureUpdateStateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureUpdateStateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureUpdateStateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

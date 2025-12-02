@@ -43,11 +43,11 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

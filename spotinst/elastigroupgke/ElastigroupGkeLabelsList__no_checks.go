@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupGkeLabelsList) validateGetParameters(index *float6
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGkeLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAwsAttachLoadBalancerOutputReference) validateGetStringM
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsAttachLoadBalancerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsAttachLoadBalancerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsAttachLoadBalancerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsAttachLoadBalancerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

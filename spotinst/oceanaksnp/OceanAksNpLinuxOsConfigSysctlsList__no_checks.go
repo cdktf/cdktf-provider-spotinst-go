@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAksNpLinuxOsConfigSysctlsList) validateGetParameters(ind
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpLinuxOsConfigSysctlsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpLinuxOsConfigSysctlsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

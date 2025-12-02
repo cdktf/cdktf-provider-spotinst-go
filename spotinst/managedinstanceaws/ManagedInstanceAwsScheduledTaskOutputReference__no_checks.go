@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

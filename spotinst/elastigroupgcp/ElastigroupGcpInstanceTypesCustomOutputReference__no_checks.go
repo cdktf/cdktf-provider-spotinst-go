@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupGcpInstanceTypesCustomOutputReference) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpInstanceTypesCustomOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupGcpInstanceTypesCustomOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpInstanceTypesCustomOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGcpInstanceTypesCustomOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

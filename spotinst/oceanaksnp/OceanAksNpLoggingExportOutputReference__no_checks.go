@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAksNpLoggingExportOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpLoggingExportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpLoggingExportOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAksNpLoggingExportOutputReference) validatePutAzureBlobP
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpLoggingExportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpLoggingExportOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

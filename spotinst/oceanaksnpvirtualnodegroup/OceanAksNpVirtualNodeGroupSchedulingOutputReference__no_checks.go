@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupSchedulingOutputReference) validate
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupSchedulingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupSchedulingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupSchedulingOutputReference) validate
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupSchedulingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanGkeImportShieldedInstanceConfigOutputReference) validate
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportShieldedInstanceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanGkeImportShieldedInstanceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportShieldedInstanceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeImportShieldedInstanceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

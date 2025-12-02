@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageMarketplaceOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ImageMarketplaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAzureV3ImageMarketplaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ImageMarketplaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3ImageMarketplaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

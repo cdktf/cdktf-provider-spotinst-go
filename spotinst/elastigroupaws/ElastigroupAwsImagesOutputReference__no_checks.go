@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAwsImagesOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsImagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsImagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ElastigroupAwsImagesOutputReference) validatePutImageParamete
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsImagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsImagesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

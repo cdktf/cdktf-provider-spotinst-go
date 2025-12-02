@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceancdRolloutSpecSpotDeploymentsList) validateGetParameters(
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecSpotDeploymentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdRolloutSpecSpotDeploymentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

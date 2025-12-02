@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupGcpScheduledTaskList) validateGetParameters(index 
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpScheduledTaskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGcpScheduledTaskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

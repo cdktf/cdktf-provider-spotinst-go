@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGkeDiskInitializeParamsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

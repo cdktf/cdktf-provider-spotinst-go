@@ -31,6 +31,8 @@ type OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference interface {
 	DeleteOnTermination() interface{}
 	SetDeleteOnTermination(val interface{})
 	DeleteOnTerminationInput() interface{}
+	DynamicIops() OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIopsOutputReference
+	DynamicIopsInput() *OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIops
 	DynamicVolumeSize() OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicVolumeSizeOutputReference
 	DynamicVolumeSizeInput() *OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicVolumeSize
 	Encrypted() interface{}
@@ -89,9 +91,11 @@ type OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	PutDynamicIops(value *OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIops)
 	PutDynamicVolumeSize(value *OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicVolumeSize)
 	ResetDeleteOnTermination()
+	ResetDynamicIops()
 	ResetDynamicVolumeSize()
 	ResetEncrypted()
 	ResetIops()
@@ -102,7 +106,7 @@ type OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference interface {
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -160,6 +164,26 @@ func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) Dele
 	_jsii_.Get(
 		j,
 		"deleteOnTerminationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) DynamicIops() OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIopsOutputReference {
+	var returns OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIopsOutputReference
+	_jsii_.Get(
+		j,
+		"dynamicIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) DynamicIopsInput() *OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIops {
+	var returns *OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIops
+	_jsii_.Get(
+		j,
+		"dynamicIopsInput",
 		&returns,
 	)
 	return returns
@@ -706,8 +730,8 @@ func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) Inte
 	return returns
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -715,11 +739,22 @@ func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) Inte
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) PutDynamicIops(value *OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicIops) {
+	if err := o.validatePutDynamicIopsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putDynamicIops",
+		[]interface{}{value},
+	)
 }
 
 func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) PutDynamicVolumeSize(value *OceanAwsLaunchSpecBlockDeviceMappingsEbsDynamicVolumeSize) {
@@ -737,6 +772,14 @@ func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) Rese
 	_jsii_.InvokeVoid(
 		o,
 		"resetDeleteOnTermination",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) ResetDynamicIops() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDynamicIops",
 		nil, // no parameters
 	)
 }
@@ -805,8 +848,8 @@ func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) Rese
 	)
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -814,7 +857,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsEbsOutputReference) Reso
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

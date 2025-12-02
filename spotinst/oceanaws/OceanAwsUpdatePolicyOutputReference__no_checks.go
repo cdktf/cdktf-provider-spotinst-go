@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAwsUpdatePolicyOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsUpdatePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsUpdatePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAwsUpdatePolicyOutputReference) validatePutRollConfigPar
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsUpdatePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsUpdatePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

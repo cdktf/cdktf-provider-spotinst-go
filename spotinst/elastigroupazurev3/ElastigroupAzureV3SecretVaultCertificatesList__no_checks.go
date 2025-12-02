@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3SecretVaultCertificatesList) validateGetPar
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3SecretVaultCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3SecretVaultCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

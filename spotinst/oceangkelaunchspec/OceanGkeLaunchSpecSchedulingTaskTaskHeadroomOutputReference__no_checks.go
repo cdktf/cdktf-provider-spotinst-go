@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomOutputReference) 
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeLaunchSpecSchedulingTaskTaskHeadroomOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

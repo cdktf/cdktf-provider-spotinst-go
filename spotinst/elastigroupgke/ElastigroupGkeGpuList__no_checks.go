@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupGkeGpuList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeGpuList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGkeGpuList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

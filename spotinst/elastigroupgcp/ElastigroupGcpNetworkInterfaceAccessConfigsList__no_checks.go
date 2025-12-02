@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsList) validateGetP
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGcpNetworkInterfaceAccessConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

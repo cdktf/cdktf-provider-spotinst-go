@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyDimensionsList) validateGetP
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyDimensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyDimensionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

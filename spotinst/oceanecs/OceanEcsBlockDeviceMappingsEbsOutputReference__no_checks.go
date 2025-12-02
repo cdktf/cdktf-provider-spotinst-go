@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanEcsBlockDeviceMappingsEbsOutputReference) validateGetStr
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsBlockDeviceMappingsEbsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanEcsBlockDeviceMappingsEbsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanEcsBlockDeviceMappingsEbsOutputReference) validatePutDyn
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsBlockDeviceMappingsEbsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsBlockDeviceMappingsEbsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

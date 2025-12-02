@@ -43,11 +43,11 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) validateGetStringM
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsInstanceWeightsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

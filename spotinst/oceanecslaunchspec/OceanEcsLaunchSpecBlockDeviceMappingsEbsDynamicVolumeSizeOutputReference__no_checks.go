@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsDynamicVolumeSizeOutp
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsDynamicVolumeSizeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsDynamicVolumeSizeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsDynamicVolumeSizeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsDynamicVolumeSizeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

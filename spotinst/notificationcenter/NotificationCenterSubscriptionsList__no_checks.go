@@ -15,7 +15,7 @@ func (n *jsiiProxy_NotificationCenterSubscriptionsList) validateGetParameters(in
 	return nil
 }
 
-func (n *jsiiProxy_NotificationCenterSubscriptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationCenterSubscriptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

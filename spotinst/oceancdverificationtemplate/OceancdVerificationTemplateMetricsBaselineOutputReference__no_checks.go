@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceancdVerificationTemplateMetricsBaselineOutputReference) va
 	return nil
 }
 
-func (o *jsiiProxy_OceancdVerificationTemplateMetricsBaselineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdVerificationTemplateMetricsBaselineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceancdVerificationTemplateMetricsBaselineOutputReference) va
 	return nil
 }
 
-func (o *jsiiProxy_OceancdVerificationTemplateMetricsBaselineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdVerificationTemplateMetricsBaselineOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

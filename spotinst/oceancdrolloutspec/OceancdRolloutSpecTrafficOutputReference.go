@@ -81,7 +81,7 @@ type OceancdRolloutSpecTrafficOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAlb(value *OceancdRolloutSpecTrafficAlb)
 	PutAmbassador(value *OceancdRolloutSpecTrafficAmbassador)
 	PutIstio(value *OceancdRolloutSpecTrafficIstio)
@@ -98,7 +98,7 @@ type OceancdRolloutSpecTrafficOutputReference interface {
 	ResetStableService()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -616,8 +616,8 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficOutputReference) InterpolationAsList
 	return returns
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -625,7 +625,7 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -762,8 +762,8 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficOutputReference) ResetStableService(
 	)
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -771,7 +771,7 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

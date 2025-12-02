@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanEcsScheduledTaskTasksOutputReference) validateGetStringM
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsScheduledTaskTasksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanEcsScheduledTaskTasksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsScheduledTaskTasksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsScheduledTaskTasksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupGcpDiskOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupGcpDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ElastigroupGcpDiskOutputReference) validatePutInitializeParam
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGcpDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

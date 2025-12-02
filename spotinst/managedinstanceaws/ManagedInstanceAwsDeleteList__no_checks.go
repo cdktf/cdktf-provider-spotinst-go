@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedInstanceAwsDeleteList) validateGetParameters(index *fl
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsDeleteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedInstanceAwsDeleteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

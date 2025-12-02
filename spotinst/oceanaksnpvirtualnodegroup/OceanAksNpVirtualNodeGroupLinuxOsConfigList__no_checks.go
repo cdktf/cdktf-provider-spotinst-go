@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupLinuxOsConfigList) validateGetParam
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupLinuxOsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupLinuxOsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

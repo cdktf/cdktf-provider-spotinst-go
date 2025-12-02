@@ -15,7 +15,7 @@ func (m *jsiiProxy_MrscalerAwsInstanceWeightsList) validateGetParameters(index *
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsInstanceWeightsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsInstanceWeightsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceancdStrategyCanaryStepsSetHeaderRouteOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OceancdStrategyCanaryStepsSetHeaderRouteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdStrategyCanaryStepsSetHeaderRouteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceancdStrategyCanaryStepsSetHeaderRouteOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OceancdStrategyCanaryStepsSetHeaderRouteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdStrategyCanaryStepsSetHeaderRouteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

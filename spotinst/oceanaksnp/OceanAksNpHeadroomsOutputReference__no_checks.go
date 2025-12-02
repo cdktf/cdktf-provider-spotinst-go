@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAksNpHeadroomsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpHeadroomsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpHeadroomsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpHeadroomsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpHeadroomsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAwsItfOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsItfOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsItfOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (e *jsiiProxy_ElastigroupAwsItfOutputReference) validatePutTargetGroupConfi
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsItfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsItfOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

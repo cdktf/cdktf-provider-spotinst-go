@@ -43,11 +43,11 @@ func (m *jsiiProxy_MrscalerAwsBootstrapActionsFileOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsBootstrapActionsFileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MrscalerAwsBootstrapActionsFileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsBootstrapActionsFileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsBootstrapActionsFileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

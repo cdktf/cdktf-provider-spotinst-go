@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureBootDiagnosticsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAzureV3ProximityPlacementGroupsOutputReference) va
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ProximityPlacementGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAzureV3ProximityPlacementGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ProximityPlacementGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3ProximityPlacementGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

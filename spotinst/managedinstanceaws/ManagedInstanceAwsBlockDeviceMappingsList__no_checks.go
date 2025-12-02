@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsList) validateGetParamet
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedInstanceAwsBlockDeviceMappingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

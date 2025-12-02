@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) valida
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) valida
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupUpdatePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

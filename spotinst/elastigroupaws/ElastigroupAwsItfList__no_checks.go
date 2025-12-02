@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsItfList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsItfList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsItfList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

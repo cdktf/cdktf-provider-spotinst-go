@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationNomadAutoscaleConstraintsList) valid
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationNomadAutoscaleConstraintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationNomadAutoscaleConstraintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

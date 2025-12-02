@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsMultipleMetricsExpressionsOutputReference) vali
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsMultipleMetricsExpressionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsMultipleMetricsExpressionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsMultipleMetricsExpressionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsMultipleMetricsExpressionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

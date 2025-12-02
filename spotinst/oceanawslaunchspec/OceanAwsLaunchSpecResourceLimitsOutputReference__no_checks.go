@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAwsLaunchSpecResourceLimitsOutputReference) validateGetS
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecResourceLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecResourceLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecResourceLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecResourceLimitsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

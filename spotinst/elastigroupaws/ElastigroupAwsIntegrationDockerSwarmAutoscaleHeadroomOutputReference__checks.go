@@ -85,17 +85,17 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationDockerSwarmAutoscaleHeadroomOutputRe
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationDockerSwarmAutoscaleHeadroomOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (e *jsiiProxy_ElastigroupAwsIntegrationDockerSwarmAutoscaleHeadroomOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationDockerSwarmAutoscaleHeadroomOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_ElastigroupAwsIntegrationDockerSwarmAutoscaleHeadroomOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

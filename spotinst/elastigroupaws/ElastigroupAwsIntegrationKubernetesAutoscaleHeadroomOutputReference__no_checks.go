@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleHeadroomOutputRef
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleHeadroomOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleHeadroomOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleHeadroomOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesAutoscaleHeadroomOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureImageGalleryList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureImageGalleryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureImageGalleryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

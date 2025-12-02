@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrganizationPolicyPolicyContentList) validateGetParameters(in
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationPolicyPolicyContentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationPolicyPolicyContentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

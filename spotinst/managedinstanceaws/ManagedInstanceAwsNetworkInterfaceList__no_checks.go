@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) validateGetParameters
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedInstanceAwsNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanEcsClusterOrientationList) validateGetParameters(index *
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsClusterOrientationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsClusterOrientationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

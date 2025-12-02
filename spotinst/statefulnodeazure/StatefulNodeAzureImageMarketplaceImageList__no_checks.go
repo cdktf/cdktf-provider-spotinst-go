@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) validateGetParame
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureImageMarketplaceImageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

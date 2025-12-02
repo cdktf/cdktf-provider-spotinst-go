@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksTaskParametersClusterRollOutp
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksTaskParametersClusterRollOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksTaskParametersClusterRollOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksTaskParametersClusterRollOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeImportScheduledTaskTasksTaskParametersClusterRollOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

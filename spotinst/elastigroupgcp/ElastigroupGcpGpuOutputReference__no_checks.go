@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupGcpGpuOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpGpuOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupGcpGpuOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpGpuOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGcpGpuOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanEcsAutoscalerDownOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsAutoscalerDownOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanEcsAutoscalerDownOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsAutoscalerDownOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsAutoscalerDownOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

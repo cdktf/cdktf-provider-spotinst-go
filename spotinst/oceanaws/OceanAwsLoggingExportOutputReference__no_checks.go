@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) validatePutS3Parameters
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLoggingExportOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

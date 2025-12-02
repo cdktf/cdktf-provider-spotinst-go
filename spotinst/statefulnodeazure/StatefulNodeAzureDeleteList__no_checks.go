@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureDeleteList) validateGetParameters(index *flo
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureDeleteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureDeleteList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

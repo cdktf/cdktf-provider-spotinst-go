@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderWebWebHeaderList) v
 	return nil
 }
 
-func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderWebWebHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderWebWebHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

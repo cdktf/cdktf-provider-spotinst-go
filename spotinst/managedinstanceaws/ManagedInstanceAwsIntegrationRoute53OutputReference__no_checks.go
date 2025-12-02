@@ -43,7 +43,7 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedInstanceAwsIntegrationRoute53OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsLoggingExportS3List) validateGetParameters(inde
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsLoggingExportS3List) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsLoggingExportS3List) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) validateGetS
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

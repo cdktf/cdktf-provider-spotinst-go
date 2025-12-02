@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3SecretList) validateGetParameters(index *fl
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3SecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3SecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

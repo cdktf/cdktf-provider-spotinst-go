@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAwsStartupTaintsList) validateGetParameters(index *float
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsStartupTaintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsStartupTaintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

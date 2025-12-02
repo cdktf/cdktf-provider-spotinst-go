@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigTagsList) validateGetParame
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

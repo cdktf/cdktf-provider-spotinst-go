@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAksNpVngTemplateSchedulingOutputReference) validateGetSt
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVngTemplateSchedulingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpVngTemplateSchedulingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAksNpVngTemplateSchedulingOutputReference) validatePutVn
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVngTemplateSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpVngTemplateSchedulingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

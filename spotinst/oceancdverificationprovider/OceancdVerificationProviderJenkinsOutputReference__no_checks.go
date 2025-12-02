@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceancdVerificationProviderJenkinsOutputReference) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_OceancdVerificationProviderJenkinsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdVerificationProviderJenkinsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceancdVerificationProviderJenkinsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdVerificationProviderJenkinsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

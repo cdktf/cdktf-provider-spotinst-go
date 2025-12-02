@@ -43,11 +43,11 @@ func (m *jsiiProxy_MrscalerAwsStepsFileOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsStepsFileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MrscalerAwsStepsFileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsStepsFileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsStepsFileOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

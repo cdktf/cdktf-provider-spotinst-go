@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateGetStringM
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validatePutOrienta
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyDimensionsList) validateGetP
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyDimensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyDimensionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

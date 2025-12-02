@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

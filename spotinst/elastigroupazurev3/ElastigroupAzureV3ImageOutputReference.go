@@ -69,7 +69,7 @@ type ElastigroupAzureV3ImageOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCustom(value interface{})
 	PutGalleryImage(value interface{})
 	PutMarketplace(value interface{})
@@ -78,7 +78,7 @@ type ElastigroupAzureV3ImageOutputReference interface {
 	ResetMarketplace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -474,8 +474,8 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -483,7 +483,7 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) ResetMarketplace() {
 	)
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (e *jsiiProxy_ElastigroupAzureV3ImageOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

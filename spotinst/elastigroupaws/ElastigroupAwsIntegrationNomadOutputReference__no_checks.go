@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationNomadOutputReference) validateGetStr
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationNomadOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationNomadOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationNomadOutputReference) validatePutAut
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationNomadOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationNomadOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

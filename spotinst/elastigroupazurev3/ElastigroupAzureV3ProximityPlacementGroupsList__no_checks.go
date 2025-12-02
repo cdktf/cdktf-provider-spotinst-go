@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3ProximityPlacementGroupsList) validateGetPa
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ProximityPlacementGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3ProximityPlacementGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

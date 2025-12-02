@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) validateGetPar
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsItfTargetGroupConfigMatcherList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

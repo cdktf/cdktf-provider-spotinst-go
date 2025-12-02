@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyActionOutputReference) valid
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

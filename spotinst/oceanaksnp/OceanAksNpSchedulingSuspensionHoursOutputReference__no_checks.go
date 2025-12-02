@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAksNpSchedulingSuspensionHoursOutputReference) validateG
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpSchedulingSuspensionHoursOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpSchedulingSuspensionHoursOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpSchedulingSuspensionHoursOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpSchedulingSuspensionHoursOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

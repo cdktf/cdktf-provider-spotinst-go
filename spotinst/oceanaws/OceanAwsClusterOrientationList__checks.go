@@ -29,9 +29,9 @@ func (o *jsiiProxy_OceanAwsClusterOrientationList) validateGetParameters(index *
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsClusterOrientationList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OceanAwsClusterOrientationList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

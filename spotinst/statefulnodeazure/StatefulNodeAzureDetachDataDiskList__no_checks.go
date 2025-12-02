@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureDetachDataDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

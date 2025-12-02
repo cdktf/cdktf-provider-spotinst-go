@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulNodeAzureSignalOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureSignalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureSignalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureSignalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureSignalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

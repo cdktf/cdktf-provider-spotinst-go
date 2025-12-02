@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) val
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsBeanstalkDeploymentPreferencesStrategyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

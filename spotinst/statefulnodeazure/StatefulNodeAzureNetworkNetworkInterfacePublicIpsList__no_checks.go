@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfacePublicIpsList) valida
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfacePublicIpsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfacePublicIpsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

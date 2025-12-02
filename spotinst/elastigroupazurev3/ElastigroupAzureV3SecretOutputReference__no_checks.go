@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAzureV3SecretOutputReference) validateGetStringMap
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3SecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAzureV3SecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_ElastigroupAzureV3SecretOutputReference) validatePutVaultCert
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3SecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3SecretOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

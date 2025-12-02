@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsResourceRequirementsList) validateGetParameters
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsResourceRequirementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsResourceRequirementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

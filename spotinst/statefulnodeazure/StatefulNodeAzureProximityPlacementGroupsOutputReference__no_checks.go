@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulNodeAzureProximityPlacementGroupsOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureProximityPlacementGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureProximityPlacementGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureProximityPlacementGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureProximityPlacementGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

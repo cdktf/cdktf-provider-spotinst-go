@@ -71,11 +71,11 @@ type ElastigroupAwsIntegrationCodedeployOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDeploymentGroups(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -493,8 +493,8 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployOutputReference) Interpola
 	return returns
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -502,7 +502,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployOutputReference) Interpola
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -520,8 +520,8 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployOutputReference) PutDeploy
 	)
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -529,7 +529,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployOutputReference) Resolve(_
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

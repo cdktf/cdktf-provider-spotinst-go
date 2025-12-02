@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksParametersAmiAutoUpdateOutputRefere
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsScheduledTaskTasksParametersAmiAutoUpdateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsScheduledTaskTasksParametersAmiAutoUpdateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksParametersAmiAutoUpdateOutputRefere
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsScheduledTaskTasksParametersAmiAutoUpdateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsScheduledTaskTasksParametersAmiAutoUpdateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) validateGetPar
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureManagedServiceIdentitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

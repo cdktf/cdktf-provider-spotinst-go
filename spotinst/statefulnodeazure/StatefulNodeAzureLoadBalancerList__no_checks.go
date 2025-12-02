@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureLoadBalancerList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureLoadBalancerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureLoadBalancerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

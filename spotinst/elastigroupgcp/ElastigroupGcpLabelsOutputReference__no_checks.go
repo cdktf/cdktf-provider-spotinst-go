@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupGcpLabelsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpLabelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupGcpLabelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpLabelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGcpLabelsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

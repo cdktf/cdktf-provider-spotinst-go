@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsInstanceTypesWeightsList) validateGetParameters
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsInstanceTypesWeightsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsInstanceTypesWeightsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

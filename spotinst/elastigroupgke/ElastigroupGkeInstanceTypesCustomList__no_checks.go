@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomList) validateGetParameters(
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGkeInstanceTypesCustomList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

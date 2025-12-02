@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) validat
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationGitlabRunnerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

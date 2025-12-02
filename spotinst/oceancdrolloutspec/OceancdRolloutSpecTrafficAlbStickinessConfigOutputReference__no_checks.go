@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficAlbStickinessConfigOutputReference) 
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficAlbStickinessConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficAlbStickinessConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficAlbStickinessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficAlbStickinessConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

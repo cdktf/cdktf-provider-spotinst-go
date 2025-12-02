@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) validat
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) validat
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3CapacityReservationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceancdRolloutSpecStrategyArgsValueFromFieldRefOutputReferenc
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecStrategyArgsValueFromFieldRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdRolloutSpecStrategyArgsValueFromFieldRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecStrategyArgsValueFromFieldRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdRolloutSpecStrategyArgsValueFromFieldRefOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

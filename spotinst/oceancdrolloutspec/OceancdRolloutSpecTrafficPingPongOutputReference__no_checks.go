@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficPingPongOutputReference) validateGet
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficPingPongOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficPingPongOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficPingPongOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficPingPongOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

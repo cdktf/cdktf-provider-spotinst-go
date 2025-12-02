@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceancdRolloutSpecStrategyArgsValueFromOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecStrategyArgsValueFromOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdRolloutSpecStrategyArgsValueFromOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceancdRolloutSpecStrategyArgsValueFromOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecStrategyArgsValueFromOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdRolloutSpecStrategyArgsValueFromOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

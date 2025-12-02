@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesAdditionalIpConfigs
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesAdditionalIpConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesAdditionalIpConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesAdditionalIpConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesAdditionalIpConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

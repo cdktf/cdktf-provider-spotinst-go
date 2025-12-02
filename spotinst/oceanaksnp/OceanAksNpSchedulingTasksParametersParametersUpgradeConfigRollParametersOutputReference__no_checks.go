@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAksNpSchedulingTasksParametersParametersUpgradeConfigRol
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpSchedulingTasksParametersParametersUpgradeConfigRollParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpSchedulingTasksParametersParametersUpgradeConfigRollParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpSchedulingTasksParametersParametersUpgradeConfigRollParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpSchedulingTasksParametersParametersUpgradeConfigRollParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

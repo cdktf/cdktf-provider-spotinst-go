@@ -43,7 +43,7 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsTerminationPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MrscalerAwsTerminationPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesOutputReference) validatePutSta
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsTerminationPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsTerminationPoliciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

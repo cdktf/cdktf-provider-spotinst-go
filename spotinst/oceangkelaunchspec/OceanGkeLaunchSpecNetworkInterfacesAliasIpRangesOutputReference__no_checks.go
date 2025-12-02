@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesAliasIpRangesOutputReferen
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesAliasIpRangesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesAliasIpRangesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesAliasIpRangesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesAliasIpRangesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

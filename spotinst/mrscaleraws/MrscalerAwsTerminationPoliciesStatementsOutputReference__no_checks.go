@@ -43,11 +43,11 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsTerminationPoliciesStatementsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

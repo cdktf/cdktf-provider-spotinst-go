@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceancdStrategyRollingStepsOutputReference) validateGetString
 	return nil
 }
 
-func (o *jsiiProxy_OceancdStrategyRollingStepsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdStrategyRollingStepsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OceancdStrategyRollingStepsOutputReference) validatePutVerifi
 	return nil
 }
 
-func (o *jsiiProxy_OceancdStrategyRollingStepsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdStrategyRollingStepsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

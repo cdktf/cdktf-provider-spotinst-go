@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderList) validateGetPa
 	return nil
 }
 
-func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsCpuOptionsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsCpuOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsCpuOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsCpuOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsCpuOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

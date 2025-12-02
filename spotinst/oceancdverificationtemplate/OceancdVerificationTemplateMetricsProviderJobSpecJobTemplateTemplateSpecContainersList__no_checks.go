@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderJobSpecJobTemplateT
 	return nil
 }
 
-func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderJobSpecJobTemplateTemplateSpecContainersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderJobSpecJobTemplateTemplateSpecContainersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

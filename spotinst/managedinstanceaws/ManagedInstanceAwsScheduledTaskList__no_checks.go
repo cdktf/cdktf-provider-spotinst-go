@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskList) validateGetParameters(in
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedInstanceAwsScheduledTaskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAwsBlockDeviceMappingsList) validateGetParameters(index 
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsBlockDeviceMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsBlockDeviceMappingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

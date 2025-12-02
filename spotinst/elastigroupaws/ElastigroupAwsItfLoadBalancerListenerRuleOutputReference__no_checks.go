@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecEphemeralStorageList) validateGetParameters
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecEphemeralStorageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecEphemeralStorageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

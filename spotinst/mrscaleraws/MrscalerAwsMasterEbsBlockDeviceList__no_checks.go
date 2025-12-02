@@ -15,7 +15,7 @@ func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) validateGetParameters(in
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsMasterEbsBlockDeviceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

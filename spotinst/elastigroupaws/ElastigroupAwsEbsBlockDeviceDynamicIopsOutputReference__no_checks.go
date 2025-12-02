@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceDynamicIopsOutputReference) valid
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceDynamicIopsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceDynamicIopsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceDynamicIopsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceDynamicIopsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

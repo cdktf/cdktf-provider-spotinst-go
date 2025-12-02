@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsMonthly
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsMonthlyRepetitionBasisWeeklyRepetitionBasisList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsMonthlyRepetitionBasisWeeklyRepetitionBasisList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

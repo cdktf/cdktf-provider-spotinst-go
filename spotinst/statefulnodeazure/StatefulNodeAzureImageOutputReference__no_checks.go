@@ -43,7 +43,7 @@ func (s *jsiiProxy_StatefulNodeAzureImageOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_StatefulNodeAzureImageOutputReference) validatePutMarketplace
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

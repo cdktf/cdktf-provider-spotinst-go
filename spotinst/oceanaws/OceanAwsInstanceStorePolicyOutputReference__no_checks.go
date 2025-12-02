@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAwsInstanceStorePolicyOutputReference) validateGetString
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsInstanceStorePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsInstanceStorePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsInstanceStorePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsInstanceStorePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

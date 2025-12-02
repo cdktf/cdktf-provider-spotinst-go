@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioOutputReference) validateGetStr
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioOutputReference) validatePutVir
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

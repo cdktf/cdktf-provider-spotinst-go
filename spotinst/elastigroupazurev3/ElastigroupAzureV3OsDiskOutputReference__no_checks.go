@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAzureV3OsDiskOutputReference) validateGetStringMap
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3OsDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAzureV3OsDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3OsDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3OsDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

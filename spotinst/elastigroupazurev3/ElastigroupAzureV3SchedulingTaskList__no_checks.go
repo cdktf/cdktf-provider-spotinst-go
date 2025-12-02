@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3SchedulingTaskList) validateGetParameters(i
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3SchedulingTaskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3SchedulingTaskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

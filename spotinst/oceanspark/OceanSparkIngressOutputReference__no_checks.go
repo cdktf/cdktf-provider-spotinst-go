@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanSparkIngressOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (o *jsiiProxy_OceanSparkIngressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanSparkIngressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (o *jsiiProxy_OceanSparkIngressOutputReference) validatePutPrivateLinkParam
 	return nil
 }
 
-func (o *jsiiProxy_OceanSparkIngressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanSparkIngressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

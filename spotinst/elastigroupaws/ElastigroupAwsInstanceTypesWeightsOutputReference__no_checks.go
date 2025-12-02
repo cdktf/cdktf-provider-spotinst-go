@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsInstanceTypesWeightsOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsInstanceTypesWeightsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsInstanceTypesWeightsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsInstanceTypesWeightsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsInstanceTypesWeightsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

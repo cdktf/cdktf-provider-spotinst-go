@@ -85,9 +85,9 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioOutputReference) validateGetStr
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -135,9 +135,9 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioOutputReference) validatePutVir
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

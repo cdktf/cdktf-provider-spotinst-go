@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationBoundariesList) 
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationBoundariesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationBoundariesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

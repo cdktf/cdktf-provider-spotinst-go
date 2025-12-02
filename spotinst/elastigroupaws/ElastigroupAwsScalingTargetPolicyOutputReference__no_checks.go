@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyOutputReference) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyOutputReference) validatePut
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsScalingTargetPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

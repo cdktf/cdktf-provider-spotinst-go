@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAwsAutoscalerOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsAutoscalerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsAutoscalerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (o *jsiiProxy_OceanAwsAutoscalerOutputReference) validatePutResourceLimitsP
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsAutoscalerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsAutoscalerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

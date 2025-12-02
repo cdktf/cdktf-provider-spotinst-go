@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupGkeIntegrationGkeAutoscaleLabelsOutputReference) v
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeIntegrationGkeAutoscaleLabelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupGkeIntegrationGkeAutoscaleLabelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeIntegrationGkeAutoscaleLabelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGkeIntegrationGkeAutoscaleLabelsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

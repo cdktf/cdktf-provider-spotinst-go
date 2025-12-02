@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleDownList) validateGetParameters(in
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleDownList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleDownList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

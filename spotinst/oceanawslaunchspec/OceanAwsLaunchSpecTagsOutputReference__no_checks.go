@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAwsLaunchSpecTagsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

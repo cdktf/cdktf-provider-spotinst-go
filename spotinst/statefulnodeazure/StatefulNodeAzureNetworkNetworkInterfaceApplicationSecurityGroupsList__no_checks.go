@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceApplicationSecurityGr
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceApplicationSecurityGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureNetworkNetworkInterfaceApplicationSecurityGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

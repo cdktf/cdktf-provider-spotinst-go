@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyCapacityReservationCapacityReservati
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureStrategyCapacityReservationCapacityReservationGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureStrategyCapacityReservationCapacityReservationGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureStrategyCapacityReservationCapacityReservationGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureStrategyCapacityReservationCapacityReservationGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

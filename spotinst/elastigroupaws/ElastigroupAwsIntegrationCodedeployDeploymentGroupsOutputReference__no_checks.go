@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsOutputRefe
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationCodedeployDeploymentGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

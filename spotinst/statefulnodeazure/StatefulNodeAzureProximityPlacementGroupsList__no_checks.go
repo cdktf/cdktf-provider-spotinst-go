@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureProximityPlacementGroupsList) validateGetPar
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureProximityPlacementGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureProximityPlacementGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

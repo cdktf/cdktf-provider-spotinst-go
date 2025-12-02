@@ -85,9 +85,9 @@ func (o *jsiiProxy_OceanSparkWorkspacesStorageOutputReference) validateGetString
 	return nil
 }
 
-func (o *jsiiProxy_OceanSparkWorkspacesStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (o *jsiiProxy_OceanSparkWorkspacesStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (o *jsiiProxy_OceanSparkWorkspacesStorageOutputReference) validatePutDefaul
 	return nil
 }
 
-func (o *jsiiProxy_OceanSparkWorkspacesStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OceanSparkWorkspacesStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

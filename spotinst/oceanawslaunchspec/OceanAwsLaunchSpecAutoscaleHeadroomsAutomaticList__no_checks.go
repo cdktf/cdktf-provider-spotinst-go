@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecAutoscaleHeadroomsAutomaticList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

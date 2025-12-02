@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanRightSizingRuleDetachWorkloadsOutputReference) validateG
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleDetachWorkloadsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanRightSizingRuleDetachWorkloadsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanRightSizingRuleDetachWorkloadsOutputReference) validateP
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleDetachWorkloadsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanRightSizingRuleDetachWorkloadsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

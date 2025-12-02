@@ -15,7 +15,7 @@ func (m *jsiiProxy_MrscalerAwsScheduledTaskList) validateGetParameters(index *fl
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsScheduledTaskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsScheduledTaskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

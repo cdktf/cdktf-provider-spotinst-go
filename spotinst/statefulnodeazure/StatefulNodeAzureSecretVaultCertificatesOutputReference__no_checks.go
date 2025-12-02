@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureSecretVaultCertificatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

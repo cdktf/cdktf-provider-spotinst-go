@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioVirtualServicesTlsRoutesOutputR
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioVirtualServicesTlsRoutesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioVirtualServicesTlsRoutesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioVirtualServicesTlsRoutesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceancdRolloutSpecTrafficIstioVirtualServicesTlsRoutesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

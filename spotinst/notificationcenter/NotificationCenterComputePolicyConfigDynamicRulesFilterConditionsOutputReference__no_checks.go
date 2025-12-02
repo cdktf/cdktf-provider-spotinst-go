@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesFilterCondit
 	return nil
 }
 
-func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesFilterConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesFilterConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesFilterConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationCenterComputePolicyConfigDynamicRulesFilterConditionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

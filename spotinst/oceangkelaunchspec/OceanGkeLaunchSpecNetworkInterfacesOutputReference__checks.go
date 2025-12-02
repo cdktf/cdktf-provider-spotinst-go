@@ -85,9 +85,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesOutputReference) validateG
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -155,9 +155,9 @@ func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesOutputReference) validateP
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

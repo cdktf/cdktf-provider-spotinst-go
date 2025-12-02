@@ -43,11 +43,11 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

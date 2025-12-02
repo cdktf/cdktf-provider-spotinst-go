@@ -85,9 +85,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) validateGetStringM
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) validatePutParamet
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OceanAwsScheduledTaskTasksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

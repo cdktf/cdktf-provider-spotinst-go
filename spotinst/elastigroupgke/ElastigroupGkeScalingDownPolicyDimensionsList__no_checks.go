@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) validateGetPar
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGkeScalingDownPolicyDimensionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

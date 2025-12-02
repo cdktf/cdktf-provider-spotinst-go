@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAksNpSchedulingShutdownHoursOutputReference) validateGet
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpSchedulingShutdownHoursOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpSchedulingShutdownHoursOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpSchedulingShutdownHoursOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpSchedulingShutdownHoursOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

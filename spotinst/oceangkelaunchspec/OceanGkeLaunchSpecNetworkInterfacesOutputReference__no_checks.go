@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesOutputReference) validateG
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesOutputReference) validateP
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

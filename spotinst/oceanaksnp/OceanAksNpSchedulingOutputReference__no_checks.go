@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) validatePutTasksParamete
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpSchedulingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAksNpLoggingExportAzureBlobOutputReference) validateGetS
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpLoggingExportAzureBlobOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpLoggingExportAzureBlobOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpLoggingExportAzureBlobOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpLoggingExportAzureBlobOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

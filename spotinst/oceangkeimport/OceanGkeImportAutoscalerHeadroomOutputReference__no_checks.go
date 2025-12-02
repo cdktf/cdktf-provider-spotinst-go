@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanGkeImportAutoscalerHeadroomOutputReference) validateGetS
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportAutoscalerHeadroomOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanGkeImportAutoscalerHeadroomOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportAutoscalerHeadroomOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeImportAutoscalerHeadroomOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

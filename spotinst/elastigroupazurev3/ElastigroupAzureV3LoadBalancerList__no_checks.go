@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3LoadBalancerList) validateGetParameters(ind
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3LoadBalancerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3LoadBalancerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

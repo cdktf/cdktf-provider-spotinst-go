@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) valida
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationRoute53DomainsRecordSetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

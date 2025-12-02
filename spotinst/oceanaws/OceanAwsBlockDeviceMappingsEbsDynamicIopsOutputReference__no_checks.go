@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsDynamicIopsOutputReference) val
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsDynamicIopsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsDynamicIopsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsDynamicIopsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsBlockDeviceMappingsEbsDynamicIopsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

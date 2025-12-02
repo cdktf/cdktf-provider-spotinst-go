@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesAccessConfigsList) validat
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesAccessConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeLaunchSpecNetworkInterfacesAccessConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

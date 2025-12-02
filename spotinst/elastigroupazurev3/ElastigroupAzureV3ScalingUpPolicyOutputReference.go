@@ -103,7 +103,7 @@ type ElastigroupAzureV3ScalingUpPolicyOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAction(value *ElastigroupAzureV3ScalingUpPolicyAction)
 	PutDimensions(value interface{})
 	ResetDimensions()
@@ -112,7 +112,7 @@ type ElastigroupAzureV3ScalingUpPolicyOutputReference interface {
 	ResetUnit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -860,8 +860,8 @@ func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyOutputReference) Interpolati
 	return returns
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -869,7 +869,7 @@ func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyOutputReference) Interpolati
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -930,8 +930,8 @@ func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyOutputReference) ResetUnit()
 	)
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -939,7 +939,7 @@ func (e *jsiiProxy_ElastigroupAzureV3ScalingUpPolicyOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

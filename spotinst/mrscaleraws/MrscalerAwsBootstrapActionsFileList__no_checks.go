@@ -15,7 +15,7 @@ func (m *jsiiProxy_MrscalerAwsBootstrapActionsFileList) validateGetParameters(in
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsBootstrapActionsFileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsBootstrapActionsFileList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

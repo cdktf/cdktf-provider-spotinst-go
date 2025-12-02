@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAksNpLinuxOsConfigSysctlsOutputReference) validateGetStr
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpLinuxOsConfigSysctlsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpLinuxOsConfigSysctlsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpLinuxOsConfigSysctlsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpLinuxOsConfigSysctlsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

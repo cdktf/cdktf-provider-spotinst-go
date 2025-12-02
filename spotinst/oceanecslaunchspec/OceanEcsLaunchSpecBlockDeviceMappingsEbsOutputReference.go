@@ -89,7 +89,7 @@ type OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDynamicVolumeSize(value *OceanEcsLaunchSpecBlockDeviceMappingsEbsDynamicVolumeSize)
 	ResetDeleteOnTermination()
 	ResetDynamicVolumeSize()
@@ -102,7 +102,7 @@ type OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference interface {
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -706,8 +706,8 @@ func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) Inte
 	return returns
 }
 
-func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -715,7 +715,7 @@ func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) Inte
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -805,8 +805,8 @@ func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) Rese
 	)
 }
 
-func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -814,7 +814,7 @@ func (o *jsiiProxy_OceanEcsLaunchSpecBlockDeviceMappingsEbsOutputReference) Reso
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

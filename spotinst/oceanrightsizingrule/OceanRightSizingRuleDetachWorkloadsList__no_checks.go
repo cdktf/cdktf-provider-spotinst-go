@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanRightSizingRuleDetachWorkloadsList) validateGetParameter
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleDetachWorkloadsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanRightSizingRuleDetachWorkloadsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

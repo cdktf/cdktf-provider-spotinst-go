@@ -43,7 +43,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) validateG
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) validateP
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationKubernetesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

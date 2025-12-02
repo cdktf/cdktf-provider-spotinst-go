@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAwsDetachLoadBalancerList) validateGetParameters(index *
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsDetachLoadBalancerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsDetachLoadBalancerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

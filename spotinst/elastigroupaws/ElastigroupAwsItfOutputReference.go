@@ -78,7 +78,7 @@ type ElastigroupAwsItfOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDefaultStaticTargetGroup(value *ElastigroupAwsItfDefaultStaticTargetGroup)
 	PutLoadBalancer(value interface{})
 	PutTargetGroupConfig(value interface{})
@@ -86,7 +86,7 @@ type ElastigroupAwsItfOutputReference interface {
 	ResetMigrationHealthinessThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -575,8 +575,8 @@ func (e *jsiiProxy_ElastigroupAwsItfOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (e *jsiiProxy_ElastigroupAwsItfOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElastigroupAwsItfOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -584,7 +584,7 @@ func (e *jsiiProxy_ElastigroupAwsItfOutputReference) InterpolationForAttribute(p
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -640,8 +640,8 @@ func (e *jsiiProxy_ElastigroupAwsItfOutputReference) ResetMigrationHealthinessTh
 	)
 }
 
-func (e *jsiiProxy_ElastigroupAwsItfOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElastigroupAwsItfOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -649,7 +649,7 @@ func (e *jsiiProxy_ElastigroupAwsItfOutputReference) Resolve(_context cdktf.IRes
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

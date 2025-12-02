@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupHeadroomsList) validateGetParameter
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupHeadroomsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupHeadroomsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsOutputR
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsOutputR
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanRightSizingRuleRecommendationApplicationIntervalsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

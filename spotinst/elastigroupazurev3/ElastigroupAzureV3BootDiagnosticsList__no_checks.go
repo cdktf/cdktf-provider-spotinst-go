@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3BootDiagnosticsList) validateGetParameters(
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3BootDiagnosticsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3BootDiagnosticsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

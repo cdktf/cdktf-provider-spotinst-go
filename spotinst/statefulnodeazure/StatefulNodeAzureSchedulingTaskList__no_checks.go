@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureSchedulingTaskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

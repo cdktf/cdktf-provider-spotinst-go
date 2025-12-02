@@ -77,13 +77,13 @@ type OceancdVerificationTemplateMetricsProviderJenkinsOutputReference interface 
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutJenkinsParameters(value *OceancdVerificationTemplateMetricsProviderJenkinsJenkinsParameters)
 	ResetJenkinsParameters()
 	ResetTlsVerification()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -563,8 +563,8 @@ func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderJenkinsOutputRefere
 	return returns
 }
 
-func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderJenkinsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderJenkinsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -572,7 +572,7 @@ func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderJenkinsOutputRefere
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -606,8 +606,8 @@ func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderJenkinsOutputRefere
 	)
 }
 
-func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderJenkinsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderJenkinsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -615,7 +615,7 @@ func (o *jsiiProxy_OceancdVerificationTemplateMetricsProviderJenkinsOutputRefere
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

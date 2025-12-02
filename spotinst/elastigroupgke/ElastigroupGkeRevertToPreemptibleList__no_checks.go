@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupGkeRevertToPreemptibleList) validateGetParameters(
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGkeRevertToPreemptibleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGkeRevertToPreemptibleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

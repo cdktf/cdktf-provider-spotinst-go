@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleStaticTargetGroupOut
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleStaticTargetGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleStaticTargetGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleStaticTargetGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsItfLoadBalancerListenerRuleStaticTargetGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

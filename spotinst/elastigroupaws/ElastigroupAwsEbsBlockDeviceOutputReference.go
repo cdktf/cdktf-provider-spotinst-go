@@ -94,7 +94,7 @@ type ElastigroupAwsEbsBlockDeviceOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDynamicIops(value *ElastigroupAwsEbsBlockDeviceDynamicIops)
 	PutDynamicVolumeSize(value *ElastigroupAwsEbsBlockDeviceDynamicVolumeSize)
 	ResetDeleteOnTermination()
@@ -109,7 +109,7 @@ type ElastigroupAwsEbsBlockDeviceOutputReference interface {
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -764,8 +764,8 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) InterpolationAsL
 	return returns
 }
 
-func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -773,7 +773,7 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -882,8 +882,8 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) ResetVolumeType(
 	)
 }
 
-func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -891,7 +891,7 @@ func (e *jsiiProxy_ElastigroupAwsEbsBlockDeviceOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanGkeImportStrategyList) validateGetParameters(index *floa
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeImportStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeImportStrategyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

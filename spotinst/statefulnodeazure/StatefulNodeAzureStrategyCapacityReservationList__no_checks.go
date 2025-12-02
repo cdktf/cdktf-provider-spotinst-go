@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureStrategyCapacityReservationList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureStrategyCapacityReservationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureStrategyCapacityReservationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

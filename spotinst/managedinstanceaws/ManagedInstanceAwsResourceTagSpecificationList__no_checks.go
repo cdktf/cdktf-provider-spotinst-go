@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedInstanceAwsResourceTagSpecificationList) validateGetPa
 	return nil
 }
 
-func (m *jsiiProxy_ManagedInstanceAwsResourceTagSpecificationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedInstanceAwsResourceTagSpecificationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

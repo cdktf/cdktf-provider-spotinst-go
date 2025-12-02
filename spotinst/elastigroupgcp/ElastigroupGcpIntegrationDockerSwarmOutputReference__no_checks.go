@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupGcpIntegrationDockerSwarmOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpIntegrationDockerSwarmOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupGcpIntegrationDockerSwarmOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpIntegrationDockerSwarmOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGcpIntegrationDockerSwarmOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

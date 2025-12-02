@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsImagesImageOutputReference) validateGetStringMa
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsImagesImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsImagesImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsImagesImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsImagesImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

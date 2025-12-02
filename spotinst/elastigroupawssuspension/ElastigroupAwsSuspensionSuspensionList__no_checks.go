@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionList) validateGetParameters
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsSuspensionSuspensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

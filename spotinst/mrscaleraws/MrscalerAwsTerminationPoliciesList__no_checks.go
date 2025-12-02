@@ -15,7 +15,7 @@ func (m *jsiiProxy_MrscalerAwsTerminationPoliciesList) validateGetParameters(ind
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsTerminationPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsTerminationPoliciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

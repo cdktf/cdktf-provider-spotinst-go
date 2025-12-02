@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanEcsLaunchSpecImagesList) validateGetParameters(index *fl
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsLaunchSpecImagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsLaunchSpecImagesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

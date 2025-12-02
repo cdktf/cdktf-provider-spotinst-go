@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3DataDiskList) validateGetParameters(index *
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3DataDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3DataDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

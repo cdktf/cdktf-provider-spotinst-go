@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanRightSizingRuleAttachWorkloadsNamespacesWorkloadsOutputR
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleAttachWorkloadsNamespacesWorkloadsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanRightSizingRuleAttachWorkloadsNamespacesWorkloadsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleAttachWorkloadsNamespacesWorkloadsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanRightSizingRuleAttachWorkloadsNamespacesWorkloadsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

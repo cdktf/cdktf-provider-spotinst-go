@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanEcsScheduledTaskTasksList) validateGetParameters(index *
 	return nil
 }
 
-func (o *jsiiProxy_OceanEcsScheduledTaskTasksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanEcsScheduledTaskTasksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

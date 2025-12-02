@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanGkeLaunchSpecCreateOptionsOutputReference) validateGetSt
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecCreateOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanGkeLaunchSpecCreateOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanGkeLaunchSpecCreateOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanGkeLaunchSpecCreateOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_StatefulNodeAzureExtensionList) validateGetParameters(index *
 	return nil
 }
 
-func (s *jsiiProxy_StatefulNodeAzureExtensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulNodeAzureExtensionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

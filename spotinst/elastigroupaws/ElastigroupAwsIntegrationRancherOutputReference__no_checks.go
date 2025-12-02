@@ -43,11 +43,11 @@ func (e *jsiiProxy_ElastigroupAwsIntegrationRancherOutputReference) validateGetS
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationRancherOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationRancherOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAwsIntegrationRancherOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAwsIntegrationRancherOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

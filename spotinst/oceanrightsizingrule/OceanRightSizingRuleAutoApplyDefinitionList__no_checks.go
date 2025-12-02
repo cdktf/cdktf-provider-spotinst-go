@@ -15,7 +15,7 @@ func (o *jsiiProxy_OceanRightSizingRuleAutoApplyDefinitionList) validateGetParam
 	return nil
 }
 
-func (o *jsiiProxy_OceanRightSizingRuleAutoApplyDefinitionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanRightSizingRuleAutoApplyDefinitionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

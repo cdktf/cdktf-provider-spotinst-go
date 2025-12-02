@@ -15,7 +15,7 @@ func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyList) validateGetParameters(i
 	return nil
 }
 
-func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MrscalerAwsCoreScalingDownPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

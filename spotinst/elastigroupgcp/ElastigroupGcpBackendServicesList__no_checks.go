@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupGcpBackendServicesList) validateGetParameters(inde
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupGcpBackendServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupGcpBackendServicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

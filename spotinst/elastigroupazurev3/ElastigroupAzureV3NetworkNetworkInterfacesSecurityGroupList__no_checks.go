@@ -15,7 +15,7 @@ func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesSecurityGroupList) 
 	return nil
 }
 
-func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesSecurityGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastigroupAzureV3NetworkNetworkInterfacesSecurityGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

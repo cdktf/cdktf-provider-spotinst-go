@@ -43,7 +43,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsOutputReference) validat
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsOutputReference) validat
 	return nil
 }
 
-func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAwsLaunchSpecBlockDeviceMappingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

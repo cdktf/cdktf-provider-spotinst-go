@@ -43,11 +43,11 @@ func (o *jsiiProxy_OceanAksNpVirtualNodeGroupHeadroomsOutputReference) validateG
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupHeadroomsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupHeadroomsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OceanAksNpVirtualNodeGroupHeadroomsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OceanAksNpVirtualNodeGroupHeadroomsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
